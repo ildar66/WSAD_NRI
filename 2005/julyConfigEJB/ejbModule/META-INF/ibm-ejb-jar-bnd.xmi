@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmi:id="EJBJarBinding_1152006216187">
+  <defaultDatasource xmi:id="ResourceRefBinding_1152006216187" jndiName="july"/>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152006216187" jndiName="ejb/com/hps/july/config/beans/CfgBasestationHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgBasestation"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152098747968" jndiName="ejb/com/hps/july/config/beans/CfgSectorHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgSector"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152101857453" jndiName="ejb/com/hps/july/config/beans/CfgBsstandsHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgBsstands"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152102648281" jndiName="ejb/com/hps/july/config/beans/CfgAntennaHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntenna"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152104119812" jndiName="ejb/com/hps/july/config/beans/CfgAnten2SectorHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAnten2Sector"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152104663906" jndiName="ejb/com/hps/july/config/beans/CfgEquipObjectsCfgHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgEquipObjectsCfg"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152168672703" jndiName="ejb/com/hps/july/config/beans/CfgSavedConfigHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgSavedConfig"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152170780671" jndiName="ejb/com/hps/july/config/beans/CfgStoragecardHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgStoragecard"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1160037511078" jndiName="ejb/com/hps/july/config/beans/CfgAntennaCableHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntennaCable"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1160120505593" jndiName="ejb/com/hps/july/config/beans/CfgTrxHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgTrx"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1160120577109" jndiName="ejb/com/hps/july/config/beans/CfgTrx2SectorHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgTrx2Sector"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1161353462656" jndiName="ejb/com/hps/july/config/beans/CfgAntennaWorkBandHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntennaWorkBand"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1181124790656" jndiName="ejb/com/hps/july/config/beans/CfgEquipObjCfg2SectorHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgEquipObjCfg2Sector"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

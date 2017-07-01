@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="resourceclasses" name="resourceclasses" comments="" primaryKey="c1740841">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="classid" name="classid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1174036712109">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="classname" name="classname">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1174036712109" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="c1740841" name="c1740841" members="classid" constraint="SQLConstraint_1174036712109"/>
+  <constraints xmi:id="SQLConstraint_1174036712109" name="c1740841" type="PRIMARYKEY" primaryKey="c1740841"/>
+</RDBSchema:RDBTable>

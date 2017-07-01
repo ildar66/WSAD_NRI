@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="resources" name="resources" primaryKey="resources_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986036">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resourcesubtype" name="resourcesubtype">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986037">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="unit" name="unit" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986038">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986036" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="model" name="model" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986037" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="notes" name="notes" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634986036" characterSet="800" length="100" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="complect" name="complect">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986038" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="countpolicy" name="countpolicy">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986039" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="boxable" name="boxable">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986040" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="priceable" name="priceable">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986041" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="complectpart" name="complectpart">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986042" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="actualcode" name="actualcode" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986039">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="active" name="active">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986043" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="manucode" name="manucode" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986044" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resourceclass" name="resourceclass">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986045" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resourceclass2" name="resourceclass2">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1162195682875">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="groupid" name="groupid" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1162195682876">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="manufid" name="manufid" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1162195682877">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="disablenfscodes" name="disablenfscodes">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1176276526687" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="resources_1" name="resources" members="resource" constraint="SQLConstraint_1131634986036">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_basestationres.tblxmi#FK_REF_55857_55857"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_changeactpos.tblxmi#FK_REF_51454_51454"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_antennes.tblxmi#FK_REF_108461_1084"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasepayrules.tblxmi#FK_REF_PAYRR_15357"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasedocpositions.tblxmi#FK_REF_39943_39943"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_storagecards.tblxmi#fk_ref_1088_1088"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leaseresbil2nri.tblxmi#FK_REF_101884_1018"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_resourcesets.tblxmi#fk_ref_955_955"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_complects.tblxmi#fk_ref_942_942"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_complects.tblxmi#fk_ref_938_938"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_afsmountpos.tblxmi#FK_REF_108456_1084"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_i13nactresourceset.tblxmi#FK_REF_12304_12304"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_controllers.tblxmi#FK_REF_118944_1189"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_resourcesetparts.tblxmi#fk_ref_965_965"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_RepiterRes.tblxmi#FK_REF_121566_1215"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasechargerules.tblxmi#FK_REF_CRULR_15358"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_comequipment.tblxmi#FK_REF_129098_1290"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasemutualrules.tblxmi#FK_REF_MRULR_15359"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_cableres.tblxmi#FK_REF_55862_55862"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_switches.tblxmi#FK_REF_116276_1162"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_outerdocpositions.tblxmi#FK_REF_11409_11409"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_informix_abonentbillpos.tblxmi#FK_REF_32391_32391"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_docpositions.tblxmi#fk_ref_1092_1092"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_antennares.tblxmi#FK_REF_55882_55882"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasemutcontracts.tblxmi#FK_REF_36323_36323"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_resourcetaxes.tblxmi#fk_ref_908_908"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasesaldo.tblxmi#FK_REF_SALRE_15350"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_rrlantennares.tblxmi#FK_REF_185003_1850"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leaseposschetfakt.tblxmi#FK_REF_93718_93718"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leaseresources.tblxmi#fk_ref_17666_1766649"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_repdonorunitres.tblxmi#fk_ref_18699_1869924"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_trxres.tblxmi#fk_ref_24018_2401811"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_accumres.tblxmi#fk_ref_16656_1665685"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_905_905" name="fk_ref_905_905" members="resourcesubtype" constraint="SQLConstraint_1131634986038">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resourcesubtypes.tblxmi#resourcesubtypes_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_911_911" name="fk_ref_911_911" members="unit" constraint="SQLConstraint_1131634986039">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_units.tblxmi#units_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986036" name="resources" type="PRIMARYKEY" primaryKey="resources_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986038" name="fk_ref_905_905" type="FOREIGNKEY" referenceByKey="fk_ref_905_905"/>
+  <constraints xmi:id="SQLConstraint_1131634986039" name="fk_ref_911_911" type="FOREIGNKEY" referenceByKey="fk_ref_911_911"/>
+</RDBSchema:RDBTable>

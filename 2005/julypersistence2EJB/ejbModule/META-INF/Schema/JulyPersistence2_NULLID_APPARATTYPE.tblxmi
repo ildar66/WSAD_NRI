@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="APPARATTYPE" name="APPARATTYPE" primaryKey="PK_APPARATTYPE">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="APTYPEID" name="APTYPEID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340109">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1170331340109" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoCLOUDSCAPE_V51TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="APTYPE" name="APTYPE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1170331340110" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoCLOUDSCAPE_V51TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_APPARATTYPE" name="PK_APPARATTYPE" members="APTYPEID" constraint="SQLConstraint_1170331340109"/>
+  <constraints xmi:id="SQLConstraint_1170331340109" name="PK_APPARATTYPE" type="PRIMARYKEY" primaryKey="PK_APPARATTYPE"/>
+</RDBSchema:RDBTable>

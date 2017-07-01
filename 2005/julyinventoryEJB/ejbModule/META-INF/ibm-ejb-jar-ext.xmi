@@ -1,0 +1,203 @@
+<ejbext:EJBJarExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbext="ejbext.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Ext">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="AfsActProcessor_Ext" name="AfsActProcessor" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_1">
+      <methodElements xmi:id="MethodElement_1" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AfsActProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_2" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AfsActProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AfsActProcessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="AssemblingActProcessor_Ext" name="AssemblingActProcessor" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_2">
+      <methodElements xmi:id="MethodElement_3" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AssemblingActProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_2"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_2" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_4" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AssemblingActProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AssemblingActProcessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="ChangeActProcessor_Ext" name="ChangeActProcessor" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_3">
+      <methodElements xmi:id="MethodElement_5" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ChangeActProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_3"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_3" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_6" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ChangeActProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ChangeActProcessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="ContractFinder_Ext" name="ContractFinder" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_4">
+      <methodElements xmi:id="MethodElement_7" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractFinder"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_4"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_4" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_8" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractFinder"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractFinder"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="ContractSuppliesInfo_Ext" name="ContractSuppliesInfo" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_5">
+      <methodElements xmi:id="MethodElement_9" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractSuppliesInfo"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_5"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_5" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_10" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractSuppliesInfo"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractSuppliesInfo"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="CurrencySumProcessor_Ext" name="CurrencySumProcessor" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_6">
+      <methodElements xmi:id="MethodElement_11" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CurrencySumProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_6"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_6" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_12" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CurrencySumProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CurrencySumProcessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="DocumentPreprocessor_Ext" name="DocumentPreprocessor" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_7">
+      <methodElements xmi:id="MethodElement_13" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentPreprocessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_7"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_7" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_14" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentPreprocessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentPreprocessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="DocumentProcessor_Ext" name="DocumentProcessor" timeout="60">
+    <runAsSettings xmi:id="SecurityIdentity_8">
+      <methodElements xmi:id="MethodElement_15" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_8"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_8" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_16" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentProcessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="FaultReportProcessor_Ext" name="FaultReportProcessor" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_9">
+      <methodElements xmi:id="MethodElement_17" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#FaultReportProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_9"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_9" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_18" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#FaultReportProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#FaultReportProcessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="I13nActProcessor_Ext" name="I13nActProcessor" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_10">
+      <methodElements xmi:id="MethodElement_19" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#I13nActProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_10"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_10" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_20" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#I13nActProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#I13nActProcessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="InWayBillProcessor_Ext" name="InWayBillProcessor" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_11">
+      <methodElements xmi:id="MethodElement_21" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#InWayBillProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_11"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_11" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_22" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#InWayBillProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#InWayBillProcessor"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="Party_Ext" name="Party" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_12">
+      <methodElements xmi:id="MethodElement_23" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Party"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_12"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_12" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_24" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Party"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Party"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="ProcessorFacade_Ext" name="ProcessorFacade" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_13">
+      <methodElements xmi:id="MethodElement_25" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ProcessorFacade"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_13"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_13" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_26" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ProcessorFacade"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ProcessorFacade"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="RealDocumentProcessor_Ext" name="RealDocumentProcessor" timeout="60">
+    <runAsSettings xmi:id="SecurityIdentity_14">
+      <methodElements xmi:id="MethodElement_27" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RealDocumentProcessor"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_14"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_14" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_28" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RealDocumentProcessor"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RealDocumentProcessor"/>
+  </ejbExtensions>
+  <generalizations xmi:id="RealDocumentProcessor_extends_DocumentProcessor">
+    <subtype xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RealDocumentProcessor"/>
+    <supertype xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentProcessor"/>
+  </generalizations>
+</ejbext:EJBJarExtension>

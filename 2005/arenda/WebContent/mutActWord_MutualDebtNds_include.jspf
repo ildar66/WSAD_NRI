@@ -1,0 +1,13 @@
+<%
+java.util.List listMutualDebtNds = aform.getListMutualDebtNds();
+boolean suppressMutualDebtNds= (listMutualDebtNds.size()>0)?false:true;
+if(!suppressMutualDebtNds){
+java.util.Iterator iter = listMutualDebtNds.iterator();
+while (iter.hasNext()) {
+	com.hps.july.arenda.valueobject.MutualDebtNds_VO vo
+		          = (com.hps.july.arenda.valueobject.MutualDebtNds_VO)iter.next();
+	request.setAttribute("sumMain", vo.getSumMain());
+%>
+   <br><%= vo.getCustomer()%> <bean:message key="label.mutActWord.mutualDebtNds1"/> <%=vo.getExecutor()%> <bean:message key="label.mutActWord.mutualDebtNds2"/> <july:numberwrite name="sumMain" fractdigits="2"/> <%= vo.getCurrMain()%>.
+<% } %>
+<%}%>

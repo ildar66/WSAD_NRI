@@ -1,0 +1,639 @@
+Manifest-Version: 1.0
+Class-Path: julypersistence2EJB.jar 
+ julyplatinumEJB.jar
+
+Name: com/hps/july/inventory/sessionbean/ProcessorFacadeHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: EV/+w6UiLT98r8zZV4Enhgljj5w=
+MD5-Digest: QN3gvqY7XyLrnmkIwCG1Ow==
+
+Name: com/hps/july/inventory/sessionbean/DocumentPreprocessorAccessBea
+ n.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: H9QrhnFkc/J9oZqplMHyLvPadB8=
+MD5-Digest: 6LMRFVVFIhJM/FGYfA472Q==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/FaultReportProcessorAccessBea
+ n.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ifERK3LcY/7H2ksozZ6aEhSAZz4=
+MD5-Digest: 6pKP/d/UjMN+q1H+nm9B4Q==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/DocumentPreprocessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: U+VUwZWyvBVP/ix9k7dy7bH9UUU=
+MD5-Digest: UvL0KQMexvwoAANbe8hEtg==
+
+Name: com/hps/july/inventory/sessionbean/I13nActProcessorAccessBean.ja
+ va
+Digest-Algorithms: SHA MD5
+SHA-Digest: Cy6X/s6kqR/nlRMiNHUapbwrSkk=
+MD5-Digest: HlI4Nc3eY7Rwq+GH+1LlmA==
+
+Name: com/hps/july/inventory/sessionbean/I13nActProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: e+WDO8kMMd6eN+O7dzDaBxtgGjo=
+MD5-Digest: QGjABGvHbEFMjSMZzHCMrA==
+
+Name: com/hps/july/inventory/sessionbean/DocumentPreprocessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: IlPJMSIS60tEN3x8uXcGszVSmeg=
+MD5-Digest: 8YNaH65PSPXt+Wx/52N+0A==
+
+Name: com/hps/july/inventory/sessionbean/CurrencySumProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: a9ul25E7uJWyh2KOVIQa+j/kbuE=
+MD5-Digest: V3vJ2LF++sFQnwYK16IzVQ==
+
+Name: com/hps/july/inventory/sessionbean/ContractSuppliesInfoBean.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: MAqECVdGx9cCd4RKvwsaKeqYH8o=
+MD5-Digest: MT9BnIie7nHhJrpr2FFvrg==
+
+Name: com/hps/july/inventory/sessionbean/AfsActProcessorAccessBean.jav
+ a
+Digest-Algorithms: SHA MD5
+SHA-Digest: MtNN5gl2VREa95HERffIerASmDo=
+MD5-Digest: WenoDfcGE+qIVggCZvPptg==
+
+Name: com/hps/july/inventory/sessionbean/ContractSuppliesInfoHome.java
+MD5-Digest: akgkPGgY1/Osedcd5rtWrQ==
+SHA-Digest: h5vAQC73zf3pHAqgWYXHoiNgVxI=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/inventory/sessionbean/DocumentProcessorBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9c7EzBbMzB4l+ZlAqv2/nZBca9U=
+MD5-Digest: aJuccBq9zr1Q1MgCJ+5gTA==
+
+Name: com/hps/july/inventory/sessionbean/RealDocumentProcessorHome.jav
+ a
+Digest-Algorithms: SHA MD5
+SHA-Digest: 49yqc5FzISpKAcocuP4o7MAWiV4=
+MD5-Digest: 9deCAAqYmX9Tp95HWdUQGQ==
+
+Name: com/hps/july/inventory/sessionbean/ContractSuppliesInfoAccessBea
+ n.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: OLHG8oi3vgDezS1c4CIqRUoHKfg=
+MD5-Digest: R9oaXbIWvWtr/B6p+nHEOQ==
+Java-Bean: True
+
+Name: META-INF/ejb-jar.xml
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7S4YPwswubJrjRFaXOY0+g+YMcg=
+MD5-Digest: DUsLeReXndIHV3mnl9gI+Q==
+
+Name: com/hps/july/inventory/sessionbean/ChangeActProcessorBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: VV8Dlf71YMAascICc3TJe7/S8p8=
+MD5-Digest: y7Z+jR/MdBRT0Sy7MH1Ttw==
+
+Name: com/hps/july/inventory/sessionbean/ContractSuppliesInfoHome.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: PVaY+i2F5WguHsYzYl3vkKE7roc=
+MD5-Digest: lusoopqLYLe1udsAcwm7fw==
+
+Name: com/hps/july/inventory/sessionbean/ContractFinderBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Vss1rvGsASBRxMFmqcKEkJlIllY=
+MD5-Digest: NOM66Y+43lShN31Jy3h0gw==
+
+Name: com/hps/july/inventory/sessionbean/ContractSuppliesInfoBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: zaTNTpOIkGo9g79Q9b6CHbgubZE=
+MD5-Digest: MdBELls+kRCZCXPWr6AyUA==
+
+Name: com/hps/july/inventory/sessionbean/InWayBillProcessorAccessBean.
+ java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ocNikZ+WmZG3nza1aBXyfhvxLWw=
+MD5-Digest: WEscBRRXdzj3eFWqi50mRg==
+
+Name: com/hps/july/inventory/sessionbean/DocumentProcessorHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: iMY6iQbh5xpBgodU3gRxK1yNA3o=
+MD5-Digest: zvGezVMimqCvGqdceCx2Cw==
+
+Name: META-INF/ibm-ejb-access-bean.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: fqnN8Qp5oP3LDp508YBg66LSR5c=
+MD5-Digest: ifUQLbSDotAf3k6GKZHqbQ==
+
+Name: com/hps/july/inventory/sessionbean/RealDocumentProcessorBean.jav
+ a
+Digest-Algorithms: SHA MD5
+SHA-Digest: xrBPxXdJYWwFtMQTx34uXZA+z9Y=
+MD5-Digest: jbYUf8aHq6OL1POsaJq/WA==
+
+Name: com/hps/july/inventory/sessionbean/ChangeActProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Ax3xyoL/6UuNv2ubOOyRrOTKpu0=
+MD5-Digest: X1JSOkCXusTshrrUh7zoZw==
+
+Name: com/hps/july/inventory/sessionbean/ChangeActProcessorHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0SquHkdsF40p76iZr7ChSx2+GX4=
+MD5-Digest: NBb/O8eCDa2LU0+YwKmMVg==
+
+Name: com/hps/july/inventory/sessionbean/ContractFinderHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: lfAWZCvr84KsjR7gFnY9j0G2f+4=
+MD5-Digest: 5TwoWtVuMoqCKzkptSg/yA==
+
+Name: com/hps/july/inventory/sessionbean/ProcessorFacade.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: l+Gr0yEj7JFLIduyJSbh1WhJPlI=
+MD5-Digest: lW8CCVlmIVGidK/FEJbLtQ==
+
+Name: com/hps/july/inventory/sessionbean/CurrencySumProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: eSRd7xQqOgKy4XW8e9DQQipAJHM=
+MD5-Digest: YtwpkQZUxojk/aJh6EA6nw==
+
+Name: com/hps/july/inventory/sessionbean/CurrencySumProcessorAccessBea
+ n.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: qmw6pljSLVDReWMU2pBPSuLqK6I=
+MD5-Digest: 6QrJnjxr5AKKYqxZ9nez8w==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/AfsActProcessorAccessBean.cla
+ ss
+Digest-Algorithms: SHA MD5
+SHA-Digest: +TkQIFQqaztfYzvJbPx40S17570=
+MD5-Digest: AODX3qXNAuqrLVHknr07bg==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/FaultReportProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: bx9n1X1gGB2NxfCGksWEmHdeWIk=
+MD5-Digest: OY21Yeme/5t1rLEhFAx2rw==
+
+Name: com/hps/july/inventory/sessionbean/AssemblingActProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: souYrJUw0Vekz1kmRJOznGC4Bg4=
+MD5-Digest: ZJvX3DIkBAaa1elZ4IS7gQ==
+
+Name: com/hps/july/inventory/sessionbean/FaultReportProcessorAccessBea
+ n.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: pBESYw63BjTKNCd+df+RzMkG60g=
+MD5-Digest: 5kGgiuNimIVrh0ww2yXx3A==
+
+Name: com/hps/july/inventory/sessionbean/RealDocumentProcessorAccessBe
+ an.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: F0GgUkgFL02bGQ36MRulD+2ES3k=
+MD5-Digest: Y7juWu7THPWra58dVIUmdw==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/DocumentPreprocessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: eZCQgkgL1IsPYEGpn981bvpB6s8=
+MD5-Digest: Sj4cVMWwQVKgofdqfhd5pw==
+
+Name: com/hps/july/inventory/sessionbean/CurrencySumProcessorAccessBea
+ n.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Joa0iZVh5GRW/+Oszica7yyr65Q=
+MD5-Digest: N6jMxikh0NFlif/0/9+lWQ==
+
+Name: com/hps/july/inventory/sessionbean/FaultReportProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2J2Jx4ORsr7s+gccmy/1QL5WZYw=
+MD5-Digest: LHWvP3QNc9Ww7rUNH5IMIA==
+
+Name: com/hps/july/inventory/sessionbean/AssemblingActProcessorHome.ja
+ va
+Digest-Algorithms: SHA MD5
+SHA-Digest: TYjJjk3B3XO17KwH7GF9PiGQLJk=
+MD5-Digest: 4aOvWUBw7/yvla7QIvAbLQ==
+
+Name: com/hps/july/inventory/sessionbean/ContractSuppliesInfoAccessBea
+ n.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: F6bwsDIh8/ZWeY+6PYqmnfhV6oc=
+MD5-Digest: WUZox+hsr8i/6orZ+ZNxBw==
+
+Name: com/hps/july/inventory/sessionbean/DocumentProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: g6RPpvgaHE7mDULyez/jicMUGg8=
+MD5-Digest: vebWVxRb/RSBv9hSH8PrwA==
+
+Name: com/hps/july/inventory/sessionbean/FaultReportProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: w0UtSI29U+WUOsjdVLVLigii9lA=
+MD5-Digest: Joy34ccbM7izeE7a9TezHA==
+
+Name: com/hps/july/inventory/sessionbean/ProcessorFacade.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1yZPp6yTZ3mR0+MqREJR22TcY+M=
+MD5-Digest: UOD3UDb4GHCywV0iFH+qxg==
+
+Name: com/hps/july/inventory/sessionbean/ContractFinderHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: bCzrPZXq+wUutpZwYkssuGsMsnk=
+MD5-Digest: h3+uERsnffokJ4bE4nwwJQ==
+
+Name: com/hps/july/inventory/sessionbean/PartyHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Uk/UjRRXQhtmmpwHDDjEKAaSIdM=
+MD5-Digest: hjYyeCaKCoKjmXiq5D+ezQ==
+
+Name: com/hps/july/inventory/sessionbean/DocumentPreprocessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: k/ZIkyBYtvKsaj5E3gcBZsr116o=
+MD5-Digest: CeYApsz3WluSF29G4sM4aw==
+
+Name: com/hps/july/inventory/sessionbean/AfsActProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: JwP4IAPQNznBdLzB2B72gw21NF0=
+MD5-Digest: Li12p9T1flyOgWbaqNtLhA==
+
+Name: com/hps/july/inventory/sessionbean/ContractSuppliesInfo.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: TFFcGY7HKksGTgk3uwxgAwCSOaw=
+MD5-Digest: R9xb6IUmOBr/ijINi14gAw==
+
+Name: com/hps/july/inventory/sessionbean/AssemblingActProcessorBean.ja
+ va
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0CEinpPAgNwRvinP8sDBdlU4w14=
+MD5-Digest: hnAHB2dMRP6SQ+wTDhYfoQ==
+
+Name: com/hps/july/inventory/sessionbean/FaultReportProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: V76ThkRxB+PLiwcStqnjzN3Nog8=
+MD5-Digest: 0jSSIRspz72uYxNpj0y1Zg==
+
+Name: com/hps/july/inventory/sessionbean/FaultReportProcessorBean.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: E+KAe3ohBTlxtgP48noV6DVTlF8=
+MD5-Digest: iyEd5c8jWWbCU2hkDywTLg==
+
+Name: com/hps/july/inventory/sessionbean/DocumentProcessorAccessBean.c
+ lass
+Digest-Algorithms: SHA MD5
+SHA-Digest: Rllx2AWSZhhs300g/xhzVcZH4JA=
+MD5-Digest: jOeelFCE0CreaWBqPoRoWA==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/ProcessorFacadeAccessBean.cla
+ ss
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4/tKYGQwddMNjm/YtJ2CIxg2Fcw=
+MD5-Digest: lPn68k+Wz6YNv64JFcEnow==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/ChangeActProcessorAccessBean.
+ class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Olx99AB5CV66nx2ITJrxc5IIwAY=
+MD5-Digest: xC211GIO16Nx/MAOErLlnA==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/ContractFinderBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: MmpAJApTG/w6dTFpGReVHJ5zslE=
+MD5-Digest: r2gdL/dAGIej8cjwSA4xiA==
+
+Name: com/hps/july/inventory/sessionbean/PartyBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Tofx/60rxAOW9/gl8Y21vtwPIpQ=
+MD5-Digest: NMVCWqKJbYe8m8Cko2osBw==
+
+Name: com/hps/july/inventory/sessionbean/AfsActProcessorBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: XI/ybr1NEqgiA5yEcgHN+NBeg64=
+MD5-Digest: cKyyR5csgolbp2SiCLJWkg==
+
+Name: com/hps/july/inventory/sessionbean/AfsActProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: uXD36aSCn11fYX2iFKylqsjwsV0=
+MD5-Digest: LabKlXSVK4+lfILi8JXYlw==
+
+Name: com/hps/july/inventory/sessionbean/PartyAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: EGxkaqnemn3lgeq/Khj96BIEcck=
+MD5-Digest: XqJwAGZFliZ8HuR1qDt1Gg==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/FaultReportProcessorHome.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: IfGqaudbrRpBODawHX6ri7atZoA=
+MD5-Digest: Qfvu2AZq5Wn9iYH6lx9l1w==
+
+Name: com/hps/july/inventory/sessionbean/InWayBillProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: fAn4bMRgxoexIKekGV/kW3xt+Js=
+MD5-Digest: cGeKA48HgPuoSV/skB0aOg==
+
+Name: com/hps/july/inventory/sessionbean/DocumentPreprocessorBean.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: AZdwNVIXBSeb0dJWodq5k1l/hwE=
+MD5-Digest: laa79+TX41cKbr9KPgD1HA==
+
+Name: com/hps/july/inventory/sessionbean/InWayBillProcessorBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2Ifmmk09Vhq/oWTvsY731nvJkLM=
+MD5-Digest: nS/bkSlQQRyA2w1TCOmyhQ==
+
+Name: com/hps/july/inventory/sessionbean/Party.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Kt5dR7oZP8teENEu1Qtgpxh98Lo=
+MD5-Digest: qAYciH5J3IeUVJRk2B3WnA==
+
+Name: com/hps/july/inventory/sessionbean/AfsActProcessorHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: dNKRUo2RkSjLoSZbVc2HX4pg5K0=
+MD5-Digest: 8peOQw+K/lpJAcmWCp2fiQ==
+
+Name: com/hps/july/inventory/sessionbean/I13nActProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: OJeFOpguOSUOR9B7Ko71RbZHeSU=
+MD5-Digest: mVUvCCcCWhTepaokD/HABA==
+
+Name: com/hps/july/inventory/sessionbean/InWayBillProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: YXWzmVD/F+EAZipTKbXLf/5znHw=
+MD5-Digest: O2V2hbyFmDgzdUtfF7Vmjg==
+
+Name: com/hps/july/inventory/sessionbean/ChangeActProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 78xrir9zlVndx7KFP8KwKc0Dsww=
+MD5-Digest: n92NggevXI9QDgDG3Trukg==
+
+Name: com/hps/july/inventory/sessionbean/AssemblingActProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: vRFIddemOwgxB3OpCP+fJnVmQAs=
+MD5-Digest: Y8hb3FgPxrFOM8xD8lC5qw==
+
+Name: com/hps/july/inventory/sessionbean/RealDocumentProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: K9a6VC8GWpD01S271XnJJBxZuyw=
+MD5-Digest: mgyZhSASWZQLxtA9cg52zQ==
+
+Name: com/hps/july/inventory/sessionbean/ChangeActProcessorAccessBean.
+ java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0nfgFiNIvxtA3lkJpXNBXWkz0iQ=
+MD5-Digest: f3rN7ApQjvmM/1yNu8D7tg==
+
+Name: com/hps/july/inventory/sessionbean/DocumentPreprocessorHome.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: CNBmPcDlM/2W4FyaGi2mPC73Fsk=
+MD5-Digest: cMvE3ONpQBR/Gdy4g2rZHA==
+
+Name: com/hps/july/inventory/sessionbean/DocumentProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7f30+cjPvhEsyVQgpIYihdxUkXk=
+MD5-Digest: 3TUJFMvG0vkfm1tp95sPPw==
+
+Name: com/hps/july/inventory/sessionbean/Party.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: CTejJohlfbPJgrU7AcdmhTYDbPo=
+MD5-Digest: SyZFNr8L5yLbK0RlUU4uzA==
+
+Name: com/hps/july/inventory/sessionbean/ProcessorFacadeBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: UFYwvbY1EsrcIR1zOMUCPg1ND/A=
+MD5-Digest: 0sma11bNCbGyaacbRAQJMA==
+
+Name: com/hps/july/inventory/sessionbean/InWayBillProcessorHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: R+YxaenfmlKsXHT7GeKuGXAdLD0=
+MD5-Digest: VygBMMd73BNFCwAmuGPibQ==
+
+Name: com/hps/july/inventory/sessionbean/AssemblingActProcessorBean.cl
+ ass
+Digest-Algorithms: SHA MD5
+SHA-Digest: vl9cLQ12Xcca6P9h8rBFcCq6gqs=
+MD5-Digest: Hx4kEgMfRPFulZUk2UNpYQ==
+
+Name: com/hps/july/inventory/sessionbean/I13nActProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: VCxlI5JVQPoZu3x0xzNEA6Jn12w=
+MD5-Digest: MHLQ2BCyHykK3AK6xTxbgA==
+
+Name: com/hps/july/inventory/sessionbean/CurrencySumProcessorBean.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: voEKg1lyN2Rrd/Py6PoyJnOX3Mg=
+MD5-Digest: FYBHJRYcZH5aYN2XVkpbyg==
+
+Name: com/hps/july/inventory/sessionbean/ChangeActProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: oh2+tzsL5FxHU0o1Opwzq/7r2fk=
+MD5-Digest: gDEOnI8k1zYNArkRT0CrGg==
+
+Name: com/hps/july/inventory/sessionbean/ContractFinderAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: lYkV3Vaq10dqJugnQWta7C8TTDo=
+MD5-Digest: r5C3v/rH1GkEmUZ+bbQGTg==
+
+Name: com/hps/july/inventory/sessionbean/ProcessorFacadeHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1tGdH8mzuH5hOLcVjo8qwmvnG3M=
+MD5-Digest: 2QtBvIU2WzfBEH1vydePPw==
+
+Name: com/hps/july/inventory/sessionbean/ContractFinder.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Hl2/cmP6dU/J3GR7fafdNEllPVA=
+MD5-Digest: XCas+2VIRyF82QLud61JHg==
+
+Name: com/hps/july/inventory/sessionbean/AssemblingActProcessorHome.cl
+ ass
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5DxSFaD9kZyUKSiFcIMAq499TVg=
+MD5-Digest: Vm/PzEeUJfqpNw8C0uvKAw==
+
+Name: com/hps/july/inventory/sessionbean/CurrencySumProcessorHome.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: fo7hqD5ZKVmzV5N2oCj1h6wP7Ss=
+MD5-Digest: ZLzbLTI6hTnQ/W3mEBjkhQ==
+
+Name: com/hps/july/inventory/sessionbean/InWayBillProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: HnStuZr22tJi0GOGVfNiOjGKqYg=
+MD5-Digest: VQ8DIllq44ydZ7cJYE0K6Q==
+
+Name: com/hps/july/inventory/sessionbean/AfsActProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: g7UQWXJAQak7hcF+mytgS/oM1CM=
+MD5-Digest: r0hArxkynF9Us82OQSOlHA==
+
+Name: com/hps/july/inventory/sessionbean/ContractFinder.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ssjNW38kieE7cU5LEBvoZ5qabdY=
+MD5-Digest: LCVzFBEdPVK13Tm4+NkzJg==
+
+Name: com/hps/july/inventory/sessionbean/RealDocumentProcessorAccessBe
+ an.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: IsaodMlkBzXl8Wq8LIiLxRR8TPU=
+MD5-Digest: A7drJHPXp+wp7Po302hjCw==
+
+Name: com/hps/july/inventory/sessionbean/DocumentProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: vCj5VWEO3ZRKLhIZLXABaPD+lJw=
+MD5-Digest: VAcEQ4kqveBG7wv5jAQ4TQ==
+
+Name: com/hps/july/inventory/sessionbean/CurrencySumProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: lG45IagegHn6jUbRj3fd5yBfdIc=
+MD5-Digest: VvvNZ84Ht3qUK7zGf/K12Q==
+
+Name: com/hps/july/inventory/sessionbean/RealDocumentProcessorBean.cla
+ ss
+Digest-Algorithms: SHA MD5
+SHA-Digest: +PCUt3TJU5H7QP8x0w20a8MM5IQ=
+MD5-Digest: rPDar7wfsGSQ7nxlIIVzhA==
+
+Name: com/hps/july/inventory/sessionbean/ProcessorFacadeAccessBean.jav
+ a
+Digest-Algorithms: SHA MD5
+SHA-Digest: mUZt/Pw4p5fWNx19AemCUI8Coho=
+MD5-Digest: IUFUBJPWWTIN07qOL9eLIA==
+
+Name: com/hps/july/inventory/sessionbean/AfsActProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: LP78Fl8vDNO/ATKG0wNtqHV5CCo=
+MD5-Digest: 5hpX769+aCojY1ndZYh4QA==
+
+Name: com/hps/july/inventory/sessionbean/I13nActProcessorAccessBean.cl
+ ass
+Digest-Algorithms: SHA MD5
+SHA-Digest: Qnmaq4p3wl5/r36moMPwnChc7Ns=
+MD5-Digest: qumLoRIxM4hJQ1pQMzohdA==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/DocumentProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: rDLVpamMe4r2kq0n1qCZOEF70o8=
+MD5-Digest: K4ZixMb2nYsYnBsZUY4ujw==
+
+Name: com/hps/july/inventory/sessionbean/AssemblingActProcessorAccessB
+ ean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: eQZp1u0QElyAZwhFNZzF1Ud5xTM=
+MD5-Digest: v7nIKWpxH62vUNisryRC5g==
+
+Name: com/hps/july/inventory/sessionbean/RealDocumentProcessorHome.cla
+ ss
+Digest-Algorithms: SHA MD5
+SHA-Digest: iNRfxjw+Xy0Y28xvV99mUyLImBs=
+MD5-Digest: LBbPPOOHiYo/Dmq3zTAyMg==
+
+Name: com/hps/july/inventory/sessionbean/DocumentPreprocessorAccessBea
+ n.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: t18XzcU5F5PbIiTlba+ySWwBMsY=
+MD5-Digest: chdes87+C9QsOk+EsHmCAg==
+
+Name: com/hps/july/inventory/sessionbean/InWayBillProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: HzQO+l9qyZXg1uvnsYCNR8QjlFo=
+MD5-Digest: ac+l+Yt3VHdkY1KfeGFI9Q==
+
+Name: com/hps/july/inventory/sessionbean/PartyAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: cPWRAMa1eyK0N7n9cK7QEG2feiU=
+MD5-Digest: Ven+J8jpNFHcC4ZxSD/c3Q==
+
+Name: com/hps/july/inventory/sessionbean/ChangeActProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: czrrnt3yeYkjVQk0EJ3at62KfeE=
+MD5-Digest: O8+bRULTuu0GLrLhh5FaeQ==
+
+Name: com/hps/july/inventory/sessionbean/PartyBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: aXC+BhYzYSVg/ibdRahJ9+b1MSM=
+MD5-Digest: yyctNoF7wYczBczIBdjmHw==
+
+Name: META-INF/ibm-ejb-jar-bnd.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5w/ZzimTpzndQkMx45Jka0YRtA8=
+MD5-Digest: SsFMgUiCbI2TJYioP1nyMA==
+
+Name: com/hps/july/inventory/sessionbean/RealDocumentProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: /6fV2JbAiUyqh80DJP9pXbQ/5Kg=
+MD5-Digest: iMT4T1kUGMNnpjQdJrKC1w==
+
+Name: com/hps/july/inventory/sessionbean/I13nActProcessorBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: RkGho5YXlKwC6oLvO3Ro+DQOdVE=
+MD5-Digest: 9I7it4c5jj9mh8XMLmu/UA==
+
+Name: com/hps/july/inventory/sessionbean/ContractFinderAccessBean.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: fWiQ+ieOQMQSu6+YLJ3vCGno+z8=
+MD5-Digest: 8A7Cvlrn1ciMj9fCMEpFag==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/AssemblingActProcessorAccessB
+ ean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: t531I4dTOtZ7lKId937XcetN/FM=
+MD5-Digest: j42pr6G7Tm8DuEezP9Y0gQ==
+Java-Bean: True
+
+Name: com/hps/july/inventory/sessionbean/ContractSuppliesInfo.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ijrPTh4C6+lSC27aqnkNXwW+taA=
+MD5-Digest: c0aV2W+DU9Hn5dTmGMAr1Q==
+
+Name: META-INF/ibm-ejb-jar-ext.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8Al8jDBKOhMRla00Oldiaix9E74=
+MD5-Digest: ataq0wV1e9xgBxE28MJPPw==
+
+Name: com/hps/july/inventory/sessionbean/I13nActProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: APSSl0sGe0WaneYr3UIKd/omWAg=
+MD5-Digest: dNclROZWaZzSDqZz/azUnQ==
+
+Name: com/hps/july/inventory/sessionbean/DocumentProcessorAccessBean.j
+ ava
+Digest-Algorithms: SHA MD5
+SHA-Digest: +65ZQ/VvYYItDVE5vybgtKquCg0=
+MD5-Digest: p6jpt+7bJO8Hl2cK1tOuTA==
+
+Name: com/hps/july/inventory/sessionbean/PartyHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: /qThTxpgnka7iSYVDYQYa3oclKw=
+MD5-Digest: 2mSm3ixKma/ZR4DBYs9Eug==
+
+Name: com/hps/july/inventory/sessionbean/ProcessorFacadeBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: aW4rYEDHBYxNkqW4EMlO3OGBcjo=
+MD5-Digest: BKMlDbLZUKuU7pmTrMLSEQ==
+
+Name: com/hps/july/inventory/sessionbean/I13nActProcessorHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: SQJZBlqODeXtqJvglo1XuyL4ZIQ=
+MD5-Digest: TzUq0CYeP5lYasUpJPfIGA==
+
+Name: com/hps/july/inventory/sessionbean/CurrencySumProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: uXSmkJCBxBD+H5OYATuQKBBIi3Q=
+MD5-Digest: /lmykTaqa+izT5mEYEC73g==
+
+Name: com/hps/july/inventory/sessionbean/InWayBillProcessorAccessBean.
+ class
+Digest-Algorithms: SHA MD5
+SHA-Digest: U84waXl4MQEcqshNLFWommgfaZI=
+MD5-Digest: Mjw7sO/Xt9e8xbnpRZfuHQ==
+Java-Bean: True
+

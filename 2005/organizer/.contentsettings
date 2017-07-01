@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentsettings>
+  <file jsp-content-type="text/html" jsp-language="java" path="WebContent/initProfile.jspf"/>
+  <file jsp-content-type="text/html" jsp-language="java" path="WebContent/organizerTree.jspf"/>
+  <file jsp-content-type="text/html" jsp-language="java"
+    jsp-page-encoding="ISO-8859-5" path="WebContent/graphMenu.jspf"/>
+</contentsettings>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationbnd:ApplicationBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applicationbnd="applicationbnd.xmi" xmi:id="ApplicationBinding_1132743083656">
+  <authorizationTable xmi:id="AuthorizationTable_1132743083656">
+    <authorizations xmi:id="RoleAssignment_1132743083656">
+      <specialSubjects xmi:type="applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1170415349119" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1132743083656"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132743083657">
+      <specialSubjects xmi:type="applicationbnd:Everyone" xmi:id="Everyone_1132743083656" name="Everyone"/>
+      <role href="META-INF/application.xml#SecurityRole_1132743083657"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147656">
+      <users xmi:id="User_1179411892468" name="dima"/>
+      <users xmi:id="User_1179411892469" name="ildar"/>
+      <users xmi:id="User_1179411892470" name="igor"/>
+      <users xmi:id="User_1179411892471" name="Administrator"/>
+      <role href="META-INF/application.xml#SecurityRole_1132838147656"/>
+      <groups xmi:id="Group_1179411892468" name="administrator"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147657">
+      <role href="META-INF/application.xml#SecurityRole_1132838147657"/>
+      <groups xmi:id="Group_1179411892469" name="ArendaMainEconomist"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147658">
+      <role href="META-INF/application.xml#SecurityRole_1132838147658"/>
+      <groups xmi:id="Group_1179411892470" name="ArendaEconomist"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147671">
+      <role href="META-INF/application.xml#SecurityRole_1132838147671"/>
+      <groups xmi:id="Group_1179411892471" name="ArendaMainManager"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147672">
+      <role href="META-INF/application.xml#SecurityRole_1132838147672"/>
+      <groups xmi:id="Group_1179411892472" name="ArendaManager"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147673">
+      <role href="META-INF/application.xml#SecurityRole_1132838147673"/>
+      <groups xmi:id="Group_1179411892473" name="ArendaDirector"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147674">
+      <role href="META-INF/application.xml#SecurityRole_1132838147674"/>
+      <groups xmi:id="Group_1179411892474" name="contractComposer"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147675">
+      <role href="META-INF/application.xml#SecurityRole_1132838147675"/>
+      <groups xmi:id="Group_1179411892475" name="contractController"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147687">
+      <role href="META-INF/application.xml#SecurityRole_1132838147687"/>
+      <groups xmi:id="Group_1179411892476" name="dictResAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147688">
+      <role href="META-INF/application.xml#SecurityRole_1132838147688"/>
+      <groups xmi:id="Group_1179411892477" name="dictResOperator"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147689">
+      <role href="META-INF/application.xml#SecurityRole_1132838147689"/>
+      <groups xmi:id="Group_1179411892478" name="dictPartAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147690">
+      <role href="META-INF/application.xml#SecurityRole_1132838147690"/>
+      <groups xmi:id="Group_1179411892479" name="dictPartOperator"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147691">
+      <role href="META-INF/application.xml#SecurityRole_1132838147691"/>
+      <groups xmi:id="Group_1179411892480" name="dictCurrateOperator"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147692">
+      <role href="META-INF/application.xml#SecurityRole_1132838147692"/>
+      <groups xmi:id="Group_1179411892481" name="siteExploitor"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147703">
+      <role href="META-INF/application.xml#SecurityRole_1132838147703"/>
+      <groups xmi:id="Group_1179411892482" name="siteTransport"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147704">
+      <users xmi:id="User_1179411892468" name="dima"/>
+      <role href="META-INF/application.xml#SecurityRole_1132838147704"/>
+      <groups xmi:id="Group_1179411892483" name="siteStation"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147705">
+      <role href="META-INF/application.xml#SecurityRole_1132838147705"/>
+      <groups xmi:id="Group_1179411892484" name="siteProjector"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147706">
+      <users xmi:id="User_1179411892468" name="dima"/>
+      <role href="META-INF/application.xml#SecurityRole_1132838147706"/>
+      <groups xmi:id="Group_1179411892485" name="TechStuff"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147707">
+      <role href="META-INF/application.xml#SecurityRole_1132838147707"/>
+      <groups xmi:id="Group_1179411892486" name="StorageManager"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147708">
+      <users xmi:id="User_1179411892468" name="dima"/>
+      <role href="META-INF/application.xml#SecurityRole_1132838147708"/>
+      <groups xmi:id="Group_1179411892487" name="siteLook"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147718">
+      <role href="META-INF/application.xml#SecurityRole_1132838147718"/>
+      <groups xmi:id="Group_1179411892488" name="planAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147719">
+      <role href="META-INF/application.xml#SecurityRole_1132838147719"/>
+      <groups xmi:id="Group_1179411892489" name="planResponsible"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147720">
+      <role href="META-INF/application.xml#SecurityRole_1132838147720"/>
+      <groups xmi:id="Group_1179411892490" name="supregAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147721">
+      <role href="META-INF/application.xml#SecurityRole_1132838147721"/>
+      <groups xmi:id="Group_1179411892491" name="regionAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147722">
+      <role href="META-INF/application.xml#SecurityRole_1132838147722"/>
+      <groups xmi:id="Group_1179411892492" name="planLook"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147723">
+      <role href="META-INF/application.xml#SecurityRole_1132838147723"/>
+      <groups xmi:id="Group_1179411892493" name="viewerPays"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147734">
+      <role href="META-INF/application.xml#SecurityRole_1132838147734"/>
+      <groups xmi:id="Group_1179411892494" name="lcsEditAllLicence"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147735">
+      <role href="META-INF/application.xml#SecurityRole_1132838147735"/>
+      <groups xmi:id="Group_1179411892495" name="lcsEditFAS"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147736">
+      <role href="META-INF/application.xml#SecurityRole_1132838147736"/>
+      <groups xmi:id="Group_1179411892496" name="lcsEditGPS"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147737">
+      <role href="META-INF/application.xml#SecurityRole_1132838147737"/>
+      <groups xmi:id="Group_1179411892497" name="lcsEditGASN"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147738">
+      <role href="META-INF/application.xml#SecurityRole_1132838147738"/>
+      <groups xmi:id="Group_1179411892498" name="lcsEditSES"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147739">
+      <role href="META-INF/application.xml#SecurityRole_1132838147739"/>
+      <groups xmi:id="Group_1179411892499" name="lcsEditElectro"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147740">
+      <role href="META-INF/application.xml#SecurityRole_1132838147740"/>
+      <groups xmi:id="Group_1179411892500" name="lcsEditLand"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147741">
+      <role href="META-INF/application.xml#SecurityRole_1132838147741"/>
+      <groups xmi:id="Group_1179411892501" name="lcsEditProperty"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147750">
+      <role href="META-INF/application.xml#SecurityRole_1132838147750"/>
+      <groups xmi:id="Group_1179411892502" name="dictStaffOperator"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132838147751">
+      <role href="META-INF/application.xml#SecurityRole_1132838147751"/>
+      <groups xmi:id="Group_1179411892503" name="adminTerrabyte"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132929055218">
+      <role href="META-INF/application.xml#SecurityRole_1132929055218"/>
+      <groups xmi:id="Group_1179411892504" name="electroCounterViewer"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132929055219">
+      <role href="META-INF/application.xml#SecurityRole_1132929055219"/>
+      <groups xmi:id="Group_1179411892505" name="electroCounterEditor"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132929055220">
+      <role href="META-INF/application.xml#SecurityRole_1132929055220"/>
+      <groups xmi:id="Group_1179411892506" name="FreqManager"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132929055234">
+      <role href="META-INF/application.xml#SecurityRole_1132929055234"/>
+      <groups xmi:id="Group_1179411892507" name="RegionCurator"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132929055235">
+      <role href="META-INF/application.xml#SecurityRole_1132929055235"/>
+      <groups xmi:id="Group_1179411892508" name="esnbsEditor"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132929055236">
+      <role href="META-INF/application.xml#SecurityRole_1132929055236"/>
+      <groups xmi:id="Group_1179411892509" name="esnbsViewer"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1132933721937">
+      <users xmi:id="User_1179411892469" name="ildar"/>
+      <users xmi:id="User_1179411892470" name="igor"/>
+      <users xmi:id="User_1179411892468" name="dima"/>
+      <role href="META-INF/application.xml#SecurityRole_1132933721937"/>
+      <groups xmi:id="Group_1179411892510" name="developer"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1134837827055">
+      <role href="META-INF/application.xml#SecurityRole_1134837827055"/>
+      <groups xmi:id="Group_1179411892511" name="rtsViewer"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1135327103765">
+      <role href="META-INF/application.xml#SecurityRole_1135327103765"/>
+      <groups xmi:id="Group_1179411892512" name="BSProjectUser"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1135327103766">
+      <role href="META-INF/application.xml#SecurityRole_1135327103766"/>
+      <groups xmi:id="Group_1179411892513" name="BSProjectAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1135327103767">
+      <role href="META-INF/application.xml#SecurityRole_1135327103767"/>
+      <groups xmi:id="Group_1179411892514" name="BSProjectManager"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1135327103768">
+      <role href="META-INF/application.xml#SecurityRole_1135327103768"/>
+      <groups xmi:id="Group_1179411892515" name="TSProjectUser"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1135327103781">
+      <role href="META-INF/application.xml#SecurityRole_1135327103781"/>
+      <groups xmi:id="Group_1179411892516" name="TSProjectAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1135327103782">
+      <role href="META-INF/application.xml#SecurityRole_1135327103782"/>
+      <groups xmi:id="Group_1179411892517" name="ChannelTSUser"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1135327103783">
+      <role href="META-INF/application.xml#SecurityRole_1135327103783"/>
+      <groups xmi:id="Group_1179411892518" name="ChannelTSAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1138031990031">
+      <role href="META-INF/application.xml#SecurityRole_1138031990031"/>
+      <groups xmi:id="Group_1179411892519" name="ArendaLawer"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1141918552218">
+      <role href="META-INF/application.xml#SecurityRole_1141918552218"/>
+      <groups xmi:id="Group_1179411892520" name="MSCEqpEdit"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1141918552234">
+      <role href="META-INF/application.xml#SecurityRole_1141918552234"/>
+      <groups xmi:id="Group_1179411892521" name="BSCEqpEdit"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1141918552235">
+      <role href="META-INF/application.xml#SecurityRole_1141918552235"/>
+      <groups xmi:id="Group_1179411892522" name="RepiterEqpEdit"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1141918552236">
+      <role href="META-INF/application.xml#SecurityRole_1141918552236"/>
+      <groups xmi:id="Group_1179411892523" name="ServiceEqpEdit"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1141918552237">
+      <role href="META-INF/application.xml#SecurityRole_1141918552237"/>
+      <groups xmi:id="Group_1179411892524" name="EquipmentLook"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1144339595000">
+      <role href="META-INF/application.xml#SecurityRole_1144339595000"/>
+      <groups xmi:id="Group_1179411892525" name="smssPermitEdit"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1144339595015">
+      <role href="META-INF/application.xml#SecurityRole_1144339595015"/>
+      <groups xmi:id="Group_1179411892526" name="smssPermitView"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1144339595016">
+      <role href="META-INF/application.xml#SecurityRole_1144339595016"/>
+      <groups xmi:id="Group_1179411892527" name="EditBank"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1158675598093">
+      <role href="META-INF/application.xml#SecurityRole_1158675598093"/>
+      <groups xmi:id="Group_1179411892528" name="RolloutBSAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1158675598094">
+      <role href="META-INF/application.xml#SecurityRole_1158675598094"/>
+      <groups xmi:id="Group_1179411892529" name="RolloutBSUser"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1168427416265">
+      <role href="META-INF/application.xml#SecurityRole_1168427416265"/>
+      <groups xmi:id="Group_1179411892530" name="ArendaPurchaser"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1168427416296">
+      <role href="META-INF/application.xml#SecurityRole_1168427416296"/>
+      <groups xmi:id="Group_1179411892531" name="ArendaAccountant"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1169039011937">
+      <role href="META-INF/application.xml#SecurityRole_1169039011937"/>
+      <groups xmi:id="Group_1179411892532" name="bscuser"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1169470010453">
+      <role href="META-INF/application.xml#SecurityRole_1169470010453"/>
+      <groups xmi:id="Group_1179411892533" name="confResOperator"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1169470010468">
+      <role href="META-INF/application.xml#SecurityRole_1169470010468"/>
+      <groups xmi:id="Group_1179411892534" name="confResAdmin"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1177419436671">
+      <role href="META-INF/application.xml#SecurityRole_1177419436671"/>
+      <groups xmi:id="Group_1179411892535" name="viewFKBS"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1177419436672">
+      <role href="META-INF/application.xml#SecurityRole_1177419436672"/>
+      <groups xmi:id="Group_1179411892536" name="editFKBS"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1179411892500">
+      <role href="META-INF/application.xml#SecurityRole_1179411892500"/>
+      <groups xmi:id="Group_1179411892537" name="CalcBSEquip"/>
+    </authorizations>
+  </authorizationTable>
+  <application href="META-INF/application.xml#Application_ID"/>
+</applicationbnd:ApplicationBinding>

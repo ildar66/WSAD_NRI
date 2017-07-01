@@ -1,0 +1,18 @@
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:accessbean="accessbean.xmi" xmlns:ejb="ejb.xmi">
+  <accessbean:EJBShadow xmi:id="EJBShadow_1" name="ArendaPlatinumProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaPlatinumProcessor"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_1" name="ArendaPlatinumProcessorAccessBean" package="com.hps.july.platinum.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_1" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaPlatinumProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_2" name="PlatinumProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#PlatinumProcessor"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_2" name="PlatinumProcessorAccessBean" package="com.hps.july.platinum.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_2" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#PlatinumProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+</xmi:XMI>

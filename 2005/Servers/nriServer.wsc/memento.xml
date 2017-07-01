@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webSphere-memento-map
+   CONFIG_MEMENTO_MAP_FILE_KEY_ID="WebSphere V5.1 Configuration Memento Map File"
+   CONFIG_NAME_KEY_ID="nriServer" server-type="14">
+   <memento-map>
+      <memento-map-entry key="julytrailcomEJB.jar" value="com.ibm.etools.server.j2ee.ejb20:julytrailcomEJB"/>
+      <memento-map-entry key="JulyJournalEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:JulyJournalEJB"/>
+      <memento-map-entry key="julypersistenceEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julypersistenceEJB"/>
+      <memento-map-entry key="julyConfigEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julyConfigEJB"/>
+      <memento-map-entry key="julyarendaEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julyarendaEJB"/>
+      <memento-map-entry key="basestation.war" value="com.ibm.etools.webtools.server:basestation"/>
+      <memento-map-entry key="security.war" value="com.ibm.etools.webtools.server:security"/>
+      <memento-map-entry key="julyjdbcEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julyjdbcEJB"/>
+      <memento-map-entry key="julyorganizerEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julyorganizerEJB"/>
+      <memento-map-entry key="inventory.war" value="com.ibm.etools.webtools.server:inventory"/>
+      <memento-map-entry key="julypersistence2EJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julypersistence2EJB"/>
+      <memento-map-entry key="siteinfo.war" value="com.ibm.etools.webtools.server:siteinfo"/>
+      <memento-map-entry key="dictionary.war" value="com.ibm.etools.webtools.server:dictionary"/>
+      <memento-map-entry key="julyplatinumEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julyplatinumEJB"/>
+      <memento-map-entry key="organizer.war" value="com.ibm.etools.webtools.server:organizer"/>
+      <memento-map-entry key="july" value="com.ibm.etools.server.j2ee.ear12:july"/>
+      <memento-map-entry key="julyarendabillingEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julyarendabillingEJB"/>
+      <memento-map-entry key="arenda.war" value="com.ibm.etools.webtools.server:arenda"/>
+      <memento-map-entry key="sitedoc.war" value="com.ibm.etools.webtools.server:sitedoc"/>
+      <memento-map-entry key="julyinventoryEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julyinventoryEJB"/>
+      <memento-map-entry key="julycommonEJB.jar" value="com.ibm.etools.server.j2ee.ejb11:julycommonEJB"/>
+   </memento-map>
+</webSphere-memento-map>

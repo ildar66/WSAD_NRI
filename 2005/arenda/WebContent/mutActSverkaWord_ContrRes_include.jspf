@@ -1,0 +1,50 @@
+<!-- AktSverkaContrRes SubReport -->
+<P>
+<B><bean:message key="label.mutactword.inDebtDog"/> &nbsp;<july:datewrite name="MutactWordPrintForm" property="sverkaContrRes.dateEndAkt"/></B><br>
+<B>
+     <%if(aform.getSverkaContrRes().getEndSumMainCurr().intValue() < 0) {%>
+<%--
+за&nbsp;<bean:write name="MutactWordPrintForm" property="sverkaContrRes.resName" filter="true"/>&nbsp;
+--%>
+<bean:write name="MutactWordPrintForm" property="sverkaContrRes.executor" filter="true"/>&nbsp;перед&nbsp;<bean:write name="MutactWordPrintForm" property="sverkaContrRes.customer" filter="true"/>&nbsp;<bean:message key="label.mutactword.sostavliaet"/>&nbsp;<br>
+     <%} else {%>
+<%--
+за&nbsp;<bean:write name="MutactWordPrintForm" property="sverkaContrRes.resName" filter="true"/>&nbsp;
+--%>
+<bean:write name="MutactWordPrintForm" property="sverkaContrRes.customer" filter="true"/>&nbsp;перед&nbsp;<bean:write name="MutactWordPrintForm" property="sverkaContrRes.executor" filter="true"/>&nbsp;<bean:message key="label.mutactword.sostavliaet"/>&nbsp;<br>
+     <%}%>
+</B>
+	 <%request.setAttribute("endSumMainCurr", aform.getSverkaContrRes().getEndSumMainCurr().abs());%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<july:numberwrite name="endSumMainCurr" fractdigits="2"/>&nbsp;
+<bean:write name="MutactWordPrintForm" property="sverkaContrRes.mainCurr" filter="true"/>
+     <%request.setAttribute("endNdsMainCurr", aform.getSverkaContrRes().getEndNdsMainCurr().abs());%>
+<logic:present name="MutactWordPrintForm" property="sverkaContrRes.endNdsMainCurr">
+   <logic:notEqual name="MutactWordPrintForm" property="sverkaContrRes.endNdsMainCurr" value="0">
+      <bean:message key="label.mutactword.nds"/> <july:numberwrite name="endNdsMainCurr" fractdigits="2"/>&nbsp;
+                 <bean:write name="MutactWordPrintForm" property="sverkaContrRes.mainCurr" filter="true"/>
+   </logic:notEqual> 
+</logic:present> 
+<P>
+<%--
+	 <%request.setAttribute("endSumDopCurr", aform.getSverkaContrRes().getEndSumDopCurr().abs());%>
+<july:numberwrite name="endSumDopCurr" fractdigits="2"/>&nbsp;<bean:write name="MutactWordPrintForm" property="sverkaContrRes.dopCurr" filter="true"/>
+     <%request.setAttribute("endNdsDopCurr", aform.getSverkaContrRes().getEndNdsDopCurr().abs());%>
+<logic:present name="MutactWordPrintForm" property="sverkaContrRes.endNdsDopCurr">
+   <logic:notEqual name="MutactWordPrintForm" property="sverkaContrRes.endNdsDopCurr" value="0">
+      <bean:message key="label.mutactword.nds"/> <july:numberwrite name="endNdsDopCurr" fractdigits="2"/>&nbsp;
+                 <bean:write name="MutactWordPrintForm" property="sverkaContrRes.dopCurr" filter="true"/>
+   </logic:notEqual> 
+</logic:present> 
+--%>
+
+<logic:present name="MutactWordPrintForm" property="sverkaContrRes.sumRubDifference">
+	<logic:notEqual name="MutactWordPrintForm" property="sverkaContrRes.sumRubDifference" value="0">
+<P><bean:message key="label.mutactword.summ_raznost"/> <july:numberwrite name="MutactWordPrintForm" property="sverkaContrRes.sumRubDifference" fractdigits="2"/>&nbsp;руб.
+	</logic:notEqual> 
+</logic:present>
+</P>
+    <%if(aform.getSverkaContrRes().getEndSumMainCurr().intValue() == 0) {%>
+<P>
+		В результате стороны претензий друг к другу не имеют 
+</P>
+	<%}%>

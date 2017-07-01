@@ -1,0 +1,26 @@
+<!-- MutualPayments Table -->
+<%
+	boolean suppressMutualPayments= (aform.getTable3().size()>0)?false:true;
+   	String orgpayer ="";
+   	String agent = "";
+   	maincurr ="";
+   	if(!suppressMutualPayments) {
+	    com.hps.july.arenda.valueobject.MutualPaymentsValueObject mpvo = (com.hps.july.arenda.valueobject.MutualPaymentsValueObject)aform.getTable3().get(0);
+		orgpayer = mpvo.getOrgPayer();
+		maincurr = mpvo.getMainCurr();
+		agent = mpvo.getAgent();
+        java.util.Iterator iter3 = aform.getTable3().iterator();
+		     while (iter3.hasNext()) {
+			   com.hps.july.arenda.valueobject.MutualPaymentsValueObject ob3
+				          = (com.hps.july.arenda.valueobject.MutualPaymentsValueObject )iter3.next();
+			   //request.setAttribute("ob3", ob3);
+			   if(!orgpayer.equals(ob3.getOrgPayer()) || !agent.equals(ob3.getAgent())) { %>
+			    <%@include file="mutActWord_MutualPayments_includeTable.jspf"%>
+    			<% 
+					orgpayer = ob3.getOrgPayer();
+					maincurr = ob3.getMainCurr();
+					agent = ob3.getAgent();
+	           }
+		     } %>
+			<%@include file="mutActWord_MutualPayments_includeTable.jspf"%>
+      <% } %>

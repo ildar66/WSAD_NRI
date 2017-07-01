@@ -1,0 +1,252 @@
+------Start of DE processing------ = [07.04.10 20:05:06:739 MSD] , key = java.sql.SQLException com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement 466
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement
+probeid = 466
+Stack Dump = java.sql.SQLException: ??????????? ???? BYTE ? TEXT ?????? ????? ROW ? COLLECTION.
+	at com.informix.util.IfxErrMsg.getSQLException(IfxErrMsg.java:355)
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3086)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executePrepare(IfxSqli.java:1082)
+	at com.informix.jdbc.IfxResultSet.executePrepare(IfxResultSet.java:182)
+	at com.informix.jdbc.IfxPreparedStatement.setupExecutePrepare(IfxPreparedStatement.java:197)
+	at com.informix.jdbc.IfxPreparedStatement.<init>(IfxPreparedStatement.java(Compiled Code))
+	at com.informix.jdbc.IfxSqliConnect.prepareStatement(IfxSqliConnect.java:1907)
+	at com.ibm.ejs.cm.cache.StatementCache.reallyPrepareStatement(StatementCache.java:250)
+	at com.ibm.ejs.cm.cache.StatementCache.prepareStatement(StatementCache.java:119)
+	at com.ibm.ejs.cm.pool.ConnectO.prepareStatement(ConnectO.java:2780)
+	at com.ibm.ejs.cm.pool.ConnectO.prepareStatement(ConnectO.java:2813)
+	at com.ibm.ejs.cm.proxy.ConnectionProxy.prepareStatement(ConnectionProxy.java:600)
+	at com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement(EJSJDBCPersister.java:963)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63.findByPrimaryKey(EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63.java:1232)
+	at com.hps.july.persistence.EJSCMPLeaseArendaAgreementNewHomeBean_f924af63.findByPrimaryKey(EJSCMPLeaseArendaAgreementNewHomeBean_f924af63.java:55)
+	at com.hps.july.persistence.EJSRemoteCMPLeaseArendaAgreementNewHome_f924af63.findByPrimaryKey(EJSRemoteCMPLeaseArendaAgreementNewHome_f924af63.java:66)
+	at com.hps.july.persistence._LeaseArendaAgreementNewHome_Stub.findByPrimaryKey(_LeaseArendaAgreementNewHome_Stub.java:237)
+	at com.hps.july.persistence.LeaseArendaAgreementNewAccessBean.instantiateEJB(LeaseArendaAgreementNewAccessBean.java:1351)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean._instantiate(AbstractEntityAccessBean.java:165)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean.refreshCopyHelper(AbstractEntityAccessBean.java:304)
+	at com.hps.july.persistence.LeaseArendaAgreementNewAccessBean.refreshCopyHelper(LeaseArendaAgreementNewAccessBean.java:1398)
+	at com.hps.july.arenda.actionbean.ShowHistoryListAction.perform(ShowHistoryListAction.java:36)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63
+com.hps.july.persistence.EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63@2fdb5df2
+
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement
+probeid = 466
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63
+  finderObject = null
+  genericFindInsertPoints[1] = {1245}
+  genericFindSqlString = SELECT T3.createdby, T3.modifiedby, T3.docdate, T3.docnumber, T3.leasedocument, T3.modified, T3.created, T3.operator, T3.regionid, T3.doctype, T2.reportperiod, T2.enddate, T2.contracttype, T2.summ1, T2.contractstate, T2.ratecalcruleday, T2.orgowner, T2.ratecalcrule, T2.dateclose, T2.ratedelta, T2.execname, T2.startdate, T2.extendperiod, T2.summ2, T2.chargends, T2.extendtype, T2.CustName, T2.docfilename, T2.changeenddate, T2.extendyears, T2.extendmonthes, T2.extenddays, T2.ratends, T2.nalogagent, T2.isratelimit, T2.ratelimitmin, T2.ratelimitmax, T2.buchdocnumber, T2.havedocsigned, T2.havedocsignedcustomer, T2.manager, T2.economist, T2.currency2, T2.currency1, T2.orgexecutor, T2.orgcustomer, T1.dogelectonum, T1.dogelectrodate, T1.numberofphones, T1.numberofphonestemp, T1.calcelectrotype, T1.mainleasedocument, T1.isactive, T1.isdogelectro, T1.officialdoc, T1.activecontract, T1.mainresource, T1.sumtrafic, T1.sumaccept, T1.sumpay, T1.needofficialdoc, T1.basestartdate, T1.baseenddate, T1.customerold, T1.haveioact, T1.ioactnumber, T1.ioactdate, T1.mainposition FROM leasearendaagrmnts  T1, leasedocuments  T3, leasecontracts  T2 WHERE T3.doctype = 'A' AND T2.leasedocument = T1.leasedocument AND T3.leasedocument = T2.leasedocument AND 
+  serObj = null
+  _loadForUpdateString = SELECT T3.createdby, T3.modifiedby, T3.docdate, T3.docnumber, T3.leasedocument, T3.modified, T3.created, T3.operator, T3.regionid, T3.doctype, T2.reportperiod, T2.enddate, T2.contracttype, T2.summ1, T2.contractstate, T2.ratecalcruleday, T2.orgowner, T2.ratecalcrule, T2.dateclose, T2.ratedelta, T2.execname, T2.startdate, T2.extendperiod, T2.summ2, T2.chargends, T2.extendtype, T2.CustName, T2.docfilename, T2.changeenddate, T2.extendyears, T2.extendmonthes, T2.extenddays, T2.ratends, T2.nalogagent, T2.isratelimit, T2.ratelimitmin, T2.ratelimitmax, T2.buchdocnumber, T2.havedocsigned, T2.havedocsignedcustomer, T2.manager, T2.economist, T2.currency2, T2.currency1, T2.orgexecutor, T2.orgcustomer, T1.dogelectonum, T1.dogelectrodate, T1.numberofphones, T1.numberofphonestemp, T1.calcelectrotype, T1.mainleasedocument, T1.isactive, T1.isdogelectro, T1.officialdoc, T1.activecontract, T1.mainresource, T1.sumtrafic, T1.sumaccept, T1.sumpay, T1.needofficialdoc, T1.basestartdate, T1.baseenddate, T1.customerold, T1.haveioact, T1.ioactnumber, T1.ioactdate, T1.mainposition FROM leasearendaagrmnts  T1, leasedocuments  T3, leasecontracts  T2 WHERE T3.doctype = 'A' AND T2.leasedocument = T1.leasedocument AND T3.leasedocument = T2.leasedocument AND T3.leasedocument = ? FOR UPDATE
+  _loadString = SELECT T3.createdby, T3.modifiedby, T3.docdate, T3.docnumber, T3.leasedocument, T3.modified, T3.created, T3.operator, T3.regionid, T3.doctype, T2.reportperiod, T2.enddate, T2.contracttype, T2.summ1, T2.contractstate, T2.ratecalcruleday, T2.orgowner, T2.ratecalcrule, T2.dateclose, T2.ratedelta, T2.execname, T2.startdate, T2.extendperiod, T2.summ2, T2.chargends, T2.extendtype, T2.CustName, T2.docfilename, T2.changeenddate, T2.extendyears, T2.extendmonthes, T2.extenddays, T2.ratends, T2.nalogagent, T2.isratelimit, T2.ratelimitmin, T2.ratelimitmax, T2.buchdocnumber, T2.havedocsigned, T2.havedocsignedcustomer, T2.manager, T2.economist, T2.currency2, T2.currency1, T2.orgexecutor, T2.orgcustomer, T1.dogelectonum, T1.dogelectrodate, T1.numberofphones, T1.numberofphonestemp, T1.calcelectrotype, T1.mainleasedocument, T1.isactive, T1.isdogelectro, T1.officialdoc, T1.activecontract, T1.mainresource, T1.sumtrafic, T1.sumaccept, T1.sumpay, T1.needofficialdoc, T1.basestartdate, T1.baseenddate, T1.customerold, T1.haveioact, T1.ioactnumber, T1.ioactdate, T1.mainposition FROM leasearendaagrmnts  T1, leasedocuments  T3, leasecontracts  T2 WHERE T3.doctype = 'A' AND T2.leasedocument = T1.leasedocument AND T3.leasedocument = T2.leasedocument AND T3.leasedocument = ?
+  _storeString = 
+    [0] = UPDATE leasearendaagrmnts  SET dogelectonum = ?, dogelectrodate = ?, numberofphones = ?, numberofphonestemp = ?, calcelectrotype = ?, mainleasedocument = ?, isactive = ?, isdogelectro = ?, officialdoc = ?, activecontract = ?, mainresource = ?, sumtrafic = ?, sumaccept = ?, sumpay = ?, needofficialdoc = ?, basestartdate = ?, baseenddate = ?, customerold = ?, haveioact = ?, ioactnumber = ?, ioactdate = ?, mainposition = ? WHERE leasedocument = ?
+    [1] = UPDATE leasecontracts  SET reportperiod = ?, enddate = ?, contracttype = ?, summ1 = ?, contractstate = ?, ratecalcruleday = ?, orgowner = ?, ratecalcrule = ?, dateclose = ?, ratedelta = ?, execname = ?, startdate = ?, extendperiod = ?, summ2 = ?, chargends = ?, extendtype = ?, CustName = ?, docfilename = ?, changeenddate = ?, extendyears = ?, extendmonthes = ?, extenddays = ?, ratends = ?, nalogagent = ?, isratelimit = ?, ratelimitmin = ?, ratelimitmax = ?, buchdocnumber = ?, havedocsigned = ?, havedocsignedcustomer = ?, manager = ?, economist = ?, currency2 = ?, currency1 = ?, orgexecutor = ?, orgcustomer = ? WHERE leasedocument = ?
+    [2] = UPDATE leasedocuments  SET createdby = ?, modifiedby = ?, docdate = ?, docnumber = ?, modified = ?, created = ?, operator = ?, regionid = ?, doctype = ? WHERE leasedocument = ?
+  _removeString = 
+    [0] = DELETE FROM leasearendaagrmnts  WHERE leasedocument = ?
+    [1] = DELETE FROM leasecontracts  WHERE leasedocument = ?
+    [2] = DELETE FROM leasedocuments  WHERE leasedocument = ?
+  _createString = 
+    [0] = INSERT INTO leasedocuments (leasedocument, createdby, modifiedby, docdate, docnumber, modified, created, operator, regionid, doctype) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    [1] = INSERT INTO leasecontracts (leasedocument, reportperiod, enddate, contracttype, summ1, contractstate, ratecalcruleday, orgowner, ratecalcrule, dateclose, ratedelta, execname, startdate, extendperiod, summ2, chargends, extendtype, CustName, docfilename, changeenddate, extendyears, extendmonthes, extenddays, ratends, nalogagent, isratelimit, ratelimitmin, ratelimitmax, buchdocnumber, havedocsigned, havedocsignedcustomer, manager, economist, currency2, currency1, orgexecutor, orgcustomer) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    [2] = INSERT INTO leasearendaagrmnts (leasedocument, dogelectonum, dogelectrodate, numberofphones, numberofphonestemp, calcelectrotype, mainleasedocument, isactive, isdogelectro, officialdoc, activecontract, mainresource, sumtrafic, sumaccept, sumpay, needofficialdoc, basestartdate, baseenddate, customerold, haveioact, ioactnumber, ioactdate, mainposition) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  class$com$ibm$ejs$persistence$EJSJDBCPersister = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@2dd2ddd8
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@23b0dd55
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@341b9dd6
+      soleInstance = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3cd4ddd6
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 47
+      clock = 47
+      pending = null
+      lock = java.lang.ref.Reference$Lock@49bd9dd7
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@26909dd6
+      referent = [Ljava.lang.reflect.Field;@51e35dc0
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@6c71dd5
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  supportsKeepUpdateLocks = false
+  supportsSelectForUpdate = true
+  intDSHelper = null
+  dshelperMetadata = null
+  dshelper = null
+  newDataSource = false
+  dbPassword = null
+  dbUser = null
+  dataSource = 
+    class$com$ibm$ejs$cm$JDBC1PhaseRF = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@61a71dc0
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.cm.JDBC1PhaseRF
+    class$com$ibm$ejs$cm$DataSourceImpl = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@6184ddc0
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc2 = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ws.runtime.runtime
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.cm.MBeans
+    attrs = com.ibm.ejs.cm.CMPropertiesImpl@64c45dcc
+    source = com.ibm.ejs.cm.pool.ConnectionPool@36271ddf
+    collab = 
+      class$com$ibm$ws$management$collaborator$DefaultRuntimeCollaborator = java.lang.Class@37a39dd6
+      bridge = null
+      runtimeObjName = cells/localhost/nodes/localhost/servers/server1/resources.xml#WAS40DataSource_1144741586767
+      runtimeObj = this.dataSource
+      tc = com.ibm.ejs.ras.TraceComponent@324a1ddd
+      class$com$ibm$websphere$management$RuntimeCollaborator = java.lang.Class@34505dd6
+      mbeanName = javax.management.ObjectName@12dd9dcc
+      modelMBean = javax.management.modelmbean.RequiredModelMBean@1edaddcc
+  jdbcDataSource = null
+  schemaName = null
+  home = com.hps.july.persistence.EJSCMPLeaseArendaAgreementNewHomeBean_f924af63@3d7a9dfd
+  cvThreadLocal = 
+    index = 14
+    count = 15
+    HASH_INCREMENT = 1640531527
+    nextHashCode = 1584028597
+    threadLocalHashCode = 1971305554
+  ivCMPWarningLogged = false
+  ivCMPAutoCommitWarningLogged = false
+  tc2 = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.resources.CONMMessages
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ejs.persistence.EJSJDBCPersister$DataStoreHelper
+  CLASS_NAME = com.ibm.ejs.persistence.EJSJDBCPersister
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.container.container
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ejs.persistence.EJSJDBCPersister
+

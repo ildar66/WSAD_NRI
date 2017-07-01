@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="countries" name="countries" comments="" primaryKey="c1427961">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="country" name="country">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1166627704515">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1166627704515" characterSet="800" length="30">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ccode" name="ccode">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1166627704515" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="c1427961" name="c1427961" members="country" constraint="SQLConstraint_1166627704515"/>
+  <constraints xmi:id="SQLConstraint_1166627704515" name="c1427961" type="PRIMARYKEY" primaryKey="c1427961"/>
+</RDBSchema:RDBTable>

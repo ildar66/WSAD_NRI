@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leasesaldo" name="leasesaldo" primaryKey="leasesaldo_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasecontract" name="leasecontract">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987187">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="saldate" name="saldate">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634987187">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987188">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="maincurrency" name="maincurrency">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987189">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="additionalcurrency" name="additionalcurrency" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987190">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="act" name="act" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987191">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="mainsum" name="mainsum">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987187" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="additionalsum" name="additionalsum" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987188" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="mainndssum" name="mainndssum">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987189" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="additionalndssum" name="additionalndssum" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987190" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="istemp" name="istemp">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987187" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="saldobyhand" name="saldobyhand">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987188" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="notes" name="notes" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987189" characterSet="800" length="255">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="msumcalc" name="msumcalc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987191" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="mndscalc" name="mndscalc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987192" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="asumcalc" name="asumcalc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987193" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="andscalc" name="andscalc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987194" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="operator" name="operator" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987192">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leasesaldo_1" name="leasesaldo" members="leasecontract saldate resource" constraint="SQLConstraint_1131634987187"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_salco_15236" name="fk_ref_salco_15236" members="leasecontract" constraint="SQLConstraint_1131634987188">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasecontracts.tblxmi#leasecontracts_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_36345_36345" name="FK_REF_36345_36345" members="act" constraint="SQLConstraint_1131634987189">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasemutualacts.tblxmi#leasemutualacts_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_36354_36354" name="FK_REF_36354_36354" members="additionalcurrency" constraint="SQLConstraint_1131634987190">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_currencies.tblxmi#currencies_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_SALRE_15350" name="FK_REF_SALRE_15350" members="resource" constraint="SQLConstraint_1131634987191">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resources.tblxmi#resources_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_SALCU_15373" name="FK_REF_SALCU_15373" members="maincurrency" constraint="SQLConstraint_1131634987192">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_currencies.tblxmi#currencies_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987187" name="leasesaldo" type="PRIMARYKEY" primaryKey="leasesaldo_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987188" name="fk_ref_salco_15236" type="FOREIGNKEY" referenceByKey="fk_ref_salco_15236"/>
+  <constraints xmi:id="SQLConstraint_1131634987189" name="FK_REF_36345_36345" type="FOREIGNKEY" referenceByKey="FK_REF_36345_36345"/>
+  <constraints xmi:id="SQLConstraint_1131634987190" name="FK_REF_36354_36354" type="FOREIGNKEY" referenceByKey="FK_REF_36354_36354"/>
+  <constraints xmi:id="SQLConstraint_1131634987191" name="FK_REF_SALRE_15350" type="FOREIGNKEY" referenceByKey="FK_REF_SALRE_15350"/>
+  <constraints xmi:id="SQLConstraint_1131634987192" name="FK_REF_SALCU_15373" type="FOREIGNKEY" referenceByKey="FK_REF_SALCU_15373"/>
+</RDBSchema:RDBTable>

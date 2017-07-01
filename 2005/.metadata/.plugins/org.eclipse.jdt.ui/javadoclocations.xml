@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javadoclocation>
+    <location_01
+        path="C:/Program Files/IBM/WebSphere Studio/eclipse/jre/lib/i18n.jar" url="http://java.sun.com/j2se/1.3/docs/api"/>
+    <location_01
+        path="C:/Program Files/IBM/WebSphere Studio/eclipse/jre/lib/rt.jar" url="http://java.sun.com/j2se/1.3/docs/api"/>
+    <location_01
+        path="C:/Program Files/IBM/WebSphere Studio/eclipse/jre/lib/ext/JawBridge.jar" url="http://java.sun.com/j2se/1.3/docs/api"/>
+    <location_01
+        path="C:/Program Files/IBM/WebSphere Studio/eclipse/jre/lib/ext/indicim.jar" url="http://java.sun.com/j2se/1.3/docs/api"/>
+</javadoclocation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="InventoryNumbers" name="InventoryNumbers" primaryKey="InventoryNumbers_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="serid" name="serid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986416">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="serprefix" name="serprefix">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986416" characterSet="800" length="3">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="serstart" name="serstart">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986417" characterSet="800" length="8">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="serend" name="serend">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986418" characterSet="800" length="8">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="serdate" name="serdate">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986416">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="serworker" name="serworker">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986417">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="InventoryNumbers_1" name="InventoryNumbers" members="serid" constraint="SQLConstraint_1131634986416"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_33925_33925" name="FK_REF_33925_33925" members="serworker" constraint="SQLConstraint_1131634986417">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#workers_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986416" name="InventoryNumbers" type="PRIMARYKEY" primaryKey="InventoryNumbers_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986417" name="FK_REF_33925_33925" type="FOREIGNKEY" referenceByKey="FK_REF_33925_33925"/>
+</RDBSchema:RDBTable>

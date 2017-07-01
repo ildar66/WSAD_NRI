@@ -1,0 +1,464 @@
+.wait-container .wait-message {
+	font-family : Arial, MS Sans Serif, Tahoma, Verdana, sans-serif;
+	font-size : 12px;
+    border : 1px solid #000000 ;
+    background-color : #54849E ;
+    width : 150px ;
+    heigth : 40px ;
+}
+
+body {
+    padding : 0px ;
+    margin : 0px ;
+    width : 100% ;
+    height : 100% ;
+}
+body,p,ul,ol,li,dl,textarea,input,select,td,a{
+	font-family : Arial, MS Sans Serif, Tahoma, Verdana, sans-serif;
+	font-size : 12px;
+	color : #000000;
+}
+.b1 {
+    width : 100% ;
+    height : 100% ;
+    background-repeat : repeat-y ;
+}
+.t1 {
+    background-repeat : repeat-x ;
+}
+.t2 {
+    white-space : nowrap ;
+    background-repeat : repeat-x ;
+    vertical-align : top ;
+    position : relative ;
+    height : 34px ;
+    overflow : hidden ;
+}
+.t22 {
+    display : inline ;
+}
+.t22 table {
+    display : inline ;
+}
+.t22 img {
+    display : block ;
+}
+.t21 {
+    background-repeat : no-repeat ;
+    position : absolute ;
+    display : inline ;
+    height : 32px ;
+    width : 550px ;
+}
+.t21 table {
+    display : inline ;
+}
+.t21 {
+    padding-top : 5px ;
+}
+.t21 td {
+    font-size : 10px ;
+    font-weight : normal ;
+}
+.t21 td span {
+    padding : 0px 5px ;
+}
+.t21 img {
+    width : 1px ;
+    height : 20px ;
+}
+.t21 td.selected {
+    background-repeat : repeat-x ;
+}
+.t21 a, .t21 a:hover {
+	font-size : 10px;
+	text-decoration : none;
+}
+.t21 a { color : #000000; }
+.t21 a:hover { color : #990033; }
+.m1 {
+    width : 100% ;
+}
+.m1 th, .m1 td {
+    text-align : left ;
+    vertical-align : top ;
+}
+.m1 th {
+    width : 235px ;
+    text-align : left ;
+    vertical-align : top ;
+}
+.m11 th {
+    width : 24px ;
+}
+.m11 th, .m11 td {
+    vertical-align : top ;
+}
+.m11 td td {
+    vertical-align : auto ;
+}
+.mapButtons, .mapNavigator {
+    background-color : #CDD9E0 ;
+    padding : 5px ;
+}
+.btnContainer {
+    position : relative ;
+}
+.mapButtons .btnContainer img {
+    width : 16px ;
+    height : 16px ;
+}
+.btnContainer img {
+    display : block ;
+    border-width : 0px ;
+}
+.btnContainer span {
+    padding : 0px ;
+    margin : 0px ;
+}
+.btnContainer div.shadow {
+    padding : 4px ;
+}
+
+a .button {
+    position : absolute ;
+    top : 0px ;
+    left : 0px ;
+    z-index : 1 ;
+    padding : 4px ;
+    cursor : hand ;
+}
+
+div.map {
+    border : 1px solid #A7B0E0 ;
+    position : relative ;
+    overflow : hidden ;
+}
+div.map img {
+    position : relative ;
+}
+div.zone {
+    position : absolute ;
+    border : 2px solid red ;
+}
+div.zone img {
+    width : 100% ;
+    height : 100% ;
+}
+
+.panel, .vpanel {
+    width : 100% ;
+    height : 100% ;
+}
+.vpanel td {
+    vertical-align : middle ;
+}
+#mapImage {
+    visibility : hidden ;
+}
+
+.mapNavigator div.cell {
+    width : 100% ;
+    height : 100% ;
+    padding : 0px ;
+    margin : 0px ;
+    position : relative ;
+}
+.mapNavigator .btnContainer {
+    position : absolute ;
+    z-index : 1 ;
+}
+
+.mapNavigator .tl { top : 0px ; left : 0px ; }
+.mapNavigator .tr { top : 0px ; left : 3px ; }
+.mapNavigator .bl { top : 3px ; left : 0px ; }
+.mapNavigator .br { top : 3px ; left : 3px ; }
+
+.leftPanel {
+    padding : 5px ;
+    height : 400px ;
+    background-repeat : repeat-y ;
+}
+.carList {
+    border : 1px solid #000000 ;
+    background-color : #FFFFFF ;
+    height : 120px ;
+    width : 200px ;
+    overflow : auto ;
+}
+.carList .itemContainer a {
+    text-decoration : none ;
+    font-weight : normal ;
+    font-family : MS Sans Serif, Tahoma, Verdana, Arial, sans-serif ;
+    font-size : 10px ;
+    color : #000000 ;
+}
+.carList .itemContainer .item {
+    padding : 2px ;
+}
+
+input.day, input.dayNotValid,
+input.month, input.monthNotValid {
+    width : 20px ;
+}
+input.year, input.yearNotValid {
+    width : 40px ;
+}
+
+.leftPanel .ctrlForm {
+    width : 200px ;
+}
+.ctrlLine, .ctrlLine * {
+    white-space : nowrap ;
+}
+.ctrlLine table {
+    width : 100% ;
+}
+.ctrlLine table th {
+    text-align : left ;
+    width : 99% ;
+}
+.ctrlLine table td {
+    text-align : right ;
+    width : 1% ;
+}
+.ctrlLine input,
+.ctrlLine input.NotValid {
+    margin-right : 3px ;
+    border : 1px solid #000000 ;
+    background-color : #FFFFFF ;
+    font-family : MS Sans Serif, Tahoma, Verdana, Arial, sans-serif ;
+    font-size : 10px ;
+    color : #000000 ;
+}
+.ctrlLine .textButtonContainer a {
+    text-decoration : none ;
+    font-weight : normal ;
+    font-family : MS Sans Serif, Tahoma, Verdana, Arial, sans-serif ;
+    font-size : 8px ;
+    color : #000000 ;
+}
+.ctrlLine .textButtonContainer a * {
+    font-family : MS Sans Serif, Tahoma, Verdana, Arial, sans-serif ;
+    font-size : 8px ;
+}
+
+.leftPanel .separator {
+    height : 5px ;
+}
+
+.pointList {
+    border : 1px solid #000000 ;
+    background-color : #FFFFFF ;
+    height : 240px ;
+    width : 200px ;
+    overflow : auto ;
+}
+.pointList .itemContainer a {
+    text-decoration : none ;
+    font-weight : normal ;
+    font-family : MS Sans Serif, Tahoma, Verdana, Arial, sans-serif ;
+    font-size : 10px ;
+    color : #000000 ;
+}
+.pointList .itemContainer a * {
+    font-family : MS Sans Serif, Tahoma, Verdana, Arial, sans-serif ;
+    font-size : 10px ;
+    font-weight : normal ;
+    color : #000000 ;
+}
+.pointList .itemContainer .item table {
+}
+.pointList .itemContainer .item table td {
+    font-family : MS Sans Serif, Tahoma, Verdana, Arial, sans-serif ;
+    font-size : 10px ;
+    font-weight : normal ;
+    color : #000000 ;
+    text-align : left ;
+}
+.pointList .itemContainer .item table td.position,
+.pointList .itemContainer .item table td.time,
+.pointList .itemContainer .item .name {
+    vertical-align : middle ;
+}
+.pointList .itemContainer .item table td.position,
+.pointList .itemContainer .item table td.time {
+    text-align : center ;
+    padding-left : 2px ;
+    padding-right : 2px ;
+}
+.pointList .itemContainer .item table td.position { width : 10px ; border-right : 1px solid #000000 ; }
+.pointList .itemContainer .item table td.time { width : 30px ; border-right : 1px solid #000000 ; }
+.pointList .itemContainer .item {
+    padding : 2px ;
+}
+.pointList .itemContainer .item .name div {
+    width : 130px ;
+    height : 13px ;
+    line-height : 13px ;
+    overflow : hidden ;
+    white-space : nowrap ;
+    padding-left : 2px ;
+}
+
+iframe.pointLoad {
+    position : absolute ;
+    visibility : hidden ;
+}
+
+
+form {
+    padding : 0px ;
+    margin : 0px ;
+    display : inline ;
+}
+
+div.map img.lastPoint,
+div.map img.direction {
+    position : absolute ;
+    visibility : hidden ;
+    z-index : 2 ;
+    filter : alpha(opacity=70);
+    -moz-opacity : 0.7 ;
+}
+div.map img.direction {
+    width : 29px ;
+    height : 29px ;
+}
+div.map img.lastPoint {
+    width : 16px ;
+    height : 16px ;
+}
+
+#zoomScaleContainer {
+    padding-left : 5px ;
+}
+table.zoomScale {
+    padding : 0px ;
+    margin : 0px ;
+}
+table.zoomScale td, table.zoomScale th {
+    padding : 2px ;
+    margin : 0px ;
+    text-align : center ;
+    vertical-align : middle ;
+}
+table.zoomScale th {
+    width : 10px ;
+}
+table.zoomScale td {
+    border : 1px solid #54849E ;
+    background-color : #CDD9E0 ;
+}
+table.zoomScale td.selected {
+    border : 1px solid #CDD9E0 ;
+    background-color : #54849E ;
+}
+table.zoomScale td input {
+    cursor : hand ;
+}
+table.zoomScale td input,
+table.zoomScale td img {
+    width : 6px ;
+    height : 9px ;
+}
+
+.frontStub {
+    position : absolute ;
+    visibility : hidden ;
+    zIndex : -1 ;
+    top : 0px ;
+    left : 0px ;
+    width : 50px ;
+    height : 50px ;
+    text-align : center ;
+    vertical-align : middle ;
+}
+.frontStub img {
+    width : 100% ;
+    height : 100% ;
+    cursor : wait ;
+}
+.frontStub div.frame {
+    width : 300px ;
+    height : 80px ;
+}
+
+div.frame {
+    border : 2px solid #8498A4 ;
+    background-color : #CDD9E0 ;
+    position : absolute ;
+    top : 0px ;
+    left : 0px ;
+}
+div.frame div.title {
+    height : 20px ;
+    line-height : 20px ;
+    text-align : left ;
+    background-color : #ADB9C0 ;
+}
+div.frame div.title label {
+    padding-left : 5px ;
+}
+div.frame div.body {
+    height : 40px ;
+    width : 100% ;
+    line-height : 20px ;
+    text-align : left ;
+    overflow : auto ;
+}
+div.frame div.body label {
+    font-size : 12px ;
+    line-height : 12px ;
+    display : block ;
+}
+div.frame div.body label.failed {
+    color : red ;
+}
+div.frame div.body label.ok {
+    color : green ;
+}
+div.frame div.status {
+    height : 20px ;
+    line-height : 20px ;
+    text-align : left ;
+    background-color : #ADB9C0 ;
+}
+
+iframe.askLastFrame {
+    position : absolute ;
+    visibility : hidden ;
+    top : 0px ;
+    left : 0px ;
+}
+
+div.frame div.body {
+}
+div.frame div.body div.sliderFrame {
+    height : 20px ;
+    line-height : 20px ;
+    border : 1px solid #000000 ;
+    position : relative ;
+    margin : 10px ;
+    overflow : hidden ;
+    text-align : center ;
+}
+div.frame div.body div.sliderFrame div.slider {
+    position : absolute ;
+    width : 50px ;
+    height : 20px ;
+    line-height : 20px ;
+    top : 0px ;
+    left : 0px ;
+    background-color : #63ABDC ;
+    z-index : 1 ;
+}
+div.frame div.body div.sliderFrame label {
+    height : 20px ;
+    line-height : 15px ;
+    font-size : 12px ;
+    font-weight : bold ;
+    color : #FF0000 ;
+    z-index : 2 ;
+    visibility : hidden ;
+}

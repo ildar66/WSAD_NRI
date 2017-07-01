@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leasepay2bill" name="leasepay2bill" primaryKey="leasepay2bill_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasemutualact" name="leasemutualact">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986266">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasecontract" name="leasecontract">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986267">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="summusd" name="summusd">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986266" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="flagworkpie" name="flagworkpie">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986266" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="record_status" name="record_status">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986267" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leasepay2bill_1" name="leasepay2bill" members="leasemutualact leasecontract" constraint="SQLConstraint_1131634986266"/>
+  <constraints xmi:id="SQLConstraint_1131634986266" name="leasepay2bill" type="PRIMARYKEY" primaryKey="leasepay2bill_1"/>
+</RDBSchema:RDBTable>

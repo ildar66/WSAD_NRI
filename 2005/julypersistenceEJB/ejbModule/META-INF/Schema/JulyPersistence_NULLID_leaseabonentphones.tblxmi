@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leaseabonentphones" name="leaseabonentphones" primaryKey="leaseabonentphones_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasedocument" name="leasedocument">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986937">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="phonenumber" name="phonenumber">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986937" characterSet="800" length="30">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="phonestatus" name="phonestatus" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986938" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="netstandard" name="netstandard" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986939" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="imsi" name="imsi" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986940" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ben" name="ben" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986938">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_3"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leaseabonentphones_1" name="leaseabonentphones" members="leasedocument phonenumber" constraint="SQLConstraint_1131634986937"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_31041_31041" name="FK_REF_31041_31041" members="leasedocument" constraint="SQLConstraint_1131634986938">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leaseabonentban.tblxmi#leaseabonentban_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986937" name="leaseabonentphones" type="PRIMARYKEY" primaryKey="leaseabonentphones_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986938" name="FK_REF_31041_31041" type="FOREIGNKEY" referenceByKey="FK_REF_31041_31041"/>
+</RDBSchema:RDBTable>

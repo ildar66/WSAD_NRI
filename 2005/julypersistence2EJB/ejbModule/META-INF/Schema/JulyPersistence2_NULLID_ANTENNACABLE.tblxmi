@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ANTENNACABLE" name="ANTENNACABLE" primaryKey="PK_ANTENNACABLE">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLERES" name="CABLERES">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340078">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDANTEN" name="IDANTEN">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340079">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDCABLE" name="IDCABLE">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340080">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LENCABLE" name="LENCABLE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1170331340078" precision="18" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GROUNDCNT" name="GROUNDCNT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340081">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GROUNDRESOURCE" name="GROUNDRESOURCE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340082">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_ANTENNACABLE" name="PK_ANTENNACABLE" members="IDCABLE" constraint="SQLConstraint_1170331340078"/>
+  <constraints xmi:id="SQLConstraint_1170331340078" name="PK_ANTENNACABLE" type="PRIMARYKEY" primaryKey="PK_ANTENNACABLE"/>
+</RDBSchema:RDBTable>

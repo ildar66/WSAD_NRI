@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="rrl_hops2" name="rrl_hops2" primaryKey="rrl_hops2_1">
+  <database href="META-INF/Schema/JulyTrailcom.dbxmi#JulyTrailcom"/>
+  <schema href="META-INF/Schema/JulyTrailcom_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="hopsid" name="hopsid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594449">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="Azimuth" name="Azimuth" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594449" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="type_hw" name="type_hw" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131645594449" characterSet="800" length="12">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="diam_a" name="diam_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594450" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="height_a" name="height_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594451" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="frequency_a1" name="frequency_a1" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594452" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="frequency_a2" name="frequency_a2" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594453" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="power_a" name="power_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594454" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="signal_calc_a" name="signal_calc_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594455" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="signal_real_a" name="signal_real_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594456" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="cable_rrl_a" name="cable_rrl_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594457" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="cable_power_a" name="cable_power_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594458" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="cable_2mb_a" name="cable_2mb_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594459" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="comment_a" name="comment_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131645594450" characterSet="800" length="64">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="accumid_a" name="accumid_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594450">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="diam_b" name="diam_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594460" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="height_b" name="height_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594461" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="frequency_b1" name="frequency_b1" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594462" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="frequency_b2" name="frequency_b2" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594463" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="power_b" name="power_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594464" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="signal_calc_b" name="signal_calc_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594465" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="signal_real_b" name="signal_real_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594466" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="cable_rrl_b" name="cable_rrl_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594467" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="cable_power_b" name="cable_power_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594468" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="cable_2mbr_b" name="cable_2mbr_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594469" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="comment_b" name="comment_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131645594451" characterSet="800" length="64">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="accumid_b" name="accumid_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594451">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="file_shortnumber" name="file_shortnumber" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594452">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="file_number" name="file_number" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594453">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="number_in_file" name="number_in_file" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594454">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="frequency_a_doc" name="frequency_a_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594470" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="frequency_b_doc" name="frequency_b_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594471" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="diam_a_doc" name="diam_a_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594472" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="height_a_doc" name="height_a_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594473" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="diam_b_doc" name="diam_b_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594474" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="height_b_doc" name="height_b_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594475" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource_doc" name="resource_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594459">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="power_doc" name="power_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594476" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="speed_doc" name="speed_doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131645594459" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="azimuthAB_Doc" name="azimuthAB_Doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594477" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="azimuthBA_Doc" name="azimuthBA_Doc" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594478" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="comment_doc" name="comment_doc" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131645594459" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="diam2_a" name="diam2_a" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594479" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="diam2_b" name="diam2_b" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131645594480" precision="20" scale="10">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="capacity" name="capacity" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594460">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sfonumber" name="sfonumber" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131645594460" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="rrl_hops2_1" name="rrl_hops2" members="hopsid" constraint="SQLConstraint_1131645594459"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_129094_1290" name="FK_REF_129094_1290" members="hopsid" constraint="SQLConstraint_1131645594460">
+    <target href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hops_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131645594459" name="rrl_hops2" type="PRIMARYKEY" primaryKey="rrl_hops2_1"/>
+  <constraints xmi:id="SQLConstraint_1131645594460" name="FK_REF_129094_1290" type="FOREIGNKEY" referenceByKey="FK_REF_129094_1290"/>
+</RDBSchema:RDBTable>

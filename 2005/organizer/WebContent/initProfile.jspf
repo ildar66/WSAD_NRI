@@ -1,0 +1,12 @@
+
+<%
+    Profile profile = (Profile)request.getSession().getAttribute(Profile.PROFILE);
+    String userName = request.getRemoteUser();
+    if (profile == null && userName != null) {
+        profile = new Profile(userName);
+        request.getSession().setAttribute(Profile.PROFILE, profile);
+        //update profile
+		ProcessProfile pp = new ProcessProfile();
+        pp.loadProfile(profile);
+    }
+%>

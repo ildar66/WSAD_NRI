@@ -1,0 +1,63 @@
+Manifest-Version: 1.0
+
+Name: com/hps/july/jdbcpersistence/EnvironmentAccessBean.class
+MD5-Digest: eDCYDNARVFEcpKm5dsuB5Q==
+SHA-Digest: lAu+00/KEN0a9D1vc2EFsQDkpuU=
+Digest-Algorithms: SHA MD5
+Java-Bean: True
+
+Name: META-INF/ibm-ejb-jar-ext.xmi
+MD5-Digest: hYiI5Yn7XGvmAtT4zZEVPQ==
+SHA-Digest: 1mNQ4Gs2Pfe8PDr/eiwzGuLaI2s=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/jdbcpersistence/EnvironmentAccessBean.java
+MD5-Digest: hcSjDgc5zr7WFy5HwE7OXQ==
+SHA-Digest: YksLATEbvunr+bcPjA0gTiIAjio=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/jdbcpersistence/EnvironmentHome.class
+MD5-Digest: fqQYcQdcfoh6TSY0QrMOxg==
+SHA-Digest: gYOzRVH5oo03+oiNDrLWrN3Oge8=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/jdbcpersistence/EnvironmentBean.java
+MD5-Digest: gf7tq6EleNmGwuwjAalzUg==
+SHA-Digest: zFXtfRV4xXvcDvDmnDdM3KCHu5I=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/jdbcpersistence/Environment.java
+MD5-Digest: hrf74icZESzMso7K4XrzSQ==
+SHA-Digest: HZzYTyWFwoDFY2V+atL/gwH73EM=
+Digest-Algorithms: SHA MD5
+
+Name: META-INF/ejb-jar.xml
+SHA-Digest: cB4R9NfZ8wYFHvlXC4hqbgXXk4o=
+Digest-Algorithms: SHA MD5
+MD5-Digest: hKlE2FxT01HUUdAxSvwmuQ==
+
+Name: com/hps/july/jdbcpersistence/EnvironmentBean.class
+MD5-Digest: anf1qk4tksg+OJ7ETrNZUw==
+SHA-Digest: l+AM2KAcHrrsHOvROwwqD2rBc5k=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/jdbcpersistence/Environment.class
+MD5-Digest: mRjHlQl3wECMxCyLQzhNug==
+SHA-Digest: zwQlKk09EVsLThJId5t0JgUtDfc=
+Digest-Algorithms: SHA MD5
+
+Name: META-INF/ibm-ejb-access-bean.xmi
+MD5-Digest: 2x1zco2AT1T9mAVG4ZN0Ow==
+SHA-Digest: P5DBMp/evpv6KzO7nckS0Q/wIkY=
+Digest-Algorithms: SHA MD5
+
+Name: META-INF/ibm-ejb-jar-bnd.xmi
+MD5-Digest: nuLwBIiZtPKgY++ReD+1DQ==
+SHA-Digest: F33EXShCg0IM9hDiuufVK8Ja7sQ=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/jdbcpersistence/EnvironmentHome.java
+MD5-Digest: bkNwSljJRPxYVtteKn8mrA==
+SHA-Digest: Jni1Zx+aanO5Iiznbp1PPw3BKgA=
+Digest-Algorithms: SHA MD5
+

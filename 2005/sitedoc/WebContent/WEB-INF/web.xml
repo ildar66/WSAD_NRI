@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+   <web-app id="WebApp_1">
+      <display-name>july-sitedoc</display-name>
+      <servlet id="Servlet_1">
+         <servlet-name>action</servlet-name>
+         <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+         <init-param id="InitParam_1">
+            <param-name>application</param-name>
+            <param-value>com.hps.july.sitedoc.ApplicationResources</param-value>
+         </init-param>
+         <init-param id="InitParam_2">
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/struts-config.xml</param-value>
+         </init-param>
+         <init-param id="InitParam_3">
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+         </init-param>
+         <init-param id="InitParam_4">
+            <param-name>detail</param-name>
+            <param-value>0</param-value>
+         </init-param>
+         <init-param id="InitParam_5">
+            <param-name>validate</param-name>
+            <param-value>true</param-value>
+         </init-param>
+         <init-param id="InitParam_6">
+            <param-name>nocache</param-name>
+            <param-value>true</param-value>
+         </init-param>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet-mapping id="ServletMapping_1">
+         <servlet-name>action</servlet-name>
+         <url-pattern>*.do</url-pattern>
+      </servlet-mapping>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-template.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-template.tld</taglib-location>
+	</taglib>
+      <taglib>
+         <taglib-uri>/WEB-INF/july.tld</taglib-uri>
+         <taglib-location>/WEB-INF/july.tld</taglib-location>
+      </taglib>
+      <taglib>
+         <taglib-uri>/WEB-INF/alex1.tld</taglib-uri>
+         <taglib-location>/WEB-INF/alex1.tld</taglib-location>
+      </taglib>
+      <security-constraint id="SecurityConstraint_1">
+         <web-resource-collection id="WebResourceCollection_1">
+            <web-resource-name>protresource</web-resource-name>
+            <url-pattern>/main.do</url-pattern>
+            <url-pattern>/ShowSiteDocList.do</url-pattern>
+            <url-pattern>/EditSiteDoc.do</url-pattern>
+            <url-pattern>/OpenFile.do</url-pattern>
+            <url-pattern>/ShowRegionDocuments.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_1">
+            <description>protected:+:</description>
+            <role-name>AllAuthenticated</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_1">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_2">
+         <web-resource-collection id="WebResourceCollection_2">
+            <web-resource-name>protdict</web-resource-name>
+            <url-pattern>/ProcessSiteDoc.do</url-pattern>
+            <url-pattern>/ShowSiteDocTypeList.do</url-pattern>
+            <url-pattern>/EditSiteDocType.do</url-pattern>
+            <url-pattern>/ProcessSiteDocType.do</url-pattern>
+            <url-pattern>/ShowPositionList.do</url-pattern>
+            <url-pattern>/ShowEquipmentList.do</url-pattern>
+            <url-pattern>/ProcessEquipmentList.do</url-pattern>
+            <url-pattern>/ProcessComlineList.do</url-pattern>
+            <url-pattern>/ProcessPositionList.do</url-pattern>
+            <url-pattern>/DeleteObject.do</url-pattern>
+            <url-pattern>/DeleteObjectList.do</url-pattern>
+            <url-pattern>/DeleteSiteDocFileList.do</url-pattern>
+            <url-pattern>/EditSiteDocFile.do</url-pattern>
+            <url-pattern>/ProcessSiteDocFile.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_2">
+            <description>protected:+:</description>
+            <role-name>administrator</role-name>
+            <role-name>supregAdmin</role-name>
+            <role-name>regionAdmin</role-name>
+            <role-name>siteProjector</role-name>
+            <role-name>TechStuff</role-name>
+            <role-name>siteStation</role-name>
+            <role-name>siteTransport</role-name>
+            <role-name>planResponsible</role-name>
+            <role-name>planAdmin</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_2">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_3">
+         <web-resource-collection id="WebResourceCollection_3">
+            <web-resource-name>main</web-resource-name>
+            <url-pattern>/Login.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_3">
+            <description>public:+:</description>
+            <role-name>Everyone</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_3">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <login-config id="LoginConfig_1">
+         <auth-method>FORM</auth-method>
+         <form-login-config id="FormLoginConfig_1">
+            <form-login-page>/Login.do</form-login-page>
+            <form-error-page>/error.jsp</form-error-page>
+         </form-login-config>
+      </login-config>
+      <security-role id="SecurityRole_1">
+         <role-name>Everyone</role-name>
+      </security-role>
+      <security-role id="SecurityRole_2">
+         <role-name>AllAuthenticated</role-name>
+      </security-role>
+      <security-role id="SecurityRole_3">
+         <role-name>administrator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_4">
+         <role-name>siteExploitor</role-name>
+      </security-role>
+      <security-role id="SecurityRole_5">
+         <role-name>siteTransport</role-name>
+      </security-role>
+      <security-role id="SecurityRole_6">
+         <role-name>siteStation</role-name>
+      </security-role>
+      <security-role id="SecurityRole_7">
+         <role-name>siteProjector</role-name>
+      </security-role>
+      <security-role id="SecurityRole_8">
+         <role-name>ArendaManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_9">
+         <role-name>siteLook</role-name>
+      </security-role>
+      <security-role id="SecurityRole_10">
+         <role-name>contractComposer</role-name>
+      </security-role>
+      <security-role id="SecurityRole_11">
+         <role-name>contractControler</role-name>
+      </security-role>
+      <security-role id="SecurityRole_12">
+         <role-name>dictResAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_13">
+         <role-name>dictResOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_14">
+         <role-name>dictPartAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_15">
+         <role-name>dictPartOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_16">
+         <role-name>dictCurrateOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_17">
+         <role-name>ArendaMainEconomist</role-name>
+      </security-role>
+      <security-role id="SecurityRole_18">
+         <role-name>ArendaEconomist</role-name>
+      </security-role>
+      <security-role id="SecurityRole_19">
+         <role-name>ArendaMainManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_20">
+         <role-name>TechStuff</role-name>
+      </security-role>
+      <security-role id="SecurityRole_21">
+         <role-name>StorageManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_22">
+         <role-name>supregAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_23">
+         <role-name>regionAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_24">
+         <role-name>planLook</role-name>
+      </security-role>
+      <security-role id="SecurityRole_25">
+         <role-name>planResponsible</role-name>
+      </security-role>
+      <security-role id="SecurityRole_26">
+         <role-name>planAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_27">
+         <role-name>ArendaDirector</role-name>
+      </security-role>
+      <security-role id="SecurityRole_28">
+         <role-name>FreqManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_29">
+         <role-name>RegionCurator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_30">
+         <role-name>dictStaffOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_31">
+         <role-name>electroCounterViewer</role-name>
+      </security-role>
+      <security-role id="SecurityRole_32">
+         <role-name>electroCounterEditor</role-name>
+      </security-role>
+      <security-role id="SecurityRole_33">
+         <role-name>viewerPays</role-name>
+      </security-role>
+      <security-role id="SecurityRole_34">
+         <role-name>lcsEditAllLicence</role-name>
+      </security-role>
+      <security-role id="SecurityRole_35">
+         <role-name>lcsEditFAS</role-name>
+      </security-role>
+      <security-role id="SecurityRole_36">
+         <role-name>lcsEditGPS</role-name>
+      </security-role>
+      <security-role id="SecurityRole_37">
+         <role-name>lcsEditGASN</role-name>
+      </security-role>
+      <security-role id="SecurityRole_38">
+         <role-name>lcsEditSES</role-name>
+      </security-role>
+      <security-role id="SecurityRole_39">
+         <role-name>lcsEditElectro</role-name>
+      </security-role>
+      <security-role id="SecurityRole_40">
+         <role-name>lcsEditLand</role-name>
+      </security-role>
+      <security-role id="SecurityRole_41">
+         <role-name>lcsEditProperty</role-name>
+      </security-role>
+      <ejb-ref id="EjbRef_2">
+         <ejb-ref-name>EquipmentSet</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.EquipmentSetHome</home>
+         <remote>com.hps.july.persistence.EquipmentSet</remote>
+         <ejb-link>EquipmentSet</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_3">
+         <ejb-ref-name>BaseStation</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.BaseStationHome</home>
+         <remote>com.hps.july.persistence.BaseStation</remote>
+         <ejb-link>BaseStation</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_4">
+         <ejb-ref-name>ComEquipment</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ComEquipmentHome</home>
+         <remote>com.hps.july.persistence.ComEquipment</remote>
+         <ejb-link>ComEquipment</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_5">
+         <ejb-ref-name>Controller</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ControllerHome</home>
+         <remote>com.hps.july.persistence.Controller</remote>
+         <ejb-link>Controller</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_6">
+         <ejb-ref-name>Switch</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SwitchHome</home>
+         <remote>com.hps.july.persistence.Switch</remote>
+         <ejb-link>Switch</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_7">
+         <ejb-ref-name>OtherEquipment</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OtherEquipmentHome</home>
+         <remote>com.hps.july.persistence.OtherEquipment</remote>
+         <ejb-link>OtherEquipment</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_8">
+         <ejb-ref-name>Position</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PositionHome</home>
+         <remote>com.hps.july.persistence.Position</remote>
+         <ejb-link>Position</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_9">
+         <ejb-ref-name>NetZone</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.NetZoneHome</home>
+         <remote>com.hps.july.persistence.NetZone</remote>
+         <ejb-link>NetZone</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_15">
+         <ejb-ref-name>Environment</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.jdbcpersistence.EnvironmentHome</home>
+         <remote>com.hps.july.jdbcpersistence.Environment</remote>
+         <ejb-link>Environment</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_18">
+         <ejb-ref-name>Antenna</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AntennaHome</home>
+         <remote>com.hps.july.persistence.Antenna</remote>
+         <ejb-link>Antenna</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_19">
+         <ejb-ref-name>Sector</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SectorHome</home>
+         <remote>com.hps.july.persistence.Sector</remote>
+         <ejb-link>Sector</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_20">
+         <ejb-ref-name>AntennaResource</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AntennaResourceHome</home>
+         <remote>com.hps.july.persistence.AntennaResource</remote>
+         <ejb-link>AntennaResource</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_21">
+         <ejb-ref-name>AntennaResourceBand</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AntennaResourceBandHome</home>
+         <remote>com.hps.july.persistence.AntennaResourceBand</remote>
+         <ejb-link>AntennaResourceBand</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_22">
+         <ejb-ref-name>AntennaWorkBand</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AntennaWorkBandHome</home>
+         <remote>com.hps.july.persistence.AntennaWorkBand</remote>
+         <ejb-link>AntennaWorkBand</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_24">
+         <ejb-ref-name>CableResource</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.CableResourceHome</home>
+         <remote>com.hps.july.persistence.CableResource</remote>
+         <ejb-link>CableResource</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_25">
+         <ejb-ref-name>Operator</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OperatorHome</home>
+         <remote>com.hps.july.persistence.Operator</remote>
+         <ejb-link>Operator</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_27">
+         <ejb-ref-name>Antena2sector</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.Antena2sectorHome</home>
+         <remote>com.hps.july.persistence.Antena2sector</remote>
+         <ejb-link>Antena2sector</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_28">
+         <ejb-ref-name>SiteDoc</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SiteDocHome</home>
+         <remote>com.hps.july.persistence.SiteDoc</remote>
+         <ejb-link>SiteDoc</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_29">
+         <ejb-ref-name>Sitedoc2Splace</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.Sitedoc2SplaceHome</home>
+         <remote>com.hps.july.persistence.Sitedoc2Splace</remote>
+         <ejb-link>Sitedoc2Splace</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_30">
+         <ejb-ref-name>SiteDocFile</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SiteDocFileHome</home>
+         <remote>com.hps.july.persistence.SiteDocFile</remote>
+         <ejb-link>SiteDocFile</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_31">
+         <ejb-ref-name>SiteDocFileBLOB</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SiteDocFileBLOBHome</home>
+         <remote>com.hps.july.persistence.SiteDocFileBLOB</remote>
+         <ejb-link>SiteDocFileBLOB</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_32">
+         <ejb-ref-name>SiteDocType</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SiteDocTypeHome</home>
+         <remote>com.hps.july.persistence.SiteDocType</remote>
+         <ejb-link>SiteDocType</ejb-link>
+      </ejb-ref>
+   </web-app>

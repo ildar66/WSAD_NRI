@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="equipmanufacturers" name="equipmanufacturers" comments="" primaryKey="c0729591">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="manufid" name="manufid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1178280603515">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1178280603515" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="shortname" name="shortname">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1178280603516" characterSet="800" length="50">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="equipcatalog" name="equipcatalog" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1178280603517" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="officialsite" name="officialsite" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1178280603515" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="comment" name="comment">
+    <type xmi:type="RDBSchema:SQLCharacterLargeObject" xmi:id="SQLCharacterLargeObject_1178280603515" characterSet="800" length="2" multiplier="K">
+      <originatingType xmi:type="RDBSchema:SQLCharacterLargeObject" href="INFORMIX_V92_Primitives.xmi#SQLCharacterLargeObject_3"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="c0729591" name="c0729591" members="manufid" constraint="SQLConstraint_1178280603515"/>
+  <constraints xmi:id="SQLConstraint_1178280603515" name="c0729591" type="PRIMARYKEY" primaryKey="c0729591"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="storages" name="storages" primaryKey="storages_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="storageplace" name="storageplace">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986536">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="pstnphone" name="pstnphone" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986536" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="internalphone" name="internalphone" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986537" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="regionid" name="regionid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986537">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="storages_1" name="storages" members="storageplace" constraint="SQLConstraint_1131634986536"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1044_1044" name="fk_ref_1044_1044" members="storageplace" constraint="SQLConstraint_1131634986537">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_storageplaces.tblxmi#storageplaces_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986536" name="storages" type="PRIMARYKEY" primaryKey="storages_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986537" name="fk_ref_1044_1044" type="FOREIGNKEY" referenceByKey="fk_ref_1044_1044"/>
+</RDBSchema:RDBTable>

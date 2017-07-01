@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp"/>
+  <resRefBindings xmi:id="ResourceRefBinding_1154076048412" jndiName="jms/DefaultMailQueue">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1154076048412"/>
+  </resRefBindings>
+  <resRefBindings xmi:id="ResourceRefBinding_1154076048422" jndiName="jms/DefaultMailQCF">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1154076048422"/>
+  </resRefBindings>
+  <resRefBindings xmi:id="ResourceRefBinding_1154076048432" jndiName="julysec">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1154076048432"/>
+  </resRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708859" jndiName="com/hps/july/persistence/NamedValue">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1132927708859"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708875" jndiName="com/hps/july/persistence/People">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_2"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708876" jndiName="com/hps/july/persistence/Operators2Roles">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_8"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708877" jndiName="com/hps/july/persistence/SuperRegionAcc">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_25"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708878" jndiName="com/hps/july/persistence/RegionAcc">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_26"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708879" jndiName="com/hps/july/persistence/SuperRegion">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_27"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708880" jndiName="com/hps/july/persistence/Region">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_28"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708881" jndiName="com/hps/july/commonbean/KeyGenerator">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_16"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708882" jndiName="com/hps/july/persistence/Company">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708883" jndiName="com/hps/july/persistence/Division">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_3"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708884" jndiName="com/hps/july/persistence/Direction">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_4"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708885" jndiName="com/hps/july/persistence/Service">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_5"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708886" jndiName="com/hps/july/persistence/Group">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_6"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708887" jndiName="com/hps/july/persistence/Operator">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_9"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708888" jndiName="com/hps/july/persistence/Organization">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_10"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708889" jndiName="com/hps/july/persistence/Role">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_12"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708890" jndiName="com/hps/july/persistence/Task">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_13"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708891" jndiName="com/hps/july/persistence/Worker">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_14"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708892" jndiName="com/hps/july/persistence/WorkPosition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_15"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708893" jndiName="com/hps/july/persistence/Roles2Tasks">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_7"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1132927708894" jndiName="com/hps/july/persistence/Car">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_29"/>
+  </ejbRefBindings>
+</webappbnd:WebAppBinding>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="changeslog" name="changeslog" primaryKey="changeslog_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="logid" name="logid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986456">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="recdate" name="recdate">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1131634986456" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="objtype" name="objtype">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986457">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="objid" name="objid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986458">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="eventtype" name="eventtype">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986456" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="man" name="man">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986459">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="changeslog_1" name="changeslog" members="logid" constraint="SQLConstraint_1131634986456">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_changeslogdetails.tblxmi#FK_REF_67976_67976"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_67980_67980" name="FK_REF_67980_67980" members="man" constraint="SQLConstraint_1131634986457">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_people.tblxmi#people_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986456" name="changeslog" type="PRIMARYKEY" primaryKey="changeslog_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986457" name="FK_REF_67980_67980" type="FOREIGNKEY" referenceByKey="FK_REF_67980_67980"/>
+</RDBSchema:RDBTable>

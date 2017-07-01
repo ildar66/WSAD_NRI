@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="pie_paysplatinum" name="pie_paysplatinum" primaryKey="pie_paysplatinum_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="idpayplatinum" name="idpayplatinum">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986356" characterSet="800" length="30">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="iddogovornri" name="iddogovornri">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986356">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="summ" name="summ">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986356" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="summnds" name="summnds">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986357" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="valute" name="valute">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986357">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="summrub" name="summrub">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986358" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sumndsrub" name="sumndsrub">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986359" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="date" name="date">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986356">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="flagworknri" name="flagworknri">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986357" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="purposepay" name="purposepay" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634986356" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="paystateplatinum" name="paystateplatinum">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986358" characterSet="800" length="30">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docnumber" name="docnumber">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986359" characterSet="800" length="30">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docposition" name="docposition" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986358">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="recordstatus" name="recordstatus">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986360" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="owner" name="owner">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986359">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pie_paysplatinum_1" name="pie_paysplatinum" members="idpayplatinum owner" constraint="SQLConstraint_1131634986356">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_pie_payslink.tblxmi#FK_REF_49199_49199"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986356" name="pie_paysplatinum" type="PRIMARYKEY" primaryKey="pie_paysplatinum_1"/>
+</RDBSchema:RDBTable>

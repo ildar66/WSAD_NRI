@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Binding">
+  <defaultDatasource xmi:id="ResourceRefBinding_1132238374942" jndiName="july"/>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="AbonBillpos2docpos_Binding" jndiName="com/hps/july/persistence/AbonBillpos2docpos">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AbonBillpos2docpos"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AbonentBill_Binding" jndiName="com/hps/july/persistence/AbonentBill">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AbonentBill"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AbonentBillPos_Binding" jndiName="com/hps/july/persistence/AbonentBillPos">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AbonentBillPos"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AbonentPayment_Binding" jndiName="com/hps/july/persistence/AbonentPayment">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AbonentPayment"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AbonPays2docpos_Binding" jndiName="com/hps/july/persistence/AbonPays2docpos">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AbonPays2docpos"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Account_Binding" jndiName="com/hps/july/persistence/Account">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Account"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1143312871636" jndiName="ejb/com/hps/july/persistence/BankHome">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1143312871636"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="AfsMountAct_Binding" jndiName="com/hps/july/persistence/AfsMountAct">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsMountAct"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AfsMountPos_Binding" jndiName="com/hps/july/persistence/AfsMountPos">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsMountPos"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AgregateContent_Binding" jndiName="com/hps/july/persistence/AgregateContent">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AgregateContent"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Antena2sector_Binding" jndiName="com/hps/july/persistence/Antena2sector">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Antena2sector"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Antenna_Binding" jndiName="com/hps/july/persistence/Antenna">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Antenna"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AntennaResource_Binding" jndiName="com/hps/july/persistence/AntennaResource">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaResource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AntennaResourceBand_Binding" jndiName="com/hps/july/persistence/AntennaResourceBand">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaResourceBand"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AntennaWorkBand_Binding" jndiName="com/hps/july/persistence/AntennaWorkBand">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaWorkBand"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AssemblingAct_Binding" jndiName="com/hps/july/persistence/AssemblingAct">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AssemblingAct"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="BaseAgreement_Binding" jndiName="com/hps/july/persistence/BaseAgreement">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BaseAgreement"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="BaseStation_Binding" jndiName="com/hps/july/persistence/BaseStation">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BaseStation"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="BaseStationResource_Binding" jndiName="com/hps/july/persistence/BaseStationResource">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BaseStationResource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="CableResource_Binding" jndiName="com/hps/july/persistence/CableResource">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableResource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="CableResourceBand_Binding" jndiName="com/hps/july/persistence/CableResourceBand">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableResourceBand"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Car_Binding" jndiName="com/hps/july/persistence/Car">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Car"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="CardTrack_Binding" jndiName="com/hps/july/persistence/CardTrack">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CardTrack"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ChanalPower_Binding" jndiName="com/hps/july/persistence/ChanalPower">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ChanalPower"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ChangeAct_Binding" jndiName="com/hps/july/persistence/ChangeAct">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ChangeAct"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ChangeActPosition_Binding" jndiName="com/hps/july/persistence/ChangeActPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ChangeActPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ChangeLog_Binding" jndiName="com/hps/july/persistence/ChangeLog">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ChangeLog"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ChangeLogDetails_Binding" jndiName="com/hps/july/persistence/ChangeLogDetails">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ChangeLogDetails"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ComEquipment_Binding" jndiName="com/hps/july/persistence/ComEquipment">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ComEquipment"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Company_Binding" jndiName="com/hps/july/persistence/Company">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Company"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Complect_Binding" jndiName="com/hps/july/persistence/Complect">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Complect"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Contract_Binding" jndiName="com/hps/july/persistence/Contract">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Contract"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ContractBLOB_Binding" jndiName="com/hps/july/persistence/ContractBLOB">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContractBLOB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ContractPosition_Binding" jndiName="com/hps/july/persistence/ContractPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContractPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ContrAddInfo_Binding" jndiName="com/hps/july/persistence/ContrAddInfo">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContrAddInfo"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Controller_Binding" jndiName="com/hps/july/persistence/Controller">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Controller"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ContrParams_Binding" jndiName="com/hps/july/persistence/ContrParams">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ContrParams"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Currency_Binding" jndiName="com/hps/july/persistence/Currency">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Currency"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Department_Binding" jndiName="com/hps/july/persistence/Department">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Department"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Direction_Binding" jndiName="com/hps/july/persistence/Direction">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Direction"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Division_Binding" jndiName="com/hps/july/persistence/Division">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Division"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Document_Binding" jndiName="com/hps/july/persistence/Document">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Document"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="DocumentAction_Binding" jndiName="com/hps/july/persistence/DocumentAction">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#DocumentAction"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="DocumentPosition_Binding" jndiName="com/hps/july/persistence/DocumentPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#DocumentPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="DocumentsLink_Binding" jndiName="com/hps/july/persistence/DocumentsLink">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#DocumentsLink"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="DopInfoLPayment_Binding" jndiName="com/hps/july/persistence/DopInfoLPayment">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#DopInfoLPayment"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EquipmentSet_Binding" jndiName="com/hps/july/persistence/EquipmentSet">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipmentSet"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Expedition_Binding" jndiName="com/hps/july/persistence/Expedition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Expedition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="FaultReport_Binding" jndiName="com/hps/july/persistence/FaultReport">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FaultReport"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Group_Binding" jndiName="com/hps/july/persistence/Group">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="I13nAct_Binding" jndiName="com/hps/july/persistence/I13nAct">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#I13nAct"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="I13nActPosition_Binding" jndiName="com/hps/july/persistence/I13nActPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#I13nActPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="I13nActResourceSet_Binding" jndiName="com/hps/july/persistence/I13nActResourceSet">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#I13nActResourceSet"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="I13nDateSaving_Binding" jndiName="com/hps/july/persistence/I13nDateSaving">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#I13nDateSaving"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="IBPMountPos_Binding" jndiName="com/hps/july/persistence/IBPMountPos">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#IBPMountPos"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ImportRecord_Binding" jndiName="com/hps/july/persistence/ImportRecord">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ImportRecord"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ImportSession_Binding" jndiName="com/hps/july/persistence/ImportSession">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ImportSession"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ImportTask_Binding" jndiName="com/hps/july/persistence/ImportTask">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ImportTask"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="InternalOutBill_Binding" jndiName="com/hps/july/persistence/InternalOutBill">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#InternalOutBill"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="InternalWayBill_Binding" jndiName="com/hps/july/persistence/InternalWayBill">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#InternalWayBill"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="InternalWayBillPosition_Binding" jndiName="com/hps/july/persistence/InternalWayBillPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#InternalWayBillPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="InventoryNumbers_Binding" jndiName="com/hps/july/persistence/InventoryNumbers">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#InventoryNumbers"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="InwayBill_Binding" jndiName="com/hps/july/persistence/InwayBill">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#InwayBill"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="InWayBillBLOB_Binding" jndiName="com/hps/july/persistence/InWayBillBLOB">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#InWayBillBLOB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="InWayBillPosition_Binding" jndiName="com/hps/july/persistence/InWayBillPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#InWayBillPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseAbonentBAN_Binding" jndiName="com/hps/july/persistence/LeaseAbonentBAN">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseAbonentBAN"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1155819283712" jndiName="ejb/com/hps/july/persistence/OrganizationNfs">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1155799606890"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseAbonentBEN_Binding" jndiName="com/hps/july/persistence/LeaseAbonentBEN">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseAbonentBEN"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseAbonentDNOP_Binding" jndiName="com/hps/july/persistence/LeaseAbonentDNOP">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseAbonentDNOP"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseAbonentPhone_Binding" jndiName="com/hps/july/persistence/LeaseAbonentPhone">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseAbonentPhone"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseArendaAgreementNew_Binding" jndiName="com/hps/july/persistence/LeaseArendaAgreementNew">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseArendaAgreementNew"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1155819283713" jndiName="ejb/com/hps/july/persistence/OrganizationNfs">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1155799607210"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseCalcRate_Binding" jndiName="com/hps/july/persistence/LeaseCalcRate">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseCalcRate"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseChargeRule_Binding" jndiName="com/hps/july/persistence/LeaseChargeRule">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseChargeRule"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseCharges_Binding" jndiName="com/hps/july/persistence/LeaseCharges">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseCharges"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseContract_Binding" jndiName="com/hps/july/persistence/LeaseContract">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseContract"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1155799607461" jndiName="ejb/com/hps/july/persistence/OrganizationNfs">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1155799607461"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseContractBLOB_Binding" jndiName="com/hps/july/persistence/LeaseContractBLOB">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseContractBLOB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseDNOP_Binding" jndiName="com/hps/july/persistence/LeaseDNOP">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseDNOP"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseDocPosition_Binding" jndiName="com/hps/july/persistence/LeaseDocPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseDocPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseDocument_Binding" jndiName="com/hps/july/persistence/LeaseDocument">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseDocument"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseMRCntPrior_Binding" jndiName="com/hps/july/persistence/LeaseMRCntPrior">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseMRCntPrior"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseMutualActBLOB_Binding" jndiName="com/hps/july/persistence/LeaseMutualActBLOB">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseMutualActBLOB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseMutualActInfo_Binding" jndiName="com/hps/july/persistence/LeaseMutualActInfo">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseMutualActInfo"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseMutualActNew_Binding" jndiName="com/hps/july/persistence/LeaseMutualActNew">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseMutualActNew"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseMutualContracts_Binding" jndiName="com/hps/july/persistence/LeaseMutualContracts">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseMutualContracts"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseMutualPhone_Binding" jndiName="com/hps/july/persistence/LeaseMutualPhone">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseMutualPhone"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseMutualReglament_Binding" jndiName="com/hps/july/persistence/LeaseMutualReglament">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseMutualReglament"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseMutualRuleNew_Binding" jndiName="com/hps/july/persistence/LeaseMutualRuleNew">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseMutualRuleNew"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseOnPosition_Binding" jndiName="com/hps/july/persistence/LeaseOnPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseOnPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeasePay2Bill_Binding" jndiName="com/hps/july/persistence/LeasePay2Bill">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeasePay2Bill"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeasePayment_Binding" jndiName="com/hps/july/persistence/LeasePayment">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeasePayment"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeasePayOrder_Binding" jndiName="com/hps/july/persistence/LeasePayOrder">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeasePayOrder"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeasePayRule_Binding" jndiName="com/hps/july/persistence/LeasePayRule">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeasePayRule"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeasePosSchetFakt_Binding" jndiName="com/hps/july/persistence/LeasePosSchetFakt">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeasePosSchetFakt"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseResBil2NRI_Binding" jndiName="com/hps/july/persistence/LeaseResBil2NRI">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseResBil2NRI"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseRule_Binding" jndiName="com/hps/july/persistence/LeaseRule">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseRule"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseSaldo_Binding" jndiName="com/hps/july/persistence/LeaseSaldo">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseSaldo"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseSchetFakt_Binding" jndiName="com/hps/july/persistence/LeaseSchetFakt">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseSchetFakt"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseTaskJournal_Binding" jndiName="com/hps/july/persistence/LeaseTaskJournal">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseTaskJournal"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseTaskStart_Binding" jndiName="com/hps/july/persistence/LeaseTaskStart">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseTaskStart"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseVPayment_Binding" jndiName="com/hps/july/persistence/LeaseVPayment">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseVPayment"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="NamedValue_Binding" jndiName="com/hps/july/persistence/NamedValue">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#NamedValue"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="NetZone_Binding" jndiName="com/hps/july/persistence/NetZone">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#NetZone"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Operator_Binding" jndiName="com/hps/july/persistence/Operator">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Operator"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Operators2Roles_Binding" jndiName="com/hps/july/persistence/Operators2Roles">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Operators2Roles"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Organization_Binding" jndiName="com/hps/july/persistence/Organization">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Organization"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="OtherEquipment_Binding" jndiName="com/hps/july/persistence/OtherEquipment">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OtherEquipment"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="OuterDocPosition_Binding" jndiName="com/hps/july/persistence/OuterDocPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OuterDocPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="OutWayBill_Binding" jndiName="com/hps/july/persistence/OutWayBill">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OutWayBill"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PayOffAct_Binding" jndiName="com/hps/july/persistence/PayOffAct">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PayOffAct"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="People_Binding" jndiName="com/hps/july/persistence/People">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#People"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Photo_Binding" jndiName="com/hps/july/persistence/Photo">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Photo"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PhotoBlob_Binding" jndiName="com/hps/july/persistence/PhotoBlob">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PhotoBlob"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEBankPlatinum_Binding" jndiName="com/hps/july/persistence/PIEBankPlatinum">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEBankPlatinum"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEBudjet_Binding" jndiName="com/hps/july/persistence/PIEBudjet">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEBudjet"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEDocInfoDocPos_Binding" jndiName="com/hps/july/persistence/PIEDocInfoDocPos">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEDocInfoDocPos"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEDocNri_Binding" jndiName="com/hps/july/persistence/PIEDocNri">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEDocNri"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEDocPosNri_Binding" jndiName="com/hps/july/persistence/PIEDocPosNri">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEDocPosNri"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEDogovorLink_Binding" jndiName="com/hps/july/persistence/PIEDogovorLink">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEDogovorLink"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEDogovorNRI_Binding" jndiName="com/hps/july/persistence/PIEDogovorNRI">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEDogovorNRI"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEDopInfoContr_Binding" jndiName="com/hps/july/persistence/PIEDopInfoContr">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEDopInfoContr"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEDopInfoDoc_Binding" jndiName="com/hps/july/persistence/PIEDopInfoDoc">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEDopInfoDoc"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEExpence_Binding" jndiName="com/hps/july/persistence/PIEExpence">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEExpence"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIELinkPrihRash_Binding" jndiName="com/hps/july/persistence/PIELinkPrihRash">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIELinkPrihRash"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEMxranLink_Binding" jndiName="com/hps/july/persistence/PIEMxranLink">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEMxranLink"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEMxranPlatinum_Binding" jndiName="com/hps/july/persistence/PIEMxranPlatinum">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEMxranPlatinum"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEOtvUserLink_Binding" jndiName="com/hps/july/persistence/PIEOtvUserLink">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEOtvUserLink"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEOtvUserPlatinum_Binding" jndiName="com/hps/july/persistence/PIEOtvUserPlatinum">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEOtvUserPlatinum"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEPartyResLink_Binding" jndiName="com/hps/july/persistence/PIEPartyResLink">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEPartyResLink"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEPayLink_Binding" jndiName="com/hps/july/persistence/PIEPayLink">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEPayLink"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEPayNRI_Binding" jndiName="com/hps/july/persistence/PIEPayNRI">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEPayNRI"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEPayPlatinum_Binding" jndiName="com/hps/july/persistence/PIEPayPlatinum">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEPayPlatinum"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEQuery_Binding" jndiName="com/hps/july/persistence/PIEQuery">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEQuery"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEQueryList_Binding" jndiName="com/hps/july/persistence/PIEQueryList">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEQueryList"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEQueryLog_Binding" jndiName="com/hps/july/persistence/PIEQueryLog">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEQueryLog"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEReference_Binding" jndiName="com/hps/july/persistence/PIEReference">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEReference"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEResLink_Binding" jndiName="com/hps/july/persistence/PIEResLink">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEResLink"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEResPlatinum_Binding" jndiName="com/hps/july/persistence/PIEResPlatinum">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEResPlatinum"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIESerialResLink_Binding" jndiName="com/hps/july/persistence/PIESerialResLink">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIESerialResLink"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PIEValutes_Binding" jndiName="com/hps/july/persistence/PIEValutes">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PIEValutes"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Position_Binding" jndiName="com/hps/july/persistence/Position">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Position"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="PositionResponsibleWorkers_Binding" jndiName="com/hps/july/persistence/PositionResponsibleWorkers">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PositionResponsibleWorkers"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Project_Binding" jndiName="com/hps/july/persistence/Project">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Project"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProjectAction_Binding" jndiName="com/hps/july/persistence/ProjectAction">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProjectAction"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProjectActionComments_Binding" jndiName="com/hps/july/persistence/ProjectActionComments">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProjectActionComments"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProjectActionDocument_Binding" jndiName="com/hps/july/persistence/ProjectActionDocument">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProjectActionDocument"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProjectActionType_Binding" jndiName="com/hps/july/persistence/ProjectActionType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProjectActionType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProjectDivColumns_Binding" jndiName="com/hps/july/persistence/ProjectDivColumns">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProjectDivColumns"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProjectDivColVal_Binding" jndiName="com/hps/july/persistence/ProjectDivColVal">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProjectDivColVal"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProjectState_Binding" jndiName="com/hps/july/persistence/ProjectState">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProjectState"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProjectType_Binding" jndiName="com/hps/july/persistence/ProjectType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProjectType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProtoAction_Binding" jndiName="com/hps/july/persistence/ProtoAction">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProtoAction"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Rate_Binding" jndiName="com/hps/july/persistence/Rate">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Rate"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RateType_Binding" jndiName="com/hps/july/persistence/RateType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RateType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Region_Binding" jndiName="com/hps/july/persistence/Region">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Region"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RegionAcc_Binding" jndiName="com/hps/july/persistence/RegionAcc">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RegionAcc"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Repiter_Binding" jndiName="com/hps/july/persistence/Repiter">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Repiter"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RepiterRes_Binding" jndiName="com/hps/july/persistence/RepiterRes">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RepiterRes"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Request_Binding" jndiName="com/hps/july/persistence/Request">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Request"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Resource_Binding" jndiName="com/hps/july/persistence/Resource">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Resource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ResourceSet_Binding" jndiName="com/hps/july/persistence/ResourceSet">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSet"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ResourceSetPart_Binding" jndiName="com/hps/july/persistence/ResourceSetPart">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetPart"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ResourceSubType_Binding" jndiName="com/hps/july/persistence/ResourceSubType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSubType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ResourceTaxe_Binding" jndiName="com/hps/july/persistence/ResourceTaxe">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceTaxe"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ResourceType_Binding" jndiName="com/hps/july/persistence/ResourceType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ResponsibilityType_Binding" jndiName="com/hps/july/persistence/ResponsibilityType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResponsibilityType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Role_Binding" jndiName="com/hps/july/persistence/Role">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Role"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Roles2Tasks_Binding" jndiName="com/hps/july/persistence/Roles2Tasks">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Roles2Tasks"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RRLAntennaResource_Binding" jndiName="com/hps/july/persistence/RRLAntennaResource">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLAntennaResource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RRLAntParams_Binding" jndiName="com/hps/july/persistence/RRLAntParams">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLAntParams"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RRLSpeedParams_Binding" jndiName="com/hps/july/persistence/RRLSpeedParams">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLSpeedParams"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Searches_Binding" jndiName="com/hps/july/persistence/Searches">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Searches"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SearchGroup_Binding" jndiName="com/hps/july/persistence/SearchGroup">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SearchGroup"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SearchGroupping_Binding" jndiName="com/hps/july/persistence/SearchGroupping">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SearchGroupping"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Sector_Binding" jndiName="com/hps/july/persistence/Sector">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sector"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Service_Binding" jndiName="com/hps/july/persistence/Service">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Service"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SiteDoc_Binding" jndiName="com/hps/july/persistence/SiteDoc">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SiteDoc"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Sitedoc2Splace_Binding" jndiName="com/hps/july/persistence/Sitedoc2Splace">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Splace"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SiteDocFile_Binding" jndiName="com/hps/july/persistence/SiteDocFile">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SiteDocFile"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SiteDocFileBLOB_Binding" jndiName="com/hps/july/persistence/SiteDocFileBLOB">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SiteDocFileBLOB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SiteDocType_Binding" jndiName="com/hps/july/persistence/SiteDocType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SiteDocType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Storage_Binding" jndiName="com/hps/july/persistence/Storage">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Storage"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="StorageCard_Binding" jndiName="com/hps/july/persistence/StorageCard">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#StorageCard"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="StoragePlace_Binding" jndiName="com/hps/july/persistence/StoragePlace">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#StoragePlace"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SuperRegion_Binding" jndiName="com/hps/july/persistence/SuperRegion">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SuperRegion"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SuperRegionAcc_Binding" jndiName="com/hps/july/persistence/SuperRegionAcc">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SuperRegionAcc"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SupplyType_Binding" jndiName="com/hps/july/persistence/SupplyType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SupplyType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SurplusAct_Binding" jndiName="com/hps/july/persistence/SurplusAct">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SurplusAct"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Switch_Binding" jndiName="com/hps/july/persistence/Switch">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Switch"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SwitchAddInfo_Binding" jndiName="com/hps/july/persistence/SwitchAddInfo">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SwitchAddInfo"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SwitchParams_Binding" jndiName="com/hps/july/persistence/SwitchParams">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#SwitchParams"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Task_Binding" jndiName="com/hps/july/persistence/Task">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Task"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Unit_Binding" jndiName="com/hps/july/persistence/Unit">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Unit"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="UserRepGroup_Binding" jndiName="com/hps/july/persistence/UserRepGroup">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRepGroup"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="UserReport_Binding" jndiName="com/hps/july/persistence/UserReport">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserReport"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="WLAN_Binding" jndiName="com/hps/july/persistence/WLAN">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#WLAN"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Worker_Binding" jndiName="com/hps/july/persistence/Worker">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Worker"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="WorkPosition_Binding" jndiName="com/hps/july/persistence/WorkPosition">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#WorkPosition"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1143308729224" jndiName="ejb/com/hps/july/persistence/BankHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Bank"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1143312872037" jndiName="com/hps/july/persistence/Account">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1143312872037"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1152188016156" jndiName="ejb/com/hps/july/persistence/CfgDocumentHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgDocument"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1155736711084" jndiName="ejb/com/hps/july/persistence/OrganizationNfs">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OrganizationNfs"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1155799607701" jndiName="com/hps/july/persistence/LeaseContract">
+      <bindingEjbRef href="META-INF/ejb-jar.xml#EjbRef_1155799607701"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1161069970234" jndiName="ejb/com/hps/july/persistence/LeaseResourceHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseResource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1165330366234" jndiName="ejb/com/hps/july/persistence/PowerSupplySetHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PowerSupplySet"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1165394314140" jndiName="com/hps/july/persistence/RepiterDonorUnitsHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RepiterDonorUnits"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1168937813640" jndiName="ejb/com/hps/july/persistence/UZOPowerSupplySetHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UZOPowerSupplySet"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1170934707562" jndiName="ejb/com/hps/july/persistence/BSInstComplectResourceSetHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BSInstComplectResourceSet"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1172739917625" jndiName="ejb/com/hps/july/persistence/TRXResourceHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#TRXResource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1180604899733" jndiName="ejb/com/hps/july/persistence/AccumBatteryResourceHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AccumBatteryResource"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

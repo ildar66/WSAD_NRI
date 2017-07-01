@@ -1,0 +1,108 @@
+------Start of DE processing------ = [07.02.27 11:05:42:287 MSK] , key = java.sql.SQLException com.ibm.ejs.container.ContainerManagedBeanO.load 711
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.container.ContainerManagedBeanO.load
+probeid = 711
+Stack Dump = java.sql.SQLException: ??????? (informix.leasesaldo) ???? ???????, ???????? ??? ?????????????.
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.sendStatementQuery(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeStatementQuery(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeStatementQuery(IfxSqli.java(Inlined Compiled Code))
+	at com.informix.jdbc.IfxResultSet.executeQuery(IfxResultSet.java(Inlined Compiled Code))
+	at com.informix.jdbc.IfxStatement.executeQueryImpl(IfxStatement.java(Compiled Code))
+	at com.informix.jdbc.IfxPreparedStatement.executeQuery(IfxPreparedStatement.java(Compiled Code))
+	at com.ibm.ejs.cm.cache.CachedStatement.executeQuery(CachedStatement.java(Compiled Code))
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeQueryCommon(StatementProxy.java(Compiled Code))
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeQuery(PreparedStatementProxy.java(Compiled Code))
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseSaldoBean_6f33cd6c.load(EJSJDBCPersisterCMPLeaseSaldoBean_6f33cd6c.java:258)
+	at com.ibm.ejs.container.ContainerManagedBeanO.load(ContainerManagedBeanO.java:967)
+	at com.ibm.ejs.container.ContainerManagedBeanO.loadForEnlist(ContainerManagedBeanO.java:921)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean(EJSHome.java:1164)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseSaldoBean_6f33cd6c.findByPrimaryKey(EJSJDBCPersisterCMPLeaseSaldoBean_6f33cd6c.java:707)
+	at com.hps.july.persistence.EJSCMPLeaseSaldoHomeBean_6f33cd6c.findByPrimaryKey(EJSCMPLeaseSaldoHomeBean_6f33cd6c.java:76)
+	at com.hps.july.persistence.EJSRemoteCMPLeaseSaldoHome_6f33cd6c.findByPrimaryKey(EJSRemoteCMPLeaseSaldoHome_6f33cd6c.java:66)
+	at com.hps.july.persistence._LeaseSaldoHome_Stub.findByPrimaryKey(_LeaseSaldoHome_Stub.java:398)
+	at com.hps.july.persistence.LeaseSaldoAccessBean.instantiateEJB(LeaseSaldoAccessBean.java:220)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean._instantiate(AbstractEntityAccessBean.java:165)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean.refreshCopyHelper(AbstractEntityAccessBean.java:304)
+	at com.hps.july.persistence.LeaseSaldoAccessBean.refreshCopyHelper(LeaseSaldoAccessBean.java:278)
+	at com.hps.july.arenda.formbean.SaldoForm.getDataBean(SaldoForm.java:362)
+	at com.hps.july.web.util.EditForm.loadRecord(EditForm.java:150)
+	at com.hps.july.web.util.AbstractEditAction.perform(AbstractEditAction.java:83)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.ContainerManagedBeanO
+com.ibm.ejs.container.ContainerManagedBeanO@29eabbd2
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Feb 27 11:05:42 MSK 2007
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@13c83bc1
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#LeaseSaldo
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@12757bfe
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@13983bfe#tid=1417
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@12757bfe
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Feb 27 11:05:42 MSK 2007

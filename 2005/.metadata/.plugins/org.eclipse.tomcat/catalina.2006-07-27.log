@@ -1,0 +1,24 @@
+WebappLoader[]: Deploying class repositories to work directory C:\workspases\WSAD_NRI\.metadata\.plugins\org.eclipse.tomcat\ROOT
+StandardManager[]: Seeding random number generator class java.security.SecureRandom
+StandardManager[]: Seeding of random number generator has been completed
+StandardWrapper[:default]: Loading container servlet default
+StandardWrapper[:invoker]: Loading container servlet invoker
+HttpConnector Opening server socket on all host IP addresses
+HttpConnector[0] Starting background thread
+HttpProcessor[0][0] Starting background thread
+HttpProcessor[0][1] Starting background thread
+HttpProcessor[0][2] Starting background thread
+HttpProcessor[0][3] Starting background thread
+HttpProcessor[0][4] Starting background thread
+WebappLoader[/wsexplorer]: Deploying class repositories to work directory C:\workspases\WSAD_NRI\.metadata\.plugins\org.eclipse.tomcat\wsexplorer
+WebappLoader[/wsexplorer]: Deploy class files /WEB-INF/classes to C:\workspases\WSAD_NRI\.metadata\.plugins\org.eclipse.tomcat\wsexplorer\WEB-INF\classes
+StandardManager[/wsexplorer]: Seeding random number generator class java.security.SecureRandom
+StandardManager[/wsexplorer]: Seeding of random number generator has been completed
+StandardWrapper[/wsexplorer:default]: Loading container servlet default
+StandardWrapper[/wsexplorer:invoker]: Loading container servlet invoker
+HttpProcessor[0][4] Stopping background thread
+HttpProcessor[0][3] Stopping background thread
+HttpProcessor[0][2] Stopping background thread
+HttpProcessor[0][1] Stopping background thread
+HttpProcessor[0][0] Stopping background thread
+HttpConnector[0] Stopping background thread

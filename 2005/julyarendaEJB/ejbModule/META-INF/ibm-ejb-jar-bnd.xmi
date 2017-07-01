@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Binding">
+  <defaultDatasource xmi:id="ResourceRefBinding_1132238141542" jndiName="july"/>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="ArendaDocumentProcessor_Binding" jndiName="com/hps/july/arenda/sessionbean/ArendaDocumentProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaDocumentProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ArendaDocumentTransactionMethod_Binding" jndiName="com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethod">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaDocumentTransactionMethod"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ArendaRuleProcessor_Binding" jndiName="com/hps/july/arenda/sessionbean/ArendaRuleProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaRuleProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ArendaTransactionMethod_Binding" jndiName="com/hps/july/arenda/sessionbean/ArendaTransactionMethod">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaTransactionMethod"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="CalculateArendaAct_Binding" jndiName="com/hps/july/arenda/sessionbean/CalculateArendaAct">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CalculateArendaAct"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Journal_Binding" jndiName="com/hps/july/arenda/sessionbean/Journal">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Journal"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseArendaAgreementProcessor_Binding" jndiName="com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#LeaseArendaAgreementProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseSaldoProcessor_Binding" jndiName="com/hps/july/arenda/sessionbean/LeaseSaldoProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#LeaseSaldoProcessor"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

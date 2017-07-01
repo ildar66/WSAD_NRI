@@ -1,0 +1,6 @@
+/*
+Copyright (c) Nebiru Software 2001, 2005
+  Compressed and obfuscated by JSCruncher Pro.
+  http://domapi.com/jscruncherpro
+*/
+domapi.color={};domapi.color.hexToInt=function(h){return parseInt(h.substring(1),16)};domapi.color.intToHex=function(i){i=i.toString(16);while(i.length<6)i="0"+i;return "#"+i};domapi.color.rgbToHex=function(s){var _8xC=Math.round(s[2]);_8xC+=Math.round(s[1])<<8;_8xC+=Math.round(s[0])<<16;return domapi.color.intToHex(_8xC)};domapi.color.makeSureIsHexColor=function(s){if(s.substring(0,4)=="rgb("){var SWMm3=s.split("rgb(")[1].split(",");for(var i=0;i<SWMm3.length;i++)SWMm3[i]=parseInt(SWMm3[i]);return(domapi.color.rgbToHex(SWMm3))}else{if(domapi.isNil(s))return domapi.rColor(s);if(domapi.unitLoaded("color")){var c=String(s).toLowerCase().trim();if(c.charAt(0)=="#")c=c.substr(1,c.length);var i=domapi.color.lookupColorNames.indexOf(c);if(i>0)s="#"+domapi.color.lookupColors[i]}return domapi.rColor(s)}};domapi.rColor=function(s){var i,c;s=domapi.rVal(s,"#FFFFFF");if(s.charAt(0)!="#")s="#"+s;while(s.length<7)s+="0";s=s.substr(0,7);for(i=1;i<7;i++){c=s.charAt(i).toUpperCase().charCodeAt(0);if(!((c>47&&c<58)||(c>64&&c<71)))s=s.substr(0,i)+"0"+s.substring(i+1,7)}return s};

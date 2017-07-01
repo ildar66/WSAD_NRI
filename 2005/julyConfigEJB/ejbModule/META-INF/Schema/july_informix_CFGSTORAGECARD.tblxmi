@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="cfgstoragecards" name="cfgstoragecards" primaryKey="PK_CFGSTORAGECARD">
+  <database href="META-INF/Schema/july.dbxmi#july"/>
+  <schema href="META-INF/Schema/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SAVCONFIGID" name="SAVCONFIGID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152170267609">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGECARD" name="STORAGECARD">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152170267610">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152170267611">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATEOPENED" name="DATEOPENED" allowNull="true">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1152170267609">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V94_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152170267612">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POLICY" name="POLICY">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267625" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CLOSED" name="CLOSED">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267626" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="QTY" name="QTY">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1152170267625" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V94_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PRICE" name="PRICE">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1152170267626" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V94_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BOXED" name="BOXED" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267627" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENT" name="DOCUMENT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152170267625">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BROKEN" name="BROKEN" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267628" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGEPLACE" name="STORAGEPLACE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152170267626">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTRACT" name="CONTRACT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152170267627">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATECLOSED" name="DATECLOSED" allowNull="true">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1152170267625">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V94_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="I13NDATE" name="I13NDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1152170267626">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V94_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SERIALNUMBER" name="SERIALNUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267629" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARTY" name="PARTY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267630" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="QTY_BROKEN" name="QTY_BROKEN" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1152170267627" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V94_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NOTES" name="NOTES" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1152170267625" characterSet="800" length="100">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="JavatoINFORMIX_V94TypeMaps.xmi#SQLCharacterStringType_100"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONFIGURATION" name="CONFIGURATION" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267631" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PLACE" name="PLACE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267632" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="INVENTSERIAL" name="INVENTSERIAL" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267633" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="comment" name="comment" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1152170267626" characterSet="800" length="255">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="JavatoINFORMIX_V94TypeMaps.xmi#SQLCharacterStringType_100"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISFICTSERIAL" name="ISFICTSERIAL">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267634" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISAPPROVED" name="ISAPPROVED">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267635" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LOCALSERIAL" name="LOCALSERIAL" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267636" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTSTATUS" name="OBJECTSTATUS">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152170267637" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_CFGSTORAGECARD" name="PK_CFGSTORAGECARD" members="SAVCONFIGID STORAGECARD" constraint="SQLConstraint_1152170267625"/>
+  <constraints xmi:id="SQLConstraint_1152170267625" name="PK_CFGSTORAGECARD" type="PRIMARYKEY" primaryKey="PK_CFGSTORAGECARD"/>
+</RDBSchema:RDBTable>

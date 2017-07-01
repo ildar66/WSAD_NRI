@@ -1,0 +1,2373 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN" 
+		"http://dtdserver/dtd/struts-config_1_0.dtd">
+<!-- http://jakarta.apache.org/struts/dtds/struts-config_1_0.dtd -->
+<struts-config>
+
+	<!-- ========== Form Bean Definitions =================================== -->
+	<form-beans type="org.apache.struts.action.ActionFormBean">
+		<form-bean name="WeArendaListForm" type="com.hps.july.arenda.formbean.WeArendaListForm" />
+		<form-bean name="WeArendaForm" type="com.hps.july.arenda.formbean.WeArendaForm" />
+		<form-bean name="AgreementInfoForm" type="com.hps.july.arenda.formbean.AgreementInfoForm" />
+		<form-bean name="OrganizationLookupListForm" type="com.hps.july.arenda.formbean.OrganizationLookupListForm" />
+		<form-bean name="GroupLookupListForm" type="com.hps.july.arenda.formbean.GroupLookupListForm" />
+		<form-bean name="GrouppingLookupListForm" type="com.hps.july.arenda.formbean.GrouppingLookupListForm" />
+		<form-bean name="WorkerLookupListForm" type="com.hps.july.arenda.formbean.WorkerLookupListForm" />
+		<form-bean name="PositionLookupListForm" type="com.hps.july.arenda.formbean.PositionLookupListForm" />
+		<form-bean name="PositionMultiListForm" type="com.hps.july.arenda.formbean.PositionMultiListForm" />
+		<form-bean name="ArendaPositionsListForm" type="com.hps.july.arenda.formbean.ArendaPositionsListForm" />
+		<form-bean name="ArendaPositionForm" type="com.hps.july.arenda.formbean.ArendaPositionForm" />
+		<form-bean name="UsArendaListForm" type="com.hps.july.arenda.formbean.UsArendaListForm" />
+		<form-bean name="UsArendaForm" type="com.hps.july.arenda.formbean.UsArendaForm" />
+		<form-bean name="ChannelArendaListForm" type="com.hps.july.arenda.formbean.ChannelArendaListForm" />
+		<form-bean name="ChannelArendaForm" type="com.hps.july.arenda.formbean.ChannelArendaForm" />
+		<form-bean name="PayRulesListForm" type="com.hps.july.arenda.formbean.PayRulesListForm" />
+		<form-bean name="PayRuleForm" type="com.hps.july.arenda.formbean.PayRuleForm" />
+		<form-bean name="ChargeRulesListForm" type="com.hps.july.arenda.formbean.ChargeRulesListForm" />
+		<form-bean name="ChargeRuleForm" type="com.hps.july.arenda.formbean.ChargeRuleForm" />
+		<form-bean name="ResourceLookupListForm" type="com.hps.july.arenda.formbean.ResourceLookupListForm" />
+		<form-bean name="RestypeLookupListForm" type="com.hps.july.arenda.formbean.RestypeLookupListForm" />
+		<form-bean name="RessbtypeLookupListForm" type="com.hps.july.arenda.formbean.RessbtypeLookupListForm" />
+		<form-bean name="MutualReglamentsListForm" type="com.hps.july.arenda.formbean.MutualReglamentsListForm" />
+		<form-bean name="MainParamsMutReglmntForm" type="com.hps.july.arenda.formbean.MainParamsMutReglmntForm" />
+		<form-bean name="PhonesMutReglmntListForm" type="com.hps.july.arenda.formbean.PhonesMutReglmntListForm" />
+		<form-bean name="PhoneMutReglmntForm" type="com.hps.july.arenda.formbean.PhoneMutReglmntForm" />
+		<form-bean name="ContractsMutReglmntListForm" type="com.hps.july.arenda.formbean.ContractsMutReglmntListForm" />
+		<form-bean name="ContractMutReglmntForm" type="com.hps.july.arenda.formbean.ContractMutReglmntForm" />
+		<form-bean name="ContractLookupListForm" type="com.hps.july.arenda.formbean.ContractLookupListForm" />
+		<form-bean name="MutualRulesListForm" type="com.hps.july.arenda.formbean.MutualRulesListForm" />
+		<form-bean name="MutualRuleForm" type="com.hps.july.arenda.formbean.MutualRuleForm" />
+		<form-bean name="AccountLookupListForm" type="com.hps.july.arenda.formbean.AccountLookupListForm" />
+		<form-bean name="ChargesListForm" type="com.hps.july.arenda.formbean.ChargesListForm" />
+		<form-bean name="ChargeForm" type="com.hps.july.arenda.formbean.ChargeForm" />
+		<form-bean name="PaymentsListForm" type="com.hps.july.arenda.formbean.PaymentsListForm" />
+		<form-bean name="PaymentForm" type="com.hps.july.arenda.formbean.PaymentForm" />
+		<form-bean name="MutualActsListForm" type="com.hps.july.arenda.formbean.MutualActsListForm" />
+		<form-bean name="MutualActForm" type="com.hps.july.arenda.formbean.MutualActForm" />
+		<form-bean name="WeStateForm" type="com.hps.july.arenda.formbean.WeStateForm" />
+		<form-bean name="UsStateForm" type="com.hps.july.arenda.formbean.UsStateForm" />
+		<form-bean name="ChannelStateForm" type="com.hps.july.arenda.formbean.ChannelStateForm" />
+		<form-bean name="HistoryListForm" type="com.hps.july.arenda.formbean.HistoryListForm" />
+		<form-bean name="HistoryForm" type="com.hps.july.arenda.formbean.HistoryForm" />
+		<form-bean name="HistoryWeStateForm" type="com.hps.july.arenda.formbean.HistoryWeStateForm" />
+		<form-bean name="HistoryPaymentsListForm" type="com.hps.july.arenda.formbean.HistoryPaymentsListForm" />
+		<form-bean name="HistoryPaymentForm" type="com.hps.july.arenda.formbean.HistoryPaymentForm" />
+		<form-bean name="HistoryChargesListForm" type="com.hps.july.arenda.formbean.HistoryChargesListForm" />
+		<form-bean name="HistoryChargeForm" type="com.hps.july.arenda.formbean.HistoryChargeForm" />
+		<form-bean name="HistoryPayRulesListForm" type="com.hps.july.arenda.formbean.HistoryPayRulesListForm" />
+		<form-bean name="HistoryPayRuleForm" type="com.hps.july.arenda.formbean.HistoryPayRuleForm" />
+		<form-bean name="HistoryChargeRulesListForm" type="com.hps.july.arenda.formbean.HistoryChargeRulesListForm" />
+		<form-bean name="HistoryChargeRuleForm" type="com.hps.july.arenda.formbean.HistoryChargeRuleForm" />
+		<form-bean name="HistoryArendaPositionsListForm" type="com.hps.july.arenda.formbean.HistoryArendaPositionsListForm" />
+		<form-bean name="HistoryArendaPositionForm" type="com.hps.july.arenda.formbean.HistoryArendaPositionForm" />
+		<form-bean name="UsPaymentsListForm" type="com.hps.july.arenda.formbean.UsPaymentsListForm" />
+		<form-bean name="UsPaymentForm" type="com.hps.july.arenda.formbean.UsPaymentForm" />
+		<form-bean name="UsChargesListForm" type="com.hps.july.arenda.formbean.UsChargesListForm" />
+		<form-bean name="UsChargeForm" type="com.hps.july.arenda.formbean.UsChargeForm" />
+		<form-bean name="ChannelPaymentsListForm" type="com.hps.july.arenda.formbean.ChannelPaymentsListForm" />
+		<form-bean name="ChannelPaymentForm" type="com.hps.july.arenda.formbean.ChannelPaymentForm" />
+		<form-bean name="ChannelChargesListForm" type="com.hps.july.arenda.formbean.ChannelChargesListForm" />
+		<form-bean name="ChannelChargeForm" type="com.hps.july.arenda.formbean.ChannelChargeForm" />
+		<form-bean name="StartProlongationsListForm" type="com.hps.july.arenda.formbean.StartProlongationsListForm" />
+		<form-bean name="StartProlongationForm" type="com.hps.july.arenda.formbean.StartProlongationForm" />
+		<!-- form-bean name="ExecProlongation" type="com.hps.july.arenda.formbean.ExecProlongation"/ -->
+		<form-bean name="JournalProlongationsListForm" type="com.hps.july.arenda.formbean.JournalProlongationsListForm" />
+		<form-bean name="StartChargesListForm" type="com.hps.july.arenda.formbean.StartChargesListForm" />
+		<form-bean name="StartChargeForm" type="com.hps.july.arenda.formbean.StartChargeForm" />
+		<form-bean name="JournalChargesListForm" type="com.hps.july.arenda.formbean.JournalChargesListForm" />
+		<form-bean name="StartPaymentsListForm" type="com.hps.july.arenda.formbean.StartPaymentsListForm" />
+		<form-bean name="StartPaymentForm" type="com.hps.july.arenda.formbean.StartPaymentForm" />
+		<form-bean name="JournalPaymentsListForm" type="com.hps.july.arenda.formbean.JournalPaymentsListForm" />
+		<form-bean name="OperatorLookupListForm" type="com.hps.july.arenda.formbean.OperatorLookupListForm" />
+		<form-bean name="HistoryPositionMultiListForm" type="com.hps.july.arenda.formbean.HistoryPositionMultiListForm" />
+		<!--form-bean      name="ContractMultiListForm"                     type="com.hps.july.arenda.formbean.ContractMultiListForm"/-->
+		<form-bean name="RenterLookupListForm" type="com.hps.july.arenda.formbean.RenterLookupListForm" />
+		<form-bean name="FromContractMutualReglamentsListForm" type="com.hps.july.arenda.formbean.FromContractMutualReglamentsListForm" />
+		<form-bean name="FromContractMainParamsMutReglmntForm" type="com.hps.july.arenda.formbean.FromContractMainParamsMutReglmntForm" />
+		<form-bean name="FromHistoryMutualReglamentsListForm" type="com.hps.july.arenda.formbean.FromHistoryMutualReglamentsListForm" />
+		<form-bean name="FromHistoryMainParamsMutReglmntForm" type="com.hps.july.arenda.formbean.FromHistoryMainParamsMutReglmntForm" />
+		<form-bean name="FromContractPhonesMutReglmntListForm" type="com.hps.july.arenda.formbean.FromContractPhonesMutReglmntListForm" />
+		<form-bean name="FromContractPhoneMutReglmntForm" type="com.hps.july.arenda.formbean.FromContractPhoneMutReglmntForm" />
+		<form-bean name="FromHistoryPhonesMutReglmntListForm" type="com.hps.july.arenda.formbean.FromHistoryPhonesMutReglmntListForm" />
+		<form-bean name="FromHistoryPhoneMutReglmntForm" type="com.hps.july.arenda.formbean.FromHistoryPhoneMutReglmntForm" />
+		<form-bean name="FromContractContractsMutReglmntListForm" type="com.hps.july.arenda.formbean.FromContractContractsMutReglmntListForm" />
+		<form-bean name="FromContractContractMutReglmntForm" type="com.hps.july.arenda.formbean.FromContractContractMutReglmntForm" />
+		<form-bean name="FromHistoryContractsMutReglmntListForm" type="com.hps.july.arenda.formbean.FromHistoryContractsMutReglmntListForm" />
+		<form-bean name="FromHistoryContractMutReglmntForm" type="com.hps.july.arenda.formbean.FromHistoryContractMutReglmntForm" />
+		<form-bean name="FromContractMutualRulesListForm" type="com.hps.july.arenda.formbean.FromContractMutualRulesListForm" />
+		<form-bean name="FromContractMutualRuleForm" type="com.hps.july.arenda.formbean.FromContractMutualRuleForm" />
+		<form-bean name="FromHistoryMutualRulesListForm" type="com.hps.july.arenda.formbean.FromHistoryMutualRulesListForm" />
+		<form-bean name="FromHistoryMutualRuleForm" type="com.hps.july.arenda.formbean.FromHistoryMutualRuleForm" />
+		<form-bean name="FromContractMutualActsListForm" type="com.hps.july.arenda.formbean.FromContractMutualActsListForm" />
+		<form-bean name="FromContractMutualActForm" type="com.hps.july.arenda.formbean.FromContractMutualActForm" />
+		<form-bean name="FromHistoryMutualActsListForm" type="com.hps.july.arenda.formbean.FromHistoryMutualActsListForm" />
+		<form-bean name="FromHistoryMutualActForm" type="com.hps.july.arenda.formbean.FromHistoryMutualActForm" />
+		<!-- -->
+		<form-bean name="ReglamentStateForm" type="com.hps.july.arenda.formbean.ReglamentStateForm" />
+		<form-bean name="FromContractReglamentStateForm" type="com.hps.july.arenda.formbean.FromContractReglamentStateForm" />
+		<form-bean name="FromHistoryReglamentStateForm" type="com.hps.july.arenda.formbean.FromHistoryReglamentStateForm" />
+		<!-- -->
+		<form-bean name="CopyReglamentForm" type="com.hps.july.arenda.formbean.CopyReglamentForm" />
+		<form-bean name="FromContractCopyReglamentForm" type="com.hps.july.arenda.formbean.FromContractCopyReglamentForm" />
+		<form-bean name="FromHistoryCopyReglamentForm" type="com.hps.july.arenda.formbean.FromHistoryCopyReglamentForm" />
+		<!-- -->
+		<form-bean name="ActStateForm" type="com.hps.july.arenda.formbean.ActStateForm" />
+		<form-bean name="FromContractActStateForm" type="com.hps.july.arenda.formbean.FromContractActStateForm" />
+		<form-bean name="FromHistoryActStateForm" type="com.hps.july.arenda.formbean.FromHistoryActStateForm" />
+		<!-- -->
+		<form-bean name="PaymentStateForm" type="com.hps.july.arenda.formbean.PaymentStateForm" />
+		<form-bean name="HistoryPaymentStateForm" type="com.hps.july.arenda.formbean.HistoryPaymentStateForm" />
+		<form-bean name="UsPaymentStateForm" type="com.hps.july.arenda.formbean.UsPaymentStateForm" />
+		<form-bean name="ChannelPaymentStateForm" type="com.hps.july.arenda.formbean.ChannelPaymentStateForm" />
+		<form-bean name="AbonentPaymentStateForm" type="com.hps.july.arenda.formbean.AbonentPaymentStateForm" />
+		<!-- -->
+		<form-bean name="MRCntPriorsListForm" type="com.hps.july.arenda.formbean.MRCntPriorsListForm" />
+		<form-bean name="MRCntPriorForm" type="com.hps.july.arenda.formbean.MRCntPriorForm" />
+		<form-bean name="FromContractMRCntPriorsListForm" type="com.hps.july.arenda.formbean.FromContractMRCntPriorsListForm" />
+		<form-bean name="FromContractMRCntPriorForm" type="com.hps.july.arenda.formbean.FromContractMRCntPriorForm" />
+		<form-bean name="FromHistoryMRCntPriorsListForm" type="com.hps.july.arenda.formbean.FromHistoryMRCntPriorsListForm" />
+		<form-bean name="FromHistoryMRCntPriorForm" type="com.hps.july.arenda.formbean.FromHistoryMRCntPriorForm" />
+		<!-- -->
+		<form-bean name="SaldoListForm" type="com.hps.july.arenda.formbean.SaldoListForm" />
+		<form-bean name="SaldoForm" type="com.hps.july.arenda.formbean.SaldoForm" />
+		<form-bean name="HistorySaldoListForm" type="com.hps.july.arenda.formbean.HistorySaldoListForm" />
+		<form-bean name="HistorySaldoForm" type="com.hps.july.arenda.formbean.HistorySaldoForm" />
+		<form-bean name="UsSaldoListForm" type="com.hps.july.arenda.formbean.UsSaldoListForm" />
+		<form-bean name="UsSaldoForm" type="com.hps.july.arenda.formbean.UsSaldoForm" />
+		<form-bean name="ChannelSaldoListForm" type="com.hps.july.arenda.formbean.ChannelSaldoListForm" />
+		<form-bean name="ChannelSaldoForm" type="com.hps.july.arenda.formbean.ChannelSaldoForm" />
+		<!--form-bean      name="CalcContractListForm"                     type="com.hps.july.arenda.formbean.CalcContractListForm"/-->
+		<!-- -->
+		<form-bean name="CalcContractStep1Form" type="com.hps.july.arenda.formbean.CalcContractStep1Form" />
+		<form-bean name="CalcContractStep2Form" type="com.hps.july.arenda.formbean.CalcContractStep2Form" />
+		<form-bean name="CalcContractStep3Form" type="com.hps.july.arenda.formbean.CalcContractStep3Form" />
+		<!-- -->
+		<form-bean name="PaymentRatesListForm" type="com.hps.july.arenda.formbean.PaymentRatesListForm" />
+		<form-bean name="PaymentRateForm" type="com.hps.july.arenda.formbean.PaymentRateForm" />
+		<form-bean name="HistoryPaymentRatesListForm" type="com.hps.july.arenda.formbean.HistoryPaymentRatesListForm" />
+		<form-bean name="HistoryPaymentRateForm" type="com.hps.july.arenda.formbean.HistoryPaymentRateForm" />
+		<form-bean name="UsPaymentRatesListForm" type="com.hps.july.arenda.formbean.UsPaymentRatesListForm" />
+		<form-bean name="UsPaymentRateForm" type="com.hps.july.arenda.formbean.UsPaymentRateForm" />
+		<form-bean name="ChannelPaymentRatesListForm" type="com.hps.july.arenda.formbean.ChannelPaymentRatesListForm" />
+		<form-bean name="ChannelPaymentRateForm" type="com.hps.july.arenda.formbean.ChannelPaymentRateForm" />
+		<!-- -->
+		<form-bean name="StartActListForm" type="com.hps.july.arenda.formbean.StartActListForm" />
+		<form-bean name="JournalActListForm" type="com.hps.july.arenda.formbean.JournalActListForm" />
+		<form-bean name="FromContractStartActListForm" type="com.hps.july.arenda.formbean.FromContractStartActListForm" />
+		<form-bean name="FromContractJournalActListForm" type="com.hps.july.arenda.formbean.FromContractJournalActListForm" />
+		<form-bean name="FromHistoryStartActListForm" type="com.hps.july.arenda.formbean.FromHistoryStartActListForm" />
+		<form-bean name="FromHistoryJournalActListForm" type="com.hps.july.arenda.formbean.FromHistoryJournalActListForm" />
+		<!-- -->
+		<form-bean name="ChargeRatesListForm" type="com.hps.july.arenda.formbean.ChargeRatesListForm" />
+		<form-bean name="ChargeRateForm" type="com.hps.july.arenda.formbean.ChargeRateForm" />
+		<form-bean name="HistoryChargeRatesListForm" type="com.hps.july.arenda.formbean.HistoryChargeRatesListForm" />
+		<form-bean name="HistoryChargeRateForm" type="com.hps.july.arenda.formbean.HistoryChargeRateForm" />
+		<form-bean name="UsChargeRatesListForm" type="com.hps.july.arenda.formbean.UsChargeRatesListForm" />
+		<form-bean name="UsChargeRateForm" type="com.hps.july.arenda.formbean.UsChargeRateForm" />
+		<form-bean name="ChannelChargeRatesListForm" type="com.hps.july.arenda.formbean.ChannelChargeRatesListForm" />
+		<form-bean name="ChannelChargeRateForm" type="com.hps.july.arenda.formbean.ChannelChargeRateForm" />
+		<!-- -->
+		<form-bean name="HistoryCalcContractStep1Form" type="com.hps.july.arenda.formbean.HistoryCalcContractStep1Form" />
+		<form-bean name="HistoryCalcContractStep2Form" type="com.hps.july.arenda.formbean.HistoryCalcContractStep2Form" />
+		<form-bean name="HistoryCalcContractStep3Form" type="com.hps.july.arenda.formbean.HistoryCalcContractStep3Form" />
+		<!-- -->
+		<form-bean name="PaymentLookupListForm" type="com.hps.july.arenda.formbean.PaymentLookupListForm" />
+		<form-bean name="ChargeDnopListForm" type="com.hps.july.arenda.formbean.ChargeDnopListForm" />
+		<form-bean name="ChargeDnopForm" type="com.hps.july.arenda.formbean.ChargeDnopForm" />
+		<form-bean name="HistoryChargeDnopListForm" type="com.hps.july.arenda.formbean.HistoryChargeDnopListForm" />
+		<form-bean name="HistoryChargeDnopForm" type="com.hps.july.arenda.formbean.HistoryChargeDnopForm" />
+		<form-bean name="UsChargeDnopListForm" type="com.hps.july.arenda.formbean.UsChargeDnopListForm" />
+		<form-bean name="UsChargeDnopForm" type="com.hps.july.arenda.formbean.UsChargeDnopForm" />
+		<form-bean name="ChannelChargeDnopListForm" type="com.hps.july.arenda.formbean.ChannelChargeDnopListForm" />
+		<form-bean name="ChannelChargeDnopForm" type="com.hps.july.arenda.formbean.ChannelChargeDnopForm" />
+		<form-bean name="MutactEqualReportForm" type="com.hps.july.arenda.formbean.MutactEqualReportForm" />
+		<form-bean name="MutactCalcReportForm" type="com.hps.july.arenda.formbean.MutactCalcReportForm" />
+		<!-- Reports -->
+		<form-bean name="ArendaReport1ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport1ParamsForm" />
+		<form-bean name="ArendaReport2ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport2ParamsForm" />
+		<form-bean name="ArendaReport3ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport3ParamsForm" />
+		<form-bean name="ArendaReport4ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport4ParamsForm" />
+		<form-bean name="ArendaReport5ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport5ParamsForm" />
+		<form-bean name="ArendaReport6ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport6ParamsForm" />
+		<form-bean name="ArendaReport7ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport7ParamsForm" />
+		<form-bean name="ArendaReport8ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport8ParamsForm" />
+		<form-bean name="ArendaReport9ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport9ParamsForm" />
+		<form-bean name="ArendaReport10ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport10ParamsForm" />
+		<form-bean name="ArendaReport11ParamsForm" type="com.hps.july.arenda.formbean.ArendaReport11ParamsForm" />
+		<!-- platinum -->
+		<form-bean name="PlatinumDogovorForm" type="com.hps.july.arenda.formbean.PlatinumDogovorForm" />
+		<form-bean name="GetPayFromPlatinumForm" type="com.hps.july.arenda.formbean.GetPayFromPlatinumForm" />
+		<form-bean name="HistoryGetPayFromPlatinumForm" type="com.hps.july.arenda.formbean.HistoryGetPayFromPlatinumForm" />
+		<!-- Abonent contracts -->
+		<form-bean name="BensListForm" type="com.hps.july.arenda.formbean.BensListForm" />
+		<form-bean name="BenForm" type="com.hps.july.arenda.formbean.BenForm" />
+		<form-bean name="AbonentsListForm" type="com.hps.july.arenda.formbean.AbonentsListForm" />
+		<form-bean name="AbonentForm" type="com.hps.july.arenda.formbean.AbonentForm" />
+		<form-bean name="AbonentStateForm" type="com.hps.july.arenda.formbean.AbonentStateForm" />
+		<form-bean name="AbonentBanForm" type="com.hps.july.arenda.formbean.AbonentBanForm" />
+		<form-bean name="AbonentPaymentsListForm" type="com.hps.july.arenda.formbean.AbonentPaymentsListForm" />
+		<form-bean name="AbonentBillsListForm" type="com.hps.july.arenda.formbean.AbonentBillsListForm" />
+		<form-bean name="AbonentBillForm" type="com.hps.july.arenda.formbean.AbonentBillForm" />
+		<form-bean name="AbonentBilledListForm" type="com.hps.july.arenda.formbean.AbonentBilledListForm" />
+		<form-bean name="AbonentBillPosesListForm" type="com.hps.july.arenda.formbean.AbonentBillPosesListForm" />
+		<form-bean name="AbonentBillPosForm" type="com.hps.july.arenda.formbean.AbonentBillPosForm" />
+		<form-bean name="AbonentPaysListForm" type="com.hps.july.arenda.formbean.AbonentPaysListForm" />
+		<form-bean name="AbonentPayForm" type="com.hps.july.arenda.formbean.AbonentPayForm" />
+		<form-bean name="AbonentPayedListForm" type="com.hps.july.arenda.formbean.AbonentPayedListForm" />
+		<form-bean name="AbonentPaymentForm" type="com.hps.july.arenda.formbean.AbonentPaymentForm" />
+		<form-bean name="AbonentChargeForm" type="com.hps.july.arenda.formbean.AbonentChargeForm" />
+		<form-bean name="AbonentSaldoListForm" type="com.hps.july.arenda.formbean.AbonentSaldoListForm" />
+		<form-bean name="AbonentSaldoForm" type="com.hps.july.arenda.formbean.AbonentSaldoForm" />
+		<form-bean name="ResultForm" type="com.hps.july.arenda.formbean.ResultForm" />
+		<form-bean name="StartBillListForm" type="com.hps.july.arenda.formbean.StartBillListForm" />
+		<form-bean name="JournalBillListForm" type="com.hps.july.arenda.formbean.JournalBillListForm" />
+		<form-bean name="BillHandleInNRIForm" type="com.hps.july.arenda.formbean.BillHandleInNRIForm" />
+		<form-bean name="PayHandleInNRIForm" type="com.hps.july.arenda.formbean.PayHandleInNRIForm" />
+		<form-bean name="FromBillHandleInNRIJournalBillListForm" type="com.hps.july.arenda.formbean.FromBillHandleInNRIJournalBillListForm" />
+		<form-bean name="FromPayHandleInNRIJournalBillListForm" type="com.hps.july.arenda.formbean.FromPayHandleInNRIJournalBillListForm" />
+		<!-- platinum interact -->
+		<form-bean name="GetSprArendaResultForm" type="com.hps.july.arenda.formbean.GetSprArendaResultForm" />
+		<form-bean name="GetBanksForm" type="com.hps.july.arenda.formbean.GetBanksForm" />
+		<form-bean name="GetBanksResultForm" type="com.hps.july.arenda.formbean.GetBanksResultForm" />
+		<form-bean name="GetPaysForm" type="com.hps.july.arenda.formbean.GetPaysForm" />
+		<form-bean name="GetPaysResultForm" type="com.hps.july.arenda.formbean.GetPaysResultForm" />
+		<form-bean name="BankLookupListForm" type="com.hps.july.arenda.formbean.BankLookupListForm" />
+		<!-- -->
+		<form-bean name="FacturaForm" type="com.hps.july.arenda.formbean.FacturaForm" />
+		<form-bean name="HistoryFacturaForm" type="com.hps.july.arenda.formbean.HistoryFacturaForm" />
+		<form-bean name="FacturaMutactList" type="com.hps.july.arenda.formbean.FacturaMutactList" />
+		<form-bean name="FacturaMutactForm" type="com.hps.july.arenda.formbean.FacturaMutactForm" />
+		<form-bean name="FromContractFacturaMutactList" type="com.hps.july.arenda.formbean.FromContractFacturaMutactList" />
+		<form-bean name="FromContractFacturaMutactForm" type="com.hps.july.arenda.formbean.FromContractFacturaMutactForm" />
+		<form-bean name="FromHistoryFacturaMutactList" type="com.hps.july.arenda.formbean.FromHistoryFacturaMutactList" />
+		<form-bean name="FromHistoryFacturaMutactForm" type="com.hps.july.arenda.formbean.FromHistoryFacturaMutactForm" />
+		<form-bean name="FacturaPosMutactList" type="com.hps.july.arenda.formbean.FacturaPosMutactList" />
+		<form-bean name="FacturaPosMutactForm" type="com.hps.july.arenda.formbean.FacturaPosMutactForm" />
+		<form-bean name="FromContractFacturaPosMutactList" type="com.hps.july.arenda.formbean.FromContractFacturaPosMutactList" />
+		<form-bean name="FromContractFacturaPosMutactForm" type="com.hps.july.arenda.formbean.FromContractFacturaPosMutactForm" />
+		<form-bean name="FromHistoryFacturaPosMutactList" type="com.hps.july.arenda.formbean.FromHistoryFacturaPosMutactList" />
+		<form-bean name="FromHistoryFacturaPosMutactForm" type="com.hps.july.arenda.formbean.FromHistoryFacturaPosMutactForm" />
+		<!-- -->
+		<form-bean name="AbonentBillLinksList" type="com.hps.july.arenda.formbean.AbonentBillLinksList" />
+		<form-bean name="AbonentBillLinkForm" type="com.hps.july.arenda.formbean.AbonentBillLinkForm" />
+		<!-- -->
+		<form-bean name="CalcHistoryForm" type="com.hps.july.arenda.formbean.CalcHistoryForm" />
+		<form-bean name="ErrorCalcHistoryList" type="com.hps.july.arenda.formbean.ErrorCalcHistoryList" />
+		<form-bean name="AbonentPaymentRatesListForm" type="com.hps.july.arenda.formbean.AbonentPaymentRatesListForm" />
+		<form-bean name="AbonentPaymentRateForm" type="com.hps.july.arenda.formbean.AbonentPaymentRateForm" />
+		<form-bean name="AbonentChargeRatesListForm" type="com.hps.july.arenda.formbean.AbonentChargeRatesListForm" />
+		<form-bean name="AbonentChargeRateForm" type="com.hps.july.arenda.formbean.AbonentChargeRateForm" />
+		<form-bean name="AbonentChargesListForm" type="com.hps.july.arenda.formbean.AbonentChargesListForm" />
+		<form-bean name="AbonentChargeDnopListForm" type="com.hps.july.arenda.formbean.AbonentChargeDnopListForm" />
+		<form-bean name="AbonentChargeDnopForm" type="com.hps.july.arenda.formbean.AbonentChargeDnopForm" />
+		<form-bean name="GetPaysByContractForm" type="com.hps.july.arenda.formbean.GetPaysByContractForm" />
+		<form-bean name="HistoryGetPaysByContractForm" type="com.hps.july.arenda.formbean.HistoryGetPaysByContractForm" />
+		<form-bean name="DogHistoryListForm" type="com.hps.july.arenda.formbean.DogHistoryListForm" />
+		<form-bean name="DogHistChargeListForm" type="com.hps.july.arenda.formbean.DogHistChargeListForm" />
+		<form-bean name="DogHistPayListForm" type="com.hps.july.arenda.formbean.DogHistPayListForm" />
+		<form-bean name="DogAbonentsListForm" type="com.hps.july.arenda.formbean.DogAbonentsListForm" />
+		<form-bean name="ActParamsPrintForm" type="com.hps.july.arenda.formbean.ActParamsPrintForm" />
+		<form-bean name="MutactWordPrintForm" type="com.hps.july.arenda.formbean.MutactWordPrintForm" />
+		<form-bean name="ActContentsListForm" type="com.hps.july.arenda.formbean.ActContentsListForm" />
+		<form-bean name="RespPaysListForm" type="com.hps.july.arenda.formbean.RespPaysListForm" />
+		<form-bean name="MutactWordUploadForm" type="com.hps.july.web.util.DocumentUploadForm" />
+		<form-bean name="SchetFactPrintForm" type="com.hps.july.arenda.formbean.SchetFactPrintForm" />
+		<form-bean name="NFS_PrintForm" type="com.hps.july.arenda.formbean.NFS_PrintForm" />
+		<form-bean name="NFS_ListForm" type="com.hps.july.arenda.formbean.NFS_ListForm" />
+		<form-bean name="NFS_ListDetachForm" type="com.hps.july.arenda.formbean.NFS_ListDetachForm" />
+		<form-bean name="MemoListForm" type="com.hps.july.arenda.formbean.MemoListForm" />
+		<form-bean name="MemoPosListForm" type="com.hps.july.arenda.formbean.MemoPosListForm" />
+		<form-bean name="MemoForm" type="com.hps.july.arenda.formbean.MemoForm" />
+		<form-bean name="MemoPosForm" type="com.hps.july.arenda.formbean.MemoPosForm" />
+		<form-bean name="ArendaToNfsZpListForm" type="com.hps.july.arenda.formbean.ArendaToNfsZpListForm" />
+		<form-bean name="NFS_ZpLookupListForm" type="com.hps.july.arenda.formbean.NFS_ZpLookupListForm" />
+		<form-bean name="MemoWordForm" type="com.hps.july.arenda.formbean.MemoWordForm" />
+		<form-bean name="LeaseResBil2nriLookupListForm" type="com.hps.july.arenda.formbean.LeaseResBil2nriLookupListForm" />
+		<form-bean name="AbonentBillLookupListForm" type="com.hps.july.arenda.formbean.AbonentBillLookupListForm" />
+		<form-bean name="TarifPlanLookupListForm" type="com.hps.july.arenda.formbean.TarifPlanLookupListForm" />
+		<form-bean name="BillingServicesLookupListForm" type="com.hps.july.arenda.formbean.BillingServicesLookupListForm" />
+		<form-bean name="CompletWorkActsListForm" type="com.hps.july.arenda.formbean.CompletWorkActsListForm" />
+		<form-bean name="CompletWorkAktForm" type="com.hps.july.arenda.formbean.CompletWorkAktForm" />
+		<form-bean name="CompletWorkAktWordForm" type="com.hps.july.arenda.formbean.CompletWorkAktWordForm" />
+		<form-bean name="DocumentUploadForm" type="com.hps.july.web.util.DocumentUploadForm" />
+		<form-bean name="CWA_Charges_PrintForm" type="com.hps.july.arenda.formbean.CWA_Charges_PrintForm" />
+		<form-bean name="ListFromPositionForm" type="com.hps.july.arenda.formbean.ListFromPositionForm" />
+		<form-bean name="CourierDeliveryListForm" type="com.hps.july.arenda.formbean.CourierDeliveryListForm" />
+		<form-bean name="MemoListDetachForm" type="com.hps.july.arenda.formbean.MemoListDetachForm" />
+		<form-bean name="MemoDetachForm" type="com.hps.july.arenda.formbean.MemoDetachForm" />
+		<form-bean name="ChargeRuleDialogForm" type="com.hps.july.arenda.formbean.ChargeRuleDialogForm" />
+		<form-bean name="PayRuleDialogForm" type="com.hps.july.arenda.formbean.PayRuleDialogForm" />
+		<form-bean name="ArendaPositionDialogForm" type="com.hps.july.arenda.formbean.ArendaPositionDialogForm" />
+		<form-bean name="LicenceListForm" type="com.hps.july.arenda.formbean.LicenceListForm" />
+		<form-bean name="RateListForm" type="com.hps.july.arenda.formbean.RateListForm" />
+		<form-bean name="LawyearNoteDialogForm" type="com.hps.july.arenda.formbean.LawyearNoteDialogForm" />
+		<form-bean name="FlagsFromLeaseChargesDialogForm" type="com.hps.july.arenda.formbean.FlagsFromLeaseChargesDialogForm" />
+		<form-bean name="LicenceDialogForm" type="com.hps.july.arenda.formbean.LicenceDialogForm" />
+		<form-bean name="ContractCommentDialogForm" type="com.hps.july.arenda.formbean.ContractCommentDialogForm" />
+		<form-bean name="LoanContractListForm" type="com.hps.july.arenda.formbean.LoanContractListForm" />
+		<form-bean name="LoanContractDialogForm" type="com.hps.july.arenda.formbean.LoanContractDialogForm" />
+		<form-bean name="LoanContractStateForm" type="com.hps.july.arenda.formbean.LoanContractStateForm" />
+		<form-bean name="LoanContractMemoListForm" type="com.hps.july.arenda.formbean.LoanContractMemoListForm" />
+		<form-bean name="LoanContractMemoForm" type="com.hps.july.arenda.formbean.LoanContractMemoForm" />
+		<form-bean name="LoanAktGetPutListForm" type="com.hps.july.arenda.formbean.LoanAktGetPutListForm" />
+		<form-bean name="LoanAktGetPutDialogForm" type="com.hps.july.arenda.formbean.LoanAktGetPutDialogForm" />
+		<form-bean name="LoanAktGetPutWordForm" type="com.hps.july.arenda.formbean.LoanAktGetPutWordForm" />
+		<form-bean name="SchetFactListForm" type="com.hps.july.arenda.formbean.SchetFactListForm" />
+		<form-bean name="SchetFactDialogForm" type="com.hps.july.arenda.formbean.SchetFactDialogForm"/>
+		<form-bean name="ChargeListForm" type="com.hps.july.arenda.formbean.ChargeListForm"/>
+		<form-bean name="ChargeDialogForm" type="com.hps.july.arenda.formbean.ChargeDialogForm"/>
+		<form-bean name="ChargeAutomaticDialogForm" type="com.hps.july.arenda.formbean.ChargeAutomaticDialogForm"/>
+		<form-bean name="JournalListForm" type="com.hps.july.arenda.formbean.JournalListForm"/>
+		<form-bean name="ChargeListLinkToSchetFactForm" type="com.hps.july.arenda.formbean.ChargeListLinkToSchetFactForm"/>		
+		<form-bean name="RegistryBuchDocsListForInitialGroupForm" type="com.hps.july.arenda.formbean.RegistryBuchDocsListForInitialGroupForm"/>
+		<form-bean name="RegistryBuchDocsListForReturnDocumentGroupForm" type="com.hps.july.arenda.formbean.RegistryBuchDocsListForReturnDocumentGroupForm"/>
+		<form-bean name="RegistryBuchDocsDialogForm" type="com.hps.july.arenda.formbean.RegistryBuchDocsDialogForm"/>
+		<form-bean name="RegistryBuchDocsCompositionListForm" type="com.hps.july.arenda.formbean.RegistryBuchDocsCompositionListForm"/>
+		<form-bean name="RegistryBuchDocsWordForm" type="com.hps.july.arenda.formbean.RegistryBuchDocsWordForm"/>
+		<form-bean name="PriorityContractForActListForm" type="com.hps.july.arenda.formbean.PriorityContractForActListForm"/>
+		<form-bean name="SchetFactForChargeListForm" type="com.hps.july.arenda.formbean.SchetFactForChargeListForm"/>
+		<form-bean name="LeasePayOfficeMemoListForm" type="com.hps.july.arenda.formbean.LeasePayOfficeMemoListForm"/>
+		<form-bean name="LeasePayOfficeMemoDialogForm" type="com.hps.july.arenda.formbean.LeasePayOfficeMemoDialogForm"/>
+		<form-bean name="LeasePayOfficeMemoWordForm" type="com.hps.july.arenda.formbean.LeasePayOfficeMemoWordForm"/>
+		<form-bean name="PayRuleLookupListForm" type="com.hps.july.arenda.formbean.PayRuleLookupListForm"/>
+		<form-bean name="LeaseZPOfficeMemoListForm" type="com.hps.july.arenda.formbean.LeaseZPOfficeMemoListForm"/>
+		<form-bean name="LeaseZPOfficeMemoDialogForm" type="com.hps.july.arenda.formbean.LeaseZPOfficeMemoDialogForm"/>
+		<form-bean name="LeaseZPOfficeMemoWordForm" type="com.hps.july.arenda.formbean.LeaseZPOfficeMemoWordForm"/>
+		<form-bean name="HistoryLookupListForm" type="com.hps.july.arenda.formbean.HistoryLookupListForm"/>
+		<form-bean name="ArendaToNfsZpLookupListForm" type="com.hps.july.arenda.formbean.ArendaToNfsZpLookupListForm"/>
+		<form-bean name="LeaseContractProblemListForm" type="com.hps.july.arenda.formbean.LeaseContractProblemListForm"/>
+		<form-bean name="LeaseContractProblemDialogForm" type="com.hps.july.arenda.formbean.LeaseContractProblemDialogForm"/>
+		<form-bean name="LeaseProblemListForm" type="com.hps.july.arenda.formbean.LeaseProblemListForm"/>
+		<form-bean name="PositionsDialogListForm" type="com.hps.july.arenda.formbean.PositionsDialogListForm"/>
+		<form-bean name="CompletWorkActsForChargeListForm" type="com.hps.july.arenda.formbean.CompletWorkActsForChargeListForm"/>
+		<form-bean name="CompletWorkAktDialogForm" type="com.hps.july.arenda.formbean.CompletWorkAktDialogForm"/>
+		<form-bean name="ChargeListLinkToCompletWorkAktForm" type="com.hps.july.arenda.formbean.ChargeListLinkToCompletWorkAktForm"/>
+		<form-bean name="FactsLeasePageForm" type="com.hps.july.arenda.formbean.FactsLeasePageForm"/>
+		<form-bean name="DnopForChargeListForm" type="com.hps.july.arenda.formbean.DnopForChargeListForm"/>
+		<form-bean name="DnopForPaymentListForm" type="com.hps.july.arenda.formbean.DnopForPaymentListForm"/>
+		<form-bean name="DnopDialogForm" type="com.hps.july.arenda.formbean.DnopDialogForm"/>
+		<form-bean name="SaldoDetailListForm" type="com.hps.july.arenda.formbean.SaldoDetailListForm"/>
+		<form-bean name="SaldoDetailDialogForm" type="com.hps.july.arenda.formbean.SaldoDetailDialogForm"/>
+		<form-bean name="AvailableRegionForm" type="com.hps.july.arenda.formbean.AvailableRegionForm"/>
+		<form-bean name="AbonentSaldoDetailListForm" type="com.hps.july.arenda.formbean.AbonentSaldoDetailListForm"/>
+		<form-bean name="AbonentSaldoDetailDialogForm" type="com.hps.july.arenda.formbean.AbonentSaldoDetailDialogForm"/>
+		<form-bean name="AbonentInfoForm" type="com.hps.july.arenda.formbean.AbonentInfoForm"/>
+		<form-bean name="RegistryBuchDocsHistoryForm" type="com.hps.july.arenda.formbean.RegistryBuchDocsHistoryForm"/>
+		<form-bean name="ChargeListLinkToPaymentForm" type="com.hps.july.arenda.formbean.ChargeListLinkToPaymentForm"/>
+		<form-bean name="RegistryBuchDocsListForm" type="com.hps.july.arenda.formbean.RegistryBuchDocsListForm"/>
+	</form-beans>
+
+
+	<!-- ========== Global Forward Definitions ============================== -->
+	<global-forwards type="org.apache.struts.action.ActionForward">
+		<forward name="main" path="/july.jsp" />
+	</global-forwards>
+	<!--
+		<global-forwards type="org.apache.struts.action.ActionForward">
+		<forward name="actword" path="/mutActWord.jsp" redirect="false"/>
+		</global-forwards>
+	-->
+
+
+	<!-- ========== Action Mapping Definitions ============================== -->
+	<action-mappings type="org.apache.struts.action.ActionMapping">
+
+
+		<action path="/main" type="com.hps.july.arenda.actionbean.ShowMainAction" validate="true"></action>
+
+
+		<action path="/Login" type="com.hps.july.arenda.actionbean.ShowLoginAction" validate="true"></action>
+
+
+		<action path="/Logout" type="com.hps.july.arenda.actionbean.ShowLogoutAction" validate="true"></action>
+
+		<action path="/MutualActWordUploadAction" type="com.hps.july.arenda.actionbean.MutualActWordUploadAction" name="MutactWordUploadForm" scope="request" validate="true"></action>
+
+		<action path="/ShowActContentsList" type="com.hps.july.arenda.actionbean.ActContentsListAction" name="ActContentsListForm" scope="session" validate="true"></action>
+
+		<action path="/ActContentsRecalculate" type="com.hps.july.arenda.actionbean.ActContentsRecalculate" validate="true">
+			<forward name="success" path="ShowActContentsList.do" redirect="false" />
+		</action>
+
+		<action path="/ShowAvailableRegion" type="com.hps.july.arenda.actionbean.ShowAvailableArendaRegion" name="AvailableRegionForm" validate="true">
+		</action>
+
+		<action path="/ShowDogHistoryList" type="com.hps.july.arenda.actionbean.DogHistoryListAction" name="DogHistoryListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowNFS_List" type="com.hps.july.web.util.BrowseAction" name="NFS_ListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowNFS_ListDetach" type="com.hps.july.arenda.actionbean.NFS_ListDetachAction" name="NFS_ListDetachForm" scope="session" validate="true">
+			<forward name="printXLS" path="nfsListDetachXLS.jsp" redirect="false" />		
+		</action>
+
+		<action path="/ShowMemoList" type="com.hps.july.web.util.BrowseAction" name="MemoListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowMemoPosList" type="com.hps.july.web.util.BrowseAction" name="MemoPosListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowDogHistChargeList" type="com.hps.july.arenda.actionbean.DogHistChargeListAction" name="DogHistChargeListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowDogHistPayList" type="com.hps.july.arenda.actionbean.DogHistPayListAction" name="DogHistPayListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowDogAbonentsList" type="com.hps.july.arenda.actionbean.DogAbonentsListAction" name="DogAbonentsListForm" scope="session" validate="true"></action>
+
+		<action path="/ActParamsPrint" type="com.hps.july.arenda.actionbean.ActParamsPrint" name="ActParamsPrintForm" scope="request" validate="true"></action>
+
+		<action path="/NFS_Print" type="com.hps.july.arenda.actionbean.NFS_PrintAction" name="NFS_PrintForm" scope="request" validate="true"></action>
+
+		<action path="/MutactWordAction" type="com.hps.july.arenda.actionbean.MutactWordAction" name="MutactWordPrintForm" scope="request" validate="true">
+			<forward name="actword" path="mutActWord.jsp" redirect="false" />
+			<forward name="actaccword" path="mutActAccWord.jsp" redirect="false" />
+			<forward name="actsverkaword_1" path="mutActSverkaWord_1.jsp" redirect="false" />
+			<forward name="actsverkaword_2" path="mutActSverkaWord_2.jsp" redirect="false" />
+			<forward name="actsverkaword_3" path="mutActSverkaWord_3.jsp" redirect="false" />
+			<forward name="actsverkaword_4" path="mutActSverkaWord_4.jsp" redirect="false" />
+			<forward name="actsverkaword_5" path="mutActSverkaWord_5.jsp" redirect="false" />
+			<forward name="actsverkaword_6" path="mutActSverkaWord_6.jsp" redirect="false" />
+		</action>
+
+		<action path="/SchetFactWordAction" type="com.hps.july.arenda.actionbean.SchetFactWordAction" name="SchetFactPrintForm" scope="request" validate="true">
+			<forward name="type_A" path="schetFactWord.jsp" redirect="false" />
+			<forward name="type_B" path="schetFactWord_old.jsp" redirect="false" />
+			<forward name="type_C" path="schetFactWord_30_05_06.jsp" redirect="false" />
+		</action>
+
+		<action path="/MemoWordAction" type="com.hps.july.arenda.actionbean.MemoWordAction" name="MemoWordForm" scope="request" validate="true">
+			<forward name="print0" path="memoWord.jsp" redirect="false" />
+			<forward name="print1" path="memoWord.jsp" redirect="false" />
+			<forward name="print2" path="memoWord_Type_2.jsp" redirect="false" />
+			<forward name="print3" path="memoWord.jsp" redirect="false" />
+			<forward name="print4" path="memoWord_Type_4.jsp" redirect="false" />
+			<forward name="print5" path="memoWord.jsp" redirect="false" />
+			<forward name="print6" path="memoWord.jsp" redirect="false" />
+			<forward name="print7" path="memoWord_Type_7.jsp" redirect="false" />
+			<forward name="print8" path="memoWord.jsp" redirect="false" />
+			<forward name="print9" path="memoWord.jsp" redirect="false" />
+			<forward name="printA" path="memoWord.jsp" redirect="false" />
+			<forward name="printB" path="memoWord_Type_B.jsp" redirect="false" />
+			<forward name="printC" path="memoWord.jsp" redirect="false" />
+			<forward name="printD" path="memoWord_Type_D.jsp" redirect="false" />
+			<forward name="printE" path="memoWord_Type_E.jsp" redirect="false" />
+			<forward name="printF" path="memoWord_Type_F.jsp" redirect="false" />
+			<forward name="printJ" path="memoWord_Type_J.jsp" redirect="false" />
+		</action>
+		<!--  ======= Under Constraction ======= -->
+
+		<action path="/ShowUnderConstractionRep1" type="com.hps.july.arenda.actionbean.ShowUnderConstractionRep1Action" validate="true"></action>
+
+		<action path="/ShowUnderConstractionRep2" type="com.hps.july.arenda.actionbean.ShowUnderConstractionRep2Action" validate="true"></action>
+
+		<!--  ======= (end) Under Constraction ======= -->
+
+
+
+
+
+
+		<action path="/ShowWeArendaList" type="com.hps.july.web.util.BrowseAction" name="WeArendaListForm" scope="session" validate="true"></action>
+
+		<action path="/EditWeArenda" type="com.hps.july.web.util.AbstractEditAction" name="WeArendaForm" scope="session" validate="true">
+			<forward name="errorgoback" path="ViewWeArenda.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ViewWeArenda" type="com.hps.july.web.util.AbstractEditAction" name="WeArendaForm" scope="session" validate="true">
+			<forward name="errorgoback" path="ShowWeArendaList.do" redirect="true" />
+		</action>
+		<!--
+			<action path="/ProcessWeArenda" type="com.hps.july.arenda.actionbean.ProcessWeArendaAction" name="WeArendaForm" scope="session" validate="true">
+			<forward name="success" path="ViewWeArenda.do?action=View" redirect="true" />
+			</action>
+		-->
+		<action path="/ProcessWeArenda" type="com.hps.july.web.util.SuccessProcessAction" name="WeArendaForm" scope="session" validate="true">
+			<forward name="success" path="ViewWeArenda.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/DeleteWeArenda" type="com.hps.july.web.util.FormProcessAction" name="WeArendaForm" scope="session" validate="true">
+			<forward name="success" path="ViewWeArenda.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ShowOrganizationLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="OrganizationLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowGroupLookupList" type="com.hps.july.arenda.actionbean.ShowGroupLookupListAction" name="GroupLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowGrouppingLookupList" type="com.hps.july.arenda.actionbean.ShowGrouppingLookupListAction" name="GrouppingLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowWorkerLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="WorkerLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowPositionLookupList" type="com.hps.july.arenda.actionbean.ShowPositionLookupListAction" name="PositionLookupListForm" scope="session" validate="true"></action>
+
+
+		<action path="/ShowPositionMultiList" type="com.hps.july.arenda.actionbean.ShowPositionMultiListAction" name="PositionMultiListForm" scope="session" validate="true">
+			<forward name="process" path="ProcessPositionMulti.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessPositionMulti" type="com.hps.july.arenda.actionbean.ProcessPositionMulti">
+			<forward name="success" path="ShowArendaPositionsList.do" redirect="true" />
+			<forward name="errorgoback" path="/ShowArendaPositionsList.do" />
+		</action>
+
+		<action path="/ShowArendaPositionsList" type="com.hps.july.arenda.actionbean.ShowArendaPositionsListAction" name="ArendaPositionsListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowArendaToNfsZpList" type="com.hps.july.arenda.actionbean.ArendaToNfsZpListAction" name="ArendaToNfsZpListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowNFS_ZpLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="NFS_ZpLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/EditArendaPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ArendaPositionForm" validate="true">
+			<forward name="errorgoback" path="ShowArendaPositionsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaPosition" type="com.hps.july.web.util.SuccessProcessAction" name="ArendaPositionForm" scope="request" validate="true">
+			<forward name="success" path="ShowArendaPositionsList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowUsArendaList" type="com.hps.july.arenda.actionbean.ShowUsArendaListAction" name="UsArendaListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditUsArenda" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsArendaForm" validate="true">
+			<forward name="errorgoback" path="ShowUsArendaList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessUsArenda" type="com.hps.july.web.util.AbstractProcessAction" name="UsArendaForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsArendaList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowChannelArendaList" type="com.hps.july.arenda.actionbean.ShowChannelArendaListAction" name="ChannelArendaListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditChannelArenda" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelArendaForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelArendaList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChannelArenda" type="com.hps.july.web.util.AbstractProcessAction" name="ChannelArendaForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelArendaList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowPayRulesList" type="com.hps.july.arenda.actionbean.ShowPayRulesListAction" name="PayRulesListForm" scope="session" validate="true"></action>
+
+
+
+		<action path="/EditPayRule" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="PayRuleForm" validate="true">
+			<forward name="errorgoback" path="ShowPayRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessPayRule" type="com.hps.july.web.util.AbstractProcessAction" name="PayRuleForm" scope="request" validate="true">
+			<forward name="success" path="ShowPayRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowChargeRulesList" type="com.hps.july.arenda.actionbean.ShowChargeRulesListAction" name="ChargeRulesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChargeRule" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChargeRuleForm" validate="true">
+			<forward name="errorgoback" path="ShowChargeRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChargeRule" type="com.hps.july.web.util.AbstractProcessAction" name="ChargeRuleForm" scope="request" validate="true">
+			<forward name="success" path="ShowChargeRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowResourceLookupList" type="com.hps.july.arenda.actionbean.ShowResourceLookupListAction" name="ResourceLookupListForm" scope="session" validate="true"></action>
+
+
+		<action path="/ShowRestypeLookupList" type="com.hps.july.arenda.actionbean.ShowRestypeLookupListAction" name="RestypeLookupListForm" scope="session" validate="true"></action>
+
+
+		<action path="/ShowRessbtypeLookupList" type="com.hps.july.arenda.actionbean.ShowRessbtypeLookupListAction" name="RessbtypeLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowMutualReglamentsList" type="com.hps.july.arenda.actionbean.ShowMutualReglamentsListAction" name="MutualReglamentsListForm" scope="session" validate="true"></action>
+
+		<!-- request -->
+		<action path="/EditMainParamsMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="MainParamsMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ViewMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ViewMainParamsMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="MainParamsMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowMutualReglamentsList.do" redirect="true" />
+		</action>
+
+		<!--
+			<action path="/ProcessMainParamsMutReglmnt" 
+			type="com.hps.july.arenda.actionbean.ProcessMainParamsMutReglmntAction"
+			name="MainParamsMutReglmntForm" 
+			scope="session" 
+			validate="true">
+			<forward name="success" path="ViewMainParamsMutReglmnt.do?action=View" redirect="true" />
+			</action>
+		-->
+		<action path="/ProcessMainParamsMutReglmnt" type="com.hps.july.web.util.SuccessProcessAction" name="MainParamsMutReglmntForm" scope="session" validate="true">
+			<forward name="success" path="ViewMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ShowPhonesMutReglmntList" type="com.hps.july.arenda.actionbean.ShowPhonesMutReglmntListAction" name="PhonesMutReglmntListForm" scope="session" validate="true"></action>
+
+		<action path="/EditPhoneMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="PhoneMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowPhonesMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessPhoneMutReglmnt" type="com.hps.july.web.util.AbstractProcessAction" name="PhoneMutReglmntForm" scope="request" validate="true">
+			<forward name="success" path="ShowPhonesMutReglmntList.do" redirect="true" />
+		</action>
+
+
+
+
+		<action path="/ShowContractsMutReglmntList" type="com.hps.july.arenda.actionbean.ShowContractsMutReglmntListAction" name="ContractsMutReglmntListForm" scope="session" validate="true"></action>
+
+		<!--action   path="/ShowContractMultiList"
+			type="com.hps.july.arenda.actionbean.ShowContractMultiListAction"
+			name="ContractMultiListForm"
+			scope="session"
+			validate="true">
+			<forward name="process" path="ProcessContractMulti.do" redirect="true"/>
+			</action>
+			
+			<action   path="/ProcessContractMulti"
+			type="com.hps.july.arenda.actionbean.ProcessContractMulti">
+			<forward name="success" path="ShowContractsMutReglmntList.do" redirect="true"/>
+			<forward name="errorgoback" path="/ShowContractsMutReglmntList.do"/>
+			</action-->
+
+		<action path="/EditContractMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ContractMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowContractsMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessContractMutReglmnt" type="com.hps.july.web.util.AbstractProcessAction" name="ContractMutReglmntForm" scope="request" validate="true">
+			<forward name="success" path="ShowContractsMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowContractLookupList" type="com.hps.july.arenda.actionbean.ShowContractLookupListAction" name="ContractLookupListForm" scope="session" validate="true"></action>
+
+
+		<action path="/ShowMutualRulesList" type="com.hps.july.arenda.actionbean.ShowMutualRulesListAction" name="MutualRulesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditMutualRule" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="MutualRuleForm" validate="true">
+			<forward name="errorgoback" path="ShowMutualRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessMutualRule" type="com.hps.july.web.util.AbstractProcessAction" name="MutualRuleForm" scope="request" validate="true">
+			<forward name="success" path="ShowMutualRulesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowAccountLookupList" type="com.hps.july.arenda.actionbean.ShowAccountLookupListAction" name="AccountLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowChargesList" type="com.hps.july.arenda.actionbean.ShowChargesListAction" name="ChargesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditCharge" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChargeForm" validate="true">
+			<forward name="errorgoback" path="ShowChargesList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessCharge" type="com.hps.july.web.util.AbstractProcessAction" name="ChargeForm" scope="request" validate="true">
+			<forward name="success" path="ShowChargesList.do" redirect="true" />
+		</action>
+
+		<!-- #@# PAYFORMS -->
+
+		<action path="/ShowPaymentsList" type="com.hps.july.arenda.actionbean.ShowPaymentsListAction" name="PaymentsListForm" scope="session" validate="true"></action>
+
+
+		<!-- #@# PAYFORMS -->
+
+
+		<action path="/EditPayment" type="com.hps.july.arenda.actionbean.PaymentEditAction" name="PaymentForm" scope="request" validate="true">
+			<forward name="errorgoback" path="ShowPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessPayment" type="com.hps.july.arenda.actionbean.PaymentProcessAction" name="PaymentForm" scope="request" validate="true">
+			<forward name="success" path="ShowPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<!-- #@# END PAYFORMS -->
+
+
+
+
+		<action path="/ShowMutualActsList" type="com.hps.july.arenda.actionbean.ShowMutualActsListAction" name="MutualActsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditMutualAct" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="MutualActForm" validate="true">
+			<forward name="errorgoback" path="ShowMutualActsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessMutualAct" type="com.hps.july.web.util.AbstractProcessAction" name="MutualActForm" scope="request" validate="true">
+			<forward name="success" path="ShowMutualActsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/EditWeState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="WeStateForm" validate="true">
+			<forward name="errorgoback" path="ShowWeArendaList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessWeState" type="com.hps.july.arenda.actionbean.StateProcessAction" name="WeStateForm" scope="request" validate="true">
+			<forward name="errorgoback" path="ShowWeArendaList.do" redirect="true" />
+			<forward name="success" path="ShowWeArendaList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessMoveContractToPie" type="com.hps.july.arenda.actionbean.ProcessMoveContractToPieAction">
+			<forward name="success" path="ShowWeArendaList.do" redirect="true" />
+			<forward name="error" path="ShowErrorMoveContractToPie.do" redirect="true" />
+		</action>
+
+		<action path="/ShowErrorMoveContractToPie" type="com.hps.july.arenda.actionbean.ShowErrorMoveContractToPieAction"></action>
+
+
+		<action path="/EditUsState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsStateForm" validate="true">
+			<forward name="errorgoback" path="ShowUsArendaList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessUsState" type="com.hps.july.web.util.AbstractProcessAction" name="UsStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsArendaList.do" redirect="true" />
+		</action>
+
+
+
+		<action path="/EditChannelState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelStateForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelArendaList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChannelState" type="com.hps.july.web.util.AbstractProcessAction" name="ChannelStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelArendaList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowHistoryList" type="com.hps.july.arenda.actionbean.ShowHistoryListAction" name="HistoryListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditHistory" type="com.hps.july.arenda.actionbean.NonReturnableEditAction" scope="session" name="HistoryForm" validate="true">
+			<forward name="errorgoback" path="ViewHistory.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ViewHistory" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="HistoryForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistory" type="com.hps.july.web.util.SuccessProcessAction" name="HistoryForm" scope="session" validate="true">
+			<forward name="success" path="ViewHistory.do?action=View" redirect="true" />
+		</action>
+
+
+		<action path="/EditHistoryWeState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryWeStateForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryWeState" type="com.hps.july.arenda.actionbean.StateProcessAction" name="HistoryWeStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessHistoryMoveContractToPie" type="com.hps.july.arenda.actionbean.ProcessHistoryMoveContractToPieAction">
+			<forward name="success" path="ShowHistoryList.do" redirect="true" />
+			<forward name="error" path="ShowHistoryErrorMoveContractToPie.do" redirect="true" />
+		</action>
+
+		<action path="/ShowHistoryErrorMoveContractToPie" type="com.hps.july.arenda.actionbean.ShowHistoryErrorMoveContractToPieAction"></action>
+
+		<action path="/ShowHistoryPaymentsList" type="com.hps.july.arenda.actionbean.ShowHistoryPaymentsListAction" name="HistoryPaymentsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditHistoryPayment" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryPaymentForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryPayment" type="com.hps.july.web.util.AbstractProcessAction" name="HistoryPaymentForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryPaymentsList.do" redirect="true" />
+		</action>
+
+
+
+
+		<action path="/ShowHistoryChargesList" type="com.hps.july.arenda.actionbean.ShowHistoryChargesListAction" name="HistoryChargesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditHistoryCharge" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryChargeForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryChargesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryCharge" type="com.hps.july.web.util.AbstractProcessAction" name="HistoryChargeForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryChargesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowHistoryPayRulesList" type="com.hps.july.arenda.actionbean.ShowHistoryPayRulesListAction" name="HistoryPayRulesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditHistoryPayRule" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryPayRuleForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryPayRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryPayRule" type="com.hps.july.web.util.AbstractProcessAction" name="HistoryPayRuleForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryPayRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowHistoryChargeRulesList" type="com.hps.july.arenda.actionbean.ShowHistoryChargeRulesListAction" name="HistoryChargeRulesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditHistoryChargeRule" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryChargeRuleForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryChargeRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryChargeRule" type="com.hps.july.web.util.AbstractProcessAction" name="HistoryChargeRuleForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryChargeRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowHistoryArendaPositionsList" type="com.hps.july.arenda.actionbean.ShowHistoryArendaPositionsListAction" name="HistoryArendaPositionsListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditHistoryArendaPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryArendaPositionForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryArendaPositionsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryArendaPosition" type="com.hps.july.web.util.SuccessProcessAction" name="HistoryArendaPositionForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryArendaPositionsList.do" redirect="true" />
+		</action>
+
+
+		<!-- UsPayments -->
+
+		<action path="/ShowUsPaymentsList" type="com.hps.july.arenda.actionbean.ShowUsPaymentsListAction" name="UsPaymentsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditUsPayment" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsPaymentForm" validate="true">
+			<forward name="errorgoback" path="ShowUsPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessUsPayment" type="com.hps.july.web.util.AbstractProcessAction" name="UsPaymentForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsPaymentsList.do" redirect="true" />
+		</action>
+
+		<!-- UsCharges -->
+
+		<action path="/ShowUsChargesList" type="com.hps.july.arenda.actionbean.ShowUsChargesListAction" name="UsChargesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditUsCharge" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsChargeForm" validate="true">
+			<forward name="errorgoback" path="ShowUsChargesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessUsCharge" type="com.hps.july.web.util.AbstractProcessAction" name="UsChargeForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsChargesList.do" redirect="true" />
+		</action>
+
+		<!-- ChannelPayments -->
+
+		<action path="/ShowChannelPaymentsList" type="com.hps.july.arenda.actionbean.ShowChannelPaymentsListAction" name="ChannelPaymentsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChannelPayment" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelPaymentForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChannelPayment" type="com.hps.july.web.util.AbstractProcessAction" name="ChannelPaymentForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelPaymentsList.do" redirect="true" />
+		</action>
+
+		<!-- ChannelCharges -->
+
+		<action path="/ShowChannelChargesList" type="com.hps.july.arenda.actionbean.ShowChannelChargesListAction" name="ChannelChargesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChannelCharge" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelChargeForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelChargesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChannelCharge" type="com.hps.july.web.util.AbstractProcessAction" name="ChannelChargeForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelChargesList.do" redirect="true" />
+		</action>
+
+
+		<!-- Prolongation -->
+
+		<action path="/ShowStartProlongationsList" type="com.hps.july.arenda.actionbean.ShowStartProlongationsListAction" name="StartProlongationsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditStartProlongation" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="StartProlongationForm" validate="true">
+			<forward name="errorgoback" path="ShowStartProlongationsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessStartProlongation" type="com.hps.july.arenda.actionbean.ProcedureProcessAction" name="StartProlongationForm" scope="session" validate="true">
+			<forward name="success" path="ShowExecProlongation.do" redirect="true" /><!-- ?.do-->
+		</action>
+
+		<action path="/ShowExecProlongation" type="com.hps.july.arenda.actionbean.ShowExecProlongationAction" name="StartProlongationForm" scope="session" validate="true"></action>
+		<!-- name="ExecProlongation" -->
+
+		<action path="/ShowJournalProlongationsList" type="com.hps.july.arenda.actionbean.ShowJournalProlongationsListAction" name="JournalProlongationsListForm" scope="session" validate="true"></action>
+
+		<!-- Charges Proc -->
+
+		<action path="/ShowStartChargesList" type="com.hps.july.arenda.actionbean.ShowStartChargesListAction" name="StartChargesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditStartCharge" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="StartChargeForm" validate="true">
+			<forward name="errorgoback" path="ShowStartChargesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessStartCharge" type="com.hps.july.arenda.actionbean.ProcedureProcessAction" name="StartChargeForm" scope="session" validate="true">
+			<forward name="success" path="ShowExecCharge.do" redirect="true" />
+		</action>
+
+		<action path="/ShowExecCharge" type="com.hps.july.arenda.actionbean.ShowExecChargeAction" name="StartChargeForm" scope="session" validate="true"></action>
+		<!-- name="ExecProlongation" -->
+
+		<action path="/ShowJournalChargesList" type="com.hps.july.arenda.actionbean.ShowJournalChargesListAction" name="JournalChargesListForm" scope="session" validate="true"></action>
+
+		<!-- Payments Proc -->
+
+		<action path="/ShowStartPaymentsList" type="com.hps.july.arenda.actionbean.ShowStartPaymentsListAction" name="StartPaymentsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditStartPayment" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="StartPaymentForm" validate="true">
+			<forward name="errorgoback" path="ShowStartPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessStartPayment" type="com.hps.july.arenda.actionbean.ProcedureProcessAction" name="StartPaymentForm" scope="session" validate="true">
+			<forward name="success" path="ShowExecPayment.do" redirect="true" />
+		</action>
+
+		<action path="/ShowExecPayment" type="com.hps.july.arenda.actionbean.ShowExecPaymentAction" name="StartPaymentForm" scope="session" validate="true"></action>
+		<!-- name="ExecProlongation" -->
+
+		<action path="/ShowJournalPaymentsList" type="com.hps.july.arenda.actionbean.ShowJournalPaymentsListAction" name="JournalPaymentsListForm" scope="session" validate="true"></action>
+
+		<!-- -->
+
+		<action path="/ShowOperatorLookupList" type="com.hps.july.arenda.actionbean.ShowOperatorLookupListAction" name="OperatorLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowHistoryPositionMultiList" type="com.hps.july.arenda.actionbean.ShowHistoryPositionMultiListAction" name="HistoryPositionMultiListForm" scope="session" validate="true">
+			<forward name="process" path="ProcessHistoryPositionMulti.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessHistoryPositionMulti" type="com.hps.july.arenda.actionbean.ProcessHistoryPositionMulti">
+			<forward name="success" path="ShowHistoryArendaPositionsList.do" redirect="true" />
+			<forward name="errorgoback" path="/ShowHistoryArendaPositionsList.do" />
+		</action>
+
+
+
+		<action path="/ShowRenterLookupList" type="com.hps.july.arenda.actionbean.ShowRenterLookupListAction" name="RenterLookupListForm" scope="session" validate="true"></action>
+
+
+		<!-- FromContract -->
+
+
+		<action path="/ShowFromContractMutualReglamentsList" type="com.hps.july.arenda.actionbean.ShowFromContractMutualReglamentsListAction" name="FromContractMutualReglamentsListForm" scope="session" validate="true"></action>
+		<!-- request -->
+		<action path="/EditFromContractMainParamsMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="FromContractMainParamsMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ViewFromContractMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ViewFromContractMainParamsMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="FromContractMainParamsMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractMutualReglamentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromContractMainParamsMutReglmnt" type="com.hps.july.web.util.SuccessProcessAction" name="FromContractMainParamsMutReglmntForm" scope="session" validate="true">
+			<forward name="success" path="ViewFromContractMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+
+
+		<action path="/ShowFromContractPhonesMutReglmntList" type="com.hps.july.arenda.actionbean.ShowFromContractPhonesMutReglmntListAction" name="FromContractPhonesMutReglmntListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromContractPhoneMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractPhoneMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractPhonesMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromContractPhoneMutReglmnt" type="com.hps.july.web.util.AbstractProcessAction" name="FromContractPhoneMutReglmntForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractPhonesMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowFromContractContractsMutReglmntList" type="com.hps.july.arenda.actionbean.ShowFromContractContractsMutReglmntListAction" name="FromContractContractsMutReglmntListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromContractContractMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractContractMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractContractsMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromContractContractMutReglmnt" type="com.hps.july.web.util.AbstractProcessAction" name="FromContractContractMutReglmntForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractContractsMutReglmntList.do" redirect="true" />
+		</action>
+
+
+
+		<action path="/ShowFromContractMutualRulesList" type="com.hps.july.arenda.actionbean.ShowFromContractMutualRulesListAction" name="FromContractMutualRulesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromContractMutualRule" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractMutualRuleForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractMutualRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromContractMutualRule" type="com.hps.july.web.util.AbstractProcessAction" name="FromContractMutualRuleForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractMutualRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowFromContractMutualActsList" type="com.hps.july.arenda.actionbean.ShowFromContractMutualActsListAction" name="FromContractMutualActsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromContractMutualAct" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractMutualActForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractMutualActsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromContractMutualAct" type="com.hps.july.web.util.AbstractProcessAction" name="FromContractMutualActForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractMutualActsList.do" redirect="true" />
+		</action>
+
+		<!-- FromHistory -->
+
+		<action path="/ShowFromHistoryMutualReglamentsList" type="com.hps.july.arenda.actionbean.ShowFromHistoryMutualReglamentsListAction" name="FromHistoryMutualReglamentsListForm" scope="session" validate="true"></action>
+		<!-- request -->
+		<action path="/EditFromHistoryMainParamsMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="FromHistoryMainParamsMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ViewFromHistoryMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ViewFromHistoryMainParamsMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="FromHistoryMainParamsMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryMutualReglamentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromHistoryMainParamsMutReglmnt" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryMainParamsMutReglmntForm" scope="session" validate="true">
+			<forward name="success" path="ViewFromHistoryMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ShowFromHistoryPhonesMutReglmntList" type="com.hps.july.arenda.actionbean.ShowFromHistoryPhonesMutReglmntListAction" name="FromHistoryPhonesMutReglmntListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromHistoryPhoneMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryPhoneMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryPhonesMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromHistoryPhoneMutReglmnt" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryPhoneMutReglmntForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryPhonesMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowFromHistoryContractsMutReglmntList" type="com.hps.july.arenda.actionbean.ShowFromHistoryContractsMutReglmntListAction" name="FromHistoryContractsMutReglmntListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromHistoryContractMutReglmnt" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryContractMutReglmntForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryContractsMutReglmntList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromHistoryContractMutReglmnt" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryContractMutReglmntForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryContractsMutReglmntList.do" redirect="true" />
+		</action>
+
+
+
+
+		<action path="/ShowFromHistoryMutualRulesList" type="com.hps.july.arenda.actionbean.ShowFromHistoryMutualRulesListAction" name="FromHistoryMutualRulesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromHistoryMutualRule" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryMutualRuleForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryMutualRulesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromHistoryMutualRule" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryMutualRuleForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryMutualRulesList.do" redirect="true" />
+		</action>
+
+
+
+		<action path="/ShowFromHistoryMutualActsList" type="com.hps.july.arenda.actionbean.ShowFromHistoryMutualActsListAction" name="FromHistoryMutualActsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromHistoryMutualAct" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryMutualActForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryMutualActsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromHistoryMutualAct" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryMutualActForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryMutualActsList.do" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/EditReglamentState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ReglamentStateForm" validate="true">
+			<forward name="errorgoback" path="ShowMutualReglamentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessReglamentState" type="com.hps.july.web.util.FormProcessAction" name="ReglamentStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowMutualReglamentsList.do" redirect="true" />
+		</action>
+
+		<action path="/EditFromContractReglamentState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractReglamentStateForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractMutualReglamentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromContractReglamentState" type="com.hps.july.web.util.FormProcessAction" name="FromContractReglamentStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractMutualReglamentsList.do" redirect="true" />
+		</action>
+
+		<action path="/EditFromHistoryReglamentState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryReglamentStateForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryMutualReglamentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromHistoryReglamentState" type="com.hps.july.web.util.FormProcessAction" name="FromHistoryReglamentStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryMutualReglamentsList.do" redirect="true" />
+		</action>
+
+
+		<!-- -->
+
+
+		<action path="/EditCopyReglament" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="CopyReglamentForm" validate="true">
+			<forward name="errorgoback" path="ViewMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessCopyReglament" type="com.hps.july.arenda.actionbean.CopyReglamentProcessAction" name="CopyReglamentForm" scope="request" validate="true">
+			<forward name="success" path="ViewMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/EditFromContractCopyReglament" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractCopyReglamentForm" validate="true">
+			<forward name="errorgoback" path="ViewFromContractMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromContractCopyReglament" type="com.hps.july.arenda.actionbean.FromContractCopyReglamentProcessAction" name="FromContractCopyReglamentForm" scope="request" validate="true">
+			<forward name="success" path="ViewFromContractMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/EditFromHistoryCopyReglament" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryCopyReglamentForm" validate="true">
+			<forward name="errorgoback" path="ViewFromHistoryMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromHistoryCopyReglament" type="com.hps.july.arenda.actionbean.FromHistoryCopyReglamentProcessAction" name="FromHistoryCopyReglamentForm" scope="request" validate="true">
+			<forward name="success" path="ViewFromHistoryMainParamsMutReglmnt.do?action=View" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/EditActState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ActStateForm" validate="true">
+			<forward name="errorgoback" path="ShowMutualActsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessActState" type="com.hps.july.web.util.AbstractProcessAction" name="ActStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowMutualActsList.do" redirect="true" />
+		</action>
+
+		<action path="/EditFromContractActState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractActStateForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractMutualActsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromContractActState" type="com.hps.july.web.util.AbstractProcessAction" name="FromContractActStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractMutualActsList.do" redirect="true" />
+		</action>
+
+		<action path="/EditFromHistoryActState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryActStateForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryMutualActsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessFromHistoryActState" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryActStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryMutualActsList.do" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/EditPaymentState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="PaymentStateForm" validate="true">
+			<forward name="errorgoback" path="ShowPaymentsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessPaymentState" type="com.hps.july.web.util.SuccessProcessAction" name="PaymentStateForm" scope="request" validate="true">
+			<forward name="success" path="ProcessMovePayToPie.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessMovePayToPie" type="com.hps.july.arenda.actionbean.ProcessMovePayToPieAction">
+			<forward name="success" path="ShowPaymentsList.do" redirect="true" />
+			<forward name="error" path="ShowErrorMovePayToPie.do" redirect="true" />
+		</action>
+
+		<action path="/ShowErrorMovePayToPie" type="com.hps.july.arenda.actionbean.ShowErrorMovePayToPieAction"></action>
+
+		<action path="/EditHistoryPaymentState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryPaymentStateForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryPaymentsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessHistoryPaymentState" type="com.hps.july.web.util.SuccessProcessAction" name="HistoryPaymentStateForm" scope="request" validate="true">
+			<forward name="success" path="ProcessHistoryMovePayToPie.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessHistoryMovePayToPie" type="com.hps.july.arenda.actionbean.ProcessHistoryMovePayToPieAction">
+			<forward name="success" path="ShowHistoryPaymentsList.do" redirect="true" />
+			<forward name="error" path="ShowHistoryErrorMovePayToPie.do" redirect="true" />
+		</action>
+
+		<action path="/ShowHistoryErrorMovePayToPie" type="com.hps.july.arenda.actionbean.ShowHistoryErrorMovePayToPieAction"></action>
+
+
+		<action path="/EditUsPaymentState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsPaymentStateForm" validate="true">
+			<forward name="errorgoback" path="ShowUsPaymentsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessUsPaymentState" type="com.hps.july.web.util.AbstractProcessAction" name="UsPaymentStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsPaymentsList.do" redirect="true" />
+		</action>
+
+		<action path="/EditChannelPaymentState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelPaymentStateForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelPaymentsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessChannelPaymentState" type="com.hps.july.web.util.AbstractProcessAction" name="ChannelPaymentStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelPaymentsList.do" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/ShowMRCntPriorsList" type="com.hps.july.arenda.actionbean.ShowMRCntPriorsListAction" name="MRCntPriorsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditMRCntPriorForm" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="MRCntPriorForm" validate="true">
+			<forward name="errorgoback" path="ShowMRCntPriorsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessMRCntPriorForm" type="com.hps.july.web.util.AbstractProcessAction" name="MRCntPriorForm" scope="request" validate="true">
+			<forward name="success" path="ShowMRCntPriorsList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowFromContractMRCntPriorsList" type="com.hps.july.arenda.actionbean.ShowFromContractMRCntPriorsListAction" name="FromContractMRCntPriorsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromContractMRCntPriorForm" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractMRCntPriorForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractMRCntPriorsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFromContractMRCntPriorForm" type="com.hps.july.web.util.AbstractProcessAction" name="FromContractMRCntPriorForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractMRCntPriorsList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowFromHistoryMRCntPriorsList" type="com.hps.july.arenda.actionbean.ShowFromHistoryMRCntPriorsListAction" name="FromHistoryMRCntPriorsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditFromHistoryMRCntPriorForm" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryMRCntPriorForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryMRCntPriorsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFromHistoryMRCntPriorForm" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryMRCntPriorForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryMRCntPriorsList.do" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/ShowSaldoList" type="com.hps.july.arenda.actionbean.ShowSaldoListAction" name="SaldoListForm" scope="session" validate="true"></action>
+
+		<action path="/EditSaldo" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="SaldoForm" validate="true">
+			<forward name="errorgoback" path="ShowSaldoList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessSaldo" type="com.hps.july.arenda.actionbean.SaldoProcessAction" name="SaldoForm" scope="request" validate="true">
+			<forward name="success" path="ShowSaldoList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowHistorySaldoList" type="com.hps.july.arenda.actionbean.ShowHistorySaldoListAction" name="HistorySaldoListForm" scope="session" validate="true"></action>
+
+		<action path="/EditHistorySaldo" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistorySaldoForm" validate="true">
+			<forward name="errorgoback" path="ShowHistorySaldoList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistorySaldo" type="com.hps.july.arenda.actionbean.SaldoProcessAction" name="HistorySaldoForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistorySaldoList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowUsSaldoList" type="com.hps.july.arenda.actionbean.ShowUsSaldoListAction" name="UsSaldoListForm" scope="session" validate="true"></action>
+
+		<action path="/EditUsSaldo" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsSaldoForm" validate="true">
+			<forward name="errorgoback" path="ShowUsSaldoList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessUsSaldo" type="com.hps.july.arenda.actionbean.SaldoProcessAction" name="UsSaldoForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsSaldoList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowChannelSaldoList" type="com.hps.july.arenda.actionbean.ShowChannelSaldoListAction" name="ChannelSaldoListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChannelSaldo" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelSaldoForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelSaldoList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChannelSaldo" type="com.hps.july.arenda.actionbean.SaldoProcessAction" name="ChannelSaldoForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelSaldoList.do" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/EditCalcContractStep1" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="CalcContractStep1Form" validate="true">
+			<forward name="errorgoback" path="ViewWeArenda.do?action=View" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessCalcContractStep1" type="com.hps.july.arenda.actionbean.ProcedureProcessAction" name="CalcContractStep1Form" scope="session" validate="true">
+			<forward name="success" path="EditCalcContractStep2.do?action=Add" redirect="true" />
+		</action>
+
+		<action path="/EditCalcContractStep2" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="CalcContractStep2Form" validate="true">
+			<forward name="errorgoback" path="EditCalcContractStep1.do?action=Add" redirect="true" />
+		</action>
+
+		<action path="/ProcessCalcContractStep2" type="com.hps.july.arenda.actionbean.ProcedureProcessAction" name="CalcContractStep2Form" scope="session" validate="true">
+			<forward name="success" path="EditCalcContractStep3.do?action=Add" redirect="true" />
+		</action>
+
+		<action path="/EditCalcContractStep3" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="CalcContractStep3Form" validate="true">
+			<forward name="errorgoback" path="EditCalcContractStep2.do?action=Add" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/ShowPaymentRatesList" type="com.hps.july.arenda.actionbean.ShowPaymentRatesListAction" name="PaymentRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditPaymentRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="PaymentRateForm" validate="true">
+			<forward name="errorgoback" path="ShowPaymentRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessPaymentRate" type="com.hps.july.web.util.AbstractProcessAction" name="PaymentRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowPaymentRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowHistoryPaymentRatesList" type="com.hps.july.arenda.actionbean.ShowHistoryPaymentRatesListAction" name="HistoryPaymentRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditHistoryPaymentRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryPaymentRateForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryPaymentRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryPaymentRate" type="com.hps.july.web.util.AbstractProcessAction" name="HistoryPaymentRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryPaymentRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowUsPaymentRatesList" type="com.hps.july.arenda.actionbean.ShowUsPaymentRatesListAction" name="UsPaymentRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditUsPaymentRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsPaymentRateForm" validate="true">
+			<forward name="errorgoback" path="ShowUsPaymentRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessUsPaymentRate" type="com.hps.july.web.util.AbstractProcessAction" name="UsPaymentRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsPaymentRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowChannelPaymentRatesList" type="com.hps.july.arenda.actionbean.ShowChannelPaymentRatesListAction" name="ChannelPaymentRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChannelPaymentRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelPaymentRateForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelPaymentRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChannelPaymentRate" type="com.hps.july.web.util.AbstractProcessAction" name="ChannelPaymentRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelPaymentRatesList.do" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/ShowStartActList" type="com.hps.july.arenda.actionbean.ShowStartActListAction" name="StartActListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowJournalActList" type="com.hps.july.arenda.actionbean.ShowJournalActListAction" name="JournalActListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowFromContractStartActList" type="com.hps.july.arenda.actionbean.ShowFromContractStartActListAction" name="FromContractStartActListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowFromContractJournalActList" type="com.hps.july.arenda.actionbean.ShowFromContractJournalActListAction" name="FromContractJournalActListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowFromHistoryStartActList" type="com.hps.july.arenda.actionbean.ShowFromHistoryStartActListAction" name="FromHistoryStartActListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowFromHistoryJournalActList" type="com.hps.july.arenda.actionbean.ShowFromHistoryJournalActListAction" name="FromHistoryJournalActListForm" scope="session" validate="true"></action>
+
+		<!-- -->
+
+		<action path="/ShowChargeRatesList" type="com.hps.july.arenda.actionbean.ShowChargeRatesListAction" name="ChargeRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChargeRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChargeRateForm" validate="true">
+			<forward name="errorgoback" path="ShowChargeRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChargeRate" type="com.hps.july.web.util.AbstractProcessAction" name="ChargeRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowChargeRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowHistoryChargeRatesList" type="com.hps.july.arenda.actionbean.ShowHistoryChargeRatesListAction" name="HistoryChargeRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditHistoryChargeRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryChargeRateForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryChargeRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryChargeRate" type="com.hps.july.web.util.AbstractProcessAction" name="HistoryChargeRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryChargeRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowUsChargeRatesList" type="com.hps.july.arenda.actionbean.ShowUsChargeRatesListAction" name="UsChargeRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditUsChargeRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsChargeRateForm" validate="true">
+			<forward name="errorgoback" path="ShowUsChargeRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessUsChargeRate" type="com.hps.july.web.util.AbstractProcessAction" name="UsChargeRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsChargeRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowChannelChargeRatesList" type="com.hps.july.arenda.actionbean.ShowChannelChargeRatesListAction" name="ChannelChargeRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChannelChargeRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelChargeRateForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelChargeRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessChannelChargeRate" type="com.hps.july.web.util.AbstractProcessAction" name="ChannelChargeRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelChargeRatesList.do" redirect="true" />
+		</action>
+
+
+		<!-- -->
+
+		<action path="/EditHistoryCalcContractStep1" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="HistoryCalcContractStep1Form" validate="true">
+			<forward name="errorgoback" path="ViewHistory.do?action=View" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryCalcContractStep1" type="com.hps.july.arenda.actionbean.ProcedureProcessAction" name="HistoryCalcContractStep1Form" scope="session" validate="true">
+			<forward name="success" path="EditHistoryCalcContractStep2.do?action=Add" redirect="true" />
+		</action>
+
+		<action path="/EditHistoryCalcContractStep2" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="HistoryCalcContractStep2Form" validate="true">
+			<forward name="errorgoback" path="EditHistoryCalcContractStep1.do?action=Add" redirect="true" />
+		</action>
+
+		<action path="/ProcessHistoryCalcContractStep2" type="com.hps.july.arenda.actionbean.ProcedureProcessAction" name="HistoryCalcContractStep2Form" scope="session" validate="true">
+			<forward name="success" path="EditHistoryCalcContractStep3.do?action=Add" redirect="true" />
+		</action>
+
+		<action path="/EditHistoryCalcContractStep3" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryCalcContractStep3Form" validate="true">
+			<forward name="errorgoback" path="EditHistoryCalcContractStep2.do?action=Add" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/ShowPaymentLookupList" type="com.hps.july.arenda.actionbean.ShowPaymentLookupListAction" name="PaymentLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowChargeDnopList" type="com.hps.july.arenda.actionbean.ShowChargeDnopListAction" name="ChargeDnopListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChargeDnop" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChargeDnopForm" validate="true">
+			<forward name="errorgoback" path="ShowChargeDnopList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessChargeDnop" type="com.hps.july.arenda.actionbean.ChargeDnopProcessAction" name="ChargeDnopForm" scope="request" validate="true">
+			<forward name="success" path="ShowChargeDnopList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowHistoryChargeDnopList" type="com.hps.july.arenda.actionbean.ShowHistoryChargeDnopListAction" name="HistoryChargeDnopListForm" scope="session" validate="true"></action>
+
+		<action path="/EditHistoryChargeDnop" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryChargeDnopForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryChargeDnopList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessHistoryChargeDnop" type="com.hps.july.arenda.actionbean.ChargeDnopProcessAction" name="HistoryChargeDnopForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryChargeDnopList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowUsChargeDnopList" type="com.hps.july.arenda.actionbean.ShowUsChargeDnopListAction" name="UsChargeDnopListForm" scope="session" validate="true"></action>
+
+		<action path="/EditUsChargeDnop" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UsChargeDnopForm" validate="true">
+			<forward name="errorgoback" path="ShowUsChargeDnopList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessUsChargeDnop" type="com.hps.july.arenda.actionbean.ChargeDnopProcessAction" name="UsChargeDnopForm" scope="request" validate="true">
+			<forward name="success" path="ShowUsChargeDnopList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowChannelChargeDnopList" type="com.hps.july.arenda.actionbean.ShowChannelChargeDnopListAction" name="ChannelChargeDnopListForm" scope="session" validate="true"></action>
+
+		<action path="/EditChannelChargeDnop" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChannelChargeDnopForm" validate="true">
+			<forward name="errorgoback" path="ShowChannelChargeDnopList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessChannelChargeDnop" type="com.hps.july.arenda.actionbean.ChargeDnopProcessAction" name="ChannelChargeDnopForm" scope="request" validate="true">
+			<forward name="success" path="ShowChannelChargeDnopList.do" redirect="true" />
+		</action>
+
+
+		<action path="/MutactEqualReport" type="com.hps.july.arenda.actionbean.MutactEqualReportAction" scope="request" name="MutactEqualReportForm" validate="false">
+
+
+		</action>
+
+		<action path="/MutactCalcReport" type="com.hps.july.arenda.actionbean.MutactCalcReportAction" scope="request" name="MutactCalcReportForm" validate="false"></action>
+
+		<!-- Reports -->
+
+
+		<action path="/ArendaReport1Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport1ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport1Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport1ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport1.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport1" type="com.hps.july.arenda.actionbean.ArendaReport1Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport2Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport2ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport2Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport2ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport2.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport2" type="com.hps.july.arenda.actionbean.ArendaReport2Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport3Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport3ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+		<action path="/ArendaReport3xls" type="com.hps.july.arenda.actionbean.ArendaReport3xlsAction" scope="request" name="ArendaReport3ParamsForm" validate="true">
+			<forward name="back" path="/main.do" />
+			<forward name="success" path="/arendaReport3xls.jsp" />
+		</action>
+
+		<action path="/ProcessArendaReport3Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport3ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport3.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport3" type="com.hps.july.arenda.actionbean.ArendaReport3Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport4Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport4ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport4Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport4ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport4.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport4" type="com.hps.july.arenda.actionbean.ArendaReport4Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport5Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport5ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport5Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport5ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport5.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport5" type="com.hps.july.arenda.actionbean.ArendaReport5Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport6Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport6ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport6Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport6ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport6.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport6" type="com.hps.july.arenda.actionbean.ArendaReport6Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport7Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport7ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport7Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport7ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport7.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport7" type="com.hps.july.arenda.actionbean.ArendaReport7Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport8Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport8ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport8Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport8ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport8.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport8" type="com.hps.july.arenda.actionbean.ArendaReport8Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport9Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport9ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport9Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport9ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport9.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport9" type="com.hps.july.arenda.actionbean.ArendaReport9Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport10Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport10ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport10Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport10ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport10.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport10" type="com.hps.july.arenda.actionbean.ArendaReport10Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ArendaReport11Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ArendaReport11ParamsForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessArendaReport11Params" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="ArendaReport11ParamsForm" scope="session" validate="true">
+			<forward name="success" path="ArendaReport11.do" redirect="true" />
+		</action>
+
+
+		<action path="/ArendaReport11" type="com.hps.july.arenda.actionbean.ArendaReport11Action" validate="true">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<!-- platinum -->
+
+		<action path="/EditPlatinumDogovorForm" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="PlatinumDogovorForm" validate="true">
+			<forward name="errorgoback" path="ViewWeArenda.do?action=View" redirect="true" />
+		</action>
+
+		<action path="/ProcessPlatinumDogovorForm" type="com.hps.july.web.util.AbstractProcessAction" name="PlatinumDogovorForm" scope="request" validate="true">
+			<forward name="success" path="ViewWeArenda.do?action=View" redirect="true" />
+		</action>
+
+
+		<action path="/GetPayFromPlatinum" type="com.hps.july.arenda.actionbean.GetPayFromPlatinumAction" name="GetPayFromPlatinumForm" scope="request" validate="false"></action>
+
+		<action path="/HistoryGetPayFromPlatinum" type="com.hps.july.arenda.actionbean.HistoryGetPayFromPlatinumAction" name="HistoryGetPayFromPlatinumForm" scope="request" validate="false"></action>
+
+
+
+		<!-- Abonent contract -->
+
+
+		<action path="/ShowBensList" type="com.hps.july.arenda.actionbean.ShowBensListAction" name="BensListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditBen" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="BenForm" validate="true">
+			<forward name="errorgoback" path="ShowBensList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessBen" type="com.hps.july.web.util.AbstractProcessAction" name="BenForm" scope="request" validate="true">
+			<forward name="success" path="ShowBensList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowAbonentsList" type="com.hps.july.web.util.BrowseAction" name="AbonentsListForm" scope="session" validate="true"></action>
+
+		<action path="/ViewAbonent" type="com.hps.july.web.util.AbstractEditAction" name="AbonentForm" scope="session" validate="true">
+			<forward name="errorgoback" path="ShowAbonentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/EditAbonent" type="com.hps.july.web.util.AbstractEditAction" name="AbonentForm" scope="session" validate="true">
+			<forward name="errorgoback" path="ShowAbonentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessAbonent" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentForm" scope="session" validate="true">
+			<forward name="success" path="ViewAbonent.do?action=View" redirect="true" />
+		</action>
+
+
+		<action path="/EditAbonentBan" type="com.hps.july.web.util.AbstractEditAction" name="AbonentBanForm" scope="session" validate="true">
+			<forward name="errorgoback" path="ShowAbonentsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessMemo" type="com.hps.july.web.util.FormProcessAction" name="MemoForm" scope="session" validate="true">
+			<forward name="success" path="ShowMemoList.do" redirect="true" />
+			<forward name="processMemoPos" path="EditMemo.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessMemoPos" type="com.hps.july.web.util.FormProcessAction" name="MemoPosForm" scope="session" validate="true">
+			<forward name="success" path="ShowMemoPosList.do" redirect="true" />
+		</action>
+
+		<action path="/EditMemo" type="com.hps.july.web.util.AbstractEditAction" name="MemoForm" scope="session" validate="true">
+			<forward name="errorgoback" path="ShowMemoList.do" redirect="true" />
+		</action>
+
+		<action path="/EditMemoPos" type="com.hps.july.web.util.AbstractEditAction" name="MemoPosForm" scope="session" validate="true">
+			<forward name="errorgoback" path="ShowMemoPosList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAbonentBan" type="com.hps.july.web.util.FormProcessAction" name="AbonentBanForm" scope="session" validate="true">
+			<forward name="success" path="ShowAbonentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/EditAbonentState" type="com.hps.july.web.util.AbstractEditAction" name="AbonentStateForm" scope="request" validate="true">
+			<forward name="errorgoback" path="ShowAbonentsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAbonentState" type="com.hps.july.web.util.FormProcessAction" name="AbonentStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentsList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowAbonentBillsList" type="com.hps.july.arenda.actionbean.ShowAbonentBillsListAction" name="AbonentBillsListForm" scope="session" validate="true"></action>
+
+
+		<action path="/ShowAbonentBilledList" type="com.hps.july.arenda.actionbean.ShowAbonentBilledListAction" name="AbonentBilledListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditAbonentBill" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentBillForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentBillsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAbonentBill" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentBillForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentBillsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowAbonentBillPosesList" type="com.hps.july.arenda.actionbean.ShowAbonentBillPosesListAction" name="AbonentBillPosesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditAbonentBillPos" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentBillPosForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentBillPosesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessAbonentBillPos" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentBillPosForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentBillPosesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowAbonentPaysList" type="com.hps.july.arenda.actionbean.ShowAbonentPaysListAction" name="AbonentPaysListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditAbonentPay" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentPayForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentPaysList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAbonentPay" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentPayForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentPaysList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowAbonentPayedList" type="com.hps.july.arenda.actionbean.ShowAbonentPayedListAction" name="AbonentPayedListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowAbonentPaymentsList" type="com.hps.july.arenda.actionbean.ShowAbonentPaymentsListAction" name="AbonentPaymentsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditAbonentPayment" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentPaymentForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessAbonentPayment" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentPaymentForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowAbonentChargesList" type="com.hps.july.arenda.actionbean.ShowAbonentChargesListAction" name="AbonentChargesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditAbonentCharge" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentChargeForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentChargesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessAbonentCharge" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentChargeForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentChargesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/EditAbonentPaymentState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentPaymentStateForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentPaymentsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAbonentPaymentState" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentPaymentStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowAbonentSaldoList" type="com.hps.july.arenda.actionbean.ShowAbonentSaldoListAction" name="AbonentSaldoListForm" scope="session" validate="true"></action>
+
+		<action path="/EditAbonentSaldo" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentSaldoForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentSaldoList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessAbonentSaldo" type="com.hps.july.arenda.actionbean.SaldoProcessAction" name="AbonentSaldoForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentSaldoList.do" redirect="true" />
+		</action>
+
+		<action path="/AbonentBillQuery" type="com.hps.july.arenda.actionbean.AbonentBillQueryAction"></action>
+
+		<action path="/AbonentBillQueryToResult" type="com.hps.july.arenda.actionbean.AbonentBillQueryToResultAction" name="ResultForm" scope="request" validate="false"></action>
+
+		<action path="/AbonentBillQueryFromResult" type="com.hps.july.arenda.actionbean.AbonentBillQueryFromResultAction" name="ResultForm" scope="request" validate="false"></action>
+
+		<action path="/ShowStartBillList" type="com.hps.july.arenda.actionbean.ShowStartBillListAction" name="StartBillListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowJournalBillList" type="com.hps.july.arenda.actionbean.ShowJournalBillListAction" name="JournalBillListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditBillHandleInNRI" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="BillHandleInNRIForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentBillsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessBillHandleInNRI" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="BillHandleInNRIForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentBillsList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowFromBillHandleInNRIJournalBillList" type="com.hps.july.arenda.actionbean.ShowFromBillHandleInNRIJournalBillListAction" name="FromBillHandleInNRIJournalBillListForm" scope="session" validate="true"></action>
+
+
+		<action path="/EditPayHandleInNRI" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="PayHandleInNRIForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentPaysList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessPayHandleInNRI" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="PayHandleInNRIForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentPaysList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowFromPayHandleInNRIJournalBillList" type="com.hps.july.arenda.actionbean.ShowFromPayHandleInNRIJournalBillListAction" name="FromPayHandleInNRIJournalBillListForm" scope="session" validate="true"></action>
+
+		<!-- platinum interact -->
+
+		<action path="/GetSprArenda" type="com.hps.july.arenda.actionbean.GetSprArendaAction"></action>
+
+		<action path="/GetSprArendaResult" type="com.hps.july.arenda.actionbean.GetSprArendaResultAction" name="GetSprArendaResultForm" scope="request" validate="false"></action>
+
+		<action path="/GetBanks" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="GetBanksForm" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessGetBanks" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="GetBanksForm" scope="session" validate="true">
+			<forward name="success" path="GetBanksResult.do" redirect="true" />
+		</action>
+
+		<action path="/GetBanksResult" type="com.hps.july.arenda.actionbean.GetBanksResultAction" name="GetBanksResultForm" scope="request" validate="false">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/GetPays" type="com.hps.july.web.util.AbstractEditAction" name="GetPaysForm" scope="request" validate="true">
+			<forward name="errorgoback" path="main.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessGetPays" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="GetPaysForm" scope="session" validate="true">
+			<forward name="success" path="GetPaysResult.do" redirect="true" />
+		</action>
+
+		<action path="/GetPaysResult" type="com.hps.july.arenda.actionbean.GetPaysResultAction" name="GetPaysResultForm" scope="request" validate="false">
+			<forward name="back" path="/main.do" />
+		</action>
+
+		<action path="/ShowBankLookupList" type="com.hps.july.arenda.actionbean.ShowBankLookupListAction" name="BankLookupListForm" scope="session" validate="true"></action>
+
+		<!-- -->
+
+		<action path="/EditFactura" type="com.hps.july.web.util.AbstractEditAction" name="FacturaForm" scope="request" validate="true">
+			<forward name="errorgoback" path="ShowChargesList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFactura" type="com.hps.july.arenda.actionbean.ProcessFacturaAction" name="FacturaForm" scope="request" validate="true">
+			<forward name="success" path="PrintFactura.do" redirect="true" />
+			<forward name="edit" path="EditFactura.do?action=Edit" redirect="true" />
+			<forward name="listSF" path="SchetFactList.do?" redirect="true" />
+		</action>
+
+		<action path="/PrintFactura" type="com.hps.july.arenda.actionbean.PrintFacturaAction"></action>
+
+		<action path="/EditHistoryFactura" type="com.hps.july.web.util.AbstractEditAction" name="HistoryFacturaForm" scope="request" validate="true">
+			<forward name="errorgoback" path="ShowHistoryChargesList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessHistoryFactura" type="com.hps.july.arenda.actionbean.ProcessFacturaAction" name="HistoryFacturaForm" scope="request" validate="true">
+			<forward name="success" path="PrintHistoryFactura.do" redirect="true" />
+		</action>
+
+		<action path="/PrintHistoryFactura" type="com.hps.july.arenda.actionbean.PrintHistoryFacturaAction"></action>
+
+		<action path="/ShowFacturaMutactList" type="com.hps.july.arenda.actionbean.ShowFacturaMutactListAction" name="FacturaMutactList" scope="session" validate="true"></action>
+
+		<action path="/EditFacturaMutact" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FacturaMutactForm" validate="true">
+			<forward name="errorgoback" path="ShowFacturaMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFacturaMutact" type="com.hps.july.arenda.actionbean.ProcessFacturaAction" name="FacturaMutactForm" scope="request" validate="true">
+			<forward name="success" path="ShowFacturaMutactList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ShowFromContractFacturaMutactList" type="com.hps.july.arenda.actionbean.ShowFromContractFacturaMutactListAction" name="FromContractFacturaMutactList" scope="session" validate="true"></action>
+
+		<action path="/EditFromContractFacturaMutact" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractFacturaMutactForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractFacturaMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFromContractFacturaMutact" type="com.hps.july.web.util.AbstractProcessAction" name="FromContractFacturaMutactForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractFacturaMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowFromHistoryFacturaMutactList" type="com.hps.july.arenda.actionbean.ShowFromHistoryFacturaMutactListAction" name="FromHistoryFacturaMutactList" scope="session" validate="true"></action>
+
+		<action path="/EditFromHistoryFacturaMutact" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryFacturaMutactForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryFacturaMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFromHistoryFacturaMutact" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryFacturaMutactForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryFacturaMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowFacturaPosMutactList" type="com.hps.july.arenda.actionbean.ShowFacturaPosMutactListAction" name="FacturaPosMutactList" scope="session" validate="true"></action>
+
+		<action path="/EditFacturaPosMutact" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FacturaPosMutactForm" validate="true">
+			<forward name="errorgoback" path="ShowFacturaPosMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFacturaPosMutact" type="com.hps.july.web.util.AbstractProcessAction" name="FacturaPosMutactForm" scope="request" validate="true">
+			<forward name="success" path="ShowFacturaPosMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowFromContractFacturaPosMutactList" type="com.hps.july.arenda.actionbean.ShowFromContractFacturaPosMutactListAction" name="FromContractFacturaPosMutactList" scope="session" validate="true"></action>
+
+		<action path="/EditFromContractFacturaPosMutact" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromContractFacturaPosMutactForm" validate="true">
+			<forward name="errorgoback" path="ShowFromContractFacturaPosMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFromContractFacturaPosMutact" type="com.hps.july.web.util.AbstractProcessAction" name="FromContractFacturaPosMutactForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromContractFacturaPosMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowFromHistoryFacturaPosMutactList" type="com.hps.july.arenda.actionbean.ShowFromHistoryFacturaPosMutactListAction" name="FromHistoryFacturaPosMutactList" scope="session" validate="true"></action>
+
+		<action path="/EditFromHistoryFacturaPosMutact" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="FromHistoryFacturaPosMutactForm" validate="true">
+			<forward name="errorgoback" path="ShowFromHistoryFacturaPosMutactList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessFromHistoryFacturaPosMutact" type="com.hps.july.web.util.AbstractProcessAction" name="FromHistoryFacturaPosMutactForm" scope="request" validate="true">
+			<forward name="success" path="ShowFromHistoryFacturaPosMutactList.do" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/ShowAbonentBillLinksList" type="com.hps.july.arenda.actionbean.ShowAbonentBillLinksListAction" name="AbonentBillLinksList" scope="session" validate="true"></action>
+
+		<action path="/EditAbonentBillLink" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentBillLinkForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentBillLinksList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAbonentBillLink" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="AbonentBillLinkForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentBillLinksList.do" redirect="true" />
+		</action>
+
+		<!-- -->
+
+		<action path="/ShowCalcHistory" type="com.hps.july.arenda.actionbean.ShowCalcHistoryAction" scope="request" name="CalcHistoryForm" validate="false"></action>
+
+		<action path="/ShowCalcHistoryReport" type="com.hps.july.arenda.actionbean.ShowCalcHistoryReportAction" scope="request" name="CalcHistoryForm" validate="false"></action>
+
+		<action path="/ShowErrorCalcHistoryList" type="com.hps.july.arenda.actionbean.ShowErrorCalcHistoryListAction" name="ErrorCalcHistoryList" scope="session" validate="true"></action>
+
+		<action path="/ShowAbonentPaymentRatesList" type="com.hps.july.arenda.actionbean.ShowAbonentPaymentRatesListAction" name="AbonentPaymentRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditAbonentPaymentRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentPaymentRateForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentPaymentRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAbonentPaymentRate" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentPaymentRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentPaymentRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowAbonentChargeRatesList" type="com.hps.july.arenda.actionbean.ShowAbonentChargeRatesListAction" name="AbonentChargeRatesListForm" scope="session" validate="true"></action>
+
+		<action path="/EditAbonentChargeRate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AbonentChargeRateForm" validate="true">
+			<forward name="errorgoback" path="ShowAbonentChargeRatesList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessAbonentChargeRate" type="com.hps.july.web.util.AbstractProcessAction" name="AbonentChargeRateForm" scope="request" validate="true">
+			<forward name="success" path="ShowAbonentChargeRatesList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowAbonentChargeDnopList" type="com.hps.july.arenda.actionbean.ShowAbonentChargeDnopListAction" name="AbonentChargeDnopListForm" scope="session" />
+		<action path="/EditAbonentChargeDnop" type="com.hps.july.web.util.AbstractEditAction" name="AbonentChargeDnopForm" scope="request">
+			<forward name="errorgoback" path="ShowAbonentChargeDnopList.do" redirect="true" />
+		</action>
+		<action path="/ProcessAbonentChargeDnop" type="com.hps.july.arenda.actionbean.ChargeDnopProcessAction" name="AbonentChargeDnopForm" scope="request">
+			<forward name="success" path="ShowAbonentChargeDnopList.do" redirect="true" />
+		</action>
+
+		<action path="/EditGetPaysByContract" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="GetPaysByContractForm" validate="true">
+			<forward name="errorgoback" path="ShowPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessGetPaysByContract" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="GetPaysByContractForm" scope="request" validate="true">
+			<forward name="success" path="ShowPaymentsList.do" redirect="true" />
+		</action>
+
+		<action path="/EditHistoryGetPaysByContract" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="HistoryGetPaysByContractForm" validate="true">
+			<forward name="errorgoback" path="ShowHistoryPaymentsList.do" redirect="true" />
+		</action>
+
+
+		<action path="/ProcessHistoryGetPaysByContract" type="com.hps.july.arenda.actionbean.ReportProcessAction" name="HistoryGetPaysByContractForm" scope="request" validate="true">
+			<forward name="success" path="ShowHistoryPaymentsList.do" redirect="true" />
+		</action>
+
+		<action path="/Reload" type="org.apache.struts.actions.ReloadAction" />
+
+		<action path="/ShowRespPaysList" type="com.hps.july.arenda.actionbean.RespPaysListAction" name="RespPaysListForm" scope="session" validate="true"></action>
+
+		<action path="/AgreementInfo" type="com.hps.july.web.util.NonNavigatedEditAction" name="AgreementInfoForm" scope="session" validate="true"></action>
+
+		<action path="/ShowLeaseResBil2nriLookupList" type="com.hps.july.arenda.actionbean.LookupBrowseActionInstance" name="LeaseResBil2nriLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowAbonentBillLookupList" type="com.hps.july.arenda.actionbean.LookupBrowseActionInstance" name="AbonentBillLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowTarifPlanLookupList" type="com.hps.july.arenda.actionbean.LookupBrowseActionInstance" name="TarifPlanLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/ShowBillingServicesLookupList" type="com.hps.july.arenda.actionbean.LookupBrowseActionInstance" name="BillingServicesLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/CompletWorkActsList" type="com.hps.july.web.util.BrowseAction" name="CompletWorkActsListForm" scope="session" validate="true"></action>
+
+		<action path="/EditCompletWorkAkt" type="com.hps.july.web.util.AbstractEditAction" name="CompletWorkAktForm" scope="session" validate="true">
+			<forward name="errorgoback" path="CompletWorkActsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessCompletWorkAkt" type="com.hps.july.web.util.FormProcessAction" name="CompletWorkAktForm" scope="session" validate="true">
+			<forward name="success" path="CompletWorkActsList.do" redirect="true" />
+		</action>
+
+		<action path="/CompletWorkAktWordAction" type="com.hps.july.arenda.actionbean.CompletWorkAktWordAction" name="CompletWorkAktWordForm" scope="request" validate="true">
+			<forward name="print" path="completWorkAktWord.jsp" redirect="false" />
+		</action>
+
+		<action path="/CompletWorkAktWordUploadAction" type="com.hps.july.arenda.actionbean.CompletWorkAktWordUploadAction" name="DocumentUploadForm" scope="request" validate="true"></action>
+
+		<action path="/CWA_Charges_Print" type="com.hps.july.arenda.actionbean.CWA_Charges_PrintAction" name="CWA_Charges_PrintForm" scope="request" validate="true"></action>
+
+		<action path="/MemoWordUploadAction" type="com.hps.july.arenda.actionbean.MemoWordUploadAction" name="DocumentUploadForm" scope="request" validate="true"></action>
+
+		<action path="/ListFromPosition" type="com.hps.july.web.util.AbstractEditAction" name="ListFromPositionForm" scope="session" validate="true"></action>
+
+		<action path="/ShowCourierDeliveryList" type="com.hps.july.web.util.BrowseAction" name="CourierDeliveryListForm" scope="request" validate="true"></action>
+
+		<action path="/ShowMemoListDetach" type="com.hps.july.web.util.BrowseAction" name="MemoListDetachForm" scope="session" validate="true"></action>
+
+		<action path="/EditMemoDetach" type="com.hps.july.web.util.AbstractEditAction" name="MemoDetachForm" scope="session" validate="true">
+			<forward name="errorgoback" path="ShowMemoListDetach.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessMemoDetach" type="com.hps.july.web.util.FormProcessAction" name="MemoDetachForm" scope="session" validate="true">
+			<forward name="success" path="ShowMemoListDetach.do" redirect="true" />
+			<forward name="processMemoPos" path="EditMemoDetach.do" redirect="true" />
+		</action>
+
+		<action path="/ReportPage" type="com.hps.july.arenda.actionbean.ReportPageAction" name="ArendaReport3ParamsForm" scope="session" validate="true">
+			<forward name="getContrArOnOtv" path="reportPage.jsp" redirect="false" />
+			<forward name="repWarningAkt" path="reportPage.jsp" redirect="false" />
+			<forward name="repWarningProlong" path="reportPage.jsp" redirect="false" />
+			<forward name="listSfOnOtv" path="reportPage.jsp" redirect="false" />
+			<forward name="listAllContractsArenda" path="reportPage.jsp" redirect="false" />
+			<forward name="workTimeOnEconomist" path="reportPage.jsp" redirect="false" />
+			<forward name="getListNewContracts" path="reportPage.jsp" redirect="false" />
+			<forward name="getListBadCharges" path="reportPage.jsp" redirect="false" />
+			<forward name="repYearPriceBS" path="reportPage.jsp" redirect="false" />
+			<forward name="fillTmpListDocumenstOnPeriod" path="reportPageNumbered.jsp" redirect="false" />
+			<forward name="fillTmpListContractsOnPeriod" path="reportPageNumbered.jsp" redirect="false" />
+			
+			<forward name="reportPage" path="reportPage.jsp" redirect="false" />
+		</action>
+
+		<action path="/EditChargeRuleDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="request" name="ChargeRuleDialogForm" validate="true"></action>
+
+		<action path="/ProcessChargeRuleDialog" type="com.hps.july.web.util.FormProcessAction" name="ChargeRuleDialogForm" scope="request" validate="true">
+			<forward name="success" path="chargeRuleDialogForm.jsp" redirect="false" />
+		</action>
+
+		<action path="/EditPayRuleDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="request" name="PayRuleDialogForm" validate="true"></action>
+
+
+		<action path="/ProcessPayRuleDialog" type="com.hps.july.web.util.FormProcessAction" name="PayRuleDialogForm" scope="request" validate="true">
+			<forward name="success" path="payRuleDialogForm.jsp" redirect="false" />
+		</action>
+
+		<action path="/ProcessArendaPositionDialog" type="com.hps.july.web.util.FormProcessAction" name="ArendaPositionDialogForm" scope="request" validate="true">
+			<forward name="WeArendaForm" path="ViewWeArenda.do" redirect="true" />
+			<forward name="HistoryForm" path="ViewHistory.do" redirect="true" />
+			<forward name="PositionsDialogListForm" path="PositionsDialogList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowListLicence" type="com.hps.july.arenda.actionbean.LicencePageAction" name="LicenceListForm" scope="session" validate="true">
+			<forward name="licencePage" path="licencePage.jsp" redirect="false" />
+			<forward name="licenceExcel" path="licenceExcel.jsp" redirect="false" />
+		</action>
+
+		<action path="/LicenceDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="LicenceDialogForm" validate="true"></action>
+
+		<action path="/ProcessLicenceDialog" type="com.hps.july.web.util.FormProcessAction" scope="session" name="LicenceDialogForm" validate="true">
+			<forward name="success" path="licenceDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/LicenceProcess" type="com.hps.july.arenda.actionbean.LicenceProcessAction">
+			<forward name="calendar" path="Calendar.jsp" redirect="false" />
+			<forward name="error" path="error.jsp" redirect="true" />
+		</action>
+
+		<action path="/LicenceInfo" type="com.hps.july.arenda.actionbean.LicenceInfoAction">
+			<forward name="licenceInfo" path="licenceInfo.jsp" redirect="false" />
+			<forward name="error" path="error.jsp" redirect="true" />
+		</action>
+
+		<action path="/EditRateList" type="com.hps.july.web.util.LookupBrowseAction" name="RateListForm" scope="session" validate="true"></action>
+
+		<action path="/LawyearNoteDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="LawyearNoteDialogForm" validate="true"></action>
+
+		<action path="/ProcessLawyearNoteDialog" type="com.hps.july.web.util.FormProcessAction" name="LawyearNoteDialogForm" scope="session" validate="true">
+			<forward name="success" path="lawyearNoteDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/FlagsFromLeaseChargesDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="FlagsFromLeaseChargesDialogForm" validate="true"></action>
+
+		<action path="/ProcessFlagsFromLeaseChargesDialog" type="com.hps.july.web.util.FormProcessAction" name="FlagsFromLeaseChargesDialogForm" scope="session" validate="true">
+			<forward name="success" path="flagsFromLeaseChargesDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/ContractCommentDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="ContractCommentDialogForm" validate="true"></action>
+
+		<action path="/ProcessContractCommentDialog" type="com.hps.july.web.util.FormProcessAction" scope="session" name="ContractCommentDialogForm" validate="true">
+			<forward name="success" path="contractCommentDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/LoanContractList" type="com.hps.july.web.util.BrowseAction" name="LoanContractListForm" scope="session" validate="true"></action>
+
+		<action path="/LoanContractDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="LoanContractDialogForm" scope="session" validate="true"></action>
+
+		<action path="/LoanContractProcess" type="com.hps.july.web.util.FormProcessAction" name="LoanContractDialogForm" scope="session" validate="true">
+			<forward name="success" path="loanContractDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/LoanContractState" type="com.hps.july.web.util.NonNavigatedEditAction" name="LoanContractStateForm" scope="session" validate="true"></action>
+
+		<action path="/LoanContractStateProcess" type="com.hps.july.web.util.FormProcessAction" name="LoanContractStateForm" scope="session" validate="true">
+			<forward name="success" path="loanContractState.jsp" redirect="false" />
+		</action>
+
+		<action path="/LoanContractMemoList" type="com.hps.july.web.util.BrowseAction" name="LoanContractMemoListForm" scope="session" validate="true"></action>
+
+		<action path="/LoanContractMemo" type="com.hps.july.web.util.AbstractEditAction" name="LoanContractMemoForm" scope="session" validate="true">
+			<forward name="errorgoback" path="LoanContractMemoList.do" redirect="true" />
+		</action>
+
+		<action path="/LoanContractMemoProcess" type="com.hps.july.web.util.FormProcessAction" name="LoanContractMemoForm" scope="session" validate="true">
+			<forward name="success" path="LoanContractMemoList.do" redirect="true" />
+			<forward name="processMemoPos" path="LoanContractMemo.do" redirect="true" />
+		</action>
+
+		<action path="/LoanAktGetPutList" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="LoanAktGetPutListForm" validate="true"></action>
+
+		<action path="/LoanAktGetPutDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="LoanAktGetPutDialogForm" scope="session" validate="true"></action>
+
+		<action path="/LoanAktGetPutProcess" type="com.hps.july.web.util.FormProcessAction" name="LoanAktGetPutDialogForm" scope="session" validate="true">
+			<forward name="success" path="loanAktGetPutDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/LoanAktGetPutWordAction" type="com.hps.july.arenda.actionbean.WordAction" name="LoanAktGetPutWordForm" scope="request" validate="true">
+			<forward name="printWord" path="loanAktGetPutWord.jsp" redirect="false" />
+		</action>
+
+		<action path="/LoanAktGetPutWordUploadAction" type="com.hps.july.arenda.actionbean.LoanAktGetPutWordUploadAction" name="DocumentUploadForm" scope="request" validate="true"></action>
+
+		<action path="/SchetFactList" type="com.hps.july.web.util.BrowseAction" name="SchetFactListForm" scope="session" validate="true"></action>
+
+		<action path="/SchetFactDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="SchetFactDialogForm" scope="session" validate="true"></action>
+
+		<action path="/SchetFactProcess" type="com.hps.july.web.util.FormProcessAction" name="SchetFactDialogForm" scope="session" validate="true">
+			<forward name="success" path="schetFactDialog.jsp" redirect="false" />
+		</action>
+		
+		<action path="/ChargeList" type="com.hps.july.web.util.AbstractEditAction" name="ChargeListForm" scope="session" validate="true"></action>
+
+		<action path="/ChargeDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="ChargeDialogForm" scope="session" validate="true"></action>
+
+		<action path="/ChargeProcess" type="com.hps.july.web.util.FormProcessAction" name="ChargeDialogForm" scope="session" validate="true">
+			<forward name="success" path="chargeDialog.jsp" redirect="false" />
+		</action>
+		
+		<action path="/ChargeAutomaticDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="ChargeAutomaticDialogForm" scope="session" validate="true"></action>
+		
+		<action path="/ChargeAutomaticProcess" type="com.hps.july.web.util.FormProcessAction" name="ChargeAutomaticDialogForm" scope="session" validate="true">
+			<forward name="success" path="chargeAutomaticDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/JournalList" type="com.hps.july.web.util.LookupBrowseAction" name="JournalListForm" scope="session" validate="true"></action>
+		
+		<action path="/ChargeListLinkToSchetFact" type="com.hps.july.web.util.NonNavigatedEditAction" name="ChargeListLinkToSchetFactForm" scope="request" validate="true"></action>		
+		
+		<action path="/ChargeListLinkToPayment" type="com.hps.july.web.util.NonNavigatedEditAction" name="ChargeListLinkToPaymentForm" scope="request" validate="true"></action>		
+		
+		<action path="/SchetFactWordUploadAction" type="com.hps.july.arenda.actionbean.SchetFactWordUploadAction" name="DocumentUploadForm" scope="request" validate="true"></action>		
+
+		<action path="/RegistryBuchDocsListForInitialGroup" type="com.hps.july.web.util.BrowseAction" name="RegistryBuchDocsListForInitialGroupForm" scope="session" validate="true"></action>
+		<action path="/RegistryBuchDocsListForReturnDocumentGroup" type="com.hps.july.web.util.BrowseAction" name="RegistryBuchDocsListForReturnDocumentGroupForm" scope="session" validate="true"></action>
+
+		<action path="/RegistryBuchDocsDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="RegistryBuchDocsDialogForm" scope="session" validate="true"></action>
+		
+		<action path="/RegistryBuchDocsProcess" type="com.hps.july.web.util.FormProcessAction" name="RegistryBuchDocsDialogForm" scope="session" validate="true">
+			<forward name="success" path="registryBuchDocsDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/RegistryBuchDocsCompositionList" type="com.hps.july.web.util.BrowseAction" name="RegistryBuchDocsCompositionListForm" scope="request" validate="true"></action>
+		
+		<action path="/RegistryBuchDocsWordAction" type="com.hps.july.arenda.actionbean.WordAction" name="RegistryBuchDocsWordForm" scope="request" validate="true">
+			<forward name="printWord" path="registryBuchDocsWord.jsp" redirect="false" />
+		</action>
+
+		<action path="/RegistryBuchDocsWordUploadAction" type="com.hps.july.arenda.actionbean.RegistryBuchDocsWordUploadAction" name="DocumentUploadForm" scope="request" validate="true"></action>
+		
+		<action path="/PriorityContractForActList" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="PriorityContractForActListForm" validate="true"></action>
+		
+		<action path="/SchetFactForChargeList" type="com.hps.july.web.util.BrowseAction" name="SchetFactForChargeListForm" scope="session" validate="true"></action>
+
+		<action path="/LeasePayOfficeMemoList" type="com.hps.july.web.util.BrowseAction" name="LeasePayOfficeMemoListForm" scope="session" validate="true"></action>
+
+		<action path="/LeasePayOfficeMemoDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="LeasePayOfficeMemoDialogForm" scope="session" validate="true"></action>
+		
+		<action path="/LeasePayOfficeMemoProcess" type="com.hps.july.web.util.FormProcessAction" name="LeasePayOfficeMemoDialogForm" scope="session" validate="true">
+			<forward name="success" path="leasePayOfficeMemoDialog.jsp" redirect="false" />
+		</action>
+			
+		<action path="/LeasePayOfficeMemoWordAction" type="com.hps.july.arenda.actionbean.WordAction" name="LeasePayOfficeMemoWordForm" scope="request" validate="true">
+			<forward name="printWord" path="leasePayOfficeMemoWord.jsp" redirect="false" />
+		</action>
+
+		<action path="/DocumentUploadAction" type="com.hps.july.web.util.DocumentUploadAction" name="DocumentUploadForm" scope="request" validate="true"></action>
+		
+ 		<action path="/PayRuleLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="PayRuleLookupListForm" scope="session" validate="true"></action>		
+
+		<action path="/LeaseZPOfficeMemoList" type="com.hps.july.web.util.BrowseAction" name="LeaseZPOfficeMemoListForm" scope="session" validate="true"></action>
+
+		<action path="/LeaseZPOfficeMemoDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="LeaseZPOfficeMemoDialogForm" scope="session" validate="true"></action>
+		
+		<action path="/LeaseZPOfficeMemoProcess" type="com.hps.july.web.util.FormProcessAction" name="LeaseZPOfficeMemoDialogForm" scope="session" validate="true">
+			<forward name="success" path="leaseZPOfficeMemoDialog.jsp" redirect="false" />
+		</action>
+			
+		<action path="/LeaseZPOfficeMemoWordAction" type="com.hps.july.arenda.actionbean.WordAction" name="LeaseZPOfficeMemoWordForm" scope="request" validate="true">
+			<forward name="printWord" path="leaseZPOfficeMemoWord.jsp" redirect="false" />
+		</action>
+		
+		<action path="/HistoryLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="HistoryLookupListForm" scope="session" validate="true"></action>
+		
+		<action path="/ArendaToNfsZpLookupList" type="com.hps.july.arenda.actionbean.ArendaToNfsZpLookupListAction" name="ArendaToNfsZpLookupListForm" scope="session" validate="true"></action>
+
+		<action path="/LeaseContractProblemList" type="com.hps.july.web.util.BrowseAction" name="LeaseContractProblemListForm" scope="session" validate="true"></action>
+
+		<action path="/LeaseContractProblemDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="LeaseContractProblemDialogForm" scope="session" validate="true"></action>
+		
+		<action path="/LeaseContractProblemProcess" type="com.hps.july.web.util.FormProcessAction" name="LeaseContractProblemDialogForm" scope="session" validate="true">
+			<forward name="success" path="leaseContractProblemDialog.jsp" redirect="false" />
+		</action>
+		
+		<action path="/LeaseProblemList" type="com.hps.july.arenda.actionbean.LeaseProblemListAction" name="LeaseProblemListForm" scope="session" validate="true">
+			<forward name="printXLS" path="leaseProblemListXLS.jsp" redirect="false" />
+		</action>
+		
+		<action path="/PositionsDialogList" type="com.hps.july.web.util.LookupBrowseAction" name="PositionsDialogListForm" scope="session" validate="true"></action>				
+		
+		<action path="/CompletWorkActsForChargeList" type="com.hps.july.web.util.BrowseAction" name="CompletWorkActsForChargeListForm" scope="session" validate="true"></action>
+		
+		<action path="/CompletWorkAktDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="CompletWorkAktDialogForm" scope="session" validate="true"></action>
+
+		<action path="/CompletWorkAktProcess" type="com.hps.july.web.util.FormProcessAction" name="CompletWorkAktDialogForm" scope="session" validate="true">
+			<forward name="success" path="completWorkAktDialog.jsp" redirect="false" />
+		</action>
+		
+		<action path="/ChargeListLinkToCompletWorkAkt" type="com.hps.july.web.util.NonNavigatedEditAction" name="ChargeListLinkToCompletWorkAktForm" scope="request" validate="true"></action>
+
+		<action path="/FactsLeasePage" type="com.hps.july.arenda.actionbean.FactsLeasePageAction" name="FactsLeasePageForm" scope="session" validate="true">
+			<forward name="factsLeasePage" path="factsLeasePage.jsp" redirect="false" />
+			<forward name="factsLeaseExcel" path="factsLeaseExcel.jsp" redirect="false" />
+		</action>
+		
+		<action path="/DnopForChargeList" type="com.hps.july.web.util.BrowseAction" name="DnopForChargeListForm" scope="session" validate="true"></action>
+		<action path="/DnopForPaymentList" type="com.hps.july.web.util.BrowseAction" name="DnopForPaymentListForm" scope="session" validate="true"></action>
+				
+		<action path="/DnopDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="DnopDialogForm" scope="session" validate="true"></action>
+
+		<action path="/DnopProcess" type="com.hps.july.web.util.FormProcessAction" name="DnopDialogForm" scope="session" validate="true">
+			<forward name="success" path="dnopDialog.jsp" redirect="false" />
+		</action>
+
+		<action path="/SaldoDetailList" type="com.hps.july.web.util.BrowseAction" name="SaldoDetailListForm" scope="session" validate="true"></action>
+		<action path="/AbonentSaldoDetailList" type="com.hps.july.web.util.BrowseAction" name="AbonentSaldoDetailListForm" scope="session" validate="true"></action>
+
+		<action path="/SaldoDetailDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="SaldoDetailDialogForm" scope="session" validate="true"></action>
+		<action path="/AbonentSaldoDetailDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="AbonentSaldoDetailDialogForm" scope="session" validate="true"></action>
+
+		<action path="/SaldoDetailProcess" type="com.hps.july.web.util.FormProcessAction" name="SaldoDetailDialogForm" scope="session" validate="true">
+			<forward name="success" path="saldoDetailDialog.jsp" redirect="false" />
+		</action>
+		<action path="/AbonentSaldoDetailProcess" type="com.hps.july.web.util.FormProcessAction" name="AbonentSaldoDetailDialogForm" scope="session" validate="true">
+			<forward name="success" path="abonentSaldoDetailDialog.jsp" redirect="false" />
+		</action>
+		
+		<action path="/AbonentInfo" type="com.hps.july.web.util.NonNavigatedEditAction" name="AbonentInfoForm" scope="request" validate="true"></action>
+				
+		<action path="/RegistryBuchDocsHistory" type="com.hps.july.web.util.NonNavigatedEditAction" name="RegistryBuchDocsHistoryForm" scope="request" validate="true"></action>
+		<action path="/RegistryBuchDocsList" type="com.hps.july.web.util.BrowseAction" name="RegistryBuchDocsListForm" scope="session" validate="true"></action>
+						
+	</action-mappings>
+</struts-config>
+

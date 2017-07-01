@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="cfgequipobjectscfg" name="cfgequipobjectscfg" primaryKey="PK_CFGEQUIPOBJECTSCFG">
+  <database href="META-INF/Schema/july.dbxmi#july"/>
+  <schema href="META-INF/Schema/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SAVCONFIGID" name="SAVCONFIGID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152104640718">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJCFGID" name="OBJCFGID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152104640719">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPMENT" name="EQUIPMENT">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152104640720">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGECARD" name="STORAGECARD" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1152104640722">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="QTY" name="QTY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1152104640718" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V94_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTSTATUS" name="OBJECTSTATUS">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1152104640718" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="parentobjcfgid" name="parentobjcfgid" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1164206860625">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_CFGEQUIPOBJECTSCFG" name="PK_CFGEQUIPOBJECTSCFG" members="SAVCONFIGID OBJCFGID" constraint="SQLConstraint_1152104640718"/>
+  <constraints xmi:id="SQLConstraint_1152104640718" name="PK_CFGEQUIPOBJECTSCFG" type="PRIMARYKEY" primaryKey="PK_CFGEQUIPOBJECTSCFG"/>
+</RDBSchema:RDBTable>

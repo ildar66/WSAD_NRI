@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="searchgroupping" name="searchgroupping" primaryKey="searchgroupping_2">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="searchgroupping_1" name="searchgroupping">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987157">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="searchgroup" name="searchgroup">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987158">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987157" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="searchgroupping_2" name="searchgroupping" members="searchgroupping_1" constraint="SQLConstraint_1131634987157">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_searches.tblxmi#FK_REF_7410_7410"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_7398_7398" name="FK_REF_7398_7398" members="searchgroup" constraint="SQLConstraint_1131634987158">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_searchgroups.tblxmi#searchgroups_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987157" name="searchgroupping" type="PRIMARYKEY" primaryKey="searchgroupping_2"/>
+  <constraints xmi:id="SQLConstraint_1131634987158" name="FK_REF_7398_7398" type="FOREIGNKEY" referenceByKey="FK_REF_7398_7398"/>
+</RDBSchema:RDBTable>

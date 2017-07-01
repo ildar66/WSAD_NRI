@@ -1,0 +1,1696 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN" "http://dtdserver/dtd/struts-config_1_0.dtd">
+<struts-config>
+
+<!-- ========== Form Bean Definitions =================================== -->
+<form-beans type="org.apache.struts.action.ActionFormBean">
+	<form-bean name="MountAct2Form" type="com.hps.july.inventory.formbean.MountAct2Form" />
+	<form-bean name="MountAct3Form" type="com.hps.july.inventory.formbean.MountAct3Form" />
+	<form-bean name="AfsMountAct2Form" type="com.hps.july.inventory.formbean.AfsMountAct2Form" />
+	<form-bean name="AfsMountAct3Form" type="com.hps.july.inventory.formbean.AfsMountAct3Form" />
+	<form-bean name="AfsIndoorMountActForm" type="com.hps.july.inventory.formbean.AfsIndoorMountActForm" />
+	<!-- Fault Reposrt Forms -->
+	<form-bean name="FaultListForm" type="com.hps.july.inventory.formbean.FaultListForm" />
+	<form-bean name="FaultForm" type="com.hps.july.inventory.formbean.FaultForm" />
+<!--	<form-bean name="FaultStateForm" type="com.hps.july.inventory.formbean.FaultStateForm"/> -->
+					
+	<!-- Change Act Forms -->
+	<form-bean name="ChangeEListForm" type="com.hps.july.inventory.formbean.ChangeEListForm" />
+	<form-bean name="ChangeEForm" type="com.hps.july.inventory.formbean.ChangeEForm" />
+	<form-bean name="ChangeEStateForm" type="com.hps.july.inventory.formbean.ChangeEStateForm" />
+	<form-bean name="ChangeEPositionListForm" type="com.hps.july.inventory.formbean.ChangeEPositionListForm" />
+	<form-bean name="ChangeEPositionForm" type="com.hps.july.inventory.formbean.ChangeEPositionForm" />
+	<form-bean name="ChangePListForm" type="com.hps.july.inventory.formbean.ChangePListForm" />
+	<form-bean name="ChangePForm" type="com.hps.july.inventory.formbean.ChangePForm" />
+	<form-bean name="ChangePStateForm" type="com.hps.july.inventory.formbean.ChangePStateForm" />
+	<form-bean name="ChangePPositionListForm" type="com.hps.july.inventory.formbean.ChangePPositionListForm" />
+	<form-bean name="ChangePPositionForm" type="com.hps.july.inventory.formbean.ChangePPositionForm" />
+	<form-bean name="ChangeSListForm" type="com.hps.july.inventory.formbean.ChangeSListForm" />
+	<form-bean name="ChangeSForm" type="com.hps.july.inventory.formbean.ChangeSForm" />
+	<form-bean name="ChangeSStateForm" type="com.hps.july.inventory.formbean.ChangeSStateForm" />
+	<form-bean name="ChangeSPositionListForm" type="com.hps.july.inventory.formbean.ChangeSPositionListForm" />
+	<form-bean name="ChangeSPositionForm" type="com.hps.july.inventory.formbean.ChangeSPositionForm" />
+
+	<!-- Internal Order Forms -->
+	<form-bean name="InternalListForm" type="com.hps.july.inventory.formbean.InternalListForm" />
+	<form-bean name="InternalForm" type="com.hps.july.inventory.formbean.InternalForm" />
+	<form-bean name="InternalStateForm" type="com.hps.july.inventory.formbean.InternalStateForm" />
+	<form-bean name="InternalDocumentListForm" type="com.hps.july.inventory.formbean.InternalDocumentListForm" />
+	<form-bean name="InternalDocumentForm" type="com.hps.july.inventory.formbean.InternalDocumentForm" />
+	<form-bean name="InternalDocumentLookupListForm" type="com.hps.july.inventory.formbean.InternalDocumentLookupListForm" />
+	<form-bean name="InternalPositionListForm" type="com.hps.july.inventory.formbean.InternalPositionListForm" />
+	<form-bean name="InternalPositionForm" type="com.hps.july.inventory.formbean.InternalPositionForm" />
+
+	<!-- External Income Order Forms -->
+	<form-bean name="ExternalListForm" type="com.hps.july.inventory.formbean.ExternalListForm" />
+	<form-bean name="ExternalForm" type="com.hps.july.inventory.formbean.ExternalForm" />
+	<form-bean name="ExternalStateForm" type="com.hps.july.inventory.formbean.ExternalStateForm" />
+	<form-bean name="ExternalPositionListForm" type="com.hps.july.inventory.formbean.ExternalPositionListForm" />
+	<form-bean name="ExternalPositionForm" type="com.hps.july.inventory.formbean.ExternalPositionForm" />
+	<form-bean name="ExternalSerialListForm" type="com.hps.july.inventory.formbean.ExternalSerialListForm" />
+	<form-bean name="ExternalSerialForm" type="com.hps.july.inventory.formbean.ExternalSerialForm" />
+	<form-bean name="ExternalMismatchForm" type="com.hps.july.inventory.formbean.ExternalMismatchForm" />
+
+	<!-- External Outcome Order Forms -->
+	<form-bean name="ExternalRListForm" type="com.hps.july.inventory.formbean.ExternalRListForm" />
+	<form-bean name="ExternalRForm" type="com.hps.july.inventory.formbean.ExternalRForm" />
+	<form-bean name="ExternalRStateForm" type="com.hps.july.inventory.formbean.ExternalRStateForm" />
+	<form-bean name="ExternalRPositionListForm" type="com.hps.july.inventory.formbean.ExternalRPositionListForm" />
+	<form-bean name="ExternalRPositionForm" type="com.hps.july.inventory.formbean.ExternalRPositionForm" />
+
+	<!-- Mismatch Act Forms -->
+	<form-bean name="MismatchListForm" type="com.hps.july.inventory.formbean.MismatchListForm" />
+	<form-bean name="MismatchForm" type="com.hps.july.inventory.formbean.MismatchForm" />
+
+	<!-- Internal Outcome Order Forms -->
+	<form-bean name="InternalRListForm" type="com.hps.july.inventory.formbean.InternalRListForm" />
+	<form-bean name="InternalRForm" type="com.hps.july.inventory.formbean.InternalRForm" />
+	<form-bean name="InternalRStateForm" type="com.hps.july.inventory.formbean.InternalRStateForm" />
+	<form-bean name="InternalRPositionListForm" type="com.hps.july.inventory.formbean.InternalRPositionListForm" />
+	<form-bean name="InternalRPositionForm" type="com.hps.july.inventory.formbean.InternalRPositionForm" />
+
+	<!-- Resource Set Forms -->
+	<form-bean name="I13nRessetListForm" type="com.hps.july.inventory.formbean.I13nRessetListForm" />
+	<form-bean name="I13nRessetForm" type="com.hps.july.inventory.formbean.I13nRessetForm" />
+	<form-bean name="I13nActRessetListForm" type="com.hps.july.inventory.formbean.I13nActRessetListForm" />
+	<form-bean name="I13nActRessetForm" type="com.hps.july.inventory.formbean.I13nActRessetForm" />
+	<form-bean name="I13nRessetLookupListForm" type="com.hps.july.inventory.formbean.I13nRessetLookupListForm" />
+
+	<!-- Requirements Forms -->
+	<form-bean name="ReqListForm" type="com.hps.july.inventory.formbean.ReqListForm" />
+	<form-bean name="ReqForm" type="com.hps.july.inventory.formbean.ReqForm" />
+	<form-bean name="ReqStateForm" type="com.hps.july.inventory.formbean.ReqStateForm" />
+	<form-bean name="ReqPositionListForm" type="com.hps.july.inventory.formbean.ReqPositionListForm" />
+	<form-bean name="ReqPositionForm" type="com.hps.july.inventory.formbean.ReqPositionForm" />
+
+	<!-- Inventory Act Forms -->
+	<form-bean name="InvActListForm" type="com.hps.july.inventory.formbean.InvActListForm" />
+	<form-bean name="InvActForm" type="com.hps.july.inventory.formbean.InvActForm" />
+	<form-bean name="InvActStateForm" type="com.hps.july.inventory.formbean.InvActStateForm" />
+	<form-bean name="InvActPosListForm" type="com.hps.july.inventory.formbean.InvActPosListForm" />
+	<form-bean name="InvActPosForm" type="com.hps.july.inventory.formbean.InvActPosForm" />
+	
+	<!-- Worker Inventory Act Forms -->
+	<form-bean name="WorkerInvActListForm" type="com.hps.july.inventory.formbean.WorkerInvActListForm" />
+	<form-bean name="WorkerInvActForm" type="com.hps.july.inventory.formbean.WorkerInvActForm" />
+	<form-bean name="WorkerInvActPosForm" type="com.hps.july.inventory.formbean.WorkerInvActPosForm" />
+	<form-bean name="WorkerInvActFillFromDBForm" type="com.hps.july.inventory.formbean.WorkerInvActFillFromDBForm" />
+
+<!-- Inventory Act Forms (Positions)
+	<form-bean name="InvListForm" type="com.hps.july.inventory.formbean.InvListForm"/>
+	<form-bean name="InvForm" type="com.hps.july.inventory.formbean.InvForm"/>
+	<form-bean name="InvStateForm" type="com.hps.july.inventory.formbean.InvStateForm"/>
+	<form-bean name="InvPosListForm" type="com.hps.july.inventory.formbean.InvPosListForm"/>
+	<form-bean name="InvPosForm" type="com.hps.july.inventory.formbean.InvPosForm"/>
+ -->
+	<!-- New Inventory Act on positions -->
+	<form-bean name="PositionInventoryList" type="com.hps.july.inventory.formbean.PositionInventoryList" />	
+	<form-bean name="PositionInventory" type="com.hps.july.inventory.formbean.PositionInventory" />
+	<form-bean name="PositionInventoryState" type="com.hps.july.inventory.formbean.PositionInventoryState" />
+	<form-bean name="PositionInventoryItem" type="com.hps.july.inventory.formbean.PositionInventoryItem" />
+	
+	<form-bean name="ContractorInventoryList" type="com.hps.july.inventory.formbean.ContractorInventoryList" />
+	<form-bean name="ContractorInventoryForm" type="com.hps.july.inventory.formbean.ContractorInventoryForm" />
+	<form-bean name="ContractorLoadXlsForm" type="com.hps.july.inventory.formbean.ContractorLoadXlsForm" />	
+	<form-bean name="ContrEquipListForm" type="com.hps.july.inventory.formbean.ContrEquipListForm" />
+
+	<!-- Report Forms -->
+	<form-bean name="Report1ParamsForm" type="com.hps.july.inventory.formbean.Report1ParamsForm" />
+	<form-bean name="Report1rtLookupListForm" type="com.hps.july.inventory.formbean.Report1rtLookupListForm" />
+	<form-bean name="Report1rstLookupListForm" type="com.hps.july.inventory.formbean.Report1rstLookupListForm" />
+	<form-bean name="Report1Form" type="com.hps.july.inventory.formbean.Report1Form" />
+	<form-bean name="Report2ParamsForm" type="com.hps.july.inventory.formbean.Report2ParamsForm" />
+	<form-bean name="Report3ParamsForm" type="com.hps.july.inventory.formbean.Report3ParamsForm" />
+	<form-bean name="Report4ParamsForm" type="com.hps.july.inventory.formbean.Report4ParamsForm" />
+	<form-bean name="Report5ParamsForm" type="com.hps.july.inventory.formbean.Report5ParamsForm" />
+	<form-bean name="Report6ParamsForm" type="com.hps.july.inventory.formbean.Report6ParamsForm" />
+	<form-bean name="Report7ParamsForm" type="com.hps.july.inventory.formbean.Report7ParamsForm" />
+	<form-bean name="Report8ParamsForm" type="com.hps.july.inventory.formbean.Report8ParamsForm" />
+	<form-bean name="Report9ParamsForm" type="com.hps.july.inventory.formbean.Report9ParamsForm" />
+	<form-bean name="Report91ParamsForm" type="com.hps.july.inventory.formbean.Report91ParamsForm" />
+	<form-bean name="ReportExcelForm" type="com.hps.july.inventory.formbean.ReportExcelForm" />
+
+	<!-- Lookup Forms -->
+	<form-bean name="OrganizationLookupListForm" type="com.hps.july.inventory.formbean.OrganizationLookupListForm" />
+	<form-bean name="WorkerLookupListForm" type="com.hps.july.inventory.formbean.WorkerLookupListForm" />
+	<form-bean name="EquipmentLookupListForm" type="com.hps.july.inventory.formbean.EquipmentLookupListForm" />
+	<form-bean name="CompanyLookupListForm" type="com.hps.july.inventory.formbean.CompanyLookupListForm" />
+	<form-bean name="RestypeLookupListForm" type="com.hps.july.inventory.formbean.RestypeLookupListForm" />
+	<form-bean name="RessbtypeLookupListForm" type="com.hps.july.inventory.formbean.RessbtypeLookupListForm" />
+	<form-bean name="DivisionLookupListForm" type="com.hps.july.inventory.formbean.DivisionLookupListForm" />
+	<form-bean name="AgregateLookupListForm" type="com.hps.july.inventory.formbean.AgregateLookupListForm" />
+	<form-bean name="ResourceLookupListForm" type="com.hps.july.inventory.formbean.ResourceLookupListForm" />
+	<form-bean name="ResourceLookupBySerialListForm" type="com.hps.july.inventory.formbean.ResourceLookupBySerialListForm" />
+	<form-bean name="ContractLookupListForm" type="com.hps.july.inventory.formbean.ContractLookupListForm" />
+	<form-bean name="ComplectLookupListForm" type="com.hps.july.inventory.formbean.ComplectLookupListForm" />
+	<form-bean name="ComplectBSLookupListForm" type="com.hps.july.inventory.formbean.ComplectBSLookupListForm" />
+	<form-bean name="PositionLookupListForm" type="com.hps.july.inventory.formbean.PositionLookupListForm" />
+	<form-bean name="StorageLookupListForm" type="com.hps.july.inventory.formbean.StorageLookupListForm" />
+	<form-bean name="ResourceSetLookupListForm" type="com.hps.july.inventory.formbean.ResourceSetLookupListForm" />
+	<form-bean name="ReqLookupListForm" type="com.hps.july.inventory.formbean.ReqLookupListForm" />
+	<form-bean name="CardLookupListForm" type="com.hps.july.inventory.formbean.CardLookupListForm" />
+	<form-bean name="CardRLookupListForm" type="com.hps.july.inventory.formbean.CardRLookupListForm" />
+
+	<!-- Assembling/Disassembling forms -->
+	<form-bean name="AssactForm" type="com.hps.july.inventory.formbean.AssactForm" />
+	<form-bean name="AssactListForm" type="com.hps.july.inventory.formbean.AssactListForm" />
+	<form-bean name="AssactstForm" type="com.hps.july.inventory.formbean.AssactstForm" />
+	<form-bean name="AssactposListForm" type="com.hps.july.inventory.formbean.AssactposListForm" />
+	<form-bean name="AssactposForm" type="com.hps.july.inventory.formbean.AssactposForm" />
+	<form-bean name="DAssactForm" type="com.hps.july.inventory.formbean.DAssactForm" />
+	<form-bean name="DAssactListForm" type="com.hps.july.inventory.formbean.DAssactListForm" />
+	<form-bean name="DAssactstForm" type="com.hps.july.inventory.formbean.DAssactstForm" />
+	<form-bean name="DAssactposListForm" type="com.hps.july.inventory.formbean.DAssactposListForm" />
+	<form-bean name="DAssactposForm" type="com.hps.july.inventory.formbean.DAssactposForm" />
+
+	<!-- Assembling Act on Position Forms -->
+	<form-bean name="AssemblingPListForm" type="com.hps.july.inventory.formbean.AssemblingPListForm" />
+	<form-bean name="AssemblingPForm" type="com.hps.july.inventory.formbean.AssemblingPForm" />	
+	<form-bean name="AssemblingPLoadXlsForm" type="com.hps.july.inventory.formbean.AssemblingPLoadXlsForm" />
+<!--
+	<form-bean name="AssemblingPStateForm" type="com.hps.july.inventory.formbean.AssemblingPStateForm"/>
+	<form-bean name="AssemblingPPositionListForm" type="com.hps.july.inventory.formbean.AssemblingPPositionListForm"/>
+-->
+	<form-bean name="AssemblingPPositionForm" type="com.hps.july.inventory.formbean.AssemblingPPositionForm" />
+	<form-bean name="AssemblingPUPSForm" type="com.hps.july.inventory.formbean.AssemblingPUPSForm" />
+
+	<!-- AFS Act Forms -->
+	<form-bean name="AfsListForm" type="com.hps.july.inventory.formbean.AfsListForm" />
+	<form-bean name="AfsForm" type="com.hps.july.inventory.formbean.AfsForm" />
+	<form-bean name="AfsStateForm" type="com.hps.july.inventory.formbean.AfsStateForm" />
+	<form-bean name="AfsPositionListForm" type="com.hps.july.inventory.formbean.AfsPositionListForm" />
+	<form-bean name="AfsGPositionForm" type="com.hps.july.inventory.formbean.AfsGPositionForm" />
+	<form-bean name="AfsAPositionForm" type="com.hps.july.inventory.formbean.AfsAPositionForm" />
+	<form-bean name="AfsDPositionForm" type="com.hps.july.inventory.formbean.AfsDPositionForm" />
+	<form-bean name="AfsPositionForm" type="com.hps.july.inventory.formbean.AfsPositionForm" />
+
+	<!-- Dismantling Act on Position Forms -->
+	<form-bean name="DismantlingPListForm" type="com.hps.july.inventory.formbean.DismantlingPListForm" />
+	<form-bean name="DismantlingPForm" type="com.hps.july.inventory.formbean.DismantlingPForm" />
+	<form-bean name="DismantlingPStateForm" type="com.hps.july.inventory.formbean.DismantlingPStateForm" />
+	<form-bean name="DismantlingPPositionListForm" type="com.hps.july.inventory.formbean.DismantlingPPositionListForm" />
+	<form-bean name="DismantlingPPositionForm" type="com.hps.july.inventory.formbean.DismantlingPPositionForm" />
+	<form-bean name="DismantlingFFDBForm" type="com.hps.july.inventory.formbean.DismantlingFFDBForm" />
+
+	<!-- Dismantling Act on Position Forms -->
+	<form-bean name="DemountList" type="com.hps.july.inventory.formbean.DemountList" />
+	<form-bean name="Demount" type="com.hps.july.inventory.formbean.Demount" />
+	<form-bean name="DemountState" type="com.hps.july.inventory.formbean.DemountState" />
+	<form-bean name="DemountItem" type="com.hps.july.inventory.formbean.DemountItem" />
+	<form-bean name="DemountFFDB" type="com.hps.july.inventory.formbean.DemountFFDB" />
+
+	<!-- Assembling/Disassembling forms for Blocks on Position-->
+	<form-bean name="AssactBForm" type="com.hps.july.inventory.formbean.AssactBForm" />
+	<form-bean name="AssactBListForm" type="com.hps.july.inventory.formbean.AssactBListForm" />
+	<form-bean name="AssactstBForm" type="com.hps.july.inventory.formbean.AssactstBForm" />
+	<form-bean name="AssactposBListForm" type="com.hps.july.inventory.formbean.AssactposBListForm" />
+	<form-bean name="AssactposBForm" type="com.hps.july.inventory.formbean.AssactposBForm" />
+	<form-bean name="DAssactBForm" type="com.hps.july.inventory.formbean.DAssactBForm" />
+	<form-bean name="DAssactBListForm" type="com.hps.july.inventory.formbean.DAssactBListForm" />
+	<form-bean name="DAssactstBForm" type="com.hps.july.inventory.formbean.DAssactstBForm" />
+	<form-bean name="DAssactposBListForm" type="com.hps.july.inventory.formbean.DAssactposBListForm" />
+	<form-bean name="DAssactposBForm" type="com.hps.july.inventory.formbean.DAssactposBForm" />
+
+	<!-- Payoff Acts Forms -->
+	<form-bean name="PayoffListForm" type="com.hps.july.inventory.formbean.PayoffListForm" />
+	<form-bean name="PayoffForm" type="com.hps.july.inventory.formbean.PayoffForm" />
+	<form-bean name="PayoffStateForm" type="com.hps.july.inventory.formbean.PayoffStateForm" />
+	<form-bean name="PayoffPositionListForm" type="com.hps.july.inventory.formbean.PayoffPositionListForm" />
+	<form-bean name="PayoffPositionForm" type="com.hps.july.inventory.formbean.PayoffPositionForm" />
+
+	<!-- Mass calculation forms -->
+	<form-bean name="MassCalcParamsForm" type="com.hps.july.inventory.formbean.MassCalcParamsForm" />
+	<form-bean name="MassdocParamsForm" type="com.hps.july.inventory.formbean.MassdocParamsForm" />
+
+	<!-- Bar-codes Forms -->
+	<form-bean name="BarListForm" type="com.hps.july.inventory.formbean.BarListForm" />
+	<form-bean name="BarForm" type="com.hps.july.inventory.formbean.BarForm" />
+	<form-bean name="BarParamsForm" type="com.hps.july.inventory.formbean.BarParamsForm" />
+	<form-bean name="BarReportForm" type="com.hps.july.inventory.formbean.BarReportForm" />
+	<form-bean name="BarSParamsForm" type="com.hps.july.inventory.formbean.BarSParamsForm" />
+	<form-bean name="BarSReportForm" type="com.hps.july.inventory.formbean.BarSReportForm" />
+	<form-bean name="BarSerialLookupListForm" type="com.hps.july.inventory.formbean.BarSerialLookupListForm" />
+
+	<!-- loading excel data (csv) -->
+	<form-bean name="InvActLoadExcelForm" type="com.hps.july.inventory.formbean.InvActLoadExcelForm" />
+	<form-bean name="InvLoadExcelForm" type="com.hps.july.inventory.formbean.InvLoadExcelForm" />
+	<form-bean name="ExternalLoadExcelForm" type="com.hps.july.inventory.formbean.ExternalLoadExcelForm" />
+	<form-bean name="InternalLoadExcelForm" type="com.hps.july.inventory.formbean.InternalLoadExcelForm" />
+	<form-bean name="InternalRLoadExcelForm" type="com.hps.july.inventory.formbean.InternalRLoadExcelForm" />
+	<form-bean name="InvActFillFromDBForm" type="com.hps.july.inventory.formbean.InvActFillFromDBForm" />
+	<form-bean name="InvFillFromDBForm" type="com.hps.july.inventory.formbean.InvFillFromDBForm" />
+	<form-bean name="InvLoadInvForm" type="com.hps.july.inventory.formbean.InvLoadInvForm" />
+	
+	<form-bean name="DocsByComprojectListForm" type="com.hps.july.inventory.formbean.DocsByComprojectListForm" />
+	<form-bean name="MountAct2_Form" type="com.hps.july.inventory.formbean.MountAct2_Form" />
+	<form-bean name="MountAct2Form2" type="com.hps.july.inventory.formbean.MountAct2Form2" />
+	<form-bean name="ConfigEqEditForm" type="com.hps.july.inventory.formbean.ConfigEqEditForm" />
+	
+</form-beans>
+
+
+  <!-- ========== Global Forward Definitions ============================== -->
+	<global-forwards type="org.apache.struts.action.ActionForward">
+		<forward name="main" path="/july.jsp" />
+	</global-forwards>
+
+
+  <!-- ========== Action Mapping Definitions ============================== -->
+	<action-mappings type="org.apache.struts.action.ActionMapping">
+
+		<action path="/main" type="com.hps.july.inventory.actionbean.ShowMainAction" validate="true">
+		</action>
+
+		<action path="/Login" type="com.hps.july.inventory.actionbean.ShowLoginAction" validate="true">
+		</action>
+
+		<action path="/Logout" type="com.hps.july.inventory.actionbean.ShowLogoutAction" validate="true">
+		</action>
+
+		<action path="/ShowConfigFormAction" type="com.hps.july.inventory.config.ShowConfigFormAction" validate="true">
+		</action>
+		
+		<action path="/ShowDocsByComprojectList" type="com.hps.july.web.util.LookupBrowseAction" name="DocsByComprojectListForm" scope="session" validate="true">
+		</action>
+		
+		<action path="/EditAfsMountAct2" type="com.hps.july.inventory.actionbean.AfsMountAct2EditAction" scope="session" name="AfsMountAct2Form" validate="true">
+				<forward name="errorgoback" path="ShowAfsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAfsMountAct2" type="com.hps.july.inventory.actionbean.AfsMountAct2ProcessAction" name="AfsMountAct2Form" scope="session" validate="true">
+				<forward name="errorgoback" path="ShowAfsList.do" redirect="true" />
+				<forward name="success" path="EditAfsMountAct4.do" redirect="true" />
+		</action>
+		
+		<action path="/EditAfsMountAct3" type="com.hps.july.inventory.actionbean.AfsMountAct3EditAction" scope="request" name="AfsMountAct3Form" validate="true">
+				<forward name="errorgoback" path="ShowAfsList.do" redirect="true" />
+		</action>
+
+		<action path="/EditAfsMountAct4" type="com.hps.july.web.util.NonNavigatedEditAction" scope="request" name="AfsMountAct3Form" validate="true">
+				<forward name="errorgoback" path="EditAfsMountAct2.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAfsMountAct3" type="com.hps.july.inventory.actionbean.AfsMountAct3ProcessAction" name="AfsMountAct3Form" scope="request" validate="true">
+				<forward name="errorgoback" path="ShowAfsList.do" redirect="true" />
+				<forward name="success" path="EditAfs.do" redirect="true" />
+		</action>
+		
+		<action path="/EditAfsIndoorMountAct" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AfsIndoorMountActForm" validate="true">
+				<forward name="errorgoback" path="ShowAfsList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessAfsIndoorMountAct" type="com.hps.july.inventory.actionbean.AfsIndoorMountActProcessAction" name="AfsIndoorMountActForm" scope="request" validate="true">
+				<forward name="errorgoback" path="ShowAfsList.do" redirect="true" />
+				<forward name="success" path="EditAfs.do" redirect="true" />
+		</action>
+
+		<action path="/EditMountAct2" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="MountAct2Form" validate="true">
+				<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessMountAct2" type="com.hps.july.inventory.actionbean.MountAct2ProcessAction" name="MountAct2Form" scope="request" validate="true">
+				<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+				<forward name="edit" path="/EditMountAct2.do" redirect="true" />
+				<forward name="success" path="/ShowAssemblingPList.do" redirect="true" />
+		</action>
+
+		<action path="/EditMountAct3" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="MountAct3Form" validate="true">
+				<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessMountAct3" type="com.hps.july.inventory.actionbean.MountAct3ProcessAction" name="MountAct3Form" scope="request" validate="true">
+				<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+				<forward name="success" path="EditAssemblingP.do" redirect="true" />
+		</action>
+
+		<!-- Exterlanal Outcome Order Actions -->
+
+		<action path="/ShowExternalRList" type="com.hps.july.web.util.BrowseAction" name="ExternalRListForm" scope="session" validate="true">
+		</action>
+
+		<action path="/EditExternalR" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ExternalRForm" validate="true">
+				<forward name="errorgoback" path="ShowExternalRList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessExternalR" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="ExternalRForm" scope="session" validate="true">
+				<forward name="edit" path="EditExternalR.do" redirect="true" />
+				<forward name="success" path="ShowExternalRList.do" redirect="true" />
+		</action>
+
+		<action path="/EditExternalRPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ExternalRPositionForm" validate="true">
+				<forward name="errorgoback" path="EditExternalR.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessExternalRPosition" type="com.hps.july.web.util.AbstractProcessAction" name="ExternalRPositionForm" scope="request" validate="true">
+				<forward name="success" path="EditExternalR.do" redirect="true" />
+		</action>
+
+		<!-- Exterlanal Income Order Actions -->
+
+		<action path="/ShowExternalList" type="com.hps.july.web.util.BrowseAction" name="ExternalListForm" scope="session" validate="true">
+		</action>
+
+		<action path="/EditExternal" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ExternalForm" validate="true">
+				<forward name="errorgoback" path="ShowExternalList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessExternal" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="ExternalForm" scope="session" validate="true">
+				<forward name="edit" path="EditExternal.do" redirect="true" />
+				<forward name="success" path="ShowExternalList.do" redirect="true" />
+		</action>
+<!--
+		<action path="/EditExternalState"
+				type="com.hps.july.web.util.AbstractEditAction"
+				scope="request"
+				name="ExternalStateForm"
+				validate="true">
+				<forward name="errorgoback" path="ShowExternalList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessExternalState"
+				type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+				name="ExternalStateForm"
+				scope="request"
+				validate="true">
+				<forward name="success" path="ShowExternalList.do" redirect="true"/>
+		</action>
+
+		<action path="/ShowExternalPositionList"
+				type="com.hps.july.inventory.actionbean.ShowExternalPositionListAction"
+				name="ExternalPositionListForm"
+				scope="session"
+				validate="true">
+		</action>
+-->
+		<action path="/EditExternalPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ExternalPositionForm" validate="true">
+				<forward name="errorgoback" path="EditExternal.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessExternalPosition" type="com.hps.july.inventory.actionbean.ExternalPositionProcessAction" name="ExternalPositionForm" scope="request" validate="true">
+				<forward name="success" path="EditExternal.do" redirect="true" />
+				<forward name="seriallist" path="ShowExternalSerialList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowExternalSerialList" type="com.hps.july.inventory.actionbean.ShowExternalSerialListAction" name="ExternalSerialListForm" scope="session" validate="true">
+		</action>
+
+		<action path="/EditExternalSerial" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ExternalSerialForm" validate="true">
+				<forward name="errorgoback" path="ShowExternalSerialList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessExternalSerial" type="com.hps.july.web.util.AbstractProcessAction" name="ExternalSerialForm" scope="request" validate="true">
+				<forward name="success" path="ShowExternalSerialList.do" redirect="true" />
+		</action>
+
+		<action path="/EditExternalMismatch" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ExternalMismatchForm" validate="true">
+				<forward name="errorgoback" path="ShowExternalList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessExternalMismatch" type="com.hps.july.inventory.actionbean.MismatchProcessAction" name="ExternalMismatchForm" scope="request" validate="true">
+				<forward name="success" path="ShowExternalList.do" redirect="true" />
+		</action>
+
+		<!-- Mismatch Actions -->
+
+<!--				type="com.hps.july.inventory.actionbean.ShowMismatchListAction" -->
+		<action path="/ShowMismatchList" type="com.hps.july.web.util.BrowseAction" name="MismatchListForm" scope="session" validate="true">
+		</action>
+
+		<action path="/EditMismatch" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="MismatchForm" validate="true">
+				<forward name="errorgoback" path="ShowMismatchList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessMismatch" type="com.hps.july.inventory.actionbean.MismatchProcessAction" name="MismatchForm" scope="request" validate="true">
+				<forward name="success" path="ShowMismatchList.do" redirect="true" />
+		</action>
+
+	<!-- Internal Outcome Orders Actions -->
+
+		<action path="/ShowInternalRList" type="com.hps.july.web.util.BrowseAction" name="InternalRListForm" scope="session" validate="true">
+		</action>
+
+		<action path="/EditInternalR" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="InternalRForm" validate="true">
+			<forward name="errorgoback" path="ShowInternalRList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessInternalR" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="InternalRForm" scope="session" validate="true">
+			<forward name="edit" path="EditInternalR.do" redirect="true" />
+			<forward name="success" path="ShowInternalRList.do" redirect="true" />
+		</action>
+<!--
+		<action	path="/EditInternalRState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InternalRStateForm" validate="true">
+			<forward name="errorgoback" path="ShowInternalRList.do" redirect="true"/>
+		</action>
+
+    <action   path="/ProcessInternalRState"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="InternalRStateForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowInternalRList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowInternalRPositionList"
+              type="com.hps.july.inventory.actionbean.ShowInternalRPositionListAction"
+              name="InternalRPositionListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+		<action path="/EditInternalRPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InternalRPositionForm" validate="true">
+			<forward name="errorgoback" path="EditInternalR.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessInternalRPosition" type="com.hps.july.web.util.AbstractProcessAction" name="InternalRPositionForm" scope="request" validate="true">
+			<forward name="success" path="EditInternalR.do" redirect="true" />
+		</action>
+	
+    <!-- Internal Income Order Actions -->
+
+		<action path="/ShowInternalList" type="com.hps.july.web.util.BrowseAction" name="InternalListForm" scope="session" validate="true">
+		</action>
+
+		<action path="/EditInternal" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="InternalForm" validate="true">
+			<forward name="errorgoback" path="ShowInternalList.do" redirect="true" />
+		</action>
+
+		<action path="/ProcessInternal" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="InternalForm" scope="session" validate="true">
+			<forward name="edit" path="EditInternal.do" redirect="true" />
+			<forward name="success" path="ShowInternalList.do" redirect="true" />
+		</action>
+		<action path="/EditInternalPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InternalPositionForm" validate="true">
+			<forward name="errorgoback" path="EditInternal.do" redirect="true" />
+		</action>
+		<action path="/ProcessInternalPosition" type="com.hps.july.web.util.AbstractProcessAction" name="InternalPositionForm" scope="request" validate="true">
+			<forward name="success" path="EditInternal.do" redirect="true" />
+		</action>
+<!--
+		<action path="/EditInternalState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InternalStateForm" validate="true">
+			<forward name="errorgoback" path="ShowInternalList.do" redirect="true" />
+		</action>
+
+		<action	path="/ProcessInternalState" type="com.hps.july.inventory.actionbean.DocumentProcessAction" name="InternalStateForm" scope="request" validate="true">
+			<forward name="success" path="ShowInternalList.do" redirect="true" />
+		</action>
+
+		<action path="/ShowInternalDocumentList" type="com.hps.july.inventory.actionbean.ShowInternalDocumentListAction" name="InternalDocumentListForm" scope="session" validate="true">
+		</action>
+
+		<action   path="/EditInternalDocument" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InternalDocumentForm" validate="true">
+			<forward name="errorgoback" path="ShowInternalDocList.do" redirect="true" />
+		</action>
+
+		<action	path="/ProcessInternalDocument" type="com.hps.july.inventory.actionbean.NIProcessAction" name="InternalDocumentForm" scope="request" validate="true">
+			<forward name="success" path="ShowInternalDocList.do" redirect="true" />
+		</action>
+	
+    <action   path="/ShowInternalDocumentLookupList"
+              type="com.hps.july.inventory.actionbean.ShowInternalDocumentLookupListAction"
+              name="InternalDocumentLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowInternalPositionList"
+              type="com.hps.july.inventory.actionbean.ShowInternalPositionListAction"
+              name="InternalPositionListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+    <!-- Change Act on Expedition Actions -->
+<!--              type="com.hps.july.inventory.actionbean.ShowChangeEListAction" -->
+	<action path="/ShowChangeEList" type="com.hps.july.web.util.BrowseAction" name="ChangeEListForm" scope="session" validate="true">
+	</action>
+
+	<action path="/EditChangeE" type="com.hps.july.web.util.AbstractEditAction" name="ChangeEForm" scope="session" validate="true">
+		<forward name="errorgoback" path="ShowChangeEList.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessChangeE" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="ChangeEForm" scope="session" validate="true">
+		<forward name="edit" path="EditChangeE.do" redirect="true" />
+		<forward name="success" path="ShowChangeEList.do" redirect="true" />
+	</action>
+<!--
+	<action path="/EditChangeEState"
+		type="com.hps.july.web.util.AbstractEditAction"
+		scope="request"
+		name="ChangeEStateForm"
+		validate="true">
+		<forward name="errorgoback" path="ShowChangeEList.do" redirect="true" />
+	</action>
+
+    <action   path="/ProcessChangeEState"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="ChangeEStateForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowChangeEList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowChangeEPositionList"
+              type="com.hps.july.inventory.actionbean.ShowChangeEPositionListAction"
+              name="ChangeEPositionListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+	<action path="/EditChangeEPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChangeEPositionForm" validate="true">
+		<forward name="errorgoback" path="EditChangeE.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessChangeEPosition" type="com.hps.july.web.util.AbstractProcessAction" name="ChangeEPositionForm" scope="request" validate="true">
+		<forward name="success" path="EditChangeE.do" redirect="true" />
+    </action>
+
+    <!-- Change Act on Position Actions -->
+	<action path="/ShowChangePList" type="com.hps.july.web.util.BrowseAction" name="ChangePListForm" scope="session" validate="true">
+	</action>
+
+	<action path="/EditChangeP" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ChangePForm" validate="true">
+			<forward name="errorgoback" path="ShowChangePList.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessChangeP" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="ChangePForm" scope="session" validate="true">
+		<forward name="edit" path="EditChangeP.do" redirect="true" />
+		<forward name="success" path="ShowChangePList.do" redirect="true" />
+	</action>
+<!--
+	<action path="/EditChangePState"
+		type="com.hps.july.web.util.AbstractEditAction"
+		scope="request"
+		name="ChangePStateForm"
+		validate="true">
+		<forward name="errorgoback" path="ShowChangePList.do" redirect="true" />
+	</action>
+
+    <action   path="/ProcessChangePState"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="ChangePStateForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowChangePList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowChangePPositionList"
+              type="com.hps.july.inventory.actionbean.ShowChangePPositionListAction"
+              name="ChangePPositionListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+	<action path="/EditChangePPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChangePPositionForm" validate="true">
+		<forward name="errorgoback" path="EditChangeP.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessChangePPosition" type="com.hps.july.web.util.AbstractProcessAction" name="ChangePPositionForm" scope="request" validate="true">
+		<forward name="success" path="EditChangeP.do" redirect="true" />
+	</action>
+
+    <!-- Change Act on Storage Actions -->
+	<action path="/ShowChangeSList" type="com.hps.july.web.util.BrowseAction" name="ChangeSListForm" scope="session" validate="true">
+	</action>
+
+	<action path="/EditChangeS" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ChangeSForm" validate="true">
+			<forward name="errorgoback" path="ShowChangeSList.do" redirect="true" />
+	</action>
+	<action path="/ProcessChangeS" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="ChangeSForm" scope="session" validate="true">
+		<forward name="edit" path="EditChangeS.do" redirect="true" />
+		<forward name="success" path="ShowChangeSList.do" redirect="true" />
+	</action>
+
+<!--
+	<action path="/EditChangeSState"
+		type="com.hps.july.web.util.AbstractEditAction"
+		scope="request"
+		name="ChangeSStateForm"
+		validate="true">
+		<forward name="errorgoback" path="ShowChangeSList.do" redirect="true" />
+	</action>
+
+    <action   path="/ProcessChangeSState"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="ChangeSStateForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowChangeSList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowChangeSPositionList"
+              type="com.hps.july.inventory.actionbean.ShowChangeSPositionListAction"
+              name="ChangeSPositionListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+
+	<action path="/EditChangeSPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ChangeSPositionForm" validate="true">
+		<forward name="errorgoback" path="EditChangeS.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessChangeSPosition" type="com.hps.july.web.util.AbstractProcessAction" name="ChangeSPositionForm" scope="request" validate="true">
+		<forward name="success" path="EditChangeS.do" redirect="true" />
+	</action>
+
+    <!-- Requirement Actions -->
+	<action path="/ShowReqList" type="com.hps.july.web.util.BrowseAction" name="ReqListForm" scope="session" validate="true">
+	</action>
+
+	<action path="/EditReq" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="ReqForm" validate="true">
+		<forward name="errorgoback" path="ShowReqList.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessReq" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="ReqForm" scope="session" validate="true">
+		<forward name="edit" path="EditReq.do" redirect="true" />
+		<forward name="success" path="ShowReqList.do" redirect="true" />
+	</action>
+<!--
+	<action   path="/EditReqState"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="ReqStateForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowReqList.do" redirect="true" />
+    </action>
+
+    <action   path="/ProcessReqState"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="ReqStateForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowReqList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowReqPositionList"
+              type="com.hps.july.inventory.actionbean.ShowReqPositionListAction"
+              name="ReqPositionListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+	<action path="/EditReqPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ReqPositionForm" validate="true">
+		<forward name="errorgoback" path="EditReq.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessReqPosition" type="com.hps.july.web.util.AbstractProcessAction" name="ReqPositionForm" scope="request" validate="true">
+		<forward name="success" path="EditReq.do" redirect="true" />
+	</action>
+
+	<!-- Worker Inventory Act Actions -->
+	<action path="/ShowWorkerInvActList" type="com.hps.july.web.util.BrowseAction" name="WorkerInvActListForm" scope="session" validate="true">
+	</action>
+	<action path="/EditWorkerInvAct" type="com.hps.july.web.util.AbstractEditAction" name="WorkerInvActForm" scope="session" validate="true">
+		<forward name="errorgoback" path="ShowWorkerInvActList.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessWorkerInvAct" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="WorkerInvActForm" scope="session" validate="true">
+		<forward name="edit" path="EditWorkerInvAct.do" redirect="true" />
+		<forward name="success" path="ShowWorkerInvActList.do" redirect="true" />
+	</action>
+	
+	<action path="/EditWorkerInvActPos" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="WorkerInvActPosForm" validate="true">
+		<forward name="errorgoback" path="EditWorkerInvAct.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessWorkerInvActPos" type="com.hps.july.web.util.AbstractProcessAction" name="WorkerInvActPosForm" scope="request" validate="true">
+		<forward name="success" path="EditWorkerInvAct.do" redirect="true" />
+	</action>
+	
+  <action path="/WorkerInvActFillFromDB" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="WorkerInvActFillFromDBForm" validate="true">
+  	<forward name="errorgoback" path="EditWorkerInvAct.do" redirect="true" />
+  </action>
+
+  <action path="/ProcessWorkerInvActFillFromDB" name="WorkerInvActFillFromDBForm" type="com.hps.july.inventory.actionbean.LoadExcelAction" scope="request" validate="true">
+  	<forward name="success" path="EditWorkerInvAct.do" redirect="true" />
+  </action>
+
+
+	<!-- Inventory Act Actions -->
+	<action path="/ShowInvActList" type="com.hps.july.web.util.BrowseAction" name="InvActListForm" scope="session" validate="true">
+	</action>
+
+	<action path="/EditInvAct" type="com.hps.july.web.util.AbstractEditAction" name="InvActForm" scope="session" validate="true">
+		<forward name="errorgoback" path="ShowInvActList.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessInvAct" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="InvActForm" scope="session" validate="true">
+		<forward name="edit" path="EditInvAct.do" redirect="true" />
+		<forward name="success" path="ShowInvActList.do" redirect="true" />
+	</action>
+	
+<!--
+    <action   path="/EditInvActState"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="InvActStateForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowInvActList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessInvActState"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="InvActStateForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowInvActList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowInvActPosList"
+              type="com.hps.july.inventory.actionbean.ShowInvActPosListAction"
+              name="InvActPosListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+	<action path="/EditInvActPos" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InvActPosForm" validate="true">
+		<forward name="errorgoback" path="EditInvAct.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessInvActPos" type="com.hps.july.web.util.AbstractProcessAction" name="InvActPosForm" scope="request" validate="true">
+		<forward name="success" path="EditInvAct.do" redirect="true" />
+	</action>
+	
+	<!-- Inventory Act Actions (Positions) -->
+	<action path="/ShowPositionInventoryList" type="com.hps.july.inventory.actionbean.ShowPositionInventoryList" name="PositionInventoryList" scope="session" validate="true">
+	</action>
+
+	<action path="/EditPositionInventory" type="com.hps.july.web.util.AbstractEditAction" name="PositionInventory" scope="session" validate="true">
+		<forward name="errorgoback" path="ShowPositionInventoryList.do" redirect="true" />
+	</action>
+	
+	<!-- Inventory Contractor Act Actions (Positions) -->
+	<action path="/ShowContractorInventoryList" type="com.hps.july.inventory.actionbean.ShowContractorInventoryList" name="ContractorInventoryList" scope="session" validate="true">
+	</action>
+	
+	<action path="/EditContractorInventory" type="com.hps.july.inventory.actionbean.EditContractorAction" name="ContractorInventoryForm" scope="session" validate="true">
+		<forward name="errorgoback" path="ShowContractorInventoryList.do" redirect="true" />
+	</action>
+	
+	<action path="/ProcessContractorInventory" type="com.hps.july.inventory.actionbean.ProcessContractorInventory" name="ContractorInventoryForm" scope="session" validate="true">
+		<forward name="edit" path="EditContractorInventory.do?action=Edit" redirect="true" />
+		<forward name="view" path="EditContractorInventory.do?action=View" redirect="true" />
+		<forward name="success" path="ShowContractorInventoryList.do" redirect="true" />
+	</action>
+	
+	<action path="/ContractorLoadExcel" type="com.hps.july.web.util.AbstractEditAction" name="ContractorLoadXlsForm" scope="session" validate="true">
+		<forward name="errorgoback" path="ShowContractorInventoryList.do" redirect="true" />
+	</action>
+	
+	<action path="/ProcessContractorLoadExcel" type="com.hps.july.web.util.FormProcessAction" name="ContractorLoadXlsForm" scope="session" validate="true">
+		<forward name="success" path="EditContractorInventory.do?action=Edit" redirect="true" />
+	</action>
+	
+	<action path="/ContrEquipList" type="com.hps.july.web.util.NonNavigatedEditAction" scope="request" name="ContrEquipListForm" validate="true">
+    </action>
+	
+	<action path="/ProcessContractorEquipList" type="com.hps.july.web.util.FormProcessAction" name="ContrEquipListForm" scope="request" validate="true">
+	</action>
+
+	
+	<action path="/ProcessPositionInventory" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="PositionInventory" scope="session" validate="true">
+		<forward name="edit" path="EditPositionInventory.do" redirect="true" />
+		<forward name="success" path="ShowPositionInventoryList.do" redirect="true" />
+	</action>
+
+	<action path="/EditPositionInventoryState" type="com.hps.july.web.util.AbstractEditAction" name="PositionInventoryState" scope="request" validate="true">
+		<forward name="errorgoback" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessPositionInventoryState" type="com.hps.july.inventory.actionbean.DocumentProcessAction" name="PositionInventoryState" scope="request" validate="true">
+		<forward name="success" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/EditPositionInventoryItem" type="com.hps.july.web.util.AbstractEditAction" name="PositionInventoryItem" scope="request" validate="true">
+		<forward name="errorgoback" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessPositionInventoryItem" type="com.hps.july.web.util.AbstractProcessAction" name="PositionInventoryItem" scope="request" validate="true">
+		<forward name="success" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/InvLoadExcel" type="com.hps.july.web.util.AbstractEditAction" name="InvLoadExcelForm" scope="request" validate="true">
+		<forward name="errorgoback" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessInvLoadExcel" type="com.hps.july.inventory.actionbean.LoadExcelAction" name="InvLoadExcelForm" scope="request" validate="true">
+		<forward name="success" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/InvFillFromDB" type="com.hps.july.web.util.AbstractEditAction" name="InvFillFromDBForm" scope="request" validate="true">
+		<forward name="errorgoback" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessInvFillFromDB" type="com.hps.july.inventory.actionbean.LoadExcelAction" name="InvFillFromDBForm" scope="request" validate="true">
+		<forward name="success" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/InvLoadInv" type="com.hps.july.web.util.AbstractEditAction" name="InvLoadInvForm" scope="request" validate="true">
+		<forward name="errorgoback" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessInvLoadInv" type="com.hps.july.inventory.actionbean.LoadExcelAction" name="InvLoadInvForm" scope="request" validate="true">
+		<forward name="success" path="EditPositionInventory.do" redirect="true" />
+	</action>
+
+<!--
+    <action   path="/ShowInvList"
+              type="com.hps.july.inventory.actionbean.ShowInvListAction"
+              name="InvListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditInv"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="InvForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowInvList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessInv"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="InvForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowInvList.do" redirect="true" />
+    </action>
+
+    <action   path="/EditInvState"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="InvStateForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowInvList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessInvState"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="InvStateForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowInvList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowInvPosList"
+              type="com.hps.july.inventory.actionbean.ShowInvPosListAction"
+              name="InvPosListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditInvPos"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="InvPosForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowInvPosList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessInvPos"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="InvPosForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowInvPosList.do" redirect="true"/>
+    </action>
+
+    <action   path="/PrintInv"
+              type="com.hps.july.inventory.actionbean.PrintInvAction"
+              name="PrintDocumentForm"
+              scope="request"
+	          validate="true">
+    </action>
+-->
+    <action path="/ShowI13nRessetList" type="com.hps.july.inventory.actionbean.ShowI13nRessetListAction" name="I13nRessetListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowI13nActRessetList" type="com.hps.july.inventory.actionbean.ShowI13nActRessetListAction" name="I13nActRessetListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditI13nResset" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="I13nRessetForm" validate="true">
+              <forward name="errorgoback" path="ShowI13nRessetList.do" redirect="true" />
+    </action>
+
+    <action path="/EditI13nActResset" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="I13nActRessetForm" validate="true">
+              <forward name="errorgoback" path="ShowI13nActRessetList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessI13nResset" type="com.hps.july.web.util.AbstractProcessAction" name="I13nRessetForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowI13nRessetList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessI13nActResset" type="com.hps.july.web.util.AbstractProcessAction" name="I13nActRessetForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowI13nActRessetList.do" redirect="true" />
+    </action>
+
+	<!-- Lookup Actions -->
+
+    <action path="/ShowCompanyLookupList" type="com.hps.july.inventory.actionbean.ShowCompanyLookupListAction" name="CompanyLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowOrganizationLookupList" type="com.hps.july.inventory.actionbean.ShowOrganizationLookupListAction" name="OrganizationLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowWorkerLookupList" type="com.hps.july.inventory.actionbean.ShowWorkerLookupListAction" name="WorkerLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowEquipmentLookupList" type="com.hps.july.inventory.actionbean.ShowEquipmentLookupListAction" name="EquipmentLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowRestypeLookupList" type="com.hps.july.inventory.actionbean.ShowRestypeLookupListAction" name="RestypeLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowRessbtypeLookupList" type="com.hps.july.inventory.actionbean.ShowRessbtypeLookupListAction" name="RessbtypeLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowDivisionLookupList" type="com.hps.july.inventory.actionbean.ShowDivisionLookupListAction" name="DivisionLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowAgregateLookupList" type="com.hps.july.inventory.actionbean.ShowAgregateLookupListAction" name="AgregateLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowResourceLookupList" type="com.hps.july.inventory.actionbean.ShowResourceLookupListAction" name="ResourceLookupListForm" scope="session" validate="true">
+    </action>
+	
+	<action path="/ShowResourceLookupBySerialList" type="com.hps.july.inventory.actionbean.ShowResourceLookupBySerialListAction" name="ResourceLookupBySerialListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowContractLookupList" type="com.hps.july.inventory.actionbean.ShowContractLookupListAction" name="ContractLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowComplectLookupList" type="com.hps.july.inventory.actionbean.ShowComplectLookupListAction" name="ComplectLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowComplectBSLookupList" type="com.hps.july.inventory.actionbean.ShowComplectLookupListAction" name="ComplectBSLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowPositionLookupList" type="com.hps.july.inventory.actionbean.ShowPositionLookupListAction" name="PositionLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowStorageLookupList" type="com.hps.july.inventory.actionbean.ShowStorageLookupListAction" name="StorageLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowEquipmentPosLookupList" type="com.hps.july.inventory.actionbean.ShowEquipmentPosLookupListAction" name="EquipmentPosLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowResourceSetLookupList" type="com.hps.july.inventory.actionbean.ShowResourceSetLookupListAction" name="ResourceSetLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowI13nRessetLookupList" type="com.hps.july.inventory.actionbean.ShowI13nRessetLookupListAction" name="I13nRessetLookupListForm" scope="session" validate="true">
+    </action>
+	
+    <action path="/ShowReqLookupList" type="com.hps.july.inventory.actionbean.ShowReqLookupListAction" name="ReqLookupListForm" scope="session" validate="true">
+    </action>
+	
+    <action path="/ShowCardLookupList" type="com.hps.july.inventory.actionbean.ShowCardLookupListAction" name="CardLookupListForm" scope="session" validate="true">
+    </action>
+	
+    <action path="/ShowCardRLookupList" type="com.hps.july.inventory.actionbean.ShowCardLookupListAction" name="CardRLookupListForm" scope="session" validate="true">
+    </action>
+	
+	<!-- Assembling/Disassembling Act Actions (Positions) -->
+    
+<action path="/ShowAssactList" type="com.hps.july.web.util.BrowseAction" name="AssactListForm" scope="session" validate="true">
+</action>
+
+<action path="/EditAssact" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="AssactForm" validate="true">
+	<forward name="errorgoback" path="ShowAssactList.do" redirect="true" />
+</action>
+
+<action path="/ProcessAssact" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="AssactForm" scope="session" validate="true">
+	<forward name="edit" path="EditAssact.do" redirect="true" />
+	<forward name="success" path="ShowAssactList.do" redirect="true" />
+</action>
+
+<!--
+    <action   path="/EditAssactst"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="AssactstForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowAssactList.do" redirect="true"/>
+    </action>
+    <action   path="/ProcessAssactst"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="AssactstForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowAssactList.do" redirect="true" />
+    </action>
+    <action   path="/ShowAssactposList"
+              type="com.hps.july.inventory.actionbean.ShowAssactposListAction"
+              name="AssactposListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+
+<action path="/EditAssactpos" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AssactposForm" validate="true">
+	<forward name="errorgoback" path="EditAssact.do" redirect="true" />
+</action>
+
+<action path="/ProcessAssactpos" type="com.hps.july.web.util.AbstractProcessAction" name="AssactposForm" scope="request" validate="true">
+		<forward name="success" path="EditAssact.do" redirect="true" />
+</action>
+
+<action path="/ShowDAssactList" type="com.hps.july.web.util.BrowseAction" name="DAssactListForm" scope="session" validate="true">
+</action>
+
+<action path="/EditDAssact" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="DAssactForm" validate="true">
+	<forward name="errorgoback" path="ShowDAssactList.do" redirect="true" />
+</action>
+
+<action path="/ProcessDAssact" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="DAssactForm" scope="session" validate="true">
+	<forward name="edit" path="EditDAssact.do" redirect="true" />
+	<forward name="success" path="ShowDAssactList.do" redirect="true" />
+</action>
+<!--
+    <action   path="/EditDAssactst"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="DAssactstForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowDAssactList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessDAssactst"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="DAssactstForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowDAssactList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowDAssactposList"
+              type="com.hps.july.inventory.actionbean.ShowDAssactposListAction"
+              name="DAssactposListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+	<action path="/EditDAssactpos" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="DAssactposForm" validate="true">
+		<forward name="errorgoback" path="EditDAssact.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessDAssactpos" type="com.hps.july.web.util.AbstractProcessAction" name="DAssactposForm" scope="request" validate="true">
+			<forward name="success" path="EditDAssact.do" redirect="true" />
+	</action>
+
+<!-- Assembling Act on Position Actions -->
+
+<action path="/ShowAssemblingPList" type="com.hps.july.inventory.actionbean.ShowAssemblingPListAction" name="AssemblingPListForm" scope="session" validate="true">
+</action>
+<action path="/EditAssemblingP" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="AssemblingPForm" validate="true">
+		<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+</action>
+
+<action path="/AssemblingPLoadExcel" type="com.hps.july.web.util.AbstractEditAction" name="AssemblingPLoadXlsForm" scope="session" validate="true">
+	<forward name="errorgoback" path="EditAssemblingP.do" redirect="true" />
+</action>
+
+<action path="/ProcessAssemblingPLoadExcel" type="com.hps.july.web.util.FormProcessAction" name="AssemblingPLoadXlsForm" scope="session" validate="true">
+	<forward name="success" path="EditAssemblingP.do" redirect="true" />
+</action>	
+	
+<action path="/ProcessAssemblingP" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="AssemblingPForm" scope="session" validate="true">
+	<forward name="edit" path="EditAssemblingP.do" redirect="true" />
+	<forward name="success" path="ShowAssemblingPList.do" redirect="true" />
+</action>
+<!--
+<action	path="/EditAssemblingPState"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="AssemblingPStateForm"
+	validate="true">
+		<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+</action>
+<action	path="/ProcessAssemblingPState"
+	type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+	name="AssemblingPStateForm"
+	scope="request"
+	validate="true">
+		<forward name="success" path="ShowAssemblingPList.do" redirect="true" />
+</action>
+
+    <action   path="/ShowAssemblingPPositionList"
+              type="com.hps.july.inventory.actionbean.ShowAssemblingPPositionListAction"
+              name="AssemblingPPositionListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+<action path="/EditAssemblingPPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AssemblingPPositionForm" validate="true">
+		<forward name="errorgoback" path="EditAssemblingP.do" redirect="true" />
+</action>
+
+<action path="/ProcessAssemblingPPosition" type="com.hps.july.web.util.AbstractProcessAction" name="AssemblingPPositionForm" scope="request" validate="true">
+		<forward name="success" path="EditAssemblingP.do" redirect="true" />
+</action>
+
+<action path="/EditAssemblingPUPS" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AssemblingPUPSForm" validate="true">
+		<forward name="errorgoback" path="EditAssemblingP.do" redirect="true" />
+</action>
+
+<action path="/ProcessAssemblingPUPS" type="com.hps.july.web.util.FormProcessAction" name="AssemblingPUPSForm" scope="request" validate="true">
+	<forward name="success" path="EditAssemblingP.do" redirect="true" />
+</action>
+
+<!-- Position Demount Documents -->
+
+<action path="/ShowDemountList" type="com.hps.july.inventory.actionbean.ShowDemountList" name="DemountList" scope="session" validate="true">
+</action>
+
+<action path="/EditDemount" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Demount" validate="true">
+	<forward name="errorgoback" path="ShowDemountList.do" redirect="true" />
+</action>
+
+<!--		type="com.hps.july.web.util.DocumentProcessAction" -->
+<action path="/ProcessDemount" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="Demount" scope="session" validate="true">
+	<forward name="edit" path="EditDemount.do" redirect="true" />
+	<forward name="success" path="ShowDemountList.do" redirect="true" />
+</action>
+
+<action path="/EditDemountState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="DemountState" validate="true">
+	<forward name="errorgoback" path="EditDemount.do" redirect="true" />
+</action>
+
+<action path="/ProcessDemountState" type="com.hps.july.inventory.actionbean.DocumentProcessAction" name="DemountState" scope="request" validate="true">
+	<forward name="success" path="EditDemount.do" redirect="true" />
+</action>
+
+<action path="/DemountFFDB" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="DemountFFDB" validate="true">
+	<forward name="errorgoback" path="EditDemount.do" redirect="true" />
+</action>
+
+<action path="/ProcessDemountFFDB" type="com.hps.july.inventory.actionbean.LoadExcelAction" scope="request" name="DemountFFDB" validate="true">
+	<forward name="success" path="EditDemount.do" redirect="true" />
+</action>
+
+<action path="/EditDemountItem" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="DemountItem" validate="true">
+	<forward name="errorgoback" path="EditDemount.do" redirect="true" />
+</action>
+
+<action path="/ProcessDemountItem" type="com.hps.july.web.util.AbstractProcessAction" scope="request" name="DemountItem" validate="true">
+	<forward name="success" path="EditDemount.do" redirect="true" />
+</action>
+
+<!-- Assembling/Disassembling Act Actions for Blocks on Position -->
+    
+    <action path="/ShowAssactBList" type="com.hps.july.inventory.actionbean.ShowAssactBListAction" name="AssactBListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditAssactB" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="AssactBForm" validate="true">
+              <forward name="errorgoback" path="ShowAssactBList.do" redirect="true" />
+    </action>
+
+<!--		type="com.hps.july.web.util.DocumentProcessAction" -->
+	<action path="/ProcessAssactB" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="AssactBForm" scope="session" validate="true">
+		<forward name="edit" path="EditAssactB.do" redirect="true" />
+		<forward name="success" path="ShowAssactBList.do" redirect="true" />
+	</action>
+<!--
+    <action   path="/EditAssactstB"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="AssactstBForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowAssactBList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessAssactstB"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="AssactstBForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowAssactBList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowAssactposBList"
+              type="com.hps.july.inventory.actionbean.ShowAssactposBListAction"
+              name="AssactposBListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+    <action path="/EditAssactposB" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AssactposBForm" validate="true">
+              <forward name="errorgoback" path="EditAssactB.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessAssactposB" type="com.hps.july.web.util.AbstractProcessAction" name="AssactposBForm" scope="request" validate="true">
+      	      <forward name="success" path="EditAssactB.do" redirect="true" />
+    </action>
+
+	<action path="/ShowDAssactBList" type="com.hps.july.web.util.BrowseAction" name="DAssactBListForm" scope="session" validate="true">
+	</action>
+
+	<action path="/EditDAssactB" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="DAssactBForm" validate="true">
+			<forward name="errorgoback" path="ShowDAssactBList.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessDAssactB" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="DAssactBForm" scope="session" validate="true">
+			<forward name="edit" path="EditDAssactB.do" redirect="true" />
+			<forward name="success" path="ShowDAssactBList.do" redirect="true" />
+	</action>
+<!--
+    <action   path="/EditDAssactstB"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="DAssactstBForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowDAssactBList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessDAssactstB"
+              type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+              name="DAssactstBForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowDAssactBList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowDAssactposBList"
+              type="com.hps.july.inventory.actionbean.ShowDAssactposBListAction"
+              name="DAssactposBListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+	<action path="/EditDAssactposB" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="DAssactposBForm" validate="true">
+		<forward name="errorgoback" path="EditDAssactB.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessDAssactposB" type="com.hps.july.web.util.AbstractProcessAction" name="DAssactposBForm" scope="request" validate="true">
+		<forward name="success" path="EditDAssactB.do" redirect="true" />
+	</action>
+	
+    <!-- Dismantling Act on Position Actions -->
+
+	<action path="/ShowPayoffList" type="com.hps.july.web.util.BrowseAction" name="PayoffListForm" scope="session" validate="true">
+	</action>
+
+	<action path="/EditPayoff" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="PayoffForm" validate="true">
+		<forward name="errorgoback" path="ShowPayoffList.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessPayoff" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="PayoffForm" scope="session" validate="true">
+		<forward name="edit" path="EditPayoff.do" redirect="true" />
+		<forward name="success" path="ShowPayoffList.do" redirect="true" />
+	</action>
+<!--
+	<action path="/EditPayoffState"
+		type="com.hps.july.web.util.AbstractEditAction"
+		scope="request"
+		name="PayoffStateForm"
+		validate="true"
+	>
+		<forward name="errorgoback" path="ShowPayoffList.do" redirect="true" />
+	</action>
+
+	<action	path="/ProcessPayoffState"
+		type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+		name="PayoffStateForm"
+		scope="request"
+		validate="true"
+	>
+		<forward name="success" path="ShowPayoffList.do" redirect="true" />
+	</action>
+
+	<action	path="/ShowPayoffPositionList"
+		type="com.hps.july.inventory.actionbean.ShowPayoffPositionListAction"
+		name="PayoffPositionListForm"
+		scope="session"
+		validate="true"
+	>
+	</action>
+-->
+	<action path="/EditPayoffPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="PayoffPositionForm" validate="true">
+		<forward name="errorgoback" path="EditPayoff.do" redirect="true" />
+	</action>
+
+	<action path="/ProcessPayoffPosition" type="com.hps.july.web.util.AbstractProcessAction" name="PayoffPositionForm" scope="request" validate="true">
+		<forward name="success" path="EditPayoff.do" redirect="true" />
+	</action>
+
+<!-- Fault Report Actions -->
+<action path="/ShowFaultList" type="com.hps.july.inventory.actionbean.ShowFaultListAction" name="FaultListForm" scope="session" validate="true">
+</action>
+
+<action path="/EditFault" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="FaultForm" validate="true">
+	<forward name="errorgoback" path="ShowFaultList.do" redirect="true" />
+</action>
+
+<action path="/ProcessFault" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="FaultForm" scope="session" validate="true">
+	<forward name="edit" path="EditFault.do" redirect="true" />
+	<forward name="success" path="ShowFaultList.do" redirect="true" />
+</action>
+<!--
+<action path="/EditFaultState"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="FaultStateForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowFaultList.do" redirect="true" />
+</action>
+<action	path="/ProcessFaultState"
+	type="com.hps.july.inventory.actionbean.DocumentProcessAction"
+	name="FaultStateForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowFaultList.do" redirect="true" />
+</action>
+-->
+
+<!-- Reports -->
+
+<action path="/Report1Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report1ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport1" type="com.hps.july.inventory.actionbean.Report1Action" name="Report1ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report1Form.jsp" redirect="false" />
+</action>
+
+<action path="/ShowReport1rtLookupList" type="com.hps.july.inventory.actionbean.ShowReport1rtLookupListAction" name="Report1rtLookupListForm" scope="session" validate="true">
+</action>
+
+<action path="/ShowReport1rstLookupList" type="com.hps.july.inventory.actionbean.ShowReport1rstLookupListAction" name="Report1rstLookupListForm" scope="session" validate="true">
+</action>
+
+<action path="/Report4Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report4ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport4" type="com.hps.july.inventory.actionbean.Report1Action" name="Report4ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report4Form.jsp" redirect="false" />
+</action>
+
+<action path="/Report2Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report2ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport2" type="com.hps.july.inventory.actionbean.Report1Action" name="Report2ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report2Form.jsp" redirect="false" />
+</action>
+
+<action path="/Report3Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report3ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport3" type="com.hps.july.inventory.actionbean.Report1Action" name="Report3ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report3Form.jsp" redirect="false" />
+</action>
+
+<action path="/Report5Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report5ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport5" type="com.hps.july.inventory.actionbean.Report1Action" name="Report5ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report5Form.jsp" redirect="false" />
+</action>
+
+<action path="/Report6Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report6ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport6" type="com.hps.july.inventory.actionbean.Report1Action" name="Report6ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report6Form.jsp" redirect="false" />
+</action>
+
+<action path="/Report7Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report7ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport7" type="com.hps.july.inventory.actionbean.Report1Action" name="Report7ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report7Form.jsp" redirect="false" />
+</action>
+
+<action path="/Report8Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report8ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport8" type="com.hps.july.inventory.actionbean.ReportProcessAction" name="Report8ParamsForm" scope="session" validate="true">
+	<forward name="success" path="Report8.do" redirect="true" />
+</action>
+
+<action path="/Report8" type="com.hps.july.inventory.actionbean.Report8Action" validate="true">
+	<forward name="back" path="/main.do" />
+</action>
+
+<action path="/Report9Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report9ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport9" type="com.hps.july.inventory.actionbean.Report1Action" name="Report9ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report9Form.jsp" redirect="false" />
+</action>
+
+<action path="/Report91Params" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="Report91ParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessReport91" type="com.hps.july.inventory.actionbean.Report1Action" name="Report91ParamsForm" scope="session" validate="true">
+	<forward name="excel" path="report91Form.jsp" redirect="false" />
+</action>
+
+<action path="/ProcessReportExcel" type="com.hps.july.inventory.actionbean.ReportExcelAction" scope="session" name="ReportExcelForm" validate="true">
+	<forward name="excel" path="reportExcel.jsp" redirect="false" />
+</action>	
+
+<!-- Bar-codes Actions -->
+
+<action path="/ShowBarList" type="com.hps.july.inventory.actionbean.ShowBarListAction" name="BarListForm" scope="session" validate="true">
+</action>
+
+<action path="/EditBar" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="BarForm" validate="true">
+	<forward name="errorgoback" path="ShowBarList.do" redirect="true" />
+</action>
+
+<action path="/ProcessBar" type="com.hps.july.web.util.AbstractProcessAction" name="BarForm" scope="request" validate="true">
+	<forward name="success" path="ShowBarList.do" redirect="true" />
+</action>
+
+<action path="/BarParams" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="BarParamsForm" validate="true">
+	<forward name="errorgoback" path="ShowBarList.do" redirect="true" />
+</action>
+
+<action path="/ProcessBarParams" type="com.hps.july.inventory.actionbean.ReportProcessAction" name="BarParamsForm" scope="session" validate="true">
+	<forward name="success" path="BarReport.do" redirect="true" />
+</action>
+
+<action path="/BarReport" type="com.hps.july.inventory.actionbean.BarReportAction" name="BarReportForm" scope="request" validate="true">
+	<forward name="back" path="/ShowBarList.do" />
+</action>
+
+<action path="/BarSParams" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="BarSParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessBarSParams" type="com.hps.july.inventory.actionbean.ReportProcessAction" name="BarSParamsForm" scope="session" validate="true">
+	<forward name="success" path="BarSReport.do" redirect="true" />
+</action>
+
+<action path="/BarSReport" type="com.hps.july.inventory.actionbean.BarSReportAction" name="BarSReportForm" scope="request" validate="true">
+	<forward name="back" path="/BarSParams.do" />
+</action>
+
+<action path="/ShowBarSerialLookupList" type="com.hps.july.inventory.actionbean.ShowBarSerialLookupListAction" name="BarSerialLookupListForm" scope="session" validate="true">
+</action>
+
+<!-- Mass calculation actions -->
+
+<action path="/MassCalcParams" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="MassCalcParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessMassCalc" type="com.hps.july.inventory.actionbean.ReportProcessAction" name="MassCalcParamsForm" scope="session" validate="true">
+	<forward name="success" path="MassCalc.do" redirect="true" />
+</action>
+
+<action path="/MassCalc" type="com.hps.july.inventory.actionbean.MassCalcAction" validate="true">
+	<forward name="back" path="/main.do" />
+</action>
+
+<action path="/MassdocParams" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="MassdocParamsForm" validate="true">
+	<forward name="errorgoback" path="main.do" redirect="true" />
+</action>
+
+<action path="/ProcessMassdoc" type="com.hps.july.inventory.actionbean.ReportProcessAction" name="MassdocParamsForm" scope="session" validate="true">
+	<forward name="success" path="Massdoc.do" redirect="true" />
+</action>
+
+<action path="/Massdoc" type="com.hps.july.inventory.actionbean.MassdocAction" validate="true">
+	<forward name="back" path="/main.do" />
+</action>
+
+<!-- Action for Excel data loading -->
+
+<action path="/InvActLoadExcel" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InvActLoadExcelForm" validate="true">
+	<forward name="errorgoback" path="EditInvAct.do" redirect="true" />
+</action>
+
+<action path="/ProcessInvActLoadExcel" name="InvActLoadExcelForm" type="com.hps.july.inventory.actionbean.LoadExcelAction" scope="request" validate="true">
+	<forward name="success" path="EditInvAct.do" redirect="true" />
+</action>
+
+<action path="/ExternalLoadExcel" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ExternalLoadExcelForm" validate="true">
+	<forward name="errorgoback" path="EditExternal.do" redirect="true" />
+</action>
+
+<action path="/ProcessExternalLoadExcel" name="ExternalLoadExcelForm" type="com.hps.july.inventory.actionbean.LoadExcelAction" scope="request" validate="true">
+	<forward name="success" path="EditExternal.do" redirect="true" />
+</action>
+
+<action path="/InternalLoadExcel" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InternalLoadExcelForm" validate="true">
+	<forward name="errorgoback" path="EditInternal.do" redirect="true" />
+</action>
+
+<action path="/ProcessInternalLoadExcel" name="InternalLoadExcelForm" type="com.hps.july.inventory.actionbean.LoadExcelAction" scope="request" validate="true">
+	<forward name="errorgoback" path="EditInternal.do" redirect="true" />
+</action>
+
+<action path="/InternalRLoadExcel" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InternalRLoadExcelForm" validate="true">
+	<forward name="errorgoback" path="EditInternalR.do" redirect="true" />
+</action>
+
+<action path="/ProcessInternalRLoadExcel" name="InternalRLoadExcelForm" type="com.hps.july.inventory.actionbean.LoadExcelAction" scope="request" validate="true">
+	<forward name="success" path="EditInternalR.do" redirect="true" />
+</action>
+
+<!-- filling inventory from db actions -->
+
+<action path="/InvActFillFromDB" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="InvActFillFromDBForm" validate="true">
+	<forward name="errorgoback" path="EditInvAct.do" redirect="true" />
+</action>
+
+<action path="/ProcessInvActFillFromDB" name="InvActFillFromDBForm" type="com.hps.july.inventory.actionbean.LoadExcelAction" scope="request" validate="true">
+	<forward name="success" path="EditInvAct.do" redirect="true" />
+</action>
+
+<!-- Loading from alcatel inv file -->
+
+<action path="/ShowDirectionLookupList" type="com.hps.july.inventory.actionbean.ShowDirectionLookupListAction" name="DirectionLookupListForm" scope="session" validate="true">
+</action>
+
+<!-- Assembling Act on Position Actions -->
+
+<action path="/ShowAfsList" type="com.hps.july.inventory.actionbean.ShowAfsListAction" name="AfsListForm" scope="session" validate="true">
+</action>
+
+<action path="/EditAfs" type="com.hps.july.web.util.AbstractEditAction" scope="session" name="AfsForm" validate="true">
+	<forward name="errorgoback" path="ShowAfsList.do" redirect="true" />
+</action>
+
+<!--	type="com.hps.july.web.util.AbstractProcessAction" -->
+<action path="/ProcessAfs" type="com.hps.july.inventory.actionbean.NIDocumentProcessAction" name="AfsForm" scope="session" validate="true">
+	<forward name="edit" path="EditAfs.do" redirect="true" />
+	<forward name="success" path="ShowAfsList.do" redirect="true" />
+</action>
+
+<action path="/EditAfsState" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AfsStateForm" validate="true">
+	<forward name="errorgoback" path="ShowAfsList.do" redirect="true" />
+</action>
+
+<action path="/ProcessAfsState" type="com.hps.july.inventory.actionbean.DocumentProcessAction" name="AfsStateForm" scope="request" validate="true">
+	<forward name="success" path="ShowAfsList.do" redirect="true" />
+</action>
+
+<action path="/ShowAfsPositionList" type="com.hps.july.inventory.actionbean.ShowAfsPositionListAction" name="AfsPositionListForm" scope="session" validate="true">
+</action>
+
+<action path="/EditAfsPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AfsPositionForm" validate="true">
+	<forward name="errorgoback" path="EditAfs.do" redirect="true" />
+</action>
+
+<action path="/ProcessAfsPosition" type="com.hps.july.web.util.AbstractProcessAction" name="AfsPositionForm" scope="request" validate="true">
+	<forward name="success" path="EditAfs.do" redirect="true" />
+</action>
+
+<action path="/EditAfsGPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AfsGPositionForm" validate="true">
+	<forward name="errorgoback" path="EditAfs.do" redirect="true" />
+</action>
+
+<action path="/ProcessAfsGPosition" type="com.hps.july.web.util.AbstractProcessAction" name="AfsGPositionForm" scope="request" validate="true">
+	<forward name="success" path="EditAfs.do" redirect="true" />
+</action>
+
+<action path="/EditAfsAPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AfsAPositionForm" validate="true">
+	<forward name="errorgoback" path="EditAfs.do" redirect="true" />
+</action>
+
+<action path="/ProcessAfsAPosition" type="com.hps.july.web.util.AbstractProcessAction" name="AfsAPositionForm" scope="request" validate="true">
+	<forward name="success" path="EditAfs.do" redirect="true" />
+</action>
+
+<action path="/EditAfsDPosition" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AfsDPositionForm" validate="true">
+	<forward name="errorgoback" path="EditAfs.do" redirect="true" />
+</action>
+
+<action path="/ProcessAfsDPosition" type="com.hps.july.web.util.AbstractProcessAction" name="AfsDPositionForm" scope="request" validate="true">
+	<forward name="success" path="EditAfs.do" redirect="true" />
+</action>
+
+<!--
+    <action   path="/EditAssemblingPPosition"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="AssemblingPPositionForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowAssemblingPPositionList.do" redirect="true" />
+    </action>
+
+    <action   path="/ProcessAssemblingPPosition"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="AssemblingPPositionForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowAssemblingPPositionList.do" redirect="true" />
+    </action>
+-->
+
+		<action path="/MountAct2" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="MountAct2_Form" validate="true">
+				<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+		</action>
+
+		<action path="/MountAct2Process" type="com.hps.july.inventory.actionbean.MountAct2_ProcessAction" name="MountAct2_Form" scope="request" validate="true">
+				<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+				<forward name="edit" path="/MountAct2.do" redirect="true" />
+				<forward name="success" path="/ShowAssemblingPList.do" redirect="true" />
+		</action>
+
+		<action path="/MountAct2Edit2" type="com.hps.july.inventory.actionbean.MountAct2Edit2Action" scope="request" validate="false" name="MountAct2Form2">
+				<forward name="errorgoback" path="ShowAssemblingPList.do" redirect="true" />
+				<forward name="success" path="ShowAssemblingPList.do" redirect="true" />
+		</action>
+		
+		<action path="/ShowCfgEditForm" type="com.hps.july.web.util.AbstractEditAction" name="ConfigEqEditForm" scope="session" validate="true">
+		</action>
+		
+		<action path="/ShowCfgEditIFrameForm" type="com.hps.july.web.util.IFrameAbstractEditAction" name="ConfigEqEditForm" scope="session" validate="true">
+		</action>
+		
+		<action path="/SaveBSConfig" type="com.hps.july.inventory.actionbean.SaveBSConfigAction" name="ConfigEqEditForm" scope="session" validate="true">
+		</action>
+		
+		<action path="/ReportChanges" type="com.hps.july.inventory.config.ReportChanges" validate="true">
+				<forward name="success" path="config/reportChanges.jsp" redirect="false" />
+		</action>
+		
+		<action path="/ReportConfig1" type="com.hps.july.inventory.config.ReportConfig1" validate="true">
+				<forward name="success" path="config/reportConfig1.jsp" redirect="false" />
+		</action>
+		
+		<action path="/ReportConfig2" type="com.hps.july.inventory.config.ReportConfig2" validate="true">
+				<forward name="success" path="config/reportConfig2.jsp" redirect="false" />
+		</action>
+		
+		<action path="/ReportBTSMountAct" type="com.hps.july.inventory.config.ReportBTSMountAct" validate="true">
+				<forward name="success" path="config/reportBTSMountAct.jsp" redirect="false" />
+		</action>
+		
+		<action path="/ReportAFSMountAct" type="com.hps.july.inventory.config.ReportAFSMountAct" validate="true">
+				<forward name="success" path="config/reportAFSMountAct.jsp" redirect="false" />
+		</action>
+		
+</action-mappings>
+
+</struts-config>

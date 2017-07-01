@@ -1,0 +1,64 @@
+<%@ taglib uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
+<%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
+<%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
+<%@ taglib uri="/WEB-INF/july.tld" prefix="july" %>
+
+<% java.lang.String gColSpan = "15";
+%>
+
+<table class="main">
+<tr class="title">
+	<td class="title" colspan="<%= gColSpan %>">
+	<% if(!"Delete".equals(rrlAntenaForm.getAction())) {
+	%>
+	<july:addbutton page="/EditRRLDiamParams.do?action=Add" paramId="resource" paramName="resource" 																													paramScope="page"/>
+	<% } %>
+	<bean:message key="label.rrlresource.params.title"/>
+  </td>
+</tr>
+
+<july:separator colspan="<%= gColSpan %>" />
+
+<!-- Table header -->
+<tr class="title">
+	<td class="title" width="1%">&nbsp;</td>
+	<july:headercolumn key="label.rrlresource.params.antdiam" colType="string"/>
+	<july:headercolumn key="label.rrlresource.params.amplifkoeff" colType="string"/>
+	<july:headercolumn key="label.rrlresource.params.dnangleh" colType="string"/>
+	<july:headercolumn key="label.rrlresource.params.dnanglew" colType="string"/>
+	<td class="title" width="1%">&nbsp;</td>
+</tr>
+
+<july:separator colspan="<%= gColSpan %>" />
+   
+<!-- Table body -->
+<logic:iterate id="paramobj" name="RRLAntenaForm" property="paramslist" type="com.hps.july.dictionary.valueobject.RRLResourceParamsValueFrm">
+<logic:present name="paramobj">
+<%
+	pageContext.setAttribute("rrlantid", paramobj.getRrlantid());
+%>
+<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+	<td class="link">
+	<% if(!"Delete".equals(rrlAntenaForm.getAction())) {
+	%>
+	<july:editbutton page="/EditRRLDiamParams.do" action="Edit" paramId="rrlantid" paramName="rrlantid" paramScope="page"/>
+	<% } %>
+	</td>
+	<html:hidden property="rrlantid" name="paramobj"/>
+	<td class="text"><july:stringwrite name="paramobj" property="antdiam"/></td>
+	<td class="text"><july:stringwrite name="paramobj" property="amplifkoeff"/></td>
+	<td class="text"><july:stringwrite name="paramobj" property="dnangleh"/></td>
+	<td class="text"><july:stringwrite name="paramobj" property="dnanglew"/></td>
+	<% if(!"Delete".equals(rrlAntenaForm.getAction())) {
+	%>
+	<td class="link"><july:delbutton page="/EditRRLDiamParams.do?action=Delete" paramId="rrlantid" paramName="rrlantid" paramScope="page"/></td>
+	<% } %>
+</tr>
+<july:separator colspan="<%= gColSpan %>" />
+
+</logic:present>
+</logic:iterate>
+
+</table>
+
+</july:browseform>

@@ -1,0 +1,34 @@
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:accessbean="accessbean.xmi" xmlns:ejb="ejb.xmi">
+  <accessbean:EJBShadow xmi:id="EJBShadow_1" name="BillingRequiredNew">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BillingRequiredNew"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_1" name="BillingRequiredNewAccessBean" package="com.hps.july.arenda.billing" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_1" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BillingRequiredNew"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_2" name="BufferNri2Nri">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BufferNri2Nri"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_2" name="BufferNri2NriAccessBean" package="com.hps.july.arenda.billing" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_2" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BufferNri2Nri"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_3" name="Pie2Nri">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Pie2Nri"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_3" name="Pie2NriAccessBean" package="com.hps.july.arenda.billing" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_3" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Pie2Nri"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_4" name="Transfer">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Transfer"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_4" name="TransferAccessBean" package="com.hps.july.arenda.billing" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_4" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Transfer"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+</xmi:XMI>

@@ -1,0 +1,106 @@
+------Start of DE processing------ = [06.05.06 18:16:15:829 MSD] , key = com.ibm.websphere.csi.CSITransactionRolledbackException com.ibm.ejs.container.EJSContainer.postInvoke 2326
+Exception = com.ibm.websphere.csi.CSITransactionRolledbackException
+Source = com.ibm.ejs.container.EJSContainer.postInvoke
+probeid = 2326
+Stack Dump = com.ibm.websphere.csi.CSITransactionRolledbackException: Transaction marked rollbackonly
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java(Compiled Code))
+	at com.ibm.ejs.csi.RequiresNew.postInvoke(RequiresNew.java:88)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java(Compiled Code))
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java(Compiled Code))
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java(Compiled Code))
+	at com.hps.july.arenda.sessionbean.EJSRemoteStatelessJournal_408185ce.taskEnd(EJSRemoteStatelessJournal_408185ce.java:155)
+	at com.hps.july.arenda.sessionbean._Journal_Stub.taskEnd(_Journal_Stub.java:357)
+	at com.hps.july.arenda.sessionbean.JournalAccessBean.taskEnd(JournalAccessBean.java:146)
+	at com.hps.july.arenda.billing.Pie2NriBean.taskEnd(Pie2NriBean.java:1992)
+	at com.hps.july.arenda.billing.EJSRemoteStatelessPie2Nri_eb8a8557.taskEnd(EJSRemoteStatelessPie2Nri_eb8a8557.java:359)
+	at com.hps.july.arenda.billing._Pie2Nri_Stub.taskEnd(_Pie2Nri_Stub.java:706)
+	at com.hps.july.arenda.billing.Pie2NriAccessBean.taskEnd(Pie2NriAccessBean.java:242)
+	at com.hps.july.arenda.actionbean.ShowAbonentBillsListAction.processGroup(ShowAbonentBillsListAction.java:492)
+	at com.hps.july.arenda.actionbean.ShowAbonentBillsListAction.perform(ShowAbonentBillsListAction.java:383)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:510)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java(Compiled Code))
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java(Compiled Code))
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java(Compiled Code))
+
+Dump of callerThis = 
+null
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Sat May 06 18:16:15 MSD 2006
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@5a9b7e9f
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julyarendabillingEJB.jar#Pie2Nri
+                                 EJB Type       = STATELESS_SESSION
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=APPLICATION
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@3ccdbeba
+
+  Tx Key                  = com.ibm.ws.LocalTransaction.LocalTranCoordImpl@3cb6feba
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@3ccdbeba
+
+Dump of ContinerTx from EJSDeployedSupport = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@33773eba
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@337d3eba#tid=7866
+  State                   = Rolledback
+  Entered beforCompletion = false
+  Marked Rollback Only    = true
+  Method Began            = false
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@33773eba
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Sat May 06 18:16:15 MSD 2006

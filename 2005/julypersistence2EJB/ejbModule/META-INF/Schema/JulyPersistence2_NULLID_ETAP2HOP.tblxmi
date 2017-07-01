@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ETAP2HOP" name="ETAP2HOP" primaryKey="PK_ETAP2HOP">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQPERMID" name="FREQPERMID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340156">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HOPSID" name="HOPSID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340157">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SITEDOC" name="SITEDOC">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340158">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_ETAP2HOP" name="PK_ETAP2HOP" members="HOPSID SITEDOC" constraint="SQLConstraint_1170331340156"/>
+  <constraints xmi:id="SQLConstraint_1170331340156" name="PK_ETAP2HOP" type="PRIMARYKEY" primaryKey="PK_ETAP2HOP"/>
+</RDBSchema:RDBTable>

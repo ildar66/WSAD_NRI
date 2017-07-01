@@ -1,0 +1,60 @@
+<%@ taglib uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
+<%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
+<%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
+<%@ taglib uri="/WEB-INF/july.tld" prefix="july" %>
+
+<table class="main">
+<tr class="title">
+	<td class="title" colspan="<%= gColSpan %>">
+	<% if(!"Delete".equals(rrlAntenaForm.getAction())) {
+	%>
+	<july:addbutton page="/EditRRLSpeedParams.do?action=Add"paramId="resource" paramName="resource" 																													paramScope="page"/>
+	<% } %>
+	<bean:message key="label.rrlresource.speedparams.title"/>
+	</td>
+</tr>
+
+<july:separator colspan="<%= gColSpan %>" />
+
+<!-- Table header -->
+<tr class="title">
+	<td class="title" width="1%">&nbsp;</td>
+	<july:headercolumn key="label.rrlresource.speedparams.streamspeed" colType="string"/>
+	<july:headercolumn key="label.rrlresource.speedparams.radiationclass" colType="string"/>
+	<july:headercolumn key="label.rrlresource.speedparams.recvsensitivity" colType="string"/>
+	<td class="title" width="1%">&nbsp;</td>
+</tr>
+
+<july:separator colspan="<%= gColSpan %>" />
+
+<!-- Table body -->
+<logic:iterate id="speedparamobj" name="RRLAntenaForm" property="speedparamslist"    type="com.hps.july.dictionary.valueobject.RRLResourceSpeedParamsValueFrm">
+<logic:present name="speedparamobj">
+<%
+	pageContext.setAttribute("resource", speedparamobj.getResource());
+	pageContext.setAttribute("rrlspeedid", speedparamobj.getRrlspeedid());
+%>
+<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+	<td class="link">
+	<% if(!"Delete".equals(rrlAntenaForm.getAction())) {
+	%>
+	<july:editbutton page="/EditRRLSpeedParams.do" action="Edit" paramId="rrlspeedid" paramName="rrlspeedid" paramScope="page"/>
+	<% } %>
+	</td>
+	<html:hidden property="rrlspeedid" name="speedparamobj"/>
+	<td class="text"><july:stringwrite name="speedparamobj" property="streamspeed"/></td>
+	<td class="text"><july:stringwrite name="speedparamobj" property="radiationclass"/></td>
+	<td class="text"><july:stringwrite name="speedparamobj" property="recvsensitivity"/></td>
+	<% if(!"Delete".equals(rrlAntenaForm.getAction())) {
+	%>
+	<td class="link"><july:delbutton page="/EditRRLSpeedParams.do?action=Delete" paramId="rrlspeedid" paramName="rrlspeedid" paramScope="page"/></td>
+	<% } %>
+</tr>
+<july:separator colspan="<%= gColSpan %>" />
+
+</logic:present>
+</logic:iterate>
+
+</table>
+
+</july:browseform>

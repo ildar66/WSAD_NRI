@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="GROUP2RESOURCE" name="GROUP2RESOURCE" primaryKey="PK_GROUP2RESOURCE">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GROUPID" name="GROUPID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340281">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE1" name="RESOURCE1">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340282">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="QTY" name="QTY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1170331340281" precision="18" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_GROUP2RESOURCE" name="PK_GROUP2RESOURCE" members="GROUPID RESOURCE1" constraint="SQLConstraint_1170331340281"/>
+  <constraints xmi:id="SQLConstraint_1170331340281" name="PK_GROUP2RESOURCE" type="PRIMARYKEY" primaryKey="PK_GROUP2RESOURCE"/>
+</RDBSchema:RDBTable>

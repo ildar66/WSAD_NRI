@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 1.1//EN" "http://java.sun.com/j2ee/dtds/ejb-jar_1_1.dtd">
+<ejb-jar id="ejb-jar_ID">
+	<display-name>julyConfigEJB</display-name>
+	<enterprise-beans>
+		<entity id="CfgBasestation">
+			<ejb-name>CfgBasestation</ejb-name>
+			<home>com.hps.july.config.beans.CfgBasestationHome</home>
+			<remote>com.hps.july.config.beans.CfgBasestation</remote>
+			<ejb-class>com.hps.july.config.beans.CfgBasestationBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgBasestationKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1152006186093">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152006186094">
+				<field-name>equipment</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152006186109">
+				<field-name>controller</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152006186110">
+				<field-name>type</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009565703">
+				<field-name>repeater</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009636406">
+				<field-name>number</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009639250">
+				<field-name>name</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009642312">
+				<field-name>n_stoek</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009650765">
+				<field-name>st_transp</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009659890">
+				<field-name>time_backup</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009663656">
+				<field-name>date_assemb_afs</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009667046">
+				<field-name>date_assemb_afs2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009670843">
+				<field-name>date_connect</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009673750">
+				<field-name>date_connect2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009678453">
+				<field-name>date_onair</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009689312">
+				<field-name>date_onair2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009692359">
+				<field-name>net_stage</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009695484">
+				<field-name>con_type</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009699125">
+				<field-name>e1_qty</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009701843">
+				<field-name>on_air</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009720859">
+				<field-name>date_bldbeg2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009724500">
+				<field-name>date_assemb2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009733656">
+				<field-name>date_test2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009736062">
+				<field-name>date_pr2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009737906">
+				<field-name>prefixcellid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009744984">
+				<field-name>softversion</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009747671">
+				<field-name>stand_resource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009750562">
+				<field-name>isarendats</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152009753406">
+				<field-name>state900</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010171640">
+				<field-name>state1800</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010174187">
+				<field-name>h_obj_ant</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010180671">
+				<field-name>antplaceid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010207421">
+				<field-name>numdcspermit</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010209515">
+				<field-name>numgsmpermit</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010227984">
+				<field-name>pwr_val</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010230500">
+				<field-name>pwr_cat</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010233703">
+				<field-name>pwr_reserve</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010236859">
+				<field-name>pwr_res_cat</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010240218">
+				<field-name>date_bldbeg</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010243437">
+				<field-name>date_assemb</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010246578">
+				<field-name>date_test</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010249031">
+				<field-name>date_pr</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010263687">
+				<field-name>equipcomment</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010266500">
+				<field-name>logictypeid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010268765">
+				<field-name>manufid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152010271203">
+				<field-name>ObjectStatus</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1180694319281">
+				<field-name>apartmentid</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgSector">
+			<ejb-name>CfgSector</ejb-name>
+			<home>com.hps.july.config.beans.CfgSectorHome</home>
+			<remote>com.hps.july.config.beans.CfgSector</remote>
+			<ejb-class>com.hps.july.config.beans.CfgSectorBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgSectorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1152101322437">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322453">
+				<field-name>id_sect</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322454">
+				<field-name>equipment</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322455">
+				<field-name>name_sect</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322456">
+				<field-name>band</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322457">
+				<field-name>num_sect</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322468">
+				<field-name>azimut</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322469">
+				<field-name>power</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322470">
+				<field-name>bts_number</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322471">
+				<field-name>con_abis</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322472">
+				<field-name>port_abis</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322473">
+				<field-name>num_po</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322484">
+				<field-name>ddk</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322485">
+				<field-name>trx_num</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322486">
+				<field-name>tx_pwr</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322487">
+				<field-name>trx_num2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322488">
+				<field-name>tx_pwr2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322489">
+				<field-name>tx_set_pwr</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322500">
+				<field-name>trx_ovr_num</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322501">
+				<field-name>tx_ovr_set_pwr</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322502">
+				<field-name>has_flt</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322503">
+				<field-name>has_lna</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322504">
+				<field-name>has_buster</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322505">
+				<field-name>conf</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322506">
+				<field-name>is_hr</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322507">
+				<field-name>cap_gprs</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322515">
+				<field-name>operator</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322516">
+				<field-name>byhand</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322517">
+				<field-name>lac</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322518">
+				<field-name>rac</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322519">
+				<field-name>cellname</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322520">
+				<field-name>ncc</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322521">
+				<field-name>bcc</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322522">
+				<field-name>standid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322531">
+				<field-name>cellinfo</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322532">
+				<field-name>datasource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101322533">
+				<field-name>ObjectStatus</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgBsstands">
+			<ejb-name>CfgBsstands</ejb-name>
+			<home>com.hps.july.config.beans.CfgBsstandsHome</home>
+			<remote>com.hps.july.config.beans.CfgBsstands</remote>
+			<ejb-class>com.hps.july.config.beans.CfgBsstandsBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgBsstandsKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1152101857390">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101857391">
+				<field-name>standid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101857392">
+				<field-name>equipment</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101857406">
+				<field-name>resource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101857407">
+				<field-name>stnomer</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101857408">
+				<field-name>storagecard</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101857409">
+				<field-name>qty</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152101857410">
+				<field-name>ObjectStatus</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgAntenna">
+			<ejb-name>CfgAntenna</ejb-name>
+			<home>com.hps.july.config.beans.CfgAntennaHome</home>
+			<remote>com.hps.july.config.beans.CfgAntenna</remote>
+			<ejb-class>com.hps.july.config.beans.CfgAntennaBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgAntennaKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1152102648156">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648157">
+				<field-name>id_anten</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648158">
+				<field-name>resource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648159">
+				<field-name>num_ant</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648171">
+				<field-name>kind_ant</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648172">
+				<field-name>nakl</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648173">
+				<field-name>az_ant</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648174">
+				<field-name>kswn</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648175">
+				<field-name>h_set1</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648176">
+				<field-name>len_cable</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648187">
+				<field-name>cableres</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648188">
+				<field-name>equipment</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648189">
+				<field-name>az_variation</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648190">
+				<field-name>nakl_variation</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648191">
+				<field-name>input_power</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648203">
+				<field-name>operator</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648204">
+				<field-name>byhand</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648205">
+				<field-name>groundresource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648206">
+				<field-name>groundcnt</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648207">
+				<field-name>locationtype</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648208">
+				<field-name>electricaltilt</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648209">
+				<field-name>StorageCard</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648218">
+				<field-name>qty</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648219">
+				<field-name>datasource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152102648220">
+				<field-name>ObjectStatus</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1159446631484">
+				<field-name>commcable</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgAnten2Sector">
+			<ejb-name>CfgAnten2Sector</ejb-name>
+			<home>com.hps.july.config.beans.CfgAnten2SectorHome</home>
+			<remote>com.hps.july.config.beans.CfgAnten2Sector</remote>
+			<ejb-class>com.hps.july.config.beans.CfgAnten2SectorBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgAnten2SectorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1152104119750">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104119751">
+				<field-name>id_anten</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104119752">
+				<field-name>id_sect</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104119753">
+				<field-name>datasource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104119765">
+				<field-name>ObjectStatus</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgEquipObjectsCfg">
+			<ejb-name>CfgEquipObjectsCfg</ejb-name>
+			<home>com.hps.july.config.beans.CfgEquipObjectsCfgHome</home>
+			<remote>com.hps.july.config.beans.CfgEquipObjectsCfg</remote>
+			<ejb-class>com.hps.july.config.beans.CfgEquipObjectsCfgBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgEquipObjectsCfgKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1152104663828">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104663829">
+				<field-name>objcfgid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104663830">
+				<field-name>equipment</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104663832">
+				<field-name>storagecard</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104663843">
+				<field-name>qty</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152104663844">
+				<field-name>ObjectStatus</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1164206967640">
+				<field-name>parentobjcfgid</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgSavedConfig">
+			<ejb-name>CfgSavedConfig</ejb-name>
+			<home>com.hps.july.config.beans.CfgSavedConfigHome</home>
+			<remote>com.hps.july.config.beans.CfgSavedConfig</remote>
+			<ejb-class>com.hps.july.config.beans.CfgSavedConfigBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgSavedConfigKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1152169003562">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152169003563">
+				<field-name>name</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgStoragecard">
+			<ejb-name>CfgStoragecard</ejb-name>
+			<home>com.hps.july.config.beans.CfgStoragecardHome</home>
+			<remote>com.hps.july.config.beans.CfgStoragecard</remote>
+			<ejb-class>com.hps.july.config.beans.CfgStoragecardBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgStoragecardKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1152171318578">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318579">
+				<field-name>storagecard</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318580">
+				<field-name>resource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318593">
+				<field-name>dateopened</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318594">
+				<field-name>owner</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318595">
+				<field-name>policy</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318596">
+				<field-name>closed</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318609">
+				<field-name>qty</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318610">
+				<field-name>price</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318611">
+				<field-name>boxed</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318612">
+				<field-name>document</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318625">
+				<field-name>broken</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318626">
+				<field-name>storageplace</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318627">
+				<field-name>contract</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318628">
+				<field-name>dateclosed</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318629">
+				<field-name>i13ndate</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318640">
+				<field-name>serialnumber</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318641">
+				<field-name>party</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318642">
+				<field-name>qty_broken</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318643">
+				<field-name>notes</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318644">
+				<field-name>configuration</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318656">
+				<field-name>place</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318657">
+				<field-name>inventserial</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318658">
+				<field-name>comment</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318659">
+				<field-name>isfictserial</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318660">
+				<field-name>isapproved</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318671">
+				<field-name>localserial</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1152171318672">
+				<field-name>ObjectStatus</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgAntennaCable">
+			<ejb-name>CfgAntennaCable</ejb-name>
+			<home>com.hps.july.config.beans.CfgAntennaCableHome</home>
+			<remote>com.hps.july.config.beans.CfgAntennaCable</remote>
+			<ejb-class>com.hps.july.config.beans.CfgAntennaCableBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgAntennaCableKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1160037870187">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037872921">
+				<field-name>idCable</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037876093">
+				<field-name>id_anten</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037878703">
+				<field-name>lenCable</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037881359">
+				<field-name>cableres</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037884343">
+				<field-name>groundresource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037887140">
+				<field-name>groundcnt</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037890875">
+				<field-name>storagecard</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037896843">
+				<field-name>qty</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037899578">
+				<field-name>datasource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160037903750">
+				<field-name>objectstatus</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgTrx">
+			<ejb-name>CfgTrx</ejb-name>
+			<home>com.hps.july.config.beans.CfgTrxHome</home>
+			<remote>com.hps.july.config.beans.CfgTrx</remote>
+			<ejb-class>com.hps.july.config.beans.CfgTrxBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgTrxKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1160121131609">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131610">
+				<field-name>trxid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131625">
+				<field-name>resource</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131626">
+				<field-name>standid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131627">
+				<field-name>storagecard</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131640">
+				<field-name>qty</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131641">
+				<field-name>objectstatus</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160576767484">
+				<field-name>equipment</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgTrx2Sector">
+			<ejb-name>CfgTrx2Sector</ejb-name>
+			<home>com.hps.july.config.beans.CfgTrx2SectorHome</home>
+			<remote>com.hps.july.config.beans.CfgTrx2Sector</remote>
+			<ejb-class>com.hps.july.config.beans.CfgTrx2SectorBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgTrx2SectorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1160121131642">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131643">
+				<field-name>trxid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131656">
+				<field-name>id_sect</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1160121131657">
+				<field-name>objectstatus</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgAntennaWorkBand">
+			<ejb-name>CfgAntennaWorkBand</ejb-name>
+			<home>com.hps.july.config.beans.CfgAntennaWorkBandHome</home>
+			<remote>com.hps.july.config.beans.CfgAntennaWorkBand</remote>
+			<ejb-class>com.hps.july.config.beans.CfgAntennaWorkBandBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgAntennaWorkBandKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1161353703031">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1161353705828">
+				<field-name>idanten</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1161353708546">
+				<field-name>band</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1161353711296">
+				<field-name>electricangle</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1161353713906">
+				<field-name>kind_ant</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1161353716843">
+				<field-name>kswn</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1161353720328">
+				<field-name>objectstatus</field-name>
+			</cmp-field>
+		</entity>
+		<entity id="CfgEquipObjCfg2Sector">
+			<ejb-name>CfgEquipObjCfg2Sector</ejb-name>
+			<home>com.hps.july.config.beans.CfgEquipObjCfg2SectorHome</home>
+			<remote>com.hps.july.config.beans.CfgEquipObjCfg2Sector</remote>
+			<ejb-class>com.hps.july.config.beans.CfgEquipObjCfg2SectorBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.hps.july.config.beans.CfgEquipObjCfg2SectorKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-field id="CMPAttribute_1181124825031">
+				<field-name>savconfigid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1181124828453">
+				<field-name>objcfgid</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1181124831921">
+				<field-name>id_sect</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1181124835390">
+				<field-name>objectstatus</field-name>
+			</cmp-field>
+		</entity>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>CfgAnten2Sector</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgAntenna</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgAntennaCable</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgBasestation</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgBsstands</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgEquipObjectsCfg</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgSavedConfig</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgSector</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgStoragecard</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgTrx</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgTrx2Sector</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgAntennaWorkBand</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<method>
+				<ejb-name>CfgEquipObjCfg2Sector</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Required</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+</ejb-jar>

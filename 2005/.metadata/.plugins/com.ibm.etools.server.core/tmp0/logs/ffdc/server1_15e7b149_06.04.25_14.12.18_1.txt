@@ -1,0 +1,102 @@
+------Start of DE processing------ = [06.04.25 14:12:18:100 MSD] , key = java.rmi.NoSuchObjectException com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate 124
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate
+probeid = 124
+Stack Dump = java.rmi.NoSuchObjectException: 
+	at com.ibm.ejs.container.ContainerManagedBeanO.load(ContainerManagedBeanO.java:978)
+	at com.ibm.ejs.container.ContainerManagedBeanO.loadForEnlist(ContainerManagedBeanO.java:921)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean(EJSHome.java:1164)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPAccountBean_d70748de.findByPrimaryKey(EJSJDBCPersisterCMPAccountBean_d70748de.java:356)
+	at com.hps.july.persistence.EJSCMPAccountHomeBean_d70748de.findByPrimaryKey(EJSCMPAccountHomeBean_d70748de.java:40)
+	at com.hps.july.persistence.EJSRemoteCMPAccountHome_d70748de.findByPrimaryKey(EJSRemoteCMPAccountHome_d70748de.java:159)
+	at com.hps.july.persistence._AccountHome_Stub.findByPrimaryKey(_AccountHome_Stub.java:435)
+	at com.hps.july.persistence.LeasePayOrderToOrgAccLink.fetchTarget(LeasePayOrderToOrgAccLink.java:31)
+	at com.ibm.ivj.ejb.associations.links.SingleLinkImpl.value(SingleLinkImpl.java:135)
+	at com.hps.july.persistence.LeasePayOrderBean.getOrgAcc(LeasePayOrderBean.java:229)
+	at com.hps.july.persistence.EJSRemoteCMPLeasePayOrder_45cd0b0b.getOrgAcc(EJSRemoteCMPLeasePayOrder_45cd0b0b.java:124)
+	at com.hps.july.persistence._LeasePayOrder_Stub.getOrgAcc(_LeasePayOrder_Stub.java:3918)
+	at com.hps.july.persistence.LeasePayOrderAccessBean.getOrgAcc(LeasePayOrderAccessBean.java:881)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.hps.july.util.BeanUtils.copyProperties(BeanUtils.java:41)
+	at com.hps.july.web.util.EditForm.loadRecord(EditForm.java:141)
+	at com.hps.july.web.util.AbstractEditAction.perform(AbstractEditAction.java:83)
+	at com.hps.july.arenda.actionbean.PaymentEditAction.perform(PaymentEditAction.java:26)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.activator.OptCEntityActivationStrategy
+com.ibm.ejs.container.activator.OptCEntityActivationStrategy@18d3b14d
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Apr 25 14:12:18 MSD 2006
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@4f2f314f
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#Account
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@6c08b147
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@6c02b147#tid=513
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = false
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 2 ---------------------- 
+
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#Operator, com.hps.july.persistence.OperatorKey@2c1), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeasePayOrder, com.hps.july.persistence.LeaseDocPositionKey@79104), state = IN_METHOD)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@6c08b147
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Apr 25 14:12:18 MSD 2006

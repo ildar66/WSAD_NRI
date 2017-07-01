@@ -1,0 +1,80 @@
+------Start of DE processing------ = [07.02.27 16:09:12:671 MSK] , key = com.ibm.websphere.security.auth.WSLoginFailedException com.ibm.ws.security.auth.ContextManagerImpl.jaas_login 324
+Exception = com.ibm.websphere.security.auth.WSLoginFailedException
+Source = com.ibm.ws.security.auth.ContextManagerImpl.jaas_login
+probeid = 324
+Stack Dump = 
+Dump of callerThis = 
+Object type = com.ibm.ws.security.auth.JaasLoginHelper
+com.ibm.ws.security.auth.JaasLoginHelper@3f3a904b
+
+==> Performing default dump from com.ibm.ws.security.core.SecurityDM  = Tue Feb 27 16:09:13 MSK 2007
+SecurityConfig property values:
+{${WAS_INSTALL_ROOT}=C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51, ${USER_INSTALL_ROOT}=C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51, security.securityServerName=SecurityServer, security.authMechForwardCred=false, ${WAS_TEMP_DIR}=C:\workSpasesNew\WSAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\tmp0/temp, IBMJCE=IBMJCE, security.activeUserRegistryType=LOCALOS, ${APP_INSTALL_ROOT}=C:\workSpasesNew\WSAD_NRI, com.ibm.websphere.security.registry.maxPasswordSize=256, process.serverName=localhost:localhost:server1, com.ibm.websphere.security.registry.maxUseridSize=256, security.enabled=true, security.useLocalSecurityServer=true, security.java2security=false, security.FullyQualifiedUserName=false, security.authMechOID=No OID for this mechanism, com.ibm.websphere.security.registry.propagateExceptionsToClient=false, security.CacheCushionMin=3, security.callbackHandlerClass=com.ibm.ws.security.auth.callback.WSCallbackHandler, host.virtualhosts=[Lcom.ibm.ws.http.VirtualHost;@55815047, security.activeAuthMechanism.OID=No OID for this mechanism, security.loginconfig.application=com.ibm.websphere.models.config.jaaslogin.impl.JAASConfigurationImpl@406e5051, ${WAS_ETC_DIR}=C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/etc, security.authMechContextImpl=, server.security.enabled=true, security.ltpa.sso.ssl=false, webcontainer.transports=[com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@528a9047 (external: false, sslEnabled: false, sslConfig: null), com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@52b2d047 (external: <unset>, sslEnabled: true, sslConfig: localhost/DefaultSSLSettings)], security.activeUserRegistry.realm=localhost, security.ltpa.sso.enabled=false, security.authMechAuthAlias=system.SWAM, security.callbackHandlerFactoryClass=com.ibm.ws.security.auth.callback.WSCallbackHandlerFactoryImpl, security.loginconfig.system=com.ibm.websphere.models.config.jaaslogin.impl.JAASConfigurationImpl@4e7f5051, ${WAS_PROPS_DIR}=C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/properties, security.issuePermissionWarning=true, security.serverPasswd=XXXXXX, com.ibm.security.useFIPS=false, cell.security.enabled=true, security.CacheCushionMax=10, security.ltpa.trustAssociationEnabled=false, security.CacheTimeout=600, security.activeUserRegistry.props={}, security.activeAuthMechanism=SWAM, security.enableAuthorizationAttributes=false, security.toplevel.properties=[com.ibm.websphere.models.config.properties.impl.PropertyImpl@4ef79051 (name: security.enablePluggableAuthentication, value: true, description: null, required: false, validationExpression: null)], security.ltpa.password=XXXXXX, security.enablePluggableAuthentication=true, security.serverId=ildar} = com.ibm.websphere.security.auth.WSLoginFailedException: Authentication failed for user ildar with the following error message Вход в систему не произведен: имя пользователя или пароль не опознаны.
+
++Data for directive [defaultsecurityconfig] obtained. = 
+The dynamic JAAS login configuration is:
+com.ibm.ws.security.auth.login.Configuration: Dumping JAAS Configuration
+JAAS file configuration data:
+WSLogin {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSLoginModuleImpl"   ;
+};
+system.wssecurity.Signature {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.SignatureLoginModule"   ;
+};
+system.wssecurity.IDAssertion {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.IDAssertionLoginModule"   ;
+};
+system.LTPA {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.ltpaLoginModule"   ;
+};
+DefaultPrincipalMapping {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.auth.j2c.WSPrincipalMappingLoginModule"   ;
+};
+system.SWAM {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.swamLoginModule"   ;
+};
+
+JAAS WCCM configuration data:
+ClientContainer {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSClientLoginModuleImpl"   ;
+};
+WSLogin {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSLoginModuleImpl"   ;
+};
+system.wssecurity.Signature {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.SignatureLoginModule"   ;
+};
+system.wssecurity.IDAssertion {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.IDAssertionLoginModule"   ;
+};
+system.LTPA {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.ltpaLoginModule"   ;
+};
+DefaultPrincipalMapping {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.auth.j2c.WSPrincipalMappingLoginModule"   ;
+};
+system.LTPA_WEB {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.web.AuthenLoginModule"   ;
+};
+system.SWAM {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.swamLoginModule"   ;
+};
+
+ = com.ibm.websphere.security.auth.WSLoginFailedException: Authentication failed for user ildar with the following error message Вход в систему не произведен: имя пользователя или пароль не опознаны.
+
++Data for directive [defaultjaasconfig] obtained. = 
+==> Dump complete for com.ibm.ws.security.core.SecurityDM  = Tue Feb 27 16:09:13 MSK 2007

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leaseonpositions" name="leaseonpositions" primaryKey="leaseonpositions_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasedocument" name="leasedocument">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986436">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="storageplace" name="storageplace">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986437">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leaseonpositions_1" name="leaseonpositions" members="leasedocument storageplace" constraint="SQLConstraint_1131634986436"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_POSPO_15368" name="FK_REF_POSPO_15368" members="storageplace" constraint="SQLConstraint_1131634986437">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_positions.tblxmi#positions_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_posag_15252" name="fk_ref_posag_15252" members="leasedocument" constraint="SQLConstraint_1131634986438">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasearendaagrmnts.tblxmi#leasearendaagrmnts_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986436" name="leaseonpositions" type="PRIMARYKEY" primaryKey="leaseonpositions_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986437" name="FK_REF_POSPO_15368" type="FOREIGNKEY" referenceByKey="FK_REF_POSPO_15368"/>
+  <constraints xmi:id="SQLConstraint_1131634986438" name="fk_ref_posag_15252" type="FOREIGNKEY" referenceByKey="fk_ref_posag_15252"/>
+</RDBSchema:RDBTable>

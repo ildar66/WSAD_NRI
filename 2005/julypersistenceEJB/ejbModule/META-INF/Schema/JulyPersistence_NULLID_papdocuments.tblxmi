@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="papdocuments" name="papdocuments" primaryKey="papdocuments_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="papdocument" name="papdocument">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986106">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="doc_type" name="doc_type">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986107">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="blankdate" name="blankdate">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986106">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="blanknumber" name="blanknumber">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986106" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="date_end" name="date_end" allowNull="true">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986107">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="comment" name="comment" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634986106" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="papdocuments_1" name="papdocuments" members="papdocument" constraint="SQLConstraint_1131634986106">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_papdoc2pos.tblxmi#FK_REF_58719_58719"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_docattach.tblxmi#FK_REF_58713_58713"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_58705_58705" name="FK_REF_58705_58705" members="doc_type" constraint="SQLConstraint_1131634986107">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_papdoctypes.tblxmi#papdoctypes_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986106" name="papdocuments" type="PRIMARYKEY" primaryKey="papdocuments_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986107" name="FK_REF_58705_58705" type="FOREIGNKEY" referenceByKey="FK_REF_58705_58705"/>
+</RDBSchema:RDBTable>

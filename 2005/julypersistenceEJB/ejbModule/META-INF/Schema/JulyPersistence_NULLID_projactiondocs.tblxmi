@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="projactiondocs" name="projactiondocs" primaryKey="projactiondocs_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="prjactdoc" name="prjactdoc">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986436">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="projectaction" name="projectaction">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986437">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docname" name="docname" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986436" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docbody" name="docbody" allowNull="true">
+    <type xmi:type="RDBSchema:InformixSimpleLargeObject" xmi:id="InformixSimpleLargeObject_1131634986436" length="2">
+      <originatingType xmi:type="RDBSchema:InformixSimpleLargeObject" href="INFORMIX_V92_Primitives.xmi#InformixSimpleLargeObject_5"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docdate" name="docdate">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986436">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="notes" name="notes" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634986436" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="projactiondocs_1" name="projactiondocs" members="prjactdoc" constraint="SQLConstraint_1131634986436"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_44057_44057" name="FK_REF_44057_44057" members="projectaction" constraint="SQLConstraint_1131634986437">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_projectactions.tblxmi#projectactions_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986436" name="projactiondocs" type="PRIMARYKEY" primaryKey="projactiondocs_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986437" name="FK_REF_44057_44057" type="FOREIGNKEY" referenceByKey="FK_REF_44057_44057"/>
+</RDBSchema:RDBTable>

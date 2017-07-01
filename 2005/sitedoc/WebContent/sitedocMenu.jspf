@@ -1,0 +1,8 @@
+	<july:menu selectedId="<%= state %>">
+		<july:menuitem key="label.menu.root" action='<%= "main.do?navclear=1&rootapp="+Applications.SITEDOC +"&rootstate="+APPStates.MAIN %>' stateId="<%=APPStates.MAIN %>">
+			<july:menuselection stateId="<%=APPStates.MAIN %>" />
+			<july:menuitem key="label.menu.doc_region_branch" action='<%="ShowRegionDocuments.do?navclear=1&rootapp="+Applications.SITEDOC+"&rootstate="+APPStates.REGION_DOCUMENTS %>' stateId="<%=APPStates.REGION_DOCUMENTS%>">
+				  <july:menuselection stateId="<%=APPStates.REGION_DOCUMENTS%>"/>
+		    </july:menuitem>
+        </july:menuitem>
+	</july:menu>

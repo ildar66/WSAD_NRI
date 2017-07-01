@@ -1,0 +1,59 @@
+<ejbext:EJBJarExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbext="ejbext.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Ext">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="BillingRequiredNew_Ext" name="BillingRequiredNew" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_1">
+      <methodElements xmi:id="MethodElement_1" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BillingRequiredNew"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_2" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BillingRequiredNew"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BillingRequiredNew"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="BufferNri2Nri_Ext" name="BufferNri2Nri" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_2">
+      <methodElements xmi:id="MethodElement_3" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BufferNri2Nri"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_2"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_2" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_4" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BufferNri2Nri"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BufferNri2Nri"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="Pie2Nri_Ext" name="Pie2Nri" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_3">
+      <methodElements xmi:id="MethodElement_5" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Pie2Nri"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_3"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_3" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_6" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Pie2Nri"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Pie2Nri"/>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="Transfer_Ext" name="Transfer" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_4">
+      <methodElements xmi:id="MethodElement_7" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Transfer"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_4"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_4" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_8" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Transfer"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Transfer"/>
+  </ejbExtensions>
+</ejbext:EJBJarExtension>

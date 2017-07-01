@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Binding">
+  <defaultDatasource xmi:id="ResourceRefBinding_1132238428846" jndiName="july"/>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="AddressInfo_Binding" jndiName="com/hps/july/trailcom/beans/AddressInfo">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AddressInfo"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AddressInfo2_Binding" jndiName="com/hps/july/trailcom/beans/AddressInfo2">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AddressInfo2"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AddressSpace_Binding" jndiName="com/hps/july/trailcom/beans/AddressSpace">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AddressSpace"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Hop_Binding" jndiName="com/hps/july/trailcom/beans/Hop">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Hop"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="HopLabel_Binding" jndiName="com/hps/july/trailcom/beans/HopLabel">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#HopLabel"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="OpticalHop_Binding" jndiName="com/hps/july/trailcom/beans/OpticalHop">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OpticalHop"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RRLHops2_Binding" jndiName="com/hps/july/trailcom/beans/RRLHops2">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLHops2"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Sitedoc2Hops_Binding" jndiName="com/hps/july/trailcom/beans/Sitedoc2Hops">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Hops"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="TrailcomProcessor_Binding" jndiName="com/hps/july/trailcom/beans/TrailcomProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#TrailcomProcessor"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

@@ -1,0 +1,136 @@
+------Start of DE processing------ = [07.03.07 12:51:54:329 MSK] , key = java.rmi.NoSuchObjectException com.ibm.ejs.container.EntityBeanO.enlist 457
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EntityBeanO.enlist
+probeid = 457
+Stack Dump = java.rmi.NoSuchObjectException: 
+	at com.ibm.ejs.container.ContainerManagedBeanO.load(ContainerManagedBeanO.java:978)
+	at com.ibm.ejs.container.ContainerManagedBeanO.loadForEnlist(ContainerManagedBeanO.java:921)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean(EJSHome.java:1164)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPCurrencyBean_bce2196f.findByPrimaryKey(EJSJDBCPersisterCMPCurrencyBean_bce2196f.java:276)
+	at com.hps.july.persistence.EJSCMPCurrencyHomeBean_bce2196f.findByPrimaryKey(EJSCMPCurrencyHomeBean_bce2196f.java:61)
+	at com.hps.july.persistence.EJSRemoteCMPCurrencyHome_bce2196f.findByPrimaryKey(EJSRemoteCMPCurrencyHome_bce2196f.java:97)
+	at com.hps.july.persistence._CurrencyHome_Stub.findByPrimaryKey(_CurrencyHome_Stub.java:418)
+	at com.hps.july.persistence.CurrencyAccessBean.instantiateEJB(CurrencyAccessBean.java:146)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean._instantiate(AbstractEntityAccessBean.java:165)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean.refreshCopyHelper(AbstractEntityAccessBean.java:304)
+	at com.hps.july.persistence.CurrencyAccessBean.refreshCopyHelper(CurrencyAccessBean.java:202)
+	at com.hps.july.arenda.formbean.WeArendaForm.constructCurrency1(WeArendaForm.java:499)
+	at com.hps.july.arenda.formbean.WeArendaForm.getCurrency1(WeArendaForm.java:818)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at org.apache.struts.util.PropertyUtils.getSimpleProperty(PropertyUtils.java:717)
+	at org.apache.struts.util.PropertyUtils.getNestedProperty(PropertyUtils.java:415)
+	at org.apache.struts.util.PropertyUtils.getProperty(PropertyUtils.java:453)
+	at org.apache.struts.util.RequestUtils.lookup(RequestUtils.java:503)
+	at org.apache.struts.taglib.bean.WriteTag.doStartTag(WriteTag.java:180)
+	at org.apache.jsp._abonentInfo._jspService(_abonentInfo.java:831)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java:344)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java:669)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java:767)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.ServicingServletState.service(StrictLifecycleServlet.java:333)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.include(WebAppRequestDispatcher.java:253)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:991)
+	at org.apache.jsp._july._jspService(_july.java:1140)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java:344)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java:669)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java:767)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at org.apache.struts.action.ActionServlet.processActionForward(ActionServlet.java:1759)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1596)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.ContainerManagedBeanO
+com.ibm.ejs.container.ContainerManagedBeanO@1032c0b3
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Wed Mar 07 12:51:54 MSK 2007
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@4fb8093
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#Currency
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@101480b3
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@100e80b3#tid=74
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@101480b3
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Wed Mar 07 12:51:54 MSK 2007

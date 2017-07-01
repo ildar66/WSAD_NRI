@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="inlwbillspos" name="inlwbillspos" primaryKey="inlwbillspos_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docposition" name="docposition">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986877">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docqty" name="docqty" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986877" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="inlwbillspos_1" name="inlwbillspos" members="docposition" constraint="SQLConstraint_1131634986877">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_afsmountpos.tblxmi#FK_REF_108422_1084"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_1805_1805" name="FK_REF_1805_1805" members="docposition" constraint="SQLConstraint_1131634986878">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_docpositions.tblxmi#docpositions_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986877" name="inlwbillspos" type="PRIMARYKEY" primaryKey="inlwbillspos_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986878" name="FK_REF_1805_1805" type="FOREIGNKEY" referenceByKey="FK_REF_1805_1805"/>
+</RDBSchema:RDBTable>

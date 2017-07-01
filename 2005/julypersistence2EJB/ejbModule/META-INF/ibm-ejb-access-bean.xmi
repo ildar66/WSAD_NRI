@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:accessbean="accessbean.xmi" xmlns:ejb="ejb.xmi">
+  <accessbean:EJBShadow xmi:id="EJBShadow_1177320544500" name="AfsScheme" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1177320544500" name="AfsSchemeAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544500" name="antV1" type="java.lang.Integer" getterName="getAntV1" setterName="setAntV1"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544501" name="tma" type="java.lang.Integer" getterName="getTma" setterName="setTma"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544502" name="df2" type="java.lang.Integer" getterName="getDf2" setterName="setDf2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544503" name="df1" type="java.lang.Integer" getterName="getDf1" setterName="setDf1"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544504" name="antX4" type="java.lang.Integer" getterName="getAntX4" setterName="setAntX4"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544505" name="conn" type="java.lang.Integer" getterName="getConn" setterName="setConn"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544506" name="jo" type="java.lang.Integer" getterName="getJo" setterName="setJo"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544507" name="antX2" type="java.lang.Integer" getterName="getAntX2" setterName="setAntX2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544508" name="sectcount900" type="java.lang.Integer" getterName="getSectcount900" setterName="setSectcount900"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544509" name="notes" type="java.lang.String" getterName="getNotes" setterName="setNotes"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544510" name="ji" type="java.lang.Integer" getterName="getJi" setterName="setJi"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544511" name="dbc2" type="java.lang.Integer" getterName="getDbc2" setterName="setDbc2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544512" name="dbc1" type="java.lang.Integer" getterName="getDbc1" setterName="setDbc1"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544513" name="sectcount1800" type="java.lang.Integer" getterName="getSectcount1800" setterName="setSectcount1800"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544514" name="numscheme" type="java.lang.String" getterName="getNumscheme" setterName="setNumscheme"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177320544515" name="antV2" type="java.lang.Integer" getterName="getAntV2" setterName="setAntV2"/>
+      <nullConstructor xmi:id="MethodElement_1177320544500" name="findByPrimaryKey" parms="com.hps.july.persistence2.AfsSchemeKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1177320544500" name="schemeid" type="java.lang.Integer" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014031" name="AntennPlaces">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014032" name="AntennaCable">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014033" name="ApparatPlaceType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaceType"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014034" name="ApparatPlaces">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaces"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014035" name="ApparatType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014036" name="Beenet2Equipment">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014037" name="BeenetCategory">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1" name="BeenetFacade">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_1" name="BeenetFacadeAccessBean" package="com.hps.july.persistence2" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_1" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BeenetFacade"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BeenetFacade"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014038" name="BeenetObject">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014039" name="CableWorkParams">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1168936123937" name="ConfBSNfs" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1168936123937" name="ConfBSNfsAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123937" name="id" type="int" getterName="getId"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123938" name="sect_h" type="int" getterName="getSect_h" setterName="setSect_h"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123939" name="sect_g" type="int" getterName="getSect_g" setterName="setSect_g"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123940" name="voltage" type="java.math.BigDecimal" getterName="getVoltage" setterName="setVoltage"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123941" name="sect_f" type="int" getterName="getSect_f" setterName="setSect_f"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123942" name="sect_e" type="int" getterName="getSect_e" setterName="setSect_e"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123943" name="codenri" type="int" getterName="getCodenri" setterName="setCodenri"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123944" name="sect_d" type="int" getterName="getSect_d" setterName="setSect_d"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123945" name="sect_c" type="int" getterName="getSect_c" setterName="setSect_c"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123946" name="sect_b" type="int" getterName="getSect_b" setterName="setSect_b"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123947" name="sect_a" type="int" getterName="getSect_a" setterName="setSect_a"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123948" name="nfsitem_id" type="java.lang.String" getterName="getNfsitem_id" setterName="setNfsitem_id"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1168936123949" name="conftype" type="java.lang.String" getterName="getConftype" setterName="setConftype"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177340965392" name="sect_o900" type="int" getterName="getSect_o900" setterName="setSect_o900"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177340965393" name="sect_o1800" type="int" getterName="getSect_o1800" setterName="setSect_o1800"/>
+      <nullConstructor xmi:id="MethodElement_1168936123937" name="findByPrimaryKey" parms="com.hps.july.persistence2.ConfBSNfsKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1168936123937" name="id" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014040" name="Container">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014041" name="Counter" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1182319351018" name="CounterAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351018" name="next_verification" type="java.sql.Date" getterName="getNext_verification" setterName="setNext_verification"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351019" name="installation_date" type="java.sql.Date" getterName="getInstallation_date" setterName="setInstallation_date"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351020" name="vendor_number" type="java.lang.String" getterName="getVendor_number" setterName="setVendor_number"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351021" name="place_info" type="java.lang.String" getterName="getPlace_info" setterName="setPlace_info"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351022" name="production_year" type="java.lang.String" getterName="getProduction_year" setterName="setProduction_year"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351023" name="cstate" type="java.lang.Integer" getterName="getCstate" setterName="setCstate"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351024" name="counterinfo_id" type="int" getterName="getCounterinfo_id" setterName="setCounterinfo_id"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351025" name="positionid" type="int" getterName="getPositionid" setterName="setPositionid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351026" name="nextid" type="java.lang.Integer" getterName="getNextid" setterName="setNextid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351027" name="replace_reason" type="java.lang.String" getterName="getReplace_reason" setterName="setReplace_reason"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351028" name="dismantling_set" type="java.lang.Integer" getterName="getDismantling_set" setterName="setDismantling_set"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351029" name="modifiedby" type="int" getterName="getModifiedby" setterName="setModifiedby"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351030" name="replace_date" type="java.sql.Date" getterName="getReplace_date" setterName="setReplace_date"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351031" name="last_verification" type="java.sql.Date" getterName="getLast_verification" setterName="setLast_verification"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351032" name="counterid" type="int" getterName="getCounterid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351033" name="replace_settings" type="java.lang.Integer" getterName="getReplace_settings" setterName="setReplace_settings"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351034" name="initial_settings" type="java.lang.Integer" getterName="getInitial_settings" setterName="setInitial_settings"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351035" name="modified_date" type="java.sql.Timestamp" getterName="getModified_date" setterName="setModified_date"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351036" name="isVendorPowerSupply" type="java.lang.Boolean" getterName="getIsVendorPowerSupply" setterName="setIsVendorPowerSupply"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351037" name="dismantling_date" type="java.sql.Date" getterName="getDismantling_date" setterName="setDismantling_date"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1182319351038" name="dismantling_reason" type="java.lang.String" getterName="getDismantling_reason" setterName="setDismantling_reason"/>
+      <nullConstructor xmi:id="MethodElement_1182319351018" name="findByPrimaryKey" parms="com.hps.july.persistence2.CounterKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1182319351018" name="counterid" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014042" name="CounterInfo">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1166629046343" name="Country" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1166629046343" name="CountryAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1166629046343" name="name" type="java.lang.String" getterName="getName" setterName="setName"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1166629046344" name="ccode" type="java.math.BigDecimal" getterName="getCcode" setterName="setCcode"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1166629046345" name="country" type="int" getterName="getCountry"/>
+      <nullConstructor xmi:id="MethodElement_1166629046343" name="findByPrimaryKey" parms="com.hps.july.persistence2.CountryKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1166629046343" name="country" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1178282426719" name="EquipManufacturer" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1178282529587" name="EquipManufacturerAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1178282529587" name="shortname" type="java.lang.String" getterName="getShortname" setterName="setShortname"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1178282529588" name="name" type="java.lang.String" getterName="getName" setterName="setName"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1178282529589" name="equipcatalog" type="java.lang.String" getterName="getEquipcatalog" setterName="setEquipcatalog"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1178282529590" name="officialsite" type="java.lang.String" getterName="getOfficialsite" setterName="setOfficialsite"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1178282529591" name="comment" type="java.lang.String" getterName="getComment" setterName="setComment"/>
+      <nullConstructor xmi:id="MethodElement_1178282529587" name="findByPrimaryKey" parms="java.lang.Integer" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1178282529587" name="primaryKey" type="java.lang.Integer" isFieldFromKey="false"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014043" name="Etap2Hop">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014044" name="EtapDoc">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014045" name="EtapType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014046" name="FreqPermission">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014047" name="GKRCHDoc">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#GKRCHDoc"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1166281848734" name="Group2Resource" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1166281848734" name="Group2ResourceAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1166281848734" name="groupid" type="int" getterName="getGroupid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1166281848735" name="resource" type="int" getterName="getResource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1166281848736" name="qty" type="java.math.BigDecimal" getterName="getQty" setterName="setQty"/>
+      <nullConstructor xmi:id="MethodElement_1166281848734" name="findByPrimaryKey" parms="com.hps.july.persistence2.Group2ResourceKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group2Resource"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1166281848734" name="groupid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1166281848735" name="resource" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group2Resource"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014048" name="KzlAntennes2NRI">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlAntennes2NRI"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014049" name="KzlNetzones2NRI">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlNetzones2NRI"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014050" name="LeaseZP">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014051" name="MSUser">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594253828" name="OfficeMemoHeader" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1163594253828" name="OfficeMemoHeaderAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253828" name="filename" type="java.lang.String" getterName="getFilename" setterName="setFilename"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253829" name="state" type="java.lang.String" getterName="getState" setterName="setState"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253830" name="man" type="int" getterName="getMan" setterName="setMan"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253831" name="date" type="java.sql.Date" getterName="getDate" setterName="setDate"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253832" name="number" type="java.lang.String" getterName="getNumber" setterName="setNumber"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253833" name="usetype" type="java.lang.String" getterName="getUsetype" setterName="setUsetype"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253834" name="target" type="int" getterName="getTarget" setterName="setTarget"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253835" name="abonentContract" type="int" getterName="getAbonentContract" setterName="setAbonentContract"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253836" name="leasebill" type="java.lang.Integer" getterName="getLeasebill" setterName="setLeasebill"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253837" name="type" type="java.lang.String" getterName="getType" setterName="setType"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253838" name="idheader" type="int" getterName="getIdheader"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253839" name="arendaContract" type="java.lang.Integer" getterName="getArendaContract" setterName="setArendaContract"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253840" name="to" type="java.lang.String" getterName="getTo" setterName="setTo"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1163594253841" name="from" type="java.lang.String" getterName="getFrom" setterName="setFrom"/>
+      <nullConstructor xmi:id="MethodElement_1163594253828" name="findByPrimaryKey" parms="com.hps.july.persistence2.OfficeMemoHeaderKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1163594253828" name="idheader" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014053" name="OfficeMemoPos">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014054" name="OfficeMemoTarget">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoTarget"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014055" name="OporaPlaces">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OporaPlaces"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014056" name="Perm2Hop">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014057" name="RRLDocs">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLDocs"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_2" name="RRLResourceFacade">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_2" name="RRLResourceFacadeAccessBean" package="com.hps.july.persistence2" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_2" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RRLResourceFacade"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RRLResourceFacade"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1174038467640" name="ResourceClass" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1174038467640" name="ResourceClassAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1174038467640" name="classid" type="int" getterName="getClassid" setterName="setClassid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1174038467641" name="classname" type="java.lang.String" getterName="getClassname" setterName="setClassname"/>
+      <nullConstructor xmi:id="MethodElement_1174038467640" name="findByPrimaryKey" parms="com.hps.july.persistence2.ResourceClassKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceClass"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1174038467640" name="classid" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceClass"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1181210063383" name="ResourceGroup" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1181210063383" name="ResourceGroupAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1181210063383" name="groupid" type="int" getterName="getGroupid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1181210063384" name="name" type="java.lang.String" getterName="getName" setterName="setName"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1181210063385" name="classid" type="int" getterName="getClassid" setterName="setClassid"/>
+      <nullConstructor xmi:id="MethodElement_1181210063383" name="findByPrimaryKey" parms="com.hps.july.persistence2.ResourceGroupKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1181210063383" name="groupid" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1174038467641" name="ResourceSetClass" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1174038489984" name="ResourceSetClassAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1174038489984" name="classid" type="int" getterName="getClassid" setterName="setClassid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1174038489985" name="classname" type="java.lang.String" getterName="getClassname" setterName="setClassname"/>
+      <nullConstructor xmi:id="MethodElement_1174038489984" name="findByPrimaryKey" parms="com.hps.july.persistence2.ResourceSetClassKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetClass"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1174038489984" name="classid" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetClass"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014058" name="Sitedoc2Region">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1163594014059" name="Sitedoc2Resource">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_3" name="SitedocFacade">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_3" name="SitedocFacadeAccessBean" package="com.hps.july.persistence2" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_3" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SitedocFacade"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SitedocFacade"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1173797538765" name="UserRequests" factoryPackageName="com.hps.july.persistence2">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1173797538765" name="UserRequestsAccessBean" package="com.hps.july.persistence2" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538765" name="module" type="int" getterName="getModule" setterName="setModule"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538766" name="requesttype" type="int" getterName="getRequesttype" setterName="setRequesttype"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538767" name="worker" type="int" getterName="getWorker" setterName="setWorker"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538768" name="request" type="int" getterName="getRequest" setterName="setRequest"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538769" name="status" type="java.lang.String" getterName="getStatus" setterName="setStatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538770" name="supregid" type="java.lang.Integer" getterName="getSupregid" setterName="setSupregid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538771" name="datetimein" type="java.sql.Date" getterName="getDatetimein" setterName="setDatetimein"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538772" name="rfcnum" type="java.lang.String" getterName="getRfcnum" setterName="setRfcnum"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538773" name="regionid" type="java.lang.Integer" getterName="getRegionid" setterName="setRegionid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538774" name="description" type="java.lang.String" getterName="getDescription" setterName="setDescription"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1173797538775" name="filialtype" type="int" getterName="getFilialtype" setterName="setFilialtype"/>
+      <nullConstructor xmi:id="MethodElement_1173797538765" name="findByPrimaryKey" parms="com.hps.july.persistence2.UserRequestsKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1173797538765" name="request" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+  </accessbean:EJBShadow>
+</xmi:XMI>

@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbext:EJBJarExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbext="ejbext.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Ext">
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="AntennaCable_Ext" name="AntennaCable" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_1">
+      <methodElements xmi:id="MethodElement_1" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_2" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <finderDescriptors xmi:type="ejbext:WhereClauseFinderDescriptor" xmi:id="AntennaCable_findByAnten_WhereClause_ID" whereClause="id_anten = ?">
+      <finderMethodElements xmi:id="MethodElement_3" name="findByAnten" parms="java.lang.Integer" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </finderMethodElements>
+    </finderDescriptors>
+    <accessIntents xmi:id="AccessIntent_1" intentType="READ">
+      <methodElements xmi:id="MethodElement_4" name="getIdanten" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_2" intentType="READ">
+      <methodElements xmi:id="MethodElement_5" name="getGroundcnt" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_3" intentType="READ">
+      <methodElements xmi:id="MethodElement_6" name="getIdcable" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_4" intentType="READ">
+      <methodElements xmi:id="MethodElement_7" name="getLencable" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_5" intentType="READ">
+      <methodElements xmi:id="MethodElement_8" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_6" intentType="READ">
+      <methodElements xmi:id="MethodElement_9" name="getGroundresource" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_7" intentType="READ">
+      <methodElements xmi:id="MethodElement_10" name="getCableres" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="AntennPlaces_Ext" name="AntennPlaces" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_2">
+      <methodElements xmi:id="MethodElement_11" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_2"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_2" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_12" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_8" intentType="READ">
+      <methodElements xmi:id="MethodElement_13" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_9" intentType="READ">
+      <methodElements xmi:id="MethodElement_14" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_10" intentType="READ">
+      <methodElements xmi:id="MethodElement_15" name="getAntplaceid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_11" intentType="READ">
+      <methodElements xmi:id="MethodElement_16" name="getIsvc" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ApparatPlaces_Ext" name="ApparatPlaces" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_3">
+      <methodElements xmi:id="MethodElement_17" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaces"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_3"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaces"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_3" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_18" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaces"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_12" intentType="READ">
+      <methodElements xmi:id="MethodElement_19" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaces"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_13" intentType="READ">
+      <methodElements xmi:id="MethodElement_20" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaces"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_14" intentType="READ">
+      <methodElements xmi:id="MethodElement_21" name="getApplaceid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaces"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ApparatPlaceType_Ext" name="ApparatPlaceType" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_4">
+      <methodElements xmi:id="MethodElement_22" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaceType"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_4"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaceType"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_4" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_23" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaceType"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_15" intentType="READ">
+      <methodElements xmi:id="MethodElement_24" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaceType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_16" intentType="READ">
+      <methodElements xmi:id="MethodElement_25" name="getApplacetypeid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaceType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_17" intentType="READ">
+      <methodElements xmi:id="MethodElement_26" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaceType"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ApparatType_Ext" name="ApparatType" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_5">
+      <methodElements xmi:id="MethodElement_27" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_5"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_5" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_28" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_18" intentType="READ">
+      <methodElements xmi:id="MethodElement_29" name="getAptype" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_19" intentType="READ">
+      <methodElements xmi:id="MethodElement_30" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_20" intentType="READ">
+      <methodElements xmi:id="MethodElement_31" name="getAptypeid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_21" intentType="READ">
+      <methodElements xmi:id="MethodElement_32" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="Beenet2Equipment_Ext" name="Beenet2Equipment" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_6">
+      <methodElements xmi:id="MethodElement_33" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_6"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_6" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_34" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <finderDescriptors xmi:type="ejbext:WhereClauseFinderDescriptor" xmi:id="Beenet2Equipment_findByBeenetid_WhereClause_ID" whereClause="beenetid = ?">
+      <finderMethodElements xmi:id="MethodElement_35" name="findByBeenetid" parms="java.lang.String" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+      </finderMethodElements>
+    </finderDescriptors>
+    <accessIntents xmi:id="AccessIntent_22" intentType="READ">
+      <methodElements xmi:id="MethodElement_36" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_23" intentType="READ">
+      <methodElements xmi:id="MethodElement_37" name="getBeenetid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_24" intentType="READ">
+      <methodElements xmi:id="MethodElement_38" name="getEquipment" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="BeenetCategory_Ext" name="BeenetCategory" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_7">
+      <methodElements xmi:id="MethodElement_39" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_7"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_7" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_40" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_25" intentType="READ">
+      <methodElements xmi:id="MethodElement_41" name="getPattern" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_26" intentType="READ">
+      <methodElements xmi:id="MethodElement_42" name="getCategid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_27" intentType="READ">
+      <methodElements xmi:id="MethodElement_43" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_28" intentType="READ">
+      <methodElements xmi:id="MethodElement_44" name="getCategname" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="BeenetFacade_Ext" name="BeenetFacade" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_8">
+      <methodElements xmi:id="MethodElement_45" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BeenetFacade"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_8"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BeenetFacade"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_8" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_46" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BeenetFacade"/>
+      </methodElements>
+    </isolationLevelAttributes>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="BeenetObject_Ext" name="BeenetObject" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_9">
+      <methodElements xmi:id="MethodElement_47" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_9"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_9" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_48" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_29" intentType="READ">
+      <methodElements xmi:id="MethodElement_49" name="getPosition" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_30" intentType="READ">
+      <methodElements xmi:id="MethodElement_50" name="getCategid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_31" intentType="READ">
+      <methodElements xmi:id="MethodElement_51" name="getBeenetid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_32" intentType="READ">
+      <methodElements xmi:id="MethodElement_52" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="CableWorkParams_Ext" name="CableWorkParams" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_10">
+      <methodElements xmi:id="MethodElement_53" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_10"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_10" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_54" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <finderDescriptors xmi:type="ejbext:WhereClauseFinderDescriptor" xmi:id="CableWorkParams_findByCable_WhereClause_ID" whereClause="id_cable = ?">
+      <finderMethodElements xmi:id="MethodElement_55" name="findByCable" parms="java.lang.Integer" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+      </finderMethodElements>
+    </finderDescriptors>
+    <accessIntents xmi:id="AccessIntent_33" intentType="READ">
+      <methodElements xmi:id="MethodElement_56" name="getBand" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_34" intentType="READ">
+      <methodElements xmi:id="MethodElement_57" name="getKsvn" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_35" intentType="READ">
+      <methodElements xmi:id="MethodElement_58" name="getId_anten" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_36" intentType="READ">
+      <methodElements xmi:id="MethodElement_59" name="getId_cable" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_37" intentType="READ">
+      <methodElements xmi:id="MethodElement_60" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="Container_Ext" name="Container" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_11">
+      <methodElements xmi:id="MethodElement_61" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_11"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_11" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_62" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_38" intentType="READ">
+      <methodElements xmi:id="MethodElement_63" name="getYear" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_39" intentType="READ">
+      <methodElements xmi:id="MethodElement_64" name="getContainer" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_40" intentType="READ">
+      <methodElements xmi:id="MethodElement_65" name="getStorageplace" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_41" intentType="READ">
+      <methodElements xmi:id="MethodElement_66" name="getResource" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_42" intentType="READ">
+      <methodElements xmi:id="MethodElement_67" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_43" intentType="READ">
+      <methodElements xmi:id="MethodElement_68" name="getWidth" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_44" intentType="READ">
+      <methodElements xmi:id="MethodElement_69" name="getHeight" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_45" intentType="READ">
+      <methodElements xmi:id="MethodElement_70" name="getLength" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="Counter_Ext" name="Counter" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_12">
+      <methodElements xmi:id="MethodElement_71" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_12"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_12" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_72" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_46" intentType="READ">
+      <methodElements xmi:id="MethodElement_73" name="getNext_verification" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1182318589452" name="getIsVendorPowerSupply" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1182319351048" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_47" intentType="READ">
+      <methodElements xmi:id="MethodElement_74" name="getPlace_info" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_48" intentType="READ">
+      <methodElements xmi:id="MethodElement_75" name="getProduction_year" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_49" intentType="READ">
+      <methodElements xmi:id="MethodElement_76" name="getDismantling_reason" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_50" intentType="READ">
+      <methodElements xmi:id="MethodElement_77" name="getReplace_date" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_51" intentType="READ">
+      <methodElements xmi:id="MethodElement_78" name="getLast_verification" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_52" intentType="READ">
+      <methodElements xmi:id="MethodElement_79" name="getVendor_number" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_53" intentType="READ">
+      <methodElements xmi:id="MethodElement_80" name="getCounterinfo_id" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_54" intentType="READ">
+      <methodElements xmi:id="MethodElement_81" name="getModified_date" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_55" intentType="READ">
+      <methodElements xmi:id="MethodElement_82" name="getInstallation_date" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_56" intentType="READ">
+      <methodElements xmi:id="MethodElement_83" name="getReplace_reason" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_57" intentType="READ">
+      <methodElements xmi:id="MethodElement_84" name="getInitial_settings" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_58" intentType="READ">
+      <methodElements xmi:id="MethodElement_85" name="getModifiedby" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_59" intentType="READ">
+      <methodElements xmi:id="MethodElement_86" name="getReplace_settings" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_60" intentType="READ">
+      <methodElements xmi:id="MethodElement_87" name="getCounterid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_61" intentType="READ">
+      <methodElements xmi:id="MethodElement_88" name="getPositionid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_62" intentType="READ">
+      <methodElements xmi:id="MethodElement_89" name="getDismantling_date" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_63" intentType="READ">
+      <methodElements xmi:id="MethodElement_90" name="getDismantling_set" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_64" intentType="READ">
+      <methodElements xmi:id="MethodElement_91" name="getNextid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_65" intentType="READ">
+      <methodElements xmi:id="MethodElement_92" name="getCstate" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_66" intentType="READ">
+      <methodElements xmi:id="MethodElement_93" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="CounterInfo_Ext" name="CounterInfo" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_13">
+      <methodElements xmi:id="MethodElement_94" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_13"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_13" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_95" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_67" intentType="READ">
+      <methodElements xmi:id="MethodElement_96" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_68" intentType="READ">
+      <methodElements xmi:id="MethodElement_97" name="getCode" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_69" intentType="READ">
+      <methodElements xmi:id="MethodElement_98" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_70" intentType="READ">
+      <methodElements xmi:id="MethodElement_99" name="getId" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_71" intentType="READ">
+      <methodElements xmi:id="MethodElement_100" name="getVerification_inter" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="Etap2Hop_Ext" name="Etap2Hop" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_14">
+      <methodElements xmi:id="MethodElement_101" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_14"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_14" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_102" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <finderDescriptors xmi:type="ejbext:WhereClauseFinderDescriptor" xmi:id="Etap2Hop_findBySitedocAndPermid_WhereClause_ID" whereClause="sitedoc = ? AND freqpermid = ?">
+      <finderMethodElements xmi:id="MethodElement_103" name="findBySitedocAndPermid" parms="java.lang.Integer java.lang.Integer" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+      </finderMethodElements>
+    </finderDescriptors>
+    <accessIntents xmi:id="AccessIntent_72" intentType="READ">
+      <methodElements xmi:id="MethodElement_104" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_73" intentType="READ">
+      <methodElements xmi:id="MethodElement_105" name="getHopsid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_74" intentType="READ">
+      <methodElements xmi:id="MethodElement_106" name="getFreqpermid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_75" intentType="READ">
+      <methodElements xmi:id="MethodElement_107" name="getSitedoc" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="EtapDoc_Ext" name="EtapDoc" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_15">
+      <methodElements xmi:id="MethodElement_108" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_15"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_15" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_109" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_76" intentType="READ">
+      <methodElements xmi:id="MethodElement_110" name="getEtaptypeid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_77" intentType="READ">
+      <methodElements xmi:id="MethodElement_111" name="getFreqpermid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_78" intentType="READ">
+      <methodElements xmi:id="MethodElement_112" name="getHavepay" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_79" intentType="READ">
+      <methodElements xmi:id="MethodElement_113" name="getSitedoc" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_80" intentType="READ">
+      <methodElements xmi:id="MethodElement_114" name="getEquiplink" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_81" intentType="READ">
+      <methodElements xmi:id="MethodElement_115" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="EtapType_Ext" name="EtapType" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_16">
+      <methodElements xmi:id="MethodElement_116" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_16"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_16" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_117" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_82" intentType="READ">
+      <methodElements xmi:id="MethodElement_118" name="getHavepaycheck" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_83" intentType="READ">
+      <methodElements xmi:id="MethodElement_119" name="getEtaptypeid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_84" intentType="READ">
+      <methodElements xmi:id="MethodElement_120" name="getHaveendtime" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_85" intentType="READ">
+      <methodElements xmi:id="MethodElement_121" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_86" intentType="READ">
+      <methodElements xmi:id="MethodElement_122" name="getHavehopslink" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_87" intentType="READ">
+      <methodElements xmi:id="MethodElement_123" name="getEttypename" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="FreqPermission_Ext" name="FreqPermission" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_17">
+      <methodElements xmi:id="MethodElement_124" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_17"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_17" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_125" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_88" intentType="READ">
+      <methodElements xmi:id="MethodElement_126" name="getFilenumber" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_89" intentType="READ">
+      <methodElements xmi:id="MethodElement_127" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_90" intentType="READ">
+      <methodElements xmi:id="MethodElement_128" name="getEtap" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_91" intentType="READ">
+      <methodElements xmi:id="MethodElement_129" name="getComment" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="GKRCHDoc_Ext" name="GKRCHDoc" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_18">
+      <methodElements xmi:id="MethodElement_130" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#GKRCHDoc"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_18"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#GKRCHDoc"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_18" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_131" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#GKRCHDoc"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_92" intentType="READ">
+      <methodElements xmi:id="MethodElement_132" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#GKRCHDoc"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_93" intentType="READ">
+      <methodElements xmi:id="MethodElement_133" name="getRestrictions" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#GKRCHDoc"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_94" intentType="READ">
+      <methodElements xmi:id="MethodElement_134" name="getSitedoc" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#GKRCHDoc"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="KzlAntennes2NRI_Ext" name="KzlAntennes2NRI" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_19">
+      <methodElements xmi:id="MethodElement_135" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlAntennes2NRI"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_19"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlAntennes2NRI"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_19" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_136" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlAntennes2NRI"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_95" intentType="READ">
+      <methodElements xmi:id="MethodElement_137" name="getResource" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlAntennes2NRI"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_96" intentType="READ">
+      <methodElements xmi:id="MethodElement_138" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlAntennes2NRI"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_97" intentType="READ">
+      <methodElements xmi:id="MethodElement_139" name="getAntposantennid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlAntennes2NRI"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="KzlNetzones2NRI_Ext" name="KzlNetzones2NRI" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_20">
+      <methodElements xmi:id="MethodElement_140" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlNetzones2NRI"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_20"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlNetzones2NRI"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_20" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_141" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlNetzones2NRI"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_98" intentType="READ">
+      <methodElements xmi:id="MethodElement_142" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlNetzones2NRI"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_99" intentType="READ">
+      <methodElements xmi:id="MethodElement_143" name="getNetzone" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlNetzones2NRI"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="LeaseZP_Ext" name="LeaseZP" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_21">
+      <methodElements xmi:id="MethodElement_144" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_21"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_21" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_145" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_100" intentType="READ">
+      <methodElements xmi:id="MethodElement_146" name="getIdzpnfs" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_101" intentType="READ">
+      <methodElements xmi:id="MethodElement_147" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_102" intentType="READ">
+      <methodElements xmi:id="MethodElement_148" name="getIsactive" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_103" intentType="READ">
+      <methodElements xmi:id="MethodElement_149" name="getLeasedocposition" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="MSUser_Ext" name="MSUser" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_22">
+      <methodElements xmi:id="MethodElement_150" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_22"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_22" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_151" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_104" intentType="READ">
+      <methodElements xmi:id="MethodElement_152" name="getMsuser" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_105" intentType="READ">
+      <methodElements xmi:id="MethodElement_153" name="getMsucode" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_106" intentType="READ">
+      <methodElements xmi:id="MethodElement_154" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_107" intentType="READ">
+      <methodElements xmi:id="MethodElement_155" name="getMspassword" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="OfficeMemoHeader_Ext" name="OfficeMemoHeader" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_23">
+      <methodElements xmi:id="MethodElement_156" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_23"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_23" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_157" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_108" intentType="READ">
+      <methodElements xmi:id="MethodElement_158" name="getMan" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1163594253859" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_109" intentType="READ">
+      <methodElements xmi:id="MethodElement_159" name="getType" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_110" intentType="READ">
+      <methodElements xmi:id="MethodElement_160" name="getArendaContract" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_111" intentType="READ">
+      <methodElements xmi:id="MethodElement_161" name="getFilename" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_112" intentType="READ">
+      <methodElements xmi:id="MethodElement_162" name="getFiletext" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_113" intentType="READ">
+      <methodElements xmi:id="MethodElement_163" name="getTo" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_114" intentType="READ">
+      <methodElements xmi:id="MethodElement_164" name="getLeasebill" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_115" intentType="READ">
+      <methodElements xmi:id="MethodElement_165" name="getIdheader" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_116" intentType="READ">
+      <methodElements xmi:id="MethodElement_166" name="getState" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_117" intentType="READ">
+      <methodElements xmi:id="MethodElement_167" name="getAbonentContract" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_118" intentType="READ">
+      <methodElements xmi:id="MethodElement_168" name="getDate" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_119" intentType="READ">
+      <methodElements xmi:id="MethodElement_169" name="getNumber" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_120" intentType="READ">
+      <methodElements xmi:id="MethodElement_170" name="getTarget" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_121" intentType="READ">
+      <methodElements xmi:id="MethodElement_171" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_122" intentType="READ">
+      <methodElements xmi:id="MethodElement_172" name="getFrom" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_123" intentType="READ">
+      <methodElements xmi:id="MethodElement_173" name="getUsetype" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="OfficeMemoPos_Ext" name="OfficeMemoPos" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_24">
+      <methodElements xmi:id="MethodElement_174" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_24"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_24" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_175" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_124" intentType="READ">
+      <methodElements xmi:id="MethodElement_176" name="getIdpos" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_125" intentType="READ">
+      <methodElements xmi:id="MethodElement_177" name="getSimcardcnt" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_126" intentType="READ">
+      <methodElements xmi:id="MethodElement_178" name="getEnddate" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_127" intentType="READ">
+      <methodElements xmi:id="MethodElement_179" name="getTarifplan" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_128" intentType="READ">
+      <methodElements xmi:id="MethodElement_180" name="getCardname" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_129" intentType="READ">
+      <methodElements xmi:id="MethodElement_181" name="getEquipcnt" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_130" intentType="READ">
+      <methodElements xmi:id="MethodElement_182" name="getOpertype" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_131" intentType="READ">
+      <methodElements xmi:id="MethodElement_183" name="getIdheader" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_132" intentType="READ">
+      <methodElements xmi:id="MethodElement_184" name="getEquipname" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_133" intentType="READ">
+      <methodElements xmi:id="MethodElement_185" name="getPhoneNumber" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_134" intentType="READ">
+      <methodElements xmi:id="MethodElement_186" name="getService" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_135" intentType="READ">
+      <methodElements xmi:id="MethodElement_187" name="getCardamount" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_136" intentType="READ">
+      <methodElements xmi:id="MethodElement_188" name="getStartdate" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_137" intentType="READ">
+      <methodElements xmi:id="MethodElement_189" name="getComcardcnt" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_138" intentType="READ">
+      <methodElements xmi:id="MethodElement_190" name="getEquipcode" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_139" intentType="READ">
+      <methodElements xmi:id="MethodElement_191" name="getIsgarantie" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_140" intentType="READ">
+      <methodElements xmi:id="MethodElement_192" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_141" intentType="READ">
+      <methodElements xmi:id="MethodElement_193" name="getDefectdescr" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="OfficeMemoTarget_Ext" name="OfficeMemoTarget" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_25">
+      <methodElements xmi:id="MethodElement_194" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoTarget"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_25"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoTarget"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_25" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_195" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoTarget"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_142" intentType="READ">
+      <methodElements xmi:id="MethodElement_196" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoTarget"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_143" intentType="READ">
+      <methodElements xmi:id="MethodElement_197" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoTarget"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_144" intentType="READ">
+      <methodElements xmi:id="MethodElement_198" name="getIdtarget" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoTarget"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="OporaPlaces_Ext" name="OporaPlaces" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_26">
+      <methodElements xmi:id="MethodElement_199" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OporaPlaces"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_26"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OporaPlaces"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_26" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_200" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OporaPlaces"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_145" intentType="READ">
+      <methodElements xmi:id="MethodElement_201" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OporaPlaces"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_146" intentType="READ">
+      <methodElements xmi:id="MethodElement_202" name="getOplaceid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OporaPlaces"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_147" intentType="READ">
+      <methodElements xmi:id="MethodElement_203" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OporaPlaces"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="Perm2Hop_Ext" name="Perm2Hop" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_27">
+      <methodElements xmi:id="MethodElement_204" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_27"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_27" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_205" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_148" intentType="READ">
+      <methodElements xmi:id="MethodElement_206" name="getNumberinfile" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_149" intentType="READ">
+      <methodElements xmi:id="MethodElement_207" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_150" intentType="READ">
+      <methodElements xmi:id="MethodElement_208" name="getHopsid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_151" intentType="READ">
+      <methodElements xmi:id="MethodElement_209" name="getFreqpermid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="RRLDocs_Ext" name="RRLDocs" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_28">
+      <methodElements xmi:id="MethodElement_210" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLDocs"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_28"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLDocs"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_28" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_211" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLDocs"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_152" intentType="READ">
+      <methodElements xmi:id="MethodElement_212" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLDocs"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_153" intentType="READ">
+      <methodElements xmi:id="MethodElement_213" name="getOrganization" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLDocs"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_154" intentType="READ">
+      <methodElements xmi:id="MethodElement_214" name="getSitedoc" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLDocs"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="RRLResourceFacade_Ext" name="RRLResourceFacade" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_29">
+      <methodElements xmi:id="MethodElement_215" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RRLResourceFacade"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_29"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RRLResourceFacade"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_29" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_216" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RRLResourceFacade"/>
+      </methodElements>
+    </isolationLevelAttributes>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="Sitedoc2Region_Ext" name="Sitedoc2Region" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_30">
+      <methodElements xmi:id="MethodElement_217" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_30"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_30" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_218" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <finderDescriptors xmi:type="ejbext:WhereClauseFinderDescriptor" xmi:id="Sitedoc2Region_findAllBySitedoc_WhereClause_ID" whereClause=" sitedoc = ? ">
+      <finderMethodElements xmi:id="MethodElement_219" name="findAllBySitedoc" parms="int" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+      </finderMethodElements>
+    </finderDescriptors>
+    <accessIntents xmi:id="AccessIntent_155" intentType="READ">
+      <methodElements xmi:id="MethodElement_220" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_156" intentType="READ">
+      <methodElements xmi:id="MethodElement_221" name="getRegion" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_157" intentType="READ">
+      <methodElements xmi:id="MethodElement_222" name="getSitedoc" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="Sitedoc2Resource_Ext" name="Sitedoc2Resource" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_31">
+      <methodElements xmi:id="MethodElement_223" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_31"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_31" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_224" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <finderDescriptors xmi:type="ejbext:WhereClauseFinderDescriptor" xmi:id="Sitedoc2Resource_findAllBySitedoc_WhereClause_ID" whereClause=" sitedoc = ? ">
+      <finderMethodElements xmi:id="MethodElement_225" name="findAllBySitedoc" parms="int" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+      </finderMethodElements>
+    </finderDescriptors>
+    <accessIntents xmi:id="AccessIntent_158" intentType="READ">
+      <methodElements xmi:id="MethodElement_226" name="getResource" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_159" intentType="READ">
+      <methodElements xmi:id="MethodElement_227" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_160" intentType="READ">
+      <methodElements xmi:id="MethodElement_228" name="getFreqrange" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+      </methodElements>
+    </accessIntents>
+    <accessIntents xmi:id="AccessIntent_161" intentType="READ">
+      <methodElements xmi:id="MethodElement_229" name="getSitedoc" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="SitedocFacade_Ext" name="SitedocFacade" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_32">
+      <methodElements xmi:id="MethodElement_230" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SitedocFacade"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_32"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SitedocFacade"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_32" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_231" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SitedocFacade"/>
+      </methodElements>
+    </isolationLevelAttributes>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1165332324062" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_1165394710265" description="">
+      <methodElements xmi:id="MethodElement_1165394710265" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1165394710265"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1165394710265" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1165394710266" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <finderDescriptors xmi:type="ejbext:EjbqlFinderDescriptor" xmi:id="EjbqlFinderDescriptor_1168876859968" ejbqlQueryString="select object(o) from ConfBSNfsBean o where  o.conftype = ?1 AND o.sect_a = ?2 AND o.sect_b = ?3 AND o.sect_c = ?4 AND o.sect_d = ?5 AND o.sect_e = ?6 AND o.sect_f = ?7 AND o.sect_g = ?8 AND o.sect_h = ?9 AND o.voltage = ?10 AND o.nfsitem_id = ?11 AND o.codenri = ?12">
+      <finderMethodElements xmi:id="MethodElement_1168876859968" name="findByAll" parms="java.lang.String int int int int int int int int java.math.BigDecimal java.lang.String int" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </finderMethodElements>
+    </finderDescriptors>
+    <accessIntents xmi:id="AccessIntent_1165332324062" intentType="READ">
+      <methodElements xmi:id="MethodElement_1165332324062" name="getCodenri" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1165332324071" name="getNfsitem_id" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1165332324072" name="getConftype" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1165332324073" name="getVoltage" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1168936123984" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177340476733" name="getSect_o900" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177340476734" name="getSect_o1800" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1166281636000" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_1166282014187" description="">
+      <methodElements xmi:id="MethodElement_1166282014187" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1166282014187"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1166282014187" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1166282014188" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_1166281636000" intentType="READ">
+      <methodElements xmi:id="MethodElement_1166281636000" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1181209025742" name="getClassid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1181210063423" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1166281721031" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_1166282014188" description="">
+      <methodElements xmi:id="MethodElement_1166282014189" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group2Resource"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1166282014188"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group2Resource"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1166282014188" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1166282014190" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group2Resource"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_1166281721031" intentType="READ">
+      <methodElements xmi:id="MethodElement_1166281721031" name="getQty" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group2Resource"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1166281848766" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group2Resource"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1166628803734" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_1166629105109" description="">
+      <methodElements xmi:id="MethodElement_1166629105109" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1166629105109"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1166629105109" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1166629105110" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_1166628803734" intentType="READ">
+      <methodElements xmi:id="MethodElement_1166628803734" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1166628803735" name="getCcode" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1166629046375" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1170330845156" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_1170331313718" description="">
+      <methodElements xmi:id="MethodElement_1170331313718" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1170331313718"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1170331313718" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1170331313719" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_1170330845156" intentType="READ">
+      <methodElements xmi:id="MethodElement_1170330845156" name="getDatetimein" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1170330845157" name="getRequesttype" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1170330845158" name="getFilialtype" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1170330845161" name="getModule" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1170330845162" name="getDescription" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1170330845163" name="getStatus" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1170330845164" name="getRfcnum" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1173797233765" name="getRegionid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1173797233766" name="getSupregid" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1173797233767" name="getWorker" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1173797538796" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1174038038890" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_1174038573859" description="">
+      <methodElements xmi:id="MethodElement_1174038573859" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceClass"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1174038573859"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceClass"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1174038573859" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1174038573860" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceClass"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_1174038038890" intentType="READ">
+      <methodElements xmi:id="MethodElement_1174038038890" name="getClassname" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceClass"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1174038467703" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceClass"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1174038078718" concurrencyControl="optimistic">
+    <runAsSettings xmi:id="SecurityIdentity_1174038573860" description="">
+      <methodElements xmi:id="MethodElement_1174038573861" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetClass"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1174038573860"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetClass"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1174038573860" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1174038573862" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetClass"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_1174038078718" intentType="READ">
+      <methodElements xmi:id="MethodElement_1174038078718" name="getClassname" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetClass"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1174038490015" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetClass"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1177058649233">
+    <runAsSettings xmi:id="SecurityIdentity_1177066049952" description="">
+      <methodElements xmi:id="MethodElement_1177066049952" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1177066049952"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1177063750470" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1177063750470" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_1177058649233" intentType="READ">
+      <methodElements xmi:id="MethodElement_1177058649233" name="getNumscheme" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649234" name="getSectcount900" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649235" name="getSectcount1800" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649236" name="getAntX2" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649237" name="getAntX4" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649238" name="getAntV1" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649239" name="getAntV2" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649240" name="getDbc1" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649241" name="getDbc2" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649242" name="getDf1" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649243" name="getDf2" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649244" name="getTma" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649245" name="getJo" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649246" name="getJi" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649247" name="getConn" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177058649248" name="getNotes" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1177320544551" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbExtensions xmi:type="ejbext:ContainerManagedEntityExtension" xmi:id="ContainerManagedEntityExtension_1178280113402">
+    <runAsSettings xmi:id="SecurityIdentity_1178280667639" description="">
+      <methodElements xmi:id="MethodElement_1178280667639" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseCallerIdentity" xmi:id="UseCallerIdentity_1178280667639"/>
+    </runAsSettings>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1178280667639" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_1178280667640" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <accessIntents xmi:id="AccessIntent_1178280113412" intentType="READ">
+      <methodElements xmi:id="MethodElement_1178280113412" name="getName" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1178280113413" name="getShortname" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1178280113414" name="getEquipcatalog" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1178280113415" name="getOfficialsite" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1178280113416" name="getComment" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </methodElements>
+      <methodElements xmi:id="MethodElement_1178282529617" name="_copyFromEJB" parms="" type="Remote">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+      </methodElements>
+    </accessIntents>
+  </ejbExtensions>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+</ejbext:EJBJarExtension>

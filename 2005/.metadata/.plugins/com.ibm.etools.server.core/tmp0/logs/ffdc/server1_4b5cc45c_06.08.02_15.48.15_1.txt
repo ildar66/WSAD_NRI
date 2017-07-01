@@ -1,0 +1,89 @@
+------Start of DE processing------ = [06.08.02 15:48:15:032 MSD] , key = javax.ejb.DuplicateKeyException com.ibm.ejs.container.ContainerManagedBeanO.afterPostCreate 345
+Exception = javax.ejb.DuplicateKeyException
+Source = com.ibm.ejs.container.ContainerManagedBeanO.afterPostCreate
+probeid = 345
+Stack Dump = javax.ejb.DuplicateKeyException
+	at com.ibm.ejs.persistence.EJSJDBCPersister.create(EJSJDBCPersister.java:570)
+	at com.ibm.ejs.container.ContainerManagedBeanO.afterPostCreate(ContainerManagedBeanO.java:536)
+	at com.ibm.ejs.container.EJSHome.afterPostCreate(EJSHome.java:2076)
+	at com.hps.july.persistence.EJSCMPLeaseMutualRuleNewHomeBean_ed76f092.afterPostCreateWrapper(EJSCMPLeaseMutualRuleNewHomeBean_ed76f092.java:24)
+	at com.hps.july.persistence.EJSCMPLeaseMutualRuleNewHomeBean_ed76f092.create(EJSCMPLeaseMutualRuleNewHomeBean_ed76f092.java:92)
+	at com.hps.july.persistence.EJSRemoteCMPLeaseMutualRuleNewHome_ed76f092.create(EJSRemoteCMPLeaseMutualRuleNewHome_ed76f092.java:66)
+	at com.hps.july.persistence._LeaseMutualRuleNewHome_Stub.create(_LeaseMutualRuleNewHome_Stub.java:476)
+	at com.hps.july.persistence.LeaseMutualRuleNewAccessBean.<init>(LeaseMutualRuleNewAccessBean.java:349)
+	at com.hps.july.arenda.formbean.MutualRuleForm.constructBean(MutualRuleForm.java:66)
+	at com.hps.july.web.util.AbstractProcessAction.processInsert(AbstractProcessAction.java:281)
+	at com.hps.july.web.util.AbstractProcessAction.processInsert(AbstractProcessAction.java:297)
+	at com.hps.july.web.util.AbstractProcessAction.perform(AbstractProcessAction.java:122)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:510)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.ContainerManagedBeanO
+com.ibm.ejs.container.ContainerManagedBeanO@42578472
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Wed Aug 02 15:48:15 MSD 2006
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@53e5445e
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#LeaseMutualRuleNew
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@42428472
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@42488472#tid=607
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 1 ---------------------- 
+
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseMutualRuleNew, com.hps.july.persistence.LeaseMutualRuleNewKey@9868), state = ACTIVE)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@42428472
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Wed Aug 02 15:48:15 MSD 2006

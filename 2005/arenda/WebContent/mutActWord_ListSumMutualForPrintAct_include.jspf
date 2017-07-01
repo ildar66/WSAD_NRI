@@ -1,0 +1,11 @@
+<%
+if(aform.getListSumMutualForPrintAct().size() > 1){
+java.util.Iterator iter = aform.getListSumMutualForPrintAct().iterator();
+while (iter.hasNext()) {
+	com.hps.july.arenda.valueobject.SumMutualForPrintAct_VO vo
+		          = (com.hps.july.arenda.valueobject.SumMutualForPrintAct_VO)iter.next();
+	//request.setAttribute("vo", vo);
+%>
+   <br><I><%= vo.getAllString()%></I>
+<% } %>
+<%}%>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="opticalhops" name="opticalhops" primaryKey="opticalhops_1">
+  <database href="META-INF/Schema/JulyTrailcom.dbxmi#JulyTrailcom"/>
+  <schema href="META-INF/Schema/JulyTrailcom_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="hopsid" name="hopsid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594469">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="hopscomment" name="hopscomment" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131645594469" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="opticalhops_1" name="opticalhops" members="hopsid" constraint="SQLConstraint_1131645594469"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_49317_49317" name="FK_REF_49317_49317" members="hopsid" constraint="SQLConstraint_1131645594470">
+    <target href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hops_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131645594469" name="opticalhops" type="PRIMARYKEY" primaryKey="opticalhops_1"/>
+  <constraints xmi:id="SQLConstraint_1131645594470" name="FK_REF_49317_49317" type="FOREIGNKEY" referenceByKey="FK_REF_49317_49317"/>
+</RDBSchema:RDBTable>

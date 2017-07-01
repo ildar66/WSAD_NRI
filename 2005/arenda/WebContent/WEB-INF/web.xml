@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://dtdserver/dtd/web-app_2_2.dtd">
+   <web-app id="WebApp_1">
+      <display-name>july-arenda</display-name>
+      <servlet id="Servlet_1">
+         <servlet-name>action</servlet-name>
+         <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+         <init-param id="InitParam_1">
+            <param-name>application</param-name>
+            <param-value>com.hps.july.arenda.ApplicationResources</param-value>
+         </init-param>
+         <init-param id="InitParam_2">
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/struts-config.xml</param-value>
+         </init-param>
+         <init-param id="InitParam_3">
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+         </init-param>
+         <init-param id="InitParam_4">
+            <param-name>detail</param-name>
+            <param-value>0</param-value>
+         </init-param>
+         <init-param id="InitParam_5">
+            <param-name>validate</param-name>
+            <param-value>true</param-value>
+         </init-param>
+         <init-param id="InitParam_6">
+            <param-name>nocache</param-name>
+            <param-value>true</param-value>
+         </init-param>
+         <init-param id="InitParam_7">
+            <param-name>null</param-name>
+            <param-value>true</param-value>
+         </init-param>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_2">
+         <servlet-name>DocumentDownload</servlet-name>
+         <servlet-class>com.hps.july.arenda.locservlet.DocumentDownload</servlet-class>
+         <load-on-startup>3</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_3">
+         <servlet-name>MutualActDownload</servlet-name>
+         <servlet-class>com.hps.july.arenda.locservlet.MutualActDownload</servlet-class>
+         <load-on-startup>4</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_4">
+         <servlet-name>CompletWorkAktWordDownload</servlet-name>
+         <servlet-class>com.hps.july.arenda.locservlet.CompletWorkAktWordDownload</servlet-class>
+         <load-on-startup>5</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_5">
+         <servlet-name>MemoWordDownload</servlet-name>
+         <servlet-class>com.hps.july.arenda.locservlet.MemoWordDownload</servlet-class>
+         <load-on-startup>6</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_6">
+         <servlet-name>LoanAktGetPutWordDownload</servlet-name>
+         <servlet-class>com.hps.july.arenda.locservlet.LoanAktGetPutWordDownload</servlet-class>
+         <load-on-startup>7</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_7">
+         <servlet-name>SchetFactWordDownload</servlet-name>
+         <servlet-class>com.hps.july.arenda.locservlet.SchetFactWordDownload</servlet-class>
+         <load-on-startup>8</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_8">
+         <servlet-name>TableNriServlet</servlet-name>
+         <servlet-class>com.hps.july.arenda.locservlet.TableNriServlet</servlet-class>
+         <load-on-startup>9</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_9">
+         <servlet-name>RegistryBuchDocsWordDownload</servlet-name>
+         <servlet-class>com.hps.july.arenda.locservlet.RegistryBuchDocsWordDownload</servlet-class>
+         <load-on-startup>10</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_10">
+         <servlet-name>DocumentWordDownloadServlet</servlet-name>
+         <servlet-class>com.hps.july.web.util.DocumentWordDownloadServlet</servlet-class>
+         <load-on-startup>11</load-on-startup>
+      </servlet>                      
+      <servlet-mapping id="ServletMapping_1">
+         <servlet-name>action</servlet-name>
+         <url-pattern>*.do</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_2">
+         <servlet-name>DocumentDownload</servlet-name>
+         <url-pattern>/DocumentDownload</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_3">
+         <servlet-name>MutualActDownload</servlet-name>
+         <url-pattern>/MutualActDownload</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_4">
+         <servlet-name>CompletWorkAktWordDownload</servlet-name>
+         <url-pattern>/CompletWorkAktWordDownload</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_5">
+         <servlet-name>MemoWordDownload</servlet-name>
+         <url-pattern>/MemoWordDownload</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_6">
+         <servlet-name>LoanAktGetPutWordDownload</servlet-name>
+         <url-pattern>/LoanAktGetPutWordDownload</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_7">
+         <servlet-name>SchetFactWordDownload</servlet-name>
+         <url-pattern>/SchetFactWordDownload</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_8">
+         <servlet-name>TableNriServlet</servlet-name>
+         <url-pattern>/TableNriServlet</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_9">
+         <servlet-name>RegistryBuchDocsWordDownload</servlet-name>
+         <url-pattern>/RegistryBuchDocsWordDownload</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_10">
+         <servlet-name>DocumentWordDownloadServlet</servlet-name>
+         <url-pattern>/DocumentWordDownloadServlet</url-pattern>
+      </servlet-mapping>                       
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-template.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-template.tld</taglib-location>
+	</taglib>
+      <taglib>
+         <taglib-uri>/WEB-INF/july.tld</taglib-uri>
+         <taglib-location>/WEB-INF/july.tld</taglib-location>
+      </taglib>
+      <resource-ref id="ResourceRef_1152097121468">
+      	<description>mail queue</description>
+      	<res-ref-name>jms/mailQueue</res-ref-name>
+      	<res-type>javax.jms.Queue</res-type>
+      	<res-auth>CONTAINER</res-auth>
+      </resource-ref>
+      <resource-ref id="ResourceRef_1152097224863">
+      	<description>mail queue connection factory</description>
+      	<res-ref-name>jms/mailQCF</res-ref-name>
+      	<res-type>javax.jms.QueueConnectionFactory</res-type>
+      	<res-auth>CONTAINER</res-auth>
+      </resource-ref>
+      <resource-ref id="ResourceRef_1152784139041">
+      	<description>Informix datasource for mail client</description>
+      	<res-ref-name>jdbc/mail</res-ref-name>
+      	<res-type>javax.sql.DataSource</res-type>
+      	<res-auth>CONTAINER</res-auth>
+      </resource-ref>
+      <security-constraint id="SecurityConstraint_1">
+         <web-resource-collection id="WebResourceCollection_1">
+            <web-resource-name>main</web-resource-name>
+            <url-pattern>/Login.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_1">
+            <description>public:+:</description>
+            <role-name>Everyone</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_1">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_2">
+         <web-resource-collection id="WebResourceCollection_2">
+            <web-resource-name>readresources</web-resource-name>
+            <url-pattern>/DocumentDownload</url-pattern>
+            <url-pattern>/DocumentWordDownloadServlet</url-pattern>
+            <url-pattern>/ShowUnderConstraction.do</url-pattern>
+            <url-pattern>/ShowWeArendaList.do</url-pattern>
+            <url-pattern>/ShowDogHistoryList.do</url-pattern>
+            <url-pattern>/ShowRespPaysList.do</url-pattern>
+            <url-pattern>/ShowDogHistChargeList.do</url-pattern>
+            <url-pattern>/ShowDogHistPayList.do</url-pattern>
+            <url-pattern>/ShowDogAbonentsList.do</url-pattern>
+            <url-pattern>/ViewWeArenda.do</url-pattern>
+            <url-pattern>/EditWeArenda.do</url-pattern>
+            <url-pattern>/EditWeState.do</url-pattern>
+            <url-pattern>/ShowHistoryList.do</url-pattern>
+            <url-pattern>/ViewHistory.do</url-pattern>
+            <url-pattern>/EditHistory.do</url-pattern>
+            <url-pattern>/EditHistoryWeState.do</url-pattern>
+            <url-pattern>/ShowCalcHistory.do</url-pattern>
+            <url-pattern>/ShowCalcHistoryReport.do</url-pattern>
+            <url-pattern>/ShowErrorCalcHistoryList.do</url-pattern>
+            <url-pattern>/ShowArendaPositionsList.do</url-pattern>
+            <url-pattern>/PositionsDialogList.do</url-pattern>
+            <url-pattern>/ShowHistoryArendaPositionsList.do</url-pattern>
+            <url-pattern>/ShowChargeRulesList.do</url-pattern>
+            <url-pattern>/EditChargeRule.do</url-pattern>
+            <url-pattern>/ShowHistoryChargeRulesList.do</url-pattern>
+            <url-pattern>/EditHistoryChargeRule.do</url-pattern>
+            <url-pattern>/ShowPayRulesList.do</url-pattern>
+            <url-pattern>/EditPayRule.do</url-pattern>
+            <url-pattern>/ShowHistoryPayRulesList.do</url-pattern>
+            <url-pattern>/EditHistoryPayRule.do</url-pattern>
+            <url-pattern>/ShowUsArendaList.do</url-pattern>
+            <url-pattern>/EditUsArenda.do</url-pattern>
+            <url-pattern>/EditUsState.do</url-pattern>
+            <url-pattern>/ShowChannelArendaList.do</url-pattern>
+            <url-pattern>/EditChannelArenda.do</url-pattern>
+            <url-pattern>/EditChannelState.do</url-pattern>
+            <url-pattern>/ShowChargesList.do</url-pattern>
+            <url-pattern>/ChargeList.do</url-pattern>
+            <url-pattern>/SchetFactList.do</url-pattern>
+            <url-pattern>/SchetFactForChargeList.do</url-pattern>
+            <url-pattern>/SchetFactDialog.do</url-pattern>
+            <url-pattern>/ChargeListLinkToSchetFact.do</url-pattern>
+             <url-pattern>/ChargeListLinkToPayment.do</url-pattern>
+            <url-pattern>/ChargeListLinkToCompletWorkAkt.do</url-pattern>
+            <url-pattern>/SchetFactWordUploadAction.do</url-pattern>
+            <url-pattern>/EditCharge.do</url-pattern>
+            <url-pattern>/ChargeDialog.do</url-pattern>
+            <url-pattern>/ChargeProcess.do</url-pattern>
+            <url-pattern>/ShowHistoryChargesList.do</url-pattern>
+            <url-pattern>/EditHistoryCharge.do</url-pattern>
+            <url-pattern>/ShowUsChargesList.do</url-pattern>
+            <url-pattern>/EditUsCharge.do</url-pattern>
+            <url-pattern>/ShowChannelChargesList.do</url-pattern>
+            <url-pattern>/EditChannelCharge.do</url-pattern>
+            <url-pattern>/ShowAbonentChargesList.do</url-pattern>
+            <url-pattern>/EditAbonentCharge.do</url-pattern>
+            <url-pattern>/ShowPaymentsList.do</url-pattern>
+            <url-pattern>/EditPayment.do</url-pattern>
+            <url-pattern>/ShowHistoryPaymentsList.do</url-pattern>
+            <url-pattern>/EditHistoryPayment.do</url-pattern>
+            <url-pattern>/ShowUsPaymentsList.do</url-pattern>
+            <url-pattern>/EditUsPayment.do</url-pattern>
+            <url-pattern>/ShowChannelPaymentsList.do</url-pattern>
+            <url-pattern>/EditChannelPayment.do</url-pattern>
+            <url-pattern>/ShowAbonentPaymentsList.do</url-pattern>
+            <url-pattern>/EditAbonentPayment.do</url-pattern>
+            <url-pattern>/ShowChargeDnopList.do</url-pattern>
+            <url-pattern>/EditChargeDnop.do</url-pattern>
+            <url-pattern>/ShowHistoryChargeDnopList.do</url-pattern>
+            <url-pattern>/EditHistoryChargeDnop.do</url-pattern>
+            <url-pattern>/ShowUsChargeDnopList.do</url-pattern>
+            <url-pattern>/EditUsChargeDnop.do</url-pattern>
+            <url-pattern>/ShowChannelChargeDnopList.do</url-pattern>
+            <url-pattern>/EditChannelChargeDnop.do</url-pattern>
+            <url-pattern>/ShowAbonentChargeRatesList.do</url-pattern>
+            <url-pattern>/EditAbonentChargeRate.do</url-pattern>
+            <url-pattern>/ShowChargeRatesList.do</url-pattern>
+            <url-pattern>/EditChargeRate.do</url-pattern>
+            <url-pattern>/ShowHistoryChargeRatesList.do</url-pattern>
+            <url-pattern>/EditHistoryChargeRate.do</url-pattern>
+            <url-pattern>/ShowUsChargeRatesList.do</url-pattern>
+            <url-pattern>/EditUsChargeRate.do</url-pattern>
+            <url-pattern>/ShowChannelChargeRatesList.do</url-pattern>
+            <url-pattern>/EditChannelChargeRate.do</url-pattern>
+            <url-pattern>/EditFactura.do</url-pattern>
+            <url-pattern>/EditHistoryFactura.do</url-pattern>
+            <url-pattern>/EditPaymentState.do</url-pattern>
+            <url-pattern>/EditHistoryPaymentState.do</url-pattern>
+            <url-pattern>/EditUsPaymentState.do</url-pattern>
+            <url-pattern>/EditChannelPaymentState.do</url-pattern>
+            <url-pattern>/EditAbonentPaymentState.do</url-pattern>
+            <url-pattern>/ShowPaymentRatesList.do</url-pattern>
+            <url-pattern>/EditPaymentRate.do</url-pattern>
+            <url-pattern>/ShowHistoryPaymentRatesList.do</url-pattern>
+            <url-pattern>/EditHistoryPaymentRate.do</url-pattern>
+            <url-pattern>/ShowUsPaymentRatesList.do</url-pattern>
+            <url-pattern>/EditUsPaymentRate.do</url-pattern>
+            <url-pattern>/ShowChannelPaymentRatesList.do</url-pattern>
+            <url-pattern>/EditChannelPaymentRate.do</url-pattern>
+            <url-pattern>/ShowAbonentPaymentRatesList.do</url-pattern>
+            <url-pattern>/EditAbonentPaymentRate.do</url-pattern>
+            <url-pattern>/ShowSaldoList.do</url-pattern>
+            <url-pattern>/SaldoDetailList.do</url-pattern>
+            <url-pattern>/AbonentSaldoDetailList.do</url-pattern>
+            <url-pattern>/SaldoDetailDialog.do</url-pattern>
+            <url-pattern>/AbonentSaldoDetailDialog.do</url-pattern>
+            <url-pattern>/SaldoDetailProcess.do</url-pattern>
+            <url-pattern>/AbonentSaldoDetailProcess.do</url-pattern>
+            <url-pattern>/EditSaldo.do</url-pattern>
+            <url-pattern>/ShowHistorySaldoList.do</url-pattern>
+            <url-pattern>/EditHistorySaldo.do</url-pattern>
+            <url-pattern>/ShowUsSaldoList.do</url-pattern>
+            <url-pattern>/EditUsSaldo.do</url-pattern>
+            <url-pattern>/ShowChannelSaldoList.do</url-pattern>
+            <url-pattern>/EditChannelSaldo.do</url-pattern>
+            <url-pattern>/ShowAbonentSaldoList.do</url-pattern>
+            <url-pattern>/EditAbonentSaldo.do</url-pattern>
+            <url-pattern>/EditPlatinumDogovorForm.do</url-pattern>
+            <url-pattern>/EditReglamentState.do</url-pattern>
+            <url-pattern>/EditFromContractReglamentState.do</url-pattern>
+            <url-pattern>/EditFromHistoryReglamentState.do</url-pattern>
+            <url-pattern>/ShowMutualReglamentsList.do</url-pattern>
+            <url-pattern>/EditMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ViewMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowFromContractMutualReglamentsList.do</url-pattern>
+            <url-pattern>/EditFromContractMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ViewFromContractMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowFromHistoryMutualReglamentsList.do</url-pattern>
+            <url-pattern>/EditFromHistoryMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ViewFromHistoryMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowContractsMutReglmntList.do</url-pattern>
+            <url-pattern>/EditContractMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowFromContractContractsMutReglmntList.do</url-pattern>
+            <url-pattern>/EditFromContractContractMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowFromHistoryContractsMutReglmntList.do</url-pattern>
+            <url-pattern>/EditFromHistoryContractMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowMutualRulesList.do</url-pattern>
+            <url-pattern>/EditMutualRule.do</url-pattern>
+            <url-pattern>/ShowFromContractMutualRulesList.do</url-pattern>
+            <url-pattern>/EditFromContractMutualRule.do</url-pattern>
+            <url-pattern>/ShowFromHistoryMutualRulesList.do</url-pattern>
+            <url-pattern>/EditFromHistoryMutualRule.do</url-pattern>
+            <url-pattern>/ShowPhonesMutReglmntList.do</url-pattern>
+            <url-pattern>/EditPhoneMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowFromContractPhonesMutReglmntList.do</url-pattern>
+            <url-pattern>/EditFromContractPhoneMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowFromHistoryPhonesMutReglmntList.do</url-pattern>
+            <url-pattern>/EditFromHistoryPhoneMutReglmnt.do</url-pattern>
+            <url-pattern>/ShowMRCntPriorsList.do</url-pattern>
+            <url-pattern>/EditMRCntPriorForm.do</url-pattern>
+            <url-pattern>/ShowFromContractMRCntPriorsList.do</url-pattern>
+            <url-pattern>/EditFromContractMRCntPriorForm.do</url-pattern>
+            <url-pattern>/ShowFromHistoryMRCntPriorsList.do</url-pattern>
+            <url-pattern>/EditFromHistoryMRCntPriorForm.do</url-pattern>
+            <url-pattern>/ShowMutualActsList.do</url-pattern>
+            <url-pattern>/EditMutualAct.do</url-pattern>
+            <url-pattern>/ShowFromContractMutualActsList.do</url-pattern>
+            <url-pattern>/EditFromContractMutualAct.do</url-pattern>
+            <url-pattern>/ShowFromHistoryMutualActsList.do</url-pattern>
+            <url-pattern>/EditFromHistoryMutualAct.do</url-pattern>
+            <url-pattern>/EditActState.do</url-pattern>
+            <url-pattern>/EditFromContractActState.do</url-pattern>
+            <url-pattern>/EditFromHistoryActState.do</url-pattern>
+            <url-pattern>/ShowStartActList.do</url-pattern>
+            <url-pattern>/ShowJournalActList.do</url-pattern>
+            <url-pattern>/ShowFromContractStartActList.do</url-pattern>
+            <url-pattern>/ShowFromContractJournalActList.do</url-pattern>
+            <url-pattern>/ShowFromHistoryStartActList.do</url-pattern>
+            <url-pattern>/ShowFromHistoryJournalActList.do</url-pattern>
+            <url-pattern>/ShowFacturaMutactList.do</url-pattern>
+            <url-pattern>/EditFacturaMutact.do</url-pattern>
+            <url-pattern>/ShowFromContractFacturaMutactList.do</url-pattern>
+            <url-pattern>/EditFromContractFacturaMutact.do</url-pattern>
+            <url-pattern>/ShowFromHistoryFacturaMutactList.do</url-pattern>
+            <url-pattern>/EditFromHistoryFacturaMutact.do</url-pattern>
+            <url-pattern>/ShowFacturaPosMutactList.do</url-pattern>
+            <url-pattern>/EditFacturaPosMutact.do</url-pattern>
+            <url-pattern>/ShowFromContractFacturaPosMutactList.do</url-pattern>
+            <url-pattern>/EditFromContractFacturaPosMutact.do</url-pattern>
+            <url-pattern>/ShowFromHistoryFacturaPosMutactList.do</url-pattern>
+            <url-pattern>/EditFromHistoryFacturaPosMutact.do</url-pattern>
+            <url-pattern>/MutactEqualReport.do</url-pattern>
+            <url-pattern>/MutactCalcReport.do</url-pattern>
+            <url-pattern>/ArendaReport1Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport1Params.do</url-pattern>
+            <url-pattern>/ArendaReport1.do</url-pattern>
+            <url-pattern>/ArendaReport2Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport2Params.do</url-pattern>
+            <url-pattern>/ArendaReport2.do</url-pattern>
+            <url-pattern>/ArendaReport3Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport3Params.do</url-pattern>
+            <url-pattern>/ArendaReport3.do</url-pattern>
+            <url-pattern>/ArendaReport3xls.do</url-pattern>
+            <url-pattern>/ArendaReport4Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport4Params.do</url-pattern>
+            <url-pattern>/ArendaReport4.do</url-pattern>
+            <url-pattern>/ArendaReport5Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport5Params.do</url-pattern>
+            <url-pattern>/ArendaReport5.do</url-pattern>
+            <url-pattern>/ArendaReport6Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport6Params.do</url-pattern>
+            <url-pattern>/ArendaReport6.do</url-pattern>
+            <url-pattern>/ArendaReport7Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport7Params.do</url-pattern>
+            <url-pattern>/ArendaReport7.do</url-pattern>
+            <url-pattern>/ArendaReport8Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport8Params.do</url-pattern>
+            <url-pattern>/ArendaReport8.do</url-pattern>
+            <url-pattern>/ArendaReport9Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport9Params.do</url-pattern>
+            <url-pattern>/ArendaReport9.do</url-pattern>
+            <url-pattern>/ArendaReport10Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport10Params.do</url-pattern>
+            <url-pattern>/ArendaReport10.do</url-pattern>
+            <url-pattern>/ArendaReport11Params.do</url-pattern>
+            <url-pattern>/ProcessArendaReport11Params.do</url-pattern>
+            <url-pattern>/ArendaReport11.do</url-pattern>
+            <url-pattern>/ShowAbonentsList.do</url-pattern>
+			<url-pattern>/ShowMemoList.do</url-pattern>
+			<url-pattern>/ShowMemoPosList.do</url-pattern>
+            <url-pattern>/ViewAbonent.do</url-pattern>
+            <url-pattern>/EditAbonent.do</url-pattern>
+            <url-pattern>/EditAbonentBan.do</url-pattern>
+            <url-pattern>/EditAbonentState.do</url-pattern>
+            <url-pattern>/ShowBensList.do</url-pattern>
+            <url-pattern>/EditBen.do</url-pattern>
+            <url-pattern>/ShowAbonentBillsList.do</url-pattern>
+            <url-pattern>/EditAbonentBill.do</url-pattern>
+            <url-pattern>/ShowAbonentBillPosesList.do</url-pattern>
+            <url-pattern>/EditAbonentBillPos.do</url-pattern>
+            <url-pattern>/ShowAbonentBilledList.do</url-pattern>
+            <url-pattern>/ShowAbonentPaysList.do</url-pattern>
+            <url-pattern>/EditAbonentPay.do</url-pattern>
+            <url-pattern>/ShowAbonentPayedList.do</url-pattern>
+            <url-pattern>/ShowStartBillList.do</url-pattern>
+            <url-pattern>/ShowJournalBillList.do</url-pattern>
+            <url-pattern>/ShowAbonentChargeDnopList.do</url-pattern>
+            <url-pattern>/EditAbonentChargeDnop.do</url-pattern>
+            <url-pattern>/ShowAbonentBillLinksList.do</url-pattern>
+            <url-pattern>/ShowOrganizationLookupList.do</url-pattern>
+            <url-pattern>/ShowGroupLookupList.do</url-pattern>
+            <url-pattern>/ShowGrouppingLookupList.do</url-pattern>
+            <url-pattern>/ShowWorkerLookupList.do</url-pattern>
+            <url-pattern>/ShowPositionLookupList.do</url-pattern>
+            <url-pattern>/ShowResourceLookupList.do</url-pattern>
+            <url-pattern>/ShowRestypeLookupList.do</url-pattern>
+            <url-pattern>/ShowRessbtypeLookupList.do</url-pattern>
+            <url-pattern>/ShowContractLookupList.do</url-pattern>
+            <url-pattern>/ShowAccountLookupList.do</url-pattern>
+            <url-pattern>/ShowOperatorLookupList.do</url-pattern>
+            <url-pattern>/ShowRenterLookupList.do</url-pattern>
+            <url-pattern>/ShowPaymentLookupList.do</url-pattern>
+            <url-pattern>/ShowBankLookupList.do</url-pattern>
+			<url-pattern>/MutactWordAction.do</url-pattern>
+            <url-pattern>/MutualActDownload</url-pattern>
+			<url-pattern>/CompletWorkAktWordDownload</url-pattern>
+			<url-pattern>/SchetFactWordDownload</url-pattern>
+			<url-pattern>/MutualActWordUploadAction.do</url-pattern>
+			<url-pattern>/ShowNFS_List.do</url-pattern>
+			<url-pattern>/EditAbonentBan.do</url-pattern>
+			<url-pattern>/AbonentInfo.do</url-pattern>
+			<url-pattern>/ShowArendaToNfsZpList.do</url-pattern>
+			<url-pattern>/EditMemo.do</url-pattern>
+			<url-pattern>/EditMemoPos.do</url-pattern>
+			<url-pattern>/ListFromPosition.do</url-pattern>
+			<url-pattern>/ShowCourierDeliveryList.do</url-pattern>
+			<url-pattern>/ShowMemoListDetach.do</url-pattern>
+			<url-pattern>/EditMemoDetach.do</url-pattern>
+			<url-pattern>/ProcessMemoDetach.do</url-pattern>
+			<url-pattern>/EditRateList.do</url-pattern>
+			<url-pattern>/LawyearNoteDialog.do</url-pattern>
+			<url-pattern>/ProcessLawyearNoteDialog.do</url-pattern>
+			<url-pattern>/ContractCommentDialog.do</url-pattern>
+			<url-pattern>/ProcessContractCommentDialog.do</url-pattern>
+			<url-pattern>/LoanContractList.do</url-pattern>
+			<url-pattern>/LoanContractDialog.do</url-pattern>
+			<url-pattern>/LoanContractProcess.do</url-pattern>
+			<url-pattern>/LoanContractState.do</url-pattern>
+			<url-pattern>/LoanContractStateProcess.do</url-pattern>
+			<url-pattern>/LoanContractMemoList.do</url-pattern>
+			<url-pattern>/LoanContractMemo.do</url-pattern>
+			<url-pattern>/LoanContractMemoProcess.do</url-pattern>
+			<url-pattern>/LoanAktGetPutList.do</url-pattern>
+			<url-pattern>/LoanAktGetPutDialog.do</url-pattern>
+			<url-pattern>/LoanAktGetPutProcess.do</url-pattern>
+			<url-pattern>/LoanAktGetPutWordAction.do</url-pattern>
+			<url-pattern>/LoanAktGetPutWordUploadAction.do</url-pattern>
+			<url-pattern>/LoanAktGetPutWordDownload</url-pattern>
+			<url-pattern>/RegistryBuchDocsList.do</url-pattern>
+			<url-pattern>/RegistryBuchDocsListForInitialGroup.do</url-pattern>
+			<url-pattern>/RegistryBuchDocsListForReturnDocumentGroup.do</url-pattern>
+			<url-pattern>/RegistryBuchDocsDialog.do</url-pattern>
+			<url-pattern>/RegistryBuchDocsCompositionList.do</url-pattern>
+			<url-pattern>/RegistryBuchDocsWordAction.do</url-pattern>
+			<url-pattern>/RegistryBuchDocsWordUploadAction.do</url-pattern>
+			<url-pattern>/RegistryBuchDocsWordDownload</url-pattern>
+			<url-pattern>/RegistryBuchDocsHistory.do</url-pattern>
+			<url-pattern>/LeasePayOfficeMemoList.do</url-pattern>
+			<url-pattern>/LeasePayOfficeMemoDialog.do</url-pattern>
+			<url-pattern>/LeasePayOfficeMemoProcess.do</url-pattern>
+			<url-pattern>/LeasePayOfficeMemoWordAction.do</url-pattern>
+			<url-pattern>/DocumentUploadAction.do</url-pattern>
+			<url-pattern>/LeaseZPOfficeMemoList.do</url-pattern>
+			<url-pattern>/LeaseZPOfficeMemoDialog.do</url-pattern>
+			<url-pattern>/LeaseZPOfficeMemoProcess.do</url-pattern>
+			<url-pattern>/LeaseZPOfficeMemoWordAction.do</url-pattern>
+			<url-pattern>/LeaseContractProblemList.do</url-pattern>
+			<url-pattern>/LeaseContractProblemDialog.do</url-pattern>
+			<url-pattern>/LeaseContractProblemProcess.do</url-pattern>
+			<url-pattern>/LeaseProblemList.do</url-pattern>									
+			<url-pattern>/CompletWorkActsList.do</url-pattern>
+			<url-pattern>/CompletWorkActsForChargeList.do</url-pattern>
+			<url-pattern>/EditCompletWorkAkt.do</url-pattern>
+			<url-pattern>/CompletWorkAktDialog.do</url-pattern>
+			<url-pattern>/CompletWorkAktProcess.do</url-pattern>
+			<url-pattern>/CompletWorkAktWordAction.do</url-pattern>
+			<url-pattern>/FactsLeasePage.do</url-pattern>
+			<url-pattern>/DnopForChargeList.do</url-pattern>
+			<url-pattern>/DnopForPaymentList.do</url-pattern>
+			<url-pattern>/DnopDialog.do</url-pattern>						
+			<url-pattern>/DnopProcess.do</url-pattern>
+			<http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_2">
+            <description>protected:+:</description>
+            <role-name>ArendaMainEconomist</role-name>
+            <role-name>ArendaEconomist</role-name>
+            <role-name>ArendaMainManager</role-name>
+            <role-name>ArendaManager</role-name>
+            <role-name>ArendaDirector</role-name>
+            <role-name>administrator</role-name>
+			<role-name>ArendaPurchaser</role-name>            
+            <role-name>ArendaAccountant</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_2">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_3">
+         <web-resource-collection id="WebResourceCollection_3">
+            <web-resource-name>economistresources</web-resource-name>
+            <url-pattern>/ProcessWeArenda.do</url-pattern>
+            <url-pattern>/ProcessHistory.do</url-pattern>
+            <url-pattern>/ProcessWeState.do</url-pattern>
+            <url-pattern>/ProcessMoveContractToPie.do</url-pattern>
+            <url-pattern>/ShowErrorMoveContractToPie.do</url-pattern>
+            <url-pattern>/ProcessHistoryWeState.do</url-pattern>
+            <url-pattern>/ProcessHistoryMoveContractToPie.do</url-pattern>
+            <url-pattern>/ShowHistoryErrorMoveContractToPie.do</url-pattern>
+            <url-pattern>/ProcessArendaPosition.do</url-pattern>
+            <url-pattern>/ProcessHistoryArendaPosition.do</url-pattern>
+            <url-pattern>/ShowPositionMultiList.do</url-pattern>
+            <url-pattern>/ProcessPositionMulti.do</url-pattern>
+            <url-pattern>/ShowHistoryPositionMultiList.do</url-pattern>
+            <url-pattern>/ProcessHistoryPositionMulti.do</url-pattern>
+            <url-pattern>/ProcessChargeRule.do</url-pattern>
+            <url-pattern>/ProcessHistoryChargeRule.do</url-pattern>
+            <url-pattern>/ProcessPayRule.do</url-pattern>
+            <url-pattern>/ProcessHistoryPayRule.do</url-pattern>
+            <url-pattern>/ProcessUsArenda.do</url-pattern>
+            <url-pattern>/ProcessUsState.do</url-pattern>
+            <url-pattern>/ProcessChannelArenda.do</url-pattern>
+            <url-pattern>/ProcessChannelState.do</url-pattern>
+            <url-pattern>/ProcessCharge.do</url-pattern>
+            <url-pattern>/ProcessHistoryCharge.do</url-pattern>
+            <url-pattern>/ProcessUsCharge.do</url-pattern>
+            <url-pattern>/ProcessChannelCharge.do</url-pattern>
+            <url-pattern>/ProcessAbonentCharge.do</url-pattern>
+            <url-pattern>/ProcessPayment.do</url-pattern>
+            <url-pattern>/ProcessHistoryPayment.do</url-pattern>
+            <url-pattern>/ProcessUsPayment.do</url-pattern>
+            <url-pattern>/ProcessChannelPayment.do</url-pattern>
+            <url-pattern>/ProcessAbonentPayment.do</url-pattern>
+            <url-pattern>/ProcessChargeDnop.do</url-pattern>
+            <url-pattern>/ProcessHistoryChargeDnop.do</url-pattern>
+            <url-pattern>/ProcessUsChargeDnop.do</url-pattern>
+            <url-pattern>/ProcessChannelChargeDnop.do</url-pattern>
+            <url-pattern>/ProcessChargeRate.do</url-pattern>
+            <url-pattern>/ProcessHistoryChargeRate.do</url-pattern>
+            <url-pattern>/ProcessUsChargeRate.do</url-pattern>
+            <url-pattern>/ProcessChannelChargeRate.do</url-pattern>
+            <url-pattern>/ProcessAbonentChargeRate.do</url-pattern>
+            <url-pattern>/ProcessFactura.do</url-pattern>
+            <url-pattern>/PrintFactura.do</url-pattern>
+            <url-pattern>/ProcessHistoryFactura.do</url-pattern>
+            <url-pattern>/PrintHistoryFactura.do</url-pattern>
+            <url-pattern>/ProcessPaymentState.do</url-pattern>
+            <url-pattern>/ProcessMovePayToPie.do</url-pattern>
+            <url-pattern>/ShowErrorMovePayToPie.do</url-pattern>
+            <url-pattern>/ProcessHistoryPaymentState.do</url-pattern>
+            <url-pattern>/ProcessHistoryMovePayToPie.do</url-pattern>
+            <url-pattern>/ShowHistoryErrorMovePayToPie.do</url-pattern>
+            <url-pattern>/ProcessUsPaymentState.do</url-pattern>
+            <url-pattern>/ProcessChannelPaymentState.do</url-pattern>
+            <url-pattern>/ProcessAbonentPaymentState.do</url-pattern>
+            <url-pattern>/GetPayFromPlatinum.do</url-pattern>
+            <url-pattern>/HistoryGetPayFromPlatinum.do</url-pattern>
+            <url-pattern>/ProcessPaymentRate.do</url-pattern>
+            <url-pattern>/ProcessHistoryPaymentRate.do</url-pattern>
+            <url-pattern>/ProcessUsPaymentRate.do</url-pattern>
+            <url-pattern>/ProcessChannelPaymentRate.do</url-pattern>
+            <url-pattern>/ProcessAbonentPaymentRate.do</url-pattern>
+            <url-pattern>/ProcessSaldo.do</url-pattern>
+            <url-pattern>/ProcessHistorySaldo.do</url-pattern>
+            <url-pattern>/ProcessUsSaldo.do</url-pattern>
+            <url-pattern>/ProcessChannelSaldo.do</url-pattern>
+            <url-pattern>/ProcessAbonentSaldo.do</url-pattern>
+            <url-pattern>/ProcessPlatinumDogovorForm.do</url-pattern>
+            <url-pattern>/ProcessReglamentState.do</url-pattern>
+            <url-pattern>/ProcessFromContractReglamentState.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryReglamentState.do</url-pattern>
+            <url-pattern>/ProcessMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessFromContractMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryMainParamsMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessContractMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessFromContractContractMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryContractMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessMutualRule.do</url-pattern>
+            <url-pattern>/ProcessFromContractMutualRule.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryMutualRule.do</url-pattern>
+            <url-pattern>/ProcessPhoneMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessFromContractPhoneMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryPhoneMutReglmnt.do</url-pattern>
+            <url-pattern>/ProcessMRCntPriorForm.do</url-pattern>
+            <url-pattern>/ProcessFromContractMRCntPriorForm.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryMRCntPriorForm.do</url-pattern>
+            <url-pattern>/EditCopyReglament.do</url-pattern>
+            <url-pattern>/ProcessCopyReglament.do</url-pattern>
+            <url-pattern>/EditFromContractCopyReglament.do</url-pattern>
+            <url-pattern>/ProcessFromContractCopyReglament.do</url-pattern>
+            <url-pattern>/EditFromHistoryCopyReglament.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryCopyReglament.do</url-pattern>
+            <url-pattern>/ProcessMutualAct.do</url-pattern>
+            <url-pattern>/ProcessFromContractMutualAct.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryMutualAct.do</url-pattern>
+            <url-pattern>/ProcessActState.do</url-pattern>
+            <url-pattern>/ProcessFromContractActState.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryActState.do</url-pattern>
+            <url-pattern>/ProcessFacturaMutact.do</url-pattern>
+            <url-pattern>/ProcessFromContractFacturaMutact.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryFacturaMutact.do</url-pattern>
+            <url-pattern>/ProcessFacturaPosMutact.do</url-pattern>
+            <url-pattern>/ProcessFromContractFacturaPosMutact.do</url-pattern>
+            <url-pattern>/ProcessFromHistoryFacturaPosMutact.do</url-pattern>
+            <url-pattern>/GetSprArenda.do</url-pattern>
+            <url-pattern>/GetSprArendaResult.do</url-pattern>
+            <url-pattern>/GetBanks.do</url-pattern>
+            <url-pattern>/ProcessGetBanks.do</url-pattern>
+            <url-pattern>/GetBanksResult.do</url-pattern>
+            <url-pattern>/GetPays.do</url-pattern>
+            <url-pattern>/ProcessGetPays.do</url-pattern>
+            <url-pattern>/GetPaysResult.do</url-pattern>
+            <url-pattern>/ShowStartProlongationsList.do</url-pattern>
+            <url-pattern>/EditStartProlongation.do</url-pattern>
+            <url-pattern>/ProcessStartProlongation.do</url-pattern>
+            <url-pattern>/ShowExecProlongation.do</url-pattern>
+            <url-pattern>/ShowJournalProlongationsList.do</url-pattern>
+            <url-pattern>/ShowStartChargesList.do</url-pattern>
+            <url-pattern>/EditStartCharge.do</url-pattern>
+            <url-pattern>/ProcessStartCharge.do</url-pattern>
+            <url-pattern>/ChargeAutomaticDialog.do</url-pattern>
+            <url-pattern>/ChargeAutomaticProcess.do</url-pattern>
+            <url-pattern>/ShowExecCharge.do</url-pattern>
+            <url-pattern>/ShowJournalChargesList.do</url-pattern>
+            <url-pattern>/ShowStartPaymentsList.do</url-pattern>
+            <url-pattern>/EditStartPayment.do</url-pattern>
+            <url-pattern>/ProcessStartPayment.do</url-pattern>
+            <url-pattern>/ShowExecPayment.do</url-pattern>
+            <url-pattern>/ShowJournalPaymentsList.do</url-pattern>
+            <url-pattern>/ProcessAbonent.do</url-pattern>
+            <url-pattern>/ProcessAbonentBan.do</url-pattern>
+            <url-pattern>/ProcessAbonentState.do</url-pattern>
+            <url-pattern>/ProcessBen.do</url-pattern>
+            <url-pattern>/ProcessAbonentBill.do</url-pattern>
+            <url-pattern>/ProcessAbonentBillPos.do</url-pattern>
+            <url-pattern>/EditBillHandleInNRI.do</url-pattern>
+            <url-pattern>/ProcessBillHandleInNRI.do</url-pattern>
+            <url-pattern>/ProcessAbonentPay.do</url-pattern>
+            <url-pattern>/EditPayHandleInNRI.do</url-pattern>
+            <url-pattern>/ProcessPayHandleInNRI.do</url-pattern>
+            <url-pattern>/ProcessAbonentChargeDnop.do</url-pattern>
+            <url-pattern>/AbonentBillQuery.do</url-pattern>
+            <url-pattern>/AbonentBillQueryToResult.do</url-pattern>
+            <url-pattern>/AbonentBillQueryFromResult.do</url-pattern>
+            <url-pattern>/ShowFromBillHandleInNRIJournalBillList.do</url-pattern>
+            <url-pattern>/ShowFromPayHandleInNRIJournalBillList.do</url-pattern>
+            <url-pattern>/EditGetPaysByContract.do</url-pattern>
+            <url-pattern>/ProcessGetPaysByContract.do</url-pattern>
+            <url-pattern>/EditHistoryGetPaysByContract.do</url-pattern>
+            <url-pattern>/ProcessHistoryGetPaysByContract.do</url-pattern>
+            <url-pattern>/EditAbonentBillLink.do</url-pattern>
+            <url-pattern>/ProcessAbonentBillLink.do</url-pattern>
+            <url-pattern>/ActParamsPrint.do</url-pattern>
+            <url-pattern>/ShowActContentsList.do</url-pattern>
+            <url-pattern>/ActContentsRecalculate.do</url-pattern>
+			<url-pattern>/ShowBankList.do</url-pattern>
+			<http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_3">
+            <description>protected:+:</description>
+            <role-name>ArendaMainEconomist</role-name>
+            <role-name>ArendaEconomist</role-name>
+            <role-name>administrator</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_3">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+
+      <security-constraint id="SecurityConstraint_4">
+         <web-resource-collection id="WebResourceCollection_4">
+            <web-resource-name>nfs</web-resource-name>
+            <url-pattern>/ShowNFS_ListDetach.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_4">
+            <description>protected:+:</description>
+			<role-name>viewerPays</role-name>
+			<role-name>administrator</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_4">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+
+      <security-constraint id="SecurityConstraint_5">
+         <web-resource-collection id="WebResourceCollection_5">
+            <web-resource-name>licence</web-resource-name>
+            <url-pattern>/ShowListLicence.do</url-pattern>
+			<url-pattern>/LicenceDialog.do</url-pattern>
+			<url-pattern>/LicenceInfo.do</url-pattern>
+			<http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_5">
+            <description>protected:+:</description>
+			<role-name>administrator</role-name>
+			<role-name>ArendaMainEconomist</role-name>
+			<role-name>ArendaMainManager</role-name>
+			<role-name>ArendaManager</role-name>
+			<role-name>ArendaDirector</role-name>
+			<role-name>lcsEditAllLicence</role-name>
+			<role-name>lcsEditFAS</role-name>
+			<role-name>lcsEditGPS</role-name>
+			<role-name>lcsEditGASN</role-name>
+			<role-name>lcsEditSES</role-name>
+			<role-name>lcsEditElectro</role-name>
+			<role-name>lcsEditLand</role-name>
+			<role-name>lcsEditProperty</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_5">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+
+      <security-constraint id="SecurityConstraint_6">
+         <web-resource-collection id="WebResourceCollection_6">
+            <web-resource-name>main</web-resource-name>
+            <url-pattern>/main.do</url-pattern>
+            <url-pattern>/ShowAvailableRegion.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_6">
+            <description>protected:+:</description>
+			<role-name>administrator</role-name>
+            <role-name>ArendaMainEconomist</role-name>
+            <role-name>ArendaEconomist</role-name>
+            <role-name>ArendaMainManager</role-name>
+            <role-name>ArendaManager</role-name>
+            <role-name>ArendaDirector</role-name>
+			<role-name>lcsEditAllLicence</role-name>
+			<role-name>lcsEditFAS</role-name>
+			<role-name>lcsEditGPS</role-name>
+			<role-name>lcsEditGASN</role-name>
+			<role-name>lcsEditSES</role-name>
+			<role-name>lcsEditElectro</role-name>
+			<role-name>lcsEditLand</role-name>
+			<role-name>lcsEditProperty</role-name>
+			<role-name>ArendaPurchaser</role-name>
+			<role-name>ArendaAccountant</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_6">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+
+      <login-config id="LoginConfig_1">
+         <auth-method>FORM</auth-method>
+         <form-login-config id="FormLoginConfig_1">
+            <form-login-page>/Login.do</form-login-page>
+            <form-error-page>/error.jsp</form-error-page>
+         </form-login-config>
+      </login-config>
+
+      <security-role id="SecurityRole_1">
+         <role-name>Everyone</role-name>
+      </security-role>
+      <security-role id="SecurityRole_2">
+         <role-name>administrator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_3">
+         <role-name>ArendaMainEconomist</role-name>
+      </security-role>
+      <security-role id="SecurityRole_4">
+         <role-name>ArendaEconomist</role-name>
+      </security-role>
+      <security-role id="SecurityRole_5">
+         <role-name>ArendaMainManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_6">
+         <role-name>ArendaManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_7">
+         <role-name>ArendaDirector</role-name>
+      </security-role>
+      <security-role id="SecurityRole_8">
+         <role-name>AllAuthenticated</role-name>
+      </security-role>
+      <security-role id="SecurityRole_9">
+         <role-name>contractComposer</role-name>
+      </security-role>
+      <security-role id="SecurityRole_10">
+         <role-name>contractControler</role-name>
+      </security-role>
+      <security-role id="SecurityRole_11">
+         <role-name>dictResAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_12">
+         <role-name>dictResOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_13">
+         <role-name>dictPartAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_14">
+         <role-name>dictPartOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_15">
+         <role-name>dictCurrateOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_16">
+         <role-name>siteExploitor</role-name>
+      </security-role>
+      <security-role id="SecurityRole_17">
+         <role-name>siteTransport</role-name>
+      </security-role>
+      <security-role id="SecurityRole_18">
+         <role-name>siteStation</role-name>
+      </security-role>
+      <security-role id="SecurityRole_19">
+         <role-name>siteProjector</role-name>
+      </security-role>
+      <security-role id="SecurityRole_20">
+         <role-name>TechStuff</role-name>
+      </security-role>
+      <security-role id="SecurityRole_21">
+         <role-name>StorageManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_22">
+         <role-name>siteLook</role-name>
+      </security-role>
+      <security-role id="SecurityRole_23">
+         <role-name>planAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_24">
+         <role-name>planResponsible</role-name>
+      </security-role>
+      <security-role id="SecurityRole_25">
+         <role-name>supregAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_26">
+         <role-name>regionAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_27">
+         <role-name>planLook</role-name>
+      </security-role>
+      <security-role id="SecurityRole_28">
+         <role-name>viewerPays</role-name>
+      </security-role>
+      <security-role id="SecurityRole_29">
+         <role-name>lcsEditAllLicence</role-name>
+      </security-role>
+      <security-role id="SecurityRole_30">
+         <role-name>lcsEditFAS</role-name>
+      </security-role>
+      <security-role id="SecurityRole_31">
+         <role-name>lcsEditGPS</role-name>
+      </security-role>
+      <security-role id="SecurityRole_32">
+         <role-name>lcsEditGASN</role-name>
+      </security-role>
+      <security-role id="SecurityRole_33">
+         <role-name>lcsEditSES</role-name>
+      </security-role>
+      <security-role id="SecurityRole_34">
+         <role-name>lcsEditElectro</role-name>
+      </security-role>
+      <security-role id="SecurityRole_35">
+         <role-name>lcsEditLand</role-name>
+      </security-role>
+      <security-role id="SecurityRole_36">
+         <role-name>lcsEditProperty</role-name>
+      </security-role>
+      <security-role id="SecurityRole_37">
+      	<description></description>
+      	<role-name>ArendaLawer</role-name>
+      </security-role>
+      <security-role id="SecurityRole_38">
+      	<description></description>
+      	<role-name>ArendaPurchaser</role-name>
+      </security-role>
+      <security-role id="SecurityRole_39">
+      	<description></description>
+      	<role-name>ArendaAccountant</role-name>
+      </security-role>
+      <security-role id="SecurityRole_40">
+      	<description></description>
+      	<role-name>ArendaExpert</role-name>
+      </security-role>
+
+
+      <ejb-ref id="EjbRef_1">
+         <ejb-ref-name>Account</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AccountHome</home>
+         <remote>com.hps.july.persistence.Account</remote>
+         <ejb-link>Account</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_2">
+         <ejb-ref-name>LeaseOnPosition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseOnPositionHome</home>
+         <remote>com.hps.july.persistence.LeaseOnPosition</remote>
+         <ejb-link>LeaseOnPosition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_3">
+         <ejb-ref-name>LeaseContract</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseContractHome</home>
+         <remote>com.hps.july.persistence.LeaseContract</remote>
+         <ejb-link>LeaseContract</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_4">
+         <ejb-ref-name>LeaseChargeRule</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseChargeRuleHome</home>
+         <remote>com.hps.july.persistence.LeaseChargeRule</remote>
+         <ejb-link>LeaseChargeRule</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_5">
+         <ejb-ref-name>LeaseCharges</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseChargesHome</home>
+         <remote>com.hps.july.persistence.LeaseCharges</remote>
+         <ejb-link>LeaseCharges</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_6">
+         <ejb-ref-name>LeaseMutualContracts</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseMutualContractsHome</home>
+         <remote>com.hps.july.persistence.LeaseMutualContracts</remote>
+         <ejb-link>LeaseMutualContracts</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_7">
+         <ejb-ref-name>SearchGroup</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SearchGroupHome</home>
+         <remote>com.hps.july.persistence.SearchGroup</remote>
+         <ejb-link>SearchGroup</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_8">
+         <ejb-ref-name>Organization</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OrganizationHome</home>
+         <remote>com.hps.july.persistence.Organization</remote>
+         <ejb-link>Organization</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_9">
+         <ejb-ref-name>Worker</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.WorkerHome</home>
+         <remote>com.hps.july.persistence.Worker</remote>
+         <ejb-link>Worker</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_10">
+         <ejb-ref-name>Resource</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ResourceHome</home>
+         <remote>com.hps.july.persistence.Resource</remote>
+         <ejb-link>Resource</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_11">
+         <ejb-ref-name>ResourceSubType</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ResourceSubTypeHome</home>
+         <remote>com.hps.july.persistence.ResourceSubType</remote>
+         <ejb-link>ResourceSubType</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_12">
+         <ejb-ref-name>ResourceType</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ResourceTypeHome</home>
+         <remote>com.hps.july.persistence.ResourceType</remote>
+         <ejb-link>ResourceType</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_13">
+         <ejb-ref-name>SearchGroupping</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SearchGrouppingHome</home>
+         <remote>com.hps.july.persistence.SearchGroupping</remote>
+         <ejb-link>SearchGroupping</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_14">
+         <ejb-ref-name>KeyGenerator</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.commonbean.KeyGeneratorHome</home>
+         <remote>com.hps.july.commonbean.KeyGenerator</remote>
+         <ejb-link>KeyGenerator</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_15">
+         <ejb-ref-name>Currency</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.CurrencyHome</home>
+         <remote>com.hps.july.persistence.Currency</remote>
+         <ejb-link>Currency</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_16">
+         <ejb-ref-name>LeaseMutualActNew</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseMutualActNewHome</home>
+         <remote>com.hps.july.persistence.LeaseMutualActNew</remote>
+         <ejb-link>LeaseMutualActNew</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_17">
+         <ejb-ref-name>LeaseMutualReglament</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseMutualReglamentHome</home>
+         <remote>com.hps.july.persistence.LeaseMutualReglament</remote>
+         <ejb-link>LeaseMutualReglament</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_18">
+         <ejb-ref-name>LeaseMutualRuleNew</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseMutualRuleNewHome</home>
+         <remote>com.hps.july.persistence.LeaseMutualRuleNew</remote>
+         <ejb-link>LeaseMutualRuleNew</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_19">
+         <ejb-ref-name>LeasePayment</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeasePaymentHome</home>
+         <remote>com.hps.july.persistence.LeasePayment</remote>
+         <ejb-link>LeasePayment</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_20">
+         <ejb-ref-name>LeasePayRule</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeasePayRuleHome</home>
+         <remote>com.hps.july.persistence.LeasePayRule</remote>
+         <ejb-link>LeasePayRule</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_21">
+         <ejb-ref-name>LeaseMutualPhone</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseMutualPhoneHome</home>
+         <remote>com.hps.july.persistence.LeaseMutualPhone</remote>
+         <ejb-link>LeaseMutualPhone</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_22">
+         <ejb-ref-name>Position</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PositionHome</home>
+         <remote>com.hps.july.persistence.Position</remote>
+         <ejb-link>Position</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_23">
+         <ejb-ref-name>LeaseArendaAgreementNew</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseArendaAgreementNewHome</home>
+         <remote>com.hps.july.persistence.LeaseArendaAgreementNew</remote>
+         <ejb-link>LeaseArendaAgreementNew</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_24">
+         <ejb-ref-name>LeasePayOrder</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeasePayOrderHome</home>
+         <remote>com.hps.july.persistence.LeasePayOrder</remote>
+         <ejb-link>LeasePayOrder</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_25">
+         <ejb-ref-name>ArendaDocumentProcessor</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.sessionbean.ArendaDocumentProcessorHome</home>
+         <remote>com.hps.july.arenda.sessionbean.ArendaDocumentProcessor</remote>
+         <ejb-link>ArendaDocumentProcessor</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_26">
+         <ejb-ref-name>ArendaRuleProcessor</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.sessionbean.ArendaRuleProcessorHome</home>
+         <remote>com.hps.july.arenda.sessionbean.ArendaRuleProcessor</remote>
+         <ejb-link>ArendaRuleProcessor</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_27">
+         <ejb-ref-name>LeaseArendaAgreementProcessor</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.sessionbean.LeaseArendaAgreementProcessorHome</home>
+         <remote>com.hps.july.arenda.sessionbean.LeaseArendaAgreementProcessor</remote>
+         <ejb-link>LeaseArendaAgreementProcessor</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_28">
+         <ejb-ref-name>LeaseTaskStart</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseTaskStartHome</home>
+         <remote>com.hps.july.persistence.LeaseTaskStart</remote>
+         <ejb-link>LeaseTaskStart</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_29">
+         <ejb-ref-name>LeaseTaskJournal</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseTaskJournalHome</home>
+         <remote>com.hps.july.persistence.LeaseTaskJournal</remote>
+         <ejb-link>LeaseTaskJournal</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_30">
+         <ejb-ref-name>Operator</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OperatorHome</home>
+         <remote>com.hps.july.persistence.Operator</remote>
+         <ejb-link>Operator</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_31">
+         <ejb-ref-name>CalculateArendaAct</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.sessionbean.CalculateArendaActHome</home>
+         <remote>com.hps.july.arenda.sessionbean.CalculateArendaAct</remote>
+         <ejb-link>CalculateArendaAct</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_32">
+         <ejb-ref-name>LeaseSaldoProcessor</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.sessionbean.LeaseSaldoProcessorHome</home>
+         <remote>com.hps.july.arenda.sessionbean.LeaseSaldoProcessor</remote>
+         <ejb-link>LeaseSaldoProcessor</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_33">
+         <ejb-ref-name>LeaseSaldo</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseSaldoHome</home>
+         <remote>com.hps.july.persistence.LeaseSaldo</remote>
+         <ejb-link>LeaseSaldo</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_34">
+         <ejb-ref-name>LeaseCalcRate</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseCalcRateHome</home>
+         <remote>com.hps.july.persistence.LeaseCalcRate</remote>
+         <ejb-link>LeaseCalcRate</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_35">
+         <ejb-ref-name>LeaseMRCntPrior</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseMRCntPriorHome</home>
+         <remote>com.hps.july.persistence.LeaseMRCntPrior</remote>
+         <ejb-link>LeaseMRCntPrior</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_36">
+         <ejb-ref-name>LeaseAbonentBAN</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseAbonentBANHome</home>
+         <remote>com.hps.july.persistence.LeaseAbonentBAN</remote>
+         <ejb-link>LeaseAbonentBAN</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_37">
+         <ejb-ref-name>LeaseAbonentPhone</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseAbonentPhoneHome</home>
+         <remote>com.hps.july.persistence.LeaseAbonentPhone</remote>
+         <ejb-link>LeaseAbonentPhone</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_38">
+         <ejb-ref-name>AbonentBill</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AbonentBillHome</home>
+         <remote>com.hps.july.persistence.AbonentBill</remote>
+         <ejb-link>AbonentBill</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_39">
+         <ejb-ref-name>AbonentBillPos</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AbonentBillPosHome</home>
+         <remote>com.hps.july.persistence.AbonentBillPos</remote>
+         <ejb-link>AbonentBillPos</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_40">
+         <ejb-ref-name>LeaseAbonentBEN</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseAbonentBENHome</home>
+         <remote>com.hps.july.persistence.LeaseAbonentBEN</remote>
+         <ejb-link>LeaseAbonentBEN</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_41">
+         <ejb-ref-name>ArendaTransactionMethod</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.sessionbean.ArendaTransactionMethodHome</home>
+         <remote>com.hps.july.arenda.sessionbean.ArendaTransactionMethod</remote>
+         <ejb-link>ArendaTransactionMethod</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_43">
+         <ejb-ref-name>LeaseAbonentDNOP</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseAbonentDNOPHome</home>
+         <remote>com.hps.july.persistence.LeaseAbonentDNOP</remote>
+         <ejb-link>LeaseAbonentDNOP</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_44">
+         <ejb-ref-name>PIEReference</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PIEReferenceHome</home>
+         <remote>com.hps.july.persistence.PIEReference</remote>
+         <ejb-link>PIEReference</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_45">
+         <ejb-ref-name>PIEDopInfoContr</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PIEDopInfoContrHome</home>
+         <remote>com.hps.july.persistence.PIEDopInfoContr</remote>
+         <ejb-link>PIEDopInfoContr</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_46">
+         <ejb-ref-name>DopInfoLPayment</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.DopInfoLPaymentHome</home>
+         <remote>com.hps.july.persistence.DopInfoLPayment</remote>
+         <ejb-link>DopInfoLPayment</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_47">
+         <ejb-ref-name>ArendaPlatinumProcessor</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.platinum.sessionbean.ArendaPlatinumProcessorHome</home>
+         <remote>com.hps.july.platinum.sessionbean.ArendaPlatinumProcessor</remote>
+         <ejb-link>ArendaPlatinumProcessor</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_48">
+         <ejb-ref-name>NamedValue</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.NamedValueHome</home>
+         <remote>com.hps.july.persistence.NamedValue</remote>
+         <ejb-link>NamedValue</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_49">
+         <ejb-ref-name>PIEBudjet</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PIEBudjetHome</home>
+         <remote>com.hps.july.persistence.PIEBudjet</remote>
+         <ejb-link>PIEBudjet</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_50">
+         <ejb-ref-name>PIEExpence</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PIEExpenceHome</home>
+         <remote>com.hps.july.persistence.PIEExpence</remote>
+         <ejb-link>PIEExpence</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_51">
+         <ejb-ref-name>Pie2Nri</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.billing.Pie2NriHome</home>
+         <remote>com.hps.july.arenda.billing.Pie2Nri</remote>
+         <ejb-link>Pie2Nri</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_52">
+         <ejb-ref-name>Transfer</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.billing.TransferHome</home>
+         <remote>com.hps.july.arenda.billing.Transfer</remote>
+         <ejb-link>Transfer</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_53">
+         <ejb-ref-name>BufferNri2Nri</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.arenda.billing.BufferNri2NriHome</home>
+         <remote>com.hps.july.arenda.billing.BufferNri2Nri</remote>
+         <ejb-link>BufferNri2Nri</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_54">
+         <ejb-ref-name>LeaseSchetFakt</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseSchetFaktHome</home>
+         <remote>com.hps.july.persistence.LeaseSchetFakt</remote>
+         <ejb-link>LeaseSchetFakt</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_55">
+         <ejb-ref-name>LeasePosSchetFakt</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeasePosSchetFaktHome</home>
+         <remote>com.hps.july.persistence.LeasePosSchetFakt</remote>
+         <ejb-link>LeasePosSchetFakt</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_56">
+         <ejb-ref-name>LeaseMutualActInfo</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseMutualActInfoHome</home>
+         <remote>com.hps.july.persistence.LeaseMutualActInfo</remote>
+         <ejb-link>LeaseMutualActInfo</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_57">
+         <ejb-ref-name>LeaseResBil2NRI</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.LeaseResBil2NRIHome</home>
+         <remote>com.hps.july.persistence.LeaseResBil2NRI</remote>
+         <ejb-link>LeaseResBil2NRI</ejb-link>
+      </ejb-ref>
+   </web-app>

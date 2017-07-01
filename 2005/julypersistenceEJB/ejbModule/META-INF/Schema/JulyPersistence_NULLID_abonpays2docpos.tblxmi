@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="abonpays2docpos" name="abonpays2docpos" primaryKey="abonpays2docpos_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasedocposition" name="leasedocposition">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986286">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="paypos" name="paypos">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986287">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="abonpays2docpos_1" name="abonpays2docpos" members="leasedocposition" constraint="SQLConstraint_1131634986286"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_45701_45701" name="FK_REF_45701_45701" members="leasedocposition" constraint="SQLConstraint_1131634986287">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasedocpositions.tblxmi#leasedocpositions_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_45698_45698" name="FK_REF_45698_45698" members="paypos" constraint="SQLConstraint_1131634986288">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_abonentpayments.tblxmi#abonentpayments_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986286" name="abonpays2docpos" type="PRIMARYKEY" primaryKey="abonpays2docpos_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986287" name="FK_REF_45701_45701" type="FOREIGNKEY" referenceByKey="FK_REF_45701_45701"/>
+  <constraints xmi:id="SQLConstraint_1131634986288" name="FK_REF_45698_45698" type="FOREIGNKEY" referenceByKey="FK_REF_45698_45698"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ProjectDivColumns" name="ProjectDivColumns" primaryKey="ProjectDivColumns_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="divcolid" name="divcolid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986797">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="projecttype" name="projecttype">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986798">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="division" name="division">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986799">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="colname" name="colname">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986797" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="aftercol" name="aftercol">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986800">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="ProjectDivColumns_1" name="ProjectDivColumns" members="divcolid" constraint="SQLConstraint_1131634986797">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_projectdivcolvals.tblxmi#FK_REF_86959_86959"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_86965_86965" name="FK_REF_86965_86965" members="division" constraint="SQLConstraint_1131634986798">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_divisions.tblxmi#divisions_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_86951_86951" name="FK_REF_86951_86951" members="projecttype" constraint="SQLConstraint_1131634986799">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_projecttypes.tblxmi#projecttypes_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986797" name="ProjectDivColumns" type="PRIMARYKEY" primaryKey="ProjectDivColumns_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986798" name="FK_REF_86965_86965" type="FOREIGNKEY" referenceByKey="FK_REF_86965_86965"/>
+  <constraints xmi:id="SQLConstraint_1131634986799" name="FK_REF_86951_86951" type="FOREIGNKEY" referenceByKey="FK_REF_86951_86951"/>
+</RDBSchema:RDBTable>

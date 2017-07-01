@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="sitedocfiles" name="sitedocfiles" primaryKey="sitedocfiles_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sitedocfile" name="sitedocfile">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987087">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sitedoc" name="sitedoc">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987088">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sitedocfiledate" name="sitedocfiledate" allowNull="true">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634987087">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sitedocfilename" name="sitedocfilename" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987087" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="note" name="note" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634987087" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sitedocfilebody" name="sitedocfilebody" allowNull="true">
+    <type xmi:type="RDBSchema:InformixSimpleLargeObject" xmi:id="InformixSimpleLargeObject_1131634987087" length="2">
+      <originatingType xmi:type="RDBSchema:InformixSimpleLargeObject" href="INFORMIX_V92_Primitives.xmi#InformixSimpleLargeObject_5"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="file_size" name="file_size" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987089">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="file_modified" name="file_modified" allowNull="true">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1131634987087" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="file_created" name="file_created" allowNull="true">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1131634987088" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="sitedocfiles_1" name="sitedocfiles" members="sitedocfile" constraint="SQLConstraint_1131634987087"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_91275_91275" name="FK_REF_91275_91275" members="sitedoc" constraint="SQLConstraint_1131634987088">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_sitedocs.tblxmi#sitedocs_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987087" name="sitedocfiles" type="PRIMARYKEY" primaryKey="sitedocfiles_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987088" name="FK_REF_91275_91275" type="FOREIGNKEY" referenceByKey="FK_REF_91275_91275"/>
+</RDBSchema:RDBTable>

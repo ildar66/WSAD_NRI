@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path="JavaSource"/>
+    <classpathentry kind="var" path="SERVERJDK_PLUGINDIR/jre/lib/rt.jar" sourcepath="SERVERJDK_PLUGINDIR/src.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/j2ee.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/webcontainer.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ivjejb35.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/websphere.jar"/>
+    <classpathentry kind="src" path="/common"/>
+    <classpathentry kind="src" path="/webcommon"/>
+    <classpathentry kind="src" path="/julypersistenceEJB"/>
+    <classpathentry kind="src" path="/julypersistence2EJB"/>
+    <classpathentry kind="src" path="/julyorganizerEJB"/>
+    <classpathentry kind="src" path="/julyjdbcEJB"/>
+    <classpathentry kind="src" path="/julyinventoryEJB"/>
+    <classpathentry kind="src" path="/julyConfigEJB"/>
+    <classpathentry kind="src" path="/julycommonEJB"/>
+    <classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

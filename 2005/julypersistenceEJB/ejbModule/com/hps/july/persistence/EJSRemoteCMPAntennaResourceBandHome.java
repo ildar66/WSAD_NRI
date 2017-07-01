@@ -1,0 +1,24 @@
+package com.hps.july.persistence;
+
+/**
+ * EJSRemoteCMPAntennaResourceBandHome
+ */
+public class EJSRemoteCMPAntennaResourceBandHome extends com.hps.july.persistence.EJSRemoteCMPAntennaResourceBandHome_b73af947 implements com.hps.july.persistence.AntennaResourceBandHome {
+	/**
+	 * EJSRemoteCMPAntennaResourceBandHome
+	 */
+	public EJSRemoteCMPAntennaResourceBandHome() throws java.rmi.RemoteException {
+		super();	}
+	/**
+	 * getDeployedSupport
+	 */
+	public com.ibm.ejs.container.EJSDeployedSupport getDeployedSupport() {
+		return new com.ibm.ejs.container.EJSDeployedSupport();
+	}
+	/**
+	 * putDeployedSupport
+	 */
+	public void putDeployedSupport(com.ibm.ejs.container.EJSDeployedSupport support) {
+		return;
+	}
+}

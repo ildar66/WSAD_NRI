@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="currencies" name="currencies" primaryKey="currencies_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="currency" name="currency">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986076">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986076" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="shortname" name="shortname" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986077" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="baserate" name="baserate" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986077">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="currencies_1" name="currencies" members="currency" constraint="SQLConstraint_1131634986076">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasecontracts.tblxmi#FK_REF_21889_21889"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasecontracts.tblxmi#FK_REF_21888_21888"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leaseschetfakt.tblxmi#FK_REF_93715_93715"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasepayrules.tblxmi#FK_REF_PAYRC_15376"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasedocpositions.tblxmi#FK_REF_39940_39940"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_outwaybills.tblxmi#FK_REF_44049_44049"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_rates.tblxmi#fk_ref_1019_1019"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasechargerules.tblxmi#FK_REF_CRULC_15377"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasemutualrglmnt.tblxmi#FK_REF_36317_36317"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasemutualrglmnt.tblxmi#FK_REF_36316_36316"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_informix_abonentbillpos.tblxmi#FK_REF_15392_15392"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_contracts.tblxmi#fk_ref_1886_1886"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasemutualacts.tblxmi#FK_REF_MUTAC_15391"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_ratetypes.tblxmi#fk_ref_1009_1009"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasecalcrates.tblxmi#FK_REF_36392_36392"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_inwaybills.tblxmi#fk_ref_1809_1809"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasesaldo.tblxmi#FK_REF_36354_36354"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasesaldo.tblxmi#FK_REF_SALCU_15373"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1026_1026" name="fk_ref_1026_1026" members="baserate" constraint="SQLConstraint_1131634986077">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_ratetypes.tblxmi#ratetypes_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986076" name="currencies" type="PRIMARYKEY" primaryKey="currencies_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986077" name="fk_ref_1026_1026" type="FOREIGNKEY" referenceByKey="fk_ref_1026_1026"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,82 @@
+/*   basic styles   */
+  
+/*TH {color:rgb(45,116,124)}*/
+body {background-color: #EBEbEb}
+input {color:color: #333366}
+link {color: purple}
+h1 {color: #6666CC}
+h2 {color: #6666CC}
+label {	color: #333366;}
+
+/************************************/
+/* List view                        */
+/************************************/
+
+.ListViewData {
+	font-family: "sans serif", serif; 
+	background-color: #EBEbEb;
+	color: gray;
+	/*font-size: 10pt;*/
+	padding-top: 2px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+	padding-right: 10px;
+	
+}
+
+.ListViewHeader {
+	color: navy;
+	background-color: #e6e6f7;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 10px;
+}
+
+.ListViewButton {
+	background-color: #e6e6f7;
+}
+
+.ListTable {
+
+}
+
+/************************************/
+/* Form view                        */
+/************************************/
+
+.FormViewButton {
+	font-style: normal;
+	background-color: #e6e6f7;
+	margin-right: 15px;
+}
+
+.FormViewData {
+ 
+}
+/************************************/
+/*  Menu                            */
+/************************************/
+
+.topMenu{
+	background-color: #daeef1;
+}
+.leftMenu{
+	
+	
+}
+/************************************/
+/* Link                             */
+/************************************/
+.MenuLink{
+	color: white;
+	margin-bottom: 3px;
+	/*display: block;*/
+    
+}
+.PageLink {
+	color: purple;
+	font-family: serif;
+	
+}
+

@@ -1,0 +1,6 @@
+/*
+Copyright (c) Nebiru Software 2001, 2005
+  Compressed and obfuscated by JSCruncher Pro.
+  http://domapi.com/jscruncherpro
+*/
+domapi.urlToCsv=function(url){return domapi.getContent(url)};domapi.csvToArray=function(s){var i;var $c5=s.split('\n');for(i=0;i<$c5.length;i++)$c5[i]=domapi.csvLineToArray(String($c5[i]).replace('\r',''));return $c5};domapi.csvLineToArray=function($fN9){var J2i=0;var _82H=1;var state=null;var G7h5_=0;var b,C65_A;var s='';var R=[];var J6o=[J2i];var q="'";var u_g6='"';var Sc4=",";while(b=$fN9.substr(G7h5_,1)){G7h5_++;state=J6o[J6o.length-1];if(state==_82H){if(b==u_g6){C65_A=$fN9[G7h5_];if(C65_A==u_g6){s+=b;G7h5_++;continue}else{J6o.pop();state=J6o[J6o.length-1];continue}}s+=b;continue}else{if(b==u_g6){J6o.push(_82H);continue}if(b==Sc4){R.push(s);s='';continue}s+=b;continue}}if(s!='')R.push(s);if(state!=J2i)throw new Error(domapi.getString("ERR_CSV_FINAL_STATE"));return R};domapi.arrayToCsvLine=function(Fyr){var s,i;var R="";var G6409=new RegExp('"',"g");var m7D=new RegExp('[ ,"]+');for(i=0;i<Fyr.length;i++){if(i>0)R+=",";s=Fyr[i];if(typeof(s)=="string"){s=s.replace(G6409,'""');if(s.search(m7D)>-1)s='"'+s+'"'}R+=s}return R};

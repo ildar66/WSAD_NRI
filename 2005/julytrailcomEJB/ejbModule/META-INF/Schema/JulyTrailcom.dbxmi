@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBDatabase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="JulyTrailcom" name="JulyTrailcom">
+  <schemata href="META-INF/Schema/JulyTrailcom_NULLID.schxmi#NULLID"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#address_space"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_sitedocs2hops.tblxmi#sitedocs2hops"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#rrl_hops2"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hops"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#address_info"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_opticalhops.tblxmi#opticalhops"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_address_info2.tblxmi#address_info2"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_hopslabel.tblxmi#hopslabel"/>
+  <domain href="INFORMIX_V92_Domain.xmi#SQLVendor_1"/>
+</RDBSchema:RDBDatabase>

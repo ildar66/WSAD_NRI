@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="i13nact" name="i13nact" primaryKey="i13nact_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="document" name="document">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986366">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="techstuff" name="techstuff" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986367">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="type" name="type">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986366" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="agregate" name="agregate" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986368">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="agregateserial" name="agregateserial" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986367" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="recalcagrprice" name="recalcagrprice" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986368" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="agregateresource" name="agregateresource" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986369">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="i13nact_1" name="i13nact" members="document" constraint="SQLConstraint_1131634986366">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_i13nactresourceset.tblxmi#FK_REF_12301_12301"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_i13ndatesav.tblxmi#FK_REF_14115_14115"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_2684_2684" name="fk_ref_2684_2684" members="document" constraint="SQLConstraint_1131634986367">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_documents.tblxmi#documents_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_2688_2688" name="fk_ref_2688_2688" members="techstuff" constraint="SQLConstraint_1131634986368">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#workers_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_7430_7430" name="FK_REF_7430_7430" members="agregate" constraint="SQLConstraint_1131634986369">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_storagecards.tblxmi#storagecards_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986366" name="i13nact" type="PRIMARYKEY" primaryKey="i13nact_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986367" name="fk_ref_2684_2684" type="FOREIGNKEY" referenceByKey="fk_ref_2684_2684"/>
+  <constraints xmi:id="SQLConstraint_1131634986368" name="fk_ref_2688_2688" type="FOREIGNKEY" referenceByKey="fk_ref_2688_2688"/>
+  <constraints xmi:id="SQLConstraint_1131634986369" name="FK_REF_7430_7430" type="FOREIGNKEY" referenceByKey="FK_REF_7430_7430"/>
+</RDBSchema:RDBTable>

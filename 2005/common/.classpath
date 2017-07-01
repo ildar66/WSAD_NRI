@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/bsf.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/cm.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/csicpi.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/databeans.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ejbcontainer.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ivjejb35.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/j2ee.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/jsp.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/mof.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/mofj2ee.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ns.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ras.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/runtime.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/utils.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/vaprt.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/webcontainer.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/websphere.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/webtlsrn.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ws-base-extensions.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/xalan.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/xerces.jar"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/eclipse"/>
+    <classpathentry kind="output" path=""/>
+</classpath>

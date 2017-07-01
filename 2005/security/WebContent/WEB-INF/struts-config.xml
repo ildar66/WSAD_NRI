@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+          "http://dtdserver/dtd/struts-config_1_0.dtd">
+
+
+
+<struts-config>
+
+
+  <!-- ========== Form Bean Definitions =================================== -->
+  <form-beans>
+
+    <form-bean      name="PeopleListForm"
+                    type="com.hps.july.security.formbean.PeopleListForm"/>
+
+    <form-bean      name="PeopleForm"
+                    type="com.hps.july.security.formbean.PeopleForm"/>
+
+    <form-bean      name="OperatorListForm"
+                    type="com.hps.july.security.formbean.OperatorListForm"/>
+
+    <form-bean      name="OperatorForm"
+                    type="com.hps.july.security.formbean.OperatorForm"/>
+
+    <form-bean      name="WorkerListForm"
+                    type="com.hps.july.security.formbean.WorkerListForm"/>
+
+    <form-bean      name="WorkerForm"
+                    type="com.hps.july.security.formbean.WorkerForm"/>
+
+    <form-bean      name="Operator2roleListForm"
+                    type="com.hps.july.security.formbean.Operator2roleListForm"/>
+
+    <form-bean      name="Operator2roleForm"
+                    type="com.hps.july.security.formbean.Operator2roleForm"/>
+                    
+    <form-bean      name="CopyOperatorAccessForm"
+                    type="com.hps.july.security.formbean.CopyOperatorAccessForm"/>
+                    
+    <form-bean      name="SuperRegionAccessListForm"
+                    type="com.hps.july.security.formbean.SuperRegionAccessListForm"/>
+                    
+    <form-bean      name="RegionAccessListForm"
+                    type="com.hps.july.security.formbean.RegionAccessListForm"/>
+        
+    <form-bean      name="OperatorLookupListForm"
+                    type="com.hps.july.security.formbean.OperatorLookupListForm"/>                    
+   
+    <form-bean      name="RoleLookupListForm"
+                    type="com.hps.july.security.formbean.RoleLookupListForm"/>
+
+    <form-bean      name="CompanyListForm"
+                    type="com.hps.july.security.formbean.CompanyListForm"/>
+
+    <form-bean      name="CompanyForm"
+                    type="com.hps.july.security.formbean.CompanyForm"/>
+
+    <form-bean      name="DirectionListForm"
+                    type="com.hps.july.security.formbean.DirectionListForm"/>
+
+    <form-bean      name="DirectionForm"
+                    type="com.hps.july.security.formbean.DirectionForm"/>
+
+    <form-bean      name="WorkPositionListForm"
+                    type="com.hps.july.security.formbean.WorkPositionListForm"/>
+
+    <form-bean      name="WorkPositionForm"
+                    type="com.hps.july.security.formbean.WorkPositionForm"/>
+
+    <form-bean      name="WorkerLookupListForm"
+                    type="com.hps.july.security.formbean.WorkerLookupListForm"/>
+
+    <form-bean      name="ServiceListForm"
+                    type="com.hps.july.security.formbean.ServiceListForm"/>
+
+    <form-bean      name="ServiceForm"
+                    type="com.hps.july.security.formbean.ServiceForm"/>
+
+    <form-bean      name="DepartmentListForm"
+                    type="com.hps.july.security.formbean.DepartmentListForm"/>
+
+    <form-bean      name="DepartmentForm"
+                    type="com.hps.july.security.formbean.DepartmentForm"/>
+
+    <form-bean      name="GroupListForm"
+                    type="com.hps.july.security.formbean.GroupListForm"/>
+
+    <form-bean      name="GroupForm"
+                    type="com.hps.july.security.formbean.GroupForm"/>
+
+    <form-bean      name="CompanyLookupListForm"
+                    type="com.hps.july.security.formbean.CompanyLookupListForm"/>
+
+    <form-bean      name="DirectionLookupListForm"
+                    type="com.hps.july.security.formbean.DirectionLookupListForm"/>
+
+    <form-bean      name="ServiceLookupListForm"
+                    type="com.hps.july.security.formbean.ServiceLookupListForm"/>
+
+    <form-bean      name="DepartmentLookupListForm"
+                    type="com.hps.july.security.formbean.DepartmentLookupListForm"/>
+
+    <form-bean      name="GroupLookupListForm"
+                    type="com.hps.july.security.formbean.GroupLookupListForm"/>
+
+    <form-bean      name="WorkPositionLookupListForm"
+                    type="com.hps.july.security.formbean.WorkPositionLookupListForm"/>
+                    
+    <form-bean      name="PeopleLookupListForm"
+                    type="com.hps.july.security.formbean.PeopleLookupListForm"/>
+                    
+    <form-bean      name="WorkerListCForm"
+                    type="com.hps.july.security.formbean.WorkerListCForm"/>
+
+    <form-bean      name="WorkerListDrForm"
+                    type="com.hps.july.security.formbean.WorkerListDrForm"/>
+
+    <form-bean      name="WorkerListSForm"
+                    type="com.hps.july.security.formbean.WorkerListSForm"/>
+
+    <form-bean      name="WorkerListDForm"
+                    type="com.hps.july.security.formbean.WorkerListDForm"/>
+
+    <form-bean      name="WorkerListGForm"
+                    type="com.hps.july.security.formbean.WorkerListGForm"/>
+
+    <form-bean      name="WorkerFormC"
+                    type="com.hps.july.security.formbean.WorkerFormC"/>
+
+    <form-bean      name="WorkerFormDr"
+                    type="com.hps.july.security.formbean.WorkerFormDr"/>
+
+    <form-bean      name="WorkerFormS"
+                    type="com.hps.july.security.formbean.WorkerFormS"/>
+
+    <form-bean      name="WorkerFormD"
+                    type="com.hps.july.security.formbean.WorkerFormD"/>
+
+    <form-bean      name="WorkerFormG"
+                    type="com.hps.july.security.formbean.WorkerFormG"/>
+
+    <form-bean      name="RoleMultiListForm"
+                    type="com.hps.july.security.formbean.RoleMultiListForm"/>
+
+	<form-bean      name="divisionLookup"
+                    type="com.hps.july.security.formbean.DivisionListForm"/>
+
+	<form-bean      name="DirectionCarsList"
+                    type="com.hps.july.security.formbean.DirectionCarsList"/>
+
+	<form-bean      name="ServiceCarsList"
+                    type="com.hps.july.security.formbean.ServiceCarsList"/>
+
+	<form-bean      name="DepartmentCarsList"
+                    type="com.hps.july.security.formbean.DepartmentCarsList"/>
+
+	<form-bean      name="GroupCarsList"
+                    type="com.hps.july.security.formbean.GroupCarsList"/>
+
+	<form-bean      name="DirectionCarForm"
+                    type="com.hps.july.security.formbean.DirectionCarForm"/>
+
+	<form-bean      name="ServiceCarForm"
+                    type="com.hps.july.security.formbean.ServiceCarForm"/>
+
+	<form-bean      name="DepartmentCarForm"
+                    type="com.hps.july.security.formbean.DepartmentCarForm"/>
+
+	<form-bean      name="GroupCarForm"
+                    type="com.hps.july.security.formbean.GroupCarForm"/>
+
+	<form-bean      name="MSUsersListForm"
+                    type="com.hps.july.security.formbean.MsUsersListForm"/>
+
+	<form-bean      name="MSUsersForm"
+                    type="com.hps.july.security.formbean.MSUsersForm"/>
+
+	<form-bean      name="AccessListForm"
+                    type="com.hps.july.security.formbean.AccessListForm"/>
+
+	<form-bean      name="PeopleToNfsUserListForm"
+                    type="com.hps.july.security.formbean.PeopleToNfsUserListForm"/>
+                    
+	<form-bean      name="Nfs_UsersLookupListForm"
+                    type="com.hps.july.security.formbean.Nfs_UsersLookupListForm"/>
+                    
+	<form-bean      name="SwitchOperatorForm"
+                    type="com.hps.july.security.formbean.SwitchOperatorForm"/>
+     
+	<form-bean      name="MailMessageNriForm"
+                    type="com.hps.july.security.formbean.MailMessageNriForm"/>
+                    
+	<form-bean      name="Operator2roleDialogForm"
+                    type="com.hps.july.security.formbean.Operator2roleDialogForm"/>
+                    
+	<form-bean      name="RoleListForm"
+                    type="com.hps.july.security.formbean.RoleListForm"/>
+                    
+  </form-beans>
+
+
+  <!-- ========== Global Forward Definitions ============================== -->
+  <global-forwards>
+	<forward name="main" path="/july.jsp"/>
+	<forward name="login" path="/ShowTaskList.do" redirect="true"/>
+  </global-forwards>
+
+
+  <!-- ========== Action Mapping Definitions ============================== -->
+  <action-mappings>
+
+    <action   path="/main"
+              type="com.hps.july.security.actionbean.ShowMainAction"
+	          validate="true">
+    </action>
+
+    <action   path="/Login"
+              type="com.hps.july.security.actionbean.ShowLoginAction"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowPeopleList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="PeopleListForm"
+              scope="session"
+	          validate="true">
+    </action>
+              
+    <!--SuperRegion and Region-->
+           
+    <action   path="/ShowSuperRegionAccessList"
+              type="com.hps.july.security.actionbean.ShowSuperRegionAccessListAction"
+              name="SuperRegionAccessListForm"
+              scope="session"
+	      validate="true">
+      	      <forward name="process" path="ProcessSuperRegionAccess.do"/>
+    </action>
+    
+    <action   path="/ProcessSuperRegionAccess"
+              name="SuperRegionAccessListForm"
+              type="com.hps.july.security.actionbean.ProcessSuperRegionAccessAction">
+      	      <forward name="success" path="ShowOperatorList.do" redirect="true"/>
+    </action>
+    
+    <action   path="/ShowRegionAccessList"
+              type="com.hps.july.security.actionbean.ShowRegionAccessListAction"
+              name="RegionAccessListForm"
+              scope="session"
+	      validate="true">
+      	      <forward name="process" path="ProcessRegionAccess.do"/>
+    </action>
+    
+    <action   path="/ProcessRegionAccess"
+              name="RegionAccessListForm"
+              type="com.hps.july.security.actionbean.ProcessRegionAccessAction">
+      	      <forward name="success" path="ShowOperatorList.do" redirect="true"/>
+    </action>
+    
+    <action   path="/CopyOperatorAccess"
+              type="com.hps.july.security.actionbean.CopyOperatorAccessAction"
+              scope="request"
+              name="CopyOperatorAccessForm"
+              validate="true">
+              <forward name="goback" path="ShowOperatorList.do" redirect="true"/>
+    </action>
+    
+    <action   path="/ProcessCopyOperatorAccess"
+              type="com.hps.july.security.actionbean.ProcessCopyOperatorAccessAction"
+              scope="request"
+              name="CopyOperatorAccessForm"
+              validate="true">
+              <forward name="goback" path="ShowOperatorList.do" redirect="true"/>
+      	      <forward name="success" path="ShowOperatorList.do" redirect="true"/>
+              <forward name="error" path="CopyOperatorAccess.do" />
+    </action>
+    
+    <action   path="/ShowOperatorLookupList"
+              type="com.hps.july.security.actionbean.ShowOperatorLookupListAction"
+              name="OperatorLookupListForm"
+              scope="session"
+	      validate="true">
+    </action>
+    
+    <!--SuperRegion-->
+    
+    <action   path="/EditPeople"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="PeopleForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowPeopleList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessPeople"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="PeopleForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowPeopleList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowOperatorList"
+              type="com.hps.july.security.actionbean.ShowOperatorListAction"
+              name="OperatorListForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowPeopleList.do"/>
+    </action>
+
+    <action   path="/EditOperator"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="OperatorForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowOperatorList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessOperator"
+              type="com.hps.july.security.actionbean.ProcessOperatorAction"
+              name="OperatorForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowOperatorList.do" redirect="true" />
+      	      <forward name="show" path="EditOperator.do" redirect="false" />
+    </action>
+
+    <action   path="/ShowWorkerList"
+              type="com.hps.july.security.actionbean.ShowWorkerListAction"
+              name="WorkerListForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowPeopleList.do"/>
+    </action>
+
+    <action   path="/EditWorker"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="WorkerForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowWorkerList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessWorker"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="WorkerForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowWorkerList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowOperator2roleList"
+              type="com.hps.july.security.actionbean.ShowOperator2roleListAction"
+              name="Operator2roleListForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back" path="/ShowOperatorList.do"/>
+    </action>
+
+    <action   path="/EditOperator2role"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="Operator2roleForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowOperator2roleList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessOperator2role"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="Operator2roleForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowOperator2roleList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowRoleLookupList"
+              type="com.hps.july.security.actionbean.ShowRoleLookupListAction"
+              name="RoleLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+    
+    <action   path="/ShowWorkPositionLookupList"
+              type="com.hps.july.web.util.LookupBrowseAction"
+              name="WorkPositionLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+    
+    <action   path="/ShowWorkerLookupList"
+              type="com.hps.july.security.actionbean.ShowWorkerLookupListAction"
+              name="WorkerLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+    
+    <action   path="/ShowPeopleLookupList"
+              type="com.hps.july.security.actionbean.ShowPeopleLookupListAction"
+              name="PeopleLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+    
+    <action   path="/ShowCompanyList"
+              type="com.hps.july.security.actionbean.ShowCompanyListAction"
+              name="CompanyListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditCompany"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="CompanyForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowCompanyList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessCompany"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="CompanyForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowCompanyList.do" redirect="true" />
+    </action>
+    
+    <action   path="/ShowCompanyLookupList"
+              type="com.hps.july.security.actionbean.ShowCompanyLookupListAction"
+              name="CompanyLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+    
+    <action   path="/ShowDirectionList"
+              type="com.hps.july.security.actionbean.ShowDirectionListAction"
+              name="DirectionListForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowCompanyList.do"/>
+    </action>
+
+    <action   path="/EditDirection"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="DirectionForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowDirectionList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessDirection"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="DirectionForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowDirectionList.do" redirect="true" />
+    </action>
+    
+    <action   path="/ShowWorkPositionList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="WorkPositionListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditWorkPosition"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="WorkPositionForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowWorkPositionList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessWorkPosition"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="WorkPositionForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowWorkPositionList.do" redirect="true" />
+    </action>
+    
+    <action   path="/ShowServiceList"
+              type="com.hps.july.security.actionbean.ShowServiceListAction"
+              name="ServiceListForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowDirectionList.do"/>
+    </action>
+
+    <action   path="/EditService"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="ServiceForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowServiceList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessService"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="ServiceForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowServiceList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowDepartmentList"
+              type="com.hps.july.security.actionbean.ShowDepartmentListAction"
+              name="DepartmentListForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowServiceList.do"/>
+    </action>
+
+    <action   path="/EditDepartment"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="DepartmentForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowDepartmentList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessDepartment"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="DepartmentForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowDepartmentList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowGroupList"
+              type="com.hps.july.security.actionbean.ShowGroupListAction"
+              name="GroupListForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowServiceList.do"/>
+    </action>
+
+    <action   path="/EditGroup"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="GroupForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowGroupList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessGroup"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="GroupForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowGroupList.do" redirect="true" />
+    </action>
+
+    <action   path="/ShowDirectionLookupList"
+              type="com.hps.july.security.actionbean.ShowDirectionLookupListAction"
+              name="DirectionLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowServiceLookupList"
+              type="com.hps.july.security.actionbean.ShowServiceLookupListAction"
+              name="ServiceLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowDepartmentLookupList"
+              type="com.hps.july.security.actionbean.ShowDepartmentLookupListAction"
+              name="DepartmentLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowGroupLookupList"
+              type="com.hps.july.security.actionbean.ShowGroupLookupListAction"
+              name="GroupLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowWorkerListC"
+              type="com.hps.july.security.actionbean.ShowWorkerListCAction"
+              name="WorkerListCForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowCompanyList.do"/>
+    </action>
+    
+    <action   path="/ShowWorkerListDr"
+              type="com.hps.july.security.actionbean.ShowWorkerListDrAction"
+              name="WorkerListDrForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowDirectionList.do"/>
+    </action>
+
+    <action   path="/ShowWorkerListS"
+              type="com.hps.july.security.actionbean.ShowWorkerListSAction"
+              name="WorkerListSForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowServiceList.do"/>
+    </action>
+
+    <action   path="/ShowWorkerListD"
+              type="com.hps.july.security.actionbean.ShowWorkerListDAction"
+              name="WorkerListDForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowDepartmentList.do"/>
+    </action>
+
+    <action   path="/ShowWorkerListG"
+              type="com.hps.july.security.actionbean.ShowWorkerListGAction"
+              name="WorkerListGForm"
+              scope="session"
+	          validate="true">
+              <forward   name="back"      path="/ShowGroupList.do"/>
+    </action>
+
+    <action   path="/EditWorkerC"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="WorkerFormC"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowWorkerListC.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessWorkerC"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="WorkerFormC"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowWorkerListC.do" redirect="true" />
+    </action>
+
+
+    <action   path="/EditWorkerDr"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="WorkerFormDr"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowWorkerListDr.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessWorkerDr"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="WorkerFormDr"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowWorkerListDr.do" redirect="true" />
+    </action>
+
+
+    <action   path="/EditWorkerS"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="WorkerFormS"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowWorkerListS.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessWorkerS"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="WorkerFormS"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowWorkerListS.do" redirect="true" />
+    </action>
+
+
+    <action   path="/EditWorkerD"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="WorkerFormD"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowWorkerListD.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessWorkerD"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="WorkerFormD"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowWorkerListD.do" redirect="true" />
+    </action>
+
+
+    <action   path="/EditWorkerG"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="WorkerFormG"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowWorkerListG.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessWorkerG"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="WorkerFormG"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowWorkerListG.do" redirect="true" />
+    </action>
+
+    <action   path="/ReportOperators"
+              type="com.hps.july.security.actionbean.ReportOperatorsAction"
+	          validate="true">
+              <forward   name="back"      path="/main.do"/>
+    </action>
+
+    <action   path="/ShowRoleMultiList"
+              type="com.hps.july.security.actionbean.ShowRoleMultiListAction"
+              name="RoleMultiListForm"
+              scope="session"
+	          validate="true">
+      	      <forward name="process" path="ProcessOperator2roleMulti.do" redirect="true"/>
+    </action>
+    
+    <action   path="/ProcessOperator2roleMulti"
+              type="com.hps.july.security.actionbean.ProcessOperator2roleMulti"
+	          >
+      	      <forward name="success" path="ShowOperator2roleList.do" redirect="true"/>
+              <forward name="errorgoback" path="/ShowOperator2roleList.do"/>
+    </action>
+
+	<action   path="/divisionLookup"
+              type="com.hps.july.security.actionbean.ShowDivisionListAction"
+              name="divisionLookup"
+              scope="session"
+	          validate="true"> 
+    </action>
+	
+	<!-- cars -->
+	
+    <action path="/ShowDirectionCarsList"
+			type="com.hps.july.security.actionbean.ShowDirectionCarsListAction"
+			name="DirectionCarsList"
+			scope="session"
+			validate="true">
+    </action>
+	
+    <action path="/EditDirectionCar"
+			type="com.hps.july.web.util.AbstractEditAction"
+			scope="request"
+			name="DirectionCarForm"
+			validate="true">
+			<forward name="errorgoback" path="ShowDirectionCarsList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ProcessDirectionCar"
+			type="com.hps.july.web.util.AbstractProcessAction"
+			name="DirectionCarForm"
+			scope="request"
+			validate="true">
+			<forward name="success" path="ShowDirectionCarsList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ShowServiceCarsList"
+			type="com.hps.july.security.actionbean.ShowServiceCarsListAction"
+			name="ServiceCarsList"
+			scope="session"
+			validate="true">
+    </action>
+	
+    <action path="/EditServiceCar"
+			type="com.hps.july.web.util.AbstractEditAction"
+			scope="request"
+			name="ServiceCarForm"
+			validate="true">
+			<forward name="errorgoback" path="ShowServiceCarsList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ProcessServiceCar"
+			type="com.hps.july.web.util.AbstractProcessAction"
+			name="ServiceCarForm"
+			scope="request"
+			validate="true">
+			<forward name="success" path="ShowServiceCarsList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ShowDepartmentCarsList"
+			type="com.hps.july.security.actionbean.ShowDepartmentCarsListAction"
+			name="DepartmentCarsList"
+			scope="session"
+			validate="true">
+    </action>
+	
+    <action path="/EditDepartmentCar"
+			type="com.hps.july.web.util.AbstractEditAction"
+			scope="request"
+			name="DepartmentCarForm"
+			validate="true">
+			<forward name="errorgoback" path="ShowDepartmentCarsList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ProcessDepartmentCar"
+			type="com.hps.july.web.util.AbstractProcessAction"
+			name="DepartmentCarForm"
+			scope="request"
+			validate="true">
+			<forward name="success" path="ShowDepartmentCarsList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ShowGroupCarsList"
+			type="com.hps.july.security.actionbean.ShowGroupCarsListAction"
+			name="GroupCarsList"
+			scope="session"
+			validate="true">
+    </action>
+	
+    <action path="/EditGroupCar"
+			type="com.hps.july.web.util.AbstractEditAction"
+			scope="request"
+			name="GroupCarForm"
+			validate="true">
+			<forward name="errorgoback" path="ShowGroupCarsList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ProcessGroupCar"
+			type="com.hps.july.web.util.AbstractProcessAction"
+			name="GroupCarForm"
+			scope="request"
+			validate="true">
+			<forward name="success" path="ShowGroupCarsList.do" redirect="true"/>
+    </action>
+
+    <action path="/ShowMSUsersList"
+			type="com.hps.july.web.util.BrowseAction"
+			name="MSUsersListForm"
+			scope="session"
+			validate="true">
+    </action>
+
+    <action path="/EditMSUsers"
+			type="com.hps.july.web.util.AbstractEditAction"
+			scope="request"
+			name="MSUsersForm"
+			validate="true">
+			<forward name="errorgoback" path="ShowMSUsersList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ProcessMSUsers"
+			type="com.hps.july.web.util.AbstractProcessAction"
+			name="MSUsersForm"
+			scope="request"
+			validate="true">
+			<forward name="success" path="ShowMSUsersList.do" redirect="true"/>
+    </action>
+
+    <action   path="/AccessList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="AccessListForm"
+              scope="session"
+			  validate="true">
+    </action>
+    
+    <action   path="/PeopleToNfsUserList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="PeopleToNfsUserListForm"
+              scope="request"
+			  validate="true">
+    </action>
+    
+    <action   path="/Nfs_UsersLookupList"
+              type="com.hps.july.web.util.LookupBrowseAction"
+              name="Nfs_UsersLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>        
+
+    <action   path="/SwitchOperator"
+              type="com.hps.july.security.actionbean.SwitchOperatorAction"
+              name="SwitchOperatorForm"
+              scope="request"
+	          validate="false">
+    </action>
+    
+    <action   path="/MailMessageNri"
+              type="com.hps.july.web.util.AbstractEditAction"
+              name="MailMessageNriForm"
+              scope="session"
+	          validate="false">
+    </action>
+    
+    <action   path="/MailMessageNriProcess"
+              type="com.hps.july.web.util.FormProcessAction"
+              name="MailMessageNriForm"
+              scope="session"
+	          validate="false">
+    </action>                
+
+	<action path="/Operator2roleDialog" type="com.hps.july.web.util.NonNavigatedEditAction" name="Operator2roleDialogForm" scope="session" validate="true"></action>
+		
+	<action path="/Operator2roleProcess" type="com.hps.july.web.util.FormProcessAction" name="Operator2roleDialogForm" scope="session" validate="true">
+		<forward name="success" path="operator2roleDialog.jsp" redirect="false" />
+	</action>
+    
+    <action   path="/RoleList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="RoleListForm"
+              scope="session"
+	          validate="true">
+    </action>    
+	
+	
+  </action-mappings>
+
+</struts-config>

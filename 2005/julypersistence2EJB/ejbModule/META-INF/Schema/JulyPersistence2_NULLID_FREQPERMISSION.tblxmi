@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="FREQPERMISSION" name="FREQPERMISSION" primaryKey="PK_FREQPERMISSION">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILENUMBER" name="FILENUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340171">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQPERMID" name="FREQPERMID">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340172">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ETAP" name="ETAP" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1170331340171" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoCLOUDSCAPE_V51TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMENT1" name="COMMENT1" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1170331340172" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoCLOUDSCAPE_V51TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_FREQPERMISSION" name="PK_FREQPERMISSION" members="FREQPERMID" constraint="SQLConstraint_1170331340171"/>
+  <constraints xmi:id="SQLConstraint_1170331340171" name="PK_FREQPERMISSION" type="PRIMARYKEY" primaryKey="PK_FREQPERMISSION"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="projecttypes" name="projecttypes" primaryKey="projecttypes_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="projecttype" name="projecttype">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987177">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987177" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="projecttypes_1" name="projecttypes" members="projecttype" constraint="SQLConstraint_1131634987177">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_ProjectDivColumns.tblxmi#FK_REF_86951_86951"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_protoactions.tblxmi#fk_ref_2613_2613"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_projects.tblxmi#fk_ref_2598_2598"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987177" name="projecttypes" type="PRIMARYKEY" primaryKey="projecttypes_1"/>
+</RDBSchema:RDBTable>

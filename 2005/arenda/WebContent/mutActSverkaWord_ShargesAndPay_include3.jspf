@@ -1,0 +1,346 @@
+<!-- AktSverkaShargesAndPay SubReport -->
+<%
+	boolean suppressShargesAndPay= (aform.getTable5().size()>0)?false:true;
+	String executor ="";
+    String customer ="";
+	Integer codeResource = new Integer(0);
+    java.math.BigDecimal startSaldoMain = new java.math.BigDecimal(0); 
+	java.math.BigDecimal startNdsSaldoMain = new java.math.BigDecimal(0); 
+	if(!suppressShargesAndPay){
+		com.hps.july.arenda.valueobject.SverkaChrgAndPayValueObject vo = (com.hps.july.arenda.valueobject.SverkaChrgAndPayValueObject)aform.getTable5().get(0);
+		request.setAttribute("vo", vo);
+		executor = vo.getExecutor();
+	    customer = vo.getCustomer();
+        startSaldoMain = vo.getStartSaldoMain();
+		startNdsSaldoMain = vo.getStartNdsSaldoMain();
+		codeResource = vo.getCodeResource();
+%>
+<!-- Group header Start-->
+<P>
+<%--
+<b><bean:write name="vo" property="resName" filter="true"/></b><br>
+--%>
+      <%if(startSaldoMain.intValue() < 0) {%>
+<bean:message key="label.mutactword.debt"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=customer%>&nbsp;
+<bean:message key="label.mutactword.state_on"/>&nbsp;<july:datewrite name="vo" property="dateStartAkt" shortformat="true"/>&nbsp;
+<bean:message key="label.mutactword.sostavliaet"/>
+      <%} else {%> 
+<bean:message key="label.mutactword.debt"/>&nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=executor%>&nbsp;
+<bean:message key="label.mutactword.state_on"/>&nbsp;<july:datewrite name="vo" property="dateStartAkt" shortformat="true"/>&nbsp;
+<bean:message key="label.mutactword.sostavliaet"/>
+      <%}%>
+<july:numberwrite name="vo" property="startSaldoMain" fractdigits="2"/><bean:write name="vo" property="mainCurr" filter="true"/><br>
+      <%if(startNdsSaldoMain.intValue() == 0) {%>
+      <%} else {%>
+<bean:message key="label.mutactword.nds"/> <july:numberwrite name="vo" property="startNdsSaldoMain" fractdigits="2"/>
+<bean:write name="vo" property="mainCurr" filter="true"/>
+	  <%}%>
+<P>&nbsp;</P>
+<table border=1 style='border-collapse:collapse;border:none;mso-border-alt:solid silver .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+<tr bgcolor="#EAEAEA">
+	<td rowspan="3" align="center" valign="top" style='border:solid silver .5pt;'><bean:message key="label.mutactword.periods"/></td>
+	<td rowspan="2" colspan="5" valign="top" align="center" style='border:solid silver .5pt;'>Начислено</td> 	
+	<td colspan="4" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.oplacheno"/></td>
+<%--
+	<td rowspan="2" colspan="3" align="center"  valign="top" style='border:solid silver .5pt;'><bean:message key="label.mutactword.oplacheno"/> в <bean:write name="vo" property="mainCurr" filter="true"/></td>
+--%>
+</tr>
+<tr bgcolor="#EAEAEA">
+    <td rowspan= "2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.data"/><br><bean:message key="label.mutactword.platega"/></td>
+	<td rowspan= "2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.numb"/><br><bean:message key="label.mutactword.platega"/></td>
+	<td colspan= "2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.in_rub"/></td>
+</tr>
+<tr bgcolor="#EAEAEA">
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.curency"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.rate"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/> в <bean:write name="vo" property="mainCurr"filter="true"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds"/></td>
+<%--
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.rate"/></td>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds"/></td>
+--%>
+</tr>
+<!-- Group header End-->
+		<%
+			java.math.BigDecimal sum_sumCharge = new java.math.BigDecimal(0);
+		    java.math.BigDecimal sum_ndsCharge = new java.math.BigDecimal(0);
+	        java.math.BigDecimal sum_mainSumCharge = new java.math.BigDecimal(0);
+            java.math.BigDecimal sum_mainNdsCharge = new java.math.BigDecimal(0);
+			java.math.BigDecimal sum_sumRubPay = new java.math.BigDecimal(0);
+			java.math.BigDecimal sum_ndsRubPay = new java.math.BigDecimal(0);
+			java.math.BigDecimal sum_sumMainPay	 = new java.math.BigDecimal(0);
+			java.math.BigDecimal sum_ndsMainPay	 = new java.math.BigDecimal(0);
+			java.math.BigDecimal endSaldoMain = new java.math.BigDecimal(0); 
+			java.math.BigDecimal endNdsSaldoMain = new java.math.BigDecimal(0); 
+			java.util.Iterator table5 = aform.getTable5().iterator();
+			while (table5.hasNext()) {
+				com.hps.july.arenda.valueobject.SverkaChrgAndPayValueObject vo5
+					          = (com.hps.july.arenda.valueobject.SverkaChrgAndPayValueObject)table5.next();
+				request.setAttribute("vo", vo5);
+				if( codeResource.compareTo(vo5.getCodeResource()) != 0 ) {
+		%>
+<!-- Group Footer Start -->
+<tr>
+    <td align="center"> <b><bean:message key="label.mutactword.itogo"/>:</b> </td>
+	<td align = "right">
+	   <logic:notEqual name="sum_sumCharge" value="0">
+	     <july:numberwrite name="sum_sumCharge" fractdigits="2"/>
+       </logic:notEqual>
+	</td>
+	<td align = "right">
+	   <logic:notEqual name="sum_ndsCharge" value="0">
+	     <july:numberwrite name="sum_ndsCharge" fractdigits="2"/>
+       </logic:notEqual>
+	</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td align = "right">
+	  <logic:notEqual name="sum_mainSumCharge" value="0">
+	     <july:numberwrite name="sum_mainSumCharge" fractdigits="2"/>
+      </logic:notEqual>
+	</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td align = "right">
+	   <logic:notEqual name="sum_sumRubPay" value="0">
+	     <july:numberwrite name="sum_sumRubPay" fractdigits="2"/>
+       </logic:notEqual>
+	</td>
+	<td align = "right">
+	   <logic:notEqual name="sum_ndsRubPay" value="0">
+	     <july:numberwrite name="sum_ndsRubPay" fractdigits="2"/>
+       </logic:notEqual>
+	</td>
+<%--
+	<td>&nbsp;</td>
+	<td align = "right">
+	  <logic:notEqual name="sum_sumMainPay" value="0">
+	    <july:numberwrite name="sum_sumMainPay" fractdigits="2"/>
+      </logic:notEqual>
+	</td>
+	<td align = "right">
+	  <logic:notEqual name="sum_ndsMainPay" value="0">
+	    <july:numberwrite name="sum_ndsMainPay" fractdigits="2"/>
+      </logic:notEqual>
+	</td>
+--%>
+</tr>
+</table>
+          <%if(endSaldoMain.intValue() < 0) {%>
+<bean:message key="label.mutactword.debt"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=customer%>&nbsp;
+<bean:message key="label.mutactword.state_on"/>&nbsp;<july:datewrite name="vo" property="dateEndAkt" shortformat="true"/>&nbsp;
+<bean:message key="label.mutactword.sostavliaet"/>&nbsp;<july:numberwrite name="endSaldoMain" fractdigits="2"/>&nbsp;<bean:write name="vo" property="mainCurr"
+filter="true"/>
+          <%} else {%> 
+<bean:message key="label.mutactword.debt"/>&nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=executor%>&nbsp;
+<bean:message key="label.mutactword.state_on"/>&nbsp;<july:datewrite name="vo" property="dateEndAkt" shortformat="true"/>&nbsp;
+<bean:message key="label.mutactword.sostavliaet"/>&nbsp;<july:numberwrite name="endSaldoMain" fractdigits="2"/>&nbsp;<bean:write name="vo" property="mainCurr"
+filter="true"/>
+          <%}%>
+
+ 		<logic:present name="vo" property="endNdsSaldoMain">
+			<logic:notEqual name="vo" property="endNdsSaldoMain" value="0">
+<bean:message key="label.mutactword.nds"/> <july:numberwrite name="endNdsSaldoMain" fractdigits="2"/>&nbsp;<bean:write name="vo" property="mainCurr" filter="true"/>
+			</logic:notEqual> 
+		</logic:present> 
+
+ 		<logic:present name="vo" property="sumRubDifference">
+			<logic:notEqual name="vo" property="sumRubDifference" value="0">
+<P><bean:message key="label.mutactword.summ_raznost"/> <july:numberwrite name="vo" property="sumRubDifference" fractdigits="2"/>&nbsp;руб.
+			</logic:notEqual> 
+		</logic:present> 
+<!-- Group Footer End --> 
+        <%
+		           executor = vo5.getExecutor();
+	               customer = vo5.getCustomer();
+				   startSaldoMain = vo5.getStartSaldoMain();
+				   startNdsSaldoMain = vo.getStartNdsSaldoMain();
+				   codeResource = vo5.getCodeResource();
+				   sum_sumCharge = new java.math.BigDecimal(0);
+				   sum_ndsCharge = new java.math.BigDecimal(0);
+				   sum_mainSumCharge = new java.math.BigDecimal(0);
+				   sum_mainNdsCharge = new java.math.BigDecimal(0);
+				   sum_sumRubPay = new java.math.BigDecimal(0);
+				   sum_ndsRubPay = new java.math.BigDecimal(0);
+				   sum_sumMainPay	 = new java.math.BigDecimal(0);
+				   sum_ndsMainPay	 = new java.math.BigDecimal(0);
+		%>
+<!-- Group header Start-->
+<P>
+<b><bean:write name="vo" property="resName" filter="true"/></b><br>
+      <%if(startSaldoMain.intValue() < 0) {%>
+<bean:message key="label.mutactword.debt"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=customer%>&nbsp;
+<bean:message key="label.mutactword.state_on"/>&nbsp;<july:datewrite name="vo" property="dateStartAkt" shortformat="true"/>&nbsp;
+<bean:message key="label.mutactword.sostavliaet"/>
+      <%} else {%> 
+<bean:message key="label.mutactword.debt"/>&nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=executor%>&nbsp;
+<bean:message key="label.mutactword.state_on"/>&nbsp;<july:datewrite name="vo" property="dateStartAkt" shortformat="true"/>&nbsp;
+<bean:message key="label.mutactword.sostavliaet"/>
+      <%}%>
+<july:numberwrite name="vo" property="startSaldoMain" fractdigits="2"/><bean:write name="vo" property="mainCurr" filter="true"/><br>
+      <%if(startNdsSaldoMain.intValue() == 0) {%>
+      <%} else {%>
+<bean:message key="label.mutactword.nds"/> <july:numberwrite name="vo" property="startNdsSaldoMain" fractdigits="2"/>
+<bean:write name="vo" property="mainCurr" filter="true"/>
+	  <%}%>
+<P>&nbsp;</P>
+<table border=1 style='border-collapse:collapse;border:none;mso-border-alt:solid silver .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+<tr bgcolor="#EAEAEA">
+	<td rowspan="3" align="center" valign="top" style='border:solid silver .5pt;'><bean:message key="label.mutactword.periods"/></td>
+	<td rowspan="2" colspan="5" valign="top" align="center" style='border:solid silver .5pt;'>Начислено</td> 	
+	<td colspan="4" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.oplacheno"/></td>
+<%--
+	<td rowspan="2" colspan="3" align="center"  valign="top" style='border:solid silver .5pt;'><bean:message key="label.mutactword.oplacheno"/> в <bean:write name="vo" property="mainCurr" filter="true"/></td>
+--%>
+</tr>
+<tr bgcolor="#EAEAEA">
+    <td rowspan= "2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.data"/><br><bean:message key="label.mutactword.platega"/></td>
+	<td rowspan= "2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.numb"/><br><bean:message key="label.mutactword.platega"/></td>
+	<td colspan= "2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.in_rub"/></td>
+</tr>
+<tr bgcolor="#EAEAEA">
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.curency"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.rate"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/> в <bean:write name="vo" property="mainCurr"filter="true"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds"/></td>
+<%--
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.rate"/></td>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds"/></td>
+--%>
+</tr>
+<!-- Group header End-->
+		       <%}%>
+<!-- Detail Start -->
+<tr>
+	<td style='border:solid silver .5pt;'>
+       <july:datewrite name="vo" property="periodStart" shortformat="true"/> - <july:datewrite name="vo" property="periodEnd" shortformat="true"/>
+	</td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="sumCharge" fractdigits="2"/></td>
+    <td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="ndsCharge" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><bean:write name="vo" property="currCharge" filter="true"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="rateCharge"  fractdigits="4"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="mainSumCharge" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;'><july:datewrite name="vo" property="payDate" shortformat="true"/></td>
+	<td style='border:solid silver .5pt;'><bean:write name="vo" property="payNumber" filter="true"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="sumRubPay"  fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="ndsRubPay"  fractdigits="2"/></td>
+<%--
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="rateMainPay" fractdigits="4"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="sumMainPay"  fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="vo" property="ndsMainPay"  fractdigits="2"/></td>
+--%>
+</tr>
+<!-- Detail End -->
+		 <%
+ 			  if(vo5.getSumCharge() != null)
+			     sum_sumCharge = sum_sumCharge.add(vo5.getSumCharge());
+		      request.setAttribute("sum_sumCharge", sum_sumCharge);
+ 			  if(vo5.getNdsCharge() != null)
+			     sum_ndsCharge = sum_ndsCharge.add(vo5.getNdsCharge());
+			  request.setAttribute("sum_ndsCharge", sum_ndsCharge);
+			  if(vo5.getMainSumCharge() != null)
+			     sum_mainSumCharge = sum_mainSumCharge.add(vo5.getMainSumCharge());
+        	  request.setAttribute("sum_mainSumCharge", sum_mainSumCharge);
+			  if(vo5.getMainNdsCharge() != null)
+			     sum_mainNdsCharge = sum_mainNdsCharge.add(vo5.getMainNdsCharge());
+        	  request.setAttribute("sum_mainNdsCharge", sum_mainNdsCharge);
+			  if(vo5.getSumRubPay() != null)
+			     sum_sumRubPay = sum_sumRubPay.add(vo5.getSumRubPay());
+        	  request.setAttribute("sum_sumRubPay", sum_sumRubPay);
+			  if(vo5.getNdsRubPay() != null)
+			     sum_ndsRubPay = sum_ndsRubPay.add(vo5.getNdsRubPay());
+        	  request.setAttribute("sum_ndsRubPay", sum_ndsRubPay);
+			  if(vo5.getSumMainPay() != null)
+			     sum_sumMainPay = sum_sumMainPay.add(vo5.getSumMainPay());
+        	  request.setAttribute("sum_sumMainPay", sum_sumMainPay);
+			  if(vo5.getNdsMainPay() != null)
+			     sum_ndsMainPay = sum_ndsMainPay.add(vo5.getNdsMainPay());
+        	  request.setAttribute("sum_ndsMainPay", sum_ndsMainPay);
+			  endSaldoMain = vo5.getEndSaldoMain();
+			  request.setAttribute("endSaldoMain", endSaldoMain.abs());
+			  endNdsSaldoMain = vo5.getEndNdsSaldoMain();
+			  request.setAttribute("endNdsSaldoMain", endNdsSaldoMain.abs());
+			}//end while
+		  %>
+<!-- Group Footer Start -->
+<tr>
+    <td align="center"> <b><bean:message key="label.mutactword.itogo"/>:</b> </td>
+	<td align = "right">
+	   <logic:notEqual name="sum_sumCharge" value="0">
+	     <july:numberwrite name="sum_sumCharge" fractdigits="2"/>
+       </logic:notEqual>
+	</td>
+	<td align = "right">
+	   <logic:notEqual name="sum_ndsCharge" value="0">
+	     <july:numberwrite name="sum_ndsCharge" fractdigits="2"/>
+       </logic:notEqual>
+	</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td align = "right">
+	  <logic:notEqual name="sum_mainSumCharge" value="0">
+	     <july:numberwrite name="sum_mainSumCharge" fractdigits="2"/>
+      </logic:notEqual>
+	</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td align = "right">
+	   <logic:notEqual name="sum_sumRubPay" value="0">
+	     <july:numberwrite name="sum_sumRubPay" fractdigits="2"/>
+       </logic:notEqual>
+	</td>
+	<td align = "right">
+	   <logic:notEqual name="sum_ndsRubPay" value="0">
+	     <july:numberwrite name="sum_ndsRubPay" fractdigits="2"/>
+       </logic:notEqual>
+	</td>
+<%--
+	<td>&nbsp;</td>
+	<td align = "right">
+	  <logic:notEqual name="sum_sumMainPay" value="0">
+	    <july:numberwrite name="sum_sumMainPay" fractdigits="2"/>
+      </logic:notEqual>
+	</td>
+	<td align = "right">
+	  <logic:notEqual name="sum_ndsMainPay" value="0">
+	    <july:numberwrite name="sum_ndsMainPay" fractdigits="2"/>
+      </logic:notEqual>
+	</td>
+--%>
+</tr>
+</table>
+<%--
+          <%if(endSaldoMain.intValue() < 0) {%>
+<bean:message key="label.mutactword.debt"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=customer%>&nbsp;
+<bean:message key="label.mutactword.state_on"/>&nbsp;<july:datewrite name="vo" property="dateEndAkt" shortformat="true"/>&nbsp;
+<bean:message key="label.mutactword.sostavliaet"/>&nbsp;<july:numberwrite name="endSaldoMain" fractdigits="2"/>&nbsp;<bean:write name="vo" property="mainCurr"
+filter="true"/>
+          <%} else {%> 
+<bean:message key="label.mutactword.debt"/>&nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=executor%>&nbsp;
+<bean:message key="label.mutactword.state_on"/>&nbsp;<july:datewrite name="vo" property="dateEndAkt" shortformat="true"/>&nbsp;
+<bean:message key="label.mutactword.sostavliaet"/>&nbsp;<july:numberwrite name="endSaldoMain" fractdigits="2"/>&nbsp;<bean:write name="vo" property="mainCurr"
+filter="true"/>
+          <%}%>
+
+ 		<logic:present name="vo" property="endNdsSaldoMain">
+			<logic:notEqual name="vo" property="endNdsSaldoMain" value="0">
+<bean:message key="label.mutactword.nds"/> <july:numberwrite name="endNdsSaldoMain" fractdigits="2"/>&nbsp;<bean:write name="vo" property="mainCurr" filter="true"/>
+			</logic:notEqual> 
+		</logic:present> 
+--%>
+ 		<logic:present name="vo" property="sumRubDifference">
+			<logic:notEqual name="vo" property="sumRubDifference" value="0">
+<P><bean:message key="label.mutactword.summ_raznost"/> <july:numberwrite name="vo" property="sumRubDifference" fractdigits="2"/>&nbsp;руб.
+			</logic:notEqual> 
+		</logic:present> 
+<!-- Group Footer End --> 
+</P>
+<%}%>

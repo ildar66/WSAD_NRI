@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leasemutcontracts" name="leasemutcontracts" primaryKey="leasemutcontracts_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="reglament" name="reglament">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987047">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="contract" name="contract">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987048">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987049">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leasemutcontracts_1" name="leasemutcontracts" members="reglament contract resource" constraint="SQLConstraint_1131634987047"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_36323_36323" name="FK_REF_36323_36323" members="resource" constraint="SQLConstraint_1131634987048">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resources.tblxmi#resources_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_MLDOC_15246" name="FK_REF_MLDOC_15246" members="reglament" constraint="SQLConstraint_1131634987049">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasemutualrglmnt.tblxmi#leasemutualrglmnt_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_MUTCO_16568" name="FK_REF_MUTCO_16568" members="contract" constraint="SQLConstraint_1131634987050">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasecontracts.tblxmi#leasecontracts_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987047" name="leasemutcontracts" type="PRIMARYKEY" primaryKey="leasemutcontracts_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987048" name="FK_REF_36323_36323" type="FOREIGNKEY" referenceByKey="FK_REF_36323_36323"/>
+  <constraints xmi:id="SQLConstraint_1131634987049" name="FK_REF_MLDOC_15246" type="FOREIGNKEY" referenceByKey="FK_REF_MLDOC_15246"/>
+  <constraints xmi:id="SQLConstraint_1131634987050" name="FK_REF_MUTCO_16568" type="FOREIGNKEY" referenceByKey="FK_REF_MUTCO_16568"/>
+</RDBSchema:RDBTable>

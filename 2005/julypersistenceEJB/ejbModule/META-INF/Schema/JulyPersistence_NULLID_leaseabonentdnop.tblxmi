@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leaseabonentdnop" name="leaseabonentdnop" primaryKey="leaseabonentdnop_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="idabonentdnop" name="idabonentdnop">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986787">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasebill" name="leasebill">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986788">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="paypos" name="paypos">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986789">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sumlinkusd" name="sumlinkusd">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986787" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="flagworknri" name="flagworknri">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986787" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="recordstatus" name="recordstatus">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986788" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leaseabonentdnop_1" name="leaseabonentdnop" members="idabonentdnop" constraint="SQLConstraint_1131634986787"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_47406_47406" name="FK_REF_47406_47406" members="leasebill" constraint="SQLConstraint_1131634986788">
+    <target href="META-INF/Schema/JulyPersistence_informix_abonentbills.tblxmi#abonentbills_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_47403_47403" name="FK_REF_47403_47403" members="paypos" constraint="SQLConstraint_1131634986789">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_abonentpayments.tblxmi#abonentpayments_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986787" name="leaseabonentdnop" type="PRIMARYKEY" primaryKey="leaseabonentdnop_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986788" name="FK_REF_47406_47406" type="FOREIGNKEY" referenceByKey="FK_REF_47406_47406"/>
+  <constraints xmi:id="SQLConstraint_1131634986789" name="FK_REF_47403_47403" type="FOREIGNKEY" referenceByKey="FK_REF_47403_47403"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="agregatecontents" name="agregatecontents" primaryKey="agregatecontents_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="agregate" name="agregate">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986947">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="agregatepart" name="agregatepart">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986948">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="qty" name="qty" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986947" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="agregatecontents_1" name="agregatecontents" members="agregate agregatepart" constraint="SQLConstraint_1131634986947"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_6552_6552" name="FK_REF_6552_6552" members="agregatepart" constraint="SQLConstraint_1131634986948">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_storagecards.tblxmi#storagecards_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_6548_6548" name="FK_REF_6548_6548" members="agregate" constraint="SQLConstraint_1131634986949">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_storagecards.tblxmi#storagecards_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986947" name="agregatecontents" type="PRIMARYKEY" primaryKey="agregatecontents_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986948" name="FK_REF_6552_6552" type="FOREIGNKEY" referenceByKey="FK_REF_6552_6552"/>
+  <constraints xmi:id="SQLConstraint_1131634986949" name="FK_REF_6548_6548" type="FOREIGNKEY" referenceByKey="FK_REF_6548_6548"/>
+</RDBSchema:RDBTable>

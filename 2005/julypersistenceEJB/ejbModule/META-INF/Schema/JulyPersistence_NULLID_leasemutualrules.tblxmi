@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leasemutualrules" name="leasemutualrules" primaryKey="leasemutualrules_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986697">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="chargedaterule" name="chargedaterule">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986697" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="paydaterule" name="paydaterule">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986698" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="reglament" name="reglament">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986698">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="dopchargdatrul" name="dopchargdatrul">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986699" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ratetype" name="ratetype">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1154166308678">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leasemutualrules_1" name="leasemutualrules" members="reglament resource" constraint="SQLConstraint_1131634986697"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_MRULR_15359" name="FK_REF_MRULR_15359" members="resource" constraint="SQLConstraint_1131634986698">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resources.tblxmi#resources_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_36340_36340" name="FK_REF_36340_36340" members="reglament" constraint="SQLConstraint_1131634986699">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasemutualrglmnt.tblxmi#leasemutualrglmnt_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986697" name="leasemutualrules" type="PRIMARYKEY" primaryKey="leasemutualrules_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986698" name="FK_REF_MRULR_15359" type="FOREIGNKEY" referenceByKey="FK_REF_MRULR_15359"/>
+  <constraints xmi:id="SQLConstraint_1131634986699" name="FK_REF_36340_36340" type="FOREIGNKEY" referenceByKey="FK_REF_36340_36340"/>
+</RDBSchema:RDBTable>

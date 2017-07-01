@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Class-Path: JimiProClasses.zip 
+ JulyJournalEJB.jar 
+ common.jar 
+ cos.jar 
+ jai_codec.jar 
+ jai_core.jar 
+ jai_imageio.jar 
+ jakarta-regexp-1.4.jar 
+ julyarendaEJB.jar 
+ julyarendabillingEJB.jar 
+ julycommonEJB.jar 
+ julyinventoryEJB.jar 
+ julyjdbcEJB.jar 
+ julyorganizerEJB.jar 
+ julypersistence2EJB.jar 
+ julypersistenceEJB.jar 
+ julyplatinumEJB.jar 
+ julytrailcomEJB.jar 
+ jxl.jar 
+ struts.jar 
+ terrabyteClient.jar 
+ terrabyteCore.jar 
+ webcommon.jar
+

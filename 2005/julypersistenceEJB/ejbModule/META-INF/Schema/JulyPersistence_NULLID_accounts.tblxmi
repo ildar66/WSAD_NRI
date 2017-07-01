@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="accounts" name="accounts" primaryKey="accounts_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="accountid" name="accountid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987027">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="bank" name="bank">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987028">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="organization" name="organization">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987037">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="account" name="account">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987037" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="active" name="active" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987038" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="idvendorsite" name="idvendorsite">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1145089000674">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="accounts_1" name="accounts" members="accountid" constraint="SQLConstraint_1131634987037">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasepayrules.tblxmi#FK_REF_21894_21894"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasepayorder.tblxmi#FK_REF_22763_22763"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_4351_4351" name="fk_ref_4351_4351" members="bank" constraint="SQLConstraint_1131634987038">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_banks_1.tblxmi#c2412551"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_983_983" name="fk_ref_983_983" members="organization" constraint="SQLConstraint_1131634987039">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_organizations.tblxmi#organizations_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987037" name="accounts" type="PRIMARYKEY" primaryKey="accounts_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987038" name="fk_ref_4351_4351" type="FOREIGNKEY" referenceByKey="fk_ref_4351_4351"/>
+  <constraints xmi:id="SQLConstraint_1131634987039" name="fk_ref_983_983" type="FOREIGNKEY" referenceByKey="fk_ref_983_983"/>
+</RDBSchema:RDBTable>

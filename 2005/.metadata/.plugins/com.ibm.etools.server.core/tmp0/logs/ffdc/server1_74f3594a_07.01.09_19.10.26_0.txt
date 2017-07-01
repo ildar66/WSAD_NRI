@@ -1,0 +1,251 @@
+------Start of DE processing------ = [07.01.09 19:10:26:509 MSK] , key = java.sql.SQLException com.ibm.ejs.persistence.EJSJDBCPersister.create 319
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.persistence.EJSJDBCPersister.create
+probeid = 319
+Stack Dump = java.sql.SQLException: ??????????? ???? ? ????????? ??????? - ??? ??????????? ?? ?????? (informix.fk_ref_15837_1583712).
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.ibm.ejs.cm.cache.CachedStatement.executeUpdate(CachedStatement.java:397)
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeUpdateCommon(StatementProxy.java:518)
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:59)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPResourceSetBean_bc3c01ac._create(EJSJDBCPersisterCMPResourceSetBean_bc3c01ac.java:77)
+	at com.ibm.ejs.persistence.EJSJDBCPersister.create(EJSJDBCPersister.java:536)
+	at com.ibm.ejs.container.ContainerManagedBeanO.afterPostCreate(ContainerManagedBeanO.java:536)
+	at com.ibm.ejs.container.EJSHome.afterPostCreate(EJSHome.java:2076)
+	at com.hps.july.persistence.EJSCMPResourceSetHomeBean_bc3c01ac.afterPostCreateWrapper(EJSCMPResourceSetHomeBean_bc3c01ac.java:24)
+	at com.hps.july.persistence.EJSCMPResourceSetHomeBean_bc3c01ac.create(EJSCMPResourceSetHomeBean_bc3c01ac.java:40)
+	at com.hps.july.persistence.EJSRemoteCMPResourceSetHome_bc3c01ac.create(EJSRemoteCMPResourceSetHome_bc3c01ac.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.rmi.util.ProxyUtil$4.run(ProxyUtil.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.ibm.rmi.util.ProxyUtil.invokeWithClassLoaders(ProxyUtil.java:701)
+	at com.ibm.CORBA.iiop.ClientDelegate.invoke(ClientDelegate.java:1084)
+	at $Proxy0.create(Unknown Source)
+	at com.hps.july.persistence._ResourceSetHome_Stub.create(_ResourceSetHome_Stub.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSJDBCPersisterCMPResourceSetBean_bc3c01ac
+com.hps.july.persistence.EJSJDBCPersisterCMPResourceSetBean_bc3c01ac@1e921955
+
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.persistence.EJSJDBCPersister.create
+probeid = 319
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSJDBCPersisterCMPResourceSetBean_bc3c01ac
+  finderObject = null
+  genericFindInsertPoints[2] = {432,191}
+  genericFindSqlString = (SELECT T2.mainpartqty, T2.resourceset, T2.type, T2.name, T2.resourcesetclass, T2.nfsitem_id, T2.mainpart, CAST(NULL AS DECIMAL(5, 0)) FROM resourcesets  T2 WHERE T2.resourcesetclass = 0 AND )  UNION ALL (SELECT T2.mainpartqty, T2.resourceset, T2.type, T2.name, T2.resourcesetclass, T2.nfsitem_id, T2.mainpart, T1.power FROM powersupplyset  T1, resourcesets  T2 WHERE T2.resourceset = T1.resourceset AND T2.resourcesetclass = 1 AND ) 
+  serObj = null
+  _loadForUpdateString = (SELECT T2.mainpartqty, T2.resourceset, T2.type, T2.name, T2.resourcesetclass, T2.nfsitem_id, T2.mainpart, CAST(NULL AS DECIMAL(5, 0)) FROM resourcesets  T2 WHERE T2.resourcesetclass = 0 AND T2.resourceset = ?)  UNION ALL (SELECT T2.mainpartqty, T2.resourceset, T2.type, T2.name, T2.resourcesetclass, T2.nfsitem_id, T2.mainpart, T1.power FROM powersupplyset  T1, resourcesets  T2 WHERE T2.resourceset = T1.resourceset AND T2.resourcesetclass = 1 AND T2.resourceset = ?)  FOR UPDATE
+  _loadString = (SELECT T2.mainpartqty, T2.resourceset, T2.type, T2.name, T2.resourcesetclass, T2.nfsitem_id, T2.mainpart, CAST(NULL AS DECIMAL(5, 0)) FROM resourcesets  T2 WHERE T2.resourcesetclass = 0 AND T2.resourceset = ?)  UNION ALL (SELECT T2.mainpartqty, T2.resourceset, T2.type, T2.name, T2.resourcesetclass, T2.nfsitem_id, T2.mainpart, T1.power FROM powersupplyset  T1, resourcesets  T2 WHERE T2.resourceset = T1.resourceset AND T2.resourcesetclass = 1 AND T2.resourceset = ?) 
+  _storeString = UPDATE resourcesets  SET mainpartqty = ?, type = ?, name = ?, resourcesetclass = ?, nfsitem_id = ?, mainpart = ? WHERE resourceset = ?
+  _removeString = DELETE FROM resourcesets  WHERE resourceset = ?
+  _createString = INSERT INTO resourcesets (resourceset, mainpartqty, type, name, resourcesetclass, nfsitem_id, mainpart) VALUES (?, ?, ?, ?, ?, ?, ?)
+  class$com$ibm$ejs$persistence$EJSJDBCPersister = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@5fb15972
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@21a4d9cb
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@360e9948
+      soleInstance = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3ec3d948
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 34
+      clock = 34
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4bab1949
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3ec45948
+      referent = [Ljava.lang.reflect.Field;@36775972
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@259c1943
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  supportsKeepUpdateLocks = false
+  supportsSelectForUpdate = true
+  intDSHelper = null
+  dshelperMetadata = null
+  dshelper = null
+  newDataSource = false
+  dbPassword = null
+  dbUser = null
+  dataSource = 
+    class$com$ibm$ejs$cm$JDBC1PhaseRF = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@6212d972
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.cm.JDBC1PhaseRF
+    class$com$ibm$ejs$cm$DataSourceImpl = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@6728d972
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc2 = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ws.runtime.runtime
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.cm.MBeans
+    attrs = com.ibm.ejs.cm.CMPropertiesImpl@4386194f
+    source = com.ibm.ejs.cm.pool.ConnectionPool@542a9940
+    collab = 
+      class$com$ibm$ws$management$collaborator$DefaultRuntimeCollaborator = java.lang.Class@35bfd948
+      bridge = null
+      runtimeObjName = cells/localhost/nodes/localhost/servers/server1/resources.xml#WAS40DataSource_1144741586767
+      runtimeObj = this.dataSource
+      tc = com.ibm.ejs.ras.TraceComponent@54b39944
+      class$com$ibm$websphere$management$RuntimeCollaborator = java.lang.Class@360f1948
+      mbeanName = javax.management.ObjectName@26975940
+      modelMBean = javax.management.modelmbean.RequiredModelMBean@22771940
+  jdbcDataSource = null
+  schemaName = null
+  home = com.hps.july.persistence.EJSCMPResourceSetHomeBean_bc3c01ac@366e1940
+  cvThreadLocal = 
+    index = 14
+    count = 15
+    HASH_INCREMENT = 1640531527
+    nextHashCode = 1584028597
+    threadLocalHashCode = 1971305554
+  ivCMPWarningLogged = false
+  ivCMPAutoCommitWarningLogged = false
+  tc2 = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.resources.CONMMessages
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ejs.persistence.EJSJDBCPersister$DataStoreHelper
+  CLASS_NAME = com.ibm.ejs.persistence.EJSJDBCPersister
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.container.container
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ejs.persistence.EJSJDBCPersister
+

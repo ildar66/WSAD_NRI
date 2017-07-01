@@ -1,0 +1,21 @@
+<!-- Темповые данные -->
+<% 
+	Object [] columns = engine.getColumns();
+	Object [][] data = engine.getData();
+	//System.out.println(data.length);
+%>
+<P> <B>Колонки:</B>
+<%for (int i = 0; i < columns.length; i++){%>
+	<BR><%= i + ") " +columns[i]%>
+<%}%>
+</P> 
+<P> <B>Данные для <%= ((java.lang.Long)engine.getPrompt(0)).intValue() %>:</B><BR>
+<% for (int i = 0; i < data.length; i++) { %>
+		<B><%= "row " + i  %></B><BR>
+   <% for (int j = 0; j < data[i].length; j++) { %>
+        <%= j + ") " + data[i][j] + ";     " %><BR>
+   <% } %>
+	<BR>
+<% } %>
+</P>
+<!-- end Темповые данные -->

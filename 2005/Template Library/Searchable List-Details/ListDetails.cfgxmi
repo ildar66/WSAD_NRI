@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:ProjectConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="model.xmi" xmlns:roles="roles.xmi" xmlns:visual="visual.xmi" xmlns:core="core.xmi" xmi:id="ProjectConfiguration_1" isStylesheetConfigurable="true" isLogoConfigurable="false" isRoleConfigurable="true">
+  <Configuration xmi:id="Configuration_26" isExtensible="true" description="...">
+   <RADBase xmi:type="core:Trigger" href="ListDetails.icxmi#Trigger_8"/>
+    <Role href="ListDetails.rolxmi#Role_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_36" isExtensible="true" description="...">
+   <RADBase xmi:type="core:BusinessLogicUnit" href="ListDetails.icxmi#BusinessLogicUnit_5"/>
+    <Role href="ListDetails.rolxmi#Role_4"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_32" isExtensible="true" description="...">
+   <RADBase xmi:type="core:Trigger" href="ListDetails.icxmi#Trigger_4"/>
+    <Role href="ListDetails.rolxmi#Role_2"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_2" isExtensible="true" description="This page presents a list of item records with Details, and optional Create and Delete buttons.">
+    <RADBase xmi:type="core:InteractionUnit" href="ListDetails.icxmi#InteractionUnit_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_3" isExtensible="true" description="This page presents a list of item records with Details, and optional Create and Delete buttons.">
+   <RADBase xmi:type="core:Title" href="ListDetails.icxmi#Title_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_5" isExtensible="true" description="This page presents the details of a selected record. In this view users can perform different CRUD operations, according to the features you selected.">
+    <RADBase xmi:type="core:InteractionUnit" href="ListDetails.icxmi#InteractionUnit_2"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_6" isExtensible="true" description="This page presents the details of a selected record. In this view users can perform different CRUD operations, according to the features you selected.">
+    <RADBase xmi:type="core:Title" href="ListDetails.icxmi#Title_2"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_7" isExtensible="true" description="Users are presented with a list of item records.">
+     <RADBase xmi:type="core:ListView" href="ListDetails.icxmi#ListView_1"/>
+  </Configuration>
+  <Configuration xmi:type="model:DataSourceConfiguration" xmi:id="DataSourceConfiguration_1" isExtensible="true" description="This data source stores user records." canBeMapped="true">
+    <RADBase xmi:type="core:DataSource" href="models\Users.dsxmi#DataSource_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_8" isExtensible="true" description="...">
+    <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_10" isExtensible="true" description="Users are presented with the details of a selected record.">
+    <RADBase xmi:type="core:FormView" href="ListDetails.icxmi#FormView_1"/>
+  </Configuration>
+
+
+  <Configuration xmi:id="Configuration_1011211" isExtensible="false" description="Users can enter search criteria, based on a Category.">
+    <RADBase xmi:type="core:FormView" href="ListDetails.icxmi#FormView_2"/>
+  </Configuration>
+
+
+  <Configuration xmi:id="Configuration_1011212" isExtensible="false" description="Users are presented with a link to the list of item records.">
+    <RADBase xmi:type="core:FormView" href="ListDetails.icxmi#FormView_10"/>
+  </Configuration>
+
+
+  <Configuration xmi:id="Configuration_16" isExtensible="true" description="...">
+    <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_2"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_17" isExtensible="true" description="...">
+    <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_3"/>
+    <Role href="ListDetails.rolxmi#Role_4"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_18" isExtensible="true" description="...">
+     <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_4"/>
+     <Role href="ListDetails.rolxmi#Role_2"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_19" isExtensible="true" description="...">
+   <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_5"/>
+   <Role href="ListDetails.rolxmi#Role_3"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_20" isExtensible="true" description="...">
+    <RADBase xmi:type="core:TriggerNode" href="ListDetails.icxmi#TriggerNode_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_21" isExtensible="true" description="...">
+    <RADBase xmi:type="core:TriggerNode" href="ListDetails.icxmi#TriggerNode_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_22" isExtensible="true" description="...">
+    <RADBase xmi:type="core:TriggerNode" href="ListDetails.icxmi#TriggerNode_2"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_23" isExtensible="true" description="...">
+   <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_6"/>
+    <Role href="ListDetails.rolxmi#Role_3"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_24" isExtensible="true" description="...">
+   <RADBase xmi:type="core:Trigger" href="ListDetails.icxmi#Trigger_6"/>
+    <Role href="ListDetails.rolxmi#Role_3"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_25" isExtensible="true" description="...">
+   <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_8"/>
+    <Role href="ListDetails.rolxmi#Role_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_27" isExtensible="true" description="...">
+   <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_10"/>
+    <Role href="ListDetails.rolxmi#Role_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_28" isExtensible="true" description="...">
+   <RADBase xmi:type="core:Trigger" href="ListDetails.icxmi#Trigger_10"/>
+    <Role href="ListDetails.rolxmi#Role_1"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_29" isExtensible="true" description="...">
+   <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_3"/>
+    <Role href="ListDetails.rolxmi#Role_4"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_30" isExtensible="true" description="...">
+   <RADBase xmi:type="core:Trigger" href="ListDetails.icxmi#Trigger_3"/>
+    <Role href="ListDetails.rolxmi#Role_4"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_31" isExtensible="true" description="...">
+   <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_4"/>
+    <Role href="ListDetails.rolxmi#Role_2"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_33" isExtensible="true" description="...">
+   <RADBase xmi:type="core:TriggerDisplay" href="ListDetails.icxmi#TriggerDisplay_5"/>
+    <Role href="ListDetails.rolxmi#Role_3"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_34" isExtensible="true" description="...">
+   <RADBase xmi:type="core:Trigger" href="ListDetails.icxmi#Trigger_5"/>
+    <Role href="ListDetails.rolxmi#Role_3"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_35" isExtensible="true" description="...">
+   <RADBase xmi:type="core:BusinessLogicUnit" href="ListDetails.icxmi#BusinessLogicUnit_2"/>
+    <Role href="ListDetails.rolxmi#Role_3"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_37" isExtensible="true" description="...">
+   <RADBase xmi:type="core:BusinessLogicUnit" href="ListDetails.icxmi#BusinessLogicUnit_6"/>
+    <Role href="ListDetails.rolxmi#Role_2"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_38" isExtensible="true" description="...">
+   <RADBase xmi:type="core:BusinessLogicUnit" href="ListDetails.icxmi#BusinessLogicUnit_7"/>
+    <Role href="ListDetails.rolxmi#Role_3"/>
+  </Configuration>
+  <Configuration xmi:id="Configuration_39" isExtensible="true" description="...">
+   <RADBase xmi:type="core:BusinessLogicUnit" href="ListDetails.icxmi#BusinessLogicUnit_8"/>
+    <Role href="ListDetails.rolxmi#Role_1"/>
+  </Configuration>
+
+
+  <RADProject href="ListDetails.prjxmi#RADProject_1"/>
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_1"/>
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_2"/>
+
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_4"/>
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_5"/>
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_6"/>
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_7"/>
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_8"/>
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_9"/>
+  <configurableCaptionParameters href="ListDetails.prjxmi#CaptionParameter_10"/>
+
+  <GenerationConfiguration xmi:id="GenerationConfiguration_1" isTargetPlatformConfigurable="true" targetPlatformID="com.ibm.etools.rad.codegen.struts" targetPlatformName="Web Application (Struts 1.0.2)"/>
+
+  <defaultStylesheet  xmi:type="visual:WebVisualPart" href="ListDetails.visxmi#WebVisualPart_1"/>
+  <ActiveRoles  href="ListDetails.rolxmi#Role_1"/>
+  <ActiveRoles  href="ListDetails.rolxmi#Role_2"/>
+  <ActiveRoles  href="ListDetails.rolxmi#Role_3"/>
+  <ActiveRoles  href="ListDetails.rolxmi#Role_4"/>
+</model:ProjectConfiguration>
+

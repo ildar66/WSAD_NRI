@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ratetypes" name="ratetypes" primaryKey="ratetypes_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ratetype" name="ratetype">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987007">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987007" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="basecurrency" name="basecurrency">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987008">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="ratetypes_1" name="ratetypes" members="ratetype" constraint="SQLConstraint_1131634987007">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_currencies.tblxmi#fk_ref_1026_1026"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_rates.tblxmi#fk_ref_1022_1022"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1009_1009" name="fk_ref_1009_1009" members="basecurrency" constraint="SQLConstraint_1131634987008">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_currencies.tblxmi#currencies_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987007" name="ratetypes" type="PRIMARYKEY" primaryKey="ratetypes_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987008" name="fk_ref_1009_1009" type="FOREIGNKEY" referenceByKey="fk_ref_1009_1009"/>
+</RDBSchema:RDBTable>

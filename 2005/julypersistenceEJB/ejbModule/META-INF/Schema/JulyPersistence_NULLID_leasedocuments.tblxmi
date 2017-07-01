@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leasedocuments" name="leasedocuments" primaryKey="leasedocuments_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasedocument" name="leasedocument">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986326">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docdate" name="docdate">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986326">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docnumber" name="docnumber">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986326" characterSet="800" length="30">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="doctype" name="doctype">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986327" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="operator" name="operator" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986327">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="created" name="created" allowNull="true">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1131634986326" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="modified" name="modified" allowNull="true">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1131634986327" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="createdby" name="createdby" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986328">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="modifiedby" name="modifiedby" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986329">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="regionid" name="regionid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986330">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leasedocuments_1" name="leasedocuments" members="leasedocument" constraint="SQLConstraint_1131634986326">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasetasksstarts.tblxmi#FK_REF_30210_30210"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leaserules.tblxmi#fk_ref_docru_15249"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasemutualrglmnt.tblxmi#fk_ref_docre_15248"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasemutualacts.tblxmi#fk_ref_mutad_15243"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasedocoperjornal.tblxmi#fk_ref_ojdoc_15223"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasecontracts.tblxmi#fk_ref_lcont_15255"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986326" name="leasedocuments" type="PRIMARYKEY" primaryKey="leasedocuments_1"/>
+</RDBSchema:RDBTable>

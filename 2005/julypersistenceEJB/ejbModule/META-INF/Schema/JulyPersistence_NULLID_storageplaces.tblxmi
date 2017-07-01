@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="storageplaces" name="storageplaces" primaryKey="storageplaces_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="storageplace" name="storageplace">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986997">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="division" name="division">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986998">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986997" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="address" name="address" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634986997" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="closedate" name="closedate" allowNull="true">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986997">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="type" name="type">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986998" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="operator" name="operator" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986999">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="created" name="created" allowNull="true">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1131634986997" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="modified" name="modified" allowNull="true">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1131634986998" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="createdby" name="createdby" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987000">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="modifiedby" name="modifiedby" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987001">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="storageplaces_1" name="storageplaces" members="storageplace" constraint="SQLConstraint_1131634986997">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_expedition.tblxmi#FK_REF_7442_7442"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_cardtracks.tblxmi#FK_REF_7482_7482"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_cardtracks.tblxmi#fk_ref_1116_1116"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_storagecards.tblxmi#fk_ref_1080_1080"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_storages.tblxmi#fk_ref_1044_1044"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_sitedocs2splace.tblxmi#FK_REF_93679_93679"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_documents.tblxmi#FK_REF_7466_7466"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_documents.tblxmi#FK_REF_7462_7462"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_positions.tblxmi#fk_ref_1048_1048"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_equipment.tblxmi#FK_REF_7456_7456"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1168_1168" name="fk_ref_1168_1168" members="division" constraint="SQLConstraint_1131634986998">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_divisions.tblxmi#divisions_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986997" name="storageplaces" type="PRIMARYKEY" primaryKey="storageplaces_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986998" name="fk_ref_1168_1168" type="FOREIGNKEY" referenceByKey="fk_ref_1168_1168"/>
+</RDBSchema:RDBTable>

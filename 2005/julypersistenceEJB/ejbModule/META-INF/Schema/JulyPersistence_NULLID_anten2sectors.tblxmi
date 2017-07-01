@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="anten2sectors" name="anten2sectors" primaryKey="anten2sectors_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="id_anten" name="id_anten">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987097">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="id_sect" name="id_sect">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987098">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="byhand" name="byhand">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987097" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="datasource" name="datasource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987099">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="anten2sectors_1" name="anten2sectors" members="id_anten id_sect" constraint="SQLConstraint_1131634987097"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_58689_58689" name="FK_REF_58689_58689" members="id_sect" constraint="SQLConstraint_1131634987098">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_sectors.tblxmi#sectors_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_58686_58686" name="FK_REF_58686_58686" members="id_anten" constraint="SQLConstraint_1131634987099">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_antennes.tblxmi#antennes_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987097" name="anten2sectors" type="PRIMARYKEY" primaryKey="anten2sectors_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987098" name="FK_REF_58689_58689" type="FOREIGNKEY" referenceByKey="FK_REF_58689_58689"/>
+  <constraints xmi:id="SQLConstraint_1131634987099" name="FK_REF_58686_58686" type="FOREIGNKEY" referenceByKey="FK_REF_58686_58686"/>
+</RDBSchema:RDBTable>

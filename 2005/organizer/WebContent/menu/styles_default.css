@@ -1,0 +1,133 @@
+#MainGraphMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 60px;
+	left : 10px;
+	visibility : hidden;
+}
+ 
+#DictionaryMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 60px;
+	left : 100px;
+	visibility : hidden;
+}
+#RestypeMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 80px;
+	left : 190px;
+	visibility : hidden;
+} 
+
+#ArendaMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 60px;
+	left : 200px;
+	visibility : hidden;
+} 
+#AutoprocMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 60px;
+	left : 300px;
+	visibility : hidden;
+}
+#ArendaDictMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 60px;
+	left : 300px;
+	visibility : hidden;
+}
+#BillingMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 60px;
+	left : 300px;
+	visibility : hidden;
+}
+
+
+
+
+
+ 
+
+#CommonMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 115px;
+	left : 234px;
+	visibility : hidden;
+}
+
+#NewsMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 115px;
+	left : 390px;
+	visibility : hidden;
+}  
+
+#AboutMenu  {
+	z-index : 2;
+	position : absolute;
+	top : 115px;
+	left : 487px;
+	visibility : hidden;
+} 
+
+.homePageText {
+color : #000000;
+font : 10pt Verdana;
+font-weight : bold;
+}
+
+.pageHeader {
+color : #000000;
+font : 11pt Verdana;
+font-weight : Bold;
+}
+
+.blkText {
+color : #000000;
+font : 8pt Verdana;
+font-weight : normal;
+}
+
+.blkBldText {
+color : #000000;
+font : 8pt Verdana;
+font-weight : bold;
+}
+
+.blueLink {
+text-decoration : underline;
+color : #0441A4;
+font : 8pt Verdana;
+font-weight : normal;
+}
+
+.menuLink {
+text-decoration : none;
+color : #0541A6;
+font : 8pt Verdana;
+font-weight : normal;
+}
+
+.copyrightText {
+color : #000000;
+font : 7pt Verdana;
+font-weight : normal;
+}
+
+TR.normalM {
+	BACKGROUND-COLOR: #EBEDF1; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.selectM {
+	BACKGROUND-COLOR: #EBEDF1; FONT-FAMILY: Verdana,Arial;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="i13ndatesav" name="i13ndatesav" primaryKey="i13ndatesav_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="document" name="document">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986086">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="storagecard" name="storagecard">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986087">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="oldI13nDate" name="oldI13nDate" allowNull="true">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986086">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="i13ndatesav_1" name="i13ndatesav" members="document storagecard" constraint="SQLConstraint_1131634986086"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_14115_14115" name="FK_REF_14115_14115" members="document" constraint="SQLConstraint_1131634986087">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_i13nact.tblxmi#i13nact_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_14119_14119" name="FK_REF_14119_14119" members="storagecard" constraint="SQLConstraint_1131634986088">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_storagecards.tblxmi#storagecards_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986086" name="i13ndatesav" type="PRIMARYKEY" primaryKey="i13ndatesav_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986087" name="FK_REF_14115_14115" type="FOREIGNKEY" referenceByKey="FK_REF_14115_14115"/>
+  <constraints xmi:id="SQLConstraint_1131634986088" name="FK_REF_14119_14119" type="FOREIGNKEY" referenceByKey="FK_REF_14119_14119"/>
+</RDBSchema:RDBTable>

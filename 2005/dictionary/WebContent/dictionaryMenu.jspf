@@ -1,0 +1,136 @@
+		<july:menu selectedId="<%= appState %>">
+			<july:menuitem key="label.menu.root" action="main.do" stateId="<%=APPStates.MAIN %>">
+				<july:menuselection stateId="<%=APPStates.MAIN%>"/>
+				<july:menuitem key="label.menu.restypes" action="ShowRestypeList.do?navclear=1" stateId="<%=APPStates.RTPLIST%>">
+					<july:menuselection stateId="<%=APPStates.RTPLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITRTP %>"/>
+					<july:menuselection stateId="<%=APPStates.RSTPLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITRSTP %>"/>
+				</july:menuitem>
+				<july:menuitem key="label.menu.resources" stateId="-2">
+					<july:menuitem key="label.menu.resources.basestations" action="ShowBasestationList.do?navclear=1" stateId="<%=APPStates.BASESTATION_LIST%>">
+						<july:menuselection stateId="<%=APPStates.BASESTATION_LIST %>"/>
+						<july:menuselection stateId="<%=APPStates.BASESTATION_EDIT %>"/>
+					</july:menuitem>
+					<july:menuitem key="label.menu.resources.antennas" action="ShowAntenaList.do?navclear=1" stateId="<%=APPStates.ANTENA_LIST%>">
+						<july:menuselection stateId="<%=APPStates.ANTENA_LIST %>"/>
+						<july:menuselection stateId="<%=APPStates.ANTENA_EDIT %>"/>
+					</july:menuitem>
+					<july:menuitem key="label.menu.resources.rrlantennas" action="ShowRRLResourceList.do?navclear=1" stateId="<%= APPStates.RRLANTRESOURCE_LIST %>">
+						<july:menuselection stateId="<%= APPStates.RRLANTRESOURCE_LIST %>"/>
+						<july:menuselection stateId="<%= APPStates.RRLANTRESOURCE_EDIT %>"/>
+						<july:menuselection stateId="<%= APPStates.RRLANTRESOURCE_PARAM_EDIT %>"/>
+						<july:menuselection stateId="<%= APPStates.RRLANTRESOURCE_SPEEDPARAM_EDIT %>"/>
+					</july:menuitem>
+					<july:menuitem key="label.menu.resources.repeaters" action="ShowRepeaterList.do?navclear=1" stateId="<%=APPStates.REPEATER_LIST%>">
+						<july:menuselection stateId="<%=APPStates.REPEATER_LIST %>"/>
+						<july:menuselection stateId="<%=APPStates.REPEATER_EDIT %>"/>
+					</july:menuitem>
+					<july:menuitem key="label.menu.resources.cables" action="ShowCableList.do?navclear=1" stateId="<%=APPStates.CABLE_LIST%>">
+						<july:menuselection stateId="<%=APPStates.CABLE_LIST %>"/>
+						<july:menuselection stateId="<%=APPStates.CABLE_EDIT %>"/>
+					</july:menuitem>
+					<july:menuitem key="label.menu.resources.other" action="ShowResourceList.do?navclear=1" stateId="<%=APPStates.RESLIST %>">
+						<july:menuselection stateId="<%=APPStates.RESLIST %>"/>
+						<july:menuselection stateId="<%=APPStates.EDITRES %>"/>
+						<july:menuselection stateId="<%=APPStates.TAXHLIST %>"/>
+						<july:menuselection stateId="<%=APPStates.EDITTAXH %>"/>
+						<july:menuselection stateId="<%=APPStates.EDITDBL %>"/>
+						<july:menuselection stateId="<%=APPStates.CPFLIST %>"/>
+						<july:menuselection stateId="<%=APPStates.EDITCPF %>"/>
+						<july:menuselection stateId="<%=APPStates.CPFCLIST %>"/>
+						<july:menuselection stateId="<%=APPStates.EDITCPFC %>"/>
+						<july:menuselection stateId="<%=APPStates.ANTENA_RES_EDIT %>"/>
+						<july:menuselection stateId="<%=APPStates.BASESTATION_RES_EDIT %>"/>
+						<july:menuselection stateId="<%=APPStates.CABLE_RES_EDIT %>"/>
+						<july:menuselection stateId="<%=APPStates.REPEATER_RES_EDIT %>"/>
+						<july:menuselection stateId="<%=APPStates.CHORTYPE %>"/>
+					</july:menuitem>
+					<july:menuitem key="label.menu.resources.complects" action="ShowComplectList.do?navclear=1" stateId="<%=APPStates.CPLIST%>">
+						<july:menuselection stateId="<%=APPStates.CPLIST %>"/>
+						<july:menuselection stateId="<%=APPStates.EDITCP %>"/>
+						<july:menuselection stateId="<%=APPStates.CPCLIST %>"/>
+						<july:menuselection stateId="<%=APPStates.EDITCPC %>"/>
+					</july:menuitem>
+					<july:menuitem key="label.menu.resources.invresources" action="ShowInvResourceList.do?navclear=1" stateId="<%=APPStates.INVRESOURCE_LIST %>">
+						<july:menuselection stateId="<%=APPStates.INVRESOURCE_LIST %>"/>
+					</july:menuitem>
+				</july:menuitem>
+<logic:present role="administrator">
+				<july:menuitem key="label.menu.units" action="ShowUnitList.do?navclear=1" stateId="<%=APPStates.UNITLIST %>">
+					<july:menuselection stateId="<%=APPStates.UNITLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITUNIT %>"/>
+				</july:menuitem>
+</logic:present>
+				<july:menuitem key="label.menu.tax" action="ShowTaxList.do?navclear=1" stateId="<%=APPStates.TAXLIST %>">
+					<july:menuselection stateId="<%=APPStates.TAXLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITTAX %>"/>
+				</july:menuitem>
+				<july:menuitem key="label.menu.currencies" action="ShowCurrencyList.do?navclear=1" stateId="<%=APPStates.CRNCLIST %>">
+					<july:menuselection stateId="<%=APPStates.CRNCLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITCRNC %>"/>
+					<july:menuselection stateId="<%=APPStates.CRTHLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITCRTH %>"/>
+				</july:menuitem>
+				<july:menuitem key="label.menu.ratetypes" action="ShowRatetypeList.do?navclear=1" stateId="<%=APPStates.RATPLIST %>">
+				    <july:menuselection stateId="<%=APPStates.RATPLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITRATP %>"/>
+					<july:menuselection stateId="<%=APPStates.CRTLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITCRT %>"/>
+				</july:menuitem>
+<logic:present role="administrator">
+				<july:menuitem key="label.menu.sysconst" action="ShowSysconstList.do?navclear=1" stateId="<%=APPStates.SYSCLIST %>">
+					<july:menuselection stateId="<%=APPStates.SYSCLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITSYSC %>"/>
+				</july:menuitem>
+</logic:present>
+				<july:menuitem key="label.menu.groups" action="ShowGroupList.do?navclear=1" stateId="<%=APPStates.GRPLIST %>">
+					<july:menuselection stateId="<%=APPStates.GRPLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITGRP %>"/>
+					<july:menuselection stateId="<%=APPStates.GRPPLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITGRPP %>"/>
+					<july:menuselection stateId="<%=APPStates.ORGGLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITORGG %>"/>
+					<july:menuselection stateId="<%=APPStates.GRPOLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITGRPO %>"/>
+					<july:menuselection stateId="<%=APPStates.ORGMULTI %>"/>
+				</july:menuitem>
+				<july:menuitem key="label.menu.companies" action="ShowCompanyList.do?navclear=1" stateId="<%=APPStates.COMPLIST %>">
+					<july:menuselection stateId="<%=APPStates.COMPLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.ORGLISTC %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITORGC %>"/>
+					<july:menuselection stateId="<%=APPStates.ACCLISTC %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITACCC %>"/>
+					<july:menuselection stateId="<%=APPStates.ORGGCLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITORGGC %>"/>
+				</july:menuitem>
+				<july:menuitem key="label.menu.organizations" action="ShowOrganizationListM.do?navclear=1" stateId="<%=APPStates.ORGLISTM %>">
+					<july:menuselection stateId="<%=APPStates.ORGLISTM %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITORGM %>"/>
+					<july:menuselection stateId="<%=APPStates.ACCLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITACC %>"/>
+					<july:menuselection stateId="<%=APPStates.CARS_LIST %>"/>
+					<july:menuselection stateId="<%=APPStates.CAR_EDIT %>"/>
+					<july:menuselection stateId="<%=APPStates.ORGWLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITORGW %>"/>
+				</july:menuitem>
+				<july:menuitem key="label.menu.banks" action="ShowBankList.do?navclear=1" stateId="<%=APPStates.BANKLIST %>">
+					<july:menuselection stateId="<%=APPStates.BANKLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITBANK %>"/>
+				</july:menuitem>
+				<july:menuitem key="label.menu.storages" action="ShowStorageList.do?navclear=1" stateId="<%=APPStates.STRGLIST %>">
+					<july:menuselection stateId="<%=APPStates.STRGLIST %>"/>
+					<july:menuselection stateId="<%=APPStates.EDITSTRG %>"/>
+				</july:menuitem>
+            <%
+                if(com.hps.july.util.AppUtils.isMicrostrategyAccess(request.getRemoteUser())) {
+                String url = URLUtil.getMicrostrategyURL(request);
+            %>
+            <july:menuitem key="label.menu.microstrategy.report" action='<%=url%>' stateId="-801" target="1" windowName="Microstrategy">
+                <july:menuselection stateId="-801"/>
+            </july:menuitem>
+            <%
+                }
+            %>
+			</july:menuitem>
+		</july:menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+          "http://dtdserver/dtd/struts-config_1_0.dtd">
+
+<struts-config>
+
+<!-- ========== Form Bean Definitions =================================== -->
+<form-beans>
+	<form-bean name="SiteDocListForm" type="com.hps.july.sitedoc.formbean.SiteDocListForm"/>
+	<form-bean name="SiteDocForm" type="com.hps.july.sitedoc.formbean.SiteDocForm"/>
+	<form-bean name="SiteDocPositionListForm" type="com.hps.july.sitedoc.formbean.SiteDocPositionListForm"/>
+	<form-bean name="SiteDocEquipmentListForm" type="com.hps.july.sitedoc.formbean.SiteDocEquipmentListForm"/>
+	<form-bean name="SiteDocComlineListForm" type="com.hps.july.sitedoc.formbean.SiteDocComlineListForm"/>
+	<form-bean name="SiteDocFileForm" type="com.hps.july.sitedoc.formbean.SiteDocFileForm"/>
+	<form-bean name="SiteDocTypeForm" type="com.hps.july.sitedoc.formbean.SiteDocTypeForm"/>
+	<form-bean name="SiteDocTypeListForm" type="com.hps.july.sitedoc.formbean.SiteDocTypeListForm"/>
+</form-beans>
+
+
+<!-- ========== Global Forward Definitions ============================== -->
+<global-forwards>
+	<forward name="main" path="/july.jsp"/>
+</global-forwards>
+
+
+<!-- ========== Action Mapping Definitions ============================== -->
+<action-mappings>
+	<action	path="/main"
+		type="com.hps.july.sitedoc.actionbean.ShowMainAction"
+		validate="true">
+	</action>
+
+	<action	path="/Login"
+		type="com.hps.july.sitedoc.actionbean.ShowLoginAction"
+		validate="true">
+	</action>
+
+	<action	path="/Logout"
+              type="com.hps.july.sitedoc.actionbean.ShowLogoutAction"
+	          validate="true">
+    </action>
+
+
+<!--äîêóìåíòû-->
+	<action	path="/ShowRegionDocuments"
+		type="com.hps.july.sitedoc.actionbean.ShowRegionDocumentsAction"
+		>
+	</action>
+
+	<action	path="/ShowSiteDocList"
+		type="com.hps.july.sitedoc.actionbean.ShowSiteDocListAction"
+		name="SiteDocListForm"
+		scope="session">
+	</action>
+	<action	path="/EditSiteDoc"
+		type="com.hps.july.sitedoc.actionbean.EditSiteDocAction"
+              name="SiteDocForm"
+              scope="session">
+      <forward   name="errorgoback" path="ShowSiteDocList.do" redirect="true"/>
+    </action>
+    <action   path="/ProcessSiteDoc"
+              type="com.hps.july.sitedoc.actionbean.ProcessSiteDocAction"
+              name="SiteDocForm"
+              scope="session">
+      <forward   name="success" path="ShowSiteDocList.do" redirect="true"/>
+      <forward   name="edit" path="EditSiteDoc.do?action=Edit" redirect="true"/>
+    </action>
+
+
+<!--òèïû äîêóìåíòîâ-->
+      <action   path="/ShowSiteDocTypeList"
+              type="com.hps.july.sitedoc.actionbean.ShowSiteDocTypeListAction"
+              name="SiteDocTypeListForm"
+              scope="request">
+    </action>
+    <action   path="/EditSiteDocType"
+              type="com.hps.july.jdbcpersistence.lib.EditAction"
+              name="SiteDocTypeForm"
+              scope="request">
+      <forward   name="errorgoback"      path="ShowSiteDocTypeList.do" redirect="true"/>
+    </action>
+    <action   path="/ProcessSiteDocType"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="SiteDocTypeForm"
+              scope="request">
+      <forward   name="success" path="ShowSiteDocTypeList.do" redirect="true"/>
+    </action>
+
+
+<!--ñâÿçè ñ îáúåêòàìè-->
+
+    <action   path="/ProcessEquipmentList"
+              type="com.hps.july.sitedoc.actionbean.ProcessEquipmentListAction"
+              name="SiteDocEquipmentListForm"
+              scope="session">
+		<forward   name="success" path="EditSiteDoc.do" redirect="true"/>
+    </action>
+    <action   path="/ProcessPositionList"
+              type="com.hps.july.sitedoc.actionbean.ProcessPositionListAction"
+              name="SiteDocPositionListForm"
+              scope="session">
+		<forward   name="success" path="EditSiteDoc.do" redirect="true"/>
+    </action>
+    <action   path="/ProcessComlineList"
+              type="com.hps.july.sitedoc.actionbean.ProcessComlineListAction"
+              name="SiteDocComlineListForm"
+              scope="session">
+		<forward   name="success" path="EditSiteDoc.do" redirect="true"/>
+    </action>
+
+    <action   path="/DeleteObject"
+              type="com.hps.july.sitedoc.actionbean.DeleteObjectListAction">
+		<forward   name="success" path="DeleteObject.do" redirect="true"/>
+    </action>
+
+    <action   path="/DeleteObjectList"
+	      type="com.hps.july.sitedoc.actionbean.DeleteObjectListAction">
+		<forward   name="success" path="DeleteObjectList.do" redirect="true"/>
+    </action>
+
+<!--óäàëåíèå ñïèñêà ôàéëîâ-->
+
+<action   path="/DeleteSiteDocFileList"
+              type="com.hps.july.sitedoc.actionbean.DeleteSiteDocFileListAction">
+      <forward   name="success" path="EditSiteDoc.do" redirect="true"/>
+</action>
+
+<!--ðåäàêòèðîâàíèå ôàéëà-->
+<action   path="/EditSiteDocFile"
+              type="com.hps.july.jdbcpersistence.lib.EditAction"
+              name="SiteDocFileForm"
+              scope="session">
+      <forward   name="errorgoback"      path="EditSiteDoc.do" redirect="true"/>
+</action>
+<action   path="/ProcessSiteDocFile"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="SiteDocFileForm"
+              scope="session">
+      <forward   name="success" path="EditSiteDoc.do" redirect="true"/>
+</action>
+
+<!--îòêðûòü ôàéë-->
+<action   path="/OpenFile"
+              type="com.hps.july.sitedoc.actionbean.OpenFileAction">
+</action>
+
+  </action-mappings>
+
+</struts-config>

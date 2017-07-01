@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="SITEDOC2RESOURCE" name="SITEDOC2RESOURCE" primaryKey="PK_SITEDOC2RESOURCE">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE1" name="RESOURCE1">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340250">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQRANGE" name="FREQRANGE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1170331340250" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoCLOUDSCAPE_V51TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SITEDOC" name="SITEDOC">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340251">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_SITEDOC2RESOURCE" name="PK_SITEDOC2RESOURCE" members="RESOURCE1 SITEDOC" constraint="SQLConstraint_1170331340250"/>
+  <constraints xmi:id="SQLConstraint_1170331340250" name="PK_SITEDOC2RESOURCE" type="PRIMARYKEY" primaryKey="PK_SITEDOC2RESOURCE"/>
+</RDBSchema:RDBTable>

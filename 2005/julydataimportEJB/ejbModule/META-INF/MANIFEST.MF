@@ -1,0 +1,64 @@
+Manifest-Version: 1.0
+Class-Path: julyjdbcEJB.jar
+
+Name: com/hps/july/dataimport/beans/DataImportHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: xI8MlZOHhBKPTr/ywPJgLFHIk/0=
+MD5-Digest: 0AsUSxDFoVhtbvmVC5clCw==
+
+Name: META-INF/ibm-ejb-jar-ext.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: fx/ujEh1iyoKiJlF67UNN1IXyL0=
+MD5-Digest: WUZT3T9tZqdp5gKN4+m63A==
+
+Name: com/hps/july/dataimport/beans/DataImport.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2aW4QaodkK9XdWZK13xiiOnbLy8=
+MD5-Digest: dcuvLC7w0mbWHKwFqkXinQ==
+
+Name: com/hps/july/dataimport/beans/DataImportBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: phwWvfnzhgZs94dZWE53fyQexWw=
+MD5-Digest: YFmE9aXIvnnQXUN681ipBw==
+
+Name: com/hps/july/dataimport/beans/DataImportAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ViXbWVIfV8v3AzS1r/kDQsJPBTU=
+MD5-Digest: 2bU1YV+1EwG/bcUAJ7O3Yg==
+Java-Bean: True
+
+Name: com/hps/july/dataimport/beans/DataImportBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: YmDMBeLgtjgw17MLawsxJrDQjE8=
+MD5-Digest: EWzMtttZ5na3EjhcA8F1Hw==
+
+Name: META-INF/ejb-jar.xml
+MD5-Digest: KT/YQKVDhlgmO1cg3bQY2A==
+SHA-Digest: sYMNv2iDXSeHb4wmE0J0NIieQ1k=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/dataimport/beans/DataImport.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: IdWmXRjbOz3keSFCI4ueAoSInb4=
+MD5-Digest: QUtoipwYITlaRUWsx9qbHA==
+
+Name: META-INF/ibm-ejb-access-bean.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0BK77JelXx7KQrzq4RjzpNQJBZ0=
+MD5-Digest: ldyuGsFFhxhO7lOAKABZQA==
+
+Name: com/hps/july/dataimport/beans/DataImportAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: yMW7E+SqfC71Fmr2oetTQ8ZyNjc=
+MD5-Digest: d5KqNhUuOwFhkgrv2s8SzQ==
+
+Name: META-INF/ibm-ejb-jar-bnd.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: fpSCfRnTXT1A41g6nGLjpS5H4DE=
+MD5-Digest: 4XZQozcqjHsVKqKS4V2BpA==
+
+Name: com/hps/july/dataimport/beans/DataImportHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: m2A75gN9A2VPVF8fG71qNaEFb+Q=
+MD5-Digest: 8A3/8rvfmdsgB+wDF3iMlw==
+

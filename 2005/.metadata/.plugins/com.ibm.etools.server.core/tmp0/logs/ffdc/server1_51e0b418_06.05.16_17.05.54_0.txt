@@ -1,0 +1,159 @@
+------Start of DE processing------ = [06.05.16 17:05:54:817 MSD] , key = com.ibm.ejs.persistence.EJSPersistenceException com.ibm.ejs.container.RemoteExceptionMappingStrategy.setUncheckedException 200
+Exception = com.ibm.ejs.persistence.EJSPersistenceException
+Source = com.ibm.ejs.container.RemoteExceptionMappingStrategy.setUncheckedException
+probeid = 200
+Stack Dump = com.ibm.ejs.persistence.EJSPersistenceException: find failed:; nested exception is: 
+	java.sql.SQLException: ??????? (informix.organizations) ???? ???????, ???????? ??? ?????????????.
+	at com.hps.july.persistence.EJSJDBCPersisterCMPOrganizationBean_afa7f9a6.findOurOrganizations(EJSJDBCPersisterCMPOrganizationBean_afa7f9a6.java:671)
+	at com.hps.july.persistence.EJSCMPOrganizationHomeBean_afa7f9a6.findOurOrganizations(EJSCMPOrganizationHomeBean_afa7f9a6.java:133)
+	at com.hps.july.persistence.EJSRemoteCMPOrganizationHome_afa7f9a6.findOurOrganizations(EJSRemoteCMPOrganizationHome_afa7f9a6.java:562)
+	at com.hps.july.persistence._OrganizationHome_Stub.findOurOrganizations(_OrganizationHome_Stub.java:1020)
+	at com.hps.july.persistence.OrganizationAccessBean.findOurOrganizations(OrganizationAccessBean.java:218)
+	at com.hps.july.arenda.formbean.WeArendaListForm.getCustomers(WeArendaListForm.java:241)
+	at sun.reflect.GeneratedMethodAccessor304.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at org.apache.struts.util.PropertyUtils.getSimpleProperty(PropertyUtils.java(Compiled Code))
+	at org.apache.struts.util.PropertyUtils.getNestedProperty(PropertyUtils.java(Compiled Code))
+	at org.apache.struts.util.PropertyUtils.getProperty(PropertyUtils.java(Compiled Code))
+	at com.hps.july.taglib.SelectTag.doStartTag(SelectTag.java:71)
+	at org.apache.jsp._weArendaList._jspService(_weArendaList.java:610)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java:669)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java:767)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServicingServletState.service(StrictLifecycleServlet.java:333)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.include(WebAppRequestDispatcher.java:253)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:991)
+	at org.apache.jsp._arendaGraph._jspService(_arendaGraph.java:348)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java:669)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java:767)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServicingServletState.service(StrictLifecycleServlet.java:333)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.include(WebAppRequestDispatcher.java:253)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:991)
+	at org.apache.jsp._july._jspService(_july.java:1015)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java:669)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java:767)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java(Compiled Code))
+	at org.apache.struts.action.ActionServlet.processActionForward(ActionServlet.java:1759)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1596)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java(Compiled Code))
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java(Compiled Code))
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java(Compiled Code))
+Caused by: java.sql.SQLException: ??????? (informix.organizations) ???? ???????, ???????? ??? ?????????????.
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.sendStatementQuery(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeStatementQuery(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeStatementQuery(IfxSqli.java(Inlined Compiled Code))
+	at com.informix.jdbc.IfxResultSet.executeQuery(IfxResultSet.java(Inlined Compiled Code))
+	at com.informix.jdbc.IfxStatement.executeQueryImpl(IfxStatement.java(Compiled Code))
+	at com.informix.jdbc.IfxPreparedStatement.executeQuery(IfxPreparedStatement.java(Compiled Code))
+	at com.ibm.ejs.cm.cache.CachedStatement.executeQuery(CachedStatement.java(Compiled Code))
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeQueryCommon(StatementProxy.java(Compiled Code))
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeQuery(PreparedStatementProxy.java(Compiled Code))
+	at com.hps.july.persistence.EJSJDBCPersisterCMPOrganizationBean_afa7f9a6.findOurOrganizations(EJSJDBCPersisterCMPOrganizationBean_afa7f9a6.java:667)
+	... 90 more
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.RemoteExceptionMappingStrategy
+com.ibm.ejs.container.RemoteExceptionMappingStrategy@14f4b409
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue May 16 17:05:54 MSD 2006
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@63a2340c
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#Organization
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@f0bf43c
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@ff5f43c#tid=4111
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@f0bf43c
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue May 16 17:05:54 MSD 2006

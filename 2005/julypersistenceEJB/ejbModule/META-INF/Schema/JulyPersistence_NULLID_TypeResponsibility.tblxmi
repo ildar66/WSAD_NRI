@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TypeResponsibility" name="TypeResponsibility" primaryKey="TypeResponsibility_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IdResponsibility" name="IdResponsibility">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986606">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986606" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FlagPrint" name="FlagPrint">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986607" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="TypeResponsibility_1" name="TypeResponsibility" members="IdResponsibility" constraint="SQLConstraint_1131634986606">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_projectactiontypes.tblxmi#FK_REF_89323_89323"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_WorkResponsibility.tblxmi#FK_REF_9059_9059"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986606" name="TypeResponsibility" type="PRIMARYKEY" primaryKey="TypeResponsibility_1"/>
+</RDBSchema:RDBTable>

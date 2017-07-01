@@ -1,0 +1,77 @@
+------Start of DE processing------ = [07.02.27 16:44:32:873 MSK] , key = com.ibm.ws.LocalTransaction.RolledbackException com.ibm.ejs.csi.TranStrategy.rollback 375
+Exception = com.ibm.ws.LocalTransaction.RolledbackException
+Source = com.ibm.ejs.csi.TranStrategy.rollback
+probeid = 375
+Stack Dump = com.ibm.ws.LocalTransaction.RolledbackException
+	at com.ibm.ws.LocalTransaction.LocalTranCoordImpl.cleanup(LocalTranCoordImpl.java:1073)
+	at com.ibm.ws.LocalTransaction.LocalTranCoordImpl.end(LocalTranCoordImpl.java:1131)
+	at com.ibm.ejs.csi.TranStrategy.rollback(TranStrategy.java:874)
+	at com.ibm.ejs.csi.TranStrategy.handleException(TranStrategy.java:220)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:567)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java(Compiled Code))
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:2916)
+	at com.hps.july.arenda.sessionbean.EJSRemoteStatelessLeaseSaldoProcessor_9136431c.deleteSaldo(EJSRemoteStatelessLeaseSaldoProcessor_9136431c.java:74)
+	at com.hps.july.arenda.sessionbean._LeaseSaldoProcessor_Stub.deleteSaldo(_LeaseSaldoProcessor_Stub.java:324)
+	at com.hps.july.arenda.sessionbean.LeaseSaldoProcessorAccessBean.deleteSaldo(LeaseSaldoProcessorAccessBean.java:110)
+	at com.hps.july.arenda.actionbean.SaldoProcessAction.processDelete(SaldoProcessAction.java:25)
+	at com.hps.july.web.util.AbstractProcessAction.processDelete(AbstractProcessAction.java:262)
+	at com.hps.july.web.util.AbstractProcessAction.perform(AbstractProcessAction.java:120)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:510)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.csi.NotSupported
+com.ibm.ejs.csi.NotSupported@44a29cdc
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Feb 27 16:44:33 MSK 2007
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@319e5cdf
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = com.ibm.ws.webcontainer.metadata.WebComponentMetaDataImpl@55031cea
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = CountainerTx not found for current thread
+Dump of ContinerTx from EJSDeployedSupport = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@593d1ce5
+
+  Tx Key                  = com.ibm.ws.LocalTransaction.LocalTranCoordImpl@5924dce5
+  State                   = Rolledback
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = false
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@593d1ce5
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Feb 27 16:44:33 MSK 2007

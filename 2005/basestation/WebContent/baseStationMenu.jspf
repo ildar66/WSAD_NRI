@@ -1,0 +1,156 @@
+<!-- Menu start -->
+		<table width="200" height="300">
+		<tr class="select">
+			<td class="menu" vAlign=top>
+				<% if(appHome==Applications.SITEINFO){ %>
+					<%--jsp:include page="/menu/siteinfoMenu_simple.jsp" flush="true"/--%>
+					<jsp:include page="/menu/siteinfoMenu.jsp" flush="true"/>
+				<% }else{
+					DebugSupport.printlnTest("isUserInRole admin"+request.isUserInRole("administrator"));
+					DebugSupport.printlnTest("baseStation.jsp task="+session.getAttribute("task"));
+				%>
+				<%String menuAct = "";%>
+					<july:menu selectedId="<%=state %>">
+						<july:menuitem key="menu.root.baseStation_" action="main.do?navclear=1" stateId="<%=APPStates.MAIN %>">
+							<july:menuselection stateId="<%=APPStates.MAIN %>"/>
+							<july:menuitem key="menu.baseStationList" stateId="-1">
+								<july:menuselection stateId="-1"/>
+<%menuAct = "ShowBaseStationGSM.do?navclear=1&rootapp="+Applications.BASESTATION+"&rootstate="+APPStates.BS_GSM;%>
+								<july:menuitem key="menu.baseStationGSM" action="<%=menuAct%>" stateId="<%=APPStates.BS_GSM%>">
+									<july:menuselection stateId="-2"/>
+								</july:menuitem>
+	<%menuAct = "ShowBaseStationList.do?navclear=1&rootapp="+Applications.BASESTATION+"&rootstate="+APPStates.BS_LIST;%>
+								<alex:menuitem key="menu.baseStationALL" action="<%=menuAct%>" stateId="<%=APPStates.BS_LIST%>">
+									<july:menuselection stateId="<%=APPStates.BS_LIST %>"/>
+									<july:menuselection stateId="<%=APPStates.BS_PEdit %>"/>
+									<july:menuselection stateId="<%=APPStates.BS_FVIEW %>"/>
+									<july:menuselection stateId="<%=APPStates.BS_PVIEW %>"/>
+									<july:menuselection stateId="<%=APPStates.BS_FEdit %>"/>
+									<july:menuselection stateId="<%=APPStates.POSITIONSONMAP %>"/>
+									<july:menuselection stateId="<%=APPStates.BS_EQ_LIST %>"/>
+									<july:menuselection stateId="<%=APPStates.ANTENNES_CHOICE %>"/>
+									<july:menuselection stateId="<%=APPStates.SECT_EDIT %>"/>
+									<july:menuselection stateId="<%=APPStates.SECT_COPY %>"/>
+									<july:menuselection stateId="<%=APPStates.ANT_EDIT %>"/>
+									<july:menuselection stateId="<%=APPStates.EQDETLIST %>"/>
+									<july:menuselection stateId="<%=APPStates.EQSDETLIST %>"/>
+									<july:menuselection stateId="<%=APPStates.VIEWCHANALPOWERS %>"/>
+									<july:menuselection stateId="<%= APPStates.FROMSECTOR_REPEATER_LIST %>"/>
+									<july:menuselection stateId="<%= APPStates.FROMSECTOR_REPEATER_EDIT %>"/>
+								</alex:menuitem>
+							</july:menuitem>
+<%menuAct = "ShowSwitchList.do?navclear=1&rootapp="+Applications.BASESTATION+"&rootstate="+APPStates.SwitchListForm;%>
+							<alex:menuitem key="menu.switchList" action="<%=menuAct%>" stateId="<%=APPStates.SwitchListForm%>">
+								<july:menuselection stateId="<%=APPStates.SwitchListForm %>"/>
+								<july:menuselection stateId="<%=APPStates.SwitchForm %>"/>
+								<july:menuselection stateId="<%=APPStates.SWCH_EDIT %>"/>
+								<july:menuselection stateId="<%=APPStates.SWCH_VIEW %>"/>
+								<july:menuselection stateId="<%=APPStates.SWCH_PARAMS_EDIT %>"/>
+								<july:menuselection stateId="<%=APPStates.SWCH_CONNECTED_CONTR %>"/>
+								<july:menuselection stateId="<%=APPStates.SwitchControllerForm %>"/>
+							</alex:menuitem>
+<%menuAct = "ShowControllerList.do?navclear=1&rootapp="+Applications.BASESTATION+"&rootstate="+APPStates.CONTROLLER_LIST;%>
+							<alex:menuitem key="menu.controllerlist" action="<%=menuAct%>" stateId="<%= APPStates.CONTROLLER_LIST %>">
+								<july:menuselection stateId="<%= APPStates.CONTROLLER_LIST %>"/>
+								<july:menuselection stateId="<%= APPStates.CONTROLLER_EDIT %>"/>
+								<july:menuselection stateId="<%= APPStates.CONTROLLER_DESC_EDIT %>"/>
+								<july:menuselection stateId="<%= APPStates.CONTROLLER_DESC_VIEW %>"/>
+								<july:menuselection stateId="<%= APPStates.CONTROLLER_PARAMS %>"/>
+								<july:menuselection stateId="<%= APPStates.CONTROLLER_CONNECTED_BS %>"/>
+							</alex:menuitem>
+<%menuAct = "ShowRepeaterList.do?navclear=1&rootapp="+Applications.BASESTATION+"&rootstate="+APPStates.REPEATER_LIST;%>
+							<alex:menuitem key="menu.repeaterlist" action="<%=menuAct%>" stateId="<%= APPStates.REPEATER_LIST %>">
+								<july:menuselection stateId="<%= APPStates.REPEATER_LIST %>"/>
+								<july:menuselection stateId="<%= APPStates.REPEATER_EDIT %>"/>
+							</alex:menuitem>
+<%menuAct = "ShowComlineList.do?navclear=1&rootapp="+Applications.BASESTATION+"&rootstate="+APPStates.ComlineListForm;%>
+							<alex:menuitem key="menu.comlineList" action="<%=menuAct%>" stateId="<%=APPStates.ComlineListForm%>">
+								<july:menuselection stateId="<%=APPStates.ComlineListForm %>"/>
+								<july:menuselection stateId="<%=APPStates.ComlineRForm %>"/>
+							</alex:menuitem>
+            <%
+              String trailcomUrl = com.hps.july.util.AppUtils.getNamedValueString("PathHopsTableTrailcom") + "?id=" + request.getRemoteUser();
+
+            %>
+            <july:menuitem key="label.menu.trailcom.hops" action="<%= trailcomUrl %>" stateId="-831" target="2" windowName="Trailcom">
+                <july:menuselection stateId="-831"/>
+            </july:menuitem>
+						<alex:menuitem key="xls.import" action="LoadXls.do?navclear=1" stateId="<%=APPStates.IMPORTXLS %>">
+						<%if(session.getAttribute("task")!=null&&((Integer)session.getAttribute("task")).intValue()!=3){%>
+							<july:menuselection stateId="<%=APPStates.IMPORTXLS %>"/>
+							<july:menuselection stateId="<%=APPStates.IMPORTXLSSTEP2 %>"/>
+							<july:menuselection stateId="<%=APPStates.XLSLOADRESULT %>"/>
+							<july:menuselection stateId="<%=APPStates.XLSLOADEXTENDEDRESULT %>"/>
+							<july:menuselection stateId="<%=APPStates.XLSLOADJOURNAL %>"/>
+							<july:menuselection stateId="<%=APPStates.LOADRESULTS %>"/>
+						<%}%>
+						</alex:menuitem>
+						
+						
+						<%--
+						<alex:menuitem key="xls.import.bs" action="LoadXlsBs.do?navclear=1" stateId="<%=APPStates.IMPORTXLS_BS %>">
+						<%if(session.getAttribute("task")!=null&&((Integer)session.getAttribute("task")).intValue()==3){%>
+							<july:menuselection stateId="<%=APPStates.IMPORTXLS_BS %>"/>
+							<july:menuselection stateId="<%=APPStates.XLSLOADRESULT %>"/>
+							<july:menuselection stateId="<%=APPStates.XLSLOADEXTENDEDRESULT %>"/>
+							<july:menuselection stateId="<%=APPStates.XLSLOADJOURNAL %>"/>
+							<july:menuselection stateId="<%=APPStates.LOADRESULTS %>"/>
+						<%}%>
+						</alex:menuitem>
+						--%>
+
+
+						<%if(request.isUserInRole("administrator") || request.isUserInRole("siteProjector")){%>
+						<july:menuitem key="label.export" action="ExportFile.do?navclear=1" stateId="<%=APPStates.EXPORTFILE %>">
+							<july:menuselection stateId="<%=APPStates.EXPORTFILE %>"/>
+						</july:menuitem>
+						<%}%>
+
+				<%if(request.isUserInRole("developer") || request.isUserInRole("FreqManager")){%>
+						<alex:menuitem key="menu.gkrch" action="ShowGKRCHDocList.do?navclear=1" stateId="<%=APPStates.GKRCH_LIST %>">
+							<july:menuselection stateId="<%=APPStates.GKRCH_LIST %>"/>
+							<july:menuselection stateId="<%=APPStates.GKRCH_FORM %>"/>
+							<july:menuselection stateId="<%=APPStates.GKRCH_FILE%>"/>
+							<july:menuselection stateId="<%=APPStates.DOCFILES_LIST%>"/>
+							<july:menuselection stateId="<%=APPStates.SITEDOC_FILE%>"/>
+						</alex:menuitem>
+						<alex:menuitem key="menu.rrl" action="ShowRRLDocList.do?navclear=1" stateId="<%=APPStates.RRL_LIST %>">
+							<july:menuselection stateId="<%=APPStates.RRL_LIST %>"/>
+							<july:menuselection stateId="<%=APPStates.RRL_FORM %>"/>
+						</alex:menuitem>
+						<alex:menuitem key="label.menu.frequecylicence" action="ShowFrequencyLicenceList.do?navclear=1" stateId="<%=APPStates.FREQLICENCE_LIST%>">
+							<july:menuselection stateId="<%=APPStates.FREQLICENCE_LIST %>"/>
+							<july:menuselection stateId="<%=APPStates.FREQLICENCE_FORM %>"/>
+							<july:menuselection stateId="<%=APPStates.FREQLICENCE_HIST %>"/>
+							<july:menuselection stateId="<%=APPStates.FREQLICENCE_POS_LIST %>"/>
+							<july:menuselection stateId="<%=APPStates.ETAP_FORM %>"/>
+						</alex:menuitem>
+						<alex:menuitem key="label.menu.etaptypes" action="ShowEtapTypeList.do?navclear=1" stateId="<%=APPStates.ETAPTYPE_LIST %>">
+							<july:menuselection stateId="<%=APPStates.ETAPTYPE_LIST %>"/>
+							<july:menuselection stateId="<%=APPStates.ETAPTYPE_FORM %>"/>
+						</alex:menuitem>
+						<alex:menuitem key="label.menu.reports" action="ReportBaseStation.do?navclear=1" stateId="<%=APPStates.REPORT_HAVEPLAN_LOOKUP %>">
+							<july:menuselection stateId="<%=APPStates.REPORT_HAVEPLAN_LOOKUP %>"/>
+							<july:menuselection stateId="<%=APPStates.REPORT_HAVEPLAN_SHOW %>"/>
+						</alex:menuitem>
+						<alex:menuitem key="label.menu.sforeports" action="ShowReportProtocolSfo.do?navclear=1" stateId="<%=APPStates.SFO_PROTOCOL%>">
+							<july:menuselection stateId="<%=APPStates.SFO_PROTOCOL %>"/>
+						</alex:menuitem>
+				<%}%>
+<%
+if(com.hps.july.util.AppUtils.isMicrostrategyAccess(request.getRemoteUser())) {
+String url = URLUtil.getMicrostrategyURL(request);
+%>
+						<july:menuitem key="label.menu.microstrategy.report" action='<%=url%>' stateId="-801" target="1" windowName="Microstrategy">
+							<july:menuselection stateId="-801"/>
+						</july:menuitem>
+<%
+}
+%>
+					</july:menuitem>
+				</july:menu>
+<%}%>
+			</td>
+		</tr>
+	</table>
+<!-- меню  end-->

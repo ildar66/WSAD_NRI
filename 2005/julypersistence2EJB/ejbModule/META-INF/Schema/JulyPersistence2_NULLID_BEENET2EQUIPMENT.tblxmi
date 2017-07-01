@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="BEENET2EQUIPMENT" name="BEENET2EQUIPMENT" primaryKey="PK_BEENET2EQUIPMENT">
+  <database href="META-INF/Schema/JulyPersistence2.dbxmi#JulyPersistence2"/>
+  <schema href="META-INF/Schema/JulyPersistence2_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BEENETID" name="BEENETID">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1170331340109" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="JavatoCLOUDSCAPE_V51TypeMaps.xmi#SQLCharacterStringType_250"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPMENT" name="EQUIPMENT">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1170331340109">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="PK_BEENET2EQUIPMENT" name="PK_BEENET2EQUIPMENT" members="BEENETID EQUIPMENT" constraint="SQLConstraint_1170331340109"/>
+  <constraints xmi:id="SQLConstraint_1170331340109" name="PK_BEENET2EQUIPMENT" type="PRIMARYKEY" primaryKey="PK_BEENET2EQUIPMENT"/>
+</RDBSchema:RDBTable>

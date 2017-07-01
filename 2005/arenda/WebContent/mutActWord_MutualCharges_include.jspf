@@ -1,0 +1,222 @@
+<!-- MutualCharges Table -->
+<%
+   String maincurr ="";
+   String info = "";
+   executor ="";
+   customer ="";
+   String currcontract="";
+   int isCustomerBeeline=0;
+   if(aform.getTable2().size() >0) {
+     com.hps.july.arenda.valueobject.MutualChargesValueObject mcvo = (com.hps.july.arenda.valueobject.MutualChargesValueObject)aform.getTable2().get(0);
+	 maincurr = mcvo.getMainCurr();
+	 currcontract = mcvo.getCurrContract();
+	 executor = mcvo.getExecutor();
+	 customer = mcvo.getCustomer();
+	 info = aform.getInfoForCustomer(customer);
+	 isCustomerBeeline =mcvo.getIsCustomerBeeline().intValue();
+	 //isPrintDogovorInTable logic:
+	 boolean isPrintDogovorInTable = false;
+	 String dogNumberStr = mcvo.getContractNumber();
+	 String customerStr = mcvo.getCustomer();
+	 java.util.Iterator iter = aform.getTable2().iterator();
+	 while (iter.hasNext()) {
+	   com.hps.july.arenda.valueobject.MutualChargesValueObject ob2
+	          = (com.hps.july.arenda.valueobject.MutualChargesValueObject)iter.next();
+	   if( !customerStr.equals(ob2.getCustomer()) ) {
+	   		dogNumberStr = ob2.getContractNumber();
+	   		customerStr = ob2.getCustomer();
+	   }	          
+	   if(!dogNumberStr.equals(ob2.getContractNumber())){
+	   		isPrintDogovorInTable = true;
+	   		break;
+	   }
+	 }	 
+ %>
+<!-- header start -->
+<P>
+<b><%=executor%>&nbsp;<bean:message key="label.mutactword.okazal_Debt"/>&nbsp;<%=customer%>&nbsp;по договору&nbsp;<%=info%></b>
+<table border = "1" style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+<tr bgcolor="#EAEAEA">
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.resname"/></td>
+	<%if(isPrintDogovorInTable){%>
+	<td style='border:solid silver .5pt;' colspan="2" align="center"><bean:message key="label.mutactword.Contract"/></td>
+	<%}%>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.period"/></td>
+	     <%if(isCustomerBeeline != 1) {%>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.numberAccount"/></td>
+	     <%}%>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.suma"/></td>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.curency"/></td>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.rate"/></td>
+	<td style='border:solid silver .5pt;' colspan="2" align="center">&nbsp;в&nbsp;<%= maincurr %></td>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.sumWithoutMain"/></td>
+</tr>
+<tr bgcolor="#EAEAEA">
+    <%if(isPrintDogovorInTable){%>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.numb"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.data"/></td>
+	<%}%>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+
+</tr>
+<!-- header end -->
+<%	
+     java.util.Iterator table2 = aform.getTable2().iterator();
+     java.math.BigDecimal sum_sumContract = new java.math.BigDecimal(0); //getSumMainCurr()
+	 java.math.BigDecimal sum_ndsContract = new java.math.BigDecimal(0); //getNdsMainCurr()
+	 java.math.BigDecimal sum_sumRubDifference = new java.math.BigDecimal(0); //getSumRubDifference()
+	 java.math.BigDecimal sum_Contract = new java.math.BigDecimal(0); //getSumContract()
+	 java.math.BigDecimal sum_SumWithoutMain = new java.math.BigDecimal(0); //getSumWithoutMain()
+     while (table2.hasNext()) {
+	   com.hps.july.arenda.valueobject.MutualChargesValueObject ob2
+	          = (com.hps.july.arenda.valueobject.MutualChargesValueObject)table2.next();
+       request.setAttribute("ob2", ob2);
+	   if(!customer.equals(ob2.getCustomer()) || !executor.equals(ob2.getExecutor())) {
+%>
+<!-- footer start -->
+<tr>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.itogo"/>:</td>
+	<%if(isPrintDogovorInTable){%>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	<%}%>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	       <%if(isCustomerBeeline != 1) {%>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	       <%}%>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="sum_Contract" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="sum_sumContract" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="sum_ndsContract" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="sum_SumWithoutMain" fractdigits="2"/></td>	
+</tr>
+</table>
+<%--/P--%>
+<%--
+<bean:message key="label.mutactword.itogo"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.okazal_Debt"/>&nbsp;<%=customer%>&nbsp;
+<bean:message key="label.mutactword.na_summy"/><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<july:numberwrite name="sum_sumContract" fractdigits="2"/> <%= maincurr %>&nbsp;<bean:message key="label.mutactword.nds"/>&nbsp;<%=sum_ndsContract%>
+          <%if(sum_sumRubDifference.intValue() != 0) {%>
+<BR><bean:message key="label.mutactword.summ_raznost"/>&nbsp;<july:numberwrite name="sum_sumRubDifference" fractdigits="2"/>&nbsp;<bean:message key="label.mutactword.rub"/>
+          <%}%>
+--%>
+<!-- footer end -->	
+<%
+		    maincurr = ob2.getMainCurr();
+			currcontract = ob2.getCurrContract();
+			executor = ob2.getExecutor();
+	        customer = ob2.getCustomer();
+			info = aform.getInfoForCustomer(customer);
+			isCustomerBeeline =ob2.getIsCustomerBeeline().intValue();
+			sum_sumContract = new java.math.BigDecimal(0);
+			sum_ndsContract = new java.math.BigDecimal(0);
+			sum_sumRubDifference = new java.math.BigDecimal(0);
+			sum_Contract = new java.math.BigDecimal(0);
+			sum_SumWithoutMain = new java.math.BigDecimal(0);
+%>
+<!-- header start -->
+<P>
+<b><%=executor%>&nbsp;<bean:message key="label.mutactword.okazal_Debt"/>&nbsp;<%=customer%>&nbsp;по договору&nbsp;<%=info%></b>
+<table border = "1" style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+<tr bgcolor="#EAEAEA">
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.resname"/></td>
+	<%if(isPrintDogovorInTable){%>
+	<td style='border:solid silver .5pt;' colspan="2" align="center"><bean:message key="label.mutactword.Contract"/></td>
+	<%}%>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.period"/></td>
+	     <%if(isCustomerBeeline != 1) {%>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.numberAccount"/></td>
+	     <%}%>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.suma"/></td>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.curency"/></td>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.rate"/></td>
+	<td style='border:solid silver .5pt;' colspan="2" align="center">&nbsp;в&nbsp;<%= maincurr %></td>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.sumWithoutMain"/></td>
+</tr>
+<tr bgcolor="#EAEAEA">
+    <%if(isPrintDogovorInTable){%>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.numb"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.data"/></td>
+	<%}%>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+
+</tr>
+<!-- header end -->
+      <%}%>
+<!-- DATA start -->
+<tr>
+	<td style='border:solid silver .5pt;'><bean:write name="ob2" property="resName" filter="true"/>   </td>
+	<%if(isPrintDogovorInTable){%>
+	<td style='border:solid silver .5pt;'><bean:write name="ob2" property="contractNumber" filter="true"/></td>
+	<td style='border:solid silver .5pt;'><july:datewrite name="ob2" property="contractDate" shortformat="true"/></td>
+	<%}%>
+	<td style='border:solid silver .5pt;'><july:datewrite name="ob2" property="dateStart" shortformat="true"/> - <july:datewrite name="ob2" property="dateEnd" shortformat="true"/> </td>
+	        <%if(isCustomerBeeline != 1) {%>
+	<td style='border:solid silver .5pt;'><bean:write name="ob2" property="billNumber" filter="true"/> </td>
+	        <%}%>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob2" property="sumContract" fractdigits="2"/> </td>
+	<td style='border:solid silver .5pt;'><bean:write name="ob2" property="currContract" filter="true"/></td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP>
+		<logic:present name="ob2" property="rateMainCurr">
+			<logic:notEqual name="ob2" property="rateMainCurr" value="0">
+				<july:numberwrite name="ob2" property="rateMainCurr" fractdigits="4"/>
+			</logic:notEqual> 
+		</logic:present> 
+	</td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob2" property="sumMainCurr" fractdigits="2"/> </td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob2" property="ndsMainCurr" fractdigits="2"/> </td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob2" property="sumWithoutMain" fractdigits="2"/> </td>
+</tr>
+<!-- DATA end -->
+   <%
+      if(ob2.getSumMainCurr() != null)
+        sum_sumContract = sum_sumContract.add(ob2.getSumMainCurr());
+      if(ob2.getNdsMainCurr() !=null)
+        sum_ndsContract = sum_ndsContract.add(ob2.getNdsMainCurr());
+	  if(ob2.getSumRubDifference() != null)
+		sum_sumRubDifference = sum_sumRubDifference.add(ob2.getSumRubDifference());
+	  if(ob2.getSumContract() != null)
+		sum_Contract = sum_Contract.add(ob2.getSumContract());
+	  if(ob2.getSumWithoutMain() != null)
+	  	sum_SumWithoutMain = sum_SumWithoutMain.add(ob2.getSumWithoutMain());	
+	  request.setAttribute("sum_sumContract", sum_sumContract);
+	  request.setAttribute("sum_ndsContract", sum_ndsContract);
+	  request.setAttribute("sum_sumRubDifference", sum_sumRubDifference);
+	  request.setAttribute("sum_Contract", sum_Contract);
+	  request.setAttribute("sum_SumWithoutMain", sum_SumWithoutMain);
+	  
+	}//end while
+   %>
+<!-- footer start -->
+<tr>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.itogo"/>:</td>
+	<%if(isPrintDogovorInTable){%>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	<%}%>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+ <%if(isCustomerBeeline != 1) {%>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+ <%}%>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="sum_Contract" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	<td style='border:solid silver .5pt;'>&nbsp;</td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="sum_sumContract" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="sum_ndsContract" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="sum_SumWithoutMain" fractdigits="2"/></td>
+</tr>
+</table>
+<%--/P--%>
+<%--
+<bean:message key="label.mutactword.itogo"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.okazal_Debt"/>&nbsp;<%=customer%>&nbsp;
+<bean:message key="label.mutactword.na_summy"/><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<july:numberwrite name="sum_sumContract" fractdigits="2"/> <%= maincurr %>&nbsp;<bean:message key="label.mutactword.nds"/>&nbsp;<%=sum_ndsContract%>
+          <%if(sum_sumRubDifference.intValue() != 0) {%>
+<BR><bean:message key="label.mutactword.summ_raznost"/>&nbsp;<july:numberwrite name="sum_sumRubDifference" fractdigits="2"/>&nbsp;<bean:message key="label.mutactword.rub"/>
+          <%}%>
+--%>
+<!-- footer end -->		  
+<%}%>

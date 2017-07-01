@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="informix" name="informix">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyPersistence_informix_abonentbills.tblxmi#abonentbills"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyPersistence_informix_abonentbillpos.tblxmi#abonentbillpos"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyPersistence_informix_abonbillpos2docpos.tblxmi#abonbillpos2docpos"/>
+</RDBSchema:RDBSchema>

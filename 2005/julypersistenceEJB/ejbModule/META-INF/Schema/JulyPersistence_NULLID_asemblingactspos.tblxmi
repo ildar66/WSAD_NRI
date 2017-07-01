@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="asemblingactspos" name="asemblingactspos" primaryKey="asemblingactspos_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docposition" name="docposition">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987137">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="agregateserial" name="agregateserial">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987137" characterSet="800" length="20">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="asemblingactspos_1" name="asemblingactspos" members="docposition" constraint="SQLConstraint_1131634987137"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1700_1700" name="fk_ref_1700_1700" members="docposition" constraint="SQLConstraint_1131634987138">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_docpositions.tblxmi#docpositions_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987137" name="asemblingactspos" type="PRIMARYKEY" primaryKey="asemblingactspos_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987138" name="fk_ref_1700_1700" type="FOREIGNKEY" referenceByKey="fk_ref_1700_1700"/>
+</RDBSchema:RDBTable>

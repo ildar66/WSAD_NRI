@@ -1,0 +1,58 @@
+/**
+  * basic styles
+  **/
+
+TH {color:rgb(45,116,124)}
+body {background-color: #f2f9ff}
+input {color:rgb(31,80,86)}
+label {color: #3a8c98}
+link {color:rgb(45,116,124)}
+h1 {color: #47aab8}
+h2 {color: #47aab8}
+
+.ListViewData {
+	font-family: serif;
+	color: gray;
+	background-color: #f2f9ff;
+	font-size: 10pt;
+
+
+
+}
+
+
+.ListViewHeader {
+	color: #30757e;
+	background-color: #daeef1;
+
+}
+.topMenu{
+	background-color: #c6e2e8;
+}
+.leftMenu{
+
+}
+.MenuLink{
+	color: #2b6871;
+
+}
+.PageLink {
+
+	}
+
+
+.ListViewButton {
+	font-style: normal;
+	background-color: #c6e2e8;
+}
+.FormViewButton {
+	font-style: normal;
+	background-color: #c6e2e8;
+
+	font-color: #32737c;
+
+
+}
+}
+
+

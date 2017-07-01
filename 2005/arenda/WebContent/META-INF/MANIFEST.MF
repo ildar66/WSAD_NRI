@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: common.jar 
+ webcommon.jar 
+ log4j-1.2.11.jar 
+ terrabyteClient.jar 
+ terrabyteCore.jar 
+ auth.jar 
+ commons.jar 
+ july-mail-client.jar
+

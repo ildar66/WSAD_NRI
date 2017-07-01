@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC "-//Sun Microsystems, Inc.//DTD J2EE Application 1.2//EN" "http://java.sun.com/j2ee/dtds/application_1_2.dtd">
+<application id="Application_ID">
+	<display-name>july</display-name>
+	<module id="EjbModule_1131634815450">
+		<ejb>julypersistenceEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131635738568">
+		<ejb>julypersistence2EJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131635781334">
+		<ejb>julyjdbcEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131635823390">
+		<ejb>julyarendaEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131635841568">
+		<ejb>julyarendabillingEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131635868570">
+		<ejb>julycommonEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131645503678">
+		<ejb>julyinventoryEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131645526142">
+		<ejb>JulyJournalEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131645545553">
+		<ejb>julyorganizerEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131645568689">
+		<ejb>julyplatinumEJB.jar</ejb>
+	</module>
+	<module id="EjbModule_1131645591675">
+		<ejb>julytrailcomEJB.jar</ejb>
+	</module>
+	<module id="WebModule_1132592834050">
+		<web>
+			<web-uri>organizer.war</web-uri>
+			<context-root>/</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1132833315718">
+		<web>
+			<web-uri>arenda.war</web-uri>
+			<context-root>arenda</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1132833315719">
+		<web>
+			<web-uri>basestation.war</web-uri>
+			<context-root>basestation</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1132833315735">
+		<web>
+			<web-uri>security.war</web-uri>
+			<context-root>security</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1132833315736">
+		<web>
+			<web-uri>siteinfo.war</web-uri>
+			<context-root>siteinfo</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1133160877000">
+		<web>
+			<web-uri>dictionary.war</web-uri>
+			<context-root>dict</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1133162258437">
+		<web>
+			<web-uri>inventory.war</web-uri>
+			<context-root>inventory</context-root>
+		</web>
+	</module>
+	<module id="EjbModule_1151932677812">
+		<ejb>julyConfigEJB.jar</ejb>
+	</module>
+	<module id="WebModule_1162992259375">
+		<web>
+			<web-uri>sitedoc.war</web-uri>
+			<context-root>sitedoc</context-root>
+		</web>
+	</module>
+	<security-role id="SecurityRole_1132743083656">
+		<role-name>AllAuthenticated</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132743083657">
+		<role-name>Everyone</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147656">
+		<role-name>administrator</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147657">
+		<role-name>ArendaMainEconomist</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147658">
+		<role-name>ArendaEconomist</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147671">
+		<role-name>ArendaMainManager</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147672">
+		<role-name>ArendaManager</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147673">
+		<role-name>ArendaDirector</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147674">
+		<role-name>contractComposer</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147675">
+		<role-name>contractControler</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147687">
+		<role-name>dictResAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147688">
+		<role-name>dictResOperator</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147689">
+		<role-name>dictPartAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147690">
+		<role-name>dictPartOperator</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147691">
+		<role-name>dictCurrateOperator</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147692">
+		<role-name>siteExploitor</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147703">
+		<role-name>siteTransport</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147704">
+		<role-name>siteStation</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147705">
+		<role-name>siteProjector</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147706">
+		<role-name>TechStuff</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147707">
+		<role-name>StorageManager</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147708">
+		<role-name>siteLook</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147718">
+		<role-name>planAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147719">
+		<role-name>planResponsible</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147720">
+		<role-name>supregAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147721">
+		<role-name>regionAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147722">
+		<role-name>planLook</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147723">
+		<role-name>viewerPays</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147734">
+		<role-name>lcsEditAllLicence</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147735">
+		<role-name>lcsEditFAS</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147736">
+		<role-name>lcsEditGPS</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147737">
+		<role-name>lcsEditGASN</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147738">
+		<role-name>lcsEditSES</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147739">
+		<role-name>lcsEditElectro</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147740">
+		<role-name>lcsEditLand</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147741">
+		<role-name>lcsEditProperty</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147750">
+		<role-name>dictStaffOperator</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132838147751">
+		<role-name>adminTerrabyte</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132929055218">
+		<role-name>electroCounterViewer</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132929055219">
+		<role-name>electroCounterEditor</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132929055220">
+		<role-name>FreqManager</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132929055234">
+		<role-name>RegionCurator</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132929055235">
+		<role-name>esnbsEditor</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132929055236">
+		<role-name>esnbsViewer</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1132933721937">
+		<role-name>developer</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1134837827055">
+		<description>TC Requests access role</description>
+		<role-name>rtsViewer</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1135327103765">
+		<role-name>BSProjectUser</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1135327103766">
+		<role-name>BSProjectAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1135327103767">
+		<role-name>BSProjectManager</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1135327103768">
+		<role-name>TSProjectUser</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1135327103781">
+		<role-name>TSProjectAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1135327103782">
+		<role-name>ChannelTSUser</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1135327103783">
+		<role-name>ChannelTSAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1138031990031">
+		<description></description>
+		<role-name>ArendaLawer</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1141918552237">
+		<role-name>EquipmentLook</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1141918552218">
+		<role-name>MSCEqpEdit</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1141918552234">
+		<role-name>BSCEqpEdit</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1141918552235">
+		<role-name>RepiterEqpEdit</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1141918552236">
+		<role-name>ServiceEqpEdit</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1144339595000">
+		<role-name>smssPermitEdit</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1144339595015">
+		<role-name>smssPermitView</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1144339595016">
+		<role-name>EditBank</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1158675598093">
+		<description></description>
+		<role-name>RolloutBSAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1158675598094">
+		<description></description>
+		<role-name>RolloutBSUser</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1168427416265">
+		<description></description>
+		<role-name>ArendaPurchaser</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1168427416296">
+		<description></description>
+		<role-name>ArendaAccountant</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1169039011937">
+		<role-name>bscuser</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1169470010453">
+		<role-name>confResOperator</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1169470010468">
+		<role-name>confResAdmin</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1177419436671">
+		<role-name>viewFKBS</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1177419436672">
+		<role-name>editFKBS</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1179411892500">
+		<role-name>CalcBSEquip</role-name>
+	</security-role>
+</application>

@@ -1,0 +1,66 @@
+Manifest-Version: 1.0
+Class-Path: julypersistenceEJB.jar 
+ julyjdbcEJB.jar 
+ julycommonEJB.jar
+
+Name: META-INF/ibm-ejb-jar-ext.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5qhdh5pa6y540kivnl5u7yr5i7w=
+MD5-Digest: 1wbWf6KmkVNUGQHAYvnuQg==
+
+Name: com/hps/july/journal/beans/Journal.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: T61yKmNJ2mAoYynM//UFLF62nzI=
+MD5-Digest: +KAOHeQo+xrtvxxMGPJSIw==
+
+Name: com/hps/july/journal/beans/JournalAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: tMTuTjJKpjlEc94+w6w0L3e6njM=
+MD5-Digest: 6GQAMV42bWRRYwrSUE5rLA==
+Java-Bean: True
+
+Name: com/hps/july/journal/beans/JournalAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: TFQNO3rcMlDRSRryv3cJN+u+qHg=
+MD5-Digest: MIMbt2jUSNHFV45iNQ+QRg==
+
+Name: com/hps/july/journal/beans/Journal.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: J+5UXYEXg3aRxYW99DBMkTkc8nY=
+MD5-Digest: F6RT+Z5ai9TBHjbLihY9fg==
+
+Name: META-INF/ejb-jar.xml
+MD5-Digest: vR4wpyVA7EAAZRGgL36JQw==
+SHA-Digest: gNnodpBDNwJA+E/ofhZhaC0+sbM=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/journal/beans/JournalHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: MoMtNSvx/pkcWotNs68zet3ZmCk=
+MD5-Digest: usa+CAmStJ8oO8OidjxeZA==
+
+Name: com/hps/july/journal/beans/JournalHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: bj8/pO9LPD6AKBJHw/Wauo+91dk=
+MD5-Digest: 6x9VE/3jdvObTFEx7KXXQg==
+
+Name: META-INF/ibm-ejb-access-bean.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: SdmKg8Wsl+iQlybUd3zk4rwYOJo=
+MD5-Digest: KIPSrP70jvyIomWO+3S7iQ==
+
+Name: META-INF/ibm-ejb-jar-bnd.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: of/1o+zDj7+ZSobFCr4+bNIXJvU=
+MD5-Digest: kEROCuYnn9JSQjGDDSE+gQ==
+
+Name: com/hps/july/journal/beans/JournalBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2Pe6qFLYXMXWzuvVGXXpALxF2Ww=
+MD5-Digest: vsIwh0vmZBhKPe0fVnekPA==
+
+Name: com/hps/july/journal/beans/JournalBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3Ka0UqOGIF2OzKj92I6enF1qALM=
+MD5-Digest: fi0PhQMkhI5F14x2LcKX8w==
+

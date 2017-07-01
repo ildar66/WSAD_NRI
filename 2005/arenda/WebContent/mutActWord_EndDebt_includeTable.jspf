@@ -1,0 +1,46 @@
+			 <%
+			    java.math.BigDecimal sum_sumMain = aform.getTable4_ItogoSumMain_For(customer, executor);;
+			    request.setAttribute("sum_sumMain", sum_sumMain.abs());			 
+			 if(sum_sumMain.intValue() < 0 ) { %>
+					<p><b><bean:message key="label.mutactword.inDebtAct"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=customer%> на <july:datewrite name="ob4" property="dateEndAkt"/>&nbsp;<bean:message key="label.mutactword.sostavliaet"/></b> <july:numberwrite name="sum_sumMain" fractdigits="2"/>&nbsp;<bean:write name="ob4" property="currMain" filter="true"/>.
+	         <%} else {%>
+        			<p><b><bean:message key="label.mutactword.inDebtAct"/>&nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;<%=executor%> на <july:datewrite name="ob4" property="dateEndAkt"/>&nbsp;<bean:message key="label.mutactword.sostavliaet"/></b> <july:numberwrite name="sum_sumMain" fractdigits="2"/>&nbsp;<bean:write name="ob4" property="currMain" filter="true"/>.
+ 		     <%}%>
+
+			 <%
+				java.util.List curList = aform.getTable4_For(customer, executor);	   
+		   		boolean suppressEndDebt2= (curList.size()>0)?false:true;
+		   		if(!suppressEndDebt2){ %>	
+					<table border=1 style='border-collapse:collapse;border:none;mso-border-alt:solid silver .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+						<tr bgcolor="#EAEAEA">
+							<td rowspan="1" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.number"/><br><bean:message key="label.mutactword.contract"/></td> 
+							<td rowspan="1" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutualreglmnts.resource"/></td> 
+							<td rowspan="1" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.date"/><br><bean:message key="label.mutactword.contract"/></td>
+							<td rowspan="1" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.summa"/><br><bean:message key="label.mutactword.dolga"/></td>
+							<td rowspan="1" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+							<td rowspan="1" style='border:solid silver .5pt;'><bean:message key="label.mutactword.currency"/></td>
+							<td rowspan="1" style='border:solid silver .5pt;'><bean:message key="label.mutactword.sumWithoutMain"/></td>
+						</tr>				   
+		     			<%
+					     java.util.Iterator iterCurList = curList.iterator();
+					     while (iterCurList.hasNext()) {
+						   com.hps.july.arenda.valueobject.MutualEndDebtValueObject ob4cur
+							          = (com.hps.july.arenda.valueobject.MutualEndDebtValueObject )iterCurList.next();
+						   request.setAttribute("ob4cur", ob4cur);
+			   			   request.setAttribute("summCur.abc()", ob4cur.getSumMain().abs());
+			   			   request.setAttribute("ndsCur.abc()", ob4cur.getNdsMain().abs());
+			   			   request.setAttribute("sumWithoutMain.abc()", ob4cur.getSumWithoutMain().abs());									          
+			 			%>
+						<tr>
+							<td style='border:solid silver .5pt;'><bean:write name="ob4cur" property="contractNumber" filter="true"/></td>
+							<td style='border:solid silver .5pt;'><bean:write name="ob4cur" property="resName" filter="true"/></td>
+							<td style='border:solid silver .5pt;'><july:datewrite name="ob4cur" property="contractDate" shortformat="true"/></td>
+							<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="summCur.abc()" fractdigits="2"/></td>
+							<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="ndsCur.abc()" fractdigits="2"/></td>
+							<td style='border:solid silver .5pt;'><bean:write name="ob4cur" property="currMain" filter="true"/></td>
+							<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="sumWithoutMain.abc()" fractdigits="2"/></td>
+						</tr>
+						<%}%>				
+					</table>				   
+		    <%}%> 		     
+          

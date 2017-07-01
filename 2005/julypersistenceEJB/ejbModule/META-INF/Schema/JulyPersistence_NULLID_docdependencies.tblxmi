@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="docdependencies" name="docdependencies" primaryKey="docdependencies_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="documentfrom" name="documentfrom">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987137">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="documentto" name="documentto">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987138">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="type" name="type">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634987137" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="docdependencies_1" name="docdependencies" members="documentfrom documentto type" constraint="SQLConstraint_1131634987137"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1797_1797" name="fk_ref_1797_1797" members="documentto" constraint="SQLConstraint_1131634987138">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_documents.tblxmi#documents_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1793_1793" name="fk_ref_1793_1793" members="documentfrom" constraint="SQLConstraint_1131634987139">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_documents.tblxmi#documents_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987137" name="docdependencies" type="PRIMARYKEY" primaryKey="docdependencies_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987138" name="fk_ref_1797_1797" type="FOREIGNKEY" referenceByKey="fk_ref_1797_1797"/>
+  <constraints xmi:id="SQLConstraint_1131634987139" name="fk_ref_1793_1793" type="FOREIGNKEY" referenceByKey="fk_ref_1793_1793"/>
+</RDBSchema:RDBTable>

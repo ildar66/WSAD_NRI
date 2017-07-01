@@ -1,0 +1,1127 @@
+<!-- com.ibm.etools.logging.util log file -->
+<NODE logging.util.node_id="NODE.xw8000-1a410.bee.vimpelcom.ru" logging.util.hostname="xw8000-1a410.bee.vimpelcom.ru" logging.util.ipaddress="192.168.144.87" logging.util.timezone="180" logging.util.time="1188799048,433"/>
+<PROCESS_CREATE logging.util.process_id="PROCESS_CREATE.eclipse.1188799048,433" logging.util.pid="24183153" logging.util.node_idref="NODE.xw8000-1a410.bee.vimpelcom.ru" logging.util.time="1188799048,433" logging.util.process_environment="unknown" logging.util.process_application_execution=""/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.logging.util.1188799048,253" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.logging.util" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799048,253"/>
+<BuildInfo logging.util.id="com.ibm.etools.logging.util.BuildInfo_11887990482930000" logging.util.agent_idref="com.ibm.etools.logging.util" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990482930001" Name="com.ibm.etools.logging.util.BuildInfo" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.validation.1188799048,584" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.validation" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799048,584"/>
+<BuildInfo logging.util.id="com.ibm.etools.validate.plugin.BuildInfo_11887990485940000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990485940001" Name="com.ibm.etools.validate.plugin.BuildInfo" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<BuildInfo logging.util.id="com.ibm.etools.validate.mof.plugin.BuildInfo_11887990486040000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990486040001" Name="com.ibm.etools.validate.mof.plugin.BuildInfo" Type="class" Package="com.ibm.etools.validate.mof.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.sed.model.1188799048,614" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.sed.model" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799048,614"/>
+<BuildInfo logging.util.id="com.ibm.sed.model.BuildInfo_11887990486140000" logging.util.agent_idref="com.ibm.sed.model" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990486140001" Name="com.ibm.sed.model.BuildInfo" Type="class" Package="com.ibm.sed.model" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.sed.editor.1188799048,934" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.sed.editor" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799048,934"/>
+<BuildInfo logging.util.id="com.ibm.sed.editor.BuildInfo_11887990489440000" logging.util.agent_idref="com.ibm.sed.editor" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20041126_1413-WB213-AD-V512D-ifix006">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990489440001" Name="com.ibm.sed.editor.BuildInfo" Type="class" Package="com.ibm.sed.editor" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.Default Logging Agent.1188799048,954" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="Default Logging Agent" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799048,954"/>
+<BuildInfo logging.util.id="com.ibm.sed.preferences.BuildInfo_11887990489640000" logging.util.agent_idref="Default Logging Agent" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990489640001" Name="com.ibm.sed.preferences.BuildInfo" Type="class" Package="com.ibm.sed.preferences" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.webtools.1188799049,305" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.webtools" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799049,305"/>
+<BuildInfo logging.util.id="com.ibm.etools.logging.util.BuildInfo_11887990493050000" logging.util.agent_idref="com.ibm.etools.webtools" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990493050001" Name="com.ibm.etools.logging.util.BuildInfo" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<String logging.util.agent_idref="com.ibm.etools.webtools" logging.util.MsgLoggerLevel="CONFIG" Value="20040506_1735-WB213-AD-V512D-W5"/>
+<String logging.util.agent_idref="Default Logging Agent" logging.util.MsgLoggerLevel="CONFIG" Value="EGLWebServicePlugin was instantiated"/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.parteditor.1188799049,495" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl.parteditor" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799049,495"/>
+<BuildInfo logging.util.id="com.ibm.etools.egl.internal.parteditor.BuildInfo_11887990494950000" logging.util.agent_idref="com.ibm.etools.egl.parteditor" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20041126_1413-WB213-AD-V512D-ifix006">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990494950001" Name="com.ibm.etools.egl.internal.parteditor.BuildInfo" Type="class" Package="com.ibm.etools.egl.internal.parteditor" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<SedStatusInfo logging.util.id="com.ibm.sed.model.SedStatusInfo_11887990520190000" logging.util.agent_idref="com.ibm.sed.editor" logging.util.MsgLoggerLevel="SEVERE" PluginId="com.ibm.sed.editor" Message="Plugin com.ibm.etools.jsf, extension com.ibm.sed.editor.extendedEditorActions&#xA;Unknown extension tag found: separator">
+ <Throwable Instance_Name="Exception" Value="null"/>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990520190001" Name="com.ibm.sed.model.SedStatusInfo" Type="class" Package="com.ibm.sed.model" Modifers="public" Superclass="java.lang.Object"/>
+</SedStatusInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.webtrans.1188799053,281" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl.webtrans" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799053,281"/>
+<BuildInfo logging.util.id="com.ibm.etools.logging.util.BuildInfo_11887990532810000" logging.util.agent_idref="com.ibm.etools.egl.webtrans" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990532810001" Name="com.ibm.etools.logging.util.BuildInfo" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.struts.1188799053,361" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.struts" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799053,361"/>
+<BuildInfo logging.util.id="com.ibm.etools.struts.BuildInfo_11887990533610000" logging.util.agent_idref="com.ibm.etools.struts" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20041126_1413-WB213-AD-V512D-ifix006">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990533610001" Name="com.ibm.etools.struts.BuildInfo" Type="class" Package="com.ibm.etools.struts" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<BuildInfo logging.util.id="com.ibm.sed.jseditor.BuildInfo_11887990535410000" logging.util.agent_idref="Default Logging Agent" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990535410001" Name="com.ibm.sed.jseditor.BuildInfo" Type="class" Package="com.ibm.sed.jseditor" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.pgm.1188799054,863" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl.pgm" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799054,863"/>
+<BuildInfo logging.util.id="com.ibm.etools.egl.internal.pgm.BuildInfo_11887990548630000" logging.util.agent_idref="com.ibm.etools.egl.pgm" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20041126_1413-WB213-AD-V512D-ifix006">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990548630001" Name="com.ibm.etools.egl.internal.pgm.BuildInfo" Type="class" Package="com.ibm.etools.egl.internal.pgm" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.model.1188799054,873" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl.model" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188799054,873"/>
+<BuildInfo logging.util.id="com.ibm.etools.egl.model.core.BuildInfo_11887990548730000" logging.util.agent_idref="com.ibm.etools.egl.model" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20050620_1132-IF51202">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990548730001" Name="com.ibm.etools.egl.model.core.BuildInfo" Type="class" Package="com.ibm.etools.egl.model.core" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<BuildInfo logging.util.id="com.ibm.etools.index.BuildInfo_11887990551140000" logging.util.agent_idref="Default Logging Agent" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11887990551140001" Name="com.ibm.etools.index.BuildInfo" Type="class" Package="com.ibm.etools.index" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.generation.base.framework.1188801250,002" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl.generation.base.framework" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188801250,002"/>
+<BuildInfo logging.util.id="com.ibm.etools.egl.internal.compiler.plugin.BuildInfo_11888012500020000" logging.util.agent_idref="com.ibm.etools.egl.generation.base.framework" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20050620_1132-IF51202">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888012500020001" Name="com.ibm.etools.egl.internal.compiler.plugin.BuildInfo" Type="class" Package="com.ibm.etools.egl.internal.compiler.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.generators.1188801250,022" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl.generators" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188801250,022"/>
+<BuildInfo logging.util.id="com.ibm.etools.egl.generation.BuildInfo_11888012500220000" logging.util.agent_idref="com.ibm.etools.egl.generators" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20050620_1132-IF51202">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888012500220001" Name="com.ibm.etools.egl.generation.BuildInfo" Type="class" Package="com.ibm.etools.egl.generation" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<SedStatusInfo logging.util.id="com.ibm.sed.model.SedStatusInfo_11888019203870000" logging.util.agent_idref="com.ibm.sed.editor" logging.util.MsgLoggerLevel="SEVERE" PluginId="com.ibm.sed.editor" Message="Plugin com.ibm.etools.jsf, extension com.ibm.sed.editor.extendedEditorActions&#xA;Unknown extension tag found: separator">
+ <Throwable Instance_Name="Exception" Value="null"/>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888019203870001" Name="com.ibm.sed.model.SedStatusInfo" Type="class" Package="com.ibm.sed.model" Modifers="public" Superclass="java.lang.Object"/>
+</SedStatusInfo>
+<SedStatusInfo logging.util.id="com.ibm.sed.model.SedStatusInfo_11888020781520000" logging.util.agent_idref="com.ibm.sed.editor" logging.util.MsgLoggerLevel="SEVERE" PluginId="com.ibm.sed.editor" Message="Plugin com.ibm.etools.jsf, extension com.ibm.sed.editor.extendedEditorActions&#xA;Unknown extension tag found: separator">
+ <Throwable Instance_Name="Exception" Value="null"/>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888020781520001" Name="com.ibm.sed.model.SedStatusInfo" Type="class" Package="com.ibm.sed.model" Modifers="public" Superclass="java.lang.Object"/>
+</SedStatusInfo>
+<Status logging.util.id="org.eclipse.core.runtime.Status_11888029542470000" logging.util.agent_idref="com.ibm.etools.struts" logging.util.MsgLoggerLevel="SEVERE" Code="0" Message="com.ibm.etools.struts.jspeditor.vct.beantags.StrutsBeanMessageTagVisualizer@286a286a" Plugin="com.ibm.etools.struts" Severity="4">
+ <Array Instance_Name="Children" logging.util.id="Array[org.eclipse.core.runtime.IStatus]_11888029542470001">
+ </Array>
+ <ResourceException Instance_Name="Exception" logging.util.id="org.eclipse.core.internal.resources.ResourceException_11888029542470002" Message="Resource /arenda/WebContent/WEB-INF/classes/com/hps/july/arenda/ApplicationResources.properties does not exist.">
+  <String Instance_Name="Exception" Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+  <String Instance_Name="Exception" Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.runtime.CoreException.&lt;init&gt;(CoreException.java:35)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.resources.ResourceException.&lt;init&gt;(ResourceException.java:30)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.resources.File.getContents(File.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.resources.File.getContents(File.java:203)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.jspeditor.vct.StrutsVisualizerUtil.getResourceBundle(StrutsVisualizerUtil.java:391)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.jspeditor.vct.StrutsVisualizerUtil.getString(StrutsVisualizerUtil.java:289)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.jspeditor.vct.StrutsVisualizerUtil.getString(StrutsVisualizerUtil.java:272)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.jspeditor.vct.beantags.StrutsBeanMessageTagVisualizer.getKeyStringFromBundle(StrutsBeanMessageTagVisualizer.java:166)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.jspeditor.vct.beantags.StrutsBeanMessageTagVisualizer.getMessage(StrutsBeanMessageTagVisualizer.java:84)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.jspeditor.vct.beantags.StrutsBeanMessageTagVisualizer.doStart(StrutsBeanMessageTagVisualizer.java:59)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.taglib.design.DesignTimeTagAdapter.createTextNode(DesignTimeTagAdapter.java:514)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.taglib.design.DesignTimeTagAdapter.getTextNode(DesignTimeTagAdapter.java:708)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.taglib.design.DesignTimeTagAdapter.getSubNode(DesignTimeTagAdapter.java:690)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.getNode(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.getAllModelChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.getModelChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.refreshChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.addNotify(ElementEditPart.java:465)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.refreshChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.addNotify(ElementEditPart.java:465)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.refreshChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.addNotify(ElementEditPart.java:465)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.refreshChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.addNotify(ElementEditPart.java:465)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.refreshChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.addNotify(ElementEditPart.java:465)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.refreshChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.addNotify(ElementEditPart.java:465)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.refreshChildren(ElementEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.ElementEditPart.addNotify(ElementEditPart.java:465)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addNotify(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractGraphicalEditPart.addNotify(AbstractGraphicalEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editparts.DocumentEditPart.addNotify(DocumentEditPart.java:612)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editor.MultiTypeDocumentEditPart.addNotify(MultiTypeDocumentEditPart.java:144)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.AbstractEditPart.addChild(AbstractEditPart.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.editparts.GraphicalRootEditPart.setContents(GraphicalRootEditPart.java:163)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:485)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editor.WysiwygView.setModel(WysiwygView.java:734)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editor.HTMLDesignPage.setModel(HTMLDesignPage.java:1283)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editor.HTMLEditor.createDesignPage(HTMLEditor.java:854)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webedit.editor.HTMLEditor.createPages(HTMLEditor.java:897)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:167)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.PartPane$4.run(PartPane.java:141)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.runtime.Platform.run(Platform.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.PartPane.createChildControl(PartPane.java:137)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.PartPane.createControl(PartPane.java:186)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorWorkbook.createPage(EditorWorkbook.java:387)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorWorkbook.add(EditorWorkbook.java:123)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorArea.addEditor(EditorArea.java:55)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorPresentation.openEditor(EditorPresentation.java:351)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager$2.run(EditorManager.java:585)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager.createEditorTab(EditorManager.java:574)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager.openInternalEditor(EditorManager.java:668)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager.openEditorFromDescriptor(EditorManager.java:459)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager.openEditorFromInput(EditorManager.java:333)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager.openEditor(EditorManager.java:424)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2056)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WorkbenchPage.access$6(WorkbenchPage.java:2004)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WorkbenchPage$9.run(WorkbenchPage.java:1991)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:1986)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:1887)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webtools.webview.eclipse.OpenAction.run(OpenAction.java:177)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webtools.webview.eclipse.OpenAction.run(OpenAction.java:165)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webtools.webview.actions.WebViewOpenAction.run(WebViewOpenAction.java:133)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:191)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:169)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webtools.webview.eclipse.OpenEditorActionGroup.runDefaultAction(OpenEditorActionGroup.java:174)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webtools.webview.actions.WebViewActionGroup.runDefaultAction(WebViewActionGroup.java:237)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webtools.webview.WebViewPart.handleOpen(WebViewPart.java:653)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.webtools.webview.WebViewPart$6.open(WebViewPart.java:399)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:397)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.runtime.Platform.run(Platform.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:395)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:605)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:694)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:209)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1402)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.Workbench.run(Workbench.java:1385)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.boot.InternalBootLoader.run(InternalBootLoader.java:858)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.boot.BootLoader.run(BootLoader.java:461)"/>
+  <String Instance_Name="Exception" Value="at java.lang.reflect.AccessibleObject.invokeL(AccessibleObject.java:207)"/>
+  <String Instance_Name="Exception" Value="at java.lang.reflect.Method.invoke(Method.java:271)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.launcher.Main.basicRun(Main.java:291)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.launcher.Main.run(Main.java:747)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.launcher.Main.main(Main.java:583)"/>
+ </ResourceException>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888029543570000" Name="org.eclipse.core.runtime.Status" Type="class" Package="org.eclipse.core.runtime" Modifers="public" Superclass="java.lang.Object"/>
+</Status>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888108762160000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="7532" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888108762260000" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.ctc.deployment.1188810877,047" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.ctc.deployment" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188810877,047"/>
+<DefaultRecord logging.util.id="com.ibm.etools.logging.util.DefaultRecord_11888108770870000" logging.util.agent_idref="com.ibm.etools.ctc.deployment" logging.util.MsgLoggerLevel="INFO" ComponentName="com.ibm.etools.ctc.deployment" MessageID="%MSG_INFO_STARTING" Message="IWAA1421W Plugin com.ibm.etools.ctc.deployment started" Millis="1188810877077" ThreadName="main" SequenceNumber="7" SourceClassName="com.ibm.etools.ctc.plugin.deployment.base.DeploymentPlugin" SourceMethodName="startup" Severity="4" Date="Mon Sep 03 13:14:37 MSD 2007" Product="WebSphere Studio Workbench" Version="Version: R5" HostName="xw8000-1a410.bee.vimpelcom.ru" HostAddress="192.168.144.87">
+ <Array Instance_Name="MessageVars" logging.util.id="Array[com.ibm.etools.logging.util.SubstitutionVariable]_11888108770870001">
+  <SubstitutionVariable logging.util.id="com.ibm.etools.logging.util.SubstitutionVariable_11888108770870002" Key="1">
+   <String Instance_Name="Variable" logging.util.id="java.lang.String_11888108770870003" Value="com.ibm.etools.ctc.deployment"/>
+   <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888108770870004" Name="com.ibm.etools.logging.util.SubstitutionVariable" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+  </SubstitutionVariable>
+ </Array>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888108770870005" Name="com.ibm.etools.logging.util.DefaultRecord" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+</DefaultRecord>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.ctc.deployment.soap.1188810877,187" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.ctc.deployment.soap" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188810877,187"/>
+<DefaultRecord logging.util.id="com.ibm.etools.logging.util.DefaultRecord_11888108772070000" logging.util.agent_idref="com.ibm.etools.ctc.deployment.soap" logging.util.MsgLoggerLevel="INFO" ComponentName="com.ibm.etools.ctc.deployment.soap" MessageID="%MSG_INFO_STARTING" Message="IWAA1421W Plugin com.ibm.etools.ctc.deployment.soap started" Millis="1188810877207" ThreadName="main" SequenceNumber="8" SourceClassName="com.ibm.etools.ctc.plugin.deployment.soap.SOAPDeploymentPlugin" SourceMethodName="startup" Severity="4" Date="Mon Sep 03 13:14:37 MSD 2007" Product="WebSphere Studio Workbench" Version="Version: R5" HostName="xw8000-1a410.bee.vimpelcom.ru" HostAddress="192.168.144.87">
+ <Array Instance_Name="MessageVars" logging.util.id="Array[com.ibm.etools.logging.util.SubstitutionVariable]_11888108772070001">
+  <SubstitutionVariable logging.util.id="com.ibm.etools.logging.util.SubstitutionVariable_11888108772070002" Key="1">
+   <String Instance_Name="Variable" logging.util.id="java.lang.String_11888108772070003" Value="com.ibm.etools.ctc.deployment.soap"/>
+   <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888108772070004" Name="com.ibm.etools.logging.util.SubstitutionVariable" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+  </SubstitutionVariable>
+ </Array>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888108772070005" Name="com.ibm.etools.logging.util.DefaultRecord" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+</DefaultRecord>
+<Status logging.util.id="org.eclipse.core.runtime.Status_11888108776780000" logging.util.agent_idref="com.ibm.etools.struts" logging.util.MsgLoggerLevel="SEVERE" Code="0" Message="com.ibm.etools.struts.builder.StrutsBuilder@7b5f7b5f" Plugin="com.ibm.etools.struts" Severity="4">
+ <Array Instance_Name="Children" logging.util.id="Array[org.eclipse.core.runtime.IStatus]_11888108776780001">
+ </Array>
+ <NullPointerException Instance_Name="Exception" logging.util.id="java.lang.NullPointerException_11888108776780002">
+  <String Instance_Name="Exception" Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+  <String Instance_Name="Exception" Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+  <String Instance_Name="Exception" Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.index.Index.accept(Index.java:124)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.index.webtools.indexing.WebToolsIndexer.updateIndex(WebToolsIndexer.java:302)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.index.webtools.indexing.WebToolsIndexer.handleChanged(WebToolsIndexer.java:182)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.index.webtools.indexing.WebToolsIndexer.visit(WebToolsIndexer.java:144)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:52)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.etools.struts.builder.StrutsBuilder.build(StrutsBuilder.java:51)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:427)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.runtime.Platform.run(Platform.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:125)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:181)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:191)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:151)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.runtime.Platform.run(Platform.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:165)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:243)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:212)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.resources.File.setContents(File.java:279)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.resources.File.setContents(File.java:305)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.sed.editor.FileModelProvider.saveDocument(FileModelProvider.java:1357)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.sed.editor.StructuredTextEditor.doSave(StructuredTextEditor.java:1053)"/>
+  <String Instance_Name="Exception" Value="at com.ibm.sed.editor.StructuredTextMultiPageEditorPart.doSave(StructuredTextMultiPageEditorPart.java:336)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager$11.run(EditorManager.java:1090)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager$8.run(EditorManager.java:960)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:302)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:252)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:431)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:428)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:1385)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager.runProgressMonitorOperation(EditorManager.java:966)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.EditorManager.savePart(EditorManager.java:1095)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WorkbenchPage.savePart(WorkbenchPage.java:2353)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:2365)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.SaveAction.run(SaveAction.java:57)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.jface.action.Action.runWithEvent(Action.java:842)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WWinKeyBindingService.pressed(WWinKeyBindingService.java:214)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.WWinKeyBindingService$5.widgetSelected(WWinKeyBindingService.java:332)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.AcceleratorMenu$2.handleEvent(AcceleratorMenu.java:68)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1402)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.ui.internal.Workbench.run(Workbench.java:1385)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.internal.boot.InternalBootLoader.run(InternalBootLoader.java:858)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.boot.BootLoader.run(BootLoader.java:461)"/>
+  <String Instance_Name="Exception" Value="at java.lang.reflect.AccessibleObject.invokeL(AccessibleObject.java:207)"/>
+  <String Instance_Name="Exception" Value="at java.lang.reflect.Method.invoke(Method.java:271)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.launcher.Main.basicRun(Main.java:291)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.launcher.Main.run(Main.java:747)"/>
+  <String Instance_Name="Exception" Value="at org.eclipse.core.launcher.Main.main(Main.java:583)"/>
+ </NullPointerException>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888108777680000" Name="org.eclipse.core.runtime.Status" Type="class" Package="org.eclipse.core.runtime" Modifers="public" Superclass="java.lang.Object"/>
+</Status>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888109321930000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="54294" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888109321930001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888110742440000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="611" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888110742440001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888110854620000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="11168" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888110854620001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.websphere.tools.v5.common.1188825996,855" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.websphere.tools.v5.common" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188825996,855"/>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1"/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.websphere.tools.common.1188825997,015" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.websphere.tools.common" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188825997,015"/>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.common" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1.1"/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.rdblib.1188825997,185" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.rdblib" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188825997,185"/>
+<BuildInfo logging.util.id="com.ibm.etools.rdblib.BuildInfo_11888259971950000" logging.util.agent_idref="com.ibm.etools.rdblib" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888259971950001" Name="com.ibm.etools.rdblib.BuildInfo" Type="class" Package="com.ibm.etools.rdblib" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="WARNING" Value="2 Mon Sep 03 17:26:37 MSD 2007 com.ibm.etools.websphere.tools.v5.common.internal.WebSpherePluginV5Common.startup(): Cannot set the impl factory property jar file java variable."/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.websphere.tools.v51.1188825999,148" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.websphere.tools.v51" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188825999,148"/>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v51" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1.1"/>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="WARNING" Value="2 Mon Sep 03 17:26:39 MSD 2007 com.ibm.etools.websphere.tools.v51.WebSpherePluginV51.startup(): Cannot set the impl factory property jar file java variable."/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.pd.security.1188825999,419" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.pd.security" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188825999,419"/>
+<BuildInfo logging.util.id="com.ibm.etools.pd.security.BuildInfo_11888259994190000" logging.util.agent_idref="com.ibm.etools.pd.security" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888259994190001" Name="com.ibm.etools.pd.security.BuildInfo" Type="class" Package="com.ibm.etools.pd.security" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<String logging.util.agent_idref="Default Logging Agent" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1"/>
+<String logging.util.agent_idref="Default Logging Agent" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1"/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.websphere.tools.v5.1188826006,079" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.websphere.tools.v5" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188826006,079"/>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1.1"/>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="WARNING" Value="2 Mon Sep 03 17:26:46 MSD 2007 com.ibm.etools.websphere.tools.v5.WebSpherePluginV5.startup(): Cannot set the impl factory property jar file java variable."/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.websphere.tools.v4.1188826006,93" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.websphere.tools.v4" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188826006,93"/>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v4" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1"/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.rft.1188826008,333" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.rft" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188826008,333"/>
+<String logging.util.agent_idref="com.ibm.etools.rft" logging.util.MsgLoggerLevel="CONFIG" Value="5.0.20020126"/>
+<String logging.util.agent_idref="com.ibm.etools.rft" logging.util.MsgLoggerLevel="WARNING" Value="2 Mon Sep 03 17:26:48 MSD 2007 com.ibm.etools.rft.ConnectionDataCreationManager.load(): Could not load rft creation cache file since the file is not found."/>
+<String logging.util.agent_idref="com.ibm.etools.rft" logging.util.MsgLoggerLevel="WARNING" Value="2 Mon Sep 03 17:26:48 MSD 2007 com.ibm.etools.rft.ConnectionDataCreationManager.load(): Could not load rft creation cache file: java.io.FileNotFoundException: C:\workSpasesNew\WSAD_NRI\.metadata\.plugins\com.ibm.etools.rft\rftCreation.xml (Не удается найти указанный файл.&#xD;&#xA;)"/>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:26:50 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: basestation"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888260104960000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:26:50 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: security"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888260105260000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:26:50 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: inventory"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888260105360000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:26:50 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: siteinfo"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888260105460000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:26:50 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: dictionary"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888260105660000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:26:50 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: organizer"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888260105760000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:26:50 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: sitedoc"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888260105860000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:26:50 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: arenda"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888260105960000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: basestation"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262865330000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.publishStart(UnitTestServer.java:2421)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:679)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: security"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262865430000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.publishStart(UnitTestServer.java:2421)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:679)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: inventory"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262865530000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.publishStart(UnitTestServer.java:2421)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:679)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: siteinfo"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262865630000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.publishStart(UnitTestServer.java:2421)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:679)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: dictionary"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262865730000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.publishStart(UnitTestServer.java:2421)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:679)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: organizer"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262865830000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.publishStart(UnitTestServer.java:2421)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:679)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: sitedoc"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262865930000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.publishStart(UnitTestServer.java:2421)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:679)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: arenda"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262866030000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.publishStart(UnitTestServer.java:2421)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:679)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: basestation"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262869040000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: security"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262869140000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: inventory"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262869240000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: siteinfo"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262869440000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: dictionary"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262869540000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: organizer"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262869640000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: sitedoc"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262869740000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<String logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE" Value="0 Mon Sep 03 17:31:26 MSD 2007 com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(): Cannot get the classpath of the Web project: arenda"/>
+<NullPointerException logging.util.id="java.lang.NullPointerException_11888262869840000" logging.util.agent_idref="com.ibm.etools.websphere.tools.v5.common" logging.util.MsgLoggerLevel="SEVERE">
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.Throwable.&lt;init&gt;(Throwable.java)"/>
+ <String Value="at java.lang.NullPointerException.&lt;init&gt;(NullPointerException.java:63)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getWebProjectClasspath(UnitTestServer.java:1470)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.UnitTestServer.getUTCExtraClasspathLst(UnitTestServer.java:1389)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:268)"/>
+ <String Value="at com.ibm.etools.websphere.tools.v51.ServerConfigurationPublisher.publish(ServerConfigurationPublisher.java:171)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishable(ServerControl.java:783)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publishPublishables(ServerControl.java:858)"/>
+ <String Value="at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:696)"/>
+ <String Value="at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)"/>
+ <String Value="at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)"/>
+</NullPointerException>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270779580000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="60" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270779580001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270780780000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="30" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270780780001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270781580000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="30" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270781580001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270782680000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="60" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270782680001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270785590000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="180" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270785590001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270787090000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="90" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270787090001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270788190000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="40" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270788190001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270788890000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="20" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270788890001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888270939230000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="15024" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888270939230001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279011520000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279011520001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279011820000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279011820001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279012020000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279012020001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279012220000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279012220001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279012420000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279012420001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279012620000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279012620001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279012820000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279012820001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279013220000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="20" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279013220001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888279103760000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="9024" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888279103760001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280069960000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280069960001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280070260000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280070260001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280070360000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280070360001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280070560000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280070560001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280070760000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280070760001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280070960000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280070960001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280071160000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280071160001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280071460000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280071560000" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888280120640000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="4898" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888280120640001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<SedStatusInfo logging.util.id="com.ibm.sed.model.SedStatusInfo_11888281119380000" logging.util.agent_idref="com.ibm.sed.editor" logging.util.MsgLoggerLevel="SEVERE" PluginId="com.ibm.sed.editor" Message="Plugin com.ibm.etools.jsf, extension com.ibm.sed.editor.extendedEditorActions&#xA;Unknown extension tag found: separator">
+ <Throwable Instance_Name="Exception" Value="null"/>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888281119380001" Name="com.ibm.sed.model.SedStatusInfo" Type="class" Package="com.ibm.sed.model" Modifers="public" Superclass="java.lang.Object"/>
+</SedStatusInfo>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888281561670000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="4537" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888281561670001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888281688060000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="12569" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888281688060001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888281975310000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="892" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888281975310001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888282146370000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="16986" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888282146370001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283053670000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="6339" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283053670001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283104250000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283104250001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283104450000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283104450001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283104650000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283104650001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283104750000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283104750001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283105050000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283105050001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283105150000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283105150001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283105350000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283105350001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283105660000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283105660001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283153830000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="4807" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283153830001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283226640000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283226640001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283226940000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283226940001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283227040000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283227040001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283227240000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283227240001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283227440000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283227440001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283227540000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283227540001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283227640000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283227640001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283228140000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283228140001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888283276320000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="4808" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888283276320001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888284420490000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="751" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888284420490001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888284469470000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="4808" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888284469470001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888284875690000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="4757" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888284875690001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.ui.1188829372,018" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl.ui" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188829372,018"/>
+<BuildInfo logging.util.id="com.ibm.etools.egl.internal.ui.BuildInfo_11888293720180000" logging.util.agent_idref="com.ibm.etools.egl.ui" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20041126_1413-WB213-AD-V512D-ifix006">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888293720180001" Name="com.ibm.etools.egl.internal.ui.BuildInfo" Type="class" Package="com.ibm.etools.egl.internal.ui" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.core.1188829372,269" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl.core" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188829372,269"/>
+<BuildInfo logging.util.id="com.ibm.etools.egl.core.BuildInfo_11888293722690000" logging.util.agent_idref="com.ibm.etools.egl.core" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20040506_1735-WB213-AD-V512D-W5">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888293722690001" Name="com.ibm.etools.egl.core.BuildInfo" Type="class" Package="com.ibm.etools.egl.core" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.com.ibm.etools.egl.1188829372,399" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1188799048,433" logging.util.agent_name="com.ibm.etools.egl" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1188829372,399"/>
+<BuildInfo logging.util.id="com.ibm.etools.egl.internal.BuildInfo_11888293723990000" logging.util.agent_idref="com.ibm.etools.egl" logging.util.MsgLoggerLevel="CONFIG" WSABuildLevel="20050620_1132-IF51202">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888293723990001" Name="com.ibm.etools.egl.internal.BuildInfo" Type="class" Package="com.ibm.etools.egl.internal" Modifers="public" Superclass="java.lang.Object"/>
+</BuildInfo>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888910057680000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="3035" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888910057880000" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888910258390000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="14162" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888910258390001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888910345020000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="701" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888910345020001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888911127840000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="77951" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888911127840001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888911719260000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="5017" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888911719260001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912422460000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912422460001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912423060000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912423060001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912423260000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912423260001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912423460000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912423460001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912423660000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912423660001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912423760000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912423760001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912423860000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912423860001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912424160000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912424260000" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912485860000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="6150" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912485960000" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912544050000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912544050001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912544750000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912544750001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912545150000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912545150001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912545250000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912545250001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912545450000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912545450001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912545550000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912545550001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912545750000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912545750001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912546350000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="40" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912546350001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11888912597130000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="5068" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11888912597130001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001007540000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001007540001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001008140000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001008140001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001008340000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001008340001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001008440000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001008440001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001008740000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001008740001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001009440000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001009440001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001009640000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001009640001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001010040000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001010140000" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889001243000000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="23286" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889001243000001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014128240000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014128240001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014130650000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014130650001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014130850000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014130850001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014131550000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="60" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014131550001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014131650000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014131650001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014131850000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014131850001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014132050000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014132050001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014132450000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014132450001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889014385840000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="25329" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889014385840001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015094040000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015094040001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015094340000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015094340001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015094540000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015094540001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015094640000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015094640001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015094840000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015094840001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015094940000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015094940001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015095140000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015095140001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015095440000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015095440001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015146720000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="5118" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015146720001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015697170000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="3075" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015697170001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889015805840000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="10797" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889015805840001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889017990220000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="2464" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889017990220001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889018065240000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="7312" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889018065240001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889018711240000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="3606" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889018711240001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889018815400000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="10206" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889018815400001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889019205500000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="9635" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889019205500001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889020800870000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="20622" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889020800870001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889021326980000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="52511" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889021326980001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889023933620000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="12720" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889023933620001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024117400000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024117400001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024117700000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024117700001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024118100000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="30" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024118100001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024118300000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024118300001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024118700000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024118700001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024118800000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024118800001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024119000000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024119000001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024119410000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="20" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024119410001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024168780000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="4927" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024168780001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024339950000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="sitedoc" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024339950001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024340250000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="organizer" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024340250001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024340450000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="siteinfo" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024340450001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024340550000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="security" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024340550001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024340850000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="10" Details="null" ProjectName="inventory" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024340850001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024340950000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="dictionary" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024340950001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024341150000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="0" Details="null" ProjectName="basestation" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024341150001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024341450000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.war.WSADWarValidator" ElapsedTime="20" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024341450001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889024391330000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="4978" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889024391330001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889026215150000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.jsp.JspValidator" ElapsedTime="3285" Details="null" ProjectName="arenda" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889026215150001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889026312400000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="9655" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889026312400001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<TimeEntry logging.util.id="com.ibm.etools.validate.plugin.TimeEntry_11889026661440000" logging.util.agent_idref="com.ibm.etools.validation" logging.util.MsgLoggerLevel="INFO" ToolName="com.ibm.etools.validation.ear.WSADEarValidator" ElapsedTime="4908" Details="null" ProjectName="july" SourceID="ValidationOperation.launchValidator" ExcecutionMap="0">
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889026661440001" Name="com.ibm.etools.validate.plugin.TimeEntry" Type="class" Package="com.ibm.etools.validate.plugin" Modifers="public" Superclass="java.lang.Object"/>
+</TimeEntry>
+<DefaultRecord logging.util.id="com.ibm.etools.logging.util.DefaultRecord_11889036738740000" logging.util.agent_idref="com.ibm.etools.ctc.deployment.soap" logging.util.MsgLoggerLevel="INFO" ComponentName="com.ibm.etools.ctc.deployment.soap" MessageID="%MSG_INFO_SHUTTING_DOWN" Message="IWAA1420W Shutting down plugin com.ibm.etools.ctc.deployment.soap" Millis="1188903673874" ThreadName="main" SequenceNumber="11" SourceClassName="com.ibm.etools.ctc.plugin.deployment.soap.SOAPDeploymentPlugin" SourceMethodName="shutdown" Severity="4" Date="Tue Sep 04 15:01:13 MSD 2007" Product="WebSphere Studio Workbench" Version="Version: R5" HostName="xw8000-1a410.bee.vimpelcom.ru" HostAddress="192.168.144.87">
+ <Array Instance_Name="MessageVars" logging.util.id="Array[com.ibm.etools.logging.util.SubstitutionVariable]_11889036738740001">
+  <SubstitutionVariable logging.util.id="com.ibm.etools.logging.util.SubstitutionVariable_11889036738740002" Key="1">
+   <String Instance_Name="Variable" logging.util.id="java.lang.String_11889036738740003" Value="com.ibm.etools.ctc.deployment.soap"/>
+   <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889036738740004" Name="com.ibm.etools.logging.util.SubstitutionVariable" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+  </SubstitutionVariable>
+ </Array>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889036738740005" Name="com.ibm.etools.logging.util.DefaultRecord" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+</DefaultRecord>
+<DefaultRecord logging.util.id="com.ibm.etools.logging.util.DefaultRecord_11889036739840000" logging.util.agent_idref="com.ibm.etools.ctc.deployment" logging.util.MsgLoggerLevel="INFO" ComponentName="com.ibm.etools.ctc.deployment" MessageID="%MSG_INFO_SHUTTING_DOWN" Message="IWAA1420W Shutting down plugin com.ibm.etools.ctc.deployment" Millis="1188903673974" ThreadName="main" SequenceNumber="13" SourceClassName="com.ibm.etools.ctc.plugin.deployment.base.DeploymentPlugin" SourceMethodName="shutdown" Severity="4" Date="Tue Sep 04 15:01:13 MSD 2007" Product="WebSphere Studio Workbench" Version="Version: R5" HostName="xw8000-1a410.bee.vimpelcom.ru" HostAddress="192.168.144.87">
+ <Array Instance_Name="MessageVars" logging.util.id="Array[com.ibm.etools.logging.util.SubstitutionVariable]_11889036739840001">
+  <SubstitutionVariable logging.util.id="com.ibm.etools.logging.util.SubstitutionVariable_11889036739840002" Key="1">
+   <String Instance_Name="Variable" logging.util.id="java.lang.String_11889036739840003" Value="com.ibm.etools.ctc.deployment"/>
+   <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889036739840004" Name="com.ibm.etools.logging.util.SubstitutionVariable" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+  </SubstitutionVariable>
+ </Array>
+ <Class Instance_Name="Class" logging.util.id="java.lang.Class_11889036739840005" Name="com.ibm.etools.logging.util.DefaultRecord" Type="class" Package="com.ibm.etools.logging.util" Modifers="public" Superclass="java.lang.Object"/>
+</DefaultRecord>

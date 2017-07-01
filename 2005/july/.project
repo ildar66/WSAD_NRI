@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>july</name>
+	<comment></comment>
+	<projects>
+		<project>julyjdbcEJB</project>
+		<project>dictionary</project>
+		<project>arenda</project>
+		<project>julypersistence2EJB</project>
+		<project>julyplatinumEJB</project>
+		<project>common</project>
+		<project>julyarendabillingEJB</project>
+		<project>julyarendaEJB</project>
+		<project>siteinfo</project>
+		<project>inventory</project>
+		<project>julypersistenceEJB</project>
+		<project>organizer</project>
+		<project>julytrailcomEJB</project>
+		<project>webcommon</project>
+		<project>security</project>
+		<project>JulyJournalEJB</project>
+		<project>sitedoc</project>
+		<project>julycommonEJB</project>
+		<project>julyinventoryEJB</project>
+		<project>julyorganizerEJB</project>
+		<project>basestation</project>
+		<project>julyConfigEJB</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.ibm.etools.validation.validationbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.ibm.etools.j2ee.EARNature</nature>
+	</natures>
+</projectDescription>

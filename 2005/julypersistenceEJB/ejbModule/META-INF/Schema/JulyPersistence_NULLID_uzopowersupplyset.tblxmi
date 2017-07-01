@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="uzopowersupplyset" name="uzopowersupplyset" comments="" primaryKey="c5227511">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resourceset" name="resourceset">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1168937632500">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_21225_2122575" name="fk_ref_21225_2122575" members="resourceset" constraint="SQLConstraint_1168937632500">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resourcesets.tblxmi#resourcesets_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="c5227511" name="c5227511" members="resourceset" constraint="SQLConstraint_1168937632501"/>
+  <constraints xmi:id="SQLConstraint_1168937632500" name="fk_ref_21225_2122575" type="FOREIGNKEY" referenceByKey="fk_ref_21225_2122575"/>
+  <constraints xmi:id="SQLConstraint_1168937632501" name="c5227511" type="PRIMARYKEY" primaryKey="c5227511"/>
+</RDBSchema:RDBTable>

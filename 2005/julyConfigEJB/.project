@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>julyConfigEJB</name>
+	<comment></comment>
+	<projects>
+		<project>common</project>
+		<project>julycommonEJB</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.validation.validationbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.j2ee.LibCopyBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.ibm.etools.ctc.serviceprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.ibm.etools.j2ee.EJBNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>com.ibm.etools.ctc.javaprojectnature</nature>
+		<nature>com.ibm.etools.beaninfo.BeaninfoNature</nature>
+	</natures>
+</projectDescription>

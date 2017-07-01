@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leasevpayment" name="leasevpayment" primaryKey="leasevpayment_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="act" name="act">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987177">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="debetcontract" name="debetcontract">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987178">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="creditcontract" name="creditcontract">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987179">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="summ" name="summ">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634987177" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leasevpayment_1" name="leasevpayment" members="act debetcontract creditcontract" constraint="SQLConstraint_1131634987177"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_36368_36368" name="FK_REF_36368_36368" members="creditcontract" constraint="SQLConstraint_1131634987178">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasecontracts.tblxmi#leasecontracts_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_36369_36369" name="FK_REF_36369_36369" members="debetcontract" constraint="SQLConstraint_1131634987179">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasecontracts.tblxmi#leasecontracts_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_36370_36370" name="FK_REF_36370_36370" members="act" constraint="SQLConstraint_1131634987180">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasemutualacts.tblxmi#leasemutualacts_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987177" name="leasevpayment" type="PRIMARYKEY" primaryKey="leasevpayment_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987178" name="FK_REF_36368_36368" type="FOREIGNKEY" referenceByKey="FK_REF_36368_36368"/>
+  <constraints xmi:id="SQLConstraint_1131634987179" name="FK_REF_36369_36369" type="FOREIGNKEY" referenceByKey="FK_REF_36369_36369"/>
+  <constraints xmi:id="SQLConstraint_1131634987180" name="FK_REF_36370_36370" type="FOREIGNKEY" referenceByKey="FK_REF_36370_36370"/>
+</RDBSchema:RDBTable>

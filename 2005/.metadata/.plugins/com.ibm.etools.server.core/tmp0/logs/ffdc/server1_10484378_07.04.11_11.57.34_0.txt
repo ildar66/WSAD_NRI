@@ -1,0 +1,258 @@
+------Start of DE processing------ = [07.04.11 11:57:33:837 MSD] , key = java.sql.SQLException com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement 466
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement
+probeid = 466
+Stack Dump = java.sql.SQLException: ??????????? ???? BYTE ? TEXT ?????? ????? ROW ? COLLECTION.
+	at com.informix.util.IfxErrMsg.getSQLException(IfxErrMsg.java:355)
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3086)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executePrepare(IfxSqli.java:1082)
+	at com.informix.jdbc.IfxResultSet.executePrepare(IfxResultSet.java:182)
+	at com.informix.jdbc.IfxPreparedStatement.setupExecutePrepare(IfxPreparedStatement.java:197)
+	at com.informix.jdbc.IfxPreparedStatement.<init>(IfxPreparedStatement.java:175)
+	at com.informix.jdbc.IfxSqliConnect.prepareStatement(IfxSqliConnect.java:1907)
+	at com.ibm.ejs.cm.cache.StatementCache.reallyPrepareStatement(StatementCache.java:250)
+	at com.ibm.ejs.cm.cache.StatementCache.prepareStatement(StatementCache.java:119)
+	at com.ibm.ejs.cm.pool.ConnectO.prepareStatement(ConnectO.java:2780)
+	at com.ibm.ejs.cm.pool.ConnectO.prepareStatement(ConnectO.java:2813)
+	at com.ibm.ejs.cm.proxy.ConnectionProxy.prepareStatement(ConnectionProxy.java:600)
+	at com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement(EJSJDBCPersister.java:963)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseContractBean_62ebfc4f.findByPrimaryKey(EJSJDBCPersisterCMPLeaseContractBean_62ebfc4f.java:923)
+	at com.hps.july.persistence.EJSCMPLeaseContractHomeBean_62ebfc4f.findByPrimaryKey(EJSCMPLeaseContractHomeBean_62ebfc4f.java:86)
+	at com.hps.july.persistence.EJSRemoteCMPLeaseContractHome_62ebfc4f.findByPrimaryKey(EJSRemoteCMPLeaseContractHome_62ebfc4f.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.rmi.util.ProxyUtil$4.run(ProxyUtil.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.ibm.rmi.util.ProxyUtil.invokeWithClassLoaders(ProxyUtil.java:701)
+	at com.ibm.CORBA.iiop.ClientDelegate.invoke(ClientDelegate.java:1084)
+	at $Proxy0.findByPrimaryKey(Unknown Source)
+	at com.hps.july.persistence._LeaseContractHome_Stub.findByPrimaryKey(_LeaseContractHome_Stub.java:352)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSJDBCPersisterCMPLeaseContractBean_62ebfc4f
+com.hps.july.persistence.EJSJDBCPersisterCMPLeaseContractBean_62ebfc4f@4a44c35f
+
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement
+probeid = 466
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSJDBCPersisterCMPLeaseContractBean_62ebfc4f
+  finderObject = null
+  genericFindInsertPoints[3] = {5122,3425,1747}
+  genericFindSqlString = ((SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(2)), CAST(NULL AS CHAR(3)), CAST(NULL AS CHAR(150)), CAST(NULL AS DECIMAL(15, 4)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS CHAR(30)), CAST(NULL AS CHAR(100)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)) FROM leasedocuments  T4, leasecontracts  T3 WHERE T4.leasedocument = T3.leasedocument AND T4.doctype = 'K' AND )  UNION ALL (SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, T2.dogelectonum, T2.dogelectrodate, T2.numberofphones, T2.numberofphonestemp, T2.calcelectrotype, T2.mainleasedocument, T2.isactive, T2.isdogelectro, T2.officialdoc, T2.activecontract, T2.mainresource, T2.sumtrafic, T2.sumaccept, T2.sumpay, T2.needofficialdoc, T2.basestartdate, T2.baseenddate, T2.customerold, T2.haveioact, T2.ioactnumber, T2.ioactdate, T2.mainposition, CAST(NULL AS INTEGER), CAST(NULL AS CHAR(2)), CAST(NULL AS CHAR(3)), CAST(NULL AS CHAR(150)), CAST(NULL AS DECIMAL(15, 4)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS CHAR(30)), CAST(NULL AS CHAR(100)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)) FROM leasearendaagrmnts  T2, leasedocuments  T4, leasecontracts  T3 WHERE T3.leasedocument = T2.leasedocument AND T4.leasedocument = T3.leasedocument AND T4.doctype = 'A' AND ) )  UNION ALL (SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), T1.ban, T1.bil_contrstatus, T1.bil_accounttype, T1.bil_name, T1.balans, T1.bil_inn, T1.bil_contrstname, T1.flagworkpie, T1.bil_contrstdate, T1.useallben, T1.bil_startservdate, T1.bil_suspdate, T1.bil_acctypename, T1.bil_billaddress, T1.mainposition, T1.proctype, T1.useinacts, T1.techcontract FROM leaseabonentban  T1, leasedocuments  T4, leasecontracts  T3 WHERE T3.leasedocument = T1.leasedocument AND T4.leasedocument = T3.leasedocument AND T4.doctype = 'B' AND ) 
+  serObj = null
+  _loadForUpdateString = ((SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(2)), CAST(NULL AS CHAR(3)), CAST(NULL AS CHAR(150)), CAST(NULL AS DECIMAL(15, 4)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS CHAR(30)), CAST(NULL AS CHAR(100)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)) FROM leasedocuments  T4, leasecontracts  T3 WHERE T4.leasedocument = T3.leasedocument AND T4.doctype = 'K' AND T4.leasedocument = ?)  UNION ALL (SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, T2.dogelectonum, T2.dogelectrodate, T2.numberofphones, T2.numberofphonestemp, T2.calcelectrotype, T2.mainleasedocument, T2.isactive, T2.isdogelectro, T2.officialdoc, T2.activecontract, T2.mainresource, T2.sumtrafic, T2.sumaccept, T2.sumpay, T2.needofficialdoc, T2.basestartdate, T2.baseenddate, T2.customerold, T2.haveioact, T2.ioactnumber, T2.ioactdate, T2.mainposition, CAST(NULL AS INTEGER), CAST(NULL AS CHAR(2)), CAST(NULL AS CHAR(3)), CAST(NULL AS CHAR(150)), CAST(NULL AS DECIMAL(15, 4)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS CHAR(30)), CAST(NULL AS CHAR(100)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)) FROM leasearendaagrmnts  T2, leasedocuments  T4, leasecontracts  T3 WHERE T3.leasedocument = T2.leasedocument AND T4.leasedocument = T3.leasedocument AND T4.doctype = 'A' AND T4.leasedocument = ?) )  UNION ALL (SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), T1.ban, T1.bil_contrstatus, T1.bil_accounttype, T1.bil_name, T1.balans, T1.bil_inn, T1.bil_contrstname, T1.flagworkpie, T1.bil_contrstdate, T1.useallben, T1.bil_startservdate, T1.bil_suspdate, T1.bil_acctypename, T1.bil_billaddress, T1.mainposition, T1.proctype, T1.useinacts, T1.techcontract FROM leaseabonentban  T1, leasedocuments  T4, leasecontracts  T3 WHERE T3.leasedocument = T1.leasedocument AND T4.leasedocument = T3.leasedocument AND T4.doctype = 'B' AND T4.leasedocument = ?)  FOR UPDATE
+  _loadString = ((SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(2)), CAST(NULL AS CHAR(3)), CAST(NULL AS CHAR(150)), CAST(NULL AS DECIMAL(15, 4)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS CHAR(30)), CAST(NULL AS CHAR(100)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)) FROM leasedocuments  T4, leasecontracts  T3 WHERE T4.leasedocument = T3.leasedocument AND T4.doctype = 'K' AND T4.leasedocument = ?)  UNION ALL (SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, T2.dogelectonum, T2.dogelectrodate, T2.numberofphones, T2.numberofphonestemp, T2.calcelectrotype, T2.mainleasedocument, T2.isactive, T2.isdogelectro, T2.officialdoc, T2.activecontract, T2.mainresource, T2.sumtrafic, T2.sumaccept, T2.sumpay, T2.needofficialdoc, T2.basestartdate, T2.baseenddate, T2.customerold, T2.haveioact, T2.ioactnumber, T2.ioactdate, T2.mainposition, CAST(NULL AS INTEGER), CAST(NULL AS CHAR(2)), CAST(NULL AS CHAR(3)), CAST(NULL AS CHAR(150)), CAST(NULL AS DECIMAL(15, 4)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(20)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS CHAR(30)), CAST(NULL AS CHAR(100)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)) FROM leasearendaagrmnts  T2, leasedocuments  T4, leasecontracts  T3 WHERE T3.leasedocument = T2.leasedocument AND T4.leasedocument = T3.leasedocument AND T4.doctype = 'A' AND T4.leasedocument = ?) )  UNION ALL (SELECT T4.createdby, T4.modifiedby, T4.docdate, T4.docnumber, T4.leasedocument, T4.modified, T4.created, T4.operator, T4.regionid, T4.doctype, T3.reportperiod, T3.enddate, T3.contracttype, T3.summ1, T3.contractstate, T3.ratecalcruleday, T3.orgowner, T3.ratecalcrule, T3.dateclose, T3.ratedelta, T3.execname, T3.startdate, T3.extendperiod, T3.summ2, T3.chargends, T3.extendtype, T3.CustName, T3.docfilename, T3.changeenddate, T3.extendyears, T3.extendmonthes, T3.extenddays, T3.ratends, T3.nalogagent, T3.isratelimit, T3.ratelimitmin, T3.ratelimitmax, T3.buchdocnumber, T3.havedocsigned, T3.havedocsignedcustomer, T3.manager, T3.economist, T3.currency2, T3.currency1, T3.orgexecutor, T3.orgcustomer, CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(1)), CAST(NULL AS INTEGER), CAST(NULL AS INTEGER), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS DECIMAL(15, 2)), CAST(NULL AS CHAR(1)), CAST(NULL AS DATE), CAST(NULL AS DATE), CAST(NULL AS INTEGER), CAST(NULL AS CHAR(1)), CAST(NULL AS CHAR(20)), CAST(NULL AS DATE), CAST(NULL AS INTEGER), T1.ban, T1.bil_contrstatus, T1.bil_accounttype, T1.bil_name, T1.balans, T1.bil_inn, T1.bil_contrstname, T1.flagworkpie, T1.bil_contrstdate, T1.useallben, T1.bil_startservdate, T1.bil_suspdate, T1.bil_acctypename, T1.bil_billaddress, T1.mainposition, T1.proctype, T1.useinacts, T1.techcontract FROM leaseabonentban  T1, leasedocuments  T4, leasecontracts  T3 WHERE T3.leasedocument = T1.leasedocument AND T4.leasedocument = T3.leasedocument AND T4.doctype = 'B' AND T4.leasedocument = ?) 
+  _storeString = 
+    [0] = UPDATE leasecontracts  SET reportperiod = ?, enddate = ?, contracttype = ?, summ1 = ?, contractstate = ?, ratecalcruleday = ?, orgowner = ?, ratecalcrule = ?, dateclose = ?, ratedelta = ?, execname = ?, startdate = ?, extendperiod = ?, summ2 = ?, chargends = ?, extendtype = ?, CustName = ?, docfilename = ?, changeenddate = ?, extendyears = ?, extendmonthes = ?, extenddays = ?, ratends = ?, nalogagent = ?, isratelimit = ?, ratelimitmin = ?, ratelimitmax = ?, buchdocnumber = ?, havedocsigned = ?, havedocsignedcustomer = ?, manager = ?, economist = ?, currency2 = ?, currency1 = ?, orgexecutor = ?, orgcustomer = ? WHERE leasedocument = ?
+    [1] = UPDATE leasedocuments  SET createdby = ?, modifiedby = ?, docdate = ?, docnumber = ?, modified = ?, created = ?, operator = ?, regionid = ?, doctype = ? WHERE leasedocument = ?
+  _removeString = 
+    [0] = DELETE FROM leasecontracts  WHERE leasedocument = ?
+    [1] = DELETE FROM leasedocuments  WHERE leasedocument = ?
+  _createString = 
+    [0] = INSERT INTO leasedocuments (leasedocument, createdby, modifiedby, docdate, docnumber, modified, created, operator, regionid, doctype) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    [1] = INSERT INTO leasecontracts (leasedocument, reportperiod, enddate, contracttype, summ1, contractstate, ratecalcruleday, orgowner, ratecalcrule, dateclose, ratedelta, execname, startdate, extendperiod, summ2, chargends, extendtype, CustName, docfilename, changeenddate, extendyears, extendmonthes, extenddays, ratends, nalogagent, isratelimit, ratelimitmin, ratelimitmax, buchdocnumber, havedocsigned, havedocsignedcustomer, manager, economist, currency2, currency1, orgexecutor, orgcustomer) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  class$com$ibm$ejs$persistence$EJSJDBCPersister = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@468dc366
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@206043fa
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@37cb8379
+      soleInstance = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3f074379
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 39
+      clock = 39
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4a6d0378
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3f00c379
+      referent = [Ljava.lang.reflect.Field;@24bf4367
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@35a78374
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  supportsKeepUpdateLocks = false
+  supportsSelectForUpdate = true
+  intDSHelper = null
+  dshelperMetadata = null
+  dshelper = null
+  newDataSource = false
+  dbPassword = null
+  dbUser = null
+  dataSource = 
+    class$com$ibm$ejs$cm$JDBC1PhaseRF = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@54bf0366
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.cm.JDBC1PhaseRF
+    class$com$ibm$ejs$cm$DataSourceImpl = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@549fc366
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc2 = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ws.runtime.runtime
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.cm.MBeans
+    attrs = com.ibm.ejs.cm.CMPropertiesImpl@253dc35d
+    source = com.ibm.ejs.cm.pool.ConnectionPool@2c28c35e
+    collab = 
+      class$com$ibm$ws$management$collaborator$DefaultRuntimeCollaborator = java.lang.Class@34788379
+      bridge = null
+      runtimeObjName = cells/localhost/nodes/localhost/servers/server1/resources.xml#WAS40DataSource_1144741586767
+      runtimeObj = this.dataSource
+      tc = com.ibm.ejs.ras.TraceComponent@fe84375
+      class$com$ibm$websphere$management$RuntimeCollaborator = java.lang.Class@37c88379
+      mbeanName = javax.management.ObjectName@598ec35d
+      modelMBean = javax.management.modelmbean.RequiredModelMBean@5eef435d
+  jdbcDataSource = null
+  schemaName = null
+  home = com.hps.july.persistence.EJSCMPLeaseContractHomeBean_62ebfc4f@7daa436c
+  cvThreadLocal = 
+    index = 14
+    count = 15
+    HASH_INCREMENT = 1640531527
+    nextHashCode = 1584028597
+    threadLocalHashCode = 1971305554
+  ivCMPWarningLogged = false
+  ivCMPAutoCommitWarningLogged = false
+  tc2 = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.resources.CONMMessages
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ejs.persistence.EJSJDBCPersister$DataStoreHelper
+  CLASS_NAME = com.ibm.ejs.persistence.EJSJDBCPersister
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.container.container
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ejs.persistence.EJSJDBCPersister
+

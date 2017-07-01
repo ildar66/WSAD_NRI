@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="payoffacts" name="payoffacts" primaryKey="payoffacts_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="document" name="document">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987067">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="chairman" name="chairman" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987068">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="member1" name="member1" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987069">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="member2" name="member2" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987070">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="payoffacts_1" name="payoffacts" members="document" constraint="SQLConstraint_1131634987067"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_27015_27015" name="FK_REF_27015_27015" members="member1" constraint="SQLConstraint_1131634987068">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#workers_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_1906_1906" name="FK_REF_1906_1906" members="document" constraint="SQLConstraint_1131634987069">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_documents.tblxmi#documents_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_27016_27016" name="FK_REF_27016_27016" members="chairman" constraint="SQLConstraint_1131634987070">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#workers_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_27017_27017" name="FK_REF_27017_27017" members="member2" constraint="SQLConstraint_1131634987071">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#workers_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987067" name="payoffacts" type="PRIMARYKEY" primaryKey="payoffacts_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987068" name="FK_REF_27015_27015" type="FOREIGNKEY" referenceByKey="FK_REF_27015_27015"/>
+  <constraints xmi:id="SQLConstraint_1131634987069" name="FK_REF_1906_1906" type="FOREIGNKEY" referenceByKey="FK_REF_1906_1906"/>
+  <constraints xmi:id="SQLConstraint_1131634987070" name="FK_REF_27016_27016" type="FOREIGNKEY" referenceByKey="FK_REF_27016_27016"/>
+  <constraints xmi:id="SQLConstraint_1131634987071" name="FK_REF_27017_27017" type="FOREIGNKEY" referenceByKey="FK_REF_27017_27017"/>
+</RDBSchema:RDBTable>

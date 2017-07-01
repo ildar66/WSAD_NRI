@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>!</CommitComment>
+	<CommitComment>Список начислений для платежа</CommitComment>
+	<CommitComment>!</CommitComment>
+	<CommitComment>Какие начисления закрывает платеж</CommitComment>
+	<CommitComment>История описи документов аренды</CommitComment>
+	<CommitComment>История изменения описей CDBC_Object.</CommitComment>
+	<CommitComment>Комплект документов TO</CommitComment>
+	<CommitComment>Возвращает список документов одного(typeRegistryDoc) типа.</CommitComment>
+	<CommitComment>!</CommitComment>
+	<CommitComment>&quot;Сальдо для абонентских договоров&quot;</CommitComment>
+</CommitComments>

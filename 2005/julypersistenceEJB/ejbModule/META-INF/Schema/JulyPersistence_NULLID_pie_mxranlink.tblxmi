@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="pie_mxranlink" name="pie_mxranlink" primaryKey="pie_mxranlink_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="mxrannri" name="mxrannri">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986276">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="owner" name="owner">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986277">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="mxranplatinum" name="mxranplatinum">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986276" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pie_mxranlink_1" name="pie_mxranlink" members="mxrannri owner mxranplatinum" constraint="SQLConstraint_1131634986276"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="owner_link_fk" name="owner_link_fk" members="owner" constraint="SQLConstraint_1131634986277">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_organizations.tblxmi#organizations_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="link_mxran_fk" name="link_mxran_fk" members="mxranplatinum owner" constraint="SQLConstraint_1131634986278">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_pie_mxranplatinum.tblxmi#pie_mxranplatinum_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986276" name="pie_mxranlink" type="PRIMARYKEY" primaryKey="pie_mxranlink_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986277" name="owner_link_fk" type="FOREIGNKEY" referenceByKey="owner_link_fk"/>
+  <constraints xmi:id="SQLConstraint_1131634986278" name="link_mxran_fk" type="FOREIGNKEY" referenceByKey="link_mxran_fk"/>
+</RDBSchema:RDBTable>

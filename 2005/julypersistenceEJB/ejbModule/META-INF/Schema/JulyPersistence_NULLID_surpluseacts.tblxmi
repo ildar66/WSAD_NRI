@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="surpluseacts" name="surpluseacts" primaryKey="surpluseacts_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="document" name="document">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987017">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="surpluseacts_1" name="surpluseacts" members="document" constraint="SQLConstraint_1131634987017"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_13207_13207" name="FK_REF_13207_13207" members="document" constraint="SQLConstraint_1131634987018">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_documents.tblxmi#documents_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987017" name="surpluseacts" type="PRIMARYKEY" primaryKey="surpluseacts_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987018" name="FK_REF_13207_13207" type="FOREIGNKEY" referenceByKey="FK_REF_13207_13207"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="importtasks" name="importtasks" primaryKey="importtasks_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="imptaskid" name="imptaskid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986566">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986566" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="xml_file" name="xml_file" allowNull="true">
+    <type xmi:type="RDBSchema:InformixSimpleLargeObject" xmi:id="InformixSimpleLargeObject_1131634986566" length="2">
+      <originatingType xmi:type="RDBSchema:InformixSimpleLargeObject" href="INFORMIX_V92_Primitives.xmi#InformixSimpleLargeObject_5"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="importtasks_1" name="importtasks" members="imptaskid" constraint="SQLConstraint_1131634986566">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_importsessions.tblxmi#FK_REF_80480_80480"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986566" name="importtasks" type="PRIMARYKEY" primaryKey="importtasks_1"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Binding">
+  <defaultDatasource xmi:id="ResourceRefBinding_1132238071602" jndiName="july"/>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="BillingRequiredNew_Binding" jndiName="com/hps/july/arenda/billing/BillingRequiredNew">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BillingRequiredNew"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="BufferNri2Nri_Binding" jndiName="com/hps/july/arenda/billing/BufferNri2Nri">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BufferNri2Nri"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Pie2Nri_Binding" jndiName="com/hps/july/arenda/billing/Pie2Nri">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Pie2Nri"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Transfer_Binding" jndiName="com/hps/july/arenda/billing/Transfer">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Transfer"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

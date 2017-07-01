@@ -1,0 +1,313 @@
+<%
+	//????:
+	boolean isAdministrator = request.isUserInRole("administrator");
+	boolean isArendaDirector =request.isUserInRole("ArendaDirector");
+	boolean isArendaMainManager = request.isUserInRole("ArendaMainManager");
+	boolean isArendaManager = request.isUserInRole("ArendaManager");
+	boolean isArendaMainEconomist = request.isUserInRole("ArendaMainEconomist");
+	boolean isArendaEconomist = request.isUserInRole("ArendaEconomist");
+	boolean isViewerPays = request.isUserInRole("viewerPays");
+	boolean isDictStaffOperator = request.isUserInRole("dictStaffOperator");
+	boolean isAdminTerrabyte = request.isUserInRole("adminTerrabyte");
+	boolean isDictResAdmin = request.isUserInRole("dictResAdmin");
+	boolean isDictResOperator = request.isUserInRole("dictResOperator");
+	boolean isDictPartAdmin = request.isUserInRole("dictPartAdmin");
+	boolean isDictPartOperator = request.isUserInRole("dictPartOperator");
+	boolean isDictCurrateOperator = request.isUserInRole("dictCurrateOperator");
+	boolean isSiteProjector = request.isUserInRole("siteProjector");
+	boolean isSiteExploitor = request.isUserInRole("siteExploitor");
+	boolean isSiteTransport = request.isUserInRole("siteTransport");
+	boolean isSiteStation = request.isUserInRole("siteStation");
+	boolean isSiteLook = request.isUserInRole("siteLook");
+	boolean isElectroCounterViewer = request.isUserInRole("electroCounterViewer");
+	boolean isElectroCounterEditor = request.isUserInRole("electroCounterEditor");
+	boolean isFreqManager = request.isUserInRole("FreqManager");
+	boolean isRegionAdmin = request.isUserInRole("regionAdmin");
+	boolean isSupregAdmin = request.isUserInRole("supregAdmin");
+	boolean isDeveloper = request.isUserInRole("developer");
+	//boolean isContractControler = request.isUserInRole("contractControler");
+	//boolean isContractComposer = request.isUserInRole("contractComposer");
+	boolean isTechStuff = request.isUserInRole("TechStuff");
+	boolean isStorageManager = request.isUserInRole("StorageManager");
+	boolean isPlanLook = request.isUserInRole("planLook");
+	boolean isRegionCurator = request.isUserInRole("RegionCurator");
+	boolean isPlanResponsible = request.isUserInRole("planResponsible");
+	//?????????:
+	boolean isLcsGroup = request.isUserInRole("lcsEditAllLicence") || request.isUserInRole("lcsEditFAS") || request.isUserInRole("lcsEditGPS") || request.isUserInRole("lcsEditGASN") || request.isUserInRole("lcsEditSES") || request.isUserInRole("lcsEditElectro") || request.isUserInRole("lcsEditLand") || request.isUserInRole("lcsEditProperty");
+	boolean isVisibleResources = isAdministrator || isArendaMainEconomist || isArendaEconomist || isArendaDirector;
+	//??????:
+	boolean isSecurityGroup =  isAdministrator || isDictStaffOperator || isAdminTerrabyte ;//1
+	boolean isDictGroup =  isAdministrator || isDictResAdmin || isDictResOperator  || isDictPartAdmin || isDictCurrateOperator || isDictPartOperator || isArendaMainManager; //2
+	boolean isSiteinfoGroup =  isAdministrator || isSiteProjector || isSiteExploitor || isSiteTransport || isSiteStation || isArendaManager || isSiteLook || isArendaEconomist || isArendaMainEconomist || isArendaMainManager || isArendaDirector || isElectroCounterViewer || isElectroCounterEditor || isFreqManager || isRegionAdmin || isSupregAdmin || isLcsGroup; //3
+	//boolean isContractGroup =  isAdministrator || isContractControler || isContractComposer; //4
+	boolean isInventoryGroup =  isAdministrator || isTechStuff || isStorageManager || isSiteTransport || isSiteStation || isSiteExploitor; //5
+	boolean isArendaGroup =  isAdministrator || isArendaMainEconomist || isArendaEconomist || isArendaDirector || isArendaMainManager || isArendaManager || isViewerPays || isLcsGroup;//6
+	//boolean isBugsGroup =  isAdministrator || //7
+	//boolean isProjectGroup =  isAdministrator || isPlanLook ;//8
+	//boolean isPlatinumGroup =  isAdministrator || //9
+	boolean isBasestationGroup =  isAdministrator || isSupregAdmin || isRegionAdmin || isSiteExploitor || isSiteStation || isSiteProjector || isRegionCurator || isSiteTransport || isFreqManager;//10
+	boolean isPlanGraphicGroup =  isAdministrator || isPlanResponsible || request.isUserInRole("TSProjectUser");//11
+	//boolean isGroup =  isAdministrator || //12
+	boolean isSitedocGroup =  isAdministrator || isTechStuff || isSiteTransport ;//13
+	boolean isTr1Group =  isAdministrator || request.isUserInRole("ChannelTSUser");//14
+	boolean isBasestationGsmGroup =  isAdministrator || isSiteStation;//15
+	boolean isBSGroup =  isAdministrator || request.isUserInRole("BSProjectUser") || request.isUserInRole("BSProjectManager") || request.isUserInRole("BSProjectAdmin") || isDeveloper;//16
+%>
+
+<%--
+<!-- ??????????? ????: -->
+<link rel="stylesheet" type="text/css" href="/menu/styles_default.css">
+<script language="JavaScript" src="/menu/jsFunctions_css.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!-- Code after this will be ignored by older browsers
+// Assign the user information to a Variable
+var platform = navigator.platform.substr(0,3);
+var browser = navigator.appName;
+var version = navigator.appVersion.substr(0,1);
+// -->
+</script>
+<!-- ??????? ???? -->
+<div id="MainGraphMenu" onMouseOver="over = 'yes';" onMouseOut="overChecker('MainGraph');">
+<script language="JavaScript" type="text/javascript">
+     function onMouseOver() {over = 'yes';}
+     function onMouseOut() {overChecker('MainGraph');}
+</script>
+<table border="0" cellpadding="0" cellspacing="1" bgColor=#1B467D>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="#" class="menuLink">??????:</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%if(isSecurityGroup) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/security/main.do?navclear=1&rootapp=0&rootstate=0" class="menuLink">??????? ????????????? ???????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<%if(isSiteinfoGroup) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/siteinfo/main.do?navclear=1&rootapp=0&rootstate=0" class="menuLink">???????? ???????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<%if(isInventoryGroup) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/inventory/main.do?navclear=1&rootapp=0&rootstate=0" class="menuLink">???? ????????????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<%if(isArendaGroup) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/arenda/main.do?navclear=1&rootapp=0&rootstate=0" class="menuLink">??????? ????????? ??????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<%if(isBasestationGroup) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/basestation/main.do?navclear=1&rootapp=0&rootstate=0" class="menuLink">?????????????? ????????????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<%if(isPlanGraphicGroup) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="<%= "http://websphere:9080/PlanGraphicWeb/login.jsp?id=" + request.getRemoteUser() %>" class="menuLink">????-?????? ????????????? ?? </a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<%if(isSitedocGroup) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/sitedoc/main.do?navclear=1&rootapp=0&rootstate=0" class="menuLink">?????????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<%if(isTr1Group) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="javascript:openWind('returnUrl', '<%= request.getRemoteUser()%>');" class="menuLink">???????????? ??????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<%if(isBasestationGsmGroup) {%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/basestation/ShowBaseStationGSM.do?navclear=1" class="menuLink">???????????? ???????????? GSM</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<%}%>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/Reregister.do?navclear=1" class="menuLink">???????????????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/Logout.do?navclear=1" class="menuLink">?????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+</table>
+</div>
+
+<!-- ???????? ??????????? -->
+<div id="DictionaryMenu" onMouseOver="over = 'yes';" onMouseOut="overChecker('Dictionary');">
+<script language="JavaScript" type="text/javascript">
+     function onMouseOver() {over = 'yes';}
+     function onMouseOut() {overChecker('Dictionary');}
+</script>
+<table border="0" cellpadding="0"  cellspacing="1" bgColor=#1B467D>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowRestypeList.do?navclear=1" class="menuLink">???? ? ???? ????????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select';RestypeMenu.style.visibility = 'visible';" onMouseOut="className='normal';RestypeMenu.style.visibility = 'hidden';">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="#" class="menuLink">???????&gt;&gt;</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+<logic:present role="administrator">
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowUnitList.do?navclear=1" class="menuLink">??????? ?????????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+</logic:present>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowTaxList.do?navclear=1" class="menuLink">??????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowCurrencyList.do?navclear=1" class="menuLink">??????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowRatetypeList.do?navclear=1" class="menuLink">???? ?????? ?????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+<logic:present role="administrator">
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowSysconstList.do?navclear=1" class="menuLink">????????? ?????????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+</logic:present>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowGroupList.do?navclear=1" class="menuLink">????????????? ??. ???</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowCompanyList.do?navclear=1" class="menuLink">????????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowOrganizationListM.do?navclear=1" class="menuLink">??????????? ????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowBankList.do?navclear=1" class="menuLink">?????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowStorageList.do?navclear=1" class="menuLink">??????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+</table>
+</div>
+
+<!-- ??????? ???  ??????????? "??????? "-->
+<div id="RestypeMenu" onMouseOver="over = 'yes';RestypeMenu.style.visibility = 'visible';" onMouseOut="RestypeMenu.style.visibility = 'hidden';overChecker('Dictionary');">
+<script language="JavaScript" type="text/javascript">
+     function onMouseOver() {over = 'yes';RestypeMenu.style.visibility = 'visible';}
+     function onMouseOut() {RestypeMenu.style.visibility = 'hidden';overChecker('Dictionary');}
+</script>
+<table border="0" cellpadding="0"  cellspacing="1" bgColor=#1B467D>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowBasestationList.do?navclear=1" class="menuLink">??????? ???????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowAntenaList.do?navclear=1" class="menuLink">??????? ??????? ???????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowRRLResourceList.do?navclear=1" class="menuLink">????????? ???????????? ????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowRepeaterList.do?navclear=1" class="menuLink">?????????? ???????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowCableList.do?navclear=1" class="menuLink">?????? ??????? ???????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowResourceList.do?navclear=1" class="menuLink">??? ???????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowComplectList.do?navclear=1" class="menuLink">??????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+	<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'">
+		<td valign="top" align="left">
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle">
+		<a href="/dict/ShowInvResourceList.do?navclear=1" class="menuLink">??????? ?? ?????????? ?????</a>
+		<img src="/menu/images/CLEAR.GIF" width="10" height="18" border="0" alt="" align="absmiddle"></td>
+	</tr>
+</table>
+</div>
+<!--end ???????????? ???? -->
+--%>

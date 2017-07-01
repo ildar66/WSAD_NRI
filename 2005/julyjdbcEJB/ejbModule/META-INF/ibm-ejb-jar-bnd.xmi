@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Binding">
+  <defaultDatasource xmi:id="ResourceRefBinding_1132238256959" jndiName="july"/>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="Environment_Binding" jndiName="com/hps/july/jdbcpersistence/Environment">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Environment"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

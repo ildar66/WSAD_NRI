@@ -1,0 +1,20 @@
+<!-- MemoType:Выдать оборудование  -->
+<P style='text-align:justify;text-indent:35.4pt'>Прошу Вас дать указание на выдачу оборудования <bean:write name="MemoWordForm" property="memo.useTypeVO.printLabel" filter="true" scope="request"/>
+<%if(aform.getMemo().getUsetype().equalsIgnoreCase("A")){%>
+	<logic:present name="MemoWordForm" property="arendaContractVO">
+		по договору № <bean:write name="MemoWordForm" property="arendaContractVO.documentNumber" filter="true" scope="request"/>
+		от <july:datewrite name="MemoWordForm" property="arendaContractVO.documentDate" scope="request"/>
+	</logic:present>
+<%}%> 
+<%if(aform.getMemo().getUsetype().equalsIgnoreCase("D")){%>
+	<logic:present name="MemoWordForm" property="arendaContractVO">
+		по договору №      ?
+	</logic:present>
+<%}%>арендодателю
+<logic:equal name="MemoWordForm" property="detach" value="false">
+	<bean:write name="MemoListForm" property="abonent.orgCustomer.name" filter="true" scope="session"/>:
+</logic:equal>
+<logic:equal name="MemoWordForm" property="detach" value="true">
+	<bean:write name="MemoWordForm" property="memo.orgCustomer.shortname" filter="true"/>:
+</logic:equal>
+</P> 

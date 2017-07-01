@@ -1,0 +1,6 @@
+<!-- com.ibm.etools.logging.util log file -->
+<NODE logging.util.node_id="NODE.192.168.9.87" logging.util.hostname="192.168.9.87" logging.util.ipaddress="192.168.9.87" logging.util.timezone="180" logging.util.time="1184238960,949"/>
+<PROCESS_CREATE logging.util.process_id="PROCESS_CREATE.eclipse.1184238960,949" logging.util.pid="24183153" logging.util.node_idref="NODE.192.168.9.87" logging.util.time="1184238960,949" logging.util.process_environment="unknown" logging.util.process_application_execution=""/>
+<AGENT_CREATE logging.util.agent_id="AGENT_CREATE.Default Logging Agent.1184154318,28" logging.util.agent_version="1.000" logging.util.process_idref="PROCESS_CREATE.eclipse.1184238960,949" logging.util.agent_name="Default Logging Agent" logging.util.agent_type="Logging" logging.util.agent_parameters="" logging.util.time="1184154318,28"/>
+<String logging.util.agent_idref="Default Logging Agent" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1"/>
+<String logging.util.agent_idref="Default Logging Agent" logging.util.MsgLoggerLevel="CONFIG" Value="5.1.1"/>

@@ -1,0 +1,71 @@
+<!-- SchetFactPosition Table -->
+<table  border="1" style='border-collapse:collapse;border:none;mso-border-alt:solid black .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+<!-- header start -->
+<tr align="center">
+	<td>Наименование товара (описание выполненных услуг, оказанных услуг)</td>
+	<td>Ед. изм.</td>
+	<td>Количество</td>
+	<td>Цена за ед.изм.</td>
+	<td>Стоимость товаров всего без налога</td>
+	<td>В том числе акциз</td>
+	<td>Налоговая ставка</td>
+	<td>Сумма налога</td>
+	<td>Стоимость товаров всего с учетом налога</td>
+	<td>Страна происхожд.</td>
+	<td>Номер ГТД</td>
+</tr>
+<tr align="center">
+	<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+</tr>
+<!-- header end -->
+<%
+	java.util.Iterator table = aform.getPositionsList().iterator();
+    java.math.BigDecimal sum_sumNds = new java.math.BigDecimal(0); 
+	java.math.BigDecimal sum_sumWithTax = new java.math.BigDecimal(0);
+	while (table.hasNext()) {
+		com.hps.july.arenda.valueobject.SchetFactPositionValueObject ob
+          = (com.hps.july.arenda.valueobject.SchetFactPositionValueObject)table.next();
+		request.setAttribute("ob", ob);
+%>
+<!-- DATA start -->
+<tr>
+	<td><bean:write name="ob" property="nameResource" filter="true"/></td>
+	<td><bean:write name="ob" property="edizm" filter="true"/></td>
+	<td align="right" NOWRAP><july:numberwrite name="ob" property="qty"/> </td>
+	<td align="right" NOWRAP><july:numberwrite name="ob" property="price" fractdigits="2"/> </td>
+	<td align="right" NOWRAP><july:numberwrite name="ob" property="sumFreeTax" fractdigits="2"/> </td>
+	<td align="right" NOWRAP><july:numberwrite name="ob" property="excise" fractdigits="2"/> </td>
+	<td align="right" NOWRAP><july:numberwrite name="ob" property="rateNds" fractdigits="2"/> </td>
+	<td align="right" NOWRAP><july:numberwrite name="ob" property="sumNds" fractdigits="2"/> </td>
+	<td align="right" NOWRAP><july:numberwrite name="ob" property="sumWithTax" fractdigits="2"/> </td>
+	<td><bean:write name="ob" property="country" filter="true"/></td>
+	<td><bean:write name="ob" property="numGTD" filter="true"/></td>
+</tr>
+<!-- DATA end -->
+<%
+		if(ob.getSumNds() != null){
+			sum_sumNds=sum_sumNds.add(ob.getSumNds());
+			request.setAttribute("sum_sumNds", sum_sumNds);
+		}
+		if(ob.getSumWithTax() != null){
+			sum_sumWithTax=sum_sumWithTax.add(ob.getSumWithTax());
+			request.setAttribute("sum_sumWithTax", sum_sumWithTax);
+		}
+	}// end while
+%>
+<!-- footer start -->
+<tr>
+	<td>ВСЕГО К ОПЛАТЕ:</td>
+	<td align="right" colspan="6">
+		<logic:present name="ob" property="idCurrency">
+			<logic:equal name="ob" property="idCurrency" value="840">в долларах США</logic:equal>
+			<logic:equal name="ob" property="idCurrency" value="810">в Российских рублях</logic:equal>
+			<logic:equal name="ob" property="idCurrency" value="978">в евро</logic:equal>
+		</logic:present>
+	</td>
+	<td align="right" NOWRAP><july:numberwrite name="sum_sumNds" fractdigits="2"/></td>
+	<td align="right" NOWRAP><july:numberwrite name="sum_sumWithTax" fractdigits="2"/></td>
+	<td colspan="2">&nbsp;</td>
+</tr>
+<!-- footer end -->
+</table>

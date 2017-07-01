@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="divisions" name="divisions" primaryKey="divisions_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="division" name="division">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986576">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="type" name="type">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986576" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="encloser" name="encloser" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986577">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986577" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="shortname" name="shortname" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986578" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="boss" name="boss" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986578">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="company" name="company" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986579">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="isactive" name="isactive">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986579" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="divisions_1" name="divisions" members="division" constraint="SQLConstraint_1131634986576">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_divisions.tblxmi#fk_ref_1162_1162"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_requests.tblxmi#fk_ref_1761_1761"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_ProjectDivColumns.tblxmi#FK_REF_86965_86965"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_projectactiontypes.tblxmi#fk_ref_2655_2655"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#fk_ref_1152_1152"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_storageplaces.tblxmi#fk_ref_1168_1168"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_cars.tblxmi#FK_REF_113633_1136"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_projectactioncomms.tblxmi#FK_REF_83870_83870"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_faultreport.tblxmi#FK_REF_28045_28045"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1162_1162" name="fk_ref_1162_1162" members="encloser" target="divisions_1" constraint="SQLConstraint_1131634986577"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1156_1156" name="fk_ref_1156_1156" members="boss" constraint="SQLConstraint_1131634986578">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#workers_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1149_1149" name="fk_ref_1149_1149" members="company" constraint="SQLConstraint_1131634986579">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_companies.tblxmi#companies_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986576" name="divisions" type="PRIMARYKEY" primaryKey="divisions_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986577" name="fk_ref_1162_1162" type="FOREIGNKEY" referenceByKey="fk_ref_1162_1162"/>
+  <constraints xmi:id="SQLConstraint_1131634986578" name="fk_ref_1156_1156" type="FOREIGNKEY" referenceByKey="fk_ref_1156_1156"/>
+  <constraints xmi:id="SQLConstraint_1131634986579" name="fk_ref_1149_1149" type="FOREIGNKEY" referenceByKey="fk_ref_1149_1149"/>
+</RDBSchema:RDBTable>

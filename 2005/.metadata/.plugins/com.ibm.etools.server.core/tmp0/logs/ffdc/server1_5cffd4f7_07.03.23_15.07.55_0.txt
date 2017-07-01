@@ -1,0 +1,39 @@
+------Start of DE processing------ = [07.03.23 15:07:54:874 MSK] , key = java.net.SocketException com.ibm.ws.webcontainer.srt.SRTServletRequest.finish 875
+Exception = java.net.SocketException
+Source = com.ibm.ws.webcontainer.srt.SRTServletRequest.finish
+probeid = 875
+Stack Dump = java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java(Compiled Code))
+	at com.ibm.ws.io.Stream.read(Stream.java(Compiled Code))
+	at com.ibm.ws.io.ReadStream.read(ReadStream.java:177)
+	at com.ibm.ws.http.ContentLengthInputStream.read(ContentLengthInputStream.java:32)
+	at com.ibm.ws.io.ReadStream.read(ReadStream.java:177)
+	at com.ibm.ws.webcontainer.http.HttpConnection.read(HttpConnection.java:340)
+	at com.ibm.ws.webcontainer.srp.SRPConnection.read(SRPConnection.java:200)
+	at com.ibm.ws.webcontainer.srt.SRTInputStream.read(SRTInputStream.java:80)
+	at com.ibm.ws.webcontainer.srt.http.HttpInputStream.read(HttpInputStream.java:309)
+	at java.io.InputStream.read(InputStream.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.srt.SRTServletRequest.finish(SRTServletRequest.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.SRTConnectionContext.finishConnection(SRTConnectionContext.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java(Compiled Code))
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java(Compiled Code))
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java(Compiled Code))
+
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.srt.SRTServletRequest
+com.ibm.ws.webcontainer.srt.SRTServletRequest@24b394ee
+
+Exception = java.net.SocketException
+Source = com.ibm.ws.webcontainer.srt.SRTServletRequest.finish
+probeid = 875
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.srt.SRTServletRequest
+com.ibm.ws.webcontainer.srt.SRTServletRequest@24b394ee
+

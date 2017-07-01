@@ -1,0 +1,84 @@
+BODY  {background-color: #e4f0f1
+		/*background-color: #99cccc*/}
+H2    {color: #336633;}
+LABEL {	color: #586768;}
+
+
+H1 {
+	color: 006464;
+	font-family: serif;
+	font-weight: 700;
+	margin-bottom: 60px;
+	font-size: 22pt;
+	margin-top: 10px;
+
+}
+
+
+A {
+	color: purple;
+	font-family:  serif;
+}
+
+INPUT {
+	color: #586768;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+}
+
+
+.ListViewData {
+	background-color: #ececec;
+	color: gray;
+	padding-left: 5;
+	font-size: 10pt;
+	margin-bottom: 10px;
+	margin-top: 30px;            
+}
+
+.ListViewHeader {
+	background-color: #b9dadd;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 10px;
+}
+
+.topMenu{
+}
+
+.leftMenu{
+	background-color: #C6E1E3;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.MenuLink{
+	color: #2b6871;
+	/*margin-bottom: 5px;*/
+	/*display: block;*/
+    text-align: left;
+}
+
+.PageLink {
+	font-style: none;
+	margin-bottom: 50px;	
+}
+
+.ListViewButton {
+	background-color: #C6E1E3;
+}
+
+.FormViewButton {
+	background-color: #C6E1E3;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.ListTable {
+	
+	margin-top: 50px;
+	background-color: #ececec;
+	color: gray;	
+}*
+}

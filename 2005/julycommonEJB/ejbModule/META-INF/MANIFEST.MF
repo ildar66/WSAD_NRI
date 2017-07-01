@@ -1,0 +1,63 @@
+Manifest-Version: 1.0
+
+Name: com/hps/july/commonbean/KeyGeneratorAccessBean.class
+MD5-Digest: v/3kRFO71QbE0RVKOKkHmA==
+SHA-Digest: dmLNBR1mIJ5HnI3LZ9xctx4R4cA=
+Digest-Algorithms: SHA MD5
+Java-Bean: True
+
+Name: META-INF/ibm-ejb-jar-ext.xmi
+MD5-Digest: 4DttmKivS6PoHE9JDh7ERw==
+SHA-Digest: Q+j/vqWYXvBBEXr1RrJtTJ53sbk=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/commonbean/KeyGeneratorHome.class
+MD5-Digest: /fcJJ3Glf9xqxN/8hW4wIA==
+SHA-Digest: rbWXCpifsg0rnURq+phT5F9dfqg=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/commonbean/KeyGeneratorHome.java
+MD5-Digest: t3IwijDSLjNs8IW4fBd27g==
+SHA-Digest: RYaL8ZhaikEO8iTPGgq7HELZkgE=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/commonbean/KeyGenerator.java
+MD5-Digest: a0kSVgt2sorNK+0bTLkJaw==
+SHA-Digest: O33u0AOMLYyvnNHXlkoV9REPIXo=
+Digest-Algorithms: SHA MD5
+
+Name: META-INF/ejb-jar.xml
+SHA-Digest: N3ww2sjzB5jo+39M8F63dPU+ovQ=
+Digest-Algorithms: SHA MD5
+MD5-Digest: +Lmr/BgI7c6DLsVzczao9Q==
+
+Name: com/hps/july/commonbean/KeyGeneratorBean.class
+MD5-Digest: xrRLczY0boNAgf9plzU7Qg==
+SHA-Digest: RGN0a0OXWOBHVYbwNNTtGAZNBEg=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/commonbean/KeyGeneratorAccessBean.java
+MD5-Digest: kMdHlG0bhz9AQMEjR7xMvQ==
+SHA-Digest: BYONwiFe7Yri9A/ag9M4Qop3oH4=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/commonbean/KeyGeneratorBean.java
+MD5-Digest: afQJaTOc1LnWL57fAi6DBQ==
+SHA-Digest: AK2elxMFGDRqtOUhAhP4HfEJuzk=
+Digest-Algorithms: SHA MD5
+
+Name: META-INF/ibm-ejb-access-bean.xmi
+MD5-Digest: 0tmioAtd8YRBj6mA3IxwtA==
+SHA-Digest: aY1Zaxx4qFlrEK3uek6hfdmF1FU=
+Digest-Algorithms: SHA MD5
+
+Name: META-INF/ibm-ejb-jar-bnd.xmi
+MD5-Digest: gUw/XcKkLc27yWkMl1FpDA==
+SHA-Digest: oGHttA4FKE3Kqi8zdW59FCRmU9Q=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/commonbean/KeyGenerator.class
+MD5-Digest: iGwq7RqRNCqcqLppS0DssA==
+SHA-Digest: IDk8hZ8i7zDpLkFQG6me+0b3jFs=
+Digest-Algorithms: SHA MD5
+

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories-view>
+	<repository id=":pserver:IShaffigulin@172.21.9.181:/cvs/repository">
+		<module path="webcommon">
+			<tag name="ChangeOrgToVendor" type="branch"/>
+			<tag name="vers_11_09_2006" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="vers_6" type="version"/>
+			<tag name="vers_5" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+			<tag name="webcommon_1" type="version"/>
+		</module>
+		<module path="julyarendabillingEJB">
+			<tag name="ChangeOrgToVendor" type="branch"/>
+			<tag name="vers0" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_1" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+		</module>
+		<module path="julyarendaEJB">
+			<tag name="ChangeOrgToVendor" type="branch"/>
+			<tag name="vers0" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_1" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+		</module>
+		<module path="arenda">
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="vers_26_09_2006" type="version"/>
+			<tag name="vers_15_11_2006" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+			<tag name="vers_07_12_2006" type="version"/>
+			<tag name="vers_15_02_2007" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_6" type="version"/>
+			<tag name="vers_5" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_21_04_2007" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_1" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_11_09_2006" type="version"/>
+			<tag name="vers_09_06_2007" type="version"/>
+			<tag name="ChangeOrgToVendor" type="branch"/>
+		</module>
+		<module path="julypersistenceEJB">
+			<tag name="vers0" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="vers_05_03_2007" type="version"/>
+			<tag name="vers_30_11_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="vers_15_11_2006" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+			<tag name="vers_11_05_2007" type="version"/>
+			<tag name="vers_01_08_2006" type="version"/>
+			<tag name="vers_07_12_2006" type="version"/>
+			<tag name="vers_15_02_2007" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="ejb_2" type="version"/>
+			<tag name="ejb_1" type="version"/>
+			<tag name="vers_17_04_2007" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_1" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_09_06_2007" type="version"/>
+			<tag name="ChangeOrgToVendor" type="branch"/>
+		</module>
+		<module path="basestation">
+			<tag name="ChangeOrgToVendor" type="branch"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="vers_5" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_1" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="Old_Buttons_(3)_were_removed_(not_right_behavior)" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+		</module>
+		<module path="NRI-AppLogic">
+			<tag name="nriAppLogic_v1" type="version"/>
+		</module>
+		<module path="wasbook">
+			<tag name="TimeSheet_v1" type="version"/>
+		</module>
+		<module path="common">
+			<tag name="ChangeOrgToVendor" type="branch"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+		</module>
+		<module path="dictionary">
+			<tag name="ChangeOrgToVendor" type="branch"/>
+			<tag name="vers_11_09_2006" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="vers_5" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="vers_15_02_2007" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="vers_07_12_2006" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+			<tag name="vers_15_11_2006" type="version"/>
+		</module>
+		<module path="organizer">
+			<tag name="vers0" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="vers_15_11_2006" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+			<tag name="vers_07_12_2006" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_5" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_1" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers4" type="version"/>
+			<tag name="ChangeOrgToVendor" type="branch"/>
+		</module>
+		<module path="julyplatinumEJB">
+			<tag name="ChangeOrgToVendor" type="branch"/>
+			<tag name="vers0" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_1" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+		</module>
+		<module path="julytrailcomEJB">
+			<tag name="vers0" type="version"/>
+			<tag name="vers_30_08_2006" type="version"/>
+			<tag name="vers_30_11_2006" type="version"/>
+			<tag name="july_main" type="branch"/>
+			<tag name="vers_15_11_2006" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+			<tag name="vers_07_12_2006" type="version"/>
+			<tag name="vers_15_02_2007" type="version"/>
+			<tag name="july_main_3" type="version"/>
+			<tag name="head_renew_1" type="version"/>
+			<tag name="vers_07_07_2006" type="version"/>
+			<tag name="vers_4" type="version"/>
+			<tag name="vers_3" type="version"/>
+			<tag name="vers_2" type="version"/>
+			<tag name="vers_1" type="version"/>
+			<tag name="vers_17_05_2006" type="version"/>
+			<tag name="vers_09_06_2007" type="version"/>
+			<tag name="ChangeOrgToVendor" type="branch"/>
+		</module>
+	</repository>
+</repositories-view>

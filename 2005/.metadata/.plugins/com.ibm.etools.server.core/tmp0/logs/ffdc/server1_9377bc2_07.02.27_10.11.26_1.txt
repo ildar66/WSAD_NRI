@@ -1,0 +1,102 @@
+------Start of DE processing------ = [07.02.27 10:11:26:596 MSK] , key = com.ibm.websphere.cpi.CPIException com.ibm.ejs.container.EJSContainer.removeBean 1609
+Exception = com.ibm.websphere.cpi.CPIException
+Source = com.ibm.ejs.container.EJSContainer.removeBean
+probeid = 1609
+Stack Dump = com.ibm.websphere.cpi.CPIException: ; nested exception is: 
+	java.sql.SQLException: ???? ?????? ?? ???????? ????? - ??? ??????????? (informix.pk_leasesaldo).
+	at com.ibm.ejs.container.ContainerManagedBeanO.remove(ContainerManagedBeanO.java:782)
+	at com.ibm.ejs.container.EJSContainer.removeBean(EJSContainer.java:2137)
+	at com.ibm.ejs.container.EJSWrapper.remove(EJSWrapper.java:189)
+	at com.hps.july.persistence._LeaseSaldo_Stub.remove(_LeaseSaldo_Stub.java:297)
+	at com.hps.july.arenda.sessionbean.LeaseSaldoProcessorBean.deleteSaldo(LeaseSaldoProcessorBean.java:58)
+	at com.hps.july.arenda.sessionbean.EJSRemoteStatelessLeaseSaldoProcessor_9136431c.deleteSaldo(EJSRemoteStatelessLeaseSaldoProcessor_9136431c.java:62)
+	at com.hps.july.arenda.sessionbean._LeaseSaldoProcessor_Stub.deleteSaldo(_LeaseSaldoProcessor_Stub.java:324)
+	at com.hps.july.arenda.sessionbean.LeaseSaldoProcessorAccessBean.deleteSaldo(LeaseSaldoProcessorAccessBean.java:110)
+	at com.hps.july.arenda.actionbean.SaldoProcessAction.processDelete(SaldoProcessAction.java:25)
+	at com.hps.july.web.util.AbstractProcessAction.processDelete(AbstractProcessAction.java:262)
+	at com.hps.july.web.util.AbstractProcessAction.perform(AbstractProcessAction.java:120)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:510)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: ???? ?????? ?? ???????? ????? - ??? ??????????? (informix.pk_leasesaldo).
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.ibm.ejs.cm.cache.CachedStatement.executeUpdate(CachedStatement.java:397)
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeUpdateCommon(StatementProxy.java:518)
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:59)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseSaldoBean_6f33cd6c.remove(EJSJDBCPersisterCMPLeaseSaldoBean_6f33cd6c.java:543)
+	at com.ibm.ejs.container.ContainerManagedBeanO.remove(ContainerManagedBeanO.java:767)
+	... 34 more
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@13c83bc1
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Feb 27 10:11:26 MSK 2007
+EJB Container = Default EJB Container
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#LeaseSaldo
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@147bbe7
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@14dbbe7#tid=706
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 3 ---------------------- 
+
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseSaldo, com.hps.july.persistence.LeaseSaldoKey@fab42731), state = IN_METHOD)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseResource, com.hps.july.persistence.ResourceKey@269b), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#Currency, com.hps.july.persistence.CurrencyKey@348), state = ACTIVE)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@147bbe7
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Feb 27 10:11:26 MSK 2007

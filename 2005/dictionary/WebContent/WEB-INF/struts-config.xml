@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN" "http://dtdserver/dtd/struts-config_1_0.dtd">
+<struts-config>
+
+
+  <!-- ========== Form Bean Definitions =================================== -->
+  <form-beans type="org.apache.struts.action.ActionFormBean"> 
+
+    <form-bean name="NFSRes2NRIResForm" type="com.hps.july.dictionary.formbean.NFSRes2NRIResForm" />
+    
+    <form-bean name="NFSResLookupForm" type="com.hps.july.dictionary.formbean.NFSResLookupForm" />
+    
+    <form-bean name="NRIResLookupForm" type="com.hps.july.dictionary.formbean.NRIResLookupForm" />  
+    
+    <form-bean name="TaxListForm" type="com.hps.july.dictionary.formbean.TaxListForm" />
+
+    <form-bean name="TaxForm" type="com.hps.july.dictionary.formbean.TaxForm" />
+
+    <form-bean name="UnitListForm" type="com.hps.july.dictionary.formbean.UnitListForm" />
+
+    <form-bean name="UnitForm" type="com.hps.july.dictionary.formbean.UnitForm" />
+
+    <form-bean name="RestypeListForm" type="com.hps.july.dictionary.formbean.RestypeListForm" />
+
+    <form-bean name="RestypeForm" type="com.hps.july.dictionary.formbean.RestypeForm" />
+
+    <form-bean name="RestypeLookupListForm" type="com.hps.july.dictionary.formbean.RestypeLookupListForm" />
+
+    <form-bean name="RessbtypeListForm" type="com.hps.july.dictionary.formbean.RessbtypeListForm" />
+
+    <form-bean name="RessbtypeLookupListForm" type="com.hps.july.dictionary.formbean.RessbtypeLookupListForm" />
+
+    <form-bean name="RessbtypeForm" type="com.hps.july.dictionary.formbean.RessbtypeForm" />
+
+    <form-bean name="InvResourceListForm" type="com.hps.july.dictionary.formbean.InvResourceListForm" />
+    
+    <form-bean name="ResourceListForm" type="com.hps.july.dictionary.formbean.ResourceListForm" />
+
+    <form-bean name="ResourceForm" type="com.hps.july.dictionary.formbean.ResourceForm" />
+
+	<form-bean name="ResourceWNForm" type="com.hps.july.dictionary.formbean.ResourceWNForm" />
+
+    <form-bean name="TaxhistListForm" type="com.hps.july.dictionary.formbean.TaxhistListForm" />
+
+    <form-bean name="TaxhistForm" type="com.hps.july.dictionary.formbean.TaxhistForm" />
+
+    <form-bean name="CurrencyListForm" type="com.hps.july.dictionary.formbean.CurrencyListForm" />
+
+    <form-bean name="CurrencyForm" type="com.hps.july.dictionary.formbean.CurrencyForm" />
+
+    <form-bean name="CurrencyLookupListForm" type="com.hps.july.dictionary.formbean.CurrencyLookupListForm" />
+
+    <form-bean name="CurrateHListForm" type="com.hps.july.dictionary.formbean.CurrateHListForm" />
+
+    <form-bean name="CurrateHForm" type="com.hps.july.dictionary.formbean.CurrateHForm" />
+
+    <form-bean name="RatetypeListForm" type="com.hps.july.dictionary.formbean.RatetypeListForm" />
+
+    <form-bean name="RatetypeForm" type="com.hps.july.dictionary.formbean.RatetypeForm" />
+
+    <form-bean name="RatetypeLookupListForm" type="com.hps.july.dictionary.formbean.RatetypeLookupListForm" />
+
+    <form-bean name="CurrateListForm" type="com.hps.july.dictionary.formbean.CurrateListForm" />
+
+    <form-bean name="CurrateForm" type="com.hps.july.dictionary.formbean.CurrateForm" />
+
+    <form-bean name="SysconstListForm" type="com.hps.july.dictionary.formbean.SysconstListForm" />
+
+    <form-bean name="SysconstForm" type="com.hps.july.dictionary.formbean.SysconstForm" />
+
+    <form-bean name="UnitLookupListForm" type="com.hps.july.dictionary.formbean.UnitLookupListForm" />
+
+    <form-bean name="DoubleForm" type="com.hps.july.dictionary.formbean.DoubleForm" />
+                    
+    <form-bean name="ResourceLookupListForm" type="com.hps.july.dictionary.formbean.ResourceLookupListForm" />
+
+    <form-bean name="ComplectForListForm" type="com.hps.july.dictionary.formbean.ComplectForListForm" />
+
+    <form-bean name="ComplectForForm" type="com.hps.july.dictionary.formbean.ComplectForForm" />
+					
+    <form-bean name="ComplectNodesListForm" type="com.hps.july.dictionary.formbean.ComplectNodesListForm" />
+
+    <form-bean name="ComplectNodesForm" type="com.hps.july.dictionary.formbean.ComplectNodesForm" />
+					
+    <form-bean name="ComplectListForm" type="com.hps.july.dictionary.formbean.ComplectListForm" />
+
+    <form-bean name="ComplectForm" type="com.hps.july.dictionary.formbean.ComplectForm" />
+
+    <form-bean name="ComplectContentListForm" type="com.hps.july.dictionary.formbean.ComplectContentListForm" />
+
+    <form-bean name="ComplectContentForm" type="com.hps.july.dictionary.formbean.ComplectContentForm" />
+
+    <form-bean name="CompanyListForm" type="com.hps.july.dictionary.formbean.CompanyListForm" />
+
+    <form-bean name="CompanyLookupListForm" type="com.hps.july.dictionary.formbean.CompanyLookupListForm" />
+
+    <form-bean name="OrganizationListMForm" type="com.hps.july.dictionary.formbean.OrganizationListMForm" />
+
+    <form-bean name="OrganizationListCForm" type="com.hps.july.dictionary.formbean.OrganizationListCForm" />
+
+    <form-bean name="OrganizationFormM" type="com.hps.july.dictionary.formbean.OrganizationFormM" />
+                    
+    <form-bean name="OrganizationFormC" type="com.hps.july.dictionary.formbean.OrganizationFormC" />
+                    
+    <form-bean name="OrganizationMultiListForm" type="com.hps.july.dictionary.formbean.OrganizationMultiListForm" />
+                    
+    <form-bean name="BankListForm" type="com.hps.july.dictionary.formbean.BankListForm" />
+
+    <form-bean name="BankForm" type="com.hps.july.dictionary.formbean.BankForm" />
+                    
+    <form-bean name="AccountListForm" type="com.hps.july.dictionary.formbean.AccountListForm" />
+
+    <form-bean name="AccountForm" type="com.hps.july.dictionary.formbean.AccountForm" />
+                    
+    <form-bean name="AccountListCForm" type="com.hps.july.dictionary.formbean.AccountListCForm" />
+
+    <form-bean name="AccountFormC" type="com.hps.july.dictionary.formbean.AccountFormC" />
+                    
+    <form-bean name="BankLookupListForm" type="com.hps.july.dictionary.formbean.BankLookupListForm" />
+
+    <form-bean name="GroupListForm" type="com.hps.july.dictionary.formbean.GroupListForm" />
+
+    <form-bean name="GroupForm" type="com.hps.july.dictionary.formbean.GroupForm" />
+
+    <form-bean name="GroupLookupListForm" type="com.hps.july.dictionary.formbean.GroupLookupListForm" />
+
+    <form-bean name="GrouppingListForm" type="com.hps.july.dictionary.formbean.GrouppingListForm" />
+
+    <form-bean name="GrouppingForm" type="com.hps.july.dictionary.formbean.GrouppingForm" />
+
+    <form-bean name="GrouppingLookupListForm" type="com.hps.july.dictionary.formbean.GrouppingLookupListForm" />
+
+    <form-bean name="OrggroupListForm" type="com.hps.july.dictionary.formbean.OrggroupListForm" />
+
+    <form-bean name="OrggroupForm" type="com.hps.july.dictionary.formbean.OrggroupForm" />
+
+    <form-bean name="OrggroupListCForm" type="com.hps.july.dictionary.formbean.OrggroupListForm" />
+
+    <form-bean name="OrggroupFormC" type="com.hps.july.dictionary.formbean.OrggroupFormC" />
+
+    <form-bean name="GrouporgListForm" type="com.hps.july.dictionary.formbean.GrouporgListForm" />
+
+    <form-bean name="GrouporgForm" type="com.hps.july.dictionary.formbean.GrouporgForm" />
+
+    <form-bean name="OrganizationLookupListForm" type="com.hps.july.dictionary.formbean.OrganizationLookupListForm" />
+
+    <form-bean name="StorageListForm" type="com.hps.july.dictionary.formbean.StorageListForm" />
+
+    <form-bean name="StorageForm" type="com.hps.july.dictionary.formbean.StorageForm" />
+                    
+    <form-bean name="DirectionLookupListForm" type="com.hps.july.dictionary.formbean.DirectionLookupListForm" />
+
+    <form-bean name="ServiceLookupListForm" type="com.hps.july.dictionary.formbean.ServiceLookupListForm" />
+
+    <form-bean name="DepartmentLookupListForm" type="com.hps.july.dictionary.formbean.DepartmentLookupListForm" />
+
+    <form-bean name="DGroupLookupListForm" type="com.hps.july.dictionary.formbean.DGroupLookupListForm" />
+    
+<!--form-bean name="CabletypeListForm" type="com.hps.july.dictionary.formbean.CabletypeListForm" /-->
+                    
+<!--form-bean name="CabletypeForm" type="com.hps.july.dictionary.formbean.CabletypeForm" /-->
+					
+<form-bean name="AntenaListForm" type="com.hps.july.dictionary.formbean.AntenaListForm" />
+
+<form-bean name="AntenaForm" type="com.hps.july.dictionary.formbean.AntenaForm" />
+
+<form-bean name="AntenaResourceForm" type="com.hps.july.dictionary.formbean.AntenaResourceForm" />
+
+<form-bean name="AntenaResourceWNForm" type="com.hps.july.dictionary.formbean.AntenaResourceWNForm" />
+
+<form-bean name="RRLAntenaListForm" type="com.hps.july.dictionary.formbean.RRLAntenaListForm" />
+
+<form-bean name="RRLAntenaForm" type="com.hps.july.dictionary.formbean.RRLAntenaForm" />
+
+<form-bean name="RRLDiamParamForm" type="com.hps.july.dictionary.formbean.RRLDiamParamForm" />
+
+<form-bean name="RRLSpeedParamForm" type="com.hps.july.dictionary.formbean.RRLSpeedParamForm" />
+
+<form-bean name="RepeaterListForm" type="com.hps.july.dictionary.formbean.RepeaterListForm" />
+
+<form-bean name="RepeaterForm" type="com.hps.july.dictionary.formbean.RepeaterForm" />
+
+<form-bean name="RepeaterResourceForm" type="com.hps.july.dictionary.formbean.RepeaterResourceForm" />
+
+<form-bean name="RepeaterResourceWNForm" type="com.hps.july.dictionary.formbean.RepeaterResourceWNForm" />
+
+<form-bean name="DonorUnitResourceForm" type="com.hps.july.dictionary.formbean.DonorUnitResourceForm" />
+
+<form-bean name="CableListForm" type="com.hps.july.dictionary.formbean.CableListForm" />
+
+<form-bean name="CableForm" type="com.hps.july.dictionary.formbean.CableForm" />
+
+<form-bean name="CableResourceForm" type="com.hps.july.dictionary.formbean.CableResourceForm" />
+
+<form-bean name="CableResourceWNForm" type="com.hps.july.dictionary.formbean.CableResourceWNForm" />
+
+<form-bean name="BasestationListForm" type="com.hps.july.dictionary.formbean.BasestationListForm" />
+
+<form-bean name="BasestationForm" type="com.hps.july.dictionary.formbean.BasestationForm" />
+
+<form-bean name="BasestationResourceForm" type="com.hps.july.dictionary.formbean.BasestationResourceForm" />
+
+<form-bean name="BasestationResourceWNForm" type="com.hps.july.dictionary.formbean.BasestationResourceWNForm" />
+
+<form-bean name="ChooseRtypeForm" type="com.hps.july.dictionary.formbean.ChooseRtypeForm" />
+
+<form-bean name="CarsList" type="com.hps.july.dictionary.formbean.CarsList"/>
+
+<form-bean name="CarForm" type="com.hps.july.dictionary.formbean.CarForm"/>
+
+<form-bean name="OrgworkersListForm" type="com.hps.july.dictionary.formbean.OrgworkersListForm"/>
+
+<form-bean name="OrgworkerForm" type="com.hps.july.dictionary.formbean.OrgworkerForm"/>
+
+<form-bean name="PersonListForm" type="com.hps.july.dictionary.formbean.PersonListForm"/>
+
+<form-bean name="PersonDialogForm" type="com.hps.july.dictionary.formbean.PersonDialogForm"/>
+
+<form-bean name="PersonLookupListForm" type="com.hps.july.dictionary.formbean.PersonLookupListForm"/>
+<form-bean name="OrganizationDialogForm" type="com.hps.july.dictionary.formbean.OrganizationDialogForm"/>
+<form-bean name="AccountDialogForm" type="com.hps.july.dictionary.formbean.AccountDialogForm"/>
+<form-bean name="RegionListForm" type="com.hps.july.dictionary.formbean.RegionListForm"/>
+<form-bean name="RegionDialogForm" type="com.hps.july.dictionary.formbean.RegionDialogForm"/>
+<form-bean name="RegionLookupListForm" type="com.hps.july.dictionary.formbean.RegionLookupListForm"/>
+<form-bean name="BanksDialogForm" type="com.hps.july.dictionary.formbean.BanksDialogForm"/>
+<form-bean name="BanksListForm" type="com.hps.july.dictionary.formbean.BanksListForm"/>
+<form-bean name="BanksLookupListForm" type="com.hps.july.dictionary.formbean.BanksLookupListForm"/>
+<form-bean name="VendorDialogForm" type="com.hps.july.dictionary.formbean.VendorDialogForm"/>
+<form-bean name="VendorListForm" type="com.hps.july.dictionary.formbean.VendorListForm"/>
+<form-bean name="VendorLookupListForm" type="com.hps.july.dictionary.formbean.VendorLookupListForm"/>
+<form-bean name="VendorSiteDialogForm" type="com.hps.july.dictionary.formbean.VendorSiteDialogForm"/>
+<form-bean name="VendorSiteListForm" type="com.hps.july.dictionary.formbean.VendorSiteListForm"/>
+<form-bean name="VendorSiteLookupListForm" type="com.hps.july.dictionary.formbean.VendorSiteLookupListForm"/>
+<form-bean name="AccountsDialogForm" type="com.hps.july.dictionary.formbean.AccountsDialogForm"/>
+<form-bean name="AccountsListForm" type="com.hps.july.dictionary.formbean.AccountsListForm"/>
+<form-bean name="AccountsLookupListForm" type="com.hps.july.dictionary.formbean.AccountsLookupListForm"/>
+<form-bean name="VendorAdminDialogForm" type="com.hps.july.dictionary.formbean.VendorAdminDialogForm"/>
+<form-bean name="VendorAdminListForm" type="com.hps.july.dictionary.formbean.VendorAdminListForm"/>
+<form-bean name="VendorSiteAdminDialogForm" type="com.hps.july.dictionary.formbean.VendorSiteAdminDialogForm"/>
+<form-bean name="VendorSiteAdminListForm" type="com.hps.july.dictionary.formbean.VendorSiteAdminListForm"/>
+
+    <form-bean name="ConfPowerSourcesElApForm" type="com.hps.july.dictionary.formbean.ConfPowerSourcesElApForm" />
+    <form-bean name="ConfPowerSourcesUzoForm" type="com.hps.july.dictionary.formbean.ConfPowerSourcesUzoForm" />
+    
+	<form-bean name="DonorUnitForm" type="com.hps.july.dictionary.formbean.DonorUnitForm" />	
+	<form-bean name="DonorUnitListForm" type="com.hps.july.dictionary.formbean.DonorUnitListForm" />	
+	<form-bean name="ResourceGroupForm" type="com.hps.july.dictionary.formbean.ResourceGroupForm" />	
+	<form-bean name="ResourceGroupListForm" type="com.hps.july.dictionary.formbean.ResourceGroupListForm" />
+	<form-bean name="ResAntennaForm" type="com.hps.july.dictionary.formbean.ResAntennaForm" />	
+	<form-bean name="ResAntennaListForm" type="com.hps.july.dictionary.formbean.ResAntennaListForm" />
+	
+    <form-bean name="EditConfPowerSourcesForm" type="com.hps.july.dictionary.formbean.EditConfPowerSourcesForm" />
+    <form-bean name="EditPowerResourceForm" type="com.hps.july.dictionary.formbean.EditPowerResourceForm" />
+ 
+    <form-bean name="ShowConfBaseStationForm" type="com.hps.july.dictionary.formbean.ShowConfBaseStationForm" />
+    <form-bean name="EditBaseStationConfForm" type="com.hps.july.dictionary.formbean.EditBaseStationConfForm" />
+ 	
+ 	<form-bean name="ShowConfConnectorCableCompatForm" type="com.hps.july.dictionary.formbean.ShowConfConnectorCableCompatForm" />
+ 	
+ 	<form-bean name="ShowInstComplBaseStationForm" type="com.hps.july.dictionary.formbean.ShowInstComplBaseStationForm" />
+ 	
+ 	<form-bean name="UserRequestForm" type="com.hps.july.dictionary.formbean.UserRequestForm" />
+	<form-bean name="UserRequestListForm" type="com.hps.july.dictionary.formbean.UserRequestListForm" />
+	
+	<form-bean name="PeopleLookupListForm" type="com.hps.july.dictionary.formbean.PeopleLookupListForm" />
+
+ 	<form-bean name="TranceiverForm" type="com.hps.july.dictionary.formbean.TranceiverForm" />
+	<form-bean name="TranceiverListForm" type="com.hps.july.dictionary.formbean.TranceiverListForm" />
+	
+	<form-bean name="ResourceClassListForm" type="com.hps.july.dictionary.formbean.ResourceClassListForm" />
+	<form-bean name="ResourceClassForm" type="com.hps.july.dictionary.formbean.ResourceClassForm" />
+	<form-bean name="ResourcesetClassForm" type="com.hps.july.dictionary.formbean.ResourcesetClassForm" />
+	
+	<form-bean name="ResourcesCommonListForm" type="com.hps.july.dictionary.formbean.ResourcesCommonListForm" />	
+	
+	<form-bean name="AccumBatteryForm" type="com.hps.july.dictionary.formbean.AccumBatteryForm" />	
+	
+	<form-bean name="AfsSchemeListForm" type="com.hps.july.dictionary.formbean.AfsSchemeListForm" />	
+	<form-bean name="AfsSchemeForm" type="com.hps.july.dictionary.formbean.AfsSchemeForm" />	
+	
+	<form-bean name="EquipmanufLookupListForm" type="com.hps.july.dictionary.formbean.EquipmanufLookupListForm" />	
+	
+	<form-bean name="EquipmanufListForm" type="com.hps.july.dictionary.formbean.EquipmanufListForm" />	
+	<form-bean name="EquipmanufForm" type="com.hps.july.dictionary.formbean.EquipmanufForm" />	
+	
+	<form-bean name="ResourceReport" type="com.hps.july.dictionary.formbean.ResourceReport" />	
+
+	<form-bean name="ResourceGroupLookupListForm" type="com.hps.july.dictionary.formbean.ResourceGroupLookupListForm" />		
+	
+  </form-beans>
+
+
+  <!-- ========== Global Forward Definitions ============================== -->
+<global-forwards type="org.apache.struts.action.ActionForward">
+	<forward name="main" path="/july.jsp" />
+</global-forwards>
+
+
+  <!-- ========== Action Mapping Definitions ============================== -->
+<action-mappings type="org.apache.struts.action.ActionMapping">
+
+    <action path="/main" type="com.hps.july.dictionary.actionbean.ShowMainAction" validate="true">
+    </action>
+	
+    <action path="/Login" type="com.hps.july.dictionary.actionbean.ShowLoginAction" validate="true">
+    </action>
+
+    <action path="/ShowUnitList" type="com.hps.july.dictionary.actionbean.ShowUnitListAction" name="UnitListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditUnit" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="UnitForm" validate="true">
+              <forward name="errorgoback" path="ShowUnitList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessUnit" type="com.hps.july.web.util.AbstractProcessAction" name="UnitForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowUnitList.do" redirect="true" />
+    </action>
+
+    <action path="/NFSRes2NRIRes" 
+    		type="com.hps.july.dictionary.actionbean.NFSRes2NRIResAction" 
+    		name="NFSRes2NRIResForm" 
+    		scope="request" 
+    		validate="true">
+    </action>
+
+    <action path="/ShowSysconstList" type="com.hps.july.dictionary.actionbean.ShowSysconstListAction" name="SysconstListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditSysconst" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="SysconstForm" validate="true">
+              <forward name="errorgoback" path="ShowSysconstList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessSysconst" type="com.hps.july.web.util.AbstractProcessAction" name="SysconstForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowSysconstList.do" redirect="true" />
+    </action>
+
+<!--
+    <action path="/ShowCabletypeList" type="com.hps.july.dictionary.actionbean.ShowCabletypeListAction" name="CabletypeListForm" scope="session" validate="true">
+    </action>
+    <action path="/EditCable" type="com.hps.july.web.util.AbstractEditAction" name="CabletypeForm" scope="request" validate="true">
+    </action>
+    <action path="/ProcessCable" type="com.hps.july.web.util.AbstractProcessAction" name="CabletypeForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowCabletypeList.do" redirect="true" />
+    </action>
+-->
+    <action path="/ShowRestypeList" type="com.hps.july.dictionary.actionbean.ShowRestypeListAction" name="RestypeListForm" scope="session" validate="true"></action>
+
+    <action path="/EditRestype" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="RestypeForm" validate="true">
+	<forward name="errorgoback" path="ShowRestypeList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessRestype" type="com.hps.july.web.util.AbstractProcessAction" name="RestypeForm" scope="request" validate="true">
+	<forward name="success" path="ShowRestypeList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowRessbtypeList" type="com.hps.july.dictionary.actionbean.ShowRessbtypeListAction" name="RessbtypeListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditRessbtype" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="RessbtypeForm" validate="true">
+	<forward name="errorgoback" path="ShowRessbtypeList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessRessbtype" type="com.hps.july.web.util.AbstractProcessAction" name="RessbtypeForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowRessbtypeList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowTaxList" type="com.hps.july.dictionary.actionbean.ShowTaxListAction" name="TaxListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditTax" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="TaxForm" validate="true">
+              <forward name="errorgoback" path="ShowTaxList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessTax" type="com.hps.july.web.util.AbstractProcessAction" name="TaxForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowTaxList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowRessbtypeLookupList" type="com.hps.july.dictionary.actionbean.ShowRessbtypeLookupListAction"
+		name="RessbtypeLookupListForm"
+		scope="session"
+		validate="true">
+    </action>
+
+    <action path="/ShowRatetypeLookupList" type="com.hps.july.dictionary.actionbean.ShowRatetypeLookupListAction" name="RatetypeLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowRestypeLookupList" type="com.hps.july.dictionary.actionbean.ShowRestypeLookupListAction" name="RestypeLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowCurrencyList" type="com.hps.july.dictionary.actionbean.ShowCurrencyListAction" name="CurrencyListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditCurrency" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="CurrencyForm" validate="true">
+              <forward name="errorgoback" path="ShowCurrencyList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessCurrency" type="com.hps.july.web.util.AbstractProcessAction" name="CurrencyForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowCurrencyList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowCurrencyLookupList" type="com.hps.july.dictionary.actionbean.ShowCurrencyLookupListAction" name="CurrencyLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowRatetypeList" type="com.hps.july.dictionary.actionbean.ShowRatetypeListAction" name="RatetypeListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditRatetype" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="RatetypeForm" validate="true">
+              <forward name="errorgoback" path="ShowRatetypeList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessRatetype" type="com.hps.july.web.util.AbstractProcessAction" name="RatetypeForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowRatetypeList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowCurrateHList" type="com.hps.july.dictionary.actionbean.ShowCurrateHListAction" name="CurrateHListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditCurrateH" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="CurrateHForm" validate="true">
+              <forward name="errorgoback" path="ShowCurrateHList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessCurrateH" type="com.hps.july.web.util.AbstractProcessAction" name="CurrateHForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowCurrateHList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowCurrateList" type="com.hps.july.web.util.BrowseAction" name="CurrateListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditCurrate" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="CurrateForm" validate="true">
+              <forward name="errorgoback" path="ShowCurrateList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessCurrate" type="com.hps.july.web.util.AbstractProcessAction" name="CurrateForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowCurrateList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowInvResourceList"
+        type="com.hps.july.web.util.BrowseAction"
+        name="InvResourceListForm"
+        scope="session"
+        validate="true">
+    </action>
+
+	<action path="/ShowInvResourceListWN"
+        type="com.hps.july.dictionary.actionbean.ShowInvResourceListWNAction"
+        name="InvResourceListForm"
+        scope="session"
+        validate="true">
+    </action>
+    
+    <action path="/ShowResourceList" type="com.hps.july.dictionary.actionbean.ShowResourceListAction" name="ResourceListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditResource" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ResourceForm" validate="true">
+              <forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+    </action>
+
+	<action path="/EditResourceWN" type="com.hps.july.dictionary.actionbean.EditResourceWNAction" scope="request" name="ResourceWNForm" validate="true">
+              <forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessResource"
+      type="com.hps.july.web.util.AbstractProcessAction"
+      name="ResourceForm"
+      scope="request"
+      validate="true">
+      	      <forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+    </action>
+
+	<action path="/ProcessResourceWN"
+      type="com.hps.july.web.util.AbstractProcessAction"
+      name="ResourceWNForm"
+      scope="request"
+      validate="true">
+      	      <forward name="success" path="ShowResourceList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowUnitLookupList" type="com.hps.july.dictionary.actionbean.ShowUnitLookupListAction" name="UnitLookupListForm" scope="session" validate="true">
+    </action>
+	
+    <action path="/EditDouble" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="DoubleForm" validate="true">
+              <forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessDouble" type="com.hps.july.web.util.AbstractProcessAction" name="DoubleForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowResourceLookupList" type="com.hps.july.dictionary.actionbean.ShowResourceLookupListAction" name="ResourceLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowTaxhistList" type="com.hps.july.dictionary.actionbean.ShowTaxhistListAction" name="TaxhistListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditTaxhist" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="TaxhistForm" validate="true">
+              <forward name="errorgoback" path="ShowTaxhistList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessTaxhist" type="com.hps.july.web.util.AbstractProcessAction" name="TaxhistForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowTaxhistList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowComplectForList" type="com.hps.july.dictionary.actionbean.ShowComplectForListAction" name="ComplectForListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditComplectFor" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ComplectForForm" validate="true">
+              <forward name="errorgoback" path="ShowComplectForList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessComplectFor" type="com.hps.july.web.util.AbstractProcessAction" name="ComplectForForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowComplectForList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowComplectNodesList" type="com.hps.july.dictionary.actionbean.ShowComplectNodesListAction" name="ComplectNodesListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditComplectNodes" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ComplectNodesForm" validate="true">
+              <forward name="errorgoback" path="ShowComplectNodesList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessComplectNodes" type="com.hps.july.web.util.AbstractProcessAction" name="ComplectNodesForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowComplectNodesList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowComplectList" type="com.hps.july.web.util.BrowseAction" name="ComplectListForm" scope="session" validate="true">
+              <forward name="back" path="/main.do" />
+    </action>
+
+    <action path="/EditComplect" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ComplectForm" validate="true">
+              <forward name="errorgoback" path="ShowComplectList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessComplect" type="com.hps.july.web.util.AbstractProcessAction" name="ComplectForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowComplectList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowComplectContentList" type="com.hps.july.dictionary.actionbean.ShowComplectContentListAction" name="ComplectContentListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditComplectContent" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="ComplectContentForm" validate="true">
+              <forward name="errorgoback" path="ShowComplectContentList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessComplectContent" type="com.hps.july.web.util.AbstractProcessAction" name="ComplectContentForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowComplectContentList.do" redirect="true" />
+    </action>
+    
+    <action path="/ShowCompanyList" type="com.hps.july.dictionary.actionbean.ShowCompanyListAction" name="CompanyListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowCompanyLookupList" type="com.hps.july.dictionary.actionbean.ShowCompanyLookupListAction" name="CompanyLookupListForm" scope="session" validate="true">
+    </action>
+    
+    <action path="/ShowOrganizationListM" type="com.hps.july.web.util.BrowseAction" name="OrganizationListMForm" scope="session" validate="true">
+              <forward name="back" path="/main.do" />
+    </action>
+
+    <action path="/EditOrganizationM" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="OrganizationFormM" validate="true">
+              <forward name="errorgoback" path="ShowOrganizationListM.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessOrganizationM" type="com.hps.july.web.util.AbstractProcessAction" name="OrganizationFormM" scope="request" validate="true">
+      	      <forward name="success" path="ShowOrganizationListM.do" redirect="true" />
+    </action>
+
+    <action path="/ShowOrganizationListC" type="com.hps.july.dictionary.actionbean.ShowOrganizationListCAction" name="OrganizationListCForm" scope="session" validate="true">
+              <forward name="back" path="/ShowCompanyList.do" />
+    </action>
+
+    <action path="/EditOrganizationC" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="OrganizationFormC" validate="true">
+              <forward name="errorgoback" path="ShowOrganizationListC.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessOrganizationC" type="com.hps.july.web.util.AbstractProcessAction" name="OrganizationFormC" scope="request" validate="true">
+      	      <forward name="success" path="ShowOrganizationListC.do" redirect="true" />
+    </action>
+
+    <action path="/ShowBankList" type="com.hps.july.web.util.BrowseAction" name="BankListForm" scope="session" validate="true">
+              <forward name="back" path="/main.do" />
+    </action>
+
+    <action path="/EditBank" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="BankForm" validate="true">
+              <forward name="errorgoback" path="ShowBankList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessBank" type="com.hps.july.web.util.AbstractProcessAction" name="BankForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowBankList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowAccountList" type="com.hps.july.dictionary.actionbean.ShowAccountListAction" name="AccountListForm" scope="session" validate="true">
+              <forward name="back" path="/ShowOrganizationListM.do" />
+    </action>
+
+    <action path="/EditAccount" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AccountForm" validate="true">
+              <forward name="errorgoback" path="ShowAccountList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessAccount" type="com.hps.july.web.util.AbstractProcessAction" name="AccountForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowAccountList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowAccountListC" type="com.hps.july.dictionary.actionbean.ShowAccountListCAction" name="AccountListCForm" scope="session" validate="true">
+              <forward name="back" path="/ShowOrganizationListC.do" />
+    </action>
+
+    <action path="/EditAccountC" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AccountFormC" validate="true">
+              <forward name="errorgoback" path="ShowAccountListC.do" redirect="true" />
+    </action>
+ 
+    <action path="/ProcessAccountC" type="com.hps.july.web.util.AbstractProcessAction" name="AccountFormC" scope="request" validate="true">
+      	      <forward name="success" path="ShowAccountListC.do" redirect="true" />
+    </action>
+
+    <action path="/ShowBankLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="BankLookupListForm" scope="session" validate="true">
+    </action>
+    
+    <action path="/ShowGroupList" type="com.hps.july.dictionary.actionbean.ShowGroupListAction" name="GroupListForm" scope="session" validate="true">
+              <forward name="back" path="/main.do" />
+    </action>
+
+    <action path="/EditGroup" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="GroupForm" validate="true">
+              <forward name="errorgoback" path="ShowGroupList.do" redirect="true" />
+    </action>
+ 
+    <action path="/ProcessGroup" type="com.hps.july.web.util.AbstractProcessAction" name="GroupForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowGroupList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowGroupLookupList" type="com.hps.july.dictionary.actionbean.ShowGroupLookupListAction" name="GroupLookupListForm" scope="session" validate="true">
+    </action>
+    
+    <action path="/ShowGrouppingList" type="com.hps.july.dictionary.actionbean.ShowGrouppingListAction" name="GrouppingListForm" scope="session" validate="true">
+              <forward name="back" path="/ShowGroupList.do" />
+    </action>
+
+    <action path="/EditGroupping" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="GrouppingForm" validate="true">
+              <forward name="errorgoback" path="ShowGrouppingList.do" redirect="true" />
+    </action>
+ 
+    <action path="/ProcessGroupping" type="com.hps.july.web.util.AbstractProcessAction" name="GrouppingForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowGrouppingList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowGrouppingLookupList" type="com.hps.july.dictionary.actionbean.ShowGrouppingLookupListAction" name="GrouppingLookupListForm" scope="session" validate="true">
+    </action>
+    
+    <action path="/ShowOrggroupList" type="com.hps.july.dictionary.actionbean.ShowOrggroupListAction" name="OrggroupListForm" scope="session" validate="true">
+              <forward name="back" path="/ShowOrganizationListM.do" />
+    </action>
+
+    <action path="/EditOrggroup" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="OrggroupForm" validate="true">
+              <forward name="errorgoback" path="ShowOrggroupList.do" redirect="true" />
+    </action>
+ 
+    <action path="/ProcessOrggroup" type="com.hps.july.web.util.AbstractProcessAction" name="OrggroupForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowOrggroupList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowOrggroupListC" type="com.hps.july.dictionary.actionbean.ShowOrggroupListCAction" name="OrggroupListCForm" scope="session" validate="true">
+              <forward name="back" path="/ShowOrganizationListC.do" />
+    </action>
+
+    <action path="/EditOrggroupC" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="OrggroupFormC" validate="true">
+              <forward name="errorgoback" path="ShowOrggroupListC.do" redirect="true" />
+    </action>
+ 
+    <action path="/ProcessOrggroupC" type="com.hps.july.web.util.AbstractProcessAction" name="OrggroupFormC" scope="request" validate="true">
+      	      <forward name="success" path="ShowOrggroupListC.do" redirect="true" />
+    </action>
+
+    <action path="/ShowGrouporgList" type="com.hps.july.dictionary.actionbean.ShowGrouporgListAction" name="GrouporgListForm" scope="session" validate="true">
+              <forward name="back" path="/ShowGrouppingList.do" />
+    </action>
+
+    <action path="/EditGrouporg" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="GrouporgForm" validate="true">
+              <forward name="errorgoback" path="ShowGrouporgList.do" redirect="true" />
+    </action>
+ 
+    <action path="/ProcessGrouporg" type="com.hps.july.web.util.AbstractProcessAction" name="GrouporgForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowGrouporgList.do" redirect="true" />
+    </action>
+
+    <action path="/ShowOrganizationLookupList" type="com.hps.july.dictionary.actionbean.ShowOrganizationLookupListAction" name="OrganizationLookupListForm" scope="session" validate="true">
+    </action>
+    
+    <action path="/ShowStorageList" type="com.hps.july.web.util.BrowseAction" name="StorageListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/EditStorage" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="StorageForm" validate="true">
+              <forward name="errorgoback" path="ShowStorageList.do" redirect="true" />
+    </action>
+
+    <action path="/ProcessStorage" type="com.hps.july.web.util.AbstractProcessAction" name="StorageForm" scope="request" validate="true">
+      	      <forward name="success" path="ShowStorageList.do" redirect="true" />
+    </action>
+    
+    <action path="/ShowDirectionLookupList" type="com.hps.july.dictionary.actionbean.ShowDirectionLookupListAction" name="DirectionLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowServiceLookupList" type="com.hps.july.dictionary.actionbean.ShowServiceLookupListAction" name="ServiceLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowDepartmentLookupList" type="com.hps.july.dictionary.actionbean.ShowDepartmentLookupListAction" name="DepartmentLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowDGroupLookupList" type="com.hps.july.dictionary.actionbean.ShowDGroupLookupListAction" name="DGroupLookupListForm" scope="session" validate="true">
+    </action>
+
+    <action path="/ShowOrganizationMultiList" type="com.hps.july.dictionary.actionbean.ShowOrganizationMultiListAction" name="OrganizationMultiListForm" scope="session" validate="true">
+      	      <forward name="process" path="ProcessOrganizationMulti.do" redirect="true" />
+    </action>
+    
+    <action path="/ProcessOrganizationMulti" type="com.hps.july.dictionary.actionbean.ProcessOrganizationMulti">
+      	      <forward name="success" path="ShowGrouporgList.do" redirect="true" />
+              <forward name="errorgoback" path="/ShowGrouporgList.do" />
+    </action>
+    
+<action path="/ShowAntenaList"
+	type="com.hps.july.dictionary.actionbean.ShowAntenaListAction" 
+	name="AntenaListForm" 
+	scope="session" 
+	validate="true">
+</action>
+
+<action path="/EditAntena"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="AntenaForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/ProcessAntena"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="AntenaForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/EditAntenaResource"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="AntenaResourceForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/EditAntenaResourceWN"
+	type="com.hps.july.dictionary.actionbean.EditAntenaResourceWNAction"
+	scope="request"
+	name="AntenaResourceWNForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessAntenaResource"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="AntenaResourceForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessAntenaResourceWN"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="AntenaResourceWNForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ShowRRLResourceList"
+	type="com.hps.july.web.util.BrowseAction"
+	name="RRLAntenaListForm"
+	scope="session"
+	validate="true">
+</action>
+
+<action path="/EditRRLResource"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="RRLAntenaForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/ProcessRRLResource"
+	type="com.hps.july.dictionary.actionbean.RRLAntenaProcessAction"
+	name="RRLAntenaForm"
+	scope="request"
+	validate="true">
+	<forward name="successandedit" path="EditRRLResource.do?action=Edit" redirect="true" />
+	<forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/EditRRLDiamParams"
+	type="com.hps.july.web.util.AbstractEditAction"
+	name="RRLDiamParamForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="EditRRLResource.do" redirect="true" />
+</action>
+
+<action path="/ProcessRRLDiamParams"
+	type="com.hps.july.dictionary.actionbean.RRLDiamParamProcessAction"
+	name="RRLDiamParamForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="EditRRLResource.do" redirect="true" />
+</action>
+
+<action path="/EditRRLSpeedParams"
+	type="com.hps.july.web.util.AbstractEditAction"
+	name="RRLSpeedParamForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="EditRRLResource.do" redirect="true" />
+</action>
+
+<action path="/ProcessRRLSpeedParams"
+	type="com.hps.july.dictionary.actionbean.RRLSpeedParamProcessAction"
+	name="RRLSpeedParamForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="EditRRLResource.do" redirect="true" />
+</action>
+
+<action path="/ShowRepeaterList"
+	type="com.hps.july.dictionary.actionbean.ShowRepeaterListAction" 
+	name="RepeaterListForm" 
+	scope="session" 
+	validate="true">
+</action>
+
+<action path="/EditRepeater"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="RepeaterForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/ProcessRepeater"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="RepeaterForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/ShowDonorUnitList"
+	type="com.hps.july.dictionary.actionbean.ShowDonorUnitListAction" 
+	name="DonorUnitListForm" 
+	scope="session" 
+	validate="true">
+</action>
+
+<action path="/EditDonorUnit"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="DonorUnitForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/ProcessDonorUnit"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="DonorUnitForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/ShowResourceGroupList"
+	type="com.hps.july.dictionary.actionbean.ShowResourceGroupListAction" 
+	name="ResourceGroupListForm" 
+	scope="session" 
+	validate="true">
+</action>
+
+<action path="/EditResourceGroup"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="ResourceGroupForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceGroupList.do" redirect="true" />
+</action>
+
+<action path="/ProcessResourceGroup"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="ResourceGroupForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceGroupList.do" redirect="true" />
+</action>
+
+
+<action path="/ShowResAntennaList"
+	type="com.hps.july.dictionary.actionbean.ShowResAntennaListAction" 
+	name="ResAntennaListForm" 
+	scope="session" 
+	validate="true">
+</action>
+
+<action path="/EditResAntenna"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="ResAntennaForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResAntennaList.do" redirect="true" />
+</action>
+
+<action path="/ProcessResAntenna"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="ResAntennaForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResAntennaList.do" redirect="true" />
+</action>
+
+<action path="/EditRepeaterResource"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="RepeaterResourceForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/EditRepeaterResourceWN"
+	type="com.hps.july.dictionary.actionbean.EditRepeaterResourceWNAction"
+	scope="request"
+	name="RepeaterResourceWNForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessRepeaterResource"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="RepeaterResourceForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessRepeaterResourceWN"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="RepeaterResourceWNForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ShowCableList"
+	type="com.hps.july.dictionary.actionbean.ShowCableListAction" 
+	name="CableListForm" 
+	scope="session" 
+	validate="true">
+</action>
+
+<action path="/EditCable"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="CableForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/ProcessCable"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="CableForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/EditCableResource"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="CableResourceForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/EditCableResourceWN"
+	type="com.hps.july.dictionary.actionbean.EditCableResourceWNAction"
+	scope="request"
+	name="CableResourceWNForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessCableResource"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="CableResourceForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessCableResourceWN"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="CableResourceWNForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ShowBasestationList"
+	type="com.hps.july.dictionary.actionbean.ShowBasestationListAction" 
+	name="BasestationListForm" 
+	scope="session" 
+	validate="true">
+</action>
+
+<action path="/EditBasestation"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="BasestationForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/ProcessBasestation"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="BasestationForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+</action>
+
+<action path="/EditBasestationResource"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="BasestationResourceForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/EditBasestationResourceWN"
+	type="com.hps.july.dictionary.actionbean.EditBasestationResourceWNAction"
+	scope="request"
+	name="BasestationResourceWNForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessBasestationResource"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="BasestationResourceForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessBasestationResourceWN"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="BasestationResourceWNForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowInvResourceListWN.do" redirect="true" />
+</action>
+
+<action path="/ChooseRtype"
+	type="com.hps.july.dictionary.actionbean.ChooseRtypeAction"
+	scope="request"
+	name="ChooseRtypeForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ChooseRtypeWN"
+	type="com.hps.july.dictionary.actionbean.ChooseRtypeWNAction"
+	scope="request"
+	name="ChooseRtypeForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/EditDonorUnitResource"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="DonorUnitResourceForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourceList.do" redirect="true" />
+</action>
+
+
+<action path="/ProcessDonorUnitResource"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="DonorUnitResourceForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourceList.do" redirect="true" />
+</action>
+
+<action path="/ProcessRtype"
+	type="com.hps.july.dictionary.actionbean.ProcessChooseRtype"
+	name="ChooseRtypeForm"
+	scope="request"
+	validate="true">
+	<forward name="basestation" path="EditBasestationResource.do?action=Add" redirect="true" />
+	<forward name="antenna" path="EditAntenaResource.do?action=Add" redirect="true" />
+    <forward name="repeater" path="EditRepeaterResource.do?action=Add" redirect="true" />
+	<forward name="donorunit" path="EditDonorUnitResource.do?action=Add" redirect="true" />
+	<forward name="cable" path="EditCableResource.do?action=Add" redirect="true" />
+	<forward name="other" path="EditResource.do?action=Add" redirect="true" />
+</action>
+
+<action path="/ProcessRtypeWN"
+	type="com.hps.july.dictionary.actionbean.ProcessChooseRtypeWN"
+	name="ChooseRtypeForm"
+	scope="request"
+	validate="true">
+	<forward name="basestation" path="EditBasestationResourceWN.do?action=Add" redirect="true" />
+	<forward name="antenna" path="EditAntenaResourceWN.do?action=Add" redirect="true" />
+    <forward name="repeater" path="EditRepeaterResourceWN.do?action=Add" redirect="true" />
+	<forward name="cable" path="EditCableResourceWN.do?action=Add" redirect="true" />
+	<forward name="other" path="EditResourceWN.do?action=Add" redirect="true" />
+</action>
+
+	<!-- cars -->
+	
+    <action path="/ShowCarsList"
+			type="com.hps.july.dictionary.actionbean.ShowCarsListAction"
+			name="CarsList"
+			scope="session"
+			validate="true">
+    </action>
+	
+    <action path="/EditCar"
+			type="com.hps.july.web.util.AbstractEditAction"
+			scope="request"
+			name="CarForm"
+			validate="true">
+			<forward name="errorgoback" path="ShowCarsList.do" redirect="true"/>
+    </action>
+	
+    <action path="/ProcessCar"
+			type="com.hps.july.web.util.AbstractProcessAction"
+			name="CarForm"
+			scope="request"
+			validate="true">
+			<forward name="success" path="ShowCarsList.do" redirect="true"/>
+    </action>
+
+<action path="/ShowOrgworkersList"
+	type="com.hps.july.dictionary.actionbean.ShowOrgworkersListAction" 
+	name="OrgworkersListForm" 
+	scope="session" 
+	validate="true">
+</action>
+
+<action path="/EditOrgworker"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="OrgworkerForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowOrgworkersList.do" redirect="true" />
+</action>
+
+<action path="/ProcessOrgworker"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="OrgworkerForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowOrgworkersList.do" redirect="true" />
+</action>
+
+ <action path="/ShowPersonList" type="com.hps.july.web.util.BrowseAction" name="PersonListForm" scope="session" validate="true">
+ </action>
+
+ <action path="/PersonDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="PersonDialogForm" validate="true">
+ </action>
+
+ <action path="/PersonDialogProcess" type="com.hps.july.web.util.FormProcessAction" name="PersonDialogForm" scope="session" validate="true">
+	<forward name="success" path="personDialog.jsp" redirect="false" />
+ </action>
+
+ <action path="/PersonLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="PersonLookupListForm" scope="session" validate="true">
+ </action>
+ 
+ <action path="/OrganizationDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="request" name="OrganizationDialogForm" validate="true">
+ </action>
+ 
+ <action path="/OrganizationDialogProcess" type="com.hps.july.web.util.FormProcessAction" name="OrganizationDialogForm" scope="request" validate="true">
+	<forward name="success" path="organizationDialog.jsp" redirect="false" />
+ </action> 
+
+ <action path="/AccountDialog" type="com.hps.july.web.util.AbstractEditAction" scope="request" name="AccountDialogForm" validate="true">
+ </action>
+
+ <action path="/AccountDialogProcess" type="com.hps.july.web.util.FormProcessAction" name="AccountDialogForm" scope="request" validate="true">
+	<forward name="success" path="accountDialog.jsp" redirect="false" />
+ </action>
+ 
+  <action path="/RegionList" type="com.hps.july.web.util.BrowseAction" name="RegionListForm" scope="session" validate="true">
+ </action>
+
+ <action path="/RegionDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="RegionDialogForm" validate="true">
+ </action>
+
+ <action path="/RegionDialogProcess" type="com.hps.july.web.util.FormProcessAction" name="RegionDialogForm" scope="session" validate="true">
+	<forward name="success" path="regionDialog.jsp" redirect="false" />
+ </action>
+ 
+ <action path="/RegionLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="RegionLookupListForm" scope="session" validate="true">
+ </action>
+ 
+ <action path="/BanksList" type="com.hps.july.web.util.BrowseAction" name="BanksListForm" scope="session" validate="true">
+ </action>
+
+ <action path="/BanksDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="BanksDialogForm" validate="true">
+ </action>
+
+ <action path="/BanksProcess" type="com.hps.july.web.util.FormProcessAction" name="BanksDialogForm" scope="session" validate="true">
+	<forward name="success" path="banksDialog.jsp" redirect="false" />
+ </action>
+ 
+ <action path="/BanksLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="BanksLookupListForm" scope="session" validate="true">
+ </action>
+ 
+ <action path="/VendorList" type="com.hps.july.web.util.BrowseAction" name="VendorListForm" scope="session" validate="true">
+ </action>
+
+ <action path="/VendorDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="VendorDialogForm" validate="true">
+ </action>
+
+ <action path="/VendorProcess" type="com.hps.july.web.util.FormProcessAction" name="VendorDialogForm" scope="session" validate="true">
+	<forward name="success" path="vendorDialog.jsp" redirect="false" />
+ </action>
+ 
+ <action path="/VendorLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="VendorLookupListForm" scope="session" validate="true"/>
+
+
+ <action path="/VendorSiteList" type="com.hps.july.web.util.BrowseAction" name="VendorSiteListForm" scope="session" validate="true">
+ </action>
+
+ <action path="/VendorSiteDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="VendorSiteDialogForm" validate="true">
+ </action>
+
+ <action path="/VendorSiteProcess" type="com.hps.july.web.util.FormProcessAction" name="VendorSiteDialogForm" scope="session" validate="true">
+	<forward name="success" path="vendorSiteDialog.jsp" redirect="false" />
+ </action>
+ 
+ <action path="/VendorSiteLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="VendorSiteLookupListForm" scope="session" validate="true"> 
+ </action>
+ 
+ <action path="/AccountsList" type="com.hps.july.web.util.BrowseAction" name="AccountsListForm" scope="session" validate="true">
+ </action>
+
+ <action path="/AccountsDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="AccountsDialogForm" validate="true">
+ </action>
+
+ <action path="/AccountsProcess" type="com.hps.july.web.util.FormProcessAction" name="AccountsDialogForm" scope="session" validate="true">
+	<forward name="success" path="accountsDialog.jsp" redirect="false" />
+ </action>
+ 
+ <action path="/AccountsLookupList" type="com.hps.july.web.util.LookupBrowseAction" name="AccountsLookupListForm" scope="session" validate="true">
+ </action>  
+
+ <action path="/VendorAdminList" type="com.hps.july.web.util.BrowseAction" name="VendorAdminListForm" scope="session" validate="true">
+ </action>
+
+ <action path="/VendorAdminDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="VendorAdminDialogForm" validate="true">
+ </action>
+
+ <action path="/VendorAdminProcess" type="com.hps.july.web.util.FormProcessAction" name="VendorAdminDialogForm" scope="session" validate="true">
+	<forward name="success" path="vendorAdminDialog.jsp" redirect="false" />
+ </action>
+ 
+ <action path="/VendorSiteAdminList" type="com.hps.july.web.util.BrowseAction" name="VendorSiteAdminListForm" scope="session" validate="true">
+ </action>
+
+ <action path="/VendorSiteAdminDialog" type="com.hps.july.web.util.NonNavigatedEditAction" scope="session" name="VendorSiteAdminDialogForm" validate="true">
+ </action>
+
+ <action path="/VendorSiteAdminProcess" type="com.hps.july.web.util.FormProcessAction" name="VendorSiteAdminDialogForm" scope="session" validate="true">
+	<forward name="success" path="vendorSiteAdminDialog.jsp" redirect="false" />
+ </action>
+  
+ <action path="/ShowConfPowerSourcesElAp" 
+ 	type="com.hps.july.dictionary.actionbean.ShowConfPowerSourcesElApAction" 
+ 	name="ConfPowerSourcesElApForm" scope="session" validate="true">
+ </action>  
+ 
+ <action path="/ShowConfPowerSourcesUzo" 
+ 	type="com.hps.july.dictionary.actionbean.ShowConfPowerSourcesUzoAction" 
+ 	name="ConfPowerSourcesUzoForm" scope="session" validate="true">
+ </action>  
+ 
+ <action path="/ShowAllNfsCodes" type="com.hps.july.dictionary.actionbean.ShowCodesAction">
+	<forward name="showall" path="showAllNfsCodes.jsp" />
+ </action>
+ 
+ <action path="/NFSResLookup" 
+	type="com.hps.july.dictionary.actionbean.NFSResLookupAction" 
+	name="NFSResLookupForm" 
+	scope="request" 
+	validate="true">
+ </action>
+ 
+ <action path="/EditConfPowerSources" 
+ 	type="com.hps.july.dictionary.actionbean.EditConfPowerSourcesAction" 
+ 	name="EditConfPowerSourcesForm" scope="request" validate="true">
+ </action>  
+  
+ <action path="/EditPowerResource" 
+ 	type="com.hps.july.dictionary.actionbean.EditPowerResourceAction" 
+ 	name="EditPowerResourceForm" scope="request" validate="true">
+ </action>  
+ 
+ <action path="/NRIResLookup" 
+	type="com.hps.july.dictionary.actionbean.NRIResLookupAction" 
+	name="NRIResLookupForm" 
+	scope="request" 
+	validate="true">
+ </action>
+  
+ <action path="/ShowConfBaseStation" 
+ 	type="com.hps.july.dictionary.actionbean.ShowConfBaseStationAction" 
+ 	name="ShowConfBaseStationForm" scope="session" validate="true">
+ </action>  
+  
+ <action path="/EditBaseStationConf" 
+ 	type="com.hps.july.dictionary.actionbean.EditBaseStationConfAction" 
+ 	name="EditBaseStationConfForm" scope="request" validate="true">
+ </action>  
+ 
+ <action path="/ShowConfConnectorCableCompat" 
+ 	type="com.hps.july.dictionary.actionbean.ShowConfConnectorCableCompatAction" 
+ 	name="ShowConfConnectorCableCompatForm" scope="session" validate="true">
+ </action>  
+  
+ <action path="/ShowInstComplBaseStation" 
+ 	type="com.hps.july.dictionary.actionbean.ShowInstComplBaseStationAction" 
+ 	name="ShowInstComplBaseStationForm" scope="session" validate="true">
+ </action>  
+ 
+ <action path="/ShowUserRequestList"
+    type="com.hps.july.dictionary.actionbean.ShowUserRequestListAction" 
+	name="UserRequestListForm" 
+	scope="session" 
+	validate="true">
+ </action>
+
+ <action path="/EditUserRequest"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="UserRequestForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowUserRequestList.do" redirect="true" />
+ </action>
+
+ <action path="/ProcessUserRequest"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="UserRequestForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowUserRequestList.do" redirect="true" />
+ </action>
+ 
+ <action path="/ShowPeopleLookupList" 
+ 	type="com.hps.july.dictionary.actionbean.ShowPeopleLookupListAction" 
+ 	name="PeopleLookupListForm" 
+ 	scope="session" 
+ 	validate="true">
+ </action> 
+ 
+ <action path="/ShowTranceiverList"
+    type="com.hps.july.dictionary.actionbean.ShowTranceiverListAction" 
+	name="TranceiverListForm" 
+	scope="session" 
+	validate="true">
+ </action>
+
+ <action path="/EditTranceiver"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="TranceiverForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+ </action>
+
+ <action path="/ProcessTranceiver"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="TranceiverForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+ </action>
+ 
+ <action path="/ShowClassList"
+    type="com.hps.july.dictionary.actionbean.ShowClassListAction" 
+	name="ResourceClassListForm" 
+	scope="session" 
+	validate="true">
+ </action>
+
+ <action path="/EditResourceClass"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="ResourceClassForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowClassList.do" redirect="true" />
+ </action>
+
+ <action path="/ProcessResourceClass"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="ResourceClassForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowClassList.do" redirect="true" />
+ </action>
+
+ <action path="/EditResourcesetClass"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="ResourcesetClassForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowClassList.do" redirect="true" />
+ </action>
+
+ <action path="/ProcessResourcesetClass"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="ResourcesetClassForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowClassList.do" redirect="true" />
+ </action>
+
+ <action path="/ShowResourcesCommonList"
+    type="com.hps.july.dictionary.actionbean.ShowResourcesCommonListAction" 
+	name="ResourcesCommonListForm" 
+	scope="session" 
+	validate="true">
+ </action>
+
+ <action path="/EditAccumBattery"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="AccumBatteryForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowResourcesCommonList.do" redirect="true" />
+ </action>
+
+ <action path="/ProcessAccumBattery"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="AccumBatteryForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowResourcesCommonList.do" redirect="true" />
+ </action>
+
+ <action path="/ShowAfsSchemeList"
+    type="com.hps.july.dictionary.actionbean.ShowAfsSchemeListAction" 
+	name="AfsSchemeListForm" 
+	scope="session" 
+	validate="true">
+ </action>
+
+ <action path="/EditAfsScheme"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="AfsSchemeForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowAfsSchemeList.do" redirect="true" />
+ </action>
+
+ <action path="/ProcessAfsScheme"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="AfsSchemeForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowAfsSchemeList.do" redirect="true" />
+ </action>
+
+ <action path="/ShowEquipmanufLookupList"
+    type="com.hps.july.dictionary.actionbean.ShowEquipmanufLookupListAction" 
+	name="EquipmanufLookupListForm" 
+	scope="session" 
+	validate="true">
+ </action>
+
+ <action path="/ShowEquipmanufList"
+    type="com.hps.july.dictionary.actionbean.ShowEquipmanufListAction" 
+	name="EquipmanufListForm" 
+	scope="session" 
+	validate="true">
+ </action>
+
+ <action path="/EditEquipmanuf"
+	type="com.hps.july.web.util.AbstractEditAction"
+	scope="request"
+	name="EquipmanufForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowEquipmanufList.do" redirect="true" />
+ </action>
+
+ <action path="/ProcessEquipmanuf"
+  	type="com.hps.july.web.util.AbstractProcessAction"
+	name="EquipmanufForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowEquipmanufList.do" redirect="true" />
+ </action>
+ 
+ <action path="/ShowResourceReport"
+    type="com.hps.july.dictionary.actionbean.ShowResourceReportAction" 
+	name="ResourceReport" 
+	scope="session" 
+	validate="true">
+ </action>
+ 
+ <action path="/ShowResourceGroupLookupList"
+    type="com.hps.july.dictionary.actionbean.ShowResourceGroupLookupListAction" 
+	name="ResourceGroupLookupListForm" 
+	scope="session" 
+	validate="true">
+ </action>
+
+</action-mappings>
+ 
+</struts-config>

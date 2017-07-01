@@ -1,0 +1,111 @@
+------Start of DE processing------ = [07.01.09 18:24:02:571 MSK] , key = com.ibm.websphere.cpi.CPIException com.ibm.ejs.container.RemoteExceptionMappingStrategy.setUncheckedException 200
+Exception = com.ibm.websphere.cpi.CPIException
+Source = com.ibm.ejs.container.RemoteExceptionMappingStrategy.setUncheckedException
+probeid = 200
+Stack Dump = com.ibm.websphere.cpi.CPIException: ; nested exception is: 
+	java.sql.SQLException: ???????? ??????????? ???????? (informix.ckc_type_resou).
+	at com.ibm.ejs.container.ContainerManagedBeanO.afterPostCreate(ContainerManagedBeanO.java:560)
+	at com.ibm.ejs.container.EJSHome.afterPostCreate(EJSHome.java:2076)
+	at com.hps.july.persistence.EJSCMPResourceSetHomeBean_bc3c01ac.afterPostCreateWrapper(EJSCMPResourceSetHomeBean_bc3c01ac.java:24)
+	at com.hps.july.persistence.EJSCMPResourceSetHomeBean_bc3c01ac.create(EJSCMPResourceSetHomeBean_bc3c01ac.java:39)
+	at com.hps.july.persistence.EJSRemoteCMPResourceSetHome_bc3c01ac.create(EJSRemoteCMPResourceSetHome_bc3c01ac.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.rmi.util.ProxyUtil$4.run(ProxyUtil.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.ibm.rmi.util.ProxyUtil.invokeWithClassLoaders(ProxyUtil.java:701)
+	at com.ibm.CORBA.iiop.ClientDelegate.invoke(ClientDelegate.java:1084)
+	at $Proxy0.create(Unknown Source)
+	at com.hps.july.persistence._ResourceSetHome_Stub.create(_ResourceSetHome_Stub.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: ???????? ??????????? ???????? (informix.ckc_type_resou).
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.ibm.ejs.cm.cache.CachedStatement.executeUpdate(CachedStatement.java:397)
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeUpdateCommon(StatementProxy.java:518)
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:59)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPResourceSetBean_bc3c01ac._create(EJSJDBCPersisterCMPResourceSetBean_bc3c01ac.java:80)
+	at com.ibm.ejs.persistence.EJSJDBCPersister.create(EJSJDBCPersister.java:536)
+	at com.ibm.ejs.container.ContainerManagedBeanO.afterPostCreate(ContainerManagedBeanO.java:536)
+	... 42 more
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.RemoteExceptionMappingStrategy
+com.ibm.ejs.container.RemoteExceptionMappingStrategy@6ad752d4
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Jan 09 18:24:02 MSK 2007
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@220a52c9
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#ResourceSet
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@194a52d4
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@68d552d4#tid=1
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@194a52d4
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Jan 09 18:24:02 MSK 2007

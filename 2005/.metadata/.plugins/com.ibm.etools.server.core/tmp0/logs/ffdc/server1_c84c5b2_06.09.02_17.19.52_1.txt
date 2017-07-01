@@ -1,0 +1,106 @@
+------Start of DE processing------ = [06.09.02 17:19:52:287 MSD] , key = com.ibm.websphere.cpi.CPIException com.ibm.ejs.container.ContainerTx.beforeCompletion 562
+Exception = com.ibm.websphere.cpi.CPIException
+Source = com.ibm.ejs.container.ContainerTx.beforeCompletion
+probeid = 562
+Stack Dump = com.ibm.websphere.cpi.CPIException: ; nested exception is: 
+	java.sql.SQLException: ????? ????????? ???????? ?? ????????????? ????? ?????????????? ??????.
+	at com.ibm.ejs.container.ContainerManagedBeanO.store(ContainerManagedBeanO.java:714)
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java:1062)
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:542)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:2916)
+	at com.hps.july.persistence.EJSRemoteCMPOrganizationNfs_96ffa1c2._copyFromEJB(EJSRemoteCMPOrganizationNfs_96ffa1c2.java:325)
+	at com.hps.july.persistence._OrganizationNfs_Stub._copyFromEJB(_OrganizationNfs_Stub.java:256)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean.refreshCopyHelper(AbstractEntityAccessBean.java:309)
+	at com.hps.july.persistence.OrganizationNfsAccessBean.refreshCopyHelper(OrganizationNfsAccessBean.java:165)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean.__getCache(AbstractEntityAccessBean.java:92)
+	at com.hps.july.persistence.OrganizationNfsAccessBean.getOrganization(OrganizationNfsAccessBean.java:254)
+	at com.hps.july.arenda.formbean.WeArendaForm.setOrgCustomer(WeArendaForm.java:2235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.hps.july.util.BeanUtils.copyProperties(BeanUtils.java:41)
+	at com.hps.july.web.util.EditForm.loadRecord(EditForm.java:145)
+	at com.hps.july.web.util.AbstractEditAction.perform(AbstractEditAction.java:83)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: ????? ????????? ???????? ?? ????????????? ????? ?????????????? ??????.
+	at com.informix.util.IfxErrMsg.getSQLException(IfxErrMsg.java:355)
+	at com.informix.jdbc.IfxSqli.sendExecute(IfxSqli.java:1258)
+	at com.informix.jdbc.IfxSqli.sendCommand(IfxSqli.java:815)
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:700)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.ibm.ejs.cm.cache.CachedStatement.executeUpdate(CachedStatement.java:397)
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeUpdateCommon(StatementProxy.java:518)
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:59)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPOrganizationNfsBean_96ffa1c2.store(EJSJDBCPersisterCMPOrganizationNfsBean_96ffa1c2.java:210)
+	at com.ibm.ejs.container.ContainerManagedBeanO.store(ContainerManagedBeanO.java:699)
+	... 51 more
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.ContainerTx
+com.ibm.ejs.container.ContainerTx@3a0e8582
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Sat Sep 02 17:19:52 MSD 2006
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@2c5b05b2
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = com.ibm.ws.webcontainer.metadata.WebComponentMetaDataImpl@585d05ae
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@3a0e8582
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@3a148582#tid=62
+  State                   = Active
+  Entered beforCompletion = true
+  Marked Rollback Only    = false
+  Method Began            = false
+  Isolation Level         = TRANSACTION_REPEATABLE_READ
+
+  --- Dump of Enlisted Beans : 1 ---------------------- 
+
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#OrganizationNfs, com.hps.july.persistence.OrganizationNfsKey@145f1), state = DESTROYED)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@3a0e8582
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Sat Sep 02 17:19:52 MSD 2006

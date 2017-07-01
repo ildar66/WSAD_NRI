@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path="ejbModule"/>
+    <classpathentry kind="var" path="SERVERJDK_PLUGINDIR/jre/lib/rt.jar" sourcepath="SERVERJDK_PLUGINDIR/src.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/j2ee.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ivjejb35.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/vaprt.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ras.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/utils.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/csicpi.jar"/>
+    <classpathentry kind="var" path="WAS_PLUGINDIR/lib/ejbcontainer.jar"/>
+    <classpathentry exported="true" kind="src" path="/julypersistenceEJB"/>
+    <classpathentry exported="true" kind="src" path="/julycommonEJB"/>
+    <classpathentry exported="true" kind="src" path="/julyjdbcEJB"/>
+    <classpathentry kind="src" path="/common"/>
+    <classpathentry kind="output" path="ejbModule"/>
+</classpath>

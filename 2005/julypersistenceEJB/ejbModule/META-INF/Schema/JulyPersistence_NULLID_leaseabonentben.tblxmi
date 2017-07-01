@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leaseabonentben" name="leaseabonentben" primaryKey="leaseabonentben_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasedocument" name="leasedocument">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986777">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ben" name="ben">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986787">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_3"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leaseabonentben_1" name="leaseabonentben" members="leasedocument ben" constraint="SQLConstraint_1131634986787"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_45708_45708" name="FK_REF_45708_45708" members="leasedocument" constraint="SQLConstraint_1131634986788">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leaseabonentban.tblxmi#leaseabonentban_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986787" name="leaseabonentben" type="PRIMARYKEY" primaryKey="leaseabonentben_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986788" name="FK_REF_45708_45708" type="FOREIGNKEY" referenceByKey="FK_REF_45708_45708"/>
+</RDBSchema:RDBTable>

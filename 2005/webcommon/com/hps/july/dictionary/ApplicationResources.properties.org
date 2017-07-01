@@ -1,0 +1,1238 @@
+label.menu.organizer=Основное меню
+label.menu.tasklist=Задачи
+label.menu.reregister=Перерегистрация
+label.menu.logout=Выход
+
+label.menu.root=Основные справочники
+label.menu.rootArenda=Ведение договоров аренды
+label.menu.tax=Налоги
+label.menu.units=Единицы измерения
+label.menu.restypes=Классификация ресурсов
+label.menu.currencies=Валюты
+label.menu.ratetypes=Типы курсов валют
+label.menu.sysconst=Системные константы
+label.menu.companies=Компании
+label.menu.organizations=Юридические лица
+label.menu.banks=Банки
+label.menu.groups=Классификация Юр. лиц
+label.menu.storages=Склады
+
+label.menu.resources=Ресурсы
+label.menu.resources.basestations=Базовые станции
+label.menu.resources.antennas=Антенны базовых станций
+label.menu.resources.rrlantennas=Комплекты оборудования РРЛС
+label.menu.resources.cables=Кабели базовых станций
+label.menu.resources.other=Все ресурсы
+label.menu.resources.complects=Наборы
+label.menu.restypes=Виды и типы ресурсов
+label.menu.resources.invresources=Ресурсы по категориям ввода
+
+#da feb10 2003
+error.notpositive.currateh.value=Курс должен быть неотрицательным
+
+error.init=Ошибка установления начальных значений
+error.absent=Объект удален другим пользователем
+error.someshit=Попробуйте позже и вызовите системного администратора
+error.duplicate=Дублирование уникального кода
+error.invalid.sysconst.decimalvalue=Неверный формат десятичного значения
+errors.header=Пожалуйста исправьте следующие ошибки:
+error.referenced=Удаление записи не возможно, т.к. на нее есть ссылки в БД. За разъяснениями обратитесь к системному администратору.
+
+label.login.id=Пользователь
+label.login.psw=Пароль
+
+label.search.all=Все
+label.edit=Изменить запись
+label.delete=Удалить запись
+label.add=Добавить запись
+label.view=Просмотр записи
+label.norecords=По указанным условиям поиска записей не найдено
+
+label.companies=Компании
+label.organizations=Юридические лица
+label.banks=Банки
+label.accounts=Расчётные счета
+label.groups=Классификация Юр. лиц, Группировки
+label.group=Группировка
+label.groupping=Группа
+label.grouppings=Группы
+label.orggroup=Группы юридического лица
+label.grouporg=Юридические лица
+label.addgrouporg=Включить юр. лица в группу
+
+label.choose.company=Выберите компанию
+label.choose.bank=Выберите банк
+label.choose.group=Выберите группировку
+label.choose.groupping=Выберите группу
+label.choose.organizations=Выберите юридическое лицо
+
+label.choose.direction=Выберите дирекцию
+label.choose.service=Выберите службу
+label.choose.department=Выберите отдел
+label.choose.dgroup=Выберите группа
+
+label.groupping.code=Код
+label.groupping.name=Наименование группы
+
+label.group.code=Код
+label.group.name=Наименование группировки
+
+label.orggroups=Группы
+label.orggroup.group=Группировка
+label.orggroup.groupping=Группа
+label.orggroup.order=Порядковый №
+label.orggroup.organization=Юридическое лицо
+
+error.empty.group.name=Необходимо указать наименование
+error.empty.groupping.name=Необходимо указать наименование
+error.empty.groupping.group=Необходимо указать группировку
+
+error.empty.orggroup.group=Необходимо указать группировку
+error.empty.orggroup.groupping=Необходимо указать группу
+error.empty.orggroup.order=Необходимо указать порядковый номер
+error.invalid.orggroup.group=Несуществующая группировка
+error.invalid.orggroup.groupping=Несуществующая группа
+error.invalid.orggroup.order=Неверный формат порядкового номера
+error.invalid.orggroup.org=Не выбрано юридическое лицо при переходе к группам
+error.dup.orggroup.group=Организация не может состоять в нескольких группах одной группировки
+
+error.empty.grouporg.group=Не выбрана группировка при переходе к этой странице
+error.empty.grouporg.groupping=Не выбрана группа при переходе к этой странице
+error.empty.grouporg.order=Необходимо указать порядковый номер
+error.empty.grouporg.org=Необходимо указать юридическое лицо
+error.invalid.grouporg.group=Несуществующая группировка
+error.invalid.grouporg.groupping=Несуществующая группа
+error.invalid.grouporg.order=Неверный формат порядкового номера
+error.invalid.grouporg.org=Несуществующее юридическое лицо
+error.dup.grouporg.group=Организация не может состоять в нескольких группах одной группировки
+error.dup.grouporg.group.multi=Организация {0} {1} не может состоять в нескольких группах одной группировки
+
+
+label.company.name=Компания
+label.company.shortname=Краткое наименование
+label.organization.type=Форма собственности
+label.organization.name=Организация
+label.organization.shortname=Краткое наименование
+label.organization.company=Компания
+label.organization.issupplier=Поставщик
+label.organization.isprovider=Подрядчик
+label.organization.isrenter=Арендодатель
+label.organization.okonh=ОКОНХ
+label.organization.okpo=ОКПО
+label.organization.inn=ИНН
+label.organization.kpp=КПП
+label.organization.accountmanagerfio=ФИО бухгалтера
+label.organization.directorfio=ФИО руководителя
+label.organization.bossposition=Должность руководителя
+label.organization.phisicaladdress=Фактический адрес
+label.organization.legaladdress=Юридический адрес
+label.organization.legalzip=Юридический адрес.Индекс
+label.organization.phone=Телефон
+label.organization.fax=Факс
+label.organization.contactlist=Контактная информация
+label.organization.isbank=Банк
+label.organization.swift=Свифт
+label.organization.bik=Бик
+label.organization.corraccount=Банк.Корр-счет
+label.bank.name=Наименование банка
+label.bank.bik=БИК
+label.bank.corraccount=Корр. счет
+
+label.account.value=Номер расчётного счета
+label.account.bank=Банк
+label.account.organization=Юридическое лицо
+label.account.isactive=Активен
+error.empty.account.value=Необходимо заполнить номер расчётного счета
+error.empty.account.bank=Необходимо указать БИК банка
+error.invalid.account.bank=Банк с указанным кодом не найден
+error.more.account.bank=Найдено несколько банков с указанным БИК
+error.invalid.account.organization=Юридическое лицо с указанным кодом не найдено
+error.invalid.account.accountvalue=...
+
+error.empty.organization.name=Необходимо указать наименование организации
+error.empty.organization.shortname=Необходимо указать краткое наименование организации
+error.empty.organization.issupplier=Необходимо указать признак поставщика
+error.empty.organization.isprovider=Необходимо указать признак подрядчика
+error.empty.organization.isrenter=Необходимо указать признак арендодателя
+error.empty.organization.shortname=Необходимо указать короткое имя юр. лица
+error.invalid.organization.company=Компания с указанным кодом не найдена
+error.empty.organization.bossposition=Необходимо указать должность руководителя
+error.empty.organization.directorfio=Необходимо указать фамилию руководителя
+error.empty.organization.inn=Необходимо указать ИНН
+error.empty.organization.legaladdress=Необходимо указать юридический адрес
+error.invalid.organization.inndup=Организация с таким ИНН уже есть
+error.empty.organization.kpp=Необходимо указать код причины постановки на учет
+
+error.empty.bank.name=Необходимо указать наименование банка
+error.empty.bank.bik=Необходимо указать БИК
+error.invalid.bank.bikdup=Банк с таким БИК уже есть
+
+label.people.fullname=ФИО
+
+label.currate.value=Курс
+label.currate.date=Дата
+label.currate=Курсы валют
+
+label.name=Наименование
+label.code=Код
+label.resource.show=Отображать
+label.logout.id=Выход из системы
+label.all=Все
+
+label.access.groupid=Код группы
+
+label.choose.currency=Выбор валюты
+label.choose.worker=Выберите работника
+label.choose.ratetype=Выбор типа курса
+label.choose.restype=Выбор вида ресурса
+label.choose.ressbtype=Выбор типа ресурса
+label.choose.unit=Выбор единицы измерения
+label.choose.resource=Выбор ресурса
+
+button.confirm=Подтвердить
+button.logout=Выход
+button.reset=Сбросить
+button.refresh=Обновить
+button.submit=Отправить
+button.login=Войти
+button.save=Сохранить
+button.cancel=Отмена
+button.search=Искать
+
+button.add=Добавить запись
+button.back=Назад
+button.close=Закрыть
+button.edit=Изменить запись
+button.view=Просмотр записи
+button.exclude=Исключить
+button.include=Включить
+button.save=Сохранить
+button.delete=Удалить
+
+label.ratetype=Типы курсов валют
+label.ratetype.basecur.code=Код базовой валюты
+label.ratetype.basecur=Базовая валюта
+label.ratetype.code=Тип курса
+label.ratetype.basecur.name=Наименование базовой валюты
+label.ratetype.name=Наименование
+
+label.currateh.date=Дата
+label.currateh=История курсов валюты
+label.currateh.value=Курс
+label.currateh.date=Дата
+
+label.nfsres2nrires.title=Управление взаимосвязями между ресурсами NRI и НФС
+label.nfsres2nrires.searchby=Поиск по
+label.nfsres2nrires.searchbyA=Коду ресурса НФС
+label.nfsres2nrires.searchbyB=Коду производителя
+label.nfsres2nrires.searchbyC=Обозначению (модели)
+label.nfsres2nrires.searchbyD=Наименованию ресурса
+label.nfsres2nrires.searchbyE=Производителю
+label.resource.nfscode=Код НФС
+label.resource.nricodeLabel=Код NRI
+label.nrires.searchbyA=По модели
+label.nrires.searchbyB=По наименованию
+label.nrires.searchbyC=По коду NRI
+label.resource.nfscodes=Коды НФС
+label.resource.nfsname=Наименование ресурса
+label.resource.nfsmodel=Обозначение (модель)
+label.resource.nriname=Наименование ресурса
+label.resource.nrimodel=Модель
+label.resource.nriunit=Ед.изм.
+label.resource.linkednfs=Связанные ресурсы НФС
+label.resource.allnfs=Ресурсы НФС
+label.resource.allnri=Выбор оборудования в состав комплекта
+label.resource.nonfscodes=Нет кодов НФС для отображения.
+
+label.resource.name=Наименование
+label.resource.code=Код
+label.resource.complectfor=Узел для
+label.resource.complectfornode=Узел для / Состав
+label.resource=Ресурс
+label.resource.boxable=Может быть упакован
+label.resource.complectpart.short=Узел
+label.resource.complectpart=Узел
+label.resource.model=Обозначение
+label.resource.taxhist=Налоги
+label.resource.countpolicy=Учётная политика
+label.resource.countpolicy.serial=Сер. учёт
+label.resource.countpolicy.partial=Парт. учёт
+label.resource.unit=Единица измерения
+label.resource.unit.short=Ед. изм.
+label.resource.active=Активный
+label.resource.active.short=Акт.
+label.resource.complect=Набор
+label.resource.complect.short=Ком-т
+label.resource.double=Консолидация ресурсов
+label.resource.showall=Все
+label.resource.shownew=Активные
+label.resource.showold=Неактивные
+label.resource.priceable=Расценка обязательна
+label.resource.priceable.short=Расц. обяз.
+label.resource.notes=Примечание
+label.resource.manufacturer=Производитель
+label.resource.manucode=Код производителя
+label.resource.cablediameter=Диаметр кабеля, дюймы
+
+label.resource.oldcodes=Старые коды
+label.resource.viewoldcodes=Просмотр
+label.resource.byrestype=По виду ресурса
+label.resource.byressubtype=По типу ресурса
+label.resource.byclass=По классификации
+label.resource.bysign=По обозначению
+label.resource.byname=По наименованию
+label.resource.bymanufacturer=По производителю
+label.resource.bymanucode=По коду производителя
+label.resource.nfscode=По коду НФС
+label.resource.nricode=По коду NRI
+label.resource.type=Вид
+label.resource.subtype=Тип
+label.resource.countpolicys=Серийный
+label.resource.countpolicyp=Партионный
+label.resource.countpolicyb=Обычный
+
+label.resource.inpcategory=Категория ввода
+label.resource.bycategory=Только принадлежащие категории
+
+label.double=Консолидация ресурсов
+label.resource.double.code=Код консолидируемого ресурса
+label.resource.double.name=Наименование
+label.resource.double.actualcode=Главный ресурс
+label.resource.double.description=Консолидация ресурсов - операция слияния ресурсов с одинаковыми (идентичными) характеристиками.
+label.resource.double.message=Внимание! После сохранения новый код будет проставлен во всех таблицах базы данных где раньше упоминался текущий код. Операция необратима. Будьте осторожны! После выполнения операции текущий ресурс можно будет удалить.
+
+error.resource.double.difftype=Исходный ресурс и ресурс на замену имеют разный класс - замена невозможна
+error.resource.double.diffpolicy=Исходный ресурс и ресурс на замену имеют разную учетную политику - замена невозможна
+error.resource.double.changeerr=Произошла неизвестная ошибка при замене ресурсов. Обратитесь к администратору системы
+error.resource.double.datatypeConflict=Слияние ресурсов невозможно. Конфликт статусов с ресурсом НФС.
+error.resource.double.confTablesConflict=Конфликт ресурсов в конфигурационных таблицах
+error.resource.double.theSameResourceConflict=Нельзя консолидировать один и тот же ресурс! 
+error.resource.double.theFakeResourceConflict=Главный ресурс не идентифицирован
+
+label.restype.name=Наименование
+label.restype.subtype=Тип ресурса
+label.restype=Вид ресурса
+label.restype.code=Код
+label.restypes=Ресурсы, Виды ресурсов
+
+label.restax.nds=НДС
+label.restax.date=Дата
+label.restax=Налоги, Ставки налогов на ресурсы
+label.restax.resource.code=Код ресурса
+label.restax.resource.name=Наименование ресурса
+label.restax.nsp=НСП
+
+label.restaxhist=История налогов на ресурс
+label.restaxhist.resource=Ресурс
+label.restaxhist.date=Дата
+label.restaxhist.nds=НДС
+label.restaxhist.nsp=НСП
+
+label.complectfor=Узел для
+label.complectfor.complect=Набор
+label.complectfor.complect.code=Код набора
+label.complectfor.complect.name=Наименование набора
+label.complectfor.part=Узел
+
+label.complects=Наборы
+label.complect=Набор
+label.complect.code=Код
+label.complect.name=Наименование
+label.complect.mainpart.code=Код главной части
+label.complect.mainpart.name=Главная часть
+label.complect.mainpart.unit=Ед. изм.
+label.complect.qty=Кол-во главной части
+label.complect.type=Тип
+label.complect.type.set=Набор
+label.complect.type.agregate=Агрегат
+
+label.content=Состав
+label.content.code=Код
+label.content.name=Наименование
+label.content.qty.short=Кол-во
+label.content.qty=Количество
+label.content.unit.short=Ед. изм.
+label.content.part=Элемент
+
+label.units=Единицы измерения
+label.unit.name=Наименование
+label.unit.shortname=Краткое наименование
+label.unit.code=Код
+
+label.currency.shortname=Короткое имя
+label.currency=Валюты
+label.currency.code=Валюта
+label.currency.name=Наименование
+
+label.sysconst.id=Код
+label.sysconst=Системные константы
+label.sysconst.datevalue=Дата
+label.sysconst.charvalue=Строка
+label.sysconst.intvalue=Целое
+label.sysconst.decimalvalue=Десятичное
+
+label.subtype.code=Код
+label.subtype.name=Наименование
+label.subtypes=Типы ресурсов
+label.subtype=Тип ресурса
+
+error.empty.restax.nds=Необходимо указать НДС
+error.empty.restax.date=Необходимо указать дату
+error.empty.restax.resource=Необходимо указать ресурс
+error.empty.restax.nsp=Необходимо указать НСП
+
+error.empty.resource.name=Необходимо указать наименование
+error.empty.resource.model=Необходимо указать обозначение
+error.empty.resource.subtype=Необходимо указать тип ресурса
+
+error.empty.content.resourcepart=Необходимо указать элемент
+error.empty.content.qty=Необходимо указать количество
+
+error.empty.restype.name=Необходимо указать наименование
+
+error.empty.ratetype.name=Необходимо указать наименование
+error.empty.ratetype.basecur=Необходимо указать базовую валюту
+
+error.empty.currency.shortname=Необходимо указать короткое имя
+error.empty.currency.name=Необходимо указать наименование
+
+error.empty.currate.value=Необходимо указать курс
+error.empty.currate.date=Необходимо указать дату
+error.empty.currate.ratetype=Необходимо указать тип курса 
+error.empty.currate.currency=Необходимо указать валюту
+
+error.empty.currateh.value=Необходимо указть курс
+
+error.empty.currateh.ratetype=Необходимо указать тип курса
+error.empty.currateh.date=Необходимо указать дату
+
+error.present.currateh.value=Курс на указанную дату уже введён
+
+error.empty.sysconst.id=Необходимо указать идентификатор
+error.invalid.sysconst.id=Идентификатор содержит недопустимые символы
+
+error.empty.unit.name=Необходимо указать наименование единицы измерения
+error.empty.unit.shortname=Необходимо указать краткое наименованование
+
+error.empty.group.name=Необходимо указать наименование группы аксессуаров
+error.empty.accessory.qty=Необходимо указать количество аксессуаров в группе
+
+error.empty.subtype.name=Необходимо указать наименование
+
+error.empty.complectfor.complect=Необходимо указать набор
+
+error.empty.complect.name=Необходимо указать наименование
+error.empty.complect.mainpart=Необходимо указать главную часть
+error.empty.complect.type=Необходимо указать тип
+error.empty.complect.mainpartqty=Необходимо указать количество главной части
+
+error.invalid.complect.mainpartqty=Неверный формат количества главной части
+
+error.invalid.currate.date=Неверный формат даты
+error.invalid.currate.value=Неверный формат курс
+error.invalid.currate.currency=Валюта с указанным кодом не найдена
+
+error.invalid.content.qty=Неверный формат количества
+error.invalid.ratetype.basecur=Валюта с указанным кодом не найдена
+error.invalid.currateh.value=Неверный формат курса
+error.invalid.currateh.date=Неверный форммат даты
+
+error.invalid.restax.nds=Неверный формат НДС
+error.invalid.restax.nsp=Неверный формат НСП
+error.invalid.restax.date=Неверный формат даты
+error.invalid.restax.resource=Ресурс с указанным кодом не найден
+
+error.invalid.direction.worker=Работник с указанным кодом не найден
+
+error.invalid.sysconst.datevalue=Неверный формат даты
+error.invalid.sysconst.intvalue=Неверный формат целого значения
+error.invalid.sysconst.intvalue1=Обсчет документа не был успешным
+
+error.invalid.resource.subtype=Тип ресурса с указанным кодом не найден
+error.invalid.resource.unit=Единица измерения с указанным кодом не найдена
+error.invalid.resource.manufacturer=Производитель с указанным кодом не найден
+error.invalid.resource.manucode=Part No слишком длинный
+
+label.storages=Склады
+label.storage.division=Подразделение
+label.storage.addr=Адрес
+label.storage.pstnphone=Городской телефон
+label.storage.region=Филиал
+label.storage.internalphone=Внутренний телефон
+
+error.empty.storage.name=Необходимо указать наименование склада
+error.empty.storage.address=Необходимо указать адрес склада
+error.empty.storage.direction=Необходимо указать дирекцию
+error.invalid.storage.direction=Дирекция с указанным кодом не найдена
+error.invalid.storage.service=Служба с указанным кодом не найдена
+error.invalid.storage.department=Отдел с указанным кодом не найден
+error.invalid.storage.group=Группа с указанным кодом не найдена
+error.empty.storage.region=Необходимо указать филиал
+error.invalid.storage.region=Необходимо выбрать филиал
+
+label.direction.name=Дирекция
+label.direction.shortname=Краткое наименование
+label.direction.boss=Руководитель
+label.service.name=Служба
+label.service.shortname=Краткое наименование
+label.service.boss=Руководитель
+label.department.name=Отдел
+label.department.shortname=Краткое наименование
+label.department.boss=Руководитель
+label.dgroup.name=Группа
+label.dgroup.shortname=Краткое наименование
+label.dgroup.boss=Руководитель
+
+label.complectnodes=Из каких узлов состоит
+label.complectnodes.complect=Набор
+label.complectnodes.part.code=Код
+label.complectnodes.part.name=Наименование
+label.complectnodes.part=Узел набора
+label.resource.complectnode=Состав
+error.empty.complectnodes.part=Необходимо указать узел набора
+
+msg.ressbtype=Перечень типов ресурсов для выбранного вида
+msg.res=Перечень ресурсов выбранного типа
+msg.complect=Перечень наборов ресурсов выбранного типа
+msg.complectfor=Перечень ресурсов, к которому подходит узел
+msg.complectnodes=Перечень узлов, которые подходят к ресурсу
+msg.double=Операция слияния ресурсов
+msg.taxhist=Редактирование ставок налогов для ресурса
+msg.complectcontent=Перечень составных частей набора
+msg.curratehist=Работа с курсом выбранной валюты
+msg.currate=Работа с курсами валюты
+msg.groupping=Перечень групп в группировке
+msg.grouporg=Перечень юридических лиц входящих в группу
+msg.accounts=Перечень расчетных счетов юридического лица
+msg.orggroups=Классификация юридического лица
+
+error.absent.complect.mainpart=Главная часть с указанным кодом не найдена
+
+label.menu.deviceandcable=Антенно-фидерное оборудование и кабели
+label.menu.cable=Кабели базовых станций
+label.menu.antena=Антенны
+label.menu.basestation=Базовые станции
+
+label.cabtypes=Список типов Р/Ч кабелей
+label.cabtypes.losses=Удельные потери
+label.cabtypes.manufacturer=Производитель
+label.cabtypes.name=Обозначение
+label.cabtypes.code=Код
+
+label.antena.list=Список типов антенн
+label.antena.form=Параметры антенны
+label.antena.range=Диапазон
+label.antena.polar=Поляризация
+label.antena.polar.all=Все
+label.antena.polar.cross=Кросс
+label.antena.polar.vert=Вертикальная
+label.antena.polar.C=Кросс
+label.antena.polar.V=Вертикальная
+label.antena.polar.=
+label.antena.show=Отображать
+label.antena.show.active=Не устаревшие
+label.antena.show.old=Устаревшие
+label.antena.searchby=Искать
+label.antena.searchby.model=По обозначению
+label.antena.searchby.manufacturer=По производителю
+label.antena.name=Наименование
+label.antena.manucode=Код производителя
+label.antena.model=Обозначение
+label.antena.manufacturer=Производитель
+label.antena.extent=Габариты
+label.antena.amplify=Усиление (дб)
+label.antena.amplifycount=раз
+label.antena.infoactive=Информация активна
+label.antena.freqrange=Диапазон частот
+label.antena.dntype=Тип ДН
+label.antena.electricangle=Электрический наклон
+label.antena.ksvn=КСВН
+label.antena.port=Разъем
+label.antena.weight=Вес (кг)
+label.antena.band=Рабочий диапазон
+label.antena.bandenabled=Диапазон доступен
+label.antena.amp=Усиление
+label.antena.amp.db=db
+label.antena.amp.cnt=раз
+label.antena.dir=Диаграмма направленности
+label.antena.dir.horz=горизонтальная
+label.antena.dir.vert=вертикальная
+label.antena.omni=Омни антенна
+label.antena.entriescount=Кол-во входов, шт
+
+error.antana.emptyname=Необходимо указать наименование
+error.antena.longname=Наименование не должно превышать 80 символов
+error.antena.emptymodel=Необходимо указать обозначение
+error.antena.longmodel=Обозначение не должно превышать 40 символов
+error.antena.invalidmanufacturer=Неверный формат числа в поле "Производитель"
+error.antena.manufacturernotfound=Указанный производитель не найден в справочнике системы
+error.antena.longmanucode=Код производителя не должен превышать 40 символов
+error.antena.invalidrange=Указан неверный диапазон
+error.antena.longfreqrange=Строка в поле "диапазон частот" не должна превышать 20 символов
+error.antena.invalidpolar=Указана неверная поляризация
+error.antena.longdn1type=Первый тип ДН не должен превышать 4х символов
+error.antena.longdn2type=Второй тип ДН не должен превышать 4х символов
+error.antena.invalidamplify=Неверный формат числа в поле "Усиление" для рабочего диапазона {0}
+error.antena.invalidamplifyrange=Слишком большое число в поле "Усиление" для рабочего диапазона {0}
+error.antena.invalidamplifydigits=Число в поле "Усиление" для рабочего диапазона {0} не должно превышать 2-х знаков до запятой и 2-х после
+error.antena.invalidelectricangle=Неверный формат числа в поле "Электрический наклон"
+error.antena.invalidmaxelectricangle=Неверный формат числа в поле "Максимальный электрический наклон"
+error.antena.needminmaxelectricangles=Поля "Минимальный и максимальный электрические углы наклона" должны быть заполнены
+error.antena.invalidpairminmaxelectricangles=Поле "Минимальный электрический угол наклона" должно быть меньше поля "Максимальный электрический угол наклона"
+error.antena.invalidsignelectricangles=Значение электрического угла наклона может содержать не более двух знаков после запятой
+error.antena.invalidksvn=Неверный формат числа в поле "КСВН"
+error.antena.invalidlength=Неверный формат длинны в поле "Габариты"
+error.antena.invalidwidth=Неверный формат ширины в поле "Габариты"
+error.antena.invalidheight=Неверный формат высоты в поле "Габариты"
+error.antena.longport=Строка в поле "Разъём" не должна превышать 20 символов
+error.antena.invalidweight=Неверный формат числа в поле "Вес"
+error.antena.lengthlesszero=Длинна в поле "Габариты" не может быть отрицательной
+error.antena.widthlesszero=Ширина в поле "Габариты" не может быть отрицательной
+error.antena.heightlesszero=Высота в поле "Габариты" не может быть отрицательной
+error.antena.weightlesszero=Вес не может быть отрицательным
+error.antena.entriescount=Неверный формат числа в поле "Кол-во входов"
+error.antena.entriescountisnull=Количество антенных входов не может быть равно 0
+
+label.cable.list=Кабели базовых станций
+label.cable.form=Параметры кабеля
+label.cable.code=Код
+label.cable.model=Обозначение
+label.cable.manufacturer=Производитель
+label.cable.loss=Удельные потери
+label.cable.name=Наименование
+label.cable.formloss=Удельные потери (дб/м)
+label.cable.band=Рабочий диапазон
+label.cable.techparams=Технические характеристики
+
+error.cable.emptyname=Необходимо указать наименование
+error.cable.longname=Наименование не должно превышать 80 символов
+error.cable.invalidmanufacturer=Неверный формат числа в поле "Производитель"
+error.cable.manufacturernotfound=Указанный производитель не найден в справочнике системы
+error.cable.emptymodel=Необходимо указать обозначение
+error.cable.longmodel=Обозначение не должно превышать 40 символов
+error.cable.invalidlostfactor=Неверный формат числа в поле "Удельные потери" для рабочего диапазона {0}
+error.cable.lostfactorlesszero=Отрицательное значение недопустимо в поле "Удельные потери" для рабочего диапазона {0}
+error.cable.lostfactorscale=Размеры значения в поле "Удельные потери" для рабочего диапазона {0} не длжны превышать 2-х знаков до запятой и 4-х после.
+
+label.basestation.list=Список типов базовых станций GSM/DCS
+label.basestation.form=Параметры базовой станции
+label.basestation.standard=Стандарт
+label.basestation.standard.=
+label.basestation.standard.g=GSM/DCS
+label.basestation.standard.d=DAMPS
+label.basestation.generation=Поколение
+label.basestation.show=Отображать
+label.basestation.show.active=Не устаревшие
+label.basestation.show.old=Устаревшие
+label.basestation.searchby=Искать
+label.basestation.searchby.model=По обозначению
+label.basestation.searchby.manufacturer=По производителю
+label.basestation.searchby.generation=По поколению
+label.basestation.bygen=По поколению
+label.basestation.searchstring=Строка поиска
+label.basestation.name=Наименование
+label.basestation.infoactive=Информация активна
+label.basestation.manufacturer=Производитель
+label.basestation.model=Обозначение
+label.basestation.manucode=Код производителя
+label.basestation.releaseyear=Год производства
+label.basestation.devline=Линия оборудования
+label.basestation.modification=Модификация
+label.basestation.extent=Габариты
+label.basestation.maxsectorscount=Максимальное кол-во секторов
+label.basestation.maxtrxcount=Максимальное кол-во трансиверов
+
+error.basestation.emptyname=Необходимо указать наименование
+error.basestation.longname=Наименование не должно превышать 80 символов
+error.basestation.emptymodel=Необходимо указать обозначение
+error.basestation.longmodel=Обозначение не должно превышать 40 символов
+error.basestation.invalidmanufacturer=Неверный формат числа в поле "Производитель"
+error.basestation.manufacturernotfound=Указанный производитель не найден в справочнике системы
+error.basestation.longmanucode=Код производителя не должен превышать 40 символов
+error.basestation.invalidstandard=Указан неверный стандарт
+error.basestation.longmanuyear=Год производства не может быть больше 4х символов
+error.basestation.invalidmanuyear=Неверный формат числа в поле "Год производства".
+error.basestation.longdevline=Строка в поле "Линия оборудования" не может превышать 50 сиволов
+error.basestation.longgeneration=Строка в поле "Поколение" не может превышать 10 символов
+error.basestation.longmodification=Строка в поле "Модификация" не может превышать 10 символов
+error.basestation.invalidlength=Неверный формат длинны в поле "Габариты"
+error.basestation.invalidlength.otr=Длинна в поле "Габариты" должна быть больше нуля
+error.basestation.invalidwidth=Неверный формат ширины в поле "Габариты"
+error.basestation.invalidwidth.otr=Ширина в поле "Габариты" должна быть больше нуля
+error.basestation.invalidheight=Неверный формат высоты в поле "Габариты"
+error.basestation.invalidheight.otr=Высота в поле "Габариты" должна быть больше нуля
+
+label.choosertype.title=Выбор класса ресурса
+label.choosertype.type=Класс
+label.choosertype.basestation=Базовые станции
+label.choosertype.antenna=Антенны базовых станций
+label.choosertype.donorunit=Донорный блок репитера
+label.choosertype.cabel=Кабели базовых станций
+label.choosertype.other=Прочие ресурсы
+
+label.cars=Автомобили
+label.car.full=Перечень служебных автомобилей
+label.car.model=Марка автомобиля
+label.car.number=Гос. номер автомобиля
+
+error.empty.car.model=Необходимо указать марку автомобиля
+error.empty.car.number=Необходимо указать гос. номер автомобиля
+
+label.workers=Работники
+msg.orgworkers=Работники организации
+
+label.orgworkers.list=Работники
+label.orgworkers.org=Организация
+label.orgworkers.lastname=Фамилия
+label.orgworkers.code=Код
+label.orgworkers.fio=ФИО
+label.orgworkers.passport=Паспорт
+
+#label.orgworker.organization=Организация
+label.orgworker.fio=ФИО
+label.orgworker.workposition=Должность
+label.orgworker.lotusaddress=Адрес Lotus Notes
+label.orgworker.email=Email
+label.orgworker.phone1=Телефон 1
+label.orgworker.phone2=Телефон 2
+label.orgworker.localphone=Локальный номер
+label.orgworker.fax=Факс
+label.orgworker.mobilephone=Мобильный
+label.orgworker.isservicestuff=Выездной
+label.orgworker.isenabled=Разр/Запр
+label.orgworker.company=Компания
+label.orgworker.division=Подразделение
+label.orgworker.enabled=Разрешено
+label.orgworker.disabled=Запрещено
+
+label.orgworker.organization=Организация
+label.orgworker.lastname=Фамилия
+label.orgworker.firstname=Имя
+label.orgworker.middlename=Отчество
+label.orgworker.passport=Паспорт
+label.orgworker.passportser=серия и номер
+label.orgworker.passportdate=дата выдачи
+label.orgworker.passportwhom=кем выдан
+label.orgworker.isactive=Признак активности
+label.orgworker.isactive.Y=Активный
+label.orgworker.isactive.N=Не активный
+
+error.orgworker.duplication=Такой работник уже введён в организацию {0}
+error.orgworker.organization.empty=Не установлена организация!
+error.orgworker.organization.invalid=Указанная организация отсутствует в базе данных
+error.orgworker.firstname.empty=Поле "Имя" является обязательным
+error.orgworker.firstname.length=Длина поля "Имя" не может превышать 80 символов
+error.orgworker.lastname.empty=Поле "Фамилия" является обязательным
+error.orgworker.lastname.length=Длина поля "Фамилия" не может превышать 80 символов
+error.orgworker.middlename.empty=Поле "Отчество" является обязательным
+error.orgworker.middlename.length=Длина поля "Отчество" не может превышать 80 символов
+error.orgworker.passportser.empty=Поле "Серия и номер паспорта" является обязательным
+error.orgworker.passportser.length=Длина поля "Серия и номер паспорта" не может превышать 80 символов
+error.orgworker.passportdate.invalid=Неверный формат даты выдачи паспорта
+error.orgworker.passportwhom.length=Длина поля "кем выдан паспорт" не может превышать 80 символов
+error.orgworker.active.empty=Не установлен признак активности
+
+error.orgworker.partialrecordupdate=Не удалось провести исправление записи
+error.orgworker.partialremove=Не удалось удалить связанные записи
+
+# For old OrgworkerForm
+error.empty.orgworker.man=Необходимо указать физическое лицо
+error.empty.orgworker.workposition=Необходимо указать должность
+error.empty.orgworker.isactive=Необходимо указать признак активности
+error.invalid.orgworker.people=Работник с указанным кодом не найден
+error.invalid.orgworker.workposition=Должность с указанным кодом не найдена
+error.invalid.orgworker.company=Компания с указанным кодом не найдена
+error.invalid.orgworker.division=Подразделение с указанным кодом не найдено
+error.empty.orgworker.organization=Необходимо указать организацию
+error.invalid.orgworker.organization=Организация с указанным кодом не найдена
+error.dup.orgworker=Такой работник уже введён в организацию {0}
+
+label.menu.resources.repeaters=Репитерные станции
+label.repeater.form=Репитер
+label.repeater.list=Репитерные станции
+label.repeater.searchby=Искать
+label.repeater.searchby.model=По обозначению
+label.repeater.searchby.manufacturer=По производителю
+label.repeater.model=Обозначение
+label.repeater.manufacturer=Производитель
+label.repeater.type=Тип
+label.repeater.canalQ=Число каналов / Ширина полосы
+label.repeater.power=Мощность
+label.choosertype.repeater=Репитеры
+
+label.repeater.polosovoi=Полосовой 
+label.repeater.chanalni=Канальный
+label.repeater.bandwidth=Ширина полосы
+label.repeater.numchanals=Число каналов (Шт)
+
+error.invalid.repeater.bandwidth=Неверный формат в поле "Ширина полосы". Ожидается десятичное число.
+error.invalid.repeater.numchanals=Неверный формат в поле "Число каналов". Ожидается целое число.
+error.invalid.repeater.reppower=Неверный формат в поле "Мощность". Ожидается десятичное число.
+
+label.rrlresource.radiationclass=Класс излучения, МККР
+label.rrlresource.recvsensitivity=Чувствительность приемника, dB
+label.rrlresource.streamspeed=Скорость потока
+label.rrlresource.freqdev=Нестабильность частоты
+label.rrlresource.multiplybyten=x 10
+label.rrlresource.mkkrrecomm=Рекомендации МККР
+label.rrlresource.protocolnum=Номер протокола измерения параметров РЭС
+label.rrlresource.protocoldate=Дата протокола измерения параметров РЭС
+label.rrlresource.params.title=Характеристики, зависящие от диаметра антенны
+label.rrlresource.params.antdiam=Диаметр антенны, м
+label.rrlresource.params.amplifkoeff=Коэффициент усиления антенны, dB
+label.rrlresource.params.dnangleh=Ширина ДН антенны по вертикали, град.
+label.rrlresource.params.dnanglew=Ширина ДН антенны по горизонтали, град.
+label.rrlresource.speedparams.title=Характеристики, зависящие от скорости потока
+label.rrlresource.speedparams.streamspeed=Скорость потока
+label.rrlresource.speedparams.radiationclass=Класс излучения
+label.rrlresource.speedparams.recvsensitivity=Чувствительность приемника, dB
+label.rrlresource.defaultname=Комплект оборудования РРЛ
+
+label.rrlparams.speed.void=
+label.rrlparams.speed.1X2=1X2
+label.rrlparams.speed.2X2=2X2
+label.rrlparams.speed.4X2=4X2
+label.rrlparams.speed.8X2=8X2
+label.rrlparams.speed.16X2=16X2
+label.rrlparams.speed.16X22=16X2+2
+label.rrlparams.speed.155=155
+
+error.invalid.rrlantresource.recvsensitivity=Неверный формат ввода в поле чувствительность приемника: ожидается десятичное число, не более трех знаков до запятой и не более одного после
+error.empty.rrlantresource.recvsensitivity=Необходимо ввести чувствительность приемника
+error.empty.rrlantresource.streamspeed=Необходимо ввести скорость потока
+error.empty.rrlantresource.radiationclass=необходимо ввести класс излучения
+error.invalid.rrlantresource.freqdevlowk=Неверный формат ввода в поле основания значения нестабильности частоты: ожидается десятичное число, не более четырех знаков до запятой и не более двух после
+error.empty.rrlantresource.freqdevlowk=Необходимо ввести основание значения нестабильности частоты
+error.invalid.rrlantresource.freqdevlowlog10=Неверный формат ввода в поле степени значения нестабильности частоты: ожидается целое число
+error.empty.rrlantresource.freqdevlowlog10=Необходимо ввести степень значения нестабильности частоты
+error.empty.rrlantresource.mkkrrecomm=Необходимо ввести рекомендации МККР
+error.empty.rrlantresource.protocolnum=Необходимо ввести номер протокола измерения параметров РЭС
+error.invalid.rrlantresource.protocoldate=Неверный формат в поле ввода даты протокола измерения параметров РЭС
+error.empty.rrlantresource.protocoldate=Необходимо ввести дату протокола измерения параметров РЭС
+error.invalid.rrlantresource.params.antdiam=Неверный формат в поле ввода диаметра антенны: ожидается десятичное число, не более одного знака до запятой и не более одного после
+error.empty.rrlantresource.params.antdiam=Необходимо ввести диаметр антенны
+error.invalid.rrlantresource.params.amplifkoeff=Неверный формат в поле ввода коэффициента усиления антенны: ожидается десятичное число, не более трех знаков до запятой и не более одного после
+error.empty.rrlantresource.params.amplifkoeff=Необходимо ввести коэффициент усиления антенны
+error.invalid.rrlantresource.params.dnangleh=Неверный формат в поле ввода ширины ДН антенны по вертикали: ожидается десятичное число, не более двух знаков до запятой и не более одного после
+error.empty.rrlantresource.params.dnangleh=Необходимо ввести ширину ДН антенны по вертикали
+error.invalid.rrlantresource.params.dnanglew=Неверный формат в поле ввода ширины ДН антенны по горизонтали: ожидается десятичное число, не более двух знаков до запятой и не более одного после
+error.empty.rrlantresource.params.dnanglew=Необходимо ввести ширину ДН антенны по горизонтали
+error.rrlantresource.params.antdiamused=Такой диаметр антенны для данного ресурса уже использован. Введите другой диаметр или отредактируйте существующий.
+error.rrlantresource.speed.streamspeedused=Такая скорость потока для данного ресурса уже использована. Введите другую скорость или отредактируйте существующую.
+
+# Navigation titles. Name is equal to action url.
+
+navtitle.ShowUnitList=Единицы измерения
+navtitle.EditUnit=Единица
+navtitle.ShowSysconstList=Системные константы
+navtitle.EditSysconst=Константа
+navtitle.ShowRestypeList=Виды оборудования
+navtitle.ShowCabletypeList=Типы кабелей
+navtitle.EditCable=Какбель БС
+navtitle.EditRestype=Вид оборудования
+navtitle.ShowRessbtypeList=Типы оборудования
+navtitle.EditRessbtype=Тип оборудования
+navtitle.ShowTaxList=Налоги, Ставки налогов на оборудование
+navtitle.EditTax=Ставка налогов
+#navtitle.ShowRessbtypeLookupList=
+#navtitle.ShowRatetypeLookupList=
+#navtitle.ShowRestypeLookupList=
+navtitle.ShowCurrencyList=Список валют
+navtitle.EditCurrency=Валюта
+#navtitle.ShowCurrencyLookupList=
+navtitle.ShowRatetypeList=Типы курсов валют
+navtitle.EditRatetype=Тип курса
+navtitle.ShowCurrateHList=История курсов валюты
+navtitle.EditCurrateH=Курс
+navtitle.ShowCurrateList=Курсы валют
+navtitle.EditCurrate=Курс
+navtitle.ShowResourceList=Список оборудования
+navtitle.EditResource=Оборудование
+navtitle.EditResourceWN=Оборудование
+#navtitle.ShowUnitLookupList=
+navtitle.EditDouble=Консолидация ресурсов
+#navtitle.ShowResourceLookupList=
+navtitle.ShowTaxhistList=История налогов
+navtitle.EditTaxhist=Налоги
+navtitle.ShowComplectForList=Наборы для
+navtitle.EditComplectFor=Набор для
+navtitle.ShowComplectNodesList=Список узлов
+navtitle.EditComplectNodes=узел
+navtitle.ShowComplectList=Наборы
+navtitle.EditComplect=Набор
+navtitle.ShowComplectContentList=Состав
+navtitle.EditComplectContent=Элемент
+navtitle.ShowCompanyList=Компании
+#navtitle.ShowCompanyLookupList=
+navtitle.ShowOrganizationListM=Юридические лица
+navtitle.EditOrganizationM=Юр. лицо
+navtitle.ShowOrganizationListC=Юридические лица
+navtitle.EditOrganizationC=Юр. лицо
+navtitle.ShowBankList=Список банков
+navtitle.BanksList=Список банков
+navtitle.EditBank=Банк
+navtitle.ShowAccountList=Список расчётных счетов
+navtitle.EditAccount=Расчётный счёт
+navtitle.ShowAccountListC=Список расчётных счетов
+navtitle.EditAccountC=Расчётный счёт
+#navtitle.ShowBankLookupList=
+navtitle.ShowGroupList=Группы
+navtitle.EditGroup=Группа
+#navtitle.ShowGroupLookupList=
+navtitle.ShowGrouppingList=Группировки
+navtitle.EditGroupping=Группировка
+#navtitle.ShowGrouppingLookupList=
+navtitle.ShowOrggroupList=Группы юридического лица
+navtitle.EditOrggroup=Группа
+navtitle.ShowOrggroupListC=Группы юридического лица
+navtitle.EditOrggroupC=Группа
+navtitle.ShowGrouporgList=Юридические лица
+navtitle.EditGrouporg=Юридическое лицо
+#navtitle.ShowOrganizationLookupList=
+navtitle.ShowStorageList=Склады
+navtitle.EditStorage=Склад
+#navtitle.ShowDirectionLookupList=
+#navtitle.ShowServiceLookupList=
+#navtitle.ShowDepartmentLookupList=
+#navtitle.ShowDGroupLookupList=
+navtitle.ShowOrganizationMultiList=Организации
+navtitle.ShowAntenaList=Антенны базовых станций
+navtitle.EditAntena=Параметры антенны
+navtitle.EditAntenaResource=Параметры антенны
+navtitle.EditAntenaResourceWN=Параметры антенны
+navtitle.ShowRepeaterList=Репитерные станции
+navtitle.EditRepeater=Параметры репитера
+navtitle.EditRepeaterResource=Параметры репитера
+navtitle.EditRepeaterResourceWN=Параметры репитера
+navtitle.ShowCableList=Кабели базовых станций
+navtitle.EditCable=Параметры кабеля
+navtitle.EditCableResource=Параметры кабеля
+navtitle.EditCableResourceWN=Параметры кабеля
+navtitle.ShowBasestationList=Базовые станции
+navtitle.EditBasestation=Параметры базовой станции
+navtitle.EditBasestationResource=Параметры базовой станции
+navtitle.EditBasestationResourceWN=Параметры базовой станции
+navtitle.ChooseRtype=Выбор класса ресурса
+navtitle.ChooseRtypeWN=Выбор класса ресурса
+navtitle.ShowCarsList=Перечень служебных автомобилей
+navtitle.EditCar=Автомобиль
+navtitle.ShowOrgworkersList=Работники организации
+navtitle.EditOrgworker=Работник
+navtitle.ShowRRLResourceList=Перечень комплектов оборудования РРЛС
+navtitle.EditRRLResource=Комплект оборудования РРЛС
+navtitle.EditRRLDiamParams=Параметры оборудования РРЛС
+navtitle.EditRRLSpeedParams=Характеристики оборудования РРЛС
+navtitle.ShowInvResourceList=Ресурсы по категориям ввода
+navtitle.ShowInvResourceListWN=Ресурсы по категориям ввода
+navtitle.ShowNFS_ListDetach=Платежи НФС
+navtitle.ShowPersonList=Физические лица
+navtitle.RegionList=Регион
+navtitle.VendorSiteList=Отделения
+navtitle.VendorList=Поставщики
+navtitle.VendorSiteAdminList=Отделения
+navtitle.VendorAdminList=Поставщики
+navtitle.AccountsList=Расчетные счета
+navtitle.ShowConfPowerSourcesElAp=Конфигурация ИП
+navtitle.ShowConfPowerSourcesUzo=Конфигурация ИП УЗО
+navtitle.ShowConfBaseStation=Конфигурация БС GSM/DCS
+navtitle.ShowInstComplBaseStation=Инсталляционные комплекты БС
+navtitle.ShowConfConnectorCableCompat=Разъемы, кабели
+navtitle.ShowDonorUnitList=Донорные блоки
+navtitle.EditDonorUnit=Параметры донорного блока
+navtitle.EditDonorUnitResource=Параметры донорного блока
+navtitle.EditDonorUnitResourceWN=Параметры донорного блока
+navtitle.ShowResourceGroupList=Группы аксессуаров
+navtitle.EditResourceGroup=Редактирование группы аксессуаров
+navtitle.ShowResAntennaList=Антенны БС
+navtitle.EditResAntenna=Назначение группы аксессуаров
+navtitle.ShowUserRequestList=Запросы пользователей
+navtitle.EditUserRequest=Редактирование запроса
+navtitle.ShowTranceiverList=Трансиверы
+navtitle.EditTranceiver=Параметры трансивера
+
+navtitle.ShowClassList=Классы ресурсов и комплектов
+navtitle.EditResourceClass=Редактирование параметров класса ресурса
+navtitle.EditResourcesetClass=Редактирование параметров класса комплекта
+navtitle.ShowResourcesCommonList=Справочник ресурсов
+navtitle.EditAccumBattery=Параметры аккумуляторной батареи
+navtitle.ShowAfsSchemeList=Схемы АФС
+navtitle.EditAfsScheme=Параметры схемы АФС
+navtitle.ShowEquipmanufList=Справочник производителей оборудования
+navtitle.EditEquipmanuf=Данные о производителе
+navtitle.ShowResourceReport=Отчет о ресурсах
+
+#dictionary
+label.menu.we=Договора аренды (мы арендуем)
+label.menu.us=Договора аренды (мы предоставляем аренду)
+label.menu.channel=Договора по каналам связи
+label.menu.billing=Работа с биллингом
+label.menu.billing.abonents=Абонентские договора
+label.menu.billing.tune=Настройка BAN для получения договоров из биллинга
+label.menu.reglament=Регламенты проведения актов взаимозачетов
+label.menu.autoproc=Автоматические процедуры
+label.menu.autoproc.prolongation=Автоматическое продление договоров
+label.menu.autoproc.charges=Автоматическое формирование начислений
+label.menu.autoproc.payments=Автоматическое формирование платежей
+label.menu.reports=Отчеты
+label.menu.report.a=Отчет 1
+label.menu.report.b=Отчет 2
+
+label.menu.dict=Основные справочники
+label.menu.dict.uf=Юридические лица
+label.menu.dict.Curr=Курсы валют
+label.menu.dict.typeCurr=Типы курсов валют
+label.menu.dict.curr=Валюты
+label.menu.dict.banks=Банки
+label.menu.dict.Cur=Курсы валют
+label.menu.dict.person=Физические лица
+label.menu.loanContractList=Ссудные договора
+
+label.bill.query=Взаимодействие с биллингом
+label.bill.journal=Журнал взаимодействия
+label.bill.link=Связь ресурсов NRI-Billing
+label.report1=Стоимость договоров на дату (подробно)
+label.report2=Стоимость договоров на дату (итоги)
+label.report3=Базовые отчеты
+label.report4=Стоимость договоров за период (итоги)
+label.report5=Затраты за период (итоги)
+label.report6=Затраты за период (подробно)
+label.report7=Статистика по договорам аренды (итоговый)
+label.report8=Статистика по договорам аренды (подробный по ответственным менеджерам)
+label.report9=Статистика по договорам аренды (подробный по ответственным экономистам)
+label.report10=Отчет о необходимости продления договоров
+label.report11=Отчет-предупреждение о необходимости формировать акты взаимозачета
+label.platinum.interact=Работа с Platinum
+label.getsprarenda=Получить справочники для служебных записок
+label.getbanks=Получить банки
+label.getpays=Получить платежи
+navtitle.ShowRespPaysList=Платежи по ответственному
+navtitle.ShowListLicence=Лицензия
+
+label.menu.microstrategy.report=Отчёты MS
+
+
+# RespPaysList - Платежи по ответственному
+label.resppays.operator=Ответственный
+label.resppays.period=Период оплаты
+label.resppays.period.M=Месяц
+label.resppays.period.Q=Квартал
+label.resppays.period.Y=Год
+label.resppays.payreq=Требование оплатить
+label.resppays.payreq.A=Все
+label.resppays.payreq.H=Требуещие оплаты
+label.resppays.type=Тип оплаты
+label.resppays.type.A=Аванс
+label.resppays.type.B=По счёту
+label.resppays.type.C=По окончании периода
+label.resppays.date=Дата оплаты
+label.resppays.adaction.recalc=Пересчитать
+label.resppays.doghistory=История договора
+label.resppays.xlsexport=Экспорт в Excel
+label.resppays.tlb.bs=Наименование БС
+label.resppays.tlb.exec=Арендодатель
+label.resppays.tlb.inn=ИНН
+label.resppays.tlb.vendor=Vendor
+label.resppays.tlb.number=Номер
+label.resppays.tlb.date=Дата
+label.resppays.tlb.service=Услуга
+label.resppays.tlb.type=Тип
+label.resppays.tlb.sum=Сумма
+label.resppays.tlb.currency=Валюта
+label.resppays.tlb.period=Период
+label.resppays.tlb.paydate=Срок
+label.resppays.tlb.raterule=Курс
+label.resppays.tlb.condition=Доп. условия
+label.resppays.tlb.lastpaydate=Посл. ПП
+label.resppays.tlb.payreq=Требует опл.
+label.resppays.hint.num=№
+label.resppays.hint.sumrub=Сумма
+label.resppays.hint.purpose=Назначение ПП
+label.resppays.hint.payreq=Требуется оплата
+
+error.change.positionMain=Ошибка изменения главной позиции
+label.positionMain=Признак основной позиции
+label.mainPosition=Основная позиция:
+error.invalid.payments.currencycode=Не задана валюта.
+error.empty.we.manager=Необходимо указать ответственного менеджера
+error.invalid.we.manager=Неверный код ответственного менеджера
+error.empty.we.extendperiod=Необходимо указать период продления договоров
+label.table.trafic=В т.ч. трафик
+label.table.resources=Услуги договора
+label.table.otv=Ответственные
+label.mutactword.in_raschetA=в счет расчетов
+label.mutactword.in_raschetB=совершил следующие платежи
+label.payrules.paytype.acseptNo=безакцептное списание
+label.payrules.separateNdsPay=Оплачивать НДС отдельным платежом
+label.filter.chargeNds=Не облагается НДС
+label.listNFS=Платежи НФС
+
+label.filter.proctype.a=дог. заключен без согласов. с техн. дирекцией
+label.filter.proctype.b=оплата трафика платежами
+label.filter.proctype.c=безвозвратные долги
+label.filter.proctype.d=бесплатное предоставление трафика
+error.abonentban.proctype.empty=Выберите Правило определения курса по договору
+
+label.menu.microstrategy.report=Отчёты MS
+label.dhist.CompletWorkActs=Акты выполненных работ
+label.menu.listFromPosition=Все договора по позиции
+
+error.txt={0}
+
+label.position.search.supregs.all=Все регионы
+label.position.search.regions.all=Все филиалы
+label.position.search.regions=Филиал
+label.position.search.supregs=Регион
+label.position.search.renter.any=Любые позиции
+label.position.search.renter.notNull=Все с арендодателем
+label.position.search.renter.specify=Выбранный
+
+label.position.search.planstate.fact=Факт
+label.position.search.planstate.plan=План
+label.menu.billing.memo=Служебные записки по новым аб. договорам
+
+label.resourceset.search.all=все
+label.resourceset.search.1=по наименованию комплекта
+label.resourceset.search.2=по типу оборудования
+label.resourceset.search.3=по виду оборудования
+label.resourceset.search.4=по наименованию главной части
+
+label.repeater.reptype=Тип репитера
+label.repeater.reptype.straightamp=прямого усиления
+label.repeater.reptype.digital=цифровой
+label.repeater.reptype.freqcarry=с переносом частоты
+label.repeater.reptype.optical=оптический
+label.repeater.workfreq=Ширина полосы (МГц)
+label.repeater.subtype=Подтип
+label.repeater.subtype.band=полосовой
+label.repeater.subtype.channel=канальный
+label.repeater.straight.outpower=Вых. мощность (dBm)
+label.repeater.straight.inpower=Потреб. мощность (Вт)
+label.repeater.straight.voltage=Напряжение питания (В)
+label.repeater.straight.bandwidth=Диапазон рабочих частот (МГц)
+label.repeater.straight.measures=Габариты (В х Ш х Г) (мм)
+label.repeater.straight.weight=Масса (кг)
+label.repeater.straight.amplcoef=Коэф. усиления (дБ)
+label.repeater.straight.siggroupdelay=Груп. задержка сигн. (мксек)
+label.repeater.straight.noisecoef=Коэффициент шума (дБ)
+label.repeater.straight.linkfreq=Линковая частота (МГц)
+label.repeater.freqcarry.donortitle=Донорный блок репитера
+label.repeater.freqcarry.outpower=Вых. мощность (dBm)
+label.repeater.freqcarry.inpower=Потреб. мощность (Вт)
+label.repeater.freqcarry.workfreq=Диапазон рабочих частот (МГц)
+label.repeater.freqcarry.linkfreq=Линковая частота (МГц)
+label.repeater.freqcarry.amplcoef=Коэф. усиления (дБ)
+label.repeater.freqcarry.siggroupdelay=Груп. задержка сигн. (мксек)
+label.repeater.freqcarry.noisecoef=Коэффициент шума (дБ)
+label.repeater.freqcarry.voltage=Напряжение питания (В)
+label.repeater.freqcarry.antennaoutcount=Кол-во выходов для сервис-<br>ных антенн на выносном блоке (Шт)
+label.repeater.freqcarry.bsdonorincount=Количество входов БС-Донорный блок (Шт)
+label.repeater.freqcarry.donorincount=Количество входов (Шт)
+label.repeater.optical.wdmpresent=Наличие WDM
+label.repeater.optical.optdivpresent=Наличие оптического делителя
+label.repeater.optical.optdivcoef=Коэф. деления оптического делителя
+label.repeater.optical.baddelta=слишком маленькие значения границ полосы частот downlink
+
+label.repeater.downlink.low=Полоса частот (Down link), нижняя граница
+label.repeater.downlink.high=Полоса частот (Down link), верхняя граница
+label.repeater.uplink.low=Полоса частот (Up link), нижняя граница
+label.repeater.uplink.high=Полоса частот (Up link), верхняя граница
+label.repeater.remote=Наличие пульта ДУ
+
+label.antacess.emptyonly=Отображать только пустые группы
+label.antacess.searchaccess=Осуществлять поиск по аксессуарам
+label.antacess.accessory1=Аксессуар 1
+label.antacess.accessory2=Аксессуар 2
+label.antacess.id=Идентификатор
+label.antacess.model=Модель
+label.antacess.manucode=Код производителя
+label.antacess.assignedgroups=Отображать только антенны с назначенными группами аксессуаров
+
+label.menu.userrequests=Запросы пользователей
+
+label.userrequests.request=Номер
+label.userrequests.datetimein=Дата занесения
+label.userrequests.requesttype=Тип запроса
+label.userrequests.filialtype=Тип
+label.userrequests.regionid=Регион
+label.userrequests.filialid=Филиал
+label.userrequests.man=Сотрудник
+label.userrequests.lastname=Фамилия
+label.userrequests.firstname=Имя
+label.userrequests.middlename=Отчество
+label.userrequests.module=Модуль
+label.userrequests.description=Описание проблемы
+label.userrequests.status=Статус
+label.userrequests.rfcnum=Номер RFC
+label.userrequests.findbydate=Выбрать запросы по дате
+
+label.tranceiver.band=Рабочий диапазон частот
+label.tranceiver.doubletrx=Признак сдвоенного трансивера
+
+error.man.empty=Не указан код сотрудника
+error.description.empty=Не заполнено поле описания
+
+label.resource.resourceclass=Классы оборудования
+label.resource.resourcesetclass=Классы комплектов
+label.resource.classid=Номер класса
+label.resource.classname=Наименование класса
+error.classname.empty=Не указано наименование класса
+
+label.classid=Номер класса
+label.classname=Наименование класса
+
+label.resource.resclass=Выбор класса оборудования
+
+label.resource.countpolicy=Способ учета
+label.resource.countpolicy.short=Учет
+
+label.resourceclass2.notselect=---
+
+label.accumres.voltage=Напряжение (В)
+label.accumres.capacity=Емкость (А/Ч)
+label.accumres.accutype=Тип аккумулятора
+label.accumres.accucount=Кол-во аккумуляторов
+
+label.resource.nfsdeny=Запрет управления кодами НФС
+
+label.afsscheme.scheme=Схема АФС
+label.afsscheme.numscheme=Номер схемы АФС
+label.afsscheme.sectcount900=Кол-во секторов GSM 900
+label.afsscheme.sectcount1800=Кол-во секторов DCS 1800
+label.afsscheme.antX2=Кол-во антенн кросс на 2 входа
+label.afsscheme.antX4=Кол-во антенн кросс на 4 входа
+label.afsscheme.antV1=Кол-во антенн вертикальной поляризации (эл-т 1)
+label.afsscheme.antV1.short=Кол-во антенн вертик поляриз (эл-т 1)
+label.afsscheme.antV2=Кол-во антенн вертикальной поляризации (эл-т 2)
+label.afsscheme.antV2.short=Кол-во антенн вертик поляриз (эл-т 2)
+label.afsscheme.dbc1=Кол-во комбайнеров (эл-т 1)
+label.afsscheme.dbc2=Кол-во комбайнеров (эл-т 2)
+label.afsscheme.df1=Кол-во дуплексных фильтров
+label.afsscheme.df2=Кол-во диплексеров поляризаций
+label.afsscheme.tma=Максимальное кол-во МШУ в схеме включения
+label.afsscheme.tma.short=Макс кол-во МШУ в схеме включ-я
+label.afsscheme.jo=Перемычка типа "вилка-розетка"
+label.afsscheme.ji=Перемычка типа "вилка-вилка"
+label.afsscheme.con=Кол-во разъемов
+label.afsscheme.notes=Комментарий к схеме АФС
+error.afsscheme.emptyparams=Параметры схемы указаны не полностью
+
+label.equipmanuf.manufid=Код производителя
+label.equipmanuf.name=Полное наименование производителя
+label.equipmanuf.shortname=Краткое наименование
+label.equipmanuf.equipcatalog=Ссылка на каталог оборудования
+label.equipmanuf.officialsite=Официальный сайт
+label.equipmanuf.comment=Комментарий
+error.empty.name=Введите полное наименование производителя
+error.empty.shortname=Введите краткое наименование
+error.invalid.manufid=Необходимо числовое значение в поле "Код производителя"
+
+label.resourcereport.classid=Код класса ресурса
+label.resourcereport.classname=Наименование класса ресурса
+
+label.groupres.lookup.code=Код группы
+label.groupres.lookup.name=Наименование группы
+
+label.choose.equipmanuf=Выберите производителя оборудования
+label.choose.resgroup=Выберите группу аксессуаров
+
+#eof

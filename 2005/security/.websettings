@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<websettings version="500">
+    <project-type>J2EE</project-type>
+    <webcontent>WebContent</webcontent>
+    <context-root>security</context-root>
+    <jsp-level>JSP 1.1</jsp-level>
+    <features>
+        <feature>
+            <feature-id>templatefeature</feature-id>
+        </feature>
+        <feature>
+            <feature-id>WebProjectCSSFileFeature</feature-id>
+        </feature>
+        <feature>
+            <feature-id>com.ibm.etools.siteedit.wizards.projectfeature.WebSiteFeature</feature-id>
+        </feature>
+        <feature>
+            <feature-id>com.ibm.etools.struts.wizards.project.feature</feature-id>
+        </feature>
+    </features>
+</websettings>

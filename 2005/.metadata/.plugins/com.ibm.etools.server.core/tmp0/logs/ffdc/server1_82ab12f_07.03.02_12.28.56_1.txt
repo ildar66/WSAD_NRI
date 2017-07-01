@@ -1,0 +1,487 @@
+------Start of DE processing------ = [07.03.02 12:28:56:151 MSK] , key = javax.servlet.ServletException com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch 433
+Exception = javax.servlet.ServletException
+Source = com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch
+probeid = 433
+Stack Dump = javax.servlet.ServletException
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java:416)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java:669)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java:767)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.ServicingServletState.service(StrictLifecycleServlet.java:333)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.include(WebAppRequestDispatcher.java:253)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:991)
+	at org.apache.jsp._july._jspService(_july.java:1127)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java:344)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java:669)
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java:767)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at org.apache.struts.action.ActionServlet.processActionForward(ActionServlet.java:1759)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1596)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher
+com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher@76adb121
+
+Exception = javax.servlet.ServletException
+Source = com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch
+probeid = 433
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher
+  class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@537f3139
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@2186f1ad
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@362db12e
+      soleInstance = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3ee2f12e
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 39
+      clock = 39
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4b8bb12f
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@24a6b12e
+      referent = [Ljava.lang.reflect.Field;@5559710b
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@7141f125
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  _singleThreadServlet = false
+  _secCheckNeeded = true
+  _invocationEvent = 
+    _servletClassName = com.ibm.ws.webcontainer.jsp.servlet.JspServlet
+    _servletName = JSP 1.2 Processor
+    responseTime = -1
+    _resp = 
+      jspWriter = org.apache.jasper.runtime.JspWriterImpl@7c043125
+      printWriter = java.io.PrintWriter@53d3121
+      response = com.ibm.ws.webcontainer.srt.SRTServletResponse@2cbf7128
+    _req = com.ibm.ws.webcontainer.srt.SRTServletRequest@2cf3f128
+    _servletNames = 
+      _instance = this._invocationEvent._servletNames
+    _context = this._webApp
+    source = this
+  nls = 
+    class$com$ibm$ejs$sm$client$ui$NLS = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@25c1f10c
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    bundle = 
+      resources = [[Ljava.lang.Object;@45e9f13e
+      lookup = null
+      class$java$util$ResourceBundle = java.lang.Class@5d9e70a4
+      locale = java.util.Locale@5817713e
+      parent = null
+      cacheList = sun.misc.SoftCache@7da2b12c
+      DEFAULT_NOT_FOUND = -1
+      underConstruction = java.util.Hashtable@7da4312c
+      MAX_BUNDLES_SEARCHED = 3
+      CACHE_LOAD_FACTOR = 1.0
+      INITIAL_CACHE_SIZE = 25
+      cacheKey = java.util.ResourceBundle$ResourceCacheKey@7da6b12c
+    bundleName = com.ibm.servlet.resources.ServletEngineNLS
+    baseClassPackage = com.ibm.ejs.resources
+    messages = 
+      class$com$ibm$ejs$sm$client$ui$NLS = this.nls.class$com$ibm$ejs$sm$client$ui$NLS
+      bundle = java.util.PropertyResourceBundle@16c13121
+      bundleName = messages
+      baseClassPackage = com.ibm.ejs.resources
+      messages = this.nls.messages
+      tc = this.nls.tc
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.sm.client.ui.NLS
+  _webAppInvocationCollaborators = 
+    [0] = 
+      class$com$ibm$etools$pd$sd$runtime$probes$SDAppInvocationCollaborator = java.lang.Class@3b09b12f
+      APACHE_SUPPORTED = false
+      _supportDynamicDiscovery = true
+      dcsHttpMiddleware = com.ibm.etools.pd.sd.runtime.probes.DCSHTTPMiddleware@17743121
+      sdManager = com.ibm.etools.pd.sd.runtime.probes.SDManager@1ec5b121
+      initialized = false
+      tc = com.ibm.ejs.ras.TraceComponent@1558f121
+  _webAppTransactionCollaborator = 
+    class$com$ibm$ws$webcontainer$webapp$WebAppTransactionCollaborator = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@62acb10b
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    _webApp = this._webApp
+    _ctx = null
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ws.Transaction.resources.TransactionMsgs
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ws.webcontainer.webapp.WebAppTransactionCollaborator
+  _connectionHandleCollaborator = 
+    class$com$ibm$ws$webcontainer$collaborator$ConnectionHandleCollaborator = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@6203710b
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    _disableMultiThreadConnMgmt = false
+    threadContext = 
+      ivInitialStackEntry = null
+      index = 13
+      count = 15
+      HASH_INCREMENT = 1640531527
+      nextHashCode = 1584028597
+      threadLocalHashCode = 330774027
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ws.webcontainer.collaborator.ConnectionHandleCollaborator
+  _connectionHandleList = 
+    class$com$ibm$ejs$j2c$HandleList = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@638ef10b
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.J2CAMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.j2c.HandleList
+    destroyed = false
+    handleList = 
+      class$java$lang$Object = null
+      size = 0
+      elementData = [Ljava.lang.Object;@76b2b121
+      serialVersionUID = 8683452581122892189
+      modCount = 0
+    _noContextHandles = 
+      serialVersionUID = -2767605614048989439
+      capacityIncrement = 0
+      elementCount = 0
+      elementData = [Ljava.lang.Object;@4610713b
+      modCount = 0
+    orphanedHandles = 
+      class$java$lang$Object = null
+      size = 0
+      elementData = [Ljava.lang.Object;@4613313b
+      serialVersionUID = 8683452581122892189
+      modCount = 0
+    lockObject = java.lang.Object@4616b13b
+  _webAppNameSpaceCollaborator = 
+    threadContext = 
+      ivInitialStackEntry = com.ibm.ejs.csi.DefaultComponentMetaData@b00f123
+      index = 6
+      count = 15
+      HASH_INCREMENT = 1640531527
+      nextHashCode = 1584028597
+      threadLocalHashCode = 1105327941
+  _includedResponse = 
+    class$com$ibm$ws$webcontainer$servlet$IncludedResponse = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@6335f10b
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    includedTc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ws.webcontainer.servlet.IncludedResponse
+    nls = 
+      class$com$ibm$ejs$sm$client$ui$NLS = this.nls.class$com$ibm$ejs$sm$client$ui$NLS
+      bundle = this.nls.bundle
+      bundleName = com.ibm.servlet.resources.ServletEngineNLS
+      baseClassPackage = com.ibm.ejs.resources
+      messages = this.nls.messages
+      tc = this.nls.tc
+    _resp = null
+  _securityCollaborator = 
+    _vHostName = default_host
+    _webContextRoot = /arenda
+    tc = null
+    lock = java.lang.Object@6d3f12c
+    securityCollaborator = 
+      class$com$ibm$ws$security$web$EJSWebCollaborator = java.lang.Class@1163712f
+      delegationPolicy = com.ibm.ws.security.delegation.MethodDelegation@2b5eb126
+      contextManager = com.ibm.ws.security.auth.ContextManagerImpl@2548b12a
+      webCache = com.ibm.ws.security.web.WebAppCache@a7cf126
+      tc = com.ibm.ejs.ras.TraceComponent@1610f12d
+  _dispatcherInfo = 
+    class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcherInfo = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@6424710b
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    sessUrlRewritePrefix = ;jsessionid=
+    _error = null
+    _targetServlet = 
+      _listeners = java.util.Vector@76a17121
+      _instance = com.ibm.ws.webcontainer.servlet.ServletInstance@18a13136
+      _state = com.ibm.ws.webcontainer.servlet.ValidServletReferenceState@774af12b
+      STATE_INVALID = com.ibm.ws.webcontainer.servlet.InvalidServletReferenceState@b2df12b
+      STATE_VALID = this._dispatcherInfo._targetServlet._state
+    _additionalQueryString = null
+    _matchedPath = *.jsp
+    _servletPath = /arendaGraph.jsp
+    _contextPath = /arenda
+    _pathInfo = null
+    _requestURI = /arenda/arendaGraph.jsp
+    _fullURI = /arenda/arendaGraph.jsp
+    _relativeURI = /arendaGraph.jsp
+    _webapp = this._webApp
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcherInfo
+  _targetServlet = null
+  _webApp = com.ibm.ws.webcontainer.webapp.WebApp@4f717139
+  _perReqMgr = null
+  _dispatcherContext = 
+    class$com$ibm$ws$webcontainer$webapp$WebAppDispatcherContext = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@66eb310b
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$webapp$WebAppRequestDispatcher.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    _isInclude = true
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ws.webcontainer.webapp.WebAppDispatcherContext
+    _dispatcherInfo = this._dispatcherInfo
+    _session = com.ibm.ws.webcontainer.httpsession.MemorySessionData@44eaf128
+    _response = this._invocationEvent._resp
+    _request = this._invocationEvent._req
+    _servletReferenceStack = 
+      serialVersionUID = 1224463164541339165
+      capacityIncrement = 0
+      elementCount = 0
+      elementData = [Ljava.lang.Object;@76b77121
+      modCount = 3
+    _webapp = this._webApp
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher
+

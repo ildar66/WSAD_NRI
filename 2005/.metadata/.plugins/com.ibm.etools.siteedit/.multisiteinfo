@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<multisite-config>
+    <project-data name="organizer">
+        <data>
+            <item name="organizer" stamp="29810"/>
+            <item name="security" stamp="33015"/>
+            <item name="siteinfo" stamp="33705"/>
+        </data>
+    </project-data>
+    <project-data name="security">
+        <data>
+            <item name="organizer" stamp="29810"/>
+            <item name="security" stamp="33015"/>
+            <item name="siteinfo" stamp="33705"/>
+        </data>
+    </project-data>
+    <project-data name="dictionary">
+        <data>
+            <item name="dictionary" stamp="3265413"/>
+        </data>
+    </project-data>
+    <project-data name="arenda">
+        <data>
+            <item name="arenda" stamp="26296"/>
+        </data>
+    </project-data>
+    <project-data name="sitedoc">
+        <data>
+            <item name="sitedoc" stamp="33290"/>
+        </data>
+    </project-data>
+    <project-data name="basestation">
+        <data>
+            <item name="basestation" stamp="27275"/>
+        </data>
+    </project-data>
+    <project-data name="siteinfo">
+        <data>
+            <item name="organizer" stamp="29810"/>
+            <item name="security" stamp="33015"/>
+            <item name="siteinfo" stamp="33705"/>
+        </data>
+    </project-data>
+    <project-data name="inventory">
+        <data>
+            <item name="inventory" stamp="28652"/>
+        </data>
+    </project-data>
+</multisite-config>

@@ -1,0 +1,6 @@
+/*
+Copyright (c) Nebiru Software 2001, 2005
+  Compressed and obfuscated by JSCruncher Pro.
+  http://domapi.com/jscruncherpro
+*/
+domapi.bags.imagelist=[];domapi.bags.imagelist.isComponent=false;domapi.comps.imagelist={};domapi.Imagelist=function(i2T25){return domapi.comps.imagelist.constructor(i2T25)};domapi.comps.imagelist.constructor=function(i2T25){domapi.theme.preDefaults["imagelist"](i2T25);var p=i2T25["parent"];var i=i2T25["src"];var w=i2T25["w"];var h=i2T25["h"];var x3A00=domapi.Elm({parent:p,x:null,y:null,w:w,h:h,type:"IMG"});x3A00.w=w;x3A00.h=h;x3A00.orientation=domapi.rVal(i2T25["orientation"],"horizontal");x3A00.style.position="relative";x3A00.style.display="inline";x3A00.border=0;x3A00.src=domapi.theme.skin.lN604.src;x3A00.style.background='url("'+i+'") 0 0 no-repeat';x3A00.setIndex=domapi.comps.imagelist.$P17T;x3A00.setIndex();x3A00.DA_TYPE="IMAGELIST";domapi.bags.imagelist[domapi.bags.imagelist.length]=x3A00;return x3A00};domapi.comps.imagelist.$P17T=function(i){i=domapi.rInt(i);if(i==this.index)return;if(this.orientation=="horizontal")this.style.backgroundPosition=(-(i)*this.w)+"px 0px";else this.style.backgroundPosition="0px "+(-(i)*this.h)+"px";this.index=i};

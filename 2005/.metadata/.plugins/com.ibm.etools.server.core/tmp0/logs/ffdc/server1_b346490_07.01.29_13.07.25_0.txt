@@ -1,0 +1,107 @@
+------Start of DE processing------ = [07.01.29 13:07:24:679 MSK] , key = java.sql.SQLException com.ibm.ejs.container.ContainerManagedBeanO.remove 540
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.container.ContainerManagedBeanO.remove
+probeid = 540
+Stack Dump = java.sql.SQLException: ???? ?????? ?? ???????? ????? - ??? ??????????? (informix.pk_leasemutualacts).
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java(Compiled Code))
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.ibm.ejs.cm.cache.CachedStatement.executeUpdate(CachedStatement.java:397)
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeUpdateCommon(StatementProxy.java:518)
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:59)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseMutualActNewBean_c0a2cc67.remove(EJSJDBCPersisterCMPLeaseMutualActNewBean_c0a2cc67.java:359)
+	at com.ibm.ejs.container.ContainerManagedBeanO.remove(ContainerManagedBeanO.java:767)
+	at com.ibm.ejs.container.EJSContainer.removeBean(EJSContainer.java:2137)
+	at com.ibm.ejs.container.EJSWrapper.remove(EJSWrapper.java:189)
+	at com.hps.july.persistence._LeaseMutualActNew_Stub.remove(_LeaseMutualActNew_Stub.java:299)
+	at com.hps.july.web.util.AbstractProcessAction.processDelete(AbstractProcessAction.java:252)
+	at com.hps.july.web.util.AbstractProcessAction.processDelete(AbstractProcessAction.java:262)
+	at com.hps.july.web.util.AbstractProcessAction.perform(AbstractProcessAction.java:120)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:510)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.ContainerManagedBeanO
+com.ibm.ejs.container.ContainerManagedBeanO@11fa4a7
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Mon Jan 29 13:07:25 MSK 2007
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@372de493
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#LeaseMutualActNew
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@22d3248f
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@2125248f#tid=1171
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 13 ---------------------- 
+
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#Operator, com.hps.july.persistence.OperatorKey@2c1), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseMutualActNew, com.hps.july.persistence.LeaseDocumentKey@93d8), state = IN_METHOD)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fedc), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fedf), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fee0), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fee1), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fee2), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fee3), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fee4), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fee6), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseTaskStart, com.hps.july.persistence.LeaseTaskStartKey@6fee7), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseMutualReglament, com.hps.july.persistence.LeaseDocumentKey@93b7), state = ACTIVE)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseSchetFakt, com.hps.july.persistence.LeaseSchetFaktKey@b517), state = ACTIVE)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@22d3248f
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Mon Jan 29 13:07:25 MSK 2007

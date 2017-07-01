@@ -1,0 +1,115 @@
+Manifest-Version: 1.0
+Class-Path: julyjdbcEJB.jar 
+ julypersistenceEJB.jar 
+ julycommonEJB.jar
+
+Name: com/hps/july/platinum/sessionbean/PlatinumProcessorAccessBean.ja
+ va
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4SjtBjs8ReTRiYfNrlADQaiO7t4=
+MD5-Digest: EuY/VFeS98gX2GyQUE6img==
+
+Name: com/hps/july/platinum/sessionbean/ArendaPlatinumProcessorHome.cl
+ ass
+Digest-Algorithms: SHA MD5
+SHA-Digest: zpHIob9gjPvUdnoEmoxsUXcwC9s=
+MD5-Digest: bh2QqBYixWmRLp0YmVrJVg==
+
+Name: com/hps/july/platinum/sessionbean/ArendaPlatinumProcessorAccessB
+ ean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: xbRAL1U+aS8nHh7YO0yJrACnt40=
+MD5-Digest: SmZZpaJMSpcYr8JpPM/aVA==
+
+Name: com/hps/july/platinum/sessionbean/ArendaPlatinumProcessorHome.ja
+ va
+Digest-Algorithms: SHA MD5
+SHA-Digest: C2Svlh6lWatkVB3YqmqfFAIRWTA=
+MD5-Digest: gRZDZ2Z1SipnRdJjy9GvCg==
+
+Name: com/hps/july/platinum/sessionbean/ArendaPlatinumProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: CBi3E/6TaN7rC5WhMYnGQ1IHDPY=
+MD5-Digest: jpNMCE5yZS9buVwjzgap7Q==
+
+Name: com/hps/july/platinum/sessionbean/PlatinumProcessorHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: bX7ywrsOeKidajXUA+GNuV8HWAI=
+MD5-Digest: Rc8Qc6vhorgc5/I4D50RHQ==
+
+Name: com/hps/july/platinum/sessionbean/ArendaPlatinumProcessorBean.ja
+ va
+Digest-Algorithms: SHA MD5
+SHA-Digest: cayZBJVP2r0gCCdsYL+giRwmbZY=
+MD5-Digest: 50h3uFihtaEwOlf+TGvHcA==
+
+Name: META-INF/ejb-jar.xml
+MD5-Digest: KW/0I0DlTG9mo/nfMxZ0iA==
+SHA-Digest: NInX4zt4nOXHKKToz3X8Vwzrj2M=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/platinum/sessionbean/ArendaPlatinumProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Y5V2jX66DYAFeUSbDgN5dS5DO0k=
+MD5-Digest: V3xt5pmXN467krJqMS/keQ==
+
+Name: com/hps/july/platinum/sessionbean/ArendaPlatinumProcessorAccessB
+ ean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1H5kpfrUrpfZQy229f4xCil7KBE=
+MD5-Digest: IVJu7G1OWFVQn7i8kTj1/Q==
+Java-Bean: True
+
+Name: META-INF/ibm-ejb-jar-bnd.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: zfeFUZHlMTsr/+ODcKNvPvaalH0=
+MD5-Digest: CysMDJx+ALVoX5N42lEiIQ==
+
+Name: com/hps/july/platinum/sessionbean/PlatinumProcessorAccessBean.cl
+ ass
+Digest-Algorithms: SHA MD5
+SHA-Digest: bxrGkhh6tadW09Fpd7dy0LXdMOY=
+MD5-Digest: c0W5AzSOFsN2JUytPP/UgQ==
+Java-Bean: True
+
+Name: com/hps/july/platinum/sessionbean/PlatinumProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: oPXeWzhB8Qz3kar3n3aS48w0Pus=
+MD5-Digest: 7UzSpDd+NeDWjWICTLftIg==
+
+Name: com/hps/july/platinum/sessionbean/PlatinumProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: TJ91BDXoPI670Xz+5wI+yOblesU=
+MD5-Digest: /+N5B6yXjkzRSp/MZkGWLw==
+
+Name: com/hps/july/platinum/sessionbean/PlatinumProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: VSyUwxSqs/R0udftGKzo5JpZHxc=
+MD5-Digest: zvrxLZksUnlqyjDx1JPNtg==
+
+Name: META-INF/ibm-ejb-access-bean.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: dEEIr/ieCPUby6zZ+n74N9tCr+M=
+MD5-Digest: vK2K5AcmgvumrbdfExc5kg==
+
+Name: com/hps/july/platinum/sessionbean/ArendaPlatinumProcessorBean.cl
+ ass
+Digest-Algorithms: SHA MD5
+SHA-Digest: zAgGXsAK2FiqYH7sUrjHYBkhN4U=
+MD5-Digest: HUAQ0ocadk0KPyltl4gXYg==
+
+Name: com/hps/july/platinum/sessionbean/PlatinumProcessorBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: wk+rP1NJTbadI1ufIkXsFWSfBrI=
+MD5-Digest: VD2Sq8yvyKmblofr8K13Cw==
+
+Name: META-INF/ibm-ejb-jar-ext.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: YJEoGSfupfT1u5DTI2TgJgobyLk=
+MD5-Digest: MJh6AhHSIFud4FpGDiKlZA==
+
+Name: com/hps/july/platinum/sessionbean/PlatinumProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2m3oCFeIkhfqYtDC17Ss4MJVHWQ=
+MD5-Digest: i+O2xLXwOaF09DE07I/z7Q==
+

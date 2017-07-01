@@ -1,0 +1,290 @@
+<session>
+   <date>
+      Thu Mar 15 12:30:13 MSK 2007
+   </date>
+   <entry>
+      <date>
+         Thu Mar 15 12:30:13 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Common Core plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 12:30:13 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.ui
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Common UI plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 12:30:13 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.umlvisualizer.j2se.edit
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational J2SE Edit plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 12:30:20 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.presentation
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Presentation plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 12:30:20 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.umlvisualizer
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational UML Visualizer plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 12:30:21 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.bml.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational BML Core plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 12:30:21 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.uml.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational UML Core plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 12:30:21 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.umlvisualizer
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            Creating a new UMLViewer Workspace...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 18:54:15 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.umlvisualizer.j2se.edit
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational J2SE Edit plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 18:54:15 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.umlvisualizer
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational UML Visualizer plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 18:54:15 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.presentation
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Presentation plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 18:54:15 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.uml.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational UML Core plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 18:54:15 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.ui
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Common UI plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 18:54:15 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.bml.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational BML Core plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Thu Mar 15 18:54:15 MSK 2007
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Common Core plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+</session>

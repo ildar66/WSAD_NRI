@@ -1,0 +1,162 @@
+<%@ page import="com.hps.july.taglib.RolesValidation,
+                 com.hps.july.siteinfo.formbean.PositionForm,
+                 com.hps.july.siteinfo.valueobject.Position,
+				 com.hps.july.cdbc.lib.*"  %>
+<%@ taglib uri="WEB-INF/struts-logic.tld" prefix="logic" %>
+<%@ taglib uri="WEB-INF/struts-bean.tld" prefix="bean" %>
+<%@ taglib uri="WEB-INF/struts-html.tld" prefix="html" %>
+<%@ taglib uri="WEB-INF/july.tld" prefix="july" %>
+
+
+
+<%
+	PositionForm pfa = ((PositionForm)pageContext.findAttribute("PositionForm"));
+	boolean arRoles=RolesValidation.canModify(pageContext,"arendaRoles");
+	boolean isAddOrEditArenda=arRoles & (pfa.getAction().equals("Add") | pfa.getAction().equals("Edit"));
+	String isAddOrEditArendaStr = "" + isAddOrEditArenda;
+	boolean isViewMoney = RolesValidation.canModify(pageContext,"arendaMoneyRoles");
+%>
+
+  <TR class="title" ID="arenda1">
+	 <TD class="title" colspan="2"><bean:message key="label.informarenda"/></TD>
+  </TR>
+
+	<tr ID="arenda2">
+		<td class="text"><bean:message key="label.position.renter"/>:</td>
+		<td>
+			<july:string property="rentercode" styleId="rentercode" size="5" 
+				insertable="<%= isAddOrEditArendaStr %>" updatable="<%=isAddOrEditArendaStr %>" />
+			<july:lookupbutton action="/ShowOrganizationLookupList.do" styleId="rentercode" fieldNames="rentercode;rentername" 
+				insertable="<%=isAddOrEditArendaStr %>" updatable="<%=isAddOrEditArendaStr %>" />
+			<july:string size="50" property="rentername" styleId="rentername" insertable="false" updatable="false" />
+		</td>
+	</tr>
+
+	<tr ID="arenda3">
+		<td class="text"><bean:message key="label.position.dogovor"/>:
+		&nbsp;&nbsp;&nbsp;<bean:message key="label.position.dognumber"/>:
+		</td>
+		<td>
+		  <july:string property="dognumber" styleId='dognumberId' size="15" 
+			insertable="<%=isAddOrEditArendaStr %>" updatable="<%=isAddOrEditArendaStr %>" />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <bean:message key="label.position.dogdate"/>:
+		  <july:date property="dogdateFrm" styleId="dogdateId" required="false" 
+				insertable="<%=isAddOrEditArendaStr %>" updatable="<%=isAddOrEditArendaStr %>" />
+		</td>
+	</tr>
+
+	<tr ID="arenda4">
+		<td class="text"><bean:message key="label.position.sqqty"/>:</td>
+		<td>
+		  <july:string property="sqqtyFrm" styleId="sqqtyId" size="10" 
+			insertable="<%=isAddOrEditArendaStr %>" updatable="<%=isAddOrEditArendaStr %>" />
+		  &nbsp;&nbsp;&nbsp;
+			<bean:message key="label.position.paya"/>:
+			<july:string property="payaFrm" styleId="payaId" size="10"
+				insertable="<%=isAddOrEditArendaStr %>" updatable="<%=isAddOrEditArendaStr %>" />
+		</td>
+	</tr>
+
+	<july:separator trid="arenda5"/>
+
+<logic:equal name="PositionForm" property="showArendaTable" value="true">
+
+  <TR class="title">
+	 <TD class="title" colspan="2"><bean:message key="label.informarenda"/></TD>
+  </TR>
+	<tr>
+		<td colspan="2">
+			<table class="main" style="font-size: 8pt;">
+				<tr class="title" style="BACKGROUND-COLOR: #EEEEEE;">
+					<td>&nbsp;</td>
+					<july:headercolumn key="label.position.arenda.dognumber" colType="string"/>
+					<july:headercolumn key="label.position.arenda.dogdate" colType="string"/>
+					<july:headercolumn key="label.position.arenda.dogstart" colType="string"/>
+					<july:headercolumn key="label.position.arenda.dogsumm" colType="string" colspan="2"/>
+					<july:headercolumn key="label.position.arenda.customer" colType="string"/>
+					<july:headercolumn key="label.position.arenda.executor" colType="string"/>
+				</tr>
+			<%
+				java.math.BigDecimal totalSum = new java.math.BigDecimal("0").setScale(2);
+			%>
+			<logic:iterate id="it" name="PositionForm" property="arendaAgreements">
+			<logic:present name="it">
+				<%
+					CDBCRowObject ro = (CDBCRowObject)it;
+					String pn = pForm.getPositionNames((Integer)(ro.getColumn("basedocument").asObject()));
+					totalSum = totalSum.add((java.math.BigDecimal)(ro.getColumn("summusd").asObject()));
+					String sorge = "OrganizationInfo.do?action=View&organization=" + ro.getColumn("orgexecutor").asString();
+					String sorgc = "OrganizationInfo.do?action=View&organization=" + ro.getColumn("orgcustomer").asString();
+				%>
+				<tr class="normal" TITLE="<%= pn %>" style="BACKGROUND-COLOR: #CCCCCC;">
+					<td class="text">
+						<IMG SRC="/images/infohint.gif" BORDER="0">
+					</td>
+					<td class="number">
+						<A HREF='/arenda/AgreementInfo.do?action=View&leaseDocument=<july:stringwrite name="it" property="leasedocument"/>' 
+							onclick='window.open(this.href, "_blank", "top=100, left=100, width=700, height=500, scrollbars=yes, resizable=yes"); return false;'>
+							<july:stringwrite name="it" property="docnumber"/>
+						</A>
+					</td>
+					<td class="text">
+						<july:datewrite name="it" property="docdate"/>
+					</td>
+					<td class="text">
+						<july:datewrite name="it" property="startdate"/> - <july:datewrite name="it" property="enddate"/>
+					</td>
+					<td class="text" ALIGN="right" NOWRAP>
+						<% if (isViewMoney) { %>
+						<july:numberwrite name="it" property="summ1" fractdigits="2"/>&nbsp;<july:stringwrite name="it" property="curname1"/>
+						<% } else { %>
+						*****
+						<% } %>
+					</td>
+					<td class="text" ALIGN="right" NOWRAP>
+						<% if (isViewMoney) { %>
+						<july:numberwrite name="it" property="summ2" fractdigits="2"/>&nbsp;<july:stringwrite name="it" property="curname2"/>
+						<% } %>
+					</td>
+					<td class="number">
+						<A HREF="<%= sorgc %>" onclick='window.open(this.href, "_blank", "top=100, left=100, width=700, height=500, scrollbars=yes, resizable=yes"); return false;'>
+							<july:stringwrite name="it" property="orgcname"/>
+						</A>
+					</td>
+					<td class="number">
+						<A HREF="<%= sorge %>" onclick='window.open(this.href, "_blank", "top=100, left=100, width=700, height=500, scrollbars=yes, resizable=yes"); return false;'>
+						<july:stringwrite name="it" property="orgename"/>
+						</A>
+					</td>
+				</tr>
+			</logic:present>
+			<logic:notPresent name="it">
+				<tr class="normal" onMouseOver="className='select'" onMouseOut="className='normal'" style="BACKGROUND-COLOR: #CCCCCC;">
+					<td class="text">&nbsp;</td>
+					<td class="text">&nbsp;</td>
+					<td class="text">&nbsp;</td>
+					<td class="text">&nbsp;</td>
+					<td class="text">&nbsp;</td>
+					<td class="text">&nbsp;</td>
+					<td class="text">&nbsp;</td>
+					<td class="text">&nbsp;</td>
+				</tr>
+			</logic:notPresent>
+			</logic:iterate>
+
+			<% if (isViewMoney) { %>
+			<tr class="normal" style="BACKGROUND-COLOR: #CCCCCC;">
+				<td class="text"  colspan="8" ALIGN="right" NOWRAP>
+					<%
+						pageContext.setAttribute("totalSum", totalSum);
+					%>
+					<bean:message key="label.position.arenda.summ"/>: <july:numberwrite name="totalSum" fractdigits="2"/>
+				</td>
+			</tr>
+			<% } %>
+
+			</table>
+		</td>
+	</tr>
+	<july:separator/>
+
+</logic:equal>

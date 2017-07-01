@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="cableres" name="cableres" primaryKey="cableres_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986737">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="cablediamid" name="cablediamid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1161872521734">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="cableres_1" name="cableres" members="resource" constraint="SQLConstraint_1131634986737">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_cableresband.tblxmi#FK_REF_73678_73678"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_antennes.tblxmi#FK_REF_65742_65742"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_55862_55862" name="FK_REF_55862_55862" members="resource" constraint="SQLConstraint_1131634986738">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resources.tblxmi#resources_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986737" name="cableres" type="PRIMARYKEY" primaryKey="cableres_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986738" name="FK_REF_55862_55862" type="FOREIGNKEY" referenceByKey="FK_REF_55862_55862"/>
+</RDBSchema:RDBTable>

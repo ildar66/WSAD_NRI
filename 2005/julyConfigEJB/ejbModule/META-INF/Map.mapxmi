@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmlns:Mapping="Mapping.xmi" xmi:id="EjbRdbDocumentRoot_1152006186093" topToBottom="true" commandStack="">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1152006186093" primitivesDocument="INFORMIX_V94"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1152006186093">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1152006186093">
+      <table href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#CFGBASESTATION"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152006186093">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152006186093"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#SAVCONFIGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152006186094">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152006186094"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#EQUIPMENT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152006186109">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152006186109"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#CONTROLLER"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152006186110">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152006186110"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#TYPE1"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320687" optimistic="true">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152010320687">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009565703"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#repeater"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320688" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009636406"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#number"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320689">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009639250"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#name"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320690">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009642312"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#n_stoek"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Short-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320691">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009650765"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#st_transp"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320692">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009659890"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#time_backup"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320693">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009663656"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_assemb_afs"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320694">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009667046"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_assemb_afs2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320695">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009670843"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_connect"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320703">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009673750"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_connect2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320704">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009678453"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_onair"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320705">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009689312"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_onair2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320706">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009692359"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#net_stage"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Short-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320707">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009695484"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#con_type"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320708">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009699125"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#e1_qty"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Short-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320709">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152010320703">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009701843"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#on_air"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320710">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009720859"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_bldbeg2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320711">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009724500"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_assemb2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320712">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009733656"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_test2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320713">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009736062"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_pr2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320714">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009737906"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#prefixcellid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320715">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009744984"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#softversion"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320716">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009747671"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#stand_resource"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320717">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152010320704">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009750562"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#isarendats"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320718">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152009753406"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#state900"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320719">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010171640"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#state1800"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320720">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010174187"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#h_obj_ant"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320721">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010180671"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#antplaceid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320722">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010207421"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#numdcspermit"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320723">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010209515"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#numgsmpermit"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320724">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010227984"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#pwr_val"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320725">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010230500"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#pwr_cat"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320726">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010233703"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#pwr_reserve"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320727">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010236859"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#pwr_res_cat"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320728">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010240218"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_bldbeg"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320729">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010243437"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_assemb"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320730">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010246578"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_test"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320731">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010249031"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#date_pr"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320732">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010263687"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#equipcomment"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320733">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010266500"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#logictypeid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320734">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010268765"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#manufid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152010320735">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152010271203"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#objectstatus"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1180694322250">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1180694319281"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#apartmentid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgBasestation"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#CFGBASESTATION"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1152101322437">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1152101322437">
+      <table href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#cfgsectors"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322437">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322437"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#SAVCONFIGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322453">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322453"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#ID_SECT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322454" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322454"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#EQUIPMENT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322455">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322455"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#NAME_SECT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322456">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322456"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#BAND"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Short-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322457">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322457"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#NUM_SECT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322468">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322468"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#AZIMUT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322469">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322469"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#power"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322470">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322470"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#BTS_NUMBER"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322471">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322471"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#CON_ABIS"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322472">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322472"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#PORT_ABIS"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322473">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322473"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#NUM_PO"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322484">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152169003546">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322484"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#DDK"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322485">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322485"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#TRX_NUM"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322486">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322486"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#TX_PWR"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322487">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322487"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#TRX_NUM2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322488">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322488"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#TX_PWR2"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322489">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322489"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#TX_SET_PWR"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322500">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322500"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#TRX_OVR_NUM"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322501">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322501"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#TX_OVR_SET_PWR"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322502">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152169003547">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322502"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#HAS_FLT"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322503">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152169003548">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322503"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#HAS_LNA"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322504">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152169003549">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322504"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#HAS_BUSTER"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322505">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322505"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#CONF"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322506">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152169003550">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322506"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#IS_HR"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322507">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152169003551">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322507"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#CAP_GPRS"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322515">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322515"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#OPERATOR"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322516">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152169003552">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322516"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#BYHAND"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322517">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322517"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#LAC"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322518">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322518"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#RAC"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322519">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322519"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#CELLNAME"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322520">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322520"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#NCC"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Short-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322521">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322521"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#BCC"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Short-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322522">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322522"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#STANDID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322531">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322531"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#CELLINFO"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322532" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322532"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#DATASOURCE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101322533">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101322533"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#OBJECTSTATUS"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgSector"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#cfgsectors"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1152101857390">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1152101857390">
+      <table href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#cfgbsstands"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101857390">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101857390"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#SAVCONFIGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101857391">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101857391"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#STANDID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101857392" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101857392"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#EQUIPMENT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101857406">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101857406"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#resource"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101857407">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101857407"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#STNOMER"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101857408">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101857408"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#STORAGECARD"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101857409">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101857409"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#QTY"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152101857410">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152101857410"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#OBJECTSTATUS"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgBsstands"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#cfgbsstands"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1152102648156">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1152102648156">
+      <table href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#cfgantennes"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648156">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648156"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#SAVCONFIGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648157">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648157"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#ID_ANTEN"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648158" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648158"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#resource"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648159">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648159"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#NUM_ANT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648171">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648171"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#KIND_ANT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648172">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648172"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#NAKL"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648173">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648173"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#AZ_ANT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648174">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648174"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#KSWN"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648175">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648175"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#h_set"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648176">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648176"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#LEN_CABLE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648187">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648187"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#CABLERES"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648188" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648188"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#EQUIPMENT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648189">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648189"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#AZ_VARIATION"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648190">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648190"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#NAKL_VARIATION"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648191">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648191"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#INPUT_POWER"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648203">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648203"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#OPERATOR"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648204">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1152169003553">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648204"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#BYHAND"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648205">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648205"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#GROUNDRESOURCE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648206">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648206"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#GROUNDCNT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648207">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648207"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#LOCATIONTYPE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648208">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648208"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#ELECTRICALTILT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648209">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648209"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#STORAGECARD"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648218">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648218"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#QTY"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648219" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648219"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#DATASOURCE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152102648220">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152102648220"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#OBJECTSTATUS"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1159446691189">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1159446691187">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1159446631484"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#commcable"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntenna"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#cfgantennes"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1152104119750">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1152104119750">
+      <table href="META-INF/Schema/july_informix_CFGANTEN2SECTOR.tblxmi#cfgantenn2sectors"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104119750">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104119750"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTEN2SECTOR.tblxmi#SAVCONFIGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104119751">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104119751"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTEN2SECTOR.tblxmi#ID_ANTEN"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104119752">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104119752"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTEN2SECTOR.tblxmi#ID_SECT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104119753">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104119753"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTEN2SECTOR.tblxmi#DATASOURCE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104119765">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104119765"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGANTEN2SECTOR.tblxmi#OBJECTSTATUS"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAnten2Sector"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGANTEN2SECTOR.tblxmi#cfgantenn2sectors"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1152104663828">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1152104663828">
+      <table href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#cfgequipobjectscfg"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104663828">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104663828"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#SAVCONFIGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104663829">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104663829"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#OBJCFGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104663830" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104663830"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#EQUIPMENT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104663832">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104663832"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#STORAGECARD"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104663843">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104663843"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#QTY"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152104663844">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152104663844"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#OBJECTSTATUS"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1164206970375">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1164206967640"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#parentobjcfgid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgEquipObjectsCfg"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#cfgequipobjectscfg"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1152169003562">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1152169003562">
+      <table href="META-INF/Schema/july_informix_CFGSAVEDCONFIG.tblxmi#cfgsavedconfigs"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152169003562">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152169003562"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSAVEDCONFIG.tblxmi#SAVCONFIGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152169003563">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152169003563"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSAVEDCONFIG.tblxmi#NAME"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgSavedConfig"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGSAVEDCONFIG.tblxmi#cfgsavedconfigs"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1152171318578">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1152171318578">
+      <table href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#cfgstoragecards"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318578">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318578"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#SAVCONFIGID"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318579">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318579"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#STORAGECARD"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318580" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318580"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#resource"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318593">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318593"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#DATEOPENED"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318594" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318594"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#OWNER"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318595">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318595"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#POLICY"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318596">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318596"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#CLOSED"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318609">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318609"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#QTY"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318610">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318610"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#PRICE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318611">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1157972628406">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318611"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#BOXED"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318612">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318612"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#DOCUMENT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318625">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1157972628407">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318625"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#BROKEN"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#Boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318626">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318626"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#STORAGEPLACE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318627">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318627"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#CONTRACT"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318628">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318628"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#DATECLOSED"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318629">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318629"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#I13NDATE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Date-DATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318640">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318640"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#SERIALNUMBER"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318641">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318641"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#PARTY"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318642">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318642"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#QTY_BROKEN"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#BigDecimal-DECIMAL"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318643">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318643"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#NOTES"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318644">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318644"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#CONFIGURATION"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318656">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318656"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#PLACE"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318657">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318657"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#INVENTSERIAL"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318658">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318658"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#comment"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318659" optimistic="true">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1157972628408">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318659"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#ISFICTSERIAL"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318660" optimistic="true">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1157972628409">
+        <targetClass href="java:/java.lang#Boolean"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapStringToBooleanConverter"/>
+      </helper>
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318660"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#ISAPPROVED"/>
+      <typeMapping xmi:type="ejbrdbmapping:RDBEjbFieldMapper" href="JavatoINFORMIX_V94TypeMaps.xmi#boolean-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318671">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318671"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#LOCALSERIAL"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1152171318672">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1152171318672"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#OBJECTSTATUS"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgStoragecard"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#cfgstoragecards"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1160037916656">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1160037916656">
+      <table href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#cfgantennacables"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916656">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037870187"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#savconfigid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916657">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037872921"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#id_cable"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916658" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037876093"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#id_anten"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916659">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037878703"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#len_cable"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916660" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037881359"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#cableres"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916661">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037884343"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#groundresource"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916662">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037887140"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#groundcnt"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916663">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037890875"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#storagecard"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916664">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037896843"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#qty"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916665" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037899578"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#datasource"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160037916666">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160037903750"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#objectstatus"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntennaCable"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#cfgantennacables"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1160121131609">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1160121131609">
+      <table href="META-INF/Schema/july_informix_cfgtrx.tblxmi#cfgtrx"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131609">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131609"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#savconfigid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131610">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131610"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#trxid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131625" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131625"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#resource"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131626" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131626"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#standid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131627">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131627"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#storagecard"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#Integer-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131640">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131640"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#qty"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131641">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131641"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#objectstatus"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160576773140" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160576767484"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#equipment"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgTrx"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#cfgtrx"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1160121131640">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1160121131640">
+      <table href="META-INF/Schema/july_informix_cfgtrx2sectors.tblxmi#cfgtrx2sectors"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131642">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131642"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx2sectors.tblxmi#savconfigid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131643">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131643"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx2sectors.tblxmi#trxid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131656">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131656"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx2sectors.tblxmi#id_sect"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1160121131657">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1160121131657"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgtrx2sectors.tblxmi#objectstatus"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgTrx2Sector"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgtrx2sectors.tblxmi#cfgtrx2sectors"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1161353738203">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1161353738203">
+      <table href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#cfgantennesworkbands"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1161353738203">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1161353703031"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#savconfigid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1161353738204">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1161353705828"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#id_anten"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1161353738205">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1161353708546"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#band"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#short-SMALLINT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1161353738206">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1161353711296"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#electricangle"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1161353738207">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1161353713906"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#kind_ant"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1161353738208">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1161353716843"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#kswn"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1161353738209">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1161353720328"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#objectstatus"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntennaWorkBand"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#cfgantennesworkbands"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1181124842093">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1181124842093">
+      <table href="META-INF/Schema/july_informix_cfgequipobjcfg2sectors.tblxmi#cfgequipobjcfg2sectors"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1181124842093">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1181124825031"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgequipobjcfg2sectors.tblxmi#savconfigid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1181124842094">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1181124828453"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgequipobjcfg2sectors.tblxmi#objcfgid"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1181124842095">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1181124831921"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgequipobjcfg2sectors.tblxmi#id_sect"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1181124842096">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1181124835390"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/july_informix_cfgequipobjcfg2sectors.tblxmi#objectstatus"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgEquipObjCfg2Sector"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgequipobjcfg2sectors.tblxmi#cfgequipobjcfg2sectors"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <outputs xmi:type="RDBSchema:RDBDatabase" href="META-INF/Schema/july.dbxmi#july"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoINFORMIX_V94TypeMaps.xmi#Java_to_INFORMIX_V94_TypeMaps"/>
+  <deploymentOptions xmi:id="WASDeploymentOptions_1152101322531"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

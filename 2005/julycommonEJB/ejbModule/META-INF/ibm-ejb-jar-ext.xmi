@@ -1,0 +1,17 @@
+<ejbext:EJBJarExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbext="ejbext.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Ext">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbExtensions xmi:type="ejbext:SessionExtension" xmi:id="KeyGenerator_Ext" name="KeyGenerator" timeout="0">
+    <runAsSettings xmi:id="SecurityIdentity_1">
+      <methodElements xmi:id="MethodElement_1" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#KeyGenerator"/>
+      </methodElements>
+      <runAsMode xmi:type="ejbext:UseSystemIdentity" xmi:id="UseSystemIdentity_1"/>
+    </runAsSettings>
+    <isolationLevelAttributes xmi:id="IsolationLevelAttributes_1" isolationLevel="READ_COMMITTED">
+      <methodElements xmi:id="MethodElement_2" name="*" type="Unspecified">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#KeyGenerator"/>
+      </methodElements>
+    </isolationLevelAttributes>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#KeyGenerator"/>
+  </ejbExtensions>
+</ejbext:EJBJarExtension>

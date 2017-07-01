@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1" startingWeight="10" binariesURL="${WS_EAR_july}" useMetadataFromBinaries="true" reloadInterval="0" reloadEnabled="false">
+    <targetMappings xmi:id="DeploymentTargetMapping_1" enable="true" target="ServerTarget_1"/>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_2" startingWeight="5000" uri="JulyJournalEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_3" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_3" startingWeight="5000" uri="julypersistenceEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_4" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_4" startingWeight="5000" uri="julyConfigEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_5" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_5" startingWeight="5000" uri="julyarendaEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_6" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1" startingWeight="10000" uri="basestation.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_7" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_2" startingWeight="10000" uri="security.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_8" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_6" startingWeight="5000" uri="julyjdbcEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_9" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_3" startingWeight="10000" uri="inventory.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_10" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_7" startingWeight="5000" uri="julyorganizerEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_11" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_8" startingWeight="5000" uri="julypersistence2EJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_12" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_4" startingWeight="10000" uri="siteinfo.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_13" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_5" startingWeight="10000" uri="dictionary.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_14" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_9" startingWeight="5000" uri="julyplatinumEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_15" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_6" startingWeight="10000" uri="organizer.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_16" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_7" startingWeight="10000" uri="sitedoc.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_17" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_8" startingWeight="10000" uri="arenda.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_18" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_10" startingWeight="5000" uri="julyarendabillingEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_19" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_11" startingWeight="5000" uri="julyinventoryEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_20" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_12" startingWeight="5000" uri="julycommonEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_21" target="ServerTarget_1"/>
+    </modules>
+    <modules xmi:type="appdeployment:EJBModuleDeployment" xmi:id="EJBModuleDeployment_1" startingWeight="5000" uri="julytrailcomEJB.jar">
+      <targetMappings xmi:id="DeploymentTargetMapping_2" target="ServerTarget_1"/>
+    </modules>
+    <classloader xmi:id="Classloader_1" mode="PARENT_FIRST"/>
+  </deployedObject>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1" name="server1" nodeName="localhost"/>
+</appdeployment:Deployment>

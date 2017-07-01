@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp"/>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163093" jndiName="com/hps/july/persistence/Resource">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163094" jndiName="com/hps/july/persistence/ResourceSet">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_2"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163095" jndiName="com/hps/july/persistence/ResourceSetPart">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_3"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163096" jndiName="com/hps/july/persistence/Complect">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_4"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163097" jndiName="com/hps/july/persistence/Rate">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_5"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163098" jndiName="com/hps/july/persistence/Currency">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_6"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163099" jndiName="com/hps/july/persistence/RateType">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_7"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163100" jndiName="com/hps/july/persistence/ResourceSubType">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_8"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163101" jndiName="com/hps/july/persistence/ResourceType">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_9"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163102" jndiName="com/hps/july/persistence/NamedValue">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_10"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163103" jndiName="com/hps/july/persistence/ResourceTaxe">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_11"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163104" jndiName="com/hps/july/persistence/Unit">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_12"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163105" jndiName="com/hps/july/persistence/Organization">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_13"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163106" jndiName="com/hps/july/persistence/Account">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_14"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163107" jndiName="com/hps/july/persistence/Company">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_15"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163108" jndiName="com/hps/july/persistence/SearchGroup">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_16"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163109" jndiName="com/hps/july/persistence/SearchGroupping">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_17"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163110" jndiName="com/hps/july/persistence/Searches">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_18"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163111" jndiName="com/hps/july/persistence/Division">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_19"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163112" jndiName="com/hps/july/persistence/Direction">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_20"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163113" jndiName="com/hps/july/persistence/Department">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_21"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163114" jndiName="com/hps/july/persistence/Service">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_22"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163115" jndiName="com/hps/july/persistence/Group">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_23"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163116" jndiName="com/hps/july/persistence/Storage">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_24"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163117" jndiName="com/hps/july/persistence/AntennaResource">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_25"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163118" jndiName="com/hps/july/persistence/CableResource">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_26"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163119" jndiName="com/hps/july/persistence/BaseStationResource">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_27"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163120" jndiName="com/hps/july/persistence/CableResourceBand">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_28"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163121" jndiName="com/hps/july/persistence/AntennaResourceBand">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_29"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163122" jndiName="com/hps/july/persistence/Car">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_30"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133172163123" jndiName="com/hps/july/persistence/RepiterRes">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_31"/>
+  </ejbRefBindings>
+</webappbnd:WebAppBinding>

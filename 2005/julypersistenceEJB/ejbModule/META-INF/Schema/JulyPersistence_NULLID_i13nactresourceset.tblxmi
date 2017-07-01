@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="i13nactresourceset" name="i13nactresourceset" primaryKey="i13nactresourceset_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="document" name="document">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986496">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986497">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="i13nactresourceset_1" name="i13nactresourceset" members="document resource" constraint="SQLConstraint_1131634986496"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_12304_12304" name="FK_REF_12304_12304" members="resource" constraint="SQLConstraint_1131634986497">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resources.tblxmi#resources_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_12301_12301" name="FK_REF_12301_12301" members="document" constraint="SQLConstraint_1131634986498">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_i13nact.tblxmi#i13nact_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986496" name="i13nactresourceset" type="PRIMARYKEY" primaryKey="i13nactresourceset_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986497" name="FK_REF_12304_12304" type="FOREIGNKEY" referenceByKey="FK_REF_12304_12304"/>
+  <constraints xmi:id="SQLConstraint_1131634986498" name="FK_REF_12301_12301" type="FOREIGNKEY" referenceByKey="FK_REF_12301_12301"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,6 @@
+/*
+Copyright (c) Nebiru Software 2001, 2005
+  Compressed and obfuscated by JSCruncher Pro.
+  http://domapi.com/jscruncherpro
+*/
+domapi.registerComponent("scrollbar");domapi.c2x=function(i2T25){return domapi.comps.scrollbar.constructor(i2T25)};domapi.comps.scrollbar.constructor=function(i2T25){domapi.VQ7(i2T25,"orientation","vertical");domapi.VQ7(i2T25,"w",500);domapi.VQ7(i2T25,"h",500);domapi.VQ7(i2T25,"x",0);domapi.VQ7(i2T25,"y",0);var x3A00=domapi.Component(i2T25,"scrollbar");x3A00.R9c=domapi.Elm({parent:x3A00,x:0,y:0,w:10,h:10});x3A00.T5Ak=domapi.Elm({parent:x3A00.R9c,x:0,y:0,w:10,h:10});x3A00.T5Ak.innerHTML="&nbsp;";x3A00.setPosition(x3A00.position);x3A00.R9c.style.overflow="scroll";x3A00.style.overflow="hidden";x3A00.T5Ak.style.overflow="auto";domapi.disallowSelect(x3A00);domapi.hl1(x3A00);return x3A00};domapi.comps.scrollbar.Q43hR=function(){this.l46()};domapi.comps.scrollbar.l46=function(){};domapi.comps.scrollbar.MR9=function(w,h){if(this.X4C91)return;this.X4C91=true;var mi7mO=domapi.l3i_1();switch(this.orientation){case "horizontal":this.R9c.setSize(w,mi7mO*2);this.R9c.moveTo(0,-mi7mO);this.setH(mi7mO);break;case "vertical":this.R9c.setSize(mi7mO*2,h);this.R9c.moveTo(-mi7mO,0);this.setW(mi7mO);break}this.X4C91=false};domapi.comps.scrollbar.setPosition=function(i){this.position=i;this.T5Ak.setSize(i,i)};

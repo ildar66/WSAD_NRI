@@ -1,0 +1,232 @@
+------Start of DE processing------ = [07.03.23 12:10:03:830 MSK] , key = org.apache.jasper.JasperException com.ibm.ws.webcontainer.jsp.servlet.JspServlet.loadJSP 800
+Exception = org.apache.jasper.JasperException
+Source = com.ibm.ws.webcontainer.jsp.servlet.JspServlet.loadJSP
+probeid = 800
+Stack Dump = org.apache.jasper.JasperException: Unable to compile class for JSP
+
+An error occurred at line: 156 in the jsp file: /weArendaBrowse1.jsp
+
+Generated servlet error:
+C:\workSpasesNew\WSAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\tmp0\cache\localhost\server1\july\arenda.war\_weArendaBrowse1.java:1036: cannot resolve symbol
+symbol  : variable posListSize 
+location: class org.apache.jsp._weArendaBrowse1
+              if(posListSize &gt; 0){
+                 ^
+1 error
+
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:369)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.loadJSP(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.loadIfNecessary(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServicingServletState.service(StrictLifecycleServlet.java:333)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.include(WebAppRequestDispatcher.java:253)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:991)
+	at org.apache.jsp._weArendaForm._jspService(_weArendaForm.java:4434)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServicingServletState.service(StrictLifecycleServlet.java:333)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.include(WebAppRequestDispatcher.java:253)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:991)
+	at org.apache.jsp._arendaGraph._jspService(_arendaGraph.java:354)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServicingServletState.service(StrictLifecycleServlet.java:333)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.include(WebAppRequestDispatcher.java:253)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:991)
+	at org.apache.jsp._july._jspService(_july.java:1155)
+	at com.ibm.ws.webcontainer.jsp.runtime.HttpJspBase.service(HttpJspBase.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet$JspServletWrapper.service(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.serviceJspFile(JspServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.jsp.servlet.JspServlet.service(JspServlet.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java(Compiled Code))
+	at org.apache.struts.action.ActionServlet.processActionForward(ActionServlet.java:1759)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1596)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java(Compiled Code))
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java(Compiled Code))
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java(Compiled Code))
+
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.jsp.servlet.JspServlet
+com.ibm.ws.webcontainer.jsp.servlet.JspServlet@5b56614b
+
+Exception = org.apache.jasper.JasperException
+Source = com.ibm.ws.webcontainer.jsp.servlet.JspServlet.loadJSP
+probeid = 800
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.jsp.servlet.JspServlet
+  lStrings = 
+    lookup = 
+      class$java$util$HashMap$Entry = java.lang.Class@2175a1e8
+      serialVersionUID = 362498820763181265
+      entrySet = null
+      NULL_KEY = java.lang.Object@3f11a16b
+      contentionFlag = 0
+      modCount = 0
+      loadFactor = 0.75
+      threshold = 12
+      size = 8
+      table = [Ljava.util.HashMap$Entry;@4360a16f
+      DEFAULT_LOAD_FACTOR = 0.75
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_INITIAL_CAPACITY = 16
+      values = null
+      keySet = null
+    class$java$util$ResourceBundle = 
+      class$java$lang$Class = java.lang.Class@22c921e8
+      initted = true
+      reflectionFactory = sun.reflect.ReflectionFactory@3f0da16b
+      serialPersistentFields = {}
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@1684a170
+      useCaches = true
+      allPermDomain = java.security.ProtectionDomain@42152167
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    locale = java.util.Locale@4359a16f
+    parent = null
+    cacheList = 
+      entrySet = null
+      queue = java.lang.ref.ReferenceQueue@10a7a169
+      hash = java.util.HashMap@10a1a169
+      values = null
+      keySet = null
+    DEFAULT_NOT_FOUND = -1
+    underConstruction = 
+      class$java$util$Hashtable$Entry = java.lang.Class@26f8a1e8
+      emptyIterator = java.util.Hashtable$EmptyIterator@3f1ca16b
+      emptyEnumerator = java.util.Hashtable$EmptyEnumerator@3f23216b
+      ENTRIES = 2
+      VALUES = 1
+      KEYS = 0
+      values = null
+      entrySet = null
+      keySet = null
+      serialVersionUID = 1421746759512286392
+      modCount = 370
+      loadFactor = 1.0
+      threshold = 3
+      count = 0
+      table = [Ljava.util.Hashtable$Entry;@10a42169
+    MAX_BUNDLES_SEARCHED = 3
+    CACHE_LOAD_FACTOR = 1.0
+    INITIAL_CACHE_SIZE = 25
+    cacheKey = 
+      hashCodeCache = 0
+      defaultLocale = null
+      searchName = 
+      loaderRef = null
+  LSTRING_FILE = javax.servlet.http.LocalStrings
+  HEADER_LASTMOD = Last-Modified
+  HEADER_IFMODSINCE = If-Modified-Since
+  METHOD_TRACE = TRACE
+  METHOD_PUT = PUT
+  METHOD_POST = POST
+  METHOD_OPTIONS = OPTIONS
+  METHOD_GET = GET
+  METHOD_HEAD = HEAD
+  METHOD_DELETE = DELETE
+  config = 
+    _servletName = JSP 1.2 Processor
+    _initParams = 
+      hexDigit[16] = {0123456789ABCDEF}
+      whiteSpaceChars =  	
+
+      specialSaveChars = =: 	
+#!
+      strictKeyValueSeparators = =:
+      keyValueSeparators = =: 	
+
+      defaults = null
+      serialVersionUID = 4112578634029874840
+      class$java$util$Hashtable$Entry = this.lStrings.underConstruction.class$java$util$Hashtable$Entry
+      emptyIterator = this.lStrings.underConstruction.emptyIterator
+      emptyEnumerator = this.lStrings.underConstruction.emptyEnumerator
+      ENTRIES = 2
+      VALUES = 1
+      KEYS = 0
+      values = null
+      entrySet = null
+      keySet = null
+      modCount = 0
+      loadFactor = 0.75
+      threshold = 8
+      count = 0
+      table = [Ljava.util.Hashtable$Entry;@5b27614b
+    _servletContext = com.ibm.ws.webcontainer.webapp.WebApp@41b6a174
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+   <publishable memento="config" parents="">
+      <resource localPath=".repository" localTimestamp="74397"/>
+      <resource localPath="cells" localTimestamp="74398"/>
+      <resource localPath="cells/localhost" localTimestamp="74400"/>
+      <resource localPath="cells/localhost/applications" localTimestamp="74402"/>
+      <resource localPath="cells/localhost/applications/IBMUTC.ear" localTimestamp="74413"/>
+      <resource
+         localPath="cells/localhost/applications/IBMUTC.ear/deployments" localTimestamp="74415"/>
+      <resource
+         localPath="cells/localhost/applications/IBMUTC.ear/deployments/IBMUTC" localTimestamp="74422"/>
+      <resource localPath="cells/localhost/applications/july.ear" localTimestamp="2272179"/>
+      <resource
+         localPath="cells/localhost/applications/july.ear/deployments" localTimestamp="2272180"/>
+      <resource
+         localPath="cells/localhost/applications/july.ear/deployments/july" localTimestamp="2272186"/>
+      <resource localPath="cells/localhost/nodes" localTimestamp="74407"/>
+      <resource localPath="cells/localhost/nodes/localhost" localTimestamp="74414"/>
+      <resource localPath="cells/localhost/nodes/localhost/servers" localTimestamp="74420"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1" localTimestamp="74423"/>
+      <resource localPath="cells/localhost/cell.xml" localTimestamp="3654902"/>
+      <resource localPath="cells/localhost/multibroker.xml" localTimestamp="3654903"/>
+      <resource localPath="cells/localhost/namestore.xml" localTimestamp="3654904"/>
+      <resource localPath="cells/localhost/naming-authz.xml" localTimestamp="3654905"/>
+      <resource localPath=".repository/metadata.xml" localTimestamp="74399"/>
+      <resource localPath="cells/localhost/admin-authz.xml" localTimestamp="3654901"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/namestore.xml" localTimestamp="3654911"/>
+      <resource localPath="cells/localhost/nodes/localhost/node.xml" localTimestamp="3654912"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/resources.xml" localTimestamp="3654913"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/serverindex.xml" localTimestamp="3654914"/>
+      <resource
+         localPath="cells/localhost/applications/IBMUTC.ear/deployments/IBMUTC/deployment.xml" localTimestamp="3654916"/>
+      <resource
+         localPath="cells/localhost/applications/july.ear/deployments/july/deployment.xml" localTimestamp="3654917"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/namestore-cell.xml" localTimestamp="3654918"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/namestore-node.xml" localTimestamp="3654919"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/resources.xml" localTimestamp="3654920"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/server.xml" localTimestamp="3654921"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/variables.xml" localTimestamp="3654922"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/ws-security.xml" localTimestamp="3654923"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/variables.xml" localTimestamp="3654915"/>
+      <resource localPath="cells/localhost/pmirm.xml" localTimestamp="3654906"/>
+      <resource localPath="cells/localhost/resources.xml" localTimestamp="3654907"/>
+      <resource localPath="cells/localhost/security.xml" localTimestamp="3654908"/>
+      <resource localPath="cells/localhost/variables.xml" localTimestamp="3654909"/>
+      <resource localPath="cells/localhost/virtualhosts.xml" localTimestamp="3654910"/>
+   </publishable>
+</server>

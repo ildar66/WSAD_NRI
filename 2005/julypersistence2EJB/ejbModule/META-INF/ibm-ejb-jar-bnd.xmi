@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Binding">
+  <defaultDatasource xmi:id="ResourceRefBinding_1132238346488" jndiName="july"/>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="AntennaCable_Binding" jndiName="com/hps/july/persistence2/AntennaCable">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennaCable"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AntennPlaces_Binding" jndiName="com/hps/july/persistence2/AntennPlaces">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AntennPlaces"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ApparatPlaces_Binding" jndiName="com/hps/july/persistence2/ApparatPlaces">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaces"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ApparatPlaceType_Binding" jndiName="com/hps/july/persistence2/ApparatPlaceType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatPlaceType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ApparatType_Binding" jndiName="com/hps/july/persistence2/ApparatType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ApparatType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Beenet2Equipment_Binding" jndiName="com/hps/july/persistence2/Beenet2Equipment">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Beenet2Equipment"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="BeenetCategory_Binding" jndiName="com/hps/july/persistence2/BeenetCategory">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetCategory"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="BeenetFacade_Binding" jndiName="com/hps/july/persistence2/BeenetFacade">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#BeenetFacade"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="BeenetObject_Binding" jndiName="com/hps/july/persistence2/BeenetObject">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#BeenetObject"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="CableWorkParams_Binding" jndiName="com/hps/july/persistence2/CableWorkParams">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CableWorkParams"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Container_Binding" jndiName="com/hps/july/persistence2/Container">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Container"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Counter_Binding" jndiName="com/hps/july/persistence2/Counter">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Counter"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="CounterInfo_Binding" jndiName="com/hps/july/persistence2/CounterInfo">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CounterInfo"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Etap2Hop_Binding" jndiName="com/hps/july/persistence2/Etap2Hop">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Etap2Hop"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EtapDoc_Binding" jndiName="com/hps/july/persistence2/EtapDoc">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapDoc"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EtapType_Binding" jndiName="com/hps/july/persistence2/EtapType">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EtapType"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="FreqPermission_Binding" jndiName="com/hps/july/persistence2/FreqPermission">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#FreqPermission"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="GKRCHDoc_Binding" jndiName="com/hps/july/persistence2/GKRCHDoc">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#GKRCHDoc"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="KzlAntennes2NRI_Binding" jndiName="com/hps/july/persistence2/KzlAntennes2NRI">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlAntennes2NRI"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="KzlNetzones2NRI_Binding" jndiName="com/hps/july/persistence2/KzlNetzones2NRI">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#KzlNetzones2NRI"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="LeaseZP_Binding" jndiName="com/hps/july/persistence2/LeaseZP">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#LeaseZP"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="MSUser_Binding" jndiName="com/hps/july/persistence2/MSUser">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MSUser"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="OfficeMemoHeader_Binding" jndiName="com/hps/july/persistence2/OfficeMemoHeader">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoHeader"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="OfficeMemoPos_Binding" jndiName="com/hps/july/persistence2/OfficeMemoPos">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoPos"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="OfficeMemoTarget_Binding" jndiName="com/hps/july/persistence2/OfficeMemoTarget">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OfficeMemoTarget"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="OporaPlaces_Binding" jndiName="com/hps/july/persistence2/OporaPlaces">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OporaPlaces"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Perm2Hop_Binding" jndiName="com/hps/july/persistence2/Perm2Hop">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Perm2Hop"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RRLDocs_Binding" jndiName="com/hps/july/persistence2/RRLDocs">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLDocs"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RRLResourceFacade_Binding" jndiName="com/hps/july/persistence2/RRLResourceFacade">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RRLResourceFacade"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Sitedoc2Region_Binding" jndiName="com/hps/july/persistence2/Sitedoc2Region">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Region"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Sitedoc2Resource_Binding" jndiName="com/hps/july/persistence2/Sitedoc2Resource">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Resource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="SitedocFacade_Binding" jndiName="com/hps/july/persistence2/SitedocFacade">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SitedocFacade"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1165332324031" jndiName="ejb/com/hps/july/persistence2/ConfBSNfsHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ConfBSNfs"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1166281635968" jndiName="ejb/com/hps/july/persistence2/ResourceGroupHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceGroup"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1166281721000" jndiName="ejb/com/hps/july/persistence2/Group2ResourceHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Group2Resource"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1166628803703" jndiName="ejb/com/hps/july/persistence2/CountryHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Country"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1170330845109" jndiName="ejb/com/hps/july/persistence2/UserRequestsHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#UserRequests"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1174038038812" jndiName="ejb/com/hps/july/persistence2/ResourceClassHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceClass"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1174038078671" jndiName="ejb/com/hps/july/persistence2/ResourceSetClassHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ResourceSetClass"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1177058649173" jndiName="ejb/com/hps/july/persistence2/AfsSchemeHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AfsScheme"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1178280113362" jndiName="ejb/com/hps/july/persistence2/EquipManufacturerHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#EquipManufacturer"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

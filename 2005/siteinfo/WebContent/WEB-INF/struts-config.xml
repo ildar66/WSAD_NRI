@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+          "http://dtdserver/dtd/struts-config_1_0.dtd">
+
+
+
+<struts-config>
+
+
+  <!-- ========== Form Bean Definitions =================================== -->
+<form-beans>
+
+    <form-bean      name="EquipmentCommentForm"
+                    type="com.hps.july.siteinfo.formbean.EquipmentCommentForm"/>
+                    
+    <form-bean      name="OrganizationLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.OrganizationLookupListForm"/>
+
+    <form-bean      name="regionForm"
+                    type="com.hps.july.siteinfo.formbean.RegionForm"/>
+
+    <form-bean      name="regionListForm"
+                    type="com.hps.july.siteinfo.formbean.RegionListForm"/>
+
+    <form-bean      name="superRegionForm"
+                    type="com.hps.july.siteinfo.formbean.SuperRegionForm"/>
+
+    <form-bean      name="superRegionListForm"
+                    type="com.hps.july.siteinfo.formbean.SuperRegionListForm"/>
+
+    <form-bean      name="TyperesponsibilityListForm"
+                    type="com.hps.july.siteinfo.formbean.TyperesponsibilityListForm"/>
+
+    <form-bean      name="TyperesponsibilityForm"
+                    type="com.hps.july.siteinfo.formbean.TyperesponsibilityForm"/>
+
+    <form-bean      name="NetzoneListForm"
+                    type="com.hps.july.siteinfo.formbean.NetzoneListForm"/>
+
+    <form-bean      name="NetzoneForm"
+                    type="com.hps.july.siteinfo.formbean.NetzoneForm"/>
+
+    <form-bean      name="PositionListForm"
+                    type="com.hps.july.siteinfo.formbean.PositionListForm"/>
+
+    <form-bean      name="PositionForm"
+                    type="com.hps.july.siteinfo.formbean.PositionForm"/>
+
+    <form-bean      name="EPositionForm"
+                    type="com.hps.july.siteinfo.formbean.EPositionForm"/>
+
+    <form-bean      name="EPositionPrintForm"
+                    type="com.hps.july.siteinfo.formbean.EPositionPrintForm"/>
+
+    <form-bean      name="OrganizationPrintForm"
+                    type="com.hps.july.siteinfo.formbean.OrganizationPrintForm"/>
+
+    <form-bean      name="WorkresponsibilityListForm"
+                    type="com.hps.july.siteinfo.formbean.WorkresponsibilityListForm"/>
+
+    <form-bean      name="WorkresponsibilityForm"
+                    type="com.hps.july.siteinfo.formbean.WorkresponsibilityForm"/>
+
+    <form-bean      name="ComlineListForm"
+                    type="com.hps.july.siteinfo.formbean.ComlineListForm"/>
+
+    <form-bean      name="ComlineForm"
+                    type="com.hps.july.siteinfo.formbean.ComlineForm"/>
+
+    <form-bean      name="PhotoListForm"
+                    type="com.hps.july.siteinfo.formbean.PhotoListForm"/>
+
+    <form-bean      name="PhotoForm"
+                    type="com.hps.july.siteinfo.formbean.PhotoForm"/>
+
+    <form-bean      name="EquipmentListForm"
+                    type="com.hps.july.siteinfo.formbean.EquipmentListForm"/>
+
+	<form-bean name="BeenetListForm" type="com.hps.july.siteinfo.formbean.BeenetListForm"/>
+	<form-bean name="BeenetForm" type="com.hps.july.siteinfo.formbean.BeenetForm"/>
+
+    <form-bean      name="EquipmentForm"
+                    type="com.hps.july.siteinfo.formbean.EquipmentForm"/>
+
+    <form-bean      name="RenterLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.RenterLookupListForm"/>
+
+    <form-bean      name="WorkerLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.WorkerLookupListForm"/>
+
+    <form-bean      name="ControllerLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.ControllerLookupListForm"/>
+
+    <form-bean      name="SwitchLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.SwitchLookupListForm"/>
+
+    <form-bean      name="ComlineLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.ComlineLookupListForm"/>
+<!--
+    <form-bean      name="PositionLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.PositionLookupListForm"/>
+-->
+    <form-bean      name="MapForm"
+                    type="com.hps.july.siteinfo.formbean.MapForm"/>
+
+	<form-bean      name="StreetLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.StreetLookupListForm"/>
+	<form-bean      name="SubwayLookupListForm"
+                    type="com.hps.july.siteinfo.formbean.SubwayLookupListForm"/>
+	
+
+	<form-bean      name="PositionOnMapForm"
+					type="com.hps.july.siteinfo.formbean.PositionOnMapForm"/>
+
+<!-- 	<form-bean      name="PositionMapForm"
+					type="com.hps.july.siteinfo.formbean.PositionMapForm"/>
+ -->
+    <form-bean      name="EquipdetListForm"
+                    type="com.hps.july.siteinfo.formbean.EquipdetListForm"/>
+
+    <form-bean      name="EquipdetMultiListForm"
+                    type="com.hps.july.siteinfo.formbean.EquipdetMultiListForm"/>
+
+    <form-bean      name="EquipsdetListForm"
+                    type="com.hps.july.siteinfo.formbean.EquipsdetListForm"/>
+
+    <form-bean      name="JournalListForm"
+                    type="com.hps.july.siteinfo.formbean.JournalListForm"/>
+
+    <form-bean      name="JournalForm"
+                    type="com.hps.july.siteinfo.formbean.JournalForm"/>
+
+<!--from BaseStation
+    <form-bean name="AntennesChoiceForm"
+               type="com.hps.july.basestation.formbean.AntennesChoiceForm"/>
+
+    <form-bean name="AntennaResLookupListForm"
+               type="com.hps.july.basestation.formbean.AntennaResLookupListForm"/>
+
+    <form-bean name="AntennaSectorListForm"
+               type="com.hps.july.basestation.formbean.AntennaSectorListForm" />
+
+    <form-bean name="BaseStationListForm"
+               type="com.hps.july.basestation.formbean.BaseStationListForm" />
+
+    <form-bean name="PlanBaseStationForm"
+               type="com.hps.july.basestation.formbean.PlanBaseStationForm" />
+
+    <form-bean name="FactBaseStationForm"
+               type="com.hps.july.basestation.formbean.FactBaseStationForm" />
+
+    <form-bean name="AntennaForm"
+               type="com.hps.july.basestation.formbean.AntennaForm" />
+
+    <form-bean name="SectorForm"
+               type="com.hps.july.basestation.formbean.SectorForm" />
+
+    <form-bean name="ControllerLookupListForm"
+               type="com.hps.july.basestation.formbean.ControllerLookupListForm" />
+
+    <form-bean name="SwitchLookupListForm"
+               type="com.hps.july.basestation.formbean.SwitchLookupListForm" />
+
+    <form-bean name="PositionLookupListForm"
+               type="com.hps.july.basestation.formbean.PositionLookupListForm" />
+
+    <form-bean name="RestypeLookupListForm"
+              type="com.hps.july.basestation.formbean.RestypeLookupListForm"/>
+
+    <form-bean name="RessbtypeLookupListForm"
+              type="com.hps.july.basestation.formbean.RessbtypeLookupListForm" />
+-->
+  <!--òèïû äîêóìåíòîâ-->
+    <form-bean  name="SiteDocTypeForm"
+                type="com.hps.july.siteinfo.formbean.SiteDocTypeForm"/>
+                
+    <form-bean  name="SiteDocTypeListForm"
+                 type="com.hps.july.siteinfo.formbean.SiteDocTypeListForm"/>
+
+	<form-bean name="BuildListPassForm"
+				  type="com.hps.july.siteinfo.formbean.BuildListPassForm" />
+
+	<form-bean name="CardPassWordUploadForm" type="com.hps.july.web.util.DocumentUploadForm"/>
+	<form-bean name="ListPassWordUploadForm" type="com.hps.july.web.util.DocumentUploadForm"/>
+
+    <form-bean  name="AntennaPlacesListForm"
+                 type="com.hps.july.siteinfo.formbean.AntennaPlacesListForm"/>
+
+    <form-bean  name="ApparatPlacesListForm"
+                 type="com.hps.july.siteinfo.formbean.ApparatPlacesListForm"/>
+
+    <form-bean  name="ApparatPlaceTypesListForm"
+                 type="com.hps.july.siteinfo.formbean.ApparatPlaceTypesListForm"/>
+
+    <form-bean  name="ApparatTypesListForm"
+                 type="com.hps.july.siteinfo.formbean.ApparatTypesListForm"/>
+
+    <form-bean  name="OporaPlacesListForm"
+                 type="com.hps.july.siteinfo.formbean.OporaPlacesListForm"/>
+
+    <form-bean  name="AntennaPlacesForm"
+                 type="com.hps.july.siteinfo.formbean.AntennaPlacesForm"/>
+
+    <form-bean  name="ApparatPlacesForm"
+                 type="com.hps.july.siteinfo.formbean.ApparatPlacesForm"/>
+
+    <form-bean  name="ApparatPlaceTypesForm"
+                 type="com.hps.july.siteinfo.formbean.ApparatPlaceTypesForm"/>
+
+    <form-bean  name="ApparatTypesForm"
+                 type="com.hps.july.siteinfo.formbean.ApparatTypesForm"/>
+
+    <form-bean  name="OporaPlacesForm"
+                 type="com.hps.july.siteinfo.formbean.OporaPlacesForm"/>
+	
+    <form-bean      name="electroCounterListForm"
+                    type="com.hps.july.siteinfo.formbean.ElectroCounterListForm"/>
+
+    <form-bean      name="electroCounterForm"
+                    type="com.hps.july.siteinfo.formbean.ElectroCounterForm"/>
+
+    <form-bean      name="electroCounterInfoListForm"
+                    type="com.hps.july.siteinfo.formbean.ElectroCounterInfoListForm"/>
+
+    <form-bean      name="electroCounterInfoForm"
+                    type="com.hps.july.siteinfo.formbean.ElectroCounterInfoForm"/>
+
+</form-beans>
+
+
+  <!-- ========== Global Forward Definitions ============================== -->
+  <global-forwards>
+	<forward name="main" path="/july.jsp"/>
+  </global-forwards>
+
+
+  <!-- ========== Action Mapping Definitions ============================== -->
+  <action-mappings>
+	
+    <action   path="/ShowOSSEquipment"
+              type="com.hps.july.siteinfo.actionbean.ShowOSSEquipmentAction">
+    </action>
+    
+    <action   path="/EditEquipComment"
+              type="com.hps.july.web.util.NonNavigatedEditAction"
+              scope="request"
+              name="EquipmentCommentForm"
+              validate="true">
+              <forward name="errorgoback" path="equipcommentSuccess.jsp" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessEquipComment"
+              type="com.hps.july.siteinfo.actionbean.ProcessEquipComment"
+              name="EquipmentCommentForm"
+              scope="request"
+              validate="true">
+              <forward name="success" path="equipcommentSuccess.jsp" redirect="true"/>
+    </action>
+    
+    <action   path="/OrganizationInfo"
+              type="com.hps.july.web.util.NonNavigatedEditAction"
+              scope="request"
+              name="OrganizationPrintForm"
+              validate="true">
+    </action>
+
+    <action path="/CardPassWordUploadAction" type="com.hps.july.siteinfo.actionbean.CardPassWordUploadAction" 
+		name="CardPassWordUploadForm" 
+		scope="request" 
+		validate="true">
+    </action>
+
+    <action path="/ListPassWordUploadAction" type="com.hps.july.siteinfo.actionbean.ListPassWordUploadAction" 
+		name="ListPassWordUploadForm" 
+		scope="request" 
+		validate="true">
+    </action>
+
+	<action   path="/DeletePhoto"
+              type="com.hps.july.siteinfo.actionbean.DeletePhotoAction"
+              name="PhotoListForm"
+              scope="session"
+	          validate="true">
+			  <forward   name="photolist"      path="ShowPhotoList.do?storageplace=" redirect="true"/>
+    </action>
+	<action   path="/printCardPass"
+              type="com.hps.july.siteinfo.actionbean.PrintCardPassAction">
+			             <forward   name="cardPass"      path="cardPassWord.jsp" redirect="false"/>
+    </action>
+	<action   path="/printListPass"
+              type="com.hps.july.siteinfo.actionbean.PrintListPassAction"
+			  name="BuildListPassForm"
+			  scope="session"
+			  validate="true">
+              <forward   name="listPass"      path="listPassWord.jsp" redirect="false"/>
+			  <forward   name="error"      path="error.jsp" redirect="true"/>
+    </action>
+	<action   path="/buildListPass"
+              type="com.hps.july.siteinfo.actionbean.ShowBuildListPassAction"
+			  name="BuildListPassForm"
+			  scope="session"
+			  validate="true">
+    </action>
+
+      <action   path="/ShowOrganizationLookupList"
+                    type="com.hps.july.siteinfo.actionbean.ShowOrganizationLookupListAction"
+                    name="OrganizationLookupListForm"
+                    scope="session"
+                    validate="true">
+          </action>
+
+
+	<action   path="/ShowStreetLookupList"
+              type="com.hps.july.siteinfo.actionbean.ShowStreetLookupListAction"
+              name="StreetLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+	<action   path="/ShowSubwayLookupList"
+              type="com.hps.july.siteinfo.actionbean.ShowSubwayListAction"
+              name="SubwayLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+	<action   path="/ShowSuperRegionList"
+              type="com.hps.july.siteinfo.actionbean.ShowSuperRegionListAction"
+              name="superRegionListForm"
+              scope="session"
+                  validate="true">
+    </action>
+
+    <action   path="/EditSuperRegion"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="superRegionForm"
+                  validate="true">
+              <forward   name="errorgoback"      path="ShowSuperRegionList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessSuperRegion"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="superRegionForm"
+              scope="request"
+                  validate="true">
+                    <forward name="success" path="ShowSuperRegionList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowRegionList"
+              type="com.hps.july.siteinfo.actionbean.ShowRegionListAction"
+              name="regionListForm"
+              scope="session"
+                  validate="true">
+    </action>
+
+    <action   path="/EditRegion"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="regionForm"
+                  validate="true">
+              <forward   name="errorgoback"      path="ShowRegionList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessRegion"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="regionForm"
+              scope="request"
+                  validate="true">
+                    <forward name="success" path="ShowRegionList.do" redirect="true"/>
+    </action>
+
+
+
+
+
+
+
+<action   path="/PositionOnmap"
+			  type="com.hps.july.siteinfo.actionbean.PositionOnmapAction"
+			  name="PositionOnMapForm"
+			  scope="session"
+			  validate="true">
+			  <forward   name="viewPosition" path="EditPosition.do?action=View" redirect="true"/>
+	</action>
+
+	<action   path="/PositionListMap"
+              type="com.hps.july.siteinfo.actionbean.MapAction"
+              name="MapForm"
+              scope="session"
+	          validate="true">
+			  <forward   name="viewPosition" path="EditPosition.do?action=View" redirect="true"/>
+	</action>
+
+    <action   path="/main"
+              type="com.hps.july.siteinfo.actionbean.ShowMainAction"
+	          validate="true">
+    </action>
+
+    <action   path="/Login"
+              type="com.hps.july.siteinfo.actionbean.ShowLoginAction"
+	          validate="true">
+    </action>
+
+    <action   path="/Logout"
+              type="com.hps.july.siteinfo.actionbean.ShowLogoutAction"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowTyperesponsibilityList"
+              type="com.hps.july.siteinfo.actionbean.ShowTyperesponsibilityListAction"
+              name="TyperesponsibilityListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditTyperesponsibility"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="TyperesponsibilityForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowTyperesponsibilityList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessTyperesponsibility"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="TyperesponsibilityForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowTyperesponsibilityList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowNetzoneList"
+              type="com.hps.july.siteinfo.actionbean.ShowNetzoneListAction"
+              name="NetzoneListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditNetzone"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="NetzoneForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowNetzoneList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessNetzone"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="NetzoneForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowNetzoneList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowPositionList"
+              type="com.hps.july.siteinfo.actionbean.ShowPositionListAction"
+              name="PositionListForm"
+              scope="session"
+	          validate="true">
+			  <forward name="PositionOnmap" path="PositionOnmap.do" redirect="false"/>
+    </action>
+
+    <action   path="/AddDelPosition"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="session"
+              name="PositionForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="EditPosition.do?action=View" redirect="true"/>
+    </action>
+
+
+    <action   path="/EditPosition"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="session"
+              name="PositionForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowPositionList.do" redirect="true"/>
+    </action>
+<!--     <action   path="/EditPositionMap"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="session"
+              name="PositionMapForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowPositionList.do" redirect="true"/>
+    </action>
+ -->
+    <action   path="/ProcessPosition"
+              type="com.hps.july.jdbcpersistence.lib.AbstractJournalProcessAction"
+              name="PositionForm"
+              scope="session"
+	          validate="true">
+      	      <forward name="success" path="EditPosition.do?action=View" redirect="true"/>
+    </action>
+
+   <action   path="/ProcessArchivePosition"
+              type="com.hps.july.siteinfo.actionbean.PositionProcessArchiveAction"
+              scope="session"
+              name="PositionForm"
+	          validate="true">
+              <forward   name="success" path="ShowPositionList.do" redirect="true"/>
+    </action>
+
+
+
+    <action   path="/EditEPosition"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="EPositionForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="EditPosition.do?action=View" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessEPosition"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="EPositionForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="EditPosition.do?action=View" redirect="true"/>
+    </action>
+
+    <action   path="/ShowWorkresponsibilityList"
+              type="com.hps.july.siteinfo.actionbean.ShowWorkresponsibilityListAction"
+              name="WorkresponsibilityListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditWorkresponsibility"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="WorkresponsibilityForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowWorkresponsibilityList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessWorkresponsibility"
+              type="com.hps.july.jdbcpersistence.lib.AbstractJournalTransProcessAction"
+              name="WorkresponsibilityForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowWorkresponsibilityList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowComlineList"
+              type="com.hps.july.siteinfo.actionbean.ShowComlineListAction"
+              name="ComlineListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditComline"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="ComlineForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowComlineList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessComline"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="ComlineForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowComlineList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowPhotoList"
+              type="com.hps.july.siteinfo.actionbean.ShowPhotoListAction"
+              name="PhotoListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/EditPhoto"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="PhotoForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowPhotoList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessPhoto"
+              type="com.hps.july.web.util.FormProcessAction"
+              name="PhotoForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowPhotoList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowEquipmentList"
+              type="com.hps.july.siteinfo.actionbean.ShowEquipmentListAction"
+              name="EquipmentListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+	<action	path="/ShowBeenetList"
+		type="com.hps.july.siteinfo.actionbean.ShowBeenetListAction"
+		name="BeenetListForm"
+		scope="session"
+		validate="true">
+	</action>
+
+    <action   path="/EditBeenet"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="BeenetForm"
+	          validate="true">
+              <forward name="errorgoback" path="ShowBeenetList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessBeenet"
+              type="com.hps.july.web.util.FormProcessAction"
+              name="BeenetForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowBeenetList.do" redirect="true"/>
+    </action>
+
+
+    <action   path="/EditEquipment"
+              type="com.hps.july.siteinfo.actionbean.EditEquipmentAction"
+              scope="request"
+              name="EquipmentForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="ShowEquipmentList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessEquipment"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="EquipmentForm"
+              scope="request"
+	          validate="true">
+      	      <forward name="success" path="ShowEquipmentList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowRenterLookupList"
+              type="com.hps.july.siteinfo.actionbean.ShowRenterLookupListAction"
+              name="RenterLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowWorkerLookupList"
+              type="com.hps.july.siteinfo.actionbean.ShowWorkerLookupListAction"
+              name="WorkerLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowControllerLookupList"
+              type="com.hps.july.siteinfo.actionbean.ShowControllerLookupListAction"
+              name="ControllerLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowSwitchLookupList"
+              type="com.hps.july.siteinfo.actionbean.ShowSwitchLookupListAction"
+              name="SwitchLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+    <action   path="/ShowComlineLookupList"
+              type="com.hps.july.siteinfo.actionbean.ShowComlineLookupListAction"
+              name="ComlineLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+<!--
+    <action   path="/ShowPositionLookupList"
+              type="com.hps.july.siteinfo.actionbean.ShowPositionLookupListAction"
+              name="PositionLookupListForm"
+              scope="session"
+	          validate="true">
+    </action>
+-->
+    <action   path="/PrintEPosition"
+              type="com.hps.july.siteinfo.actionbean.PrintEPositionAction"
+              scope="request"
+              name="EPositionPrintForm"
+	          validate="true">
+              <forward   name="errorgoback"      path="EditPosition.do?action=View" redirect="true"/>
+    </action>
+
+    <action   path="/ShowEquipdetList"
+              type="com.hps.july.siteinfo.actionbean.ShowEquipdetListAction"
+              name="EquipdetListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+	<action	path="/ShowEquipdetMultiList"
+		type="com.hps.july.siteinfo.actionbean.ShowEquipdetMultiListAction"
+		name="EquipdetMultiListForm"
+		scope="session"
+		validate="true">
+	</action>
+
+    <action   path="/ShowEquipsdetList"
+              type="com.hps.july.siteinfo.actionbean.ShowEquipsdetListAction"
+              name="EquipsdetListForm"
+              scope="session"
+	          validate="true">
+    </action>
+
+<action	path="/ShowJournalList"
+	type="com.hps.july.siteinfo.actionbean.ShowJournalListAction"
+	name="JournalListForm"
+	scope="session"
+	validate="true">
+</action>
+
+<action	path="/ViewJournal"
+	type="com.hps.july.siteinfo.actionbean.ShowJournalActionAction"
+	scope="request"
+	name="JournalForm"
+	validate="true">
+	<forward name="errorgoback" path="ShowJournalList.do" redirect="true"/>
+</action>
+
+<action	path="/ProcessJournal"
+	type="com.hps.july.web.util.AbstractProcessAction"
+	name="JournalForm"
+	scope="request"
+	validate="true">
+	<forward name="success" path="ShowJournalList.do" redirect="true"/>
+</action>
+
+      <!-- from BaseStation
+
+     <action path="/ShowControllerLookupList"
+             name="ControllerLookupListForm"
+             type="com.hps.july.basestation.actionbean.ShowControllerLookupListAction"
+             scope="session" />
+
+     <action path="/ShowSwitchLookupList"
+             name="SwitchLookupListForm"
+            type="com.hps.july.basestation.actionbean.ShowSwitchLookupListAction"
+            scope="session"  />
+
+      <action path="/ShowPositionLookupList"
+             name="PositionLookupListForm"
+             type="com.hps.july.basestation.actionbean.ShowPositionLookupListAction"
+             scope="session"  />
+
+     choice antennes for sector
+
+     <action path="/EditChoiceAntennes_FBS"
+            type="com.hps.july.basestation.actionbean.EditChoiceAntennesAction"
+            name="AntennesChoiceForm"
+            scope="session">
+            <forward name="errorgoback" path="EditSector_FBS.do" redirect="true" />
+     </action>
+     <action path="/ProcessChoiceAntennes_FBS"
+            type="com.hps.july.basestation.actionbean.ProcessChoiceAntennesAction"
+            name="AntennesChoiceForm"
+            scope="session">
+            <forward name="success" path="EditSector_FBS.do" redirect="true" />
+     </action>
+
+     <action path="/EditChoiceAntennes_PBS"
+            type="com.hps.july.basestation.actionbean.EditChoiceAntennesAction"
+            name="AntennesChoiceForm"
+            scope="session">
+            <forward name="errorgoback" path="EditSector_PBS.do" redirect="true" />
+     </action>
+     <action path="/ProcessChoiceAntennes_PBS"
+            type="com.hps.july.basestation.actionbean.ProcessChoiceAntennesAction"
+            name="AntennesChoiceForm"
+            scope="session">
+            <forward name="success" path="EditSector_PBS.do" redirect="true" />
+     </action>
+
+
+     sector
+
+     <action  path="/Edit_CopySector_FBS"
+             type="com.hps.july.jdbcpersistence.lib.AbstractCopyAction"
+             name="SectorForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="EditSector_FBS.do?action=Edit" redirect="true" />
+     </action>
+     <action  path="/Edit_CopySector_PBS"
+             type="com.hps.july.jdbcpersistence.lib.AbstractCopyAction"
+             name="SectorForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="EditSector_PBS.do?action=Edit" redirect="true" />
+     </action>
+           <action  path="/Edit_CopySector_E"
+             type="com.hps.july.jdbcpersistence.lib.AbstractCopyAction"
+             name="SectorForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="EditSector_E.do?action=Edit" redirect="true" />
+     </action>
+
+     <action  path="/EditSector_FBS"
+             type="com.hps.july.basestation.actionbean.EditEquipmentAction"
+             name="SectorForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="Edit_ViewFactBaseStation.do" redirect="true" />
+     </action>
+     <action  path="/EditSector_PBS"
+             type="com.hps.july.basestation.actionbean.EditEquipmentAction"
+             name="SectorForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="Edit_ViewPlanBaseStation.do" redirect="true" />
+     </action>
+     <action  path="/EditSector_E"
+             type="com.hps.july.basestation.actionbean.EditEquipmentAction"
+             name="SectorForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="ShowAntennaSectorList.do" redirect="true" />
+     </action>
+
+     <action path="/ProcessSector_FBS"
+                 type="com.hps.july.web.util.AbstractProcessAction"
+                 name="SectorForm"
+                 validate="true"
+                 scope="session">
+            <forward name="success" path="Edit_ViewFactBaseStation.do" redirect="true" />
+     </action>
+     <action path="/ProcessSector_PBS"
+                 type="com.hps.july.web.util.AbstractProcessAction"
+                 name="SectorForm"
+                 validate="true"
+                 scope="session">
+            <forward name="success" path="Edit_ViewPlanBaseStation.do" redirect="true" />
+     </action>
+     <action path="/ProcessSector_E"
+                 type="com.hps.july.web.util.AbstractProcessAction"
+                 name="SectorForm"
+                 validate="true"
+                 scope="session">
+            <forward name="success" path="ShowAntennaSectorList.do" redirect="true" />
+     </action>
+
+
+     antennes
+
+           <action  path="/Edit_CopyAntenna_FBS"
+                   type="com.hps.july.jdbcpersistence.lib.AbstractCopyAction"
+                   name="AntennaForm"
+                   validate="true"
+                   scope="session">
+                 <forward name="errorgoback" path="EditAntenna_FBS.do?action=Edit" redirect="true" />
+           </action>
+           <action  path="/Edit_CopyAntenna_PBS"
+                   type="com.hps.july.jdbcpersistence.lib.AbstractCopyAction"
+                   name="AntennaForm"
+                   validate="true"
+                   scope="session">
+                 <forward name="errorgoback" path="EditAntenna_PBS.do?action=Edit" redirect="true" />
+           </action>
+                 <action  path="/Edit_CopyAntenna_E"
+                   type="com.hps.july.jdbcpersistence.lib.AbstractCopyAction"
+                   name="AntennaForm"
+                   validate="true"
+                   scope="session">
+                 <forward name="errorgoback" path="EditAntenna_E.do?action=Edit" redirect="true" />
+           </action>
+
+           <action  path="/EditAntenna_FBS"
+                   type="com.hps.july.basestation.actionbean.EditEquipmentAction"
+                   name="AntennaForm"
+                   validate="true"
+                   scope="session">
+                 <forward name="errorgoback" path="Edit_ViewFactBaseStation.do" redirect="true" />
+           </action>
+           <action  path="/EditAntenna_PBS"
+                   type="com.hps.july.basestation.actionbean.EditEquipmentAction"
+                   name="AntennaForm"
+                   validate="true"
+                   scope="session">
+                 <forward name="errorgoback" path="Edit_ViewPlanBaseStation.do" redirect="true" />
+           </action>
+           <action  path="/EditAntenna_E"
+                   type="com.hps.july.basestation.actionbean.EditEquipmentAction"
+                   name="AntennaForm"
+                   validate="true"
+                   scope="session">
+                 <forward name="errorgoback" path="ShowAntennaSectorList.do" redirect="true" />
+           </action>
+
+           <action path="/ProcessAntenna_FBS"
+                       type="com.hps.july.basestation.actionbean.AntennaProcessAction"
+                       name="AntennaForm"
+                       validate="true"
+                       scope="session">
+                  <forward name="success" path="Edit_ViewFactBaseStation.do" redirect="true" />
+           </action>
+           <action path="/ProcessAntenna_PBS"
+                       type="com.hps.july.basestation.actionbean.AntennaProcessAction"
+                       name="AntennaForm"
+                       validate="true"
+                       scope="session">
+                  <forward name="success" path="Edit_ViewPlanBaseStation.do" redirect="true" />
+           </action>
+           <action path="/ProcessAntenna_E"
+                       type="com.hps.july.basestation.actionbean.AntennaProcessAction"
+                       name="AntennaForm"
+                       validate="true"
+                       scope="session">
+                  <forward name="success" path="ShowAntennaSectorList.do" redirect="true" />
+           </action>
+
+
+
+
+
+
+     <action path="/ShowAntennaSectorList"
+                 type="com.hps.july.basestation.actionbean.ShowAntennaSectorListAction"
+                 name="AntennaSectorListForm"
+                 validate="true"
+                 scope="session">
+         </action>
+
+         <action path="/Process_AddEditFactBaseStation"
+                 type="com.hps.july.web.util.AbstractProcessAction"
+                 name="FactBaseStationForm"
+                 validate="true"
+                 scope="session">
+            <forward name="success" path="/Edit_ViewFactBaseStation.do" redirect="false" />
+         </action>
+
+
+
+     <action path="/Process_DeleteFactBaseStation"
+                 type="com.hps.july.web.util.AbstractProcessAction"
+                 name="FactBaseStationForm"
+                 validate="true"
+                 scope="session">
+            <forward name="success" path="ShowBaseStationList.do" redirect="true" />
+         </action>
+
+     <action  path="/Edit_ViewFactBaseStation"
+             type="com.hps.july.basestation.actionbean.EditViewBaseStationAction"
+             name="FactBaseStationForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="ShowBaseStationList.do" redirect="true" />
+     </action>
+
+     <action  path="/Edit_CopyFactBaseStation"
+             type="com.hps.july.jdbcpersistence.lib.AbstractCopyAction"
+             name="FactBaseStationForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="Edit_ViewFactBaseStation.do" redirect="true" />
+     </action>
+
+     <action  path="/Edit_EditFactBaseStation"
+             type="com.hps.july.web.util.AbstractEditAction"
+             name="FactBaseStationForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="Edit_ViewFactBaseStation.do" redirect="true" />
+     </action>
+
+     <action  path="/Edit_AddDeleteFactBaseStation"
+             type="com.hps.july.web.util.AbstractEditAction"
+             name="FactBaseStationForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="ShowBaseStationList.do" redirect="true" />
+     </action>
+
+
+
+     <action path="/Process_AddEditPlanBaseStation"
+                 type="com.hps.july.web.util.AbstractProcessAction"
+                 name="PlanBaseStationForm"
+                 validate="true"
+                 scope="session">
+            <forward name="success" path="Edit_ViewPlanBaseStation.do" redirect="true" />
+         </action>
+
+
+     <action path="/Process_DeletePlanBaseStation"
+                 type="com.hps.july.web.util.AbstractProcessAction"
+                 name="PlanBaseStationForm"
+                 validate="true"
+                 scope="session">
+            <forward name="success" path="ShowBaseStationList.do" redirect="true" />
+         </action>
+
+     <action  path="/Edit_ViewPlanBaseStation"
+             type="com.hps.july.basestation.actionbean.EditViewBaseStationAction"
+             name="PlanBaseStationForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="ShowBaseStationList.do" redirect="true" />
+     </action>
+
+     <action  path="/Edit_CopyPlanBaseStation"
+             type="com.hps.july.jdbcpersistence.lib.AbstractCopyAction"
+             name="PlanBaseStationForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="Edit_ViewPlanBaseStation.do" redirect="true" />
+     </action>
+
+     <action  path="/Edit_EditPlanBaseStation"
+             type="com.hps.july.web.util.AbstractEditAction"
+             name="PlanBaseStationForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="Edit_ViewPlanBaseStation.do" redirect="true" />
+     </action>
+
+     <action  path="/Edit_AddDeletePlanBaseStation"
+             type="com.hps.july.web.util.AbstractEditAction"
+             name="PlanBaseStationForm"
+             validate="true"
+             scope="session">
+           <forward name="errorgoback" path="ShowBaseStationList.do" redirect="true" />
+     </action>
+
+     <action path="/ShowAntennaResLookupList"
+             type="com.hps.july.basestation.actionbean.ShowAntennaResLookupListAction"
+             name="AntennaResLookupListForm"
+             validate="true"
+             scope="session">
+     </action>
+     <action path="/ShowRestypeLookupList"
+             type="com.hps.july.basestation.actionbean.ShowRestypeLookupListAction"
+             name="RestypeLookupListForm"
+             scope="session"
+             validate="true">
+     </action>
+     <action path="/ShowRessbtypeLookupList"
+             type="com.hps.july.basestation.actionbean.ShowRessbtypeLookupListAction"
+             name="RessbtypeLookupListForm"
+             scope="session"
+             validate="true">
+     </action>
+-->
+<!--òèïû äîêóìåíòîâ-->
+    <action   path="/ShowSiteDocTypeList"
+              type="com.hps.july.siteinfo.actionbean.ShowSiteDocTypeListAction"
+              name="SiteDocTypeListForm"
+              scope="request">
+    </action>
+    <action   path="/EditSiteDocType"
+              type="com.hps.july.jdbcpersistence.lib.EditAction"
+              name="SiteDocTypeForm"
+              scope="request">
+      <forward   name="errorgoback"      path="ShowSiteDocTypeList.do" redirect="true"/>
+    </action>
+    <action   path="/ProcessSiteDocType"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="SiteDocTypeForm"
+              scope="request">
+      <forward   name="success" path="ShowSiteDocTypeList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowAntennaPlacesList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="AntennaPlacesListForm"
+              scope="request">
+    </action>
+    
+    <action   path="/EditAntennaPlaces"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="AntennaPlacesForm"
+	            validate="true">
+        <forward name="errorgoback" path="ShowAntennaPlacesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessAntennaPlaces"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="AntennaPlacesForm"
+              scope="request"
+	            validate="true">
+      	<forward name="success" path="ShowAntennaPlacesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowApparatPlacesList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="ApparatPlacesListForm"
+              scope="request">
+    </action>
+
+    <action   path="/EditApparatPlaces"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="ApparatPlacesForm"
+	            validate="true">
+        <forward name="errorgoback" path="ShowApparatPlacesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessApparatPlaces"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="ApparatPlacesForm"
+              scope="request"
+	            validate="true">
+      	<forward name="success" path="ShowApparatPlacesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowApparatPlaceTypesList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="ApparatPlaceTypesListForm"
+              scope="request">
+    </action>
+
+    <action   path="/EditApparatPlaceTypes"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="ApparatPlaceTypesForm"
+	            validate="true">
+        <forward name="errorgoback" path="ShowApparatPlaceTypesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessApparatPlaceTypes"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="ApparatPlaceTypesForm"
+              scope="request"
+	            validate="true">
+      	<forward name="success" path="ShowApparatPlaceTypesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowApparatTypesList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="ApparatTypesListForm"
+              scope="request">
+    </action>
+
+    <action   path="/EditApparatTypes"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="ApparatTypesForm"
+	            validate="true">
+        <forward name="errorgoback" path="ShowApparatTypesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessApparatTypes"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="ApparatTypesForm"
+              scope="request"
+	            validate="true">
+      	<forward name="success" path="ShowApparatTypesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowOporaPlacesList"
+              type="com.hps.july.web.util.BrowseAction"
+              name="OporaPlacesListForm"
+              scope="request">
+    </action>
+
+    <action   path="/EditOporaPlaces"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="OporaPlacesForm"
+	            validate="true">
+        <forward name="errorgoback" path="ShowOporaPlacesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ProcessOporaPlaces"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="OporaPlacesForm"
+              scope="request"
+	            validate="true">
+      	<forward name="success" path="ShowOporaPlacesList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowElectroCounterList"
+              type="com.hps.july.siteinfo.actionbean.ShowElectroCounterListAction"
+              name="electroCounterListForm"
+              scope="session"
+	            validate="true">
+	          <forward name="printXLS" path="electroCounterListXLS.jsp" redirect="false"/>
+    </action>
+
+    <action   path="/EditElectroCounter"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="electroCounterForm"
+                  validate="true">
+              <forward   name="errorgoback" path="ShowElectroCounterList.do" redirect="true"/>
+    </action>
+    <action   path="/ProcessElectroCounter"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="electroCounterForm"
+              scope="request"
+                  validate="true">
+                    <forward name="success" path="ShowElectroCounterList.do" redirect="true"/>
+    </action>
+
+    <action   path="/ShowElectroCounterInfoList"
+              type="com.hps.july.siteinfo.actionbean.ShowElectroCounterInfoListAction"
+              name="electroCounterInfoListForm"
+              scope="session"
+	            validate="true">
+    </action>
+
+    <action   path="/EditElectroCounterInfo"
+              type="com.hps.july.web.util.AbstractEditAction"
+              scope="request"
+              name="electroCounterInfoForm"
+                  validate="true">
+              <forward   name="errorgoback" path="ShowElectroCounterInfoList.do" redirect="true"/>
+    </action>
+    <action   path="/ProcessElectroCounterInfo"
+              type="com.hps.july.web.util.AbstractProcessAction"
+              name="electroCounterInfoForm"
+              scope="request"
+                  validate="true">
+                    <forward name="success" path="ShowElectroCounterInfoList.do" redirect="true"/>
+    </action>
+
+  </action-mappings>
+
+</struts-config>

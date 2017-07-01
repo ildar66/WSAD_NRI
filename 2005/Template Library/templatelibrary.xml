@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<LIBRARY name="Template Library" description="a library" version="5.1.1">
+	<CATEGORY name="Solution Templates" description="Templates that provide solutions for specific enterprise needs.">
+		<TEMPLATE ref="Resource Reservation"/>	
+		<TEMPLATE ref="Address Book"/>				
+	</CATEGORY>
+	<CATEGORY name="IT Templates" description="Templates that provide building blocks used for constructing applications.">
+    		<TEMPLATE ref="Searchable List-Details"/>
+		<TEMPLATE ref="Login"/>		
+	</CATEGORY>
+	<CATEGORY name="Tutorial" description="Template used for practice purposes in the Template Application wizard tutorial.">
+		<TEMPLATE ref="Shopping Cart"/>
+	</CATEGORY>
+</LIBRARY>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:accessbean="accessbean.xmi" xmlns:ejb="ejb.xmi">
+  <accessbean:EJBShadow xmi:id="EJBShadow_1152109767437" name="CfgAnten2Sector" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1152109767437" name="CfgAnten2SectorAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152109767437" name="id_sect" type="int" getterName="getId_sect"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152109767438" name="datasource" type="java.lang.Integer" getterName="getDatasource" setterName="setDatasource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152109767439" name="objectStatus" type="java.lang.String" getterName="getObjectStatus" setterName="setObjectStatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152109767440" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152109767441" name="id_anten" type="int" getterName="getId_anten"/>
+      <nullConstructor xmi:id="MethodElement_1152109767437" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgAnten2SectorKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAnten2Sector"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1152109767437" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1152109767438" name="id_anten" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1152109767439" name="id_sect" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAnten2Sector"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1161352974968" name="CfgAntenna" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1161352974968" name="CfgAntennaAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974968" name="groundresource" type="java.lang.Integer" getterName="getGroundresource" setterName="setGroundresource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974969" name="byhand" type="java.lang.Boolean" getterName="getByhand" setterName="setByhand"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974970" name="resource" type="int" getterName="getResource" setterName="setResource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974971" name="kind_ant" type="java.lang.String" getterName="getKind_ant" setterName="setKind_ant"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974972" name="nakl" type="java.math.BigDecimal" getterName="getNakl" setterName="setNakl"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974973" name="az_variation" type="java.lang.String" getterName="getAz_variation" setterName="setAz_variation"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974974" name="nakl_variation" type="java.lang.String" getterName="getNakl_variation" setterName="setNakl_variation"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974975" name="electricaltilt" type="java.math.BigDecimal" getterName="getElectricaltilt" setterName="setElectricaltilt"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974976" name="num_ant" type="java.lang.String" getterName="getNum_ant" setterName="setNum_ant"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974977" name="locationtype" type="java.lang.String" getterName="getLocationtype" setterName="setLocationtype"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974978" name="cableres" type="java.lang.Integer" getterName="getCableres" setterName="setCableres"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974979" name="datasource" type="int" getterName="getDatasource" setterName="setDatasource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974980" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974981" name="operator" type="java.lang.Integer" getterName="getOperator" setterName="setOperator"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974982" name="qty" type="java.math.BigDecimal" getterName="getQty" setterName="setQty"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974983" name="input_power" type="java.math.BigDecimal" getterName="getInput_power" setterName="setInput_power"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974984" name="id_anten" type="int" getterName="getId_anten"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974985" name="groundcnt" type="java.lang.Integer" getterName="getGroundcnt" setterName="setGroundcnt"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974986" name="commcable" type="java.lang.Boolean" getterName="getCommcable" setterName="setCommcable"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974987" name="kswn" type="java.math.BigDecimal" getterName="getKswn" setterName="setKswn"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974988" name="len_cable" type="java.math.BigDecimal" getterName="getLen_cable" setterName="setLen_cable"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974989" name="storageCard" type="java.lang.Integer" getterName="getStorageCard" setterName="setStorageCard"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974990" name="h_set1" type="java.math.BigDecimal" getterName="getH_set1" setterName="setH_set1"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974991" name="az_ant" type="java.math.BigDecimal" getterName="getAz_ant" setterName="setAz_ant"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974992" name="objectStatus" type="java.lang.String" getterName="getObjectStatus" setterName="setObjectStatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161352974993" name="equipment" type="int" getterName="getEquipment" setterName="setEquipment"/>
+      <nullConstructor xmi:id="MethodElement_1161352974984" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgAntennaKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntenna"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1161352974984" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1161352974985" name="id_anten" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntenna"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1160037974625" name="CfgAntennaCable" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1160037974625" name="CfgAntennaCableAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974625" name="datasource" type="int" getterName="getDatasource" setterName="setDatasource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974626" name="groundresource" type="java.lang.Integer" getterName="getGroundresource" setterName="setGroundresource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974627" name="lenCable" type="java.math.BigDecimal" getterName="getLenCable" setterName="setLenCable"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974628" name="objectstatus" type="java.lang.String" getterName="getObjectstatus" setterName="setObjectstatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974629" name="id_anten" type="int" getterName="getId_anten" setterName="setId_anten"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974630" name="storagecard" type="java.lang.Integer" getterName="getStoragecard" setterName="setStoragecard"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974631" name="cableres" type="int" getterName="getCableres" setterName="setCableres"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974632" name="groundcnt" type="java.lang.Integer" getterName="getGroundcnt" setterName="setGroundcnt"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160037974633" name="qty" type="java.math.BigDecimal" getterName="getQty" setterName="setQty"/>
+      <nullConstructor xmi:id="MethodElement_1160037974625" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgAntennaCableKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntennaCable"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1160037974625" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1160037974626" name="idCable" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntennaCable"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1161353577625" name="CfgAntennaWorkBand" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1161353577625" name="CfgAntennaWorkBandAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161353577625" name="kind_ant" type="java.lang.String" getterName="getKind_ant" setterName="setKind_ant"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161353577626" name="objectstatus" type="java.lang.String" getterName="getObjectstatus" setterName="setObjectstatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161353577627" name="kswn" type="java.math.BigDecimal" getterName="getKswn" setterName="setKswn"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1161353577628" name="electricangle" type="java.math.BigDecimal" getterName="getElectricangle" setterName="setElectricangle"/>
+      <nullConstructor xmi:id="MethodElement_1161353577625" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgAntennaWorkBandKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntennaWorkBand"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1161353577625" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1161353577626" name="idanten" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1161353577627" name="band" type="short" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgAntennaWorkBand"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1180694290562" name="CfgBasestation" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1180694290562" name="CfgBasestationAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290562" name="state1800" type="java.lang.String" getterName="getState1800" setterName="setState1800"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290563" name="pwr_val" type="java.math.BigDecimal" getterName="getPwr_val" setterName="setPwr_val"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290564" name="prefixcellid" type="java.lang.Integer" getterName="getPrefixcellid" setterName="setPrefixcellid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290565" name="date_bldbeg" type="java.sql.Date" getterName="getDate_bldbeg" setterName="setDate_bldbeg"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290566" name="manufid" type="java.lang.Integer" getterName="getManufid" setterName="setManufid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290567" name="date_connect" type="java.sql.Date" getterName="getDate_connect" setterName="setDate_connect"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290568" name="pwr_cat" type="java.lang.String" getterName="getPwr_cat" setterName="setPwr_cat"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290569" name="apartmentid" type="java.lang.Integer" getterName="getApartmentid" setterName="setApartmentid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290570" name="equipcomment" type="java.lang.String" getterName="getEquipcomment" setterName="setEquipcomment"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290571" name="antplaceid" type="java.lang.Integer" getterName="getAntplaceid" setterName="setAntplaceid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290572" name="date_assemb_afs" type="java.sql.Date" getterName="getDate_assemb_afs" setterName="setDate_assemb_afs"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290573" name="date_assemb2" type="java.sql.Date" getterName="getDate_assemb2" setterName="setDate_assemb2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290574" name="h_obj_ant" type="java.math.BigDecimal" getterName="getH_obj_ant" setterName="setH_obj_ant"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290575" name="pwr_res_cat" type="java.lang.String" getterName="getPwr_res_cat" setterName="setPwr_res_cat"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290576" name="date_pr" type="java.sql.Date" getterName="getDate_pr" setterName="setDate_pr"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290577" name="pwr_reserve" type="java.lang.String" getterName="getPwr_reserve" setterName="setPwr_reserve"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290578" name="logictypeid" type="java.lang.Integer" getterName="getLogictypeid" setterName="setLogictypeid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290579" name="name" type="java.lang.String" getterName="getName" setterName="setName"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290580" name="state900" type="java.lang.String" getterName="getState900" setterName="setState900"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290581" name="net_stage" type="java.lang.Short" getterName="getNet_stage" setterName="setNet_stage"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290582" name="stand_resource" type="java.lang.Integer" getterName="getStand_resource" setterName="setStand_resource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290583" name="st_transp" type="java.lang.String" getterName="getSt_transp" setterName="setSt_transp"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290584" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290585" name="isarendats" type="java.lang.Boolean" getterName="getIsarendats" setterName="setIsarendats"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290586" name="date_test2" type="java.sql.Date" getterName="getDate_test2" setterName="setDate_test2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290587" name="numdcspermit" type="java.lang.String" getterName="getNumdcspermit" setterName="setNumdcspermit"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290588" name="on_air" type="java.lang.Boolean" getterName="getOn_air" setterName="setOn_air"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290589" name="date_onair2" type="java.sql.Date" getterName="getDate_onair2" setterName="setDate_onair2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290590" name="n_stoek" type="java.lang.Short" getterName="getN_stoek" setterName="setN_stoek"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290591" name="e1_qty" type="java.lang.Short" getterName="getE1_qty" setterName="setE1_qty"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290592" name="date_onair" type="java.sql.Date" getterName="getDate_onair" setterName="setDate_onair"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290593" name="repeater" type="boolean" getterName="isRepeater" setterName="setRepeater"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290594" name="date_pr2" type="java.sql.Date" getterName="getDate_pr2" setterName="setDate_pr2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290595" name="equipment" type="int" getterName="getEquipment"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290596" name="softversion" type="java.lang.String" getterName="getSoftversion" setterName="setSoftversion"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290597" name="objectStatus" type="java.lang.String" getterName="getObjectStatus" setterName="setObjectStatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290598" name="date_connect2" type="java.sql.Date" getterName="getDate_connect2" setterName="setDate_connect2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290599" name="date_test" type="java.sql.Date" getterName="getDate_test" setterName="setDate_test"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290600" name="con_type" type="java.lang.String" getterName="getCon_type" setterName="setCon_type"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290601" name="date_bldbeg2" type="java.sql.Date" getterName="getDate_bldbeg2" setterName="setDate_bldbeg2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290602" name="date_assemb" type="java.sql.Date" getterName="getDate_assemb" setterName="setDate_assemb"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290603" name="controller" type="java.lang.Integer" getterName="getController" setterName="setController"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290604" name="date_assemb_afs2" type="java.sql.Date" getterName="getDate_assemb_afs2" setterName="setDate_assemb_afs2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290605" name="time_backup" type="java.lang.String" getterName="getTime_backup" setterName="setTime_backup"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290606" name="numgsmpermit" type="java.lang.String" getterName="getNumgsmpermit" setterName="setNumgsmpermit"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290607" name="number" type="int" getterName="getNumber" setterName="setNumber"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1180694290608" name="type" type="java.lang.String" getterName="getType" setterName="setType"/>
+      <nullConstructor xmi:id="MethodElement_1180694290562" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgBasestationKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgBasestation"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1180694290562" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1180694290563" name="equipment" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgBasestation"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1152109767453" name="CfgBsstands" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1152110190312" name="CfgBsstandsAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152110190312" name="stnomer" type="java.lang.String" getterName="getStnomer" setterName="setStnomer"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152110190313" name="resource" type="java.lang.Integer" getterName="getResource" setterName="setResource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152110190314" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152110190315" name="equipment" type="int" getterName="getEquipment" setterName="setEquipment"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152110190316" name="objectStatus" type="java.lang.String" getterName="getObjectStatus" setterName="setObjectStatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152110190317" name="storagecard" type="java.lang.Integer" getterName="getStoragecard" setterName="setStoragecard"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152110190318" name="standid" type="int" getterName="getStandid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152110190319" name="qty" type="java.math.BigDecimal" getterName="getQty" setterName="setQty"/>
+      <nullConstructor xmi:id="MethodElement_1152110190312" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgBsstandsKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgBsstands"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1152110190312" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1152110190313" name="standid" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgBsstands"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1181125258437" name="CfgEquipObjCfg2Sector" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1181125258437" name="CfgEquipObjCfg2SectorAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1181125258437" name="id_sect" type="int" getterName="getId_sect"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1181125258438" name="objectstatus" type="java.lang.String" getterName="getObjectstatus" setterName="setObjectstatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1181125258439" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1181125258440" name="objcfgid" type="int" getterName="getObjcfgid"/>
+      <nullConstructor xmi:id="MethodElement_1181125258437" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgEquipObjCfg2SectorKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgEquipObjCfg2Sector"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1181125258437" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1181125258438" name="objcfgid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1181125258439" name="id_sect" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgEquipObjCfg2Sector"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1177415719656" name="CfgEquipObjectsCfg" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1177415719656" name="CfgEquipObjectsCfgAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177415719656" name="objectStatus" type="java.lang.String" getterName="getObjectStatus" setterName="setObjectStatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177415719657" name="parentobjcfgid" type="java.lang.Integer" getterName="getParentobjcfgid" setterName="setParentobjcfgid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177415719658" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177415719659" name="equipment" type="int" getterName="getEquipment" setterName="setEquipment"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177415719660" name="objcfgid" type="int" getterName="getObjcfgid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177415719661" name="storagecard" type="java.lang.Integer" getterName="getStoragecard" setterName="setStoragecard"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1177415719662" name="qty" type="java.math.BigDecimal" getterName="getQty" setterName="setQty"/>
+      <nullConstructor xmi:id="MethodElement_1177415719656" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgEquipObjectsCfgKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgEquipObjectsCfg"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1177415719656" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1177415719657" name="objcfgid" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgEquipObjectsCfg"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1152172773437" name="CfgSavedConfig" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1152173762437" name="CfgSavedConfigAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762437" name="name" type="java.lang.String" getterName="getName" setterName="setName"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762438" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <nullConstructor xmi:id="MethodElement_1152173762437" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgSavedConfigKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgSavedConfig"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1152173762437" name="savconfigid" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgSavedConfig"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1152109767455" name="CfgSector" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1152172773438" name="CfgSectorAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773444" name="tx_pwr" type="java.math.BigDecimal" getterName="getTx_pwr" setterName="setTx_pwr"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773445" name="band" type="java.lang.Short" getterName="getBand" setterName="setBand"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773446" name="cellinfo" type="java.lang.String" getterName="getCellinfo" setterName="setCellinfo"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773447" name="rac" type="java.lang.Integer" getterName="getRac" setterName="setRac"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773448" name="num_sect" type="java.lang.String" getterName="getNum_sect" setterName="setNum_sect"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773449" name="trx_num" type="java.lang.Integer" getterName="getTrx_num" setterName="setTrx_num"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773450" name="bcc" type="java.lang.Short" getterName="getBcc" setterName="setBcc"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773451" name="tx_set_pwr" type="java.math.BigDecimal" getterName="getTx_set_pwr" setterName="setTx_set_pwr"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773452" name="has_buster" type="java.lang.Boolean" getterName="getHas_buster" setterName="setHas_buster"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773453" name="is_hr" type="java.lang.Boolean" getterName="getIs_hr" setterName="setIs_hr"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773454" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773455" name="has_lna" type="java.lang.Boolean" getterName="getHas_lna" setterName="setHas_lna"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773456" name="cellname" type="java.lang.Integer" getterName="getCellname" setterName="setCellname"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773457" name="port_abis" type="java.lang.Integer" getterName="getPort_abis" setterName="setPort_abis"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773458" name="tx_ovr_set_pwr" type="java.math.BigDecimal" getterName="getTx_ovr_set_pwr" setterName="setTx_ovr_set_pwr"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773459" name="has_flt" type="java.lang.Boolean" getterName="getHas_flt" setterName="setHas_flt"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773460" name="equipment" type="int" getterName="getEquipment" setterName="setEquipment"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773461" name="ddk" type="java.lang.Boolean" getterName="getDdk" setterName="setDdk"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773462" name="cap_gprs" type="java.lang.Boolean" getterName="getCap_gprs" setterName="setCap_gprs"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773463" name="tx_pwr2" type="java.math.BigDecimal" getterName="getTx_pwr2" setterName="setTx_pwr2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773464" name="azimut" type="java.math.BigDecimal" getterName="getAzimut" setterName="setAzimut"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773465" name="objectStatus" type="java.lang.String" getterName="getObjectStatus" setterName="setObjectStatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773466" name="num_po" type="java.lang.String" getterName="getNum_po" setterName="setNum_po"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773467" name="con_abis" type="java.lang.String" getterName="getCon_abis" setterName="setCon_abis"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773468" name="lac" type="java.lang.Integer" getterName="getLac" setterName="setLac"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773469" name="trx_num2" type="java.lang.Integer" getterName="getTrx_num2" setterName="setTrx_num2"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773470" name="conf" type="java.lang.String" getterName="getConf" setterName="setConf"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773471" name="trx_ovr_num" type="java.lang.Integer" getterName="getTrx_ovr_num" setterName="setTrx_ovr_num"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773472" name="name_sect" type="java.lang.String" getterName="getName_sect" setterName="setName_sect"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773473" name="id_sect" type="int" getterName="getId_sect"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773474" name="operator" type="java.lang.Integer" getterName="getOperator" setterName="setOperator"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773475" name="datasource" type="int" getterName="getDatasource" setterName="setDatasource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773476" name="standid" type="java.lang.Integer" getterName="getStandid" setterName="setStandid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773477" name="ncc" type="java.lang.Short" getterName="getNcc" setterName="setNcc"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773478" name="power" type="java.math.BigDecimal" getterName="getPower" setterName="setPower"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773479" name="byhand" type="java.lang.Boolean" getterName="getByhand" setterName="setByhand"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152172773480" name="bts_number" type="java.lang.String" getterName="getBts_number" setterName="setBts_number"/>
+      <nullConstructor xmi:id="MethodElement_1152172773438" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgSectorKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgSector"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1152172773439" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1152172773440" name="id_sect" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgSector"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1152172773438" name="CfgStoragecard" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1152173762438" name="CfgStoragecardAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762439" name="owner" type="int" getterName="getOwner" setterName="setOwner"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762440" name="i13ndate" type="java.sql.Date" getterName="getI13ndate" setterName="setI13ndate"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762441" name="comment" type="java.lang.String" getterName="getComment" setterName="setComment"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762442" name="broken" type="java.lang.Boolean" getterName="getBroken" setterName="setBroken"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762443" name="resource" type="int" getterName="getResource" setterName="setResource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762444" name="isapproved" type="boolean" getterName="isIsapproved" setterName="setIsapproved"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762445" name="dateclosed" type="java.sql.Date" getterName="getDateclosed" setterName="setDateclosed"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762446" name="closed" type="java.lang.String" getterName="getClosed" setterName="setClosed"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762447" name="storageplace" type="java.lang.Integer" getterName="getStorageplace" setterName="setStorageplace"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762448" name="serialnumber" type="java.lang.String" getterName="getSerialnumber" setterName="setSerialnumber"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762449" name="place" type="java.lang.String" getterName="getPlace" setterName="setPlace"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762450" name="qty_broken" type="java.math.BigDecimal" getterName="getQty_broken" setterName="setQty_broken"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762451" name="qty" type="java.math.BigDecimal" getterName="getQty" setterName="setQty"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762452" name="localserial" type="java.lang.String" getterName="getLocalserial" setterName="setLocalserial"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762453" name="configuration" type="java.lang.String" getterName="getConfiguration" setterName="setConfiguration"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762454" name="notes" type="java.lang.String" getterName="getNotes" setterName="setNotes"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762455" name="policy" type="java.lang.String" getterName="getPolicy" setterName="setPolicy"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762456" name="party" type="java.lang.String" getterName="getParty" setterName="setParty"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762457" name="document" type="java.lang.Integer" getterName="getDocument" setterName="setDocument"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762458" name="boxed" type="java.lang.Boolean" getterName="getBoxed" setterName="setBoxed"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762459" name="inventserial" type="java.lang.String" getterName="getInventserial" setterName="setInventserial"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762460" name="contract" type="java.lang.Integer" getterName="getContract" setterName="setContract"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762461" name="price" type="java.math.BigDecimal" getterName="getPrice" setterName="setPrice"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762462" name="dateopened" type="java.sql.Date" getterName="getDateopened" setterName="setDateopened"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762463" name="isfictserial" type="boolean" getterName="isIsfictserial" setterName="setIsfictserial"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762464" name="objectStatus" type="java.lang.String" getterName="getObjectStatus" setterName="setObjectStatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762465" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1152173762466" name="storagecard" type="int" getterName="getStoragecard"/>
+      <nullConstructor xmi:id="MethodElement_1152173762438" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgStoragecardKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgStoragecard"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1152173762438" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1152173762439" name="storagecard" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgStoragecard"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1160121644656" name="CfgTrx" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1160121644656" name="CfgTrxAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121644656" name="objectstatus" type="java.lang.String" getterName="getObjectstatus" setterName="setObjectstatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121644657" name="storagecard" type="java.lang.Integer" getterName="getStoragecard" setterName="setStoragecard"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121644658" name="resource" type="int" getterName="getResource" setterName="setResource"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121644659" name="standid" type="int" getterName="getStandid" setterName="setStandid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121644660" name="qty" type="java.math.BigDecimal" getterName="getQty" setterName="setQty"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121715906" name="trxid" type="int" getterName="getTrxid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121715907" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160576773390" name="equipment" type="int" getterName="getEquipment" setterName="setEquipment"/>
+      <nullConstructor xmi:id="MethodElement_1160121644656" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgTrxKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgTrx"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1160121644656" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1160121644657" name="trxid" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgTrx"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1160121644657" name="CfgTrx2Sector" factoryPackageName="com.hps.july.config.beans">
+    <accessBeans xmi:type="accessbean:Type2AccessBean" xmi:id="Type2AccessBean_1160121715906" name="CfgTrx2SectorAccessBean" package="com.hps.july.config.beans" version="WSAD-1.0">
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121715908" name="objectstatus" type="java.lang.String" getterName="getObjectstatus" setterName="setObjectstatus"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121715909" name="id_sect" type="int" getterName="getId_sect"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121715910" name="trxid" type="int" getterName="getTrxid"/>
+      <copyHelperProperties xmi:id="CopyHelperProperty_1160121715911" name="savconfigid" type="int" getterName="getSavconfigid"/>
+      <nullConstructor xmi:id="MethodElement_1160121715906" name="findByPrimaryKey" parms="com.hps.july.config.beans.CfgTrx2SectorKey" type="Home">
+        <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgTrx2Sector"/>
+      </nullConstructor>
+      <nullConstructorParameters xmi:id="Parameter_1160121715906" name="savconfigid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1160121715907" name="trxid" type="int" isFieldFromKey="true"/>
+      <nullConstructorParameters xmi:id="Parameter_1160121715908" name="id_sect" type="int" isFieldFromKey="true"/>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CfgTrx2Sector"/>
+  </accessbean:EJBShadow>
+</xmi:XMI>

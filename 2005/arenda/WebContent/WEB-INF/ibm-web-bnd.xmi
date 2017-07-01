@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp"/>
+  <resRefBindings xmi:id="ResourceRefBinding_1152097121468" jndiName="jms/DefaultMailQueue">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1152097121468"/>
+  </resRefBindings>
+  <resRefBindings xmi:id="ResourceRefBinding_1152097224863" jndiName="jms/DefaultMailQCF">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1152097224863"/>
+  </resRefBindings>
+  <resRefBindings xmi:id="ResourceRefBinding_1152784139041" jndiName="julysec">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1152784139041"/>
+  </resRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024765" jndiName="com/hps/july/persistence/Account">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024766" jndiName="com/hps/july/persistence/LeaseOnPosition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_2"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024767" jndiName="com/hps/july/persistence/LeaseContract">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_3"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024768" jndiName="com/hps/july/persistence/LeaseChargeRule">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_4"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024769" jndiName="com/hps/july/persistence/LeaseCharges">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_5"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024770" jndiName="com/hps/july/persistence/LeaseMutualContracts">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_6"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024771" jndiName="com/hps/july/persistence/SearchGroup">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_7"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024772" jndiName="com/hps/july/persistence/Organization">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_8"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024773" jndiName="com/hps/july/persistence/Worker">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_9"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024774" jndiName="com/hps/july/persistence/Resource">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_10"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024775" jndiName="com/hps/july/persistence/ResourceSubType">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_11"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024776" jndiName="com/hps/july/persistence/ResourceType">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_12"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024777" jndiName="com/hps/july/persistence/SearchGroupping">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_13"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024778" jndiName="com/hps/july/commonbean/KeyGenerator">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_14"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024779" jndiName="com/hps/july/persistence/Currency">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_15"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024780" jndiName="com/hps/july/persistence/LeaseMutualActNew">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_16"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024781" jndiName="com/hps/july/persistence/LeaseMutualReglament">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_17"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024782" jndiName="com/hps/july/persistence/LeaseMutualRuleNew">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_18"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024783" jndiName="com/hps/july/persistence/LeasePayment">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_19"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024784" jndiName="com/hps/july/persistence/LeasePayRule">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_20"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024785" jndiName="com/hps/july/persistence/LeaseMutualPhone">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_21"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024786" jndiName="com/hps/july/persistence/Position">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_22"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024787" jndiName="com/hps/july/persistence/LeaseArendaAgreementNew">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_23"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024788" jndiName="com/hps/july/persistence/LeasePayOrder">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_24"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024789" jndiName="com/hps/july/arenda/sessionbean/ArendaDocumentProcessor">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_25"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024790" jndiName="com/hps/july/arenda/sessionbean/ArendaRuleProcessor">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_26"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024791" jndiName="com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessor">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_27"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024792" jndiName="com/hps/july/persistence/LeaseTaskStart">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_28"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024793" jndiName="com/hps/july/persistence/LeaseTaskJournal">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_29"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024794" jndiName="com/hps/july/persistence/Operator">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_30"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024795" jndiName="com/hps/july/arenda/sessionbean/CalculateArendaAct">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_31"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024796" jndiName="com/hps/july/arenda/sessionbean/LeaseSaldoProcessor">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_32"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024797" jndiName="com/hps/july/persistence/LeaseSaldo">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_33"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024798" jndiName="com/hps/july/persistence/LeaseCalcRate">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_34"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024799" jndiName="com/hps/july/persistence/LeaseMRCntPrior">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_35"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024800" jndiName="com/hps/july/persistence/LeaseAbonentBAN">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_36"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024801" jndiName="com/hps/july/persistence/LeaseAbonentPhone">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_37"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024802" jndiName="com/hps/july/persistence/AbonentBill">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_38"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024803" jndiName="com/hps/july/persistence/AbonentBillPos">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_39"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024804" jndiName="com/hps/july/persistence/LeaseAbonentBEN">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_40"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024805" jndiName="com/hps/july/arenda/sessionbean/ArendaTransactionMethod">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_41"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024807" jndiName="com/hps/july/persistence/LeaseAbonentDNOP">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_43"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024808" jndiName="com/hps/july/persistence/PIEReference">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_44"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024809" jndiName="com/hps/july/persistence/PIEDopInfoContr">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_45"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024810" jndiName="com/hps/july/persistence/DopInfoLPayment">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_46"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024811" jndiName="com/hps/july/platinum/sessionbean/ArendaPlatinumProcessor">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_47"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024812" jndiName="com/hps/july/persistence/NamedValue">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_48"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024813" jndiName="com/hps/july/persistence/PIEBudjet">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_49"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024814" jndiName="com/hps/july/persistence/PIEExpence">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_50"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024815" jndiName="com/hps/july/arenda/billing/Pie2Nri">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_51"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024816" jndiName="com/hps/july/arenda/billing/Transfer">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_52"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024817" jndiName="com/hps/july/arenda/billing/BufferNri2Nri">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_53"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024818" jndiName="com/hps/july/persistence/LeaseSchetFakt">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_54"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024819" jndiName="com/hps/july/persistence/LeasePosSchetFakt">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_55"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024820" jndiName="com/hps/july/persistence/LeaseMutualActInfo">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_56"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133171024821" jndiName="com/hps/july/persistence/LeaseResBil2NRI">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_57"/>
+  </ejbRefBindings>
+</webappbnd:WebAppBinding>

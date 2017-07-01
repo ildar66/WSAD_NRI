@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path="JavaSource"/>
+    <classpathentry kind="var"
+        path="SERVERJDK_50_PLUGINDIR/jre/lib/rt.jar" sourcepath="SERVERJDK_50_PLUGINDIR/src.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/j2ee.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/servletevent.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/ivjejb35.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/runtime.jar"/>
+    <classpathentry exported="true" kind="src" path="/common"/>
+    <classpathentry exported="true" kind="src" path="/webcommon"/>
+    <classpathentry exported="true" kind="lib"
+        path="/july/log4j-1.2.11.jar" sourcepath="/july/log4j-1.2.11.jar"/>
+    <classpathentry exported="true" kind="lib"
+        path="/july/terrabyteClient.jar" sourcepath="/july/terrabyteClient.jar"/>
+    <classpathentry exported="true" kind="lib"
+        path="/july/terrabyteCore.jar" sourcepath="/july/terrabyteCore.jar"/>
+    <classpathentry exported="true" kind="lib" path="/july/auth.jar" sourcepath="/july/auth.jar"/>
+    <classpathentry exported="true" kind="lib" path="/july/commons.jar" sourcepath="/july/commons.jar"/>
+    <classpathentry exported="true" kind="lib"
+        path="/july/july-mail-client.jar" sourcepath="/july/july-mail-client.jar"/>
+    <classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

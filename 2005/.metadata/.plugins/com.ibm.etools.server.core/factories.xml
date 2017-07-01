@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+   <resource factory-id="com.ibm.websphere.v51.server.base" path="/Servers/nriServer.wsi"/>
+   <resource factory-id="com.ibm.websphere.v51.configuration.base" path="/Servers/nriServer.wsc"/>
+</resources>

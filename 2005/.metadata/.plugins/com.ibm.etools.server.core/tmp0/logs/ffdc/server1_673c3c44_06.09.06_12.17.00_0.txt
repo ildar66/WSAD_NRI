@@ -1,0 +1,238 @@
+------Start of DE processing------ = [06.09.06 12:16:59:803 MSD] , key = java.net.SocketException com.ibm.ws.webcontainer.srt.BufferedWriter.writeOut 416
+Exception = java.net.SocketException
+Source = com.ibm.ws.webcontainer.srt.BufferedWriter.writeOut
+probeid = 416
+Stack Dump = java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java(Compiled Code))
+	at java.net.SocketOutputStream.write(SocketOutputStream.java(Compiled Code))
+	at com.ibm.ws.io.Stream.write(Stream.java:26)
+	at com.ibm.ws.io.WriteStream.flushMyBuf(WriteStream.java(Inlined Compiled Code))
+	at com.ibm.ws.io.WriteStream.write(WriteStream.java(Compiled Code))
+	at com.ibm.ws.http.ResponseStream.writeChunk(ResponseStream.java:284)
+	at com.ibm.ws.http.ResponseStream.flushBuffer(ResponseStream.java:210)
+	at com.ibm.ws.http.ResponseStream.write(ResponseStream.java:137)
+	at com.ibm.ws.io.WriteStream.write(WriteStream.java(Compiled Code))
+	at com.ibm.ws.webcontainer.http.HttpConnection.write(HttpConnection.java:362)
+	at com.ibm.ws.webcontainer.srp.SRPConnection.write(SRPConnection.java:224)
+	at com.ibm.ws.webcontainer.srt.SRTOutputStream.write(SRTOutputStream.java:91)
+	at sun.nio.cs.StreamEncoder$ConverterSE.implWrite(StreamEncoder.java(Compiled Code))
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java(Compiled Code))
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.BufferedWriter.writeOut(BufferedWriter.java:433)
+	at com.ibm.ws.webcontainer.srt.BufferedWriter.write(BufferedWriter.java:300)
+	at java.io.Writer.write(Writer.java:169)
+	at java.io.PrintWriter.write(PrintWriter.java(Compiled Code))
+	at java.io.PrintWriter.write(PrintWriter.java(Compiled Code))
+	at java.io.PrintWriter.print(PrintWriter.java(Compiled Code))
+	at java.io.PrintWriter.println(PrintWriter.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleError(WebApp.java:1027)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:897)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:185)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java(Compiled Code))
+
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.srt.BufferedWriter
+com.ibm.ws.webcontainer.srt.BufferedWriter@590f7c49
+
+Exception = java.net.SocketException
+Source = com.ibm.ws.webcontainer.srt.BufferedWriter.writeOut
+probeid = 416
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.srt.BufferedWriter
+  class$com$ibm$ws$webcontainer$srt$BufferedWriter = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@c87c65
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@220b3cc5
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@35a07c46
+      soleInstance = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3d6c3c46
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 71
+      clock = 71
+      pending = null
+      lock = java.lang.ref.Reference$Lock@48067c47
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3d6bbc46
+      referent = [Ljava.lang.reflect.Field;@10263c6f
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@2d33bc48
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  nls = 
+    class$com$ibm$ejs$sm$client$ui$NLS = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@2c87bc6f
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$srt$BufferedWriter.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    bundle = 
+      resources = [[Ljava.lang.Object;@683bfc49
+      lookup = null
+      class$java$util$ResourceBundle = java.lang.Class@5d353dcc
+      locale = java.util.Locale@6d5d7c49
+      parent = null
+      cacheList = sun.misc.SoftCache@19e0fc44
+      DEFAULT_NOT_FOUND = -1
+      underConstruction = java.util.Hashtable@19e2fc44
+      MAX_BUNDLES_SEARCHED = 3
+      CACHE_LOAD_FACTOR = 1.0
+      INITIAL_CACHE_SIZE = 25
+      cacheKey = java.util.ResourceBundle$ResourceCacheKey@19dc7c44
+    bundleName = com.ibm.servlet.resources.ServletEngineNLS
+    baseClassPackage = com.ibm.ejs.resources
+    messages = 
+      class$com$ibm$ejs$sm$client$ui$NLS = this.nls.class$com$ibm$ejs$sm$client$ui$NLS
+      bundle = java.util.PropertyResourceBundle@775f7c49
+      bundleName = messages
+      baseClassPackage = com.ibm.ejs.resources
+      messages = this.nls.messages
+      tc = this.nls.tc
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.sm.client.ui.NLS
+  closeOnClose = false
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.webcontainer.srt.BufferedWriter
+  bufferSize = 4096
+  committed = true
+  except = null
+  _hasFlushed = true
+  _hasWritten = true
+  obs = com.ibm.ws.webcontainer.srt.SRTServletResponse@58123c49
+  length = -1
+  limit = -1
+  total = 28939
+  count = 0
+  buf[4096] = {Error 500: 
+able to compile class for JSP
+
+An error occurred between lines: 2 and 11 in the jsp file: /mutActWord_MutualPayments_include.jspf
+
+Generated servlet error:
+C:\workspases\WSAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\tmp0\cache\localhost\server1\july\arenda.war\_mutActWord.java:1689: cannot resolve symbol
+symbol  : variable maincurr 
+location: class org.apache.jsp._mutActWord
+           maincurr =&quot;&quot;&#59;
+           ^
+
+
+An error occurred between lines: 2 and 11 in the jsp file: /mutActWord_MutualPayments_include.jspf
+
+Generated servlet error:
+C:\workspases\WSAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\tmp0\cache\localhost\server1\july\arenda.war\_mutActWord.java:1693: cannot resolve symbol
+symbol  : variable maincurr 
+location: class org.apache.jsp._mutActWord
+        	 maincurr = mpvo.getMainCurr&#40;&#41;&#59;
+                 ^
+
+
+An error occurred at line: 22 in the jsp file: /mutActWord_MutualPayments_include.jspf
+
+Generated servlet error:
+C:\workspases\WSAD_NRI\.met...}
+  out = 
+    se = 
+      nBytes = 8192
+      nextByte = 8192
+      bb[8192] = {46,101,116,111,111,108,115,46,115,101,114,118,101,114,46,99,111,114,101,92,116,109,112,48,92,99,97,99,104,101,92,108,111,99,97,108,104,111,115,116,92,115,101,114,118,101,114,49,92,106,117,108,121,92,97,114,101,110,100,97,46,119,97,114,92,95,109,117,116,65,99,116,87,111,114,100,46,106,97,118,97,58,49,54,56,52,58,32,99,97,110,110,111,116,32,114,101,115,111,108,118,101,32,115,121,109,98,111,108,10,115,121,109,98,111,108,32,32,58,32,118,97,114,105,97,98,108,101,32,115,117,109,95,110,100,115,67,111,110,116,114,97,99,116,32,10,108,111,99,97,116,105,111,110,58,32,99,108,97,115,115,32,111,114,103,46,97,112,97,99,104,101,46,106,115,112,46,95,109,117,116,65,99,116,87,111,114,100,10,32,32,32,32,32,32,32,32,9,9,9,115,117,109,95,110,100,115,67,111,110,116,114,97,99,116,32,61,32,110,101,119,32,106,97,118,97,46,109,97,116,104,46,66,105,103,68,101,99,105,109,97,108,38,35,52,48,59,48,38,35,52,49,59,38,35,53,57,59,10,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,94,10,10,10,65,110,32,101,114,114,111,114,32,111,99,99,117,114,114,101,100,32,98,101,116,119,101,101,110,32,108,105,110,101,115,58,32,49,48,51,32,97,110,100,32,49,49,52,32,105,110,32,116,104,101,32,106,115,112,32,102,105,108,101,58,32,47,109,117,116,65,99,116,87,111,114,100,95,77,117,116,117,97,108,67,104,97,114,103,101,115,95,105,110,99,108,117,100,101,46,106,115,112,102,10,10,71,101,110,101,114,97,116,101,100,32,115,101,114,118,108,101,116,32,101,114,114,111,114,58,10,67,58,92,119,111,114,107,115,112,97,115,101,115,92,87,83,65,68,95,78,82,73,92,46,109,101,116,97,100,97,116,97,92,46,112,108,117,103,105,110,115,92,99,111,109,46,105,98,109,46,101,116,111,111,108,115,46,115,101,114,118,101,114,46,99,111,114,101,92,116,109,112,48,92,99,97,99,104,101,92,108,111,99,97,108,104,111,115,116,92,115,101,114,118,101,114,49,92,106,117,108,121,92,97,114,101,110,100,97,46,119,97,114,92,95,109,117,116,65,99,116,87,111,114,100,46,106,97,118,97,58,49,54,56,53,58,32,99,97,110,110,111,116,32,114,101,115,111,108,118,101,32,115,121,109,98,111,108,10,115,121,109,98,111,108,32,32,58,32,118,97,114,105,97,98,108,101,32,115,117,109,95,115,117,109,82,117,98,68,105,102,102,101,114,101,110,99,101,32,10,108,111,99,97,116,105,111,110,58,32,99,108,97,115,115,32,111,114,103,46,97,112,97,99,104,101,46,106,115,112,46,95,109,117,116,65,99,116,87,111,114,100,10,32,32,32,32,32,32,32,32,9,9,9,115,117,109,95,115,117,109,82,117,98,68,105,102,102,101,114,101,110,99,101,32,61,32,110,101,119,32,106,97,118,97,46,109,97,116,104,46,66,105,103,68,101,99,105,109,97,108,38,35,52,48,59,48,38,35,52,49,59,38,35,53,57,59,10,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,94,10,10,10,65,110,32,101,114,114,111,114,32,111,99,99,117,114,114,101,100,32,98,101,116,119,101,101,110,32,108,105,110,101,115,58,32,49,48,51,32,97,110,100,32,49,49,52,32,105,110,32,116,104,101,32,106,115,112,32,102,105,108,101,58,32,47,109,117,116,65,99,116,87,111,114,100,95,77,117,116,117,97,108,67,104,97,114,103,101,115,95,105,110,99,108,117,100,101,46,106,115,112,102,10,10,71,101,110,101,114,97,116,101,100,32,115,101,114,118,108,101,116,32,101,114,114,111,114,58,10,67,58,92,119,111,114,107,115,112,97,115,101,115,92,87,83,65,68,95,78,82,73,92,46,109,101,116,97,100,97,116,97,92,46,112,108,117,103,105,110,115,92,99,111,109,46,105,98,109,46,101,116,111,111,108,115,46,115,101,114,118,101,114,46,99,111,114,101,92,116,109,112,48,92,99,97,99,104,101,92,108,111,99,97,108,104,111,115,116,92,115,101,114,118,101,114,49,92,106,117,108,121,92,97,114,101,110,100,97,46,119,97,114,92,95,109,117,116,65,99,116,...}
+      ctb = sun.io.CharToByteCp1251@5105fc67
+      out = this.out.lock
+      class$sun$nio$cs$StreamEncoder = null
+      useNio = false
+      isOpen = true
+      DEFAULT_BYTE_BUFFER_SIZE = 8192
+      lock = this.out
+      writeBufferSize = 1024
+      writeBuffer = null
+    lock = 
+      class$com$ibm$ws$webcontainer$srt$SRTOutputStream = java.lang.Class@1b5dbc44
+      tc = com.ibm.ejs.ras.TraceComponent@49b1fc43
+      _observer = null
+      _conn = com.ibm.ws.webcontainer.srp.SRPConnection@4cb1fc4a
+      lStrings = java.util.PropertyResourceBundle@370afc43
+      LSTRING_FILE = javax.servlet.LocalStrings
+    writeBufferSize = 1024
+    writeBuffer = null
+  lock = this
+  writeBufferSize = 1024
+  writeBuffer[1024] = {
+ror 500:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      }
+

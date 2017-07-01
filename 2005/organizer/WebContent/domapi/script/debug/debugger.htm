@@ -1,0 +1,56 @@
+<!--
+Copyright (c) Nebiru Software 2001, 2005
+  Compressed and obfuscated by JSCruncher Pro.
+  http://domapi.com/jscruncherpro
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>DomAPI Debugger</title>
+  <link rel="stylesheet" type="text/css" href="debugger.css" />
+  <script type="text/javascript">onload=function(){L50=document.getElementById("consoleOuter");TbhR0=document.getElementById("explorerOuter");N$4=document.getElementById("consoleInner");u5IT=document.getElementById("explorerInner");T31Q=document.getElementById('txtConsoleExpression');goK4=document.getElementById('txtExplorerExpression');T31Q.onkeypress=Fg45L;goK4.onkeypress=Fg45L;domapi=opener.domapi;Qg355=domapi.debug;Qg355.p9m0c=N$4;Qg355.e41=u5IT;onresize();Qg355.i6ch()};onresize=function(){var _r4mw,Iuy4;var w=parseInt(document.all?document.body.clientWidth:window.innerWidth);var h=parseInt(document.all?document.body.clientHeight:window.innerHeight);Iuy4=h-L50.offsetTop-2;if(Iuy4>10)L50.style.height=Iuy4+"px";Iuy4=h-TbhR0.offsetTop-2;if(Iuy4>10)TbhR0.style.height=Iuy4+"px";if(TbhR0.style.display=="none"){h-=10}Iuy4=h-N$4.offsetTop-25;if(Iuy4>10)N$4.style.height=Iuy4+"px";_r4mw=w-N$4.offsetLeft-10;if(_r4mw>10)N$4.style.width=_r4mw+"px";if(L50.style.display=="none"){h-=10}Iuy4=h-u5IT.offsetTop-25;if(Iuy4>10)u5IT.style.height=Iuy4+"px";_r4mw=w-u5IT.offsetLeft-10;if(_r4mw>10)u5IT.style.width=_r4mw+"px"};function doTabClick(i){var x3A00=document.getElementById("tabSet");x3A00=x3A00.getElementsByTagName("SPAN");switch(i){case 0:x3A00[0].className="tabDown";x3A00[1].className="tab";L50.style.display="";TbhR0.style.display="none";break;case 1:x3A00[0].className="tab";x3A00[1].className="tabDown";L50.style.display="none";TbhR0.style.display="";break}onresize()};function Fg45L(E){var x3A00=document.all?event.srcElement:E.target;var bM2=document.all?event.keyCode:E.which;if(bM2==13){if(x3A00==T31Q)document.getElementById("btnEval").onclick();if(x3A00==goK4)document.getElementById("btnExplore").onclick();x3A00.select()}};function kV6(x3A00){x3A00.style.display=(x3A00.style.display=="none")?"":"none"};</script>
+</head>
+<body>
+  <div id="tabSet">
+    <span class="tabDown" onclick="doTabClick(0)">Console</span><span class="tab" onclick="doTabClick(1)">Explorer</span>
+  </div>
+  <div class="sep" style="background:white"></div>
+  <div class="sep" style="background:navy"></div>
+
+  <div id="consoleOuter">
+    <div id="consoleToolbar">
+      <span class="tab" onclick="Qg355.clearConsole()">clear</span>
+      <span class="tab" onclick="Qg355.sniffy()">info</span>
+      <span class="tab" onclick="Qg355.showLibs()">libs</span>
+      <span class="tab" onclick="Qg355.dumpSource()">source</span>
+      <input type="text" value="domapi.version" id="txtConsoleExpression" style="margin-left:20px" />
+      <span class="tab" onclick="domapi.debug.dumpVar(eval(T31Q.value),true)" id="btnEval">eval</span>
+    </div>
+    <div class="sep" style="background:navy"></div>
+    <div id="consoleInner"></div>
+  </div>
+
+  <div id="explorerOuter" style="display:none">
+    <div id="explorerToolbar">
+      <span class="tab" onclick="Qg355.dumpProps(self)">top</span>
+      <span class="tab" onclick="Qg355.dumpProps(Qg355.oyI8)">back</span>
+      <input type="text" value="document.body" id="txtExplorerExpression" style="margin-left:20px" />
+      <span class="tab" onclick="domapi.debug.dumpProps(eval(goK4.value),true)" id="btnExplore">explore</span>
+      <br />
+      <div class="sep" style="background:navy;margin-top:5px;margin-bottom:5px"></div>
+      Filters:
+      <input type="Checkbox" id="divs" onclick="domapi.debug.Mb4()">
+      <label for="divs" class="isDiv">HTMLElement</label>
+      <input type="Checkbox" id="elms" onclick="domapi.debug.Mb4()">
+      <label for="elms" class="isElm">Elm</label>
+      <input type="Checkbox" id="comp" onclick="domapi.debug.Mb4()">
+      <label for="comp" class="isComp">Component Base</label>
+
+    </div>
+    <div class="sep" style="background:navy"></div>
+    <div id="explorerInner"></div>
+  </div>
+</body>
+</html>

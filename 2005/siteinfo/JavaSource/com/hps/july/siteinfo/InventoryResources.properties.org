@@ -1,0 +1,2916 @@
+label=Учет оборудования
+label.menu.root=Учет оборудования
+
+label.menu.income=Приход на склад
+label.menu.income.internal=Внутренние ордера
+label.menu.income.external=Внешние ордера
+label.menu.income.mismatch=Акты рассогласования
+
+label.menu.outcome=Расход со склада
+label.menu.outcome.internalr=Внутренние накладные
+label.menu.outcome.externalr=Внешние накладные
+
+label.menu.changee=Акты замены при ремонте
+
+label.menu.other=Прочие операции на складе
+label.menu.other.change=Акты замены/модернизации
+label.menu.other.changes=Акты замены/модернизации на складе
+label.menu.other.assact=Акты монтажа блоков
+label.menu.other.dassact=Акты демонтажа блоков
+
+label.menu.oppos=Прочие операции на позиции
+
+label.menu.inventory.acts=Инвентаризация на складе
+label.menu.inventory.pos=Инвентаризация на позиции
+
+label.menu.organizer=Разграничение доступа
+label.menu.tasklist=Задачи
+label.menu.reregister=Перерегистрация
+label.menu.logout=Выход
+
+label.menu.inventory=Инвентаризация
+label.menu.inventory.positions=Позиции
+
+label.menu.posincome=Приход на позицию
+label.menu.posoutcome=Расход с позиции
+
+label.menu.outcome.deinstall=Акты демонтажа
+label.menu.outcome.deinstallb=Акты демонтажа блоков
+label.menu.reports=Отчёты
+label.menu.reports.1=Наличие оборудования
+label.menu.reports.2=Местоположение обор.
+label.menu.reports.3=Обор. Контракты и поставки
+label.menu.reports.4=Приход на объект
+label.menu.reports.5=Приход обор. на объект
+label.menu.reports.6=Расход с объекта
+label.menu.reports.7=Расход обор. с объекта
+label.menu.reports.8=Текущее местоположение
+
+label.menu.masscalc=Массовый обсчёт
+label.menu.massdoc=Необсчитанные документы
+
+label.menu.barcodes=Штрих коды
+label.menu.barcodes.code=Печать этикетки с выбранным штрих-кодом
+label.menu.barcodes.ser=Серии штрих-кодов
+
+label.logout.id=Выход из системы
+label.login.id=Пользователь
+label.login.psw=Пароль
+
+#label.menu.income.req=Требования
+#label.menu.income.install=Акты монтажа
+#label.menu.income.installb=Акты монтажа блоков
+
+label.add=Добавить
+label.delete=Удалить
+label.change=Изменить
+label.view=Смотреть
+label.all=Все
+label.state=Изменить состояние
+label.nothing=Не выбрано
+label.void=
+label.create=Ввести
+
+button.confirm=Подтвердить
+button.logout=Выход
+button.reset=Сбросить
+button.refresh=Обновить
+button.submit=Отправить
+button.login=Войти
+button.save=Сохранить
+button.cancel=Отмена
+button.read=Считать
+button.add=Добавить запись
+button.back=Назад
+button.close=Закрыть
+button.edit=Изменить запись
+button.view=Просмотр записи
+button.exclude=Исключить
+button.include=Включить
+button.save=Сохранить
+button.delete=Удалить
+
+error.init=Ошибка установления начальных значений
+error.absent=Объект удален другим пользователем
+error.someshit=Неустановленная ошибка, сообщите системному администратору
+error.duplicate=Дублирование уникального кода
+error.invalid.sysconst.decimalvalue=Неверный формат десятичного значения
+errors.header=Пожалуйста исправьте следующие ошибки:
+error.referenced=Другие данные имеют ссылки на данную запись
+error.invalid.action=Изменение обсчитанного документа запрещено
+ 
+# External Income Orders
+
+label.external=Реестр внешних приходных ордеров
+label.external.storage=Склад
+label.external.period=Отчётный период
+label.external.period.month=месяц
+label.external.period.year=год
+label.external.owner=Организация
+label.external.supplier=Поставщик
+label.external.date=Дата
+label.external.num=№ ордера
+label.external.accnum.1=№ накладной
+label.external.accdate.1=Дата накладной
+label.external.accnum=№ накладной (счёта)
+label.external.accdate=Дата накладной (счёта)
+label.external.gtdnum=Номер ГТД
+label.external.gtddate=Дата ГТД
+label.external.suppliercode=Код
+label.external.suppliername=Поставщик
+label.external.state=Состояние
+label.external.positions=Строки приходного ордера
+label.external.supplycond=Условия поставки
+label.external.supplycond.p=Постоянный ввоз
+label.external.supplycond.t=Временный ввоз
+label.external.contract=Контракт
+label.external.currency=Валюта
+label.external.from=Кто сдал
+label.external.worker=Кладовщик
+label.external.from.worker=Работник
+label.external.from.org=Юр. лицо
+label.external.insuranseman=Представитель
+label.external.man=Сотрудник
+
+error.empty.external.isuranseman=Не указан представитель
+error.empty.external.document=Не указан документ при переходе на страницу
+error.invalid.external.document=Неверный формат кода документа
+error.empty.external.owner=Необходимо указать организацию
+error.invalid.external.owner=Неверный формат кода организации
+error.notexist.external.owner=Указана несуществующая организация
+error.empty.external.storage=Необходимо указать склад
+error.invalid.external.storage=Неверный формат кода склада
+error.notexist.external.storage=Несуществующий склад
+error.empty.external.supplier=Необходимо указать поставщика
+error.invalid.external.supplier=Неверный формат кода поставщика
+error.notexist.external.supplier=Указан несуществующий поставщик
+error.invalid.external.storage=Неверный формат кода склада
+error.notexist.external.storage=Несуществующий склад
+error.empty.external.blankdate=Необходимо указать дату
+error.invalid.external.blankdate=Неверный формат даты
+error.empty.external.blanknumber=Необходимо указать № ордера
+error.invalid.external.blanknumber=Слишком длинный номер документа
+error.invalid.external.cordocnum=Слишком длинный номер счёта
+error.invalid.external.gtdnumber=Слишком длинный номер ГТД
+error.invalid.external.state=Неверное состояние
+error.invalid.external.supplycond=Укажите условия поставки
+error.empty.external.currency=Необходимо указать валюту
+error.invalid.external.currency=Неверный формат кода валюты
+error.notexist.external.currency=Указана несуществующая валюта
+error.empty.external.worker=Необходимо указать кладовщика
+error.invalid.external.worker=Неверный формат кода кладовщика
+error.notexist.external.worker=Несуществующий кладовщик
+error.update.external.documentslink=Найдены лишние связи контрактов с данной накладной
+error.update.external.expedition=Найдены лишние экспедиции связанные с указанным сдающим
+error.invalid.external.contract=Неверный формат кода контракта
+error.notexist.external.contract=Указан несуществующий контракт
+error.invalid.external.contract.currency=Валюта приходного ордера не совпадает с валютой, указанной в контракте
+error.invalid.external.contract.supplier=Поставщик в приходном ордере Не совпадает поставщиком, указанным в контракте
+error.invalid.external.contract.owner=Организация-получатель в приходном ордере не совпадает с организацией, указанной в контракте
+error.invalid.external.insuranseman=Длинна строки в поле "представитель" не должна превышать 40-ка символов.
+error.empty.external.from=Необходимо указать сотрудника сдающего оборудование
+error.invalid.external.from=Неверный формат кода сдающего оборудования
+error.notexist.external.from=Указан не существующий сдающий сотрудник
+error.empty.external.insuranseman=Необходимо указать представителя поставщика
+error.invalid.external.insuranseman=Строка в поле представитель поставщика не должна превышать 80 символов
+
+label.mismatch=Перечень актов рассогласования по приходным ордерам
+label.mismatch.title=Акт рассогласования
+label.mismatch.edit=Редактирование акта рассогласования
+label.mismatch.short=Акты<br>рассогл.
+label.mismatch.storage=Склад
+label.mismatch.period=Отчётный период
+label.mismatch.period.month=месяц
+label.mismatch.period.year=год
+label.mismatch.owner=Организация
+label.mismatch.supplier=Поставщик
+label.mismatch.ddate=Дата
+label.mismatch.dnum=№ акта
+label.mismatch.date=Дата прих. ордера
+label.mismatch.num=№ прих. ордера
+label.mismatch.accdate=Дата накладной (счёта)
+label.mismatch.accnum=№ накладной (счёта)
+label.mismatch.suppliercode=Код
+label.mismatch.suppliername=Поставщик
+label.mismatch.text.short=Файл
+label.mismatch.text=Файл с текстом акта
+label.mismatch.order=Приходный ордер
+label.mismatch.representative=Представитель
+label.mismatch.storman=Кладовщик
+label.mismatch.techstuff=Технический специалист
+label.mismatch.account=Счёт
+label.mismatch.deletefile=Удалить файл
+
+error.empty.mismatch.dactnumber=Необходимо указать номер акта рассогласования
+error.invalid.mismatch.dactnumber=Слишком длинный номер акта рассогласования
+error.empty.mismatch.dactdate=Необходимо указать дату акта рассогласования
+error.invalid.mismatch.dactdate=Неверный формат даты акта рассогласования
+error.empty.mismatch.representative=Необходимо указать представителя
+error.invalid.mismatch.representative=Слишком динная строка в поле представитель
+error.empty.mismatch.storman=Необходимо указать кладовщика
+error.invalid.mismatch.storman=Неверный формат кода кладовщика
+error.notexist.mismatch.storman=Указан несуществующий кладовщик
+error.empty.mismatch.techstuff=Необходимо указать технического специалиста
+error.invalid.mismatch.techstuff=Неверный формат кода технического специалиста
+error.notexist.mismatch.techstuff=Указан несуществующий технический специалист
+error.mismatch.clear=Невозможно удалить акт рассогласования
+error.empty.mismatch.text=Необходимо указать текст
+error.invalid.mismatch.text=Текст слишком большого размера
+
+label.externalpos=Приходный ордер
+label.externalpos.owner=Организация
+label.externalpos.storage=Склад
+label.externalpos.document=Приходный ордер
+label.externalpos.account=Счёт
+label.externalpos.gtd=ГТД
+label.externalpos.supplier=Поставщик
+label.externalpos.sum=Сумма по документу/по факту
+label.externalpos.bydoc=По документу
+label.externalpos.byfact=По факту
+label.externalpos.num=№ п/п
+label.externalpos.name=Наименование
+label.externalpos.unit=Ед. изм.
+label.externalpos.doc.cnt.short=Кол-во по док-ту
+label.externalpos.doc.cnt=Количество по документу
+label.externalpos.doc.price.short=Цена по док-ту
+label.externalpos.doc.price=Цена по документу
+label.externalpos.doc.sum.short=Сумма по док-ту
+label.externalpos.doc.sum=Сумма по документу
+label.externalpos.fact.cnt.short=Кол-во по факту
+label.externalpos.fact.cnt=Количество по факту
+label.externalpos.fact.price.short=Цена по факту
+label.externalpos.fact.price=Цена по факту
+label.externalpos.fact.sum.short=Сумма по факту
+label.externalpos.fact.sum=Сумма по факту
+label.externalpos.serial=Серийные №№ / маркировка
+label.externalpos.serialnum=Инвентарный серийный номер
+label.externalpos.partynum=Номер партии
+label.externalpos.resource=Оборудование
+label.externalpos.configuration=Конфигурация
+label.externalpos.boxed=Упаковано
+label.externalpos.mark=Маркировка
+
+label.externalpos.button.copytofact=Скопировать в факт
+
+error.empty.externalpos.order=Необходимо указать порядковый номер
+error.invalid.externalpos.order=Неверный формат порядкового номера
+error.empty.externalpos.outerqty=Необходимо указать количество по документу
+error.invalid.externalpos.outerqty=Неверный формат количесва по документу
+error.invalid.externalpos.outerprice=Неверный формат цены по документу
+error.invalid.externalpos.outerpricelow=Цена по документу должна быть положительной
+error.empty.externalpos.qty=Необходимо указать количество по факту
+error.invalid.externalpos.qty=Неверный формат количества по факту
+error.invalid.externalpos.price=Неверный формат цены по факту
+error.invalid.externalpos.pricelow=Цена по факту должна быть положительной
+error.empty.externalpos.mark=Необходимо указать маркировку
+error.invalid.externalpos.mark=Слишком длинная строка для маркировки
+error.invalid.externalpos.configuration=Слишком длинная строка для конфигурации
+error.empty.externalpos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.externalpos.serialresource=Для оборудования с серийным учётом номер партии не указывается
+error.invalid.externalpos.qtyint=Количество по документу должно быть целым значением
+error.invalid.externalpos.outerqtyint=Количество по факту должно быть целым значением
+error.empty.externalpos.party=Необходимо указать номер партии
+error.invalid.externalpos.partyresource=Для оборудования с учётом по партиям инвентарный серийный номер не указывается
+error.invalid.externalpos.bulkresource=Для оборудования с количественным учётом инвентарный серийный номер и номер партии не указываются
+error.notexist.externalpos.resource=Несуществующее оборудование
+error.invalid.externalpos.qtylow=Количество для серийного оборудования должно быть больше либо равно единице
+error.invalid.externalpos.diffresource=Различается указанное оборудование и оборудование в карточке хранения
+error.empty.externalpos.resource=Необходимо указать оборудование
+error.invalid.externalpos.resource=Неверный формат кода оборудования
+error.invalid.externalpos.diffresources=Введённое оборудование и оборудование в карточке различаются
+error.invalid.externalpos.qtytoomany=Количество серийных единиц оборудования не должно превышать 1000.
+
+error.empty.externalser.outerqty=Необходимо указать количество по документу
+error.invalid.externalser.outerqty=Неверный формат количесва по документу
+error.invalid.externalser.outerprice=Неверный формат цены по документу
+error.invalid.externalser.outerpricelow=Цена по документу должна быть положительной
+
+error.empty.externalser.qty=Необходимо указать количество
+error.invalid.externalser.qty=Неверный формат количества
+error.invalid.externalser.qtylow=Количество должно быть равно единице
+error.invalid.externalser.qtyhi=Количество должно быть равно единице
+error.empty.externalser.price=Необходимо указать цену
+error.invalid.externalser.price=Неверный формат цены
+error.invalid.externalser.pricelow=Цена должна быть положительной
+
+error.invalid.externalser.cardexist=Карточка с номером {0} уже существует
+error.empty.externalser.mark=Необходимо указать маркировку
+error.invalid.externalser.mark=Слишком длинная строка для маркировки
+error.invalid.externalser.configuration=Слишком длинная строка для конфигурации
+error.empty.externalser.serial=Необходимо указать инвентарный серийный номер
+error.invalid.externalser.serialresource=Для оборудования с серийным учётом номер партии не указывается
+error.invalid.externalser.qtyint=Количество по факту должно быть целым значением
+error.invalid.externalser.outerqtyint=Количество по документу должно быть целым значением
+error.empty.externalser.party=Необходимо указать номер партии
+error.invalid.externalser.partyresource=Для оборудования с учётом по партиям инвентарный серийный номер не указывается
+error.invalid.externalser.bulkresource=Для оборудования с обычным учётом инвентарный серийный номер и номер партии не указываются
+error.notexist.externalser.resource=Несуществующее оборудование
+
+label.externalser=Строка приходного ордера
+label.externalser.position=Строка приходного ордера
+label.externalser.resource=Оборудование
+label.externalser.qty=Количество по документу/по факту
+label.setup=Установить
+label.externalser.boxed=Упаковано
+label.externalser.mark=Маркировка
+label.externalser.serial=Инвентарный серийный номер
+label.externalser.configuration=Конфигурация
+
+# Internal Outcome Orders
+
+label.internalr=Реестр внутренних расходных накладных
+label.internalr.date=Дата
+label.internalr.owner=Организация
+label.internalr.storage=Склад
+label.internalr.type=Тип накладной
+label.internalr.renter=Подрядчик
+label.internalr.worker=Сотрудник
+label.internalr.type.forp=Для подрядчика
+label.internalr.type.forw=Для сотрудника
+label.internalr.type.p=П
+label.internalr.type.w=С
+label.internalr.num=№ накладной
+label.internalr.org=Организация
+label.internalr.type.short=Тип
+label.internalr.expedition=Организация/Сотрудник
+label.internalr.position=На позицию
+label.internalr.state=Состояние
+label.internalr.requirement=Требование
+label.internalr.representative=ФИО представителя
+label.internalr.dovnum=Доверенность №
+label.internalr.dovdate=Дата доверенности
+label.internalr.currency=Валюта
+label.internalr.storageman=Кладовщик
+label.internalr.positions=Строки расходной накладной
+label.internalr.fixing=В ремонт
+
+error.empty.internalr.document=Не указан документ при переходе на страницу
+error.invalid.internalr.document=Неверный формат кода документа
+error.empty.internalr.blankdate=Необходимо указать дату
+error.invalid.internalr.blankdate=Неверный формат даты
+error.empty.internalr.blanknumber=Необходимо указать номер документа
+error.invalid.internalr.blanknumber=Номер документа слишком длинный
+error.empty.internalr.owner=Необходимо указать организацию
+error.invalid.internalr.owner=Неверный формат кода организации
+error.notexist.internalr.owner=Указанная организация не существует
+error.empty.internalr.storage=Необходимо указать склад
+error.invalid.internalr.storage=Неверный формат кода склада
+error.notexist.internalr.storage=Указанный склад не существует
+error.empty.internalr.renter=Необходимо указать подрядчика
+error.invalid.internalr.renter=Неверный формат кода подрядчика
+error.invalid.internalr.notrenter=Указанная организация не является подрядчиком
+error.notexist.internalr.renter=Указанный подрядчик не существует
+error.empty.internalr.insuranceman=Необходимо указать ФИО представителя
+error.empty.internalr.insuranceact=Необходимо указать номер доверенности
+error.empty.internalr.insurancedate=Необходимо указать дату доверенности
+error.invalid.internalr.insurancedate=Неверный формат даты доверенности
+error.invalid.internalr.insurancedateafter=Дата доверенности не должна быть позже даты накладной
+error.empty.internalr.worker=Необходимо указать сотрудника
+error.invalid.internalr.worker=Неверный формат кода сотрудника
+error.notexist.internalr.worker=Указанный сотрудник не существует
+error.invalid.internalr.type=Выбран несуществующий тип накладной
+error.invalid.internalr.state=Неверное состояние накладной
+error.empty.internalr.storageman=Необходимо указать кладовщика
+error.invalid.internalr.storageman=Неверный формат кода кладовщика
+error.notexist.internalr.storageman=Указанный кладовщик не существует
+error.invalid.internalr.position=Неверный формат кода позиции
+error.notexist.internalr.position=Указана несуществующая позиция
+error.invalid.internalr.request=Неверный формат кода требования
+error.notexist.internalr.request=Указано несуществующее требование
+
+label.internalrpos=Расходная накладная
+label.internalrpos.document=Накладная
+label.internalrpos.owner=Организация
+label.internalrpos.storage=Склад
+label.internalrpos.renter=Подрядчик
+label.internalrpos.insurance=Ответственное лицо
+label.internalrpos.dov=Доверенность
+label.internalrpos.worker=Сотрудник
+label.internalrpos.position=Объект
+
+label.internalrpos.name=Наименование
+label.internalrpos.qty.short=Кол-во
+label.internalrpos.unit.short=Ед.
+label.internalrpos.price=Цена
+label.internalrpos.sum=Сумма
+label.internalrpos.serial=Инвентарный серийный номер
+label.internalrpos.num=№ п/п
+label.internalrpos.resource=Оборудование
+label.internalrpos.configuration=Конфигурация
+label.internalrpos.qty=Количество
+label.internalrpos.serialnum=Инвентарный серийный номер
+label.internalrpos.partynum=Номер партии
+label.internalrpos.complect=Набор
+
+error.empty.internalrpos.order=Необходимо указать порядковый номер
+error.invalid.internalrpos.order=Неверный формат порядкового номера
+error.empty.internalrpos.qty=Необходимо указать количество
+error.invalid.internalrpos.qty=Неверный формат количества
+error.empty.internalrpos.price=Необходимо указать цену
+error.invalid.internalrpos.price=Неверный формат цены
+error.invalid.internalrpos.pricelow=Цена не может быть отрицательной
+error.invalid.internalrpos.configuration=Строка конфигурации не может быть длиннее 40 символов
+error.empty.internalrpos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.internalrpos.qtylow=Количество для серийного оборудования должно быть равно единице
+error.invalid.internalrpos.serialresource=Для серийного оборудования номер партии не указывается
+error.invalid.internalrpos.diffresources=Найдена карточка с таким же инвентарным серийным номером но другим оборудованием
+error.empty.internalrpos.party=Необходимо указать номер партии
+error.invalid.internalrpos.partyresource=Для оборудования, учитываемого по партиям, инвентарный серийный номер не указывается
+error.invalid.internalrpos.bulkresource=Для оборудования с количественным учётом номер партии и инвентарный серийный номер не указываются
+error.notexist.internalrpos.resource=Указанное оборудование не существует
+error.empty.internalrpos.resource=Необходимо указать оборудование
+error.invalid.internalrpos.resource=Неверный формат кода оборудования
+error.invalid.internalrpos.serial=Оборудование с указанным инвентарным серийным номером не найдено на складе
+error.invalid.internalrpos.party=Оборудование с указанным номером партии не найдено на складе
+error.invalid.internalrpos.bulk=Указанное оборудование не найдено на складе
+
+error.internalrpos.complectcreation=Не удалось создать строки для частей набора
+error.internalrpos.removeagregates=Не удалось удалить строки для встроенных в устройство блоков из документа
+
+# Internal Income Orders
+
+label.internal=Реестр внутренних приходных ордеров
+label.internal.date=Дата
+label.internal.owner=Организация
+label.internal.storage=Склад
+label.internal.type=Тип ордера
+label.internal.renter=Подрядчик
+label.internal.worker=Сотрудник
+label.internal.type.forp=Для подрядчика
+label.internal.type.forw=Для сотрудника
+label.internal.type.p=П
+label.internal.type.w=С
+label.internal.num=№ ордера
+label.internal.org=Организация
+label.internal.type.short=Тип
+label.internal.expedition=Организация/Сотрудник
+label.internal.position=С позиции
+label.internal.state=Состояние
+label.internal.requirement=Требование
+label.internal.representative=ФИО представителя
+label.internal.dovnum=Доверенность №
+label.internal.dovdate=Дата доверенности
+label.internal.currency=Валюта
+label.internal.storageman=Кладовщик
+label.internal.positions=Строки приходного ордера
+label.internal.fixing=Из ремонта
+label.internal.cordoc=Сопровод. док-ты
+label.internal.cordocs.choose=Выбрать
+label.internal.cordocs.view=Смотреть
+label.internal.cordoctype=Тип сопроводительного документа
+
+option.internal.cordoctype.instact=Акты монтажа
+option.internal.cordoctype.deinstact=Акты демонтажа
+
+error.empty.internal.document=Не указан документ при переходе на страницу
+error.invalid.internal.document=Неверный формат кода документа
+error.empty.internal.blankdate=Необходимо указать дату
+error.invalid.internal.blankdate=Неверный формат даты
+error.empty.internal.blanknumber=Необходимо указать номер документа
+error.invalid.internal.blanknumber=Неверный формат номера документа
+error.empty.internal.owner=Необходимо указать организацию
+error.invalid.internal.owner=Неверный формат кода организации
+error.notexist.internal.owner=Указанная организация не существует
+error.empty.internal.storage=Необходимо указать склад
+error.invalid.internal.storage=Неверный формат кода склада
+error.notexist.internal.storage=Указанный склад не существует
+error.empty.internal.renter=Необходимо указать подрядчика
+error.invalid.internal.renter=Неверный формат кода подрядчика
+error.invalid.internal.notrenter=Указанная организация не является подрядчиком
+error.notexist.internal.renter=Указанный подрядчик не существует
+error.empty.internal.insuranceman=Необходимо указать ФИО представителя
+error.empty.internal.insuranceact=Необходимо указать номер доверенности
+error.empty.internal.insurancedate=Необходимо указать дату доверенности
+error.invalid.internal.insurancedate=Неверный формат даты доверенности
+error.empty.internal.worker=Необходимо указать сотрудника
+error.invalid.internal.worker=Неверный формат кода сотрудника
+error.notexist.internal.worker=Указанный сотрудник не существует
+error.invalid.internal.type=Выбран несуществующий тип ордера
+error.invalid.internal.state=Неверное состояние накладной
+error.empty.internal.storageman=Необходимо указать кладовщика
+error.invalid.internal.storageman=Неверный формат кода кладовщика
+error.notexist.internal.storageman=Указанный кладовщик не существует
+error.invalid.internal.position=Неверный формат кода позиции
+error.notexist.internal.position=Указана несуществующая позиция
+
+label.internalpos=Приходный ордер
+label.internalpos.document=Накладная
+label.internalpos.owner=Организация
+label.internalpos.storage=Склад
+label.internalpos.renter=Подрядчик
+label.internalpos.insurance=Ответственное лицо
+label.internalpos.dov=Доверенность
+label.internalpos.worker=Сотрудник
+label.internalpos.position=Объект
+label.internalpos.broken=Неисправно
+
+label.internalpos.name=Наименование
+label.internalpos.docqty=Количество по документу
+label.internalpos.docqty.short=Кол-во по док-ту
+label.internalpos.qty=Количество (принято)
+label.internalpos.qty.short=Кол-во (принято)
+label.internalpos.unit.short=Ед.
+label.internalpos.price=Цена
+label.internalpos.sum=Сумма
+label.internalpos.serial=Инвентарный (заводской) серийный № / № партии
+label.internalpos.num=№ п/п
+label.internalpos.resource=Оборудование
+label.internalpos.configuration=Конфигурация
+label.internalpos.serialnum=Инвентарный серийный номер
+label.internalpos.partynum=Номер партии
+label.internalpos.complect=Набор
+
+error.empty.internalpos.order=Необходимо указать порядковый номер
+error.invalid.internalpos.order=Неверный формат порядкового номера
+error.empty.internalpos.qty=Необходимо указать принятое количество
+error.invalid.internalpos.qty=Неверный формат принятого количества
+error.invalid.internalpos.qtylow=Принятое количество должно быть положительным
+error.empty.internalpos.docqty=Необходимо указать количество по документу
+error.invalid.internalpos.docqty=Неверный формат количества по документу
+error.invalid.internalpos.docqtylow=Количество по документу должно быть положительным
+error.empty.internalpos.price=Необходимо указать цену
+error.invalid.internalpos.price=Неверный формат цены
+error.invalid.internalpos.pricelow=Цена не может быть отрицательной
+error.invalid.internalpos.configuration=Строка конфигурации не может быть длиннее 40 символов
+error.empty.internalpos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.internalpos.qtylow=Количество для серийного оборудования должно быть равно единице
+error.invalid.internalpos.serialresource=Для серийного оборудования номер партии не указывается
+error.invalid.internalpos.diffresources=Найдена карточка с таким же инвентарным серийным номером но другим оборудованием
+error.empty.internalpos.party=Необходимо указать номер партии
+error.invalid.internalpos.partyresource=Для оборудования, учитываемого по партиям, инвентарный серийный номер не указывается
+error.invalid.internalpos.bulkresource=Для оборудования с количественным учётом номер партии и инвентарный серийный номер не указываются
+error.notexist.internalpos.resource=Указанное оборудование не найдено
+error.empty.internalpos.resource=Необходимо указать оборудование
+error.invalid.internalpos.resource=Неверный формат кода оборудования
+error.invalid.internalpos.serial=Оборудование с указанным инвентарным серийным номером не найдено
+error.invalid.internalpos.party=Оборудование с указанным номером партии не найдено
+error.invalid.internalpos.bulk=Оборудование не найдено
+
+# External Outcome Orders
+
+label.externalr=Реестр внешних расходных накладных
+label.externalr.date=Дата
+label.externalr.owner=Организация
+label.externalr.storage=Склад
+label.externalr.recipient=Получатель
+label.externalr.num=№ накладной
+label.externalr.org=Организация
+label.externalr.expedition=Получатель
+label.externalr.position=На позицию
+label.externalr.state=Состояние
+label.externalr.representative=ФИО представителя
+label.externalr.dovnum=Доверенность №
+label.externalr.dovdate=Дата доверенности
+label.externalr.currency=Валюта
+label.externalr.storageman=Кладовщик
+label.externalr.positions=Строки расходной накладной
+
+error.empty.externalr.document=Не указан документ при переходе на страницу
+error.invalid.externalr.document=Неверный формат кода документа
+error.empty.externalr.blankdate=Необходимо указать дату
+error.invalid.externalr.blankdate=Неверный формат даты
+error.empty.externalr.blanknumber=Необходимо указать номер документа
+error.invalid.externalr.blanknumber=Неверный формат номера документа
+error.empty.externalr.owner=Необходимо указать организацию
+error.invalid.externalr.owner=Неверный формат кода организации
+error.notexist.externalr.owner=Указанная организация не существует
+error.empty.externalr.storage=Необходимо указать склад
+error.invalid.externalr.storage=Неверный формат кода склада
+error.notexist.externalr.storage=Указанный склад не существует
+error.empty.externalr.recipient=Необходимо указать получателя
+error.invalid.externalr.recipient=Неверный формат кода получателя
+error.invalid.externalr.notrecipient=Указанная организация не является получателем
+error.notexist.externalr.renter=Указанный подрядчик не существует
+error.empty.externalr.insuranceman=Необходимо указать ФИО представителя
+error.empty.externalr.insuranceact=Необходимо указать номер доверенности
+error.empty.externalr.insurancedate=Необходимо указать дату доверенности
+error.invalid.externalr.insurancedate=Неверный формат даты доверенности
+error.invalid.externalr.insurancedateafter=Дата доверенности не должна быть позже даты накладной
+error.empty.externalr.worker=Необходимо указать сотрудника
+error.invalid.externalr.worker=Неверный формат кода сотрудника
+error.notexist.externalr.worker=Указанный сотрудник не существует
+error.invalid.externalr.type=Выбран несуществующий тип накладной
+error.invalid.externalr.state=Неверное состояние накладной
+error.empty.externalr.storageman=Необходимо указать кладовщика
+error.invalid.externalr.storageman=Неверный формат кода кладовщика
+error.notexist.externalr.storageman=Указанный кладовщик не существует
+error.empty.externalr.currency=Необходимо указать валюту
+error.invalid.externalr.currency=Неверный формат кода валюты
+error.notexist.externalr.currency=Указана несуществующая валюта
+
+label.externalrpos=Расходная накладная
+label.externalrpos.document=Накладная
+label.externalrpos.owner=Организация
+label.externalrpos.storage=Склад
+label.externalrpos.recipient=Получатель
+label.externalrpos.insurance=Ответственное лицо
+label.externalrpos.dov=Доверенность
+label.externalrpos.worker=Сотрудник
+label.externalrpos.position=Объект
+label.externalrpos.currency=Валюта
+
+label.externalrpos.name=Наименование
+label.externalrpos.qty.short=Кол-во
+label.externalrpos.unit.short=Ед.
+label.externalrpos.price=Цена
+label.externalrpos.sum=Сумма
+label.externalrpos.serial=Инвентарный серийный №
+label.externalrpos.num=№ п/п
+label.externalrpos.resource=Оборудование
+label.externalrpos.configuration=Конфигурация
+label.externalrpos.qty=Количество
+label.externalrpos.serialnum=Инвентарный серийный номер
+label.externalrpos.partynum=Номер партии
+label.externalrpos.complect=Набор
+
+error.empty.externalrpos.order=Необходимо указать порядковый номер
+error.invalid.externalrpos.order=Неверный формат порядкового номера
+error.empty.externalrpos.qty=Необходимо указать количество
+error.invalid.externalrpos.qty=Неверный формат количества
+error.empty.externalrpos.price=Необходимо указать цену
+error.invalid.externalrpos.price=Неверный формат цены
+error.invalid.externalrpos.pricelow=Цена не может быть отрицательной
+error.invalid.externalrpos.configuration=Строка конфигурации не может быть длиннее 40 символов
+error.empty.externalrpos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.externalrpos.qtylow=Количество для серийного оборудования должно быть равно единице
+error.invalid.externalrpos.serialresource=Для серийного оборудования номер партии не указывается
+error.invalid.externalrpos.diffresources=Найдена карточка с таким же инвентарным серийным номером но другим оборудованием
+error.empty.externalrpos.party=Необходимо указать номер партии
+error.invalid.externalrpos.partyresource=Для оборудования, учитываемого по партиям, инвентарный серийный номер не указывается
+error.invalid.externalrpos.bulkresource=Для оборудования с количественным учётом номер партии и инвентарный серийный номер не указываются
+error.notexist.externalrpos.resource=Указанный код оборудования не существует
+error.empty.externalrpos.resource=Необходимо указать оборудование
+error.invalid.externalrpos.resource=Неверный формат кода оборудования
+error.invalid.externalrpos.serial=Оборудование с указанным инвентарным серийным номером не найдено
+error.invalid.externalrpos.party=Оборудование с указанным номером партии не найдено
+error.invalid.externalrpos.bulk=Оборудования нет в наличии
+
+# Inventory acts
+
+label.inventory=Реестр актов инвентаризации
+label.inventoryacts=Реестр актов инвентаризации по складам
+label.inventorypositions=Реестр актов инвентаризации по позициям
+
+label.inventory.date=Дата
+label.inventory.org=Организация
+label.inventory.place=
+label.inventory.placename=Местоположение
+label.inventory.num=№ п/п
+label.inventory.state=Состояние
+
+label.inventory.positions=Строки акта инвентаризации
+label.inventory.ressets=Выборка оборудования
+label.inventory.resset=Выборка
+
+label.inventory.type=Тип
+label.inventory.storage=Склад
+label.inventory.position=Позиция
+label.inventory.complect=Комплект оборудования
+label.inventory.unit=Устройство
+label.inventory.workers=Кто провёл инвентаризацию
+label.inventory.storageman=Кладовщик
+label.inventory.technician=Технический специалист
+label.inventory.tech1=Первый технический специалист
+label.inventory.tech2=Второй технический специалист
+
+label.inventory.type.full=Полная
+label.inventory.type.byselect=По выборке
+label.inventory.type.byunit=Состав устройства
+
+error.empty.inventory.blankdate=Необходимо указать дату
+error.empty.inventory.blanknumber=Необходимо указать № акта
+error.empty.inventory.owner=Необходимо указать организацию
+error.empty.inventory.storage=Необходимо указать склад
+error.empty.inventory.storageman=Необходимо указать кладовщика
+error.empty.inventory.tech=Необходимо указать технического специалиста
+error.empty.inventory.tech1=Необходимо указать первого технического специалиста
+error.empty.inventory.equip=Необходимо указать устройство
+error.empty.inventory.complect=Необходимо указать комплект оборудования
+
+error.invalid.inventory.blankdate=Неверный формат даты
+error.invalid.inventory.owner=Несуществующая организация
+error.invalid.inventory.storage=Несуществующий склад
+error.invalid.inventory.storageman=Несуществующий кладовщик
+error.invalid.inventory.equip=Несуществующее устройство
+error.invalid.inventory.tech=Несуществующий технический специалист
+error.invalid.inventory.tech1=Несуществующий первый технический специалист
+error.invalid.inventory.tech2=Несуществующий второй технический специалист
+error.invalid.inventory.complect=Несуществующий комплект оборудования
+error.invalid.inventory.documentstate=Указано несуществующее состояние документа
+
+label.state.entering=Вводится
+label.state.editing=Редактируется
+label.state.formed=Сформирован
+label.state.pricing=Требует расценки
+label.state.calculated=Обсчитан
+
+label.invpos=Акт инвентаризации
+label.invpos.act=Акт инвентаризации
+label.invpos.num=№ п/п
+label.invpos.org=Организация
+label.invpos.place=Местоположение
+label.invpos.pos=Позиция
+label.invpos.storage=Склад
+label.invpos.type=Тип инвентаризации
+label.invpos.resource=Оборудование
+label.invpos.owner=Владелец
+label.invpos.serialnum=Инвентарный серийный №
+label.invpos.partnum=№ партии
+label.invpos.state=Состояние
+label.invpos.qty=Количество
+label.invpos.price=Цена
+label.invpos.sum=Сумма
+label.invpos.note=Примечание
+label.invpos.contract=По какому контракту поступило
+label.invpos.app=Встроено в
+label.invpos.appserialnum=Инвентарный серийный № устройства
+label.invpos.configuration=Конфигурация
+label.invpos.unit=Ед.
+label.invpos.copy=Копировать
+label.invpos.willinventory=Будет проводится инвентаризация составных частей?
+label.invpos.agregate=Устройство
+label.invpos.cordocnum=Учётный номер приходного документа
+
+label.invpos.boxed=В упаковке
+label.invpos.broken=Неисправно
+
+label.worker.lastname=Фамилия
+label.worker.position=Должность
+
+error.empty.invpos.qty=Необходимо указать количество
+error.empty.invpos.price=Необходимо указать цену
+error.empty.invpos.owner=Необходимо указать владельца
+error.empty.invpos.serial=Необходимо указать инвентарный серийный номер
+error.empty.invpos.party=Необходимо указать номер партии
+error.empty.invpos.resource=Необходимо указать оборудование
+error.invalid.invpos.cordocnum=Строка в поле "Учётный номер приходного документа" не должна превышать 40 символов
+
+error.invpos.change=Позиция не может быть изменена
+error.invalid.invpos.document=Документ не выбран при переходе к строкам
+
+error.invalid.invpos.order=Неверный порядковый номер
+error.invalid.invpos.serial=Несуществующий инвентарный серийный номер
+error.invalid.invpos.party=Несуществующий номер партии
+error.invalid.invpos.resource=Несуществующее оборудование
+error.invalid.invpos.configuration=Несуществующая конфигурация
+error.invalid.invpos.owner=Несуществующий владелец
+error.invalid.invpos.qty=Неверный формат количества
+error.invalid.invpos.qtylow=Количество должно быть положительным значением
+error.invalid.invpos.qtyone=Можно ввести только одно устройство с серийным учётом. Исправьте количество.
+error.invalid.invpos.price=Неверный формат цены
+error.invalid.invpos.pricelow=Цена должна быть положительным значением
+error.invalid.invpos.note=Неверная конфигурация
+error.invalid.invpos.contract=Несуществующий контракт
+error.invalid.invpos.agregate=Несуществующее устройство
+error.invalid.invpos.serialresource=Для оборудования с серийным учётом номер партии не указывается
+error.invalid.invpos.partyresource=Для оборудования с учётом по партиям инвентарный серийный номер не указывается
+error.invalid.invpos.bulkresource=Для оборудования с количественным учётом инвентарный серийный номер и номер партии не указываются
+error.invalid.invpos.diffresources=В карточке хранения с указанным инвентарный серийным номером значится другое оборудование
+error.invalid.invpos.diffresourcep=В карточке хранения с указанным номером партии значится другое оборудование
+
+error.invalid.invpos.boxed=Оборудование не может быть упаковано
+error.invalid.invpos.priced=Оборудование не может иметь цену
+
+error.invalid.invpos.utype=Неверный тип поиска по карточке
+
+error.invalid.invpos.serialsearch=Карточка с указанным инвентарным серийным номером не найдена
+error.invalid.invpos.partialsearch=Карточка с указанным номером партии не найдена
+
+label.position.state.b=Упаковано
+label.position.state.c=Списано
+label.position.state.r=Сломано
+label.position.state.f=Исправляется
+label.position.state.l=Утеряно
+label.position.state.n=Нормально
+
+label.num=№
+label.from=от
+label.name=Наименование
+label.code=Код
+label.print=Печать
+label.datefrom=с
+label.dateto=по
+
+label.division=Подразделение
+label.company=Компания
+
+label.choose.storageplace=Выбор склада
+label.choose.organization=Выбор организации
+label.choose.organizations=Выбор организаций
+label.choose.worker=Выбор служащего
+label.choose.equipment=Выбор оборудования
+label.choose.equipmente=Выбор оборудования у экспедиции
+label.choose.equipmentp=Выбор оборудования на позиции
+label.choose.company=Выбор компании
+label.choose.division=Выбор подразделения
+label.choose.currency=Выбор валюты
+label.choose.worker=Выберите работника
+label.choose.ratetype=Выбор типа курса
+label.choose.restype=Выбор вида оборудования
+label.choose.ressbtype=Выбор типа оборудования
+label.choose.unit=Выбор единицы измерения
+label.choose.resource=Выбор оборудования
+label.choose.contract=Выбор контракта
+label.choose.contragent=Выбор поставщика
+label.choose.position=Выбор позиции
+label.choose.complect=Выбор комплекта оборудования
+label.choose.renter=Выбор подрядчика
+label.choose.resourceset=Выбор набора
+label.choose.serialnumber=Выбор инвентарного серийного номера
+label.choose.partynumber=Выбор номера партии
+label.choose.req=Выбор требования
+
+label.serialnumber.storage=Склад
+label.serialnumber.resource=Оборудование
+label.serialnumber.serial=Инвентарный серийный №
+label.serialnumber.model=Обозначение
+label.serialnumber.name=Наименование
+label.serialnumber.expedition=Подрядчик/сотрудник
+label.serialnumber.equipment=Комплект оборудования
+label.serialnumber.position=Позиция
+
+label.party.storage=Склад
+label.party.resource=Оборудование
+label.party.serial=№ партии
+label.party.model=Обозначение
+label.party.name=Наименование
+label.party.expedition=Подрядчик/сотрудник
+label.party.equipment=Комплект оборудования
+label.party.position=Позиция
+
+label.storplace.code=Код
+label.storplace.name=Наименование
+label.storplace.division=Подразделение
+label.storplace.company=Компания
+
+label.organization.code=Код
+label.organization.name=Наименование
+label.organization.company=Компания
+label.organization.phone=Телефон
+label.organization.inn=ИНН
+label.organization.issupplier=Поставщик
+label.organization.isrenter=Арендодатель
+label.organization.isprovider=Подрядчик
+label.organization.type=Тип
+
+label.people.lastname=Фамилия
+
+label.equipment.code=Код
+label.equipment.name=Наименование
+label.equipment.spnum=Инвентарный серийный №
+label.equipment.type=Тип учёта
+label.equipment.restype=Вид оборудования
+label.equipment.ressbtype=Тип оборудования
+label.equipment.storage=Склад
+label.equipment.config=Конфигурация
+
+label.equipment.policy.serial=Инвентарный серийный №
+label.equipment.policy.party=№ партии
+label.equipment.policy.bulk=Навалом
+
+label.equipmente.code=Код
+label.equipmente.name=Наименование
+label.equipmente.spnum=Инвентарный серийный №
+label.equipmente.type=Тип учёта
+label.equipmente.restype=Вид оборудования
+label.equipmente.ressbtype=Тип оборудования
+label.equipmente.type=Тип
+label.equipmente.organization=Организация
+label.equipmente.worker=Сотрудник
+
+label.equipmente.policy.serial=Инвентарный серийный №
+label.equipmente.policy.party=№ партии
+label.equipmente.policy.bulk=Навалом
+
+label.equipmentp.code=Код
+label.equipmentp.name=Наименование
+label.equipmentp.spnum=Инвентарный серийный №
+label.equipmentp.type=Тип учёта
+label.equipmentp.restype=Вид оборудования
+label.equipmentp.ressbtype=Тип оборудования
+label.equipmentp.type=Тип
+label.equipmentp.organization=Организация
+label.equipmentp.worker=Сотрудник
+label.equipmentp.position=Позиция
+
+label.equipmentp.policy.serial=Инвентарный серийный №
+label.equipmentp.policy.party=№ партии
+label.equipmentp.policy.bulk=Навалом
+
+label.company.name=Компания
+label.company.shortname=Короткое наименование
+
+label.contract.supplytype=Поставляемый тип оборудования
+label.contract.organization=Организация
+label.contract.contragent=Поставщик
+label.contract.contractname=Наименование контракта
+label.contract.startdate=Дата начала поставок
+label.contract.finishdate=Дата окончания поставок
+label.contract.base=Основное соглашение
+label.contract.state=Состояние
+
+label.contract.state.executing=Исполняется
+label.contract.state.finished=Завершён
+
+#label.position.id=№
+#label.position.gsmid=№ GSM/DSC
+#label.position.dampsid=№ DAMPS
+#label.position.addr=Адрес
+#label.position.zone=Зона сети
+#label.position.search=Искать
+#label.position.bygsm=По № GSM
+#label.position.bydamps=По № DAMPS
+#label.position.byname=По названию
+#label.position.byaddr=По адресу
+
+label.resource.name=Наименование
+label.resource.code=Код
+label.resource.complectfor=Узел для
+label.resource=Оборудование
+label.resource.boxable=Может быть упакован
+label.resource.complectpart.short=Узел
+label.resource.complectpart=Узел
+label.resource.model=Обозначение
+label.resource.taxhist=Налоги
+label.resource.countpolicy=Учётная политика
+label.resource.countpolicy.serial=Сер. учёт
+label.resource.countpolicy.partial=Парт. учёт
+label.resource.unit=Единица измерения
+label.resource.unit.short=Ед. изм.
+label.resource.active=Активный
+label.resource.active.short=Акт.
+label.resource.complect=Комплект
+label.resource.complect.short=Ком-т
+label.resource.double=Консолидация ресурсов
+label.resource.showall=Все
+label.resource.shownew=Не устаревшие
+label.resource.showold=Устаревшие
+label.resource.priceable=Расценка обязательна
+label.resource.priceable.short=Расценка
+label.resource.notes=Примечание
+label.resource.oldcodes=Старые коды
+label.resource.viewoldcodes=Просмотр
+label.resource.byclass=По классификации
+label.resource.bysign=По обозначению
+label.resource.byname=По наименованию
+label.resource.bymanufacturer=По производителю
+label.resource.bymanucode=По коду производителя
+label.resource.type=Вид
+label.resource.subtype=Тип
+label.resource.manucode=Код производителя
+label.reosurce.manufacturer=Производитель
+
+label.resource.countpolicys=Серийный
+label.resource.countpolicyp=По партиям
+label.resource.countpolicyb=Количественный
+
+label.restype.name=Наименование
+label.restype.subtype=Тип
+label.restype=Вид оборудования
+label.restype.code=Код
+label.restypes=Виды оборудования
+
+label.complects=Комплекты
+label.complect=Комплект
+label.complect.code=Код
+label.complect.name=Наименование
+label.complect.mainpart.code=Код главной части
+label.complect.mainpart.name=Главная часть
+label.complect.qty=Кол-во главной части
+label.complect.type=Тип
+label.complect.type.set=Набор
+label.complect.type.agregate=Устройство
+
+label.resourceset.code=Код
+label.resourceset.name=Название
+label.resourceset.resmodel=Обозначение
+label.resourceset.resname=Наименование
+label.resourceset.unit.short=Ед.
+label.resourceset.countpolicy=Учётная политика
+
+label.units=Единицы измерения
+label.unit.name=Наименование
+label.unit.shortname=Краткое наименование
+label.unit.code=Код
+
+label.currency.shortname=Короткое имя
+label.currency=Валюты
+label.currency.code=Валюта
+label.currency.name=Наименование
+
+label.subtype.code=Код
+label.subtype.name=Наименование
+label.subtypes=Типы оборудования
+label.subtype=Тип оборудования
+
+error.empty.restax.nds=Необходимо указать НДС
+error.empty.restax.date=Необходимо указать дату
+error.empty.restax.resource=Необходимо указать оборудование
+error.empty.restax.nsp=Необходимо указать НСП
+
+error.empty.resource.name=Необходимо указать наименование
+error.empty.resource.model=Необходимо указать обозначение
+
+error.empty.content.resourcepart=Необходимо указать элемент
+error.empty.content.qty=Необходимо указать количество
+
+error.empty.restype.name=Необходимо указать наименование
+
+error.empty.ratetype.name=Необходимо указать наименование
+error.empty.ratetype.basecur=Необходимо указать базовую валюту
+
+error.empty.currency.shortname=Необходимо указать короткое имя
+error.empty.currency.name=Необходимо указать наименование
+
+error.empty.currate.value=Необходимо указать курс
+error.empty.currate.date=Необходимо указать дату
+error.empty.currate.ratetype=Необходимо указать тип курса 
+error.empty.currate.currency=Необходимо указать валюту
+
+error.empty.currateh.value=Необходимо указть курс
+error.empty.currateh.ratetype=Необходимо указать тип курса
+error.empty.currateh.date=Необходимо указать дату
+
+error.empty.sysconst.id=Необходимо указать идентификатор
+
+error.empty.unit.name=Необходимо указать наименование единицы измерения
+error.empty.unit.shortname=Необходимо указать краткое наименованование
+
+error.empty.subtype.name=Необходимо указать наименование
+
+error.empty.complectfor.complect=Необходимо указать комплект
+
+error.empty.complect.name=Необходимо указать наименование
+error.empty.complect.mainpart=Необходимо указать главную часть
+error.empty.complect.type=Необходимо указать тип
+error.empty.complect.mainpartqty=Необходимо указать количество главной части
+
+error.invalid.complect.mainpartqty=Неверный формат количества главной части
+
+error.invalid.currate.date=Неверный формат даты
+error.invalid.currate.value=Неверный формат курс
+error.invalid.content.qty=Неверный формат количества
+error.invalid.ratetype.basecur=Неверный формат базовой валюты
+error.invalid.currateh.value=Неверный формат курса
+error.invalid.restax.nds=Неверный формат НДС
+error.invalid.restax.nsp=Неверный формат НСП
+error.invalid.direction.worker=Работник с указанным кодом не найден
+error.invalid.sysconst.datevalue=Неверный формат даты
+error.invalid.currateh.date=Неверный форммат даты
+error.invalid.sysconst.intvalue=Неверный формат целого значения
+error.invalid.restax.date=Неверный формат даты
+
+month.1=январь
+month.2=февраль
+month.3=март
+month.4=апрель
+month.5=май
+month.6=июнь
+month.7=июль
+month.8=август
+month.9=сентябрь
+month.10=октябрь
+month.11=ноябрь
+month.12=декабрь
+
+# Ошибки возникающие при обсчёте документов
+
+error.documentprocessing.bad_agregation={0}Попытка перемещения устройства без его составных частей либо попытка перемещения встроенного блока без устройства.
+error.documentprocessing.bad_agregation_notexists={0}Оборудование в строке не является частью устройства {1}
+error.documentprocessing.bad_agregation_notsupported={0}Операции с устройствами не поддерживаются.
+error.documentprocessing.bad_agregation_qty={0}Указанное в документе количество ресурса больше, чем имеется в наличии ({1}) в составе устройства.
+
+error.documentprocessing.card_already_exists={0}Дублирование инвентарного серийного номера: {1} уже используется. Обсчет документа невозможен.
+error.documentprocessing.card_closed={0}Карточка хранения, соответствующая строке документа закрыта. Обсчет документа невозможен.
+error.documentprocessing.inventarization_before={0}По данному оборудованию уже офрмлен акт инвентаризации {1}. Обсчет документа на дату, предшествующую или совпадающую с датой инвентаризации запрещен.
+error.documentprocessing.no_card={0}Количества оборудования с инвентарным серийным номером {1} недостаточно {2} для обсчёта документа. Обсчет документа невозможен.
+error.documentprocessing.no_such_party={0}Количества оборудования с номером партии {1} недостаточно {2} для обсчёта документа. Обсчет документа невозможен.
+error.documentprocessing.not_in_storage.1={0}Оборудование с с/н {1} числится {2}. Обсчет документа невозможен.
+error.documentprocessing.not_in_storage.2={0}Оборудование числится {1}. Обсчет документа невозможен.
+error.documentprocessing.not_such_product={0}Ресурс отсутствует {1}. Обсчет документа невозможен.
+error.documentprocessing.not_the_same_owner={0}Расход/списание оборудования, принадлежащего другой организации ({1}) запрещен.
+error.documentprocessing.not_the_same_resource={0}Ресурс в БД ({1}), {2} не совпадает с ресурсом в строке документа.
+error.documentprocessing.notenoughqty={0}Указанное в документе количество больше чем имеется в наличии ({1}). Обсчет документа невозможен.
+error.documentprocessing.positionhidden={0}Для данной строки существует документ на перемещение, оформленный позднее текущего: {1}
+error.documentprocessing.unknown={0}Неустановленная ошибка. Сообщите системному администратору.
+
+error.documentprocessing.not_the_same_state={0}Состояние оборудования в строке документа отличается от состояния оборудования в БД.
+error.documentprocessing.not_the_same_price={0}Цена оборудования в строке документа отличается от цены в БД. Цена в БД: {1}
+error.documentprocessing.card_is_boxed={0}Оборудование упаковано и не может быть использовано.
+error.documentprocessing.card_already_bound={0}Оборудование в строке уже встроено в устройство.
+
+error.documentprocessing.databean=Ошибка при обращении к серверу: "{0}". Сообщите системному администратору.
+error.documentprocessing.instate.1=Документ уже в состоянии "вводится"
+error.documentprocessing.instate.2=Документ уже обсчитан
+error.documentprocessing.instate=Документ уже в нужном состоянии
+error.documentprocessing.otherdocsexist=Существуют документы оформленные позднее данного акта. Документ: {0}
+error.documentprocessing.databean=Неустановленная ошибка. Сообщите системному администратору.
+error.documentprocessing.invalid_resource={0}Оборудование {1} отсутствует в списке выборки.
+error.documentprocessing.duplicate_serial={0}Дублированние инвентарного серийного номера
+
+error.documentprocessing.bigprice=Стоимость обнаруженных в составе устройства компонент превышает стоимость устройства
+
+error.documentprocessing.cantcalcafterinv=По комплекту оборудования {0} оформлен акт инвентаризации № {1} от {2}. Обсчет документа на дату, предшествующую или совпадающую с датой инвентаризации запрещен.
+
+label.norecords=\u041f\u043e \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u043c \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u043c \u043f\u043e\u0438\u0441\u043a\u0430 \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e
+
+error.rows=Нет данных для отображения
+
+error.cantprint=Печать невозможна
+
+label.external.print.title=Приходный ордер
+label.external.print.storage=Склад:
+label.external.print.documentnum=Номер документа
+label.external.print.documentdate=Дата
+label.external.print.cordocnum=№ сопроводительного документа
+label.external.print.cordocdate=Дата сопроводит. документа
+label.external.print.gtdnum=№ ГТД
+label.external.print.gtddate=
+label.external.print.regnum=Регистрационный № в бухгалтерии
+label.external.print.currency=Валюта
+label.external.print.contragent=Поставщик
+label.external.print.contract=Контракт
+label.external.print.num=№
+label.external.print.name=Наименование
+label.external.print.unit=Ед. Изм
+label.external.print.qty=Количество
+label.external.print.price=Цена
+label.external.print.sum=Сумма
+label.external.print.serial=Инвентарный серийный №
+label.external.print.bydoc=По д-ту
+label.external.print.byfact=По факту
+label.external.print.counted=Учётная
+label.external.print.from=Сдал
+label.external.print.fiosign=(фамилия, подпись)
+label.external.print.to=Принял
+
+label.inv.print.act=АКТ №
+label.inv.print.bs=инвентаризации на БС
+label.inv.print.numpp=№ п/п
+label.inv.print.hint1=Мы, нижеподписавшиеся, составили настоящий акт в том, что на позиции №
+label.inv.print.hint2=, в момент проведения инвентаризации находится следующее оборудование:
+label.inv.print.name=Наименование
+label.inv.print.serpartnum=Инвентарный (заводской) серийный №/№ партии
+label.inv.print.qty=Кол-во
+label.inv.print.price=Цена
+label.inv.print.sum=Сумма
+label.inv.print.agr=Вмонтирован в аппаратуру
+label.inv.print.agrser=Инвентарный серийный № аппаратуры
+label.inv.print.note=Примечание
+label.inv.print.who=Инвентаризацию провели
+label.inv.print.fio=(Ф.И.О.)
+label.inv.print.sign=(подпись)
+
+label.print.internalr.inwaybill=Накладная №
+label.print.internalr.whom=Кому
+label.print.internalr.position=Для монтажа на позицию
+label.print.internalr.agree=&quot;Отпуск разрешаю&quot;
+label.print.internalr.fromwho=От кого
+label.print.internalr.boss=/С.М. Авдеев/
+label.print.internalr.documents=Документы
+label.print.internalr.numpp=№№ п/п
+label.print.internalr.name=Наименование
+label.print.internalr.qty=Кол-во
+label.print.internalr.sernum=Сер. №
+label.print.internalr.price=Цена за ед.
+label.print.internalr.sum=Сумма
+label.print.internalr.sdal=Сдал
+label.print.internalr.prinyal=Принял
+
+label.resset=Набор оборудования
+label.resset.act=Акт инвентаризации
+label.resset.org=Организация
+label.resset.position=Позиция
+label.resset.complect=Комплект
+label.resset.type=Тип инвентаризации
+label.resset.name=Наименование
+label.resset.model=Обозначение
+label.resset.unit=Ед. изм.
+label.resset.policy=Учётная политика
+label.resset.resource=Оборудование
+label.resset.code=Код
+label.choose.resset=Выбор оборудования из набора
+
+error.resset.change=Позиция не может быть изменена
+error.invalid.resset.document=Документ не выбран при переходе к выборке оборудования
+error.empty.resset.resource=Необходимо выбрать оборудование
+error.invalid.resset.resource=Выбран несуществующий оборудование
+
+label.changeeact=Реестр актов замены оборудования при ремонте
+label.changee.date=Дата
+label.changee.owner=Организация
+label.changee.expedition=Организация/Сотрудник
+label.changee.organization=Подрядчик
+label.changee.organization.short=Подрядчик
+label.changee.worker=Кладовщик
+label.changee.num=№ акта
+label.changee.state=Состояние
+label.changee.positions=Строки акта замены
+label.changee.type=Тип акта
+label.changee.type.forp=Для подрядчика
+label.changee.type.forw=Для сотрудника
+label.changee.type.p=П
+label.changee.type.w=С
+label.changee.remontnik=Представитель ремонтной организации
+
+label.changeepos=Акт замены
+label.changeepos.document=Акт замены
+label.changeepos.resource=Оборудование
+label.changeepos.oldserial=Старый инвентарный серийный номер
+label.changeepos.newserial=Новый инвентарный серийный номер
+label.changeepos.owner=Предприятие
+label.changeepos.organization=Подрядчик
+label.changeepos.worker=Сотрудник
+
+label.changepact=Реестр актов замены оборудования на позиции
+label.changep.date=Дата
+label.changep.owner=Организация
+label.changep.position=Позиция
+label.changep.complect=Комплект оборудования
+label.changep.num=№ акта
+label.changep.state=Состояние
+label.changep.positions=Строки акта замены
+label.changep.type=Тип акта
+label.changep.type.forp=Для подрядчика
+label.changep.type.forw=Для сотрудника
+label.changep.type.p=П
+label.changep.type.w=С
+label.changep.tech=Технический специалист
+label.changep.acttype=Тип акта
+label.changep.acttype.C=Только акты замены
+label.changep.acttype.U=Только акты модернизации
+
+label.change.actt=Тип
+label.change.actt.C=З
+label.change.actt.U=М
+label.changepos.acttype.change=Акт замены
+label.changepos.acttype.upgrade=Акт модернизации
+label.change.positions=Строки акта
+
+label.changeppos=Акт замены
+label.changeppos.document=Акт замены
+label.changeppos.resource=Оборудование
+label.changeppos.newresource=Новое оборудование
+label.changeppos.oldserial=Старый инвентарный серийный номер
+label.changeppos.newserial=Новый инвентарный серийный номер
+label.changeppos.owner=Организация
+label.changeppos.organization=Подрядчик
+label.changeppos.worker=Сотрудник
+label.changeppos.position=Позиция
+label.changeppos.complect=Комплект
+
+label.changesact=Реестр актов замены оборудования на складе
+label.changes.date=Дата
+label.changes.owner=Организация
+label.changes.storage=Склад
+label.changes.storageman=Сотрудник
+label.changes.worker=Сотрудник
+label.changes.num=№ акта
+label.changes.state=Состояние
+label.changes.positions=Строки акта замены
+label.changes.type=Тип акта
+label.changes.type.forp=Для подрядчика
+label.changes.type.forw=Для сотрудника
+label.changes.type.p=П
+label.changes.type.w=С
+label.change.type.w=С
+label.changes.acttype=Тип акта
+label.changes.acttype.C=Только акты замены
+label.changes.acttype.U=Только акты модернизации
+
+label.changespos=Акт замены
+label.changespos.document=Акт замены
+label.changespos.resource=Оборудование
+label.changespos.newresource=Новое оборудование
+label.changespos.oldserial=Старый инвентарный серийный номер
+label.changespos.newserial=Новый инвентарный серийный номер
+label.changespos.owner=Предприятие
+label.changespos.organization=Подрядчик
+label.changespos.worker=Сотрудник
+label.changespos.storage=Склад
+            
+error.empty.change.document=Не выбран документ
+error.invalid.change.document=Неверный формат кода документа
+error.empty.change.blankdate=Необходимо указать дату
+error.invalid.change.blankdate=Неверный формат даты
+error.empty.change.blanknumber=Необходимо указать номер документа
+error.invalid.change.blanknumber=Длинна номера документа больше 40 символов
+error.empty.change.owner=Необходимо указать предприятие
+error.invalid.change.owner=Неверный формат кода предприятия
+error.notexist.change.owner=Указано несуществующее предприятие
+error.empty.change.organization=Необходимо указать подрядчика
+error.invalid.change.organization=Неверный формат кода подрядчика
+error.notexist.change.organization=Указан несуществующий подрядчик
+error.invalid.change.notorganization=Указанная организация не является подрядчиком
+error.empty.change.worker=Необходимо указать сотрудника
+error.invalid.change.worker=Неверный формат кода сотрудника
+error.notexist.change.worker=Указан несуществующий сотрудник
+error.invalid.change.state=Неверное состояние
+error.invalid.change.acttype=Необходимо указать тип акта
+
+error.empty.changepos.resource=Необходимо указать оборудование
+error.invalid.changepos.resource=Неверный формат кода оборудования
+error.empty.changepos.newresource=Необходимо указать новое оборудование
+error.invalid.changepos.newresource=Неверный формат кода нового оборудования
+error.empty.changepos.oldserial=Необходимо указать старый инвентарный серийный номер
+error.invalid.changepos.diffresources=Найденное оборудование не соответствует выбранному
+error.invalid.changepos.diffstorageplace=Указанное оборудование на другом складе
+error.invalid.changepos.oldserial=Оборудование с указанным старым инвентарным серийным номером не найдено
+error.invalid.changepos.notserialresource=Указываемое оборудование должно учитываться серийно
+error.notexist.changepos.resource=Указанное оборудование не существует
+error.empty.changepos.newserial=Необходимо указать новый инвентарный серийный номер
+error.invalid.changepos.newserial=Оборудование с указанным новым инвентарным серийным номером уже существует
+error.externalpos.delete=Невозможно удалить позицию
+error.invalid.change.type=Неверный тип накладной
+error.update.externalr.expedition=Найдены лишние экспедиции связанные с указанным сдающим
+error.notexist.changepos.newresempty=Необходимо указать новое оборудование
+error.notexist.changepos.newresinvalid=Неверный формат кода нового оборудования
+error.notexist.changepos.newresource=Не найдено оборудование с кодом указанным в поле "Новое оборудование"
+error.invalid.change.remontnikbig=Слишком длинное имя приедставителя ремонтной организации
+
+error.empty.changee.organization=Необходимо указать подрядчика
+error.invalid.changee.organization=Неверный формат кода подрядчика
+error.invalid.changee.notorganization=Указанная организация не является подрядчиком
+error.notexist.changee.organization=Указан несуществующий подрядчик
+error.empty.changee.remontnikbig=Необходимо указать представителя ремонтной организации
+error.invalid.changee.remontnikbig=Строка в поле "Представитель" не должна превышать 40 символов
+error.empty.changee.worker=Необходимо указать кладовщика
+error.invalid.changee.worker=Неверный формат кода кладовщика
+error.notexist.changee.worker=Не найден кладовщик с указанным кодом
+
+# ----------------------------------- Dima -------------------------------
+label.menu.income.assact=Акты монтажа на складе
+label.menu.income.dassact=Акты демонтажа на складе
+label.assacts=Акты монтажа блоков на складе
+label.assact.storage=Склад
+label.assact.period=Период
+label.assact.periodfrom=с
+label.assact.periodto=по
+label.assact.owner=Организация
+label.assact.positions=Строки акта монтажа
+label.assact.storageplace=Код
+label.assact.storagename=Склад
+label.assact.state=Состояние
+
+label.assact.num=№ акта
+label.assact.date=Дата акта
+label.assact.stworker=Кладовщик
+label.assact.monter=Кто смонтировал
+label.assact.oldconfig=Старая конфигурация
+label.assact.config=Конфигурация
+label.assact.newconfig=Новая конфигурация
+label.assact.agregate=Устройство, инвентарный серийный №
+label.assact.state=Состояние акта монтажа
+label.assact.tocalcstate=ВНИМАНИЕ! Производится обсчет акта монтажа. <BR>Конфигурация устройства будет изменена!
+label.assact.toenterstate=ВНИМАНИЕ! Производится снятие обсчета с акта монтажа. <BR>Конфигурация устройства будет изменена!
+
+label.assactpos=Акт монтажа
+label.assactpos.document=Акт монтажа
+label.assactpos.owner=Организация
+label.assactpos.storage=Склад
+label.assactpos.num=Номер
+label.assactpos.name=Наименование
+label.assactpos.qty.short=Кол.
+label.assactpos.unit.short=Ед. изм.
+label.assactpos.price=Цена
+label.assactpos.sum=Сумма
+label.assactpos.serial=Инвентарный (заводской) серийный № / № партии
+label.assactpos.agregate=Устройство
+label.assactpos.resource=Оборудование
+label.assactpos.qty=Количество
+label.assactpos.serialnum=Инвентарный серийный номер
+label.assactpos.partynum=Номер партии
+
+error.empty.assact.monter=Необходимо заполнить поле "Кто смонтировал"
+error.invalid.assact.monter=Монтажник с указанным кодом не найден
+error.invalid.assact.worker=Кладовщик с указанным кодом не найден
+error.empty.assact.owner=Необходимо выбрать организацию
+error.invalid.assact.owner=Организация с указанным кодом не найдена
+error.empty.assact.storage=Необходимо выбрать склад
+error.invalid.assact.storage=Склад с указанным кодом не найден
+error.empty.assact.num=Необходимо указать номер акта
+error.empty.assact.date=Необходимо указать дату акта
+error.invalid.assact.date=Неверный формат даты акта
+error.empty.assact.agregat=Необходимо указать устройство
+error.invalid.assact.agregat=Устройство с указанным кодом не найдено
+error.invalid.assact.state=Неверное состояние акта
+
+error.empty.assactpos.order=Необходимо указать порядковый номер
+error.invalid.assactpos.order=Неверный формат порядкового номера
+error.empty.assactpos.qty=Необходимо указать количество
+error.invalid.assactpos.qty=Неверный формат количества
+error.invalid.assactpos.price=Неверный формат цены
+error.invalid.assactpos.pricelow=Цена не может быть отрицательной
+error.empty.assactpos.price=Необходимо указать цену
+error.empty.assactpos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.assactpos.qtylow=Количество для серийного оборудования должно быть равно единице
+error.invalid.assactpos.serialresource=Для серийного оборудования номер партии не указывается
+error.invalid.assactpos.diffresources=Оборудование в карточке хранения не совпадает с указанным в документе
+error.empty.assactpos.party=Необходимо указать номер партии
+error.invalid.assactpos.partyresource=Для оборудования с учетом по партиям инвентарный серийный номер не указывается
+error.invalid.assactpos.bulkresource=Для оборудования с количественным учётом номер партии и инвентарный серийный номер не указываются
+error.notexist.assactpos.resource=Оборудование с указанным кодом не найден
+error.invalid.assactpos.serialparty=Необходимо указать только одно из полей: инвентарный серийный номер или номер партии
+
+#---- Disassembling acts
+label.dassacts=Акты демонтажа блоков на складе
+label.dassact.storage=Склад
+label.dassact.period=Период
+label.dassact.periodfrom=с
+label.dassact.periodto=по
+label.dassact.owner=Организация
+label.dassact.positions=Строки акта демонтажа
+label.dassact.storageplace=Код
+label.dassact.storagename=Склад
+label.dassact.state=Состояние
+
+label.dassact.num=№ акта
+label.dassact.date=Дата акта
+label.dassact.stworker=Кладовщик
+label.dassact.monter=Кто демонтировал
+label.dassact.oldconfig=Старая конфигурация
+label.dassact.newconfig=Новая конфигурация
+label.dassact.agregate=Устройство, инвентарный серийный №
+label.dassact.state=Состояние акта демонтажа
+label.dassact.tocalcstate=ВНИМАНИЕ! Производится обсчет акта демонтажа. <BR>Конфигурация устройства будет изменена!
+label.dassact.toenterstate=ВНИМАНИЕ! Производится снятие обсчета с акта демонтажа. <BR>Конфигурация устройства будет изменена!
+
+label.dassactpos=Акт демонтажа
+label.dassactpos.document=Акт демонтажа
+label.dassactpos.owner=Предприятие
+label.dassactpos.storage=Склад
+label.dassactpos.num=Номер
+label.dassactpos.name=Наименование
+label.dassactpos.qty.short=Кол.
+label.dassactpos.unit.short=Ед. изм.
+label.dassactpos.price=Цена
+label.dassactpos.sum=Сумма
+label.dassactpos.serial=Инвентарный (заводской) серийный № / № партии
+label.dassactpos.agregate=Устройство
+label.dassactpos.resource=Оборудование
+label.dassactpos.qty=Количество
+label.dassactpos.serialnum=Инвентарный серийный номер
+label.dassactpos.partynum=Номер партии
+
+error.empty.dassact.monter=Необходимо заполнить поле "Кто демонтировал"
+error.invalid.dassact.monter=Монтажник с указанным кодом не найден
+error.invalid.dassact.worker=Кладовщик с указанным кодом не найден
+error.empty.dassact.owner=Необходимо выбрать предприятие
+error.invalid.dassact.owner=Организация с указанным кодом не найдена
+error.empty.dassact.storage=Необходимо выбрать склад
+error.invalid.dassact.storage=Склад с указанным кодом не найден
+error.empty.dassact.num=Необходим указать номер акта
+error.empty.dassact.date=Необходимо указать дату акта
+error.invalid.dassact.date=Неверный формат даты акта
+error.empty.dassact.agregat=Необходимо указать устройство
+error.invalid.dassact.agregat=Устройство с указанным кодом не найдено
+error.invalid.dassact.state=Неверное состояние акта
+
+error.empty.dassactpos.order=Необходимо указать порядковый номер
+error.invalid.dassactpos.order=Неверный формат порядкового номера
+error.empty.dassactpos.qty=Необходимо указать количество
+error.invalid.dassactpos.qty=Неверный формат количества
+error.invalid.dassactpos.price=Неверный формат цены
+error.invalid.dassactpos.pricelow=Цена не может быть отрицательной
+error.empty.dassactpos.price=Необходимо указать цену
+error.empty.dassactpos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.dassactpos.qtylow=Количество для серийного оборудования должно быть равно единице
+error.invalid.dassactpos.serialresource=Для серийного оборудования номер партии не указывается
+error.invalid.dassactpos.diffresources=Оборудование в карточке хранения не совпадает с указанным в документе
+error.empty.dassactpos.party=Необходимо указать номер партии
+error.invalid.dassactpos.partyresource=Для оборудования с учетом по партиям инвентарный серийный номер не указывается
+error.invalid.dassactpos.bulkresource=Для оборудования с количественным учётом номер партии и инвентарный серийный номер не указываются
+error.notexist.dassactpos.resource=Оборудование с указанным кодом не найден
+error.invalid.dassactpos.serialparty=Необходимо указать только одно из полей: инвентарный серийный номер или номер партии
+#-------------------------------------------------------------------------
+
+# Типы актов
+label.acttype.forp=Для подрядчика
+label.acttype.forw=Для сотрудника
+label.acttype.p=П
+label.acttype.w=С
+
+# Акты монтажа на позиции
+label.menu.oppos.assemblingp=Акты монтажа
+
+label.assemblingp=Реестр актов монтажа
+
+label.assemblingp.owner=Организация
+label.assemblingp.position=Позиция
+label.assemblingp.date=Дата
+label.assemblingp.datefrom=с
+label.assemblingp.dateto=по
+label.assemblingp.type=Тип акта
+label.assemblingp.provider=Подрядчик
+label.assemblingp.worker=Сотрудник
+
+label.assemblingp.assembler=Монтаж произвёл
+label.assemblingp.place=Местоположение
+label.assemblingp.expedition=Подрядчик/Сотрудник
+label.assemblingp.state=Состояние
+label.assemblingp.positions=Строки акта монтажа
+
+label.assemblingp.blanknumber=№ акта
+label.assemblingp.blankdate=Дата акта
+label.assemblingp.complect=Комплект оборудования
+label.assemblingp.insuranceman=ФИО представителя
+label.assemblingp.worker2=Монтаж проверил сотрудник
+label.assemblingp.storageman=Оборудование выдал
+
+label.assemblingp.numpp=№ п/п
+label.assemblingp.name=Наименование
+label.assemblingp.qty=Количество
+label.assemblingp.unit.short=Ед. изм.
+label.assemblingp.price=Цена
+label.assemblingp.sum=Сумма
+label.assemblingp.policynum=Инвентарный (заводской) серийный № / № партии
+
+label.assemblingppos=Акт монтажа
+label.assemblingp.document=Акт монтажа
+label.assemblingp.qty.short=Кол-во
+label.assemblingp.serialnum=Инвентарный серийный №
+label.assemblingp.partynum=№ партии
+label.assemblingp.resource=Оборудование
+label.assemblingp.configuration=Конфигурация
+label.assemblingp.resourceset=Набор оборудования
+
+error.empty.assemblingp.document=Не указан документ
+error.invalid.assemblingp.document=Неверный формат кода документа
+error.empty.assemblingp.owner=Необходимо указать предприятие
+error.empty.assemblingp.blanknumber=Необходимо указать номер акта
+error.empty.assemblingp.blankdate=Необходимо указать дату акта
+error.empty.assemblingp.position=Необходимо указать позицию
+error.empty.assemblingp.complect=Необходимо указать комплект оборудования
+error.empty.assemblingp.provider=Необходимо указать подрядчика
+error.empty.assemblingp.insuranceman=Необходимо казать ФИО представителя
+error.empty.assemblingp.worker=Необходимо указать сотрудника
+error.empty.assemblingp.storageman=Необходимо указать выдавщего оборудование
+error.invalid.assemblingp.type=Неизвестный тип акта
+
+error.invalid.assemblingp.owner=Неверный формат кода организации
+error.notexist.assemblingp.owner=Указано несуществующее организации
+error.invalid.assemblingp.blanknumber=Слишком длинный номер акта
+error.invalid.assemblingp.blankdate=Неверный формат даты акта
+error.invalid.assemblingp.position=Неверный формат кода позиции
+error.notexist.assemblingp.position=Указана несуществующая позиция
+error.invalid.assemblingp.complect=Неверный формат кода комплекта
+error.notexist.assemblingp.complect=Указан несуществующий комплект
+error.invalid.assemblingp.provider=Неверный формат кода подрядчика
+error.invalid.assemblingp.notprovider=Указанная организация не является подрядчиком
+error.notexist.assemblingp.provider=Указан несуществующий подрядчик
+error.invalid.assemblingp.worker=Неверный формат кода сотрудника
+error.notexist.assemblingp.worker=Указан несуществующий сотрудник
+error.invalid.assemblingp.worker2=Неверный формат кода сотрудника проверяющего монтаж
+error.notexist.assemblingp.worker2=Указан несуществующий сотрудника проверяющего монтаж
+error.invalid.assemblingp.storageman=Неверный формат кода выдвщего оборудование
+error.notexist.assemblingp.storageman=Указан несуществующий кладовщик выдавщий оборудование
+error.invalid.assemblingp.state=Неизвестное состояние документа
+
+error.empty.assemblingppos.order=Необходимо указать № п/п
+error.invalid.assemblingppos.order=Неверный формат № п/п
+error.invalid.assemblingppos.serialparty=Укажите либо инвентарный серийный номер либо партионный номер
+error.empty.assemblingppos.qty=Необходимо указать количество
+error.invalid.assemblingppos.qty=Неверный формат количества
+error.invalid.assemblingppos.qtylow=Количество должно быть положительным
+error.empty.assemblingppos.resource=Необходимо указать оборудование
+error.invalid.assemblingppos.resource=Неверный формат кода оборудования
+error.invalid.assemblingppos.configuration=Необходимо указать конфигурацию
+error.empty.assemblingppos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.assemblingppos.serialresource=Для оборудования с серийным учётом номер партии не указывается
+error.invalid.assemblingppos.diffresources=Указанное оборудование не соответствует найденному в карточке
+error.invalid.assemblingppos.serial=Не найдена карточка с указанным инвентарным серийным номером
+error.empty.assemblingppos.party=Необходимо указать номер партии
+error.invalid.assemblingppos.partyresource=Для оборудования с учётом по партиям инвентарный серийный номер не указывается
+error.invalid.assemblingppos.party=Не найдена карточка с указанным номером партии
+error.invalid.assemblingppos.bulkresource=Для оборудования с количественным учётом инвентарный серийный номер и номер партии не указываются
+error.notexist.assemblingppos.resource=Указано несуществующее оборудование
+error.empty.assemblingppos.price=Необходимо указать цену
+error.invalid.assemblingppos.price=Неверный формат цены
+error.invalid.assemblingppos.pricelow=Цена должна быть положительна
+error.invalid.assemblingppos.bulk=Указанного оборудования нет в наличии
+
+# Акты демонтажа на позиции
+label.menu.oppos.dismantlingp=Акты демонтажа
+
+label.dismantlingp=Реестр актов демонтажа
+
+label.dismantlingp.owner=Организация
+label.dismantlingp.position=Позиция
+label.dismantlingp.date=Дата
+label.dismantlingp.datefrom=с
+label.dismantlingp.dateto=по
+label.dismantlingp.type=Тип акта
+label.dismantlingp.provider=Подрядчик
+label.dismantlingp.worker=Сотрудник
+
+label.dismantlingp.disassembler=Демонтаж произвёл
+label.dismantlingp.place=Местоположение
+label.dismantlingp.expedition=Подрядчик/Сотрудник
+label.dismantlingp.state=Состояние
+label.dismantlingp.positions=Строки акта демонтажа
+
+label.dismantlingp.blanknumber=№ акта
+label.dismantlingp.blankdate=Дата акта
+label.dismantlingp.complect=Комплект оборудования
+label.dismantlingp.insuranceman=ФИО представителя
+label.dismantlingp.worker2=Работу проверил сотрудник
+label.dismantlingp.storageman=Оборудование принял
+
+label.dismantlingp.numpp=№ п/п
+label.dismantlingp.name=Наименование
+label.dismantlingp.qty=Количество
+label.dismantlingp.unit.short=Ед. изм.
+label.dismantlingp.price=Цена
+label.dismantlingp.sum=Сумма
+label.dismantlingp.policynum=Инвентарный (заводской) серийный № / № партии
+
+label.dismantlingppos=Акт демонтажа
+label.dismantlingp.document=Акт монтажа
+label.dismantlingp.qty.short=Кол-во
+label.dismantlingp.serialnum=Инвентарный серийный №
+label.dismantlingp.partynum=№ партии
+label.dismantlingp.resource=Оборудование
+label.dismantlingp.configuration=Конфигурация
+label.dismantlingp.resourceset=Набор оборудования
+
+error.empty.dismantlingp.document=Не указан документ
+error.invalid.dismantlingp.document=Неверный формат кода документа
+error.empty.dismantlingp.owner=Необходимо указать предприятие
+error.empty.dismantlingp.blanknumber=Необходимо указать номер акта
+error.empty.dismantlingp.blankdate=Необходимо указать дату акта
+error.empty.dismantlingp.position=Необходимо указать позицию
+error.empty.dismantlingp.complect=Необходимо указать комплект оборудования
+error.empty.dismantlingp.provider=Необходимо указать подрядчика
+error.empty.dismantlingp.insuranceman=Необходимо казать ФИО представителя
+error.empty.dismantlingp.worker=Необходимо указать сотрудника
+error.empty.dismantlingp.storageman=Необходимо указать сотрудника, выдавщего оборудование
+error.invalid.dismantlingp.type=Неизвестный тип акта
+
+error.invalid.dismantlingp.owner=Неверный формат кода организации
+error.notexist.dismantlingp.owner=Указано несуществующее организация
+error.invalid.dismantlingp.blanknumber=Слишком длинный номер акта
+error.invalid.dismantlingp.blankdate=Неверный формат даты акта
+error.invalid.dismantlingp.position=Неверный формат кода позиции
+error.notexist.dismantlingp.position=Указана несуществующая позиция
+error.invalid.dismantlingp.complect=Неверный формат кода комплекта
+error.notexist.dismantlingp.complect=Указан несуществующий комплект
+error.invalid.dismantlingp.provider=Неверный формат кода подрядчика
+error.invalid.dismantlingp.notprovider=Указанная организация не является подрядчиком
+error.notexist.dismantlingp.provider=Указан несуществующий подрядчик
+error.invalid.dismantlingp.worker=Неверный формат кода сотрудника
+error.notexist.dismantlingp.worker=Указан несуществующий сотрудник
+error.invalid.dismantlingp.storageman=Неверный формат кода выдвщего оборудование
+error.notexist.dismantlingp.storageman=Указан несуществующий кладовщик выдавщий оборудование
+error.invalid.dismantlingp.state=Неизвестное состояние документа
+error.invalid.assemblingp.worker2=Неверный формат кода сотрудника принявшего работу
+error.notexist.assemblingp.worker2=Указан несуществующий сотрудник в поле "Работу принял"
+
+error.empty.dismantlingppos.order=Необходимо указать № п/п
+error.invalid.dismantlingppos.order=Неверный формат № п/п
+error.invalid.dismantlingppos.serialparty=Укажите либо инвентарный серийный либо партионный номер
+error.empty.dismantlingppos.qty=Необходимо указать количество
+error.invalid.dismantlingppos.qty=Неверный формат количества
+error.invalid.dismantlingppos.qtylow=Количество должно быть положительным
+error.invalid.dismantlingppos.qtybig=Количество ресурса, учитываемого серийно, должно быть равно единице
+error.empty.dismantlingppos.resource=Необходимо указать оборудование
+error.invalid.dismantlingppos.resource=Неверный формат кода оборудования
+error.invalid.dismantlingppos.configuration=Необходимо указать конфигурацию
+error.empty.dismantlingppos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.dismantlingppos.serialresource=Для оборудования с серийным учётом номер партии не указывается
+error.invalid.dismantlingppos.diffresources=Указанное оборудование не соответствует найденному в карточке
+error.invalid.dismantlingppos.serial=Не найдена карточка с указанным инвентарным серийным номером
+error.empty.dismantlingppos.party=Необходимо указать номер партии
+error.invalid.dismantlingppos.partyresource=Для оборудования с учётом по партиям инвентарный серийный номер не указывается
+error.invalid.dismantlingppos.party=Не найдена карточка с указанным номером партии
+error.invalid.dismantlingppos.bulkresource=Для оборудования с количественным учётом инвентарный серийный номер и номер партии не указываются
+error.notexist.dismantlingppos.resource=Указано несуществующее оборудование
+error.empty.dismantlingppos.price=Необходимо указать цену
+error.invalid.dismantlingppos.price=Неверный формат цены
+error.invalid.dismantlingppos.pricelow=Цена должна быть положительна
+error.invalid.dismantlingppos.bulk=Указанного оборудования нет в наличии
+
+# Complect lookup labels
+
+label.complect.position=Позиция
+label.complect.equtype=Тип комплекта
+label.complect.type=Тип
+label.complect.state=Состояние
+label.complect.contents=Состав
+label.complect.name=Наименование
+
+label.complect.switchtype=Тип
+label.complect.switchgsm=GSM/DCS
+label.complect.switchdamps=DAMPS
+
+label.complect.number=Номер
+
+label.complect.stationtype=Тип станции
+label.complect.stationdamps=DAMPS
+label.complect.stationgsm=GSM 900
+label.complect.stationdcs=DCS 1800
+label.complect.stationboth=GSM 900 / DCS 1800
+
+label.complect.controller=Контроллер
+label.complect.switch=Коммутатор
+label.complect.comline=Линия связи
+
+label.complect.isrepeater=Репитер
+label.complect.stationname=Название станции
+
+label.complect.type.basestation=Базовая станция
+label.complect.type.comequipment=Коммуникационное оборудование
+label.complect.type.controller=Контроллер
+label.complect.type.switch=Коммутатор
+label.complect.type.other=Вспомогательное оборудование
+label.complect.type.unknown=Неизвестно что
+
+label.complect.comequipmenttype = Тип оборудования связи
+label.complect.comequipmenttype.radio=Радиорелейное
+label.complect.comequipmenttype.optic=Волоконно-оптическое
+
+label.complect.othertype=Тип прочего оборудования
+label.complect.othertypea=Сооружения (контейнеры, мачты, опоры)
+label.complect.othertypeb=Оборудование техническое (электропитания, охлаждение, сигнализация, пожаротушение, огни ВОЗ)
+label.complect.othertypec=Хозяйственное оборудование
+label.complect.othertyped=Прочее оборудование
+
+label.complect.state=Состояние
+label.complect.statep=Планируется
+label.complect.statem=Монтируется
+label.complect.stater=Смонтировано
+label.complect.statet=Оттестировано
+label.complect.statew=Запущено в работу
+
+# Requirements
+label.menu.other.req=Требования
+
+label.req=Реестр требований на выдачу оборудования
+label.req.division=Подразделение
+label.req.datereq=Дата требования
+label.req.position=Позиция
+label.req.type=Тип требования
+label.req.date=Дата
+label.req.expedition=Организация/Сотрудник
+label.req.state=Состояние
+label.req.storage=Склад
+label.req.copy=Копировать
+label.req.num=№ требования
+label.req.nauto=№ автомашины
+label.req.worker=Сотрудник
+label.req.checker=Утвердил
+label.req.sender=Отпустил
+label.req.organization=Подрядчик
+label.req.representative=ФИО представителя
+label.req.positions=Состав требования
+label.req.notsend=Отпуск оборудования по требованию не производился
+
+label.reqpos=Состав требования
+label.reqpos.document=Требование
+label.reqpos.expedition=Подрядчик/Сотрудник
+label.reqpos.position=Для объекта
+label.reqpos.resource=Оборудование
+label.reqpos.qtytitle=Количество
+label.reqpos.qty=Требуемое количество
+label.reqpos.req=требуется
+label.reqpos.send=отпущено
+label.reqpos.note=Примечание
+label.reqpos.owner=Организация
+label.reqpos.nauto=№ автомашины
+label.reqpos.insurance=ФИО представителя
+label.reqpos.worker=Сотрудник
+label.reqpos.organization=Подрядчик
+label.reqpos.num=№ п/п
+label.reqpos.complect=Набор оборудования
+label.reqpos.resource=Оборудование
+label.reqpos.configuration=Конфигурация
+label.reqpos.fqty=Отпущено количество
+label.reqpos.price=Цена
+label.reqpos.serialnum=Инвентарный серийный №
+label.reqpos.partynum=№ партии
+
+error.empty.req.document=Не указан документ
+error.invalid.req.document=Неверный формат кода документа
+error.empty.req.division=Необходимо указать подразделение
+error.invalid.req.division=Неверный формат кода подразделения
+error.notexist.req.division=Указано несуществующее подразделение
+error.empty.req.blankdate=Необходимо указать дату требования
+error.invalid.req.blankdate=Неверный формат даты требования
+error.empty.req.blanknumber=Необходимо указать номер требования
+error.invalid.req.blanknumber=Неверный формат номера требования
+error.empty.req.owner=Необходимо указать организацию
+error.invalid.req.owner=Неверный формат кода организации
+error.notexist.req.owner=Указана несуществующая организация
+error.empty.req.storage=Необходимо указать склад
+error.invalid.req.storage=Неверный формат кода склада
+error.notexist.req.storage=Укзаан несуществующий склад
+error.empty.req.organization=Необходимо указать организацию
+error.invalid.req.organization=Неверный формат кода подрядчика
+error.notexist.req.organization=Указан несуществующий подрядчик
+error.empty.req.insuranceman=Необходимо указать ФИО представителя
+error.empty.req.worker=Необходимо указать сотрудника
+error.invalid.req.worker=Неверный формат кода сотрудника
+error.notexist.req.worker=Укзан несуществующий сотрудник
+error.invalid.req.type=Неверный тип требования
+error.empty.req.position=Необходимо указать позицию
+error.invalid.req.position=Неверный формат кода позиции
+error.notexist.req.position=Указана несуществующая позиция
+error.empty.req.checker=Необходимо указать утверждающего
+error.invalid.req.cheker=Неверный формат кода утверждающего
+error.notexist.req.checker=Указан несуществующий утверждающий
+error.empty.req.sender=Необходимо указать отпускающего
+error.invalid.req.sender=Неверный формат кода отпускающего
+error.notexist.req.sender=Указан несуществующий отпускающий
+error.invalid.req.state=Неверное состояние
+
+error.empty.reqpos.order=Необходимо указать № п/п
+error.invalid.reqpos.order=Неверный формат № п/п
+error.empty.reqpos.fqty=Необходимо указать отпущенное количество
+error.invalid.reqpos.fqty=Неверный формат отпущенного количества
+error.invalid.reqpos.fqtylow=Отпущенное количество не может быть отрицательным
+error.invalid.reqpos.serialparty=Нужно казать либо инвентарный серийный номер либо номер партии
+error.empty.reqpos.qty=Необходимо указать требуемое количество
+error.invalid.reqpos.qty=Неверный формат требуемого количества
+error.invalid.reqpos.qtylow=Требуемое количество должно быть положительным
+error.empty.reqpos.resource=Необходимо указать оборудование
+error.invalid.reqpos.resource=Неверный формат кода оборудования
+error.invalid.reqpos.configuration=Строка конфигурация не может превышать 40 символов
+error.empty.reqpos.serial=Необходимо укзать инвентарный серийный номер
+error.invalid.reqpos.serialresource=Для оборудования с серийным учётом номер партии не указывается
+error.invalid.reqpos.diffresources=Указанное оборудоване не совпадает с найденным в карточке
+error.invalid.reqpos.serial=Не найдена карточка для оборудования с указанным инвентарным серийным номером
+error.empty.reqpos.party=Необходимо указать номер партии
+error.invalid.reqpos.partyresource=Для оборудования с учётом по партиям инвентарный серийный номер не указывается
+error.invalid.reqpos.party=Не найдена карточка для оборудования с указанным номером партии
+error.invalid.reqpos.bulkresource=Для оборудования с количественным учётом инвентарный серийный номер и номер партии не указываются
+error.empty.reqpos.price=Отсутствует цена в карточке
+error.invalid.reqpos.price=Неверный формат цены
+error.invalid.reqpos.pricelow=Цена не может быть отрицательной
+error.notexist.reqpos.resource=Указанно несуществующее оборудование
+
+
+# Block Assembling Act on Position
+label.menu.other.assactb=Акты монтажа блоков
+label.assactsb=Акты монтажа блоков
+label.assactb.position=Позиция
+label.assactb.complect=Комплект
+label.assactb.period=Период
+label.assactb.periodfrom=с
+label.assactb.periodto=по
+label.assactb.owner=Организация
+label.assactb.positions=Строки акта монтажа
+label.assactb.storageplace=Код
+label.assactb.positionname=Местоположение
+label.assactb.state=Состояние
+
+label.assactb.num=№ акта
+label.assactb.date=Дата акта
+label.assactb.mountgroup=Монтаж произвел(и)
+label.assactb.stworker=Сотрудник
+label.assactb.monter=Сотрудник 2
+label.assactb.oldconfig=Старая конфигурация
+label.assactb.newconfig=Новая конфигурация
+label.assactb.config=Конфигурация
+label.assactb.agregate=Устройство, инвентарный серийный №
+label.assactb.state=Состояние акта монтажа
+label.assactb.tocalcstate=ВНИМАНИЕ! Производится обсчет акта монтажа. <BR>Конфигурация устройства будет изменена!
+label.assactb.toenterstate=ВНИМАНИЕ! Производится снятие обсчета с акта монтажа. <BR>Конфигурация устройства будет изменена!
+
+label.assactposb=Акт монтажа
+label.assactposb.document=Акт монтажа
+label.assactposb.owner=Организация
+label.assactposb.position=Позиция
+label.assactposb.complect=Комплект
+label.assactposb.num=Номер
+label.assactposb.name=Наименование
+label.assactposb.qty.short=Кол.
+label.assactposb.unit.short=Ед. изм.
+label.assactposb.price=Цена
+label.assactposb.sum=Сумма
+label.assactposb.serial=инвентарный серийный № / № партии
+label.assactposb.agregate=Устройство
+label.assactposb.resource=Оборудование
+label.assactposb.qty=Количество
+label.assactposb.serialnum=Инвентарный серийный номер
+label.assactposb.partynum=Номер партии
+
+error.empty.assactb.monter=Необходимо заполнить поле "Сотрудник 2"
+error.empty.assactb.worker=Необходимо заполнить поле "Сотрудник"
+error.invalid.assactb.monter=Сотрудник 2 с указанным кодом не найден
+error.invalid.assactb.worker=Сотрудник с указанным кодом не найден
+error.empty.assactb.owner=Необходимо выбрать организацию
+error.invalid.assactb.owner=Организация с указанным кодом не найдена
+error.empty.assactb.position=Необходимо выбрать позицию
+error.invalid.assactb.position=Комплект с указанным кодом не найден
+error.empty.assactb.complect=Необходимо выбрать комплект
+error.invalid.assactb.complect=Позиция с указанным кодом не найдена
+error.empty.assactb.num=Необходим указать номер акта
+error.empty.assactb.date=Необходимо указать дату акта
+error.invalid.assactb.date=Неверный формат даты акта
+error.empty.assactb.agregat=Необходимо указать устройство
+error.invalid.assactb.agregat=Устройство с указанным кодом не найдено
+error.invalid.assactb.state=Неверное состояние акта
+
+error.empty.assactposb.order=Необходимо указать порядковый номер
+error.invalid.assactposb.order=Неверный формат порядкового номера
+error.empty.assactposb.qty=Необходимо указать количество
+error.invalid.assactposb.qty=Неверный формат количества
+error.invalid.assactposb.price=Неверный формат цены
+error.invalid.assactposb.pricelow=Цена не может быть отрицательной
+error.empty.assactposb.price=Необходимо указать цену
+error.empty.assactposb.serial=Необходимо указать инвентарный серийный номер
+error.invalid.assactposb.qtylow=Количество для серийного оборудования должно быть равно единице
+error.invalid.assactposb.serialresource=Для оборудования с серийным учетом номер партии не указывается
+error.invalid.assactposb.diffresources=Оборудование в карточке хранения не совпадает с указанным
+error.empty.assactposb.party=Необходимо указать номер партии
+error.invalid.assactposb.partyresource=Для оборудования с учётом по партиям инвентарный серийный номер не указывается
+error.invalid.assactposb.bulkresource=Для оборудования с количественным учётом номер партии и инвентарный серийный номер не указываются
+error.notexist.assactposb.resource=Оборудование с указанным кодом не найдено
+error.invalid.assactposb.serialparty=Необходимо указать только одно из полей: инвентарный серийный номер или номер партии
+error.invalid.assactb.agregatemustoncomplect=Усройство с указанным серийным номер не установлено ни на какой позиции
+
+# Block Dismantling Act on Position
+label.menu.other.dassactb=Акты демонтажа блоков
+label.dassactsb=Акты демонтажа блоков
+label.dassactb.position=Позиция
+label.dassactb.complect=Комплект
+label.dassactb.period=Период
+label.dassactb.periodfrom=с
+label.dassactb.periodto=по
+label.dassactb.owner=Организация
+label.dassactb.positions=Строки акта монтажа
+label.dassactb.storageplace=Код
+label.dassactb.positionname=Местоположение
+label.dassactb.state=Состояние
+
+label.dassactb.num=№ акта
+label.dassactb.date=Дата акта
+label.dassactb.mountgroup=Демонтаж произвел(и)
+label.dassactb.stworker=Сотрудник
+label.dassactb.monter=Сотрудник 2
+label.dassactb.oldconfig=Старая конфигурация
+label.dassactb.newconfig=Новая конфигурация
+label.dassactb.agregate=Устройство, инвентарный серийный №
+label.dassactb.state=Состояние акта демонтажа
+label.dassactb.tocalcstate=ВНИМАНИЕ! Производится обсчет акта демонтажа. <BR>Конфигурация устройства будет изменена!
+label.dassactb.toenterstate=ВНИМАНИЕ! Производится снятие обсчета с акта демонтажа. <BR>Конфигурация устройства будет изменена!
+
+label.dassactposb=Акт демонтажа
+label.dassactposb.document=Акт демонтажа
+label.dassactposb.owner=Организация
+label.dassactposb.position=Позиция
+label.dassactposb.complect=Комплект
+label.dassactposb.num=Номер
+label.dassactposb.name=Наименование
+label.dassactposb.qty.short=Кол.
+label.dassactposb.unit.short=Ед. изм.
+label.dassactposb.price=Цена
+label.dassactposb.sum=Сумма
+label.dassactposb.serial=Инвентарный серийный № / № партии
+label.dassactposb.agregate=Устройство
+label.dassactposb.resource=Оборудование
+label.dassactposb.qty=Количество
+label.dassactposb.serialnum=Инвентарный серийный номер
+label.dassactposb.partynum=Номер партии
+      
+error.empty.dassactb.monter=Необходимо заполнить поле "Сотрудник 2"
+error.empty.dassactb.worker=Необходимо заполнить поле "Сотрудник"
+error.invalid.dassactb.monter=Сотрудник 2 с указанным кодом не найден
+error.invalid.dassactb.worker=Сотрудник с указанным кодом не найден
+error.empty.dassactb.owner=Необходимо выбрать организацию
+error.invalid.dassactb.owner=Организация с указанным кодом не найдена
+error.empty.dassactb.position=Необходимо выбрать позицию
+error.invalid.dassactb.position=Комплект с указанным кодом не найдена
+error.empty.dassactb.position=Необходимо выбрать комплект
+error.invalid.dassactb.position=Позиция с указанным кодом не найдена
+error.empty.dassactb.num=Необходим указать номер акта
+error.empty.dassactb.date=Необходимо указать дату акта
+error.invalid.dassactb.date=Неверный формат даты акта
+error.empty.dassactb.agregat=Необходимо указать устройство
+error.invalid.dassactb.agregat=Устройство с указанным кодом не найден
+error.invalid.dassactb.state=Неверное состояние акта
+
+error.empty.dassactposb.order=Необходимо указать порядковый номер
+error.invalid.dassactposb.order=Неверный формат порядкового номера
+error.empty.dassactposb.qty=Необходимо указать количество
+error.invalid.dassactposb.qty=Неверный формат количества
+error.invalid.dassactposb.price=Неверный формат цены
+error.invalid.dassactposb.pricelow=Цена не может быть отрицательной
+error.empty.dassactposb.price=Необходимо указать цену
+error.empty.dassactposb.serial=Необходимо указать инвентарный серийный номер
+error.invalid.dassactposb.qtylow=Количество для серийного оборудования должно быть равно единице
+error.invalid.dassactposb.serialresource=Для серийного оборудования номер партии не указывается
+error.invalid.dassactposb.diffresources=Оборудование в карточке хранения не совпадает с указанным
+error.empty.dassactposb.party=Необходимо указать номер партии
+error.invalid.dassactposb.partyresource=Для оборудования с учетом по партиям инвентарный серийный номер не указывается
+error.invalid.dassactposb.bulkresource=Для оборудования с количественным учётом номер партии и инвентарный серийный номер не указываются
+error.notexist.dassactposb.resource=Оборудование с указанным кодом не найдено
+error.invalid.dassactposb.serialparty=Необходимо указать только одно из полей: инвентарный серийный номер или номер партии
+
+# Payoff
+
+label.menu.other.payoff=Акты списания
+
+label.payoff=Реестр актов списания
+label.payoff.owner=Организация
+label.payoff.storage=Склад
+label.payoff.date=Дата
+label.payoff.num=№ акта
+label.payoff.positions=Строки акта списания
+label.payoff.comission=Комиссия по акту списания
+label.payoffpos=Акт списания
+label.payoff.document=Акт списания
+label.payoff.numpp=№ п/п
+label.payoff.name=Наименование
+label.payoff.blocktype=Тип блока
+label.payoff.policynum=Инвентврный (заводской) серийный № / № партии
+label.payoff.qty.short=Кол-во
+label.payoff.qty=Количество
+label.payoff.price=Цена блока
+label.payoff.sum=Сумма
+label.payoff.resource=Оборудование
+label.payoff.serialnum=Инвентарный серийный №
+label.payoff.partynum=№ партии
+label.payoff.worker1=Комиссия по списанию
+label.payoff.worker2=
+label.payoff.worker3=
+label.payoff.worker4=Кладовщик
+label.payoff.state=Состояние
+
+error.empty.payoff.document=Не указан документ
+error.invalid.payoff.document=Неверный формат кода документа
+error.empty.payoff.owner=Необходимо указать организацию
+error.invalid.payoff.owner=Неверный формат кода организации
+error.notexist.payoff.owner=Указана несуществующая организация
+error.empty.payoff.storage=Необходимо указать склад
+error.invalid.payoff.storage=Неверный формат кода склада
+error.notexist.payoff.storage=Указан несуществующий склад
+error.empty.payoff.blanknumber=Необходимо указать номер акта
+error.invalid.payoff.blanknumber=Номер документа не должен превыщать 40 символов
+error.empty.payoff.blankdate=Необходимо указать дату акта
+error.invalid.payoff.blankdate=Неверный формат даты акта
+error.invalid.payoff.state=Неверное состояние акта
+error.empty.payoff.worker1=Необходимо указать председателя комиссии
+error.invalid.payoff.worker1=Неверный формат кода председателя комиссии
+error.notexist.payoff.worker1=Указан несуществующий председатель комиссии
+error.empty.payoff.worker2=Необходимо указать первого представителя комиссии
+error.invalid.payoff.worker2=Неверный формат кода первого представителя
+error.notexist.payoff.worker2=Указан несуществующий первый представитель
+error.empty.payoff.worker3=Необходимо указать второго представителя комиссии
+error.invalid.payoff.worker3=Неверный формат кода второго представителя
+error.notexist.payoff.worker3=Укзаан несуществующий второй представитель
+error.empty.payoff.worker4=Необходимо указать кладовщика
+error.invalid.payoff.worker4=Неверный формат кода кладовщика
+error.notexist.payoff.worker4=Указан несуществующий кладовщик
+
+error.empty.payoffpos.order=Необходимо указать порядковый номер
+error.invalid.payoffpos.order=Невеный формат порядкового номера
+error.invalid.payoffpos.serialparty=
+error.empty.payoffpos.qty=Необходимо указать количество
+error.invalid.payoffpos.qty=Неверный формат количества
+error.invalid.payoffpos.qtylow=Количество должно быть положительным
+error.empty.payoffpos.resource=Необходимо указать оборудование
+error.invalid.payoffpos.resource=Неверный формат кода оборудования
+error.empty.payoffpos.serial=Необходимо указать инвентарный серийный номер
+error.invalid.payoffpos.serialresource=Для оборудования с серийным учётом номер партии не указывается
+error.invalid.payoffpos.diffresources=Найдена карточка с отличным от указанного оборудованием
+error.invalid.payoffpos.serial=Не найдена карточка с указанным инвентарным серийным номером
+error.empty.payoffpos.party=Необходимо указать номер партии
+error.invalid.payoffpos.partyresource=Для оборудования с учётом по партиям серийный номер не указывается
+error.invalid.payoffpos.party=Не найдена карточка с указанным номером партии
+error.invalid.payoffpos.bulkresource=Для оборудования с количественным учётом серийный номер и номер партии не указываются
+error.notexist.payoffpos.resource=Указано несуществующее оборудование
+error.empty.payoffpos.price=Необходимо указать цену
+error.invalid.payoffpos.price=Неверный формат цены
+error.invalid.payoffpos.pricelow=Цена должна быть положительной
+
+# Fault Report
+
+label.menu.oppos.fault=FAULT REPORT
+label.fault=FAULT REPORT
+label.fault.owner=Организация
+label.fault.division=Подразделение
+label.fault.worker=Сотрудник
+label.fault.position=Позиция
+label.fault.positioncomplect=Место
+label.fault.resource=Оборудование
+label.fault.malformresource=Неисправное оборудование
+label.fault.namemodel=Название / Модель
+label.fault.date=Дата
+label.fault.spnum=Серийный №
+label.fault.state=Состояние
+label.fault.storage=Склад
+label.fault.num=№ сбойного рапорта
+label.fault.complect=Комплект оборудования
+label.fault.notes=Коментарий
+label.fault.where=Где находится неисправное оборудование
+label.fault.where.s=На складе
+label.fault.where.p=На позиции
+label.fault.where.w=У сотрудника
+label.fault.equipment=Устройство, серийный №
+label.fault.serial=Инвентарный серийный №
+label.fault.ms=Заводской серийный №
+label.fault.comment=Комментарий
+label.fault.replacedbyresource=Оборудование, установленное на замену
+
+#error.empty.fault.document=Не указан документ
+#error.invalid.fault.document=Неверный формат кода документа
+#error.empty.fault.owner=Необходимо указать организацию
+#error.invalid.fault.owner=Неверный формат кода организации
+#error.notexist.fault.owner=Указана несуществующая организация
+#error.empty.fault.blanknumber=Необходимо указать номер рапорта
+#error.invalid.fault.blanknumber=Длина номера рапорта не должна превышать 40 символов
+#error.empty.fault.blankdate=Необходимо указать дату
+#error.invalid.fault.blankdate=Неверный формат даты
+#error.empty.fault.complect=Необходимо указать комплект
+#error.invalid.fault.complect=Неверный формат кода комплекта
+#error.notexist.fault.complect=Указан несуществующий комплект
+#error.empty.fault.division=Необходимо указать подразделение
+#error.invalid.fault.division=Неверный формат кода подразделения
+#error.notexist.fault.division=Указано несуществующее подразделение
+#error.empty.fault.worker=Необходимо указать сотрудника
+#error.invalid.fault.worker=Неверный формат кода сотрудника
+#error.notexist.fault.worker=Указан несуществующий сотрудник
+#error.empty.fault.resource=Необходимо указать оборудование
+#error.invalid.fault.resource=Неверный формат кода оборудования
+#error.empty.fault.serial=Необходимо указать инвентарный серийный номер
+#error.invalid.fault.diffresources=Указанное оборудование не совпадает с найденным по инвентарному серийному номеру
+#error.empty.fault.notserialresource=Оборудование длжно иметь серийный учёт
+#error.notexist.fault.resource=Указано несуществующее оборудование
+#error.invalid.fault.state=Неверное состояние
+#error.invalid.fault.notes=Слишком длинная строка коментария
+#error.notfound.fault.serialcard=Не найдена карточка с таким инвентарным серийным номером
+
+error.empty.fault.document=Не указан документ
+error.empty.fault.owner=Не указана организация
+error.invalid.fault.owner=Неверный формат кода организации
+error.notexist.fault.owner=Указана несуществующая организация
+error.empty.fault.blanknumber=Необходимо указать номер рапорта
+error.invalid.fault.blanknumber=Длина номера рапорта не должна превышать 40 символов
+error.empty.fault.blankdate=Необходимо указать дату
+error.invalid.fault.blankdate=Неверный формат даты
+error.empty.fault.worker=Необходимо указать сотрудника
+error.invalid.fault.worker=Неверный формат кода сотрудника
+error.notexist.fault.worker=Указан несуществующий сотрудник
+error.empty.fault.division=Необходимо указать подразделение
+error.invalid.fault.division=Неверный формат кода подразделения
+error.notexist.fault.division=Указано несуществующее подразделение
+error.invalid.fault.notes=Слишком длинная строка коментария
+error.empty.fault.position=Необходимо указать позицию
+error.invalid.fault.position=Неверный формат кода позиции
+error.notexist.fault.position=Указана несуществующая позиция
+error.empty.fault.complect=Необходимо указать комплект
+error.invalid.fault.complect=Неверный формат кода комплекта
+error.notexist.fault.complect=Указан несуществующий комплект
+error.notexist.fault.device=Указано несуществующее устройство
+error.notfound.fault.mrescard=Не найдена карточка неисправного оборудования
+error.empty.fault.msn=Необходимо указать серийный номер неисправного оборудования
+error.empty.fault.mres=Необходимо указать ресурс неисправного оборудования
+error.invalid.fault.mres=Неверный формат кода неисправного оборудования
+error.unknown.fault.placetype=Укажите где находится оборудование
+error.notfound.fault.rrescard=Не найдена карточка оборудования на замену
+error.invalid.fault.rres=Неверный формат кода оборудования на замену
+error.invalid.fault.state=Неверный код состояния
+
+error.currencyprocessing.bad_rate=Не найден курс типа {1} на {0} для валюты {2}
+error.currencyprocessing.bad_rate_type=Не найден тип курса с кодом {0}
+error.currencyprocessing.bad_base_currency=Не найдена базовая валюта
+error.currencyprocessing.bad_base_rate_type=Не найден базовый тип курса
+error.currencyprocessing.unknown=Неизвестная ошибка при пересчёте цен. Код: {0}
+
+label.equipment.switchtype=Тип
+label.equipment.switchgsm=GSM/DCS
+label.equipment.switchdamps=DAMPS
+label.equipment.stationtype=Тип станции
+label.equipment.stationdamps=DAMPS
+label.equipment.stationgsm=GSM 900
+label.equipment.stationdcs=DCS 1800
+label.equipment.stationboth=GSM 900 / DCS 1800
+label.equipment.controller=Контроллер
+label.equipment.switch=Коммутатор
+label.equipment.comline=Линия связи
+label.equipment.isrepeater=Репитер
+label.equipment.stationname=Название станции
+label.equipment.type.basestation=Базовая станция
+label.equipment.type.comequipment=Коммуникационное оборудование
+label.equipment.type.controller=Контроллер
+label.equipment.type.switch=Коммутатор
+label.equipment.type.other=Вспомогательное оборудование
+label.equipment.type.unknown=Неизвестно что
+label.equipment.comequipmenttype = Тип оборудования связи
+label.equipment.comequipmenttype.radio=Радиорелейное
+label.equipment.comequipmenttype.optic=Волоконно-оптическое
+label.controller.number=Номер
+label.controller.name=Наименование контроллера
+label.equipment.othertype=Тип прочего оборудования
+label.equipment.othertypea=Сооружения (контейнеры, мачты, опоры)
+label.equipment.othertypeb=Оборудование техническое (электропитания, охлаждение, сигнализация, пожаротушение, огни ВОЗ)
+label.equipment.othertypec=Хозяйственное оборудование
+label.equipment.othertyped=Прочее оборудование
+
+error.update.externalser.serialexist=Указанный инвентарный серийный номер уже существует
+error.update.externalser.unknown=Произошла неизвестная ошибка при замене инвентарного серийного номера
+error.update.externalser.nocard=Не найдена карточка хранения
+
+label.document.inwaybill=Внешний приходный ордер
+label.document.internalwaybill=Внутренний приходный ордер
+label.document.internalwaybill.m=Акт монтажа на позиции
+label.document.internaloutbill=Внутренняя расходная накладная
+label.document.internaloutbill.m=Акт демонтажа на позиции
+label.document.outwaybill=Внешняя расходная накладная
+label.document.i13nact.s=Акт инвентаризации на складе
+label.document.i13nact.p=Акт инвентаризации на позиции
+label.document.assemblingact.as=Акт монтажа блоков на складе
+label.document.assemblingact.ds=Акт демонтажа блоков на складе
+label.document.assemblingact.ap=Акт монтажа блоков на позиции
+label.document.assemblingact.dp=Акт монтажа блоков с позиции
+label.document.changeact=Акт замены
+label.document.faultreport=Сбойный рапорт
+label.document.payoffact=Акт списания
+label.document.surplusact=Акт инвентаризации (излишки)
+label.document.payoffinv=Акт инвентаризации (недостача)
+label.document.unknown=
+
+label.choose.card=Выбор экземпляра
+label.card.storage=Склад
+label.card.expedition=Подрядчик/Сотрудник
+label.card.position=Позиция
+label.card.equipment=Позиция/Комплект
+label.card.agregate=Комплект оборудования
+label.card.resource=Оборудование
+label.card.place=Место хранения
+
+label.card.code=Код
+label.card.name=Наименование
+label.card.model=Обозначение
+label.card.configuration=Конфигурация
+label.card.serial=Инвентарный серийный №
+label.card.party=№ партии
+label.card.owner=Владелец
+label.card.qty=Кол-во в наличии
+label.card.brokenqty=Кол-во неисправно
+
+label.choose.scard=Выбор серийного экземпляра
+label.scard.storage=Склад
+label.scard.expedition=Подрядчик/Сотрудник
+label.scard.position=Позиция
+label.scard.equipment=Позиция/Комплект
+label.scard.agregate=Комплект оборудования
+label.scard.resource=Оборудование
+label.scard.place=Место хранения
+label.scard.code=Код
+label.scard.name=Наименование
+label.scard.model=Обозначение
+label.scard.configuration=Конфигурация
+label.scard.serial=Инвентарный серийный №
+label.scard.party=№ партии
+label.scard.owner=Владелец
+label.scard.qty=Кол-во в наличии
+label.scard.brokenqty=Кол-во неисправно
+error.empty.scard.resource=Укажите оборудование в форме ввода
+
+label.choose.pcard=Выбор партионного или навального экземпляра
+label.pcard.storage=Склад
+label.pcard.expedition=Подрядчик/Сотрудник
+label.pcard.position=Позиция
+label.pcard.equipment=Позиция/Комплект
+label.pcard.agregate=Комплект оборудования
+label.pcard.resource=Оборудование
+label.scard.place=Место хранения
+label.pcard.code=Код
+label.pcard.name=Наименование
+label.pcard.model=Обозначение
+label.pcard.configuration=Конфигурация
+label.pcard.serial=Инвентарный серийный №
+label.pcard.party=№ партии
+label.pcard.owner=Владелец
+label.pcard.qty=Кол-во в наличии
+label.pcard.brokenqty=Кол-во неисправно
+error.empty.pcard.resource=Укажите оборудование в форме ввода
+
+label.report.refresh=Обновить
+
+label.report1params=Отчёт по наличию оборудования и комплектующих
+label.report1.place=Местоположение
+label.report1.position=Позиция
+label.report1.storage=Склад
+label.report1.worker=Сотрудник
+label.report1.organization=Подрядчик
+label.report1.reportfor=Выводить отчёт по
+label.report1.forcomplect=функциональным комплектам оборудования
+label.report1.fortypes=видам и типам оборудования
+label.report1.inccomplects=Включать комплекты оборудования
+label.report1.incall=Все
+label.report1.incdamps=БС DAMPS
+label.report1.incgsm900=БС GSM 900
+label.report1.incdcs1800=БС DCS 1800
+label.report1.incctrl=Контроллер
+label.report1.inccomline=Линии связи
+label.report1.incresources=Включать оборудование
+label.report1.incttypes=Выбранных типов
+label.report1.incvtypes=Выбранных видов и типов
+label.report1.state=Состояние на
+label.report1.currentdate=Текущий момент
+label.report1.givendate=На указанную дату
+label.report1.showagregated=Показывать встроенное оборудование
+label.report1.showbysets=Выводить оборудование по наборам
+label.report1.showwithcontracts=Включать информацию по контракту
+label.report1.showwithsupply=Включать информацию по поставке
+
+error.report1.emptyposition=Необходимо указать позицию.
+error.report1.badposition=В поле позиция указано неверное значение
+error.report1.unknownposition=Позиция с указанным кодом не найдена
+error.report1.emptystorage=Необходимо указать склад
+error.report1.badstorage=В поле склад указано неверное значение
+error.report1.unknownstorage=Склад с указанным кодом не найден
+error.report1.emptyworker=Необходимо указать сотрудника
+error.report1.badworker=В поле сотрудник указано неверное значение
+error.report1.unknownworker=Сотрудник с указанным кодом не найден
+error.report1.emptyorganization=Необходимо указать организацию
+error.report1.badorganization=В поле организация указано неверное значение
+error.report1.unknownorganization=Организация с указанным кодом не найдена
+
+label.report4params=Отчёты по приходу на объект
+label.report4.place=Местоположение
+label.report4.position=Позиция
+label.report4.storage=Склад
+label.report4.equipment=Функциональный комплект
+label.report4.period=Период
+label.report4.detailed=Подробный отчёт (с указанием документов)
+label.report4.showcontract=Для внешнего прихода показывать информацию по контракту
+label.report4.showsupplies=Для внешнего прихода показывать информацию по поставке
+
+label.report6params=Отчёты по расходу с объекта
+label.report6.place=Местоположение
+label.report6.position=Позиция
+label.report6.storage=Склад
+label.report6.equipment=Функциональный комплект
+label.report6.period=Период
+label.report6.detailed=Подробный отчёт (с указанием документов)
+label.report6.showcontract=В подробном отчёте показывать информацию по контракту/поставке
+label.report6.showsupplies=
+
+label.report5params=Отчёт по приходу на объект по выбранному оборудованию
+label.report5.place=Местоположение
+label.report5.position=Позиция
+label.report5.storage=Склад
+label.report5.equipment=Функциональный комплект
+label.report5.period=Период
+label.report5.resource=Оборудование
+label.report5.doctypes=Типы документов
+label.report5.docall=Все
+label.report5.docextincome=Внеш. прих. ордера
+label.report5.docintincome=Внутр. прих. ордера
+label.report5.docassact=Акты монтажа
+label.report5.docassactb=Акты монтажа блоков
+label.report5.docinvextra=Акты инвентаризации (излишек)
+label.report5.showcontract=Включать информацию по контракту/поставке
+
+label.report7params=Отчёт по расходу с объекта по выбранному оборудованию
+label.report7.place=Местоположение
+label.report7.position=Позиция
+label.report7.storage=Склад
+label.report7.equipment=Функциональный комплект
+label.report7.period=Период
+label.report7.resource=Оборудование
+label.report7.doctypes=Типы документов
+label.report7.docall=Все
+label.report7.docinwaybill=Накладные
+label.report7.docdeassact=Акты демонтажа
+label.report7.docdeassactb=Акты демонтажа блоков
+label.report7.docpayoff=Акты списания
+label.report7.docinv=Акты инвентаризации (недостача)
+label.report7.showcontract=Включать информацию по контракту/поставке
+
+label.report2params=Отчёт о местоположении оборудования
+label.report2.resource=Оборудование
+label.report2.searchon=Искать
+label.report2.anywhere=Везде
+label.report2.onpositions=На позициях
+label.report2.onstorages=На складах
+label.report2.onorganizations=У подрядчиков
+label.report2.onworkers=У сотрудников
+label.report2.state=Состояние на
+label.report2.currentdate=Текущий момент
+label.report2.givendate=На указанную дату
+label.report2.groupbyposition=Суммировать по одной позиции/складу
+label.report2.showagregated=Отображать встроенное оборудование и блоки
+label.report2.showoncard=Отображать результат на карте (для позиций)
+
+label.report3params=Отчёт о местоположении оборудования по контрактам и поставкам
+label.report3.restype=Вид оборудования
+label.report3.ressbtype=Тип оборудования
+label.report3.supply=Поставка
+label.report3.baseagreement=Основное соглашение
+label.report3.supplyact=Договор поставки
+label.report3.account=Маска счёта
+label.report3.state=Состояние на
+label.report3.currenttime=Текущий момент
+label.report3.givendate=указанную дату
+label.report3.searchon=Искать
+label.report3.anywhere=Везде
+label.report3.onpositions=На позициях
+label.report3.onstorages=На складах
+label.report3.group=Суммировать по одной позиции/складу
+label.report3.showagregated=Отображать встроенное оборудование
+label.report3.showcontract=Включать информацию по контракту/поставке
+label.report3.showonmap=Отобразить результат на карте (для позиций)
+
+label.report8params=Отчёт по текущему местоположению оборудования и истории перемещения
+label.report8.serial=Инвентарный серийный номер оборудования
+label.report8.showagregated=Отображать встроенное оборудование и блоки
+
+label.masscalc=Параметры массового обсчёта документов
+label.masscalc.period=Интервал дат:
+label.masscalc.owner=Предприятие:
+label.masscalc.place=Местоположение:
+label.masscalc.position=Позиция:
+label.masscalc.storage=Склад:
+label.masscalc.worker=Сотрудник:
+label.masscalc.organization=Подрядчик:
+label.masscalc.incdocs=Включать документы:
+label.masscalc.s.all=Все по складу
+label.masscalc.s.internal=Внешний приходный ордер
+label.masscalc.s.external=Внутренний приходный ордер
+label.masscalc.s.internalr=Внутренняя расходная накладная
+label.masscalc.s.externalr=Внешняя расходная накладная
+label.masscalc.s.invact=Акт инвентаризации на складе
+label.masscalc.s.assactb=Акт монтажа блоков на складе
+label.masscalc.s.dassactb=Акт демонтажа блоков на складе
+label.masscalc.s.payoff=Акт списания
+label.masscalc.s.change=Акт замены на складе
+label.masscalc.p.all=Все по позициям
+label.masscalc.p.assact=Акт монтажа на позиции
+label.masscalc.p.dassact=Акт демонтажа с позиции
+label.masscalc.p.assactb=Акт монтажа блоков на позиции
+label.masscalc.p.dassactb=Акт демонтажа блоков на позиции
+label.masscalc.p.invact=Акт инвентаризации на позиции
+label.masscalc.p.change=Акт замены на позиции
+label.masscalc.protocol=Протокол:
+label.masscalc.detailed=Подробный отчёт по всем видам операций
+label.masscalc.errorsonly=Только ошибки при обсчёте
+error.masscalc.unknown=Произошла неизвестная ошибка. Сообщение: {0}
+
+label.masscalc.sortby=Сортировать по
+label.masscalc.sortby.date=Дате документа
+label.masscalc.sortby.number=Номеру документа
+label.masscalc.sortby.doctype=Типу документа
+
+label.masscalcref.period=За период
+label.masscalcref.documents=Учитываются документы:
+
+label.masscalcdoc.W=Внешний приходный ордер
+label.masscalcdoc.TS=Внутренний приходный ордер
+label.masscalcdoc.NS=Внутренняя расходная накладная
+label.masscalcdoc.O=Внешняя расходная накладная
+label.masscalcdoc.IS=Акт инветнаризации на складе
+label.masscalcdoc.AAS=Акт монтажа блоков на складе
+label.masscalcdoc.ADS=Акт демонтажа блоков на складе
+label.masscalcdoc.P=Акт списания
+label.masscalcdoc.HS=Акт замены на складе
+label.masscalcdoc.TP=Акт монтажа на позиции
+label.masscalcdoc.NP=Акт демонтажа на позиции
+label.masscalcdoc.AAP=Акт монтажа блока на позиции
+label.masscalcdoc.ADP=Акт демонтажа блока на позиции
+label.masscalcdoc.IP=Акт инвентаризации на позиции
+label.masscalcdoc.HP=Акт замены на позиции
+
+label.masscalcref=Массовый обсчёт документов
+label.masscalcref.docoverall=Документов всего: 
+label.masscalcref.docprocessed=Обсчитано: 
+label.masscalcref.docerrors=С ошибками: 
+label.masscalcref.progress=
+label.masscalcref.nodocs=Нет документов для обсчёта
+
+label.masscalcref.docdate=Дата
+label.masscalcref.doctype=Тип документа
+label.masscalcref.docnum=№ документа
+label.masscalcref.docstorage=Местоположение
+label.masscalcref.docwho=Кто заводил
+label.masscalcref.docresult=Результат
+
+label.masscalcref.processed=Обрабатывается
+label.masscalcref.finished=Обсчитан
+label.masscalcref.finisherrors=Ошибки при обсчёте
+label.masscalcref.errors=Ошибки
+
+label.massdoc=Отчёт по необсчитанным документам
+
+error.report3.choosesupply=Необходимо указать хотя бы один вариант поставки.
+
+label.barcodes=Серии штрих-кодов
+label.bar.ser=Префикс
+label.bar.start=Начало
+label.bar.end=Конец
+label.bar.date=Дата
+label.bar.worker=Работник
+
+label.bar.fser=Префикс
+label.bar.fstart=Начальный № серии
+label.bar.fcount=Количество № в серии
+label.bar.fend=Конечный № серии
+label.bar.fdate=Дата создания
+label.bar.fworker=Кто создал
+
+label.barreportparams=Печать серии инвентарных номеров
+label.barreport.serie=Серия
+label.barreport.start=Начать печатать с номера
+label.barreport.count=Печатать номеров
+label.barreport.repeat=Количество повторений номера
+label.barreport.printed=Этикетки отправлены на принтер
+
+error.empty.ser.fser=Необходимо указать префикс серии
+error.invalid.ser.fser=Префикс серии должен содержать 3 символа
+error.empty.ser.fstart=Необходимо указать начальный номер серии
+error.invalid.ser.fstart=Начальный номер серии должен содержать от 1 до 8 цифр
+error.empty.ser.fend=Необходимо указать конечный номер серии
+error.invalid.ser.fend=Конечный номер серии должен содержать от 1 до 8 цифр
+error.invalid.ser.fsize=Конечный номер серии должен быть больше начального номера
+error.invalid.ser.intersect=Диапазон кодов серии пересекается с имеющимися диапазонами. Пожалуйста измените параметры серии
+error.invalid.ser.printint=Запрошенный интервал печати кодов выходит за границы серии
+error.invalid.ser.exists=В карточках хранения найден инвентарный серийный номер из указанного интервала. Пожалуйста измените параметры серии
+error.invalid.ser.pexists=В карточках хранения найден номер партии из указанного интервала. Пожалуйста измените параметры серии
+error.invalid.ser.noupdate=Изменение параметров серии запрещено
+error.invalid.ser.notexists=Указанный инвентарный серийный номер / номер партии не найден в карточках хранения
+
+label.barsreportparams=Печать этикетки с выбранным штрих-кодом
+label.barsreport.serial=Печатать номер
+label.barsreport.repeat=Количество повторений номера
+label.barsreport.printed=Этикетка отправлена на принтер
+
+label.fitplace=Посадочное место
+label.fromplace=Снято с посадочного места
+error.empty.fitplace=Необходимо указать посадочное место
+error.invalid.fitplace=Строка в поле "посадочное место" не должна превышать 40 символов
+error.empty.fromplace=Необходимо указать с какого места снято оборудование
+error.invalid.fromplace=Строка в поле "Снято с посадочного места" не должна превышать 40 символов
+
+label.choose.barserial=Поиск инвентарного серийного № / № партии в БД
+label.barserial.serial=Искать
+label.barserial.code=Инвентарный серийный номер / номер партии
+label.barserial.name=Оборудование
+label.barserial.type=Тип номера
+label.barserial.types=Серийный
+label.barserial.typep=Партия
+
+label.loadpsion=Загрузка данных
+label.loadpsion.note=Будут созданы строки документа
+label.loadpsion.owner=Организация
+label.loadpsion.place.storage=Склад
+label.loadpsion.file=Файл для загрузки
+label.loadpsion.options=При загрузке использовать
+label.loadpsion.options.1=код производителя и инвентарный серийный номер
+label.loadpsion.options.2=только инвентарный серийный номер
+
+error.loadpsion.docisnotset=Не выбран документ. Вернитесь на список актов инвентаризации.
+error.loadpsion.allreadyentered=Строка {0}. Оборудование уже введено.
+error.loadpsion.resourcenotfound=Строка {0}. Не найден ресурс соответствующий коду {1}.
+error.loadpsion.serialnotfound=Строка {0}. Не найдено оборудование с С/Н: {1}.
+error.loadpsion.badformat=Неверный формат файла.
+error.loadpsion.fileisnull=Укажите файл для загрузки
+
+label.fillfromdb=Заполнение позиций из БД
+message.createdposition=Позиция №{0}, Обор.:{1}, S/N:{2}
+error.fillfromdb.norecordstocopy=Отстутствует какое-либо оборудование на {0}
+
+label.loadinv=Загрузка из INV файла
+error.loadinv.docisnotset=Код акт не установлен. Перейдите в список актов и выберите документ.
+error.loadinv.invalidact=Загрузка данных из INV файла доступна только для актов инвентаризации по единице оборудования
+error.loadinv.errors=Файл инвентаризации {0} содержит ошибки. Загрузка не возможна
+error.loadinv.sourcegsmnull=Указанная в акте позиция не является GSM.
+error.loadinv.gsmidmismatch=Номер сайта в файле инвентаризации {0} не совпадает с номером выбранной позиции.
+error.loadinv.agregatenotset=В акте не указано уствойство
+error.loadinv.agregateinvalid=Файл инвентаризации {0} соответствует оборудованию с инвентарным серийным номером {1}. Инвентарный серийный номер оборудования по документу {2}. Загрузка не возможна.
+error.loadinv.noblocks=Файл инвентаризации {0} не содержит блоков
+error.loadinv.noresource=Cтрока {0}. В справочнике ресурсов отсутствует ресурс с кодом производителя {1} {2}
+error.loadinv.serialexist=Cтрока {0}. Учетная единица с инвентарным серийным номером {1} уже включена в документ.
+error.loadinv.sidnotfound=Файл инвентаризации {0} не содержит информации о сайте.
+error.loadinv.serialabsent=Внимание. Cтрока {0}. Отсутствует инвентарный серийный номер для блока {1}. Внесите данные вручную либо удалите строку документа.
+error.loadinv.errorline=Строка {0}. {1}
+error.loadinv.cantcratev=Ошибка при создании строки акта.
+error.loadinv.cantcrate=Ошибка при создании строки акта. Строка: {0}
+
+error.blankindex.empty=Необходимо указать номер документа
+error.blankindex.invalid=Номер документа должен быть числом
+label.blankindex=Номер
+error.invalid.blanknumber=Необходимо указать номер документа
+error.invalid.blankindex=Номер документа не может превышать 40 символов
+
+error.invalid.blanknumber=Расширение номера документа не может привышать 40 символов.
+error.positionsupdate=Ошибка при проверке позиций документа
+
+error.empty.report5.resource=Необходимо указать оборудование
+error.invalid.report5.resource=Неверный формат кода оборудования. Код должен быть числом.
+error.notexist.report5.resource=Выбран несуществующий ресурс
+
+# Новые наименования
+
+label.internal.title=Заголовок приходного ордера
+label.internal.positions=Строки приходного ордера
+label.internal.edit=Редактирование заголовка приходного ордера
+label.internal.view=Просмотр заголовка приходного ордера
+label.internal.add=Добавить приходный ордер
+label.internal.del=Удалить приходный ордер
+label.internalpos=Приходный ордер
+label.internalpos.title=Строка приходного ордера
+label.internalpos.edit=Редактирование строки приходного ордера
+label.internalpos.view=Просмотр строки приходного ордера
+label.internalpos.add=Добавить строку приходного ордера
+label.internalpos.del=Удалить строку приходного ордера
+
+label.external.title=Заголовок приходного ордера
+label.external.positions=Строки приходного ордера
+label.external.edit=Редактирование заголовка приходного ордера
+label.external.view=Просмотр заголовка приходного ордера
+label.external.add=Добавить приходный ордер
+label.external.del=Удалить приходный ордер
+label.externalpos=Приходный ордер
+label.externalpos.title=Строка приходного ордера
+label.externalpos.edit=Редактирование строки приходного ордера
+label.externalpos.view=Просмотр строки приходного ордера
+label.externalpos.add=Добавить строку приходного ордера
+label.externalpos.del=Удалить строку приходного ордера
+label.externalser.position=Строка приходного ордера
+
+label.internalr.title=Заголовок расходной накладной
+label.internalr.positions=Строки расходной накладной
+label.internalr.edit=Редактирование заголовка расходной накладной
+label.internalr.view=Просмотр заголовка расходной накладной
+label.internalr.add=Добавить расходную накладную
+label.internalrpos=Расходная накладная
+label.internalrpos.title=Строка расходной накладной
+label.internalrpos.edit=Редактирование строки расходной накладной
+label.internalrpos.add=Добавить строку расходной накладной
+label.internalrpos.view=Просмотр строки расходной накладной
+
+label.externalr.title=Заголовок расходной накладной
+label.externalr.positions=Строки расходной накладной
+label.externalr.edit=Редактирование заголовка расходной накладной
+label.externalr.view=Просмотр заголовка расходной накладной
+label.externalr.add=Добавить расходную накладную
+label.externalrpos=Расходная накладная
+label.externalrpos.title=Строка расходной накладной
+label.externalrpos.edit=Редактирование строки расходной накладной
+label.externalrpos.add=Добавить строку расходной накладной
+label.externalrpos.view=Просмотр строки расходной накладной
+
+label.mismatch=Перечень актов рассогласования по приходным ордерам
+label.mismatch.title=Акт рассогласования
+label.mismatch.edit=Редактирование акта рассогласования
+
+label.inventory=Реестр актов инвентаризации на складе
+label.inventory.title=Заголовок акта инвентаризации
+label.inventory.positions=Строки акта инвентаризации
+label.inventory.edit=Редактирование заголовка акта инвентаризации
+label.inventory.view=Просмотр заголовка акта инвентаризации
+label.inventory.add=Добавить акт инвентаризации
+label.invpos.title=Акт инвентаризации
+label.invpos.add=Добавить строку акта инвентаризации
+label.invpos.formtitle=Строка акта инвентаризации
+label.invpos.edit=Редактирование строки акта инвентаризации
+label.invpos.view=Просмотр строки акта инвентаризации
+
+label.changes.title=Заголовок акта замены
+label.changes.positions=Строки акта замены
+label.changes.edit=Редактирование заголовка акта замены
+label.changes.view=Просмотр заголовка акта замены
+label.changes.add=Добавить акт замены
+label.changespos=Акт замены
+label.changespos.title=Строка акта замены
+label.changespos.edit=Редактирование строки акта замены
+label.changespos.add=Добавить строку акта замены
+label.changespos.view=Просмотр строки акта замены
+
+label.changee.title=Заголовок акта замены
+label.changee.positions=Строки акта замены
+label.changee.edit=Редактирование заголовка акта замены
+label.changee.view=Просмотр заголовка акта замены
+label.changee.add=Добавить акт замены
+label.changeepos=Акт замены
+label.changeepos.title=Строка акта замены
+label.changeepos.edit=Редактирование строки акта замены
+label.changeepos.view=Просмотр строки акта замены
+label.changeepos.add=Добавить строку акта замены
+
+label.changep.title=Заголовок акта замены
+label.changep.positions=Строки акта замены
+label.changep.edit=Редактирование заголовка акта замены
+label.changep.view=Просмотр заголовка акта замены
+label.changep.add=Добавить акт замены
+label.changeppos=Акт замены
+label.changeppos.title=Строка акта замены
+label.changeppos.edit=Редактирование строки акта замены
+label.changeppos.view=Просмотр строки акта замены
+label.changeppos.add=Добавить строку акта замены
+
+label.assact.title=Заголовок акта монтажа
+label.assact.positions=Строки акта монтажа
+label.assact.edit=Редактирование заголовка акта монтажа
+label.assact.view=Просмотр заголовка акта монтажа
+label.assact.add=Добавить акт монтажа
+label.assactpos=Акт монтажа
+label.assactpos.title=Строка акта монтажа
+label.assactpos.edit=Редактирование строки акта монтажа
+label.assactpos.view=Просмотр строки акта монтажа
+label.assactpos.add=Добавить строку акта монтажа
+
+label.dassact.title=Заголовок акта демонтажа
+label.dassact.positions=Строки акта демонтажа
+label.dassact.edit=Редактирование заголовка акта демонтажа
+label.dassact.view=Просмотр заголовка акта демонтажа
+label.dassact.add=Добавить акт демонтажа
+label.dassactpos=Акт демонтажа
+label.dassactpos.title=Строка акта демонтажа
+label.dassactpos.edit=Редактирование строки акта демонтажа
+label.dassactpos.view=Просмотр строки акта демонтажа
+label.dassactpos.add=Добавить строку акта демонтажа
+
+label.payoff.title=Заголовок акта списания
+label.payoff.positions=Строки акта списания
+label.payoff.edit=Редактирование заголовка акта списания
+label.payoff.view=Просмотр заголовка акта списания
+label.payoff.add=Добавить акт списания
+label.payoffpos=Акт списания
+label.payoffpos.title=Строка акта списания
+label.payoffpos.edit=Редактирование строки акта списания
+label.payoffpos.view=Просмотр строки акта списания
+label.payoffpos.add=Добавить строку акта списания
+
+label.req.title=Заголовок требования
+label.req.positions=Строки требования
+label.req.edit=Редактирование заголовка требования
+label.req.view=Просмотр заголовка требования
+label.req.add=Добавить требование
+label.reqpos=Требование
+label.reqpos.title=Строка требования
+label.reqpos.edit=Редактирование строки требования
+label.reqpos.view=Просмотр строки требования
+label.reqpos.add=Добавить строку требования
+
+label.fault.title=FAULT REPORT
+label.fault.edit=Редактирование FAULT REPORT
+label.fault.view=Просмотр FAULT REPORT
+label.fault.add=Добавить FAULT REPORT
+
+error.invalid.manufserial=Заводской серийный номер должен быть не больше 20-ти символов
+label.manufserial=Заводской серийный номер
+label.serialnumber=Инвентарный серийный номер
+label.serialnum=Инвентарный серийный №
+label.newmanufserial=Новый заводской серийный №
+label.oldmanufserial=Старый заводской серийный №
+
+label.approvedelete=Внимание! Документ содержит строки. Подтвердите удаление документа...
+
+label.division.name=Подразделение
+label.divisionname=Наименование подразделения
+label.division.company=Компания
+label.division.direction=Дирекция
+label.division.department=Служба
+label.division.dept=Отдел
+label.division.group=Группа
+
+label.open=Открыть
+
+error.invalid.division=Неверно введено значение в поле подразделение
+
+
+label.choose.position=Выберите позицию
+
+label.position=Позиции
+label.position.netzonename=Зона сети
+label.position.netzone=Зо на
+label.position.searchby=Что искать
+label.position.search.all=Все
+label.position.search.bsgsm=Все GSM/DCS
+label.position.search.bsdamps=Все DAMPS
+label.position.search.nobs=Все без БС
+label.position.search.gsmid=По № GSM/DCS
+label.position.search.dampsid=По № DAMPS
+label.position.search.name=По названию
+label.position.search.addr=По адресу
+label.position.search.text=Значение для поиска
+label.position.worker=Ответственный
+label.position.inactionlist=Состояние
+label.position.inaction=Позиция эксплуатируется
+label.position.inaction.all=Все
+label.position.inaction.yes=Эксплуатируемые
+label.position.inaction.no=Не эксплуатируемые
+label.position.inactionh=Э
+label.position.showOnmap=кар та
+label.position.toexcel=Отчет по базовым станциям
+label.position.positionAndComlines=Выбранные позиции
+
+label.legend.damps=БС DAMPS
+label.legend.gsm=БС GSM
+label.legend.controller=Контроллер
+label.legend.dampscontroller=БС DAMP & Controller
+label.legend.gsmcontroller=БС GSM & Controller
+label.legend.gsmdamps=БС GSM/DAMPS
+label.legend.position=Позиция без БС
+label.legend.all=БС GSM/DAMPS & Controller
+label.legend.rrl=РРЛ
+label.legend.vols=ВОЛС
+
+label.position.gsmid=№ GSM/DCS
+label.position.dampsid=№ DAMPS
+label.position.bsid=№ БС
+label.position.name=Название
+label.position.dampsname=Название DAMPS
+label.position.addr=Адрес места расположения позиции
+label.position.latitude=Географические координаты.Широта
+label.position.longitude=Географические координаты.Долгота
+label.position.renter=Арендодатель
+label.position.details=Краткая характеристика
+label.position.rentervolume=Том дела об аренде
+label.position.actions=Дополнительно
+label.position.edit=Изменить
+label.position.map=Маршрутная карта
+label.position.descr=Подробное описание
+label.position.responsible=Ответственные
+label.position.photos=Фотографии
+label.position.mapinfo=Карта местности
+label.position.equipment=Оборудование
+label.position.comlines=Линии связи
+label.position.mapprint=Печать маршрутной карты
+
+label.position.suiteEquipment=Комплекты оборудования
+label.position.suiteEquipment.gsm=БС GSM 900
+label.position.suiteEquipment.dcs=БС DCS 1800
+label.position.suiteEquipment.damps=БС DAMPS
+label.position.controllers=Контроллеры
+label.position.use=Использовать
+label.position.comline=Линии связи
+label.position.comline.rrl=РРЛ
+label.position.comline.vols=ВОЛС
+label.position.mapping=Способ отображения
+label.position.mapping.onmap=Наложить на карту
+label.position.mapping.schema=Схема
+label.position.button=Отобразить карту
+
+label.position.ex.code=Код
+label.position.ex.gsmid=№ GSM
+label.position.ex.dcsid=№ DCS
+label.position.ex.dampsid=№ DAMPS
+label.position.ex.name=Наименование GSM
+label.position.ex.dampsname=Наименование DAMPS
+label.position.ex.addr=Адрес места расположения позиции
+label.position.ex.netcode=Код зоны сети
+label.position.ex.netname=Наименование зоны сети
+label.position.ex.lat=Широта
+label.position.ex.long=Долгота
+label.position.ex.details=Краткая характеристика
+label.position.ex.contphone=Контактные телефоны
+label.position.ex.path=Вид прохода и местонахождение ключей
+label.position.ex.equip=Расположение помещения БС
+label.position.ex.engener=Инженерное обеспечение
+label.position.ex.accdate=Дата действия списка прохода
+label.position.ex.arcode=Код арендодателя
+label.position.ex.arname=Наименование арендодателя
+label.position.ex.volume=Том дела об аренде
+label.position.ex.inaction=Позиция эксплуатируется
+label.position.ex.isrll=Наличие РРЛ
+label.position.ex.isvot=Наличие ВОТ
+label.position.ex.yes=Да
+label.position.ex.no=Нет
+label.position.ex.searchcond=Условия поиска
+label.position.ex.title=Список базовых станций
+
+error.empty.position.name=Необходимо указать наименование позиции
+error.empty.position.dampsname=Необходимо указать наименование DAMPS
+error.empty.position.addr=Необходимо указать адрес позиции
+error.empty.position.latitude=Необходимо указать широту
+error.empty.position.longitude=Необходимо указать долготу
+error.empty.position.netzone=Необходимо указать зону сети
+error.invalid.position.latitude=Недопустимое значение широты
+error.invalid.position.longitude=Недопустимое значение долготы
+error.invalid.position.netzone=Недопустимое значение зоны сети
+error.invalid.position.renter=Арендодатель с указанным кодом не найден
+
+label.position.region=Регион
+label.position.renterInput=
+label.position.planstate=Тип записи
+
+label.position.search.supregs.all=Все суперрегионы
+label.position.search.regions.all=Все регионы
+label.position.search.regions=Регион
+label.position.search.supregs=Суперрегион
+label.position.search.renter.any=Любые позиции
+label.position.search.renter.notNull=Все с арендодателем
+label.position.search.renter.specify=Выбранный
+
+label.position.search.planstate.fact=Факт
+label.position.search.planstate.plan=План
+
+error.invalid.hassameserial=Такое оборудование уже введено в документ
+error.invalid.hassameparty=Оборудование с номером партии {0} уже присутствует в документе. Увеличте количество существующей строки.
+error.invalid.hassamebulk=Оборудование {0} уже присутствует в документе. Увеличте количество существующей строки.
+
+error.preprocessor.cannotfinddocument=Не удалось найти документ в препроцессоре
+error.preprocessor.i13n.classcastexception=Не удалось привести документ к акту инвентаризации в препроцессоре
+error.preprocessor.assemblingact=Не удалось привести документ к акту монтажа/демонтажа в препроцессоре
+error.preprocessor.refnotfound=Ошибка в обработке препроцессора
+
+label.assact.edit=Изменить акт монтажа
+label.assact.view=Просмотреть акт монтажа
+
+
+#eof

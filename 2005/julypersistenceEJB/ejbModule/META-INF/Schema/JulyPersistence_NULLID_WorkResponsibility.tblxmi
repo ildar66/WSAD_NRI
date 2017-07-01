@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="WorkResponsibility" name="WorkResponsibility" primaryKey="WorkResponsibility_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="worker" name="worker" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986296">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IdResponsibility" name="IdResponsibility">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986297">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="storageplace" name="storageplace">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986298">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resptype" name="resptype">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986296" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="organization" name="organization" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986299">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="operator" name="operator" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986300">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="WorkResponsibility_1" name="WorkResponsibility" members="IdResponsibility storageplace resptype" constraint="SQLConstraint_1131634986296"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_9062_9062" name="FK_REF_9062_9062" members="storageplace" constraint="SQLConstraint_1131634986297">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_positions.tblxmi#positions_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_9059_9059" name="FK_REF_9059_9059" members="IdResponsibility" constraint="SQLConstraint_1131634986298">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_TypeResponsibility.tblxmi#TypeResponsibility_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_9065_9065" name="FK_REF_9065_9065" members="worker" constraint="SQLConstraint_1131634986299">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#workers_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_111141_1111" name="FK_REF_111141_1111" members="organization" constraint="SQLConstraint_1131634986300">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_organizations.tblxmi#organizations_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986296" name="WorkResponsibility" type="PRIMARYKEY" primaryKey="WorkResponsibility_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986297" name="FK_REF_9062_9062" type="FOREIGNKEY" referenceByKey="FK_REF_9062_9062"/>
+  <constraints xmi:id="SQLConstraint_1131634986298" name="FK_REF_9059_9059" type="FOREIGNKEY" referenceByKey="FK_REF_9059_9059"/>
+  <constraints xmi:id="SQLConstraint_1131634986299" name="FK_REF_9065_9065" type="FOREIGNKEY" referenceByKey="FK_REF_9065_9065"/>
+  <constraints xmi:id="SQLConstraint_1131634986300" name="FK_REF_111141_1111" type="FOREIGNKEY" referenceByKey="FK_REF_111141_1111"/>
+</RDBSchema:RDBTable>

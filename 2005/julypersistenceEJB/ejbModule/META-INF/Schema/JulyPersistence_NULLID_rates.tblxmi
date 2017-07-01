@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="rates" name="rates" primaryKey="rates_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="currency" name="currency">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986466">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ratetype" name="ratetype">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986467">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="date" name="date">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986466">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="value" name="value">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986466" precision="17" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="rates_1" name="rates" members="currency date ratetype" constraint="SQLConstraint_1131634986466"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1022_1022" name="fk_ref_1022_1022" members="ratetype" constraint="SQLConstraint_1131634986467">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_ratetypes.tblxmi#ratetypes_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_1019_1019" name="fk_ref_1019_1019" members="currency" constraint="SQLConstraint_1131634986468">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_currencies.tblxmi#currencies_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986466" name="rates" type="PRIMARYKEY" primaryKey="rates_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986467" name="fk_ref_1022_1022" type="FOREIGNKEY" referenceByKey="fk_ref_1022_1022"/>
+  <constraints xmi:id="SQLConstraint_1131634986468" name="fk_ref_1019_1019" type="FOREIGNKEY" referenceByKey="fk_ref_1019_1019"/>
+</RDBSchema:RDBTable>

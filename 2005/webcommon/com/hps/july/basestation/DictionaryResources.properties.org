@@ -1,0 +1,569 @@
+label.menu.organizer=Основное меню
+label.menu.tasklist=Задачи
+label.menu.reregister=Перерегистрация
+label.menu.logout=Выход
+
+label.menu.root=Основные справочники
+label.menu.tax=Налоги
+label.menu.units=Единицы измерения
+label.menu.restypes=Ресурс
+label.menu.currencies=Валюты
+label.menu.ratetypes=Типы курсов валют
+label.menu.sysconst=Системные константы
+label.menu.companies=Компании
+label.menu.organizations=Юридические лица
+label.menu.banks=Банки
+label.menu.groups=Классификация Юр. лиц
+label.menu.storages=Склады
+
+#da feb10 2003
+error.notpositive.currateh.value=Курс должен быть неотрицательным
+
+error.init=Ошибка установления начальных значений
+error.absent=Объект удален другим пользователем
+error.someshit=Попробуйте позже и вызовите системного администратора
+error.duplicate=Дублирование уникального кода
+error.invalid.sysconst.decimalvalue=Неверный формат десятичного значения
+errors.header=Пожалуйста исправьте следующие ошибки:
+error.referenced=Удаление записи не возможно, т.к. на нее есть ссылки в БД. За разъяснениями обратитесь к системному администратору.
+
+label.login.id=Пользователь
+label.login.psw=Пароль
+
+label.search.all=Все
+label.edit=Изменить запись
+label.delete=Удалить запись
+label.add=Добавить запись
+label.view=Просмотр записи
+label.norecords=По указанным условиям поиска записей не найдено
+
+label.companies=Компании
+label.organizations=Юридические лица
+label.banks=Банки
+label.accounts=Расчётные счета
+label.groups=Классификация Юр. лиц, Группировки
+label.group=Группировка
+label.groupping=Группа
+label.grouppings=Группы
+label.orggroup=Группы юридического лица
+label.grouporg=Юридические лица
+label.addgrouporg=Включить юр. лица в группу
+
+label.choose.company=Выберите компанию
+label.choose.bank=Выберите банк
+label.choose.group=Выберите группировку
+label.choose.groupping=Выберите группу
+label.choose.organizations=Выберите юридическое лицо
+
+label.choose.direction=Выберите дирекцию
+label.choose.service=Выберите службу
+label.choose.department=Выберите отдел
+label.choose.dgroup=Выберите группа
+
+label.groupping.code=Код
+label.groupping.name=Наименование группы
+
+label.group.code=Код
+label.group.name=Наименование группировки
+
+label.orggroups=Группы
+label.orggroup.group=Группировка
+label.orggroup.groupping=Группа
+label.orggroup.order=Порядковый №
+label.orggroup.organization=Юридическое лицо
+
+error.empty.group.name=Необходимо указать наименование
+error.empty.groupping.name=Необходимо указать наименование
+error.empty.groupping.group=Необходимо указать группировку
+
+error.empty.orggroup.group=Необходимо указать группировку
+error.empty.orggroup.groupping=Необходимо указать группу
+error.empty.orggroup.order=Необходимо указать порядковый номер
+error.invalid.orggroup.group=Несуществующая группировка
+error.invalid.orggroup.groupping=Несуществующая группа
+error.invalid.orggroup.order=Неверный формат порядкового номера
+error.invalid.orggroup.org=Не выбрано юридическое лицо при переходе к группам
+error.dup.orggroup.group=Организация не может состоять в нескольких группах одной группировки
+
+error.empty.grouporg.group=Не выбрана группировка при переходе к этой странице
+error.empty.grouporg.groupping=Не выбрана группа при переходе к этой странице
+error.empty.grouporg.order=Необходимо указать порядковый номер
+error.empty.grouporg.org=Необходимо указать юридическое лицо
+error.invalid.grouporg.group=Несуществующая группировка
+error.invalid.grouporg.groupping=Несуществующая группа
+error.invalid.grouporg.order=Неверный формат порядкового номера
+error.invalid.grouporg.org=Несуществующее юридическое лицо
+error.dup.grouporg.group=Организация не может состоять в нескольких группах одной группировки
+error.dup.grouporg.group.multi=Организация {0} {1} не может состоять в нескольких группах одной группировки
+
+label.company.name=Компания
+label.company.shortname=Краткое наименование
+label.organization.type=Форма собственности
+label.organization.name=Организация
+label.organization.shortname=Краткое наименование
+label.organization.company=Компания
+label.organization.issupplier=Поставщик
+label.organization.isprovider=Подрядчик
+label.organization.isrenter=Арендодатель
+label.organization.okonh=ОКОНХ
+label.organization.okpo=ОКПО
+label.organization.inn=ИНН
+label.organization.accountmanagerfio=ФИО бухгалтера
+label.organization.directorfio=ФИО руководителя
+label.organization.bossposition=Должность руководителя
+label.organization.phisicaladdress=Фактический адрес
+label.organization.legaladdress=Юридический адрес
+label.organization.legalzip=Юридический адрес.Индекс
+label.organization.phone=Телефон
+label.organization.fax=Факс
+label.organization.contactlist=Контактная информация
+label.organization.isbank=Банк
+label.organization.swift=Свифт
+label.organization.bik=Бик
+label.organization.corraccount=Банк.Корр-счет
+label.bank.name=Наименование банка
+label.bank.bik=БИК
+label.bank.corraccount=Корр. счет
+
+label.account.value=Номер расчётного счета
+label.account.bank=Банк
+label.account.organization=Юридическое лицо
+label.account.isactive=Активен
+error.empty.account.value=Необходимо заполнить номер расчётного счета
+error.empty.account.bank=Необходимо указать БИК банка
+error.invalid.account.bank=Банк с указанным кодом не найден
+error.more.account.bank=Найдено несколько банков с указанным БИК
+error.invalid.account.organization=Юридическое лицо с указанным кодом не найдено
+
+error.empty.organization.name=Необходимо указать имя организации
+error.empty.organization.issupplier=Необходимо указать признак поставщика
+error.empty.organization.isprovider=Необходимо указать признак подрядчика
+error.empty.organization.isrenter=Необходимо указать признак арендодателя
+error.empty.organization.shortname=Необходимо указать короткое имя юр. лица
+error.invalid.organization.company=Компания с указанным кодом не найдена
+error.empty.organization.bossposition=Необходимо указать должность руководителя
+error.empty.organization.directorfio=Необходимо указать фамилию руководителя
+error.empty.organization.inn=Необходимо указать ИНН
+error.empty.organization.legaladdress=Необходимо указать юридический адрес
+error.invalid.organization.inndup=Организация с таким ИНН уже есть
+
+error.empty.bank.name=Необходимо указать наименование банка
+error.empty.bank.bik=Необходимо указать БИК
+error.invalid.bank.bikdup=Банк с таким БИК уже есть
+
+label.people.fullname=ФИО
+
+label.currate.value=Курс
+label.currate.date=Дата
+label.currate=Курсы валют
+
+label.name=Наименование
+label.code=Код
+label.resource.show=Отображать
+label.logout.id=Выход из системы
+label.all=Все
+
+label.choose.currency=Выбор валюты
+label.choose.worker=Выберите работника
+label.choose.ratetype=Выбор типа курса
+label.choose.restype=Выбор вида ресурса
+label.choose.ressbtype=Выбор типа ресурса
+label.choose.unit=Выбор единицы измерения
+label.choose.resource=Выбор ресурса
+label.choose.antenna=Выбор антенны
+
+button.confirm=Подтвердить
+button.logout=Выход
+button.reset=Сбросить
+button.refresh=Обновить
+button.submit=Отправить
+button.login=Войти
+button.save=Сохранить
+button.cancel=Отмена
+button.search=Искать
+
+button.add=Добавить запись
+button.back=Назад
+button.close=Закрыть
+button.edit=Изменить запись
+button.view=Просмотр записи
+button.exclude=Исключить
+button.include=Включить
+button.save=Сохранить
+button.delete=Удалить
+
+label.ratetype=Типы курсов валют
+label.ratetype.basecur.code=Код базовой валюты
+label.ratetype.basecur=Базовая валюта
+label.ratetype.code=Тип курса
+label.ratetype.basecur.name=Наименование базовой валюты
+label.ratetype.name=Наименование
+
+label.currateh.date=Дата
+label.currateh=История курсов валюты
+label.currateh.value=Курс
+label.currateh.date=Дата
+
+label.resource.name=Наименование
+label.resource.code=Код
+label.resource.complectfor=Узел для
+label.resource.complectfornode=Узел для / Состав
+label.resource=Ресурс
+label.resource.boxable=Может быть упакован
+label.resource.complectpart.short=Узел
+label.resource.complectpart=Узел
+label.resource.model=Обозначение
+label.resource.taxhist=Налоги
+label.resource.countpolicy=Учётная политика
+label.resource.countpolicy.serial=Сер. учёт
+label.resource.countpolicy.partial=Парт. учёт
+label.resource.unit=Единица измерения
+label.resource.unit.short=Ед. изм.
+label.resource.active=Активный
+label.resource.active.short=Акт.
+label.resource.complect=Набор
+label.resource.complect.short=Ком-т
+label.resource.double=Консолидация ресурсов
+label.resource.showall=Все
+label.resource.shownew=Не устаревшие
+label.resource.showold=Устаревшие
+label.resource.priceable=Расценка обязательна
+label.resource.priceable.short=Расц. обяз.
+label.resource.notes=Примечание
+label.resource.manufacturer=Производитель
+label.resource.manucode=Код производителя
+
+label.resource.oldcodes=Старые коды
+label.resource.viewoldcodes=Просмотр
+label.resource.byclass=По классификации
+label.resource.bysign=По обозначению
+label.resource.byname=По наименованию
+label.resource.bymanufacturer=По производителю
+label.resource.bymanucode=По коду производителя
+label.resource.type=Вид
+label.resource.subtype=Тип
+label.resource.countpolicys=Серийный
+label.resource.countpolicyp=Партионный
+label.resource.countpolicyb=Обычный
+
+label.double=Консолидация ресурсов
+label.resource.double.code=Код консолидируемого ресурса
+label.resource.double.name=Наименование
+label.resource.double.actualcode=Главный ресурс
+
+label.restype.name=Наименование
+label.restype.subtype=Тип ресруса
+label.restype=Вид ресурса
+label.restype.code=Код
+label.restypes=Ресурсы, Виды ресурсов
+
+label.restax.nds=НДС
+label.restax.date=Дата
+label.restax=Налоги, Ставки налогов на ресурсы
+label.restax.resource.code=Код ресурса
+label.restax.resource.name=Наименование ресурса
+label.restax.nsp=НСП
+
+label.restaxhist=История налогов на ресурс
+label.restaxhist.resource=Ресурс
+label.restaxhist.date=Дата
+label.restaxhist.nds=НДС
+label.restaxhist.nsp=НСП
+
+label.complectfor=Узел для
+label.complectfor.complect=Набор
+label.complectfor.complect.code=Код набора
+label.complectfor.complect.name=Наименование набора
+label.complectfor.part=Узел
+
+label.complects=Наборы
+label.complect=Набор
+label.complect.code=Код
+label.complect.name=Наименование
+label.complect.mainpart.code=Код главной части
+label.complect.mainpart.name=Главная часть
+label.complect.mainpart.unit=Ед. изм.
+label.complect.qty=Кол-во главной части
+label.complect.type=Тип
+label.complect.type.set=Набор
+label.complect.type.agregate=Агрегат
+
+label.content=Состав
+label.content.code=Код
+label.content.name=Наименование
+label.content.qty.short=Кол-во
+label.content.qty=Количество
+label.content.unit.short=Ед. изм.
+label.content.part=Элемент
+
+label.units=Единицы измерения
+label.unit.name=Наименование
+label.unit.shortname=Краткое наименование
+label.unit.code=Код
+
+label.currency.shortname=Короткое имя
+label.currency=Валюты
+label.currency.code=Валюта
+label.currency.name=Наименование
+
+label.sysconst.id=Код
+label.sysconst=Системные константы
+label.sysconst.datevalue=Дата
+label.sysconst.charvalue=Строка
+label.sysconst.intvalue=Целое
+label.sysconst.decimalvalue=Десятичное
+
+label.subtype.code=Код
+label.subtype.name=Наименование
+label.subtypes=Типы ресурсов
+label.subtype=Тип ресурса
+
+error.empty.restax.nds=Необходимо указать НДС
+error.empty.restax.date=Необходимо указать дату
+error.empty.restax.resource=Необходимо указать ресурс
+error.empty.restax.nsp=Необходимо указать НСП
+
+error.empty.resource.name=Необходимо указать наименование
+error.empty.resource.model=Необходимо указать обозначение
+error.empty.resource.subtype=Необходимо указать тип ресурса
+
+error.empty.content.resourcepart=Необходимо указать элемент
+error.empty.content.qty=Необходимо указать количество
+
+error.empty.restype.name=Необходимо указать наименование
+
+error.empty.ratetype.name=Необходимо указать наименование
+error.empty.ratetype.basecur=Необходимо указать базовую валюту
+
+error.empty.currency.shortname=Необходимо указать короткое имя
+error.empty.currency.name=Необходимо указать наименование
+
+error.empty.currate.value=Необходимо указать курс
+error.empty.currate.date=Необходимо указать дату
+error.empty.currate.ratetype=Необходимо указать тип курса
+error.empty.currate.currency=Необходимо указать валюту
+
+error.empty.currateh.value=Необходимо указть курс
+
+error.empty.currateh.ratetype=Необходимо указать тип курса
+error.empty.currateh.date=Необходимо указать дату
+
+error.empty.sysconst.id=Необходимо указать идентификатор
+error.invalid.sysconst.id=Идентификатор содержит недопустимые символы
+
+error.empty.unit.name=Необходимо указать наименование единицы измерения
+error.empty.unit.shortname=Необходимо указать краткое наименованование
+
+error.empty.subtype.name=Необходимо указать наименование
+
+error.empty.complectfor.complect=Необходимо указать набор
+
+error.empty.complect.name=Необходимо указать наименование
+error.empty.complect.mainpart=Необходимо указать главную часть
+error.empty.complect.type=Необходимо указать тип
+error.empty.complect.mainpartqty=Необходимо указать количество главной части
+
+error.invalid.complect.mainpartqty=Неверный формат количества главной части
+
+error.invalid.currate.date=Неверный формат даты
+error.invalid.currate.value=Неверный формат курс
+error.invalid.currate.currency=Валюта с указанным кодом не найдена
+
+error.invalid.content.qty=Неверный формат количества
+error.invalid.ratetype.basecur=Валюта с указанным кодом не найдена
+error.invalid.currateh.value=Неверный формат курса
+error.invalid.currateh.date=Неверный форммат даты
+
+error.invalid.restax.nds=Неверный формат НДС
+error.invalid.restax.nsp=Неверный формат НСП
+error.invalid.restax.date=Неверный формат даты
+error.invalid.restax.resource=Ресурс с указанным кодом не найден
+
+error.invalid.direction.worker=Работник с указанным кодом не найден
+
+error.invalid.sysconst.datevalue=Неверный формат даты
+error.invalid.sysconst.intvalue=Неверный формат целого значения
+error.invalid.sysconst.intvalue1=Обсчет документа не был успешным
+
+error.invalid.resource.subtype=Тип ресурса с указанным кодом не найден
+error.invalid.resource.unit=Единица измерения с указанным кодом не найдена
+error.invalid.resource.manufacturer=Производитель с указанным кодом не найден
+error.invalid.resource.manucode=Part No слишком длинный
+
+label.storages=Склады
+label.storage.division=Подразделение
+label.storage.addr=Адрес
+label.storage.pstnphone=Городской телефон
+label.storage.internalphone=Внутренний телефон
+
+error.empty.storage.name=Необходимо указать наименование склада
+error.empty.storage.address=Необходимо указать адрес склада
+error.empty.storage.direction=Необходимо указать дирекцию
+error.invalid.storage.direction=Дирекция с указанным кодом не найдена
+error.invalid.storage.service=Служба с указанным кодом не найдена
+error.invalid.storage.department=Отдел с указанным кодом не найден
+error.invalid.storage.group=Группа с указанным кодом не найдена
+
+
+label.direction.name=Дирекция
+label.direction.shortname=Краткое наименование
+label.direction.boss=Руководитель
+label.service.name=Служба
+label.service.shortname=Краткое наименование
+label.service.boss=Руководитель
+label.department.name=Отдел
+label.department.shortname=Краткое наименование
+label.department.boss=Руководитель
+label.dgroup.name=Группа
+label.dgroup.shortname=Краткое наименование
+label.dgroup.boss=Руководитель
+
+label.complectnodes=Из каких узлов состоит
+label.complectnodes.complect=Набор
+label.complectnodes.part.code=Код
+label.complectnodes.part.name=Наименование
+label.complectnodes.part=Узел набора
+label.resource.complectnode=Состав
+error.empty.complectnodes.part=Необходимо указать узел набора
+
+msg.ressbtype=Перечень типов ресурсов для выбранного вида
+msg.res=Перечень ресурсов выбранного типа
+msg.complect=Перечень наборов ресурсов выбранного типа
+msg.complectfor=Перечень ресурсов, к которому подходит узел
+msg.complectnodes=Перечень узлов, которые подходят к ресурсу
+msg.double=Операция слияния ресурсов
+msg.taxhist=Редактирование ставок налогов для ресурса
+msg.complectcontent=Перечень составных частей набора
+msg.curratehist=Работа с курсом выбранной валюты
+msg.currate=Работа с курсами валюты
+msg.groupping=Перечень групп в группировке
+msg.grouporg=Перечень юридических лиц входящих в группу
+msg.accounts=Перечень расчетных счетов юридического лица
+msg.orggroups=Классификация юридического лица
+
+error.absent.complect.mainpart=Главная часть с указанным кодом не найдена
+
+label.menu.deviceandcable=Антенно-фидерное оборудование и кабели
+label.menu.cable=Р/ч кабели
+label.menu.antena=Антенны
+label.menu.basestation=Базовые станции GSM/DCS
+
+label.cabtypes=Список типов Р/Ч кабелей
+label.cabtypes.losses=Удельные потери
+label.cabtypes.manufacturer=Производитель
+label.cabtypes.name=Обозначение
+label.cabtypes.code=Код
+
+label.antena.list=Список типов антенн
+label.antena.form=Параметры антены
+label.antena.range=Диапазон
+label.antena.polar=Поляризация
+label.antena.show=Отображать
+label.antena.show.active=Не устаревшие
+label.antena.show.old=Устаревшие
+label.antena.searchby=Искать
+label.antena.searchby.model=По обозначению
+label.antena.searchby.manufacturer=По производителю
+label.antena.name=Наименование
+label.antena.manucode=Код производителя
+label.antena.model=Обозначение
+label.antena.manufacturer=Производитель
+label.antena.extent=Габариты
+label.antena.amplify=Усиление (дб)
+label.antena.amplifycount=раз
+label.antena.infoactive=Информация активна
+label.antena.freqrange=Диапазон частот
+label.antena.dntype=Тип ДН
+label.antena.electricangle=Электрический наклон
+label.antena.ksvn=КСВН
+label.antena.port=Разъем
+label.antena.weight=Вес (кг)
+label.antena.band=Рабочий диапазон
+label.antena.bandenabled=Диапазон доступен
+label.antena.amp=Усиление
+label.antena.amp.db=db
+label.antena.amp.cnt=раз
+label.antena.dir=Диаграмма направл.
+label.antena.dir.horz=горизонтальная
+label.antena.dir.vert=вертикальная
+label.antena.omni=Омни антенна
+
+error.antana.emptyname=Необходимо указать наименование
+error.antena.longname=Наименование не должно превышать 80 символов
+error.antena.emptymodel=Необходимо указать обозначение
+error.antena.longmodel=Обозначение не должно превышать 40 символов
+error.antena.invalidmanufacturer=Неверный формат числа в поле "Производитель"
+error.antena.manufacturernotfound=Указанный производитель не найден в справочнике системы
+error.antena.longmanucode=Код производителя не должен превышать 40 символов
+error.antena.invalidrange=Указан неверный диапазон
+error.antena.longfreqrange=Строка в поле "диапазон частот" не должна превышать 20 символов
+error.antena.invalidpolar=Указана неверная поляризация
+error.antena.longdn1type=Первый тип ДН не должен превышать 4х символов
+error.antena.longdn2type=Второй тип ДН не должен превышать 4х символов
+error.antena.invalidamplify=Неверный формат числа в поле "Усиление"
+error.antena.invalidelectricangle=Неверный формат числа в поле "Электрический наклон"
+error.antena.invalidmaxelectricangle=Неверный формат числа в поле "Максимальный электрический наклон"
+error.antena.invalidksvn=Неверный формат числа в поле "КСВН"
+error.antena.invalidlength=Неверный формат длинны в поле "Габариты"
+error.antena.invalidwidth=Неверный формат ширины в поле "Габариты"
+error.antena.invalidheight=Неверный формат высоты в поле "Габариты"
+error.antena.longport=Строка в поле "Разъём" не должна превышать 20 символов
+error.antena.invalidweight=Неверный формат числа в поле "Вес"
+
+label.cable.list=Список типов р/ч кабелей
+label.cable.form=Параметры р/ч кабеля
+label.cable.code=Код
+label.cable.model=Обозначение
+label.cable.manufacturer=Производитель
+label.cable.loss=Удельные потери
+label.cable.name=Наименование
+label.cable.formloss=Удельные потери (дб/м)
+label.cable.band=Рабочий диапазон
+label.cable.techparams=Технические характеристики
+
+error.cable.emptyname=Необходимо указать наименование
+error.cable.longname=Наименование не должно превышать 80 символов
+error.cable.invalidmanufacturer=Неверный формат числа в поле "Производитель"
+error.cable.manufacturernotfound=Указанный производитель не найден в справочнике системы
+error.cable.emptymodel=Необходимо указать обозначение
+error.cable.longmodel=Обозначение не должно превышать 40 символов
+error.cable.invalidlostfactor=Неверный формат числа в поле "Удельные потери" для рабочего диапазона {0}
+
+label.basestation.list=Список типов базовых станций GSM/DCS
+label.basestation.form=Паратметры базовой станции
+label.basestation.standard=Стандарт
+label.basestation.generation=Поколение
+label.basestation.show=Отображать
+label.basestation.show.active=Не устаревшие
+label.basestation.show.old=Устаревшие
+label.basestation.searchby=Искать
+label.basestation.searchby.model=По обозначению
+label.basestation.searchby.manufacturer=По производителю
+label.basestation.name=Наименование
+label.basestation.infoactive=Информация активна
+label.basestation.manufacturer=Производитель
+label.basestation.model=Обозначение
+label.basestation.manucode=Код производителя
+label.basestation.releaseyear=Год производства
+label.basestation.devline=Линия оборудования
+label.basestation.modification=Модификация
+label.basestation.extent=Габариты
+
+error.basestation.emptyname=Необходимо указать наименование
+error.basestation.longname=Наименование не должно превышать 80 символов
+error.basestation.emptymodel=Необходимо указать обозначение
+error.basestation.longmodel=Обозначение не должно превышать 40 символов
+error.basestation.invalidmanufacturer=Неверный формат числа в поле "Производитель"
+error.basestation.manufacturernotfound=Указанный производитель не найден в справочнике системы
+error.basestation.longmanucode=Код производителя не должен превышать 40 символов
+error.basestation.invalidstandard=Указан неверный стандарт
+error.basestation.longmanuyear=Год производства не может быть больше 4х символов
+error.basestation.invalidmanuyear=Неверный формат числа в поле "Год производства".
+error.basestation.longdevline=Строка в поле "Линия оборудования" не может превышать 50 сиволов
+error.basestation.longgeneration=Строка в поле "Поколение" не может превышать 10 символов
+error.basestation.longmodification=Строка в поле "Модификация" не может превышать 10 символов
+error.basestation.invalidlength=Неверный формат длинны в поле "Габариты"
+error.basestation.invalidwidth=Неверный формат ширины в поле "Габариты"
+error.basestation.invalidheight=Неверный формат высоты в поле "Габариты"
+
+#eof

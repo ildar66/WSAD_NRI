@@ -1,0 +1,22 @@
+package com.hps.july.dictionary.formbean;
+
+/**
+ * Форма выбора единицы измерения
+ */
+public class UnitLookupListForm extends com.hps.july.web.util.BrowseForm {
+/**
+ * Insert the method's description here.
+ * Creation date: (22.01.2002 13:30:34)
+ */
+public UnitLookupListForm() {
+	this.setFinderMethodName( "findAll" );
+	}
+/**
+ * Insert the method's description here.
+ * Creation date: (22.01.2002 12:00:34)
+ * @return java.lang.Object[]
+ */
+public java.lang.Object[] getFilterParams() {
+	return new Object[] { };
+}
+}

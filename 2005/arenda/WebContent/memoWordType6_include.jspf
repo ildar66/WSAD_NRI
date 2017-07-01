@@ -1,0 +1,9 @@
+<!-- MemoType:Переоформление(тип 6)  -->
+<P style='text-align:justify;text-indent:35.4pt'>Прошу Вас  дать указание переоформить телефонные номера с  <bean:write name="MemoWordForm" property="memo.from" filter="true" scope="request"/> на <bean:write name="MemoWordForm" property="memo.to" filter="true" scope="request"/> <bean:write name="MemoWordForm" property="memo.useTypeVO.printLabel" filter="true" scope="request"/>
+<%if(aform.getMemo().getUsetype().equalsIgnoreCase("A")){%>
+	<logic:present name="MemoWordForm" property="arendaContractVO">
+		по договору № <bean:write name="MemoWordForm" property="arendaContractVO.documentNumber" filter="true" scope="request"/>
+		от <july:datewrite name="MemoWordForm" property="arendaContractVO.documentDate" scope="request"/>
+	</logic:present>
+<%}%>
+</P>

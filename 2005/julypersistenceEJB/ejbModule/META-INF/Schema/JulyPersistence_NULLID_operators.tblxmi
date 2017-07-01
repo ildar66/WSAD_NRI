@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="operators" name="operators" primaryKey="operators_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="operator" name="operator">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986466">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="man" name="man">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986467">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="loiginid" name="loiginid">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986466" characterSet="800" length="10">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="password" name="password">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986476" characterSet="800" length="15">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="isenabled" name="isenabled">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986477" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="msucode" name="msucode" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986476">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="oldpwd" name="oldpwd" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1143551023593" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="operators_1" name="operators" members="operator" constraint="SQLConstraint_1131634986476">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_operators2roles.tblxmi#fk_relation__36"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_operationjornal.tblxmi#fk_relation__37"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_importsessions.tblxmi#FK_REF_82787_82787"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_docactions.tblxmi#FK_REF_7507_7507"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasedocoperjornal.tblxmi#FK_REF_21897_21897"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_antennes.tblxmi#FK_REF_96123_96123"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_regionsaccess.tblxmi#FK_REF_65766_65766"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasetasksstarts.tblxmi#FK_REF_TSOPR_15393"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_relation__42" name="fk_relation__42" members="man" constraint="SQLConstraint_1131634986477">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_people.tblxmi#people_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986476" name="operators" type="PRIMARYKEY" primaryKey="operators_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986477" name="fk_relation__42" type="FOREIGNKEY" referenceByKey="fk_relation__42"/>
+</RDBSchema:RDBTable>

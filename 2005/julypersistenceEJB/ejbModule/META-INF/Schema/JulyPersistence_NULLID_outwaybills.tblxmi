@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="outwaybills" name="outwaybills" primaryKey="outwaybills_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="document" name="document">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986276">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="currency" name="currency">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986277">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="outwaybills_1" name="outwaybills" members="document" constraint="SQLConstraint_1131634986276"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_44049_44049" name="FK_REF_44049_44049" members="currency" constraint="SQLConstraint_1131634986277">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_currencies.tblxmi#currencies_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_1709_1709" name="FK_REF_1709_1709" members="document" constraint="SQLConstraint_1131634986278">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_documents.tblxmi#documents_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986276" name="outwaybills" type="PRIMARYKEY" primaryKey="outwaybills_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986277" name="FK_REF_44049_44049" type="FOREIGNKEY" referenceByKey="FK_REF_44049_44049"/>
+  <constraints xmi:id="SQLConstraint_1131634986278" name="FK_REF_1709_1709" type="FOREIGNKEY" referenceByKey="FK_REF_1709_1709"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,101 @@
+<%
+	boolean suppressStartDebt= (aform.getTable1().size()>0)?false:true;
+	String currmain = "";
+	String executor ="";
+    String customer ="";
+    java.math.BigDecimal summ = new java.math.BigDecimal(0); //getSumm()
+	if(!suppressStartDebt){
+		com.hps.july.arenda.valueobject.MutualStartDebtValueObject msdvo = (com.hps.july.arenda.valueobject.MutualStartDebtValueObject)aform.getTable1().get(0);
+		currmain = msdvo.getCurrMain();
+		executor = msdvo.getExecutor();
+	    customer = msdvo.getCustomer();
+        summ = msdvo.getSumm();
+%>
+      <%if(summ.doubleValue() > 0) {%>
+<P>
+<b><bean:message key="label.mutactword.debt"/>&nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.pered"/> &nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.sostavliaet"/> </b>
+      <%} else {%> 
+<b><bean:message key="label.mutactword.debt"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.pered"/> &nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.sostavliaet"/> </b>
+      <%}%>
+<table border=1 style='border-collapse:collapse;border:none;mso-border-alt:solid silver .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt' width="100%">
+<tr bgcolor="#EAEAEA">
+	<td rowspan="2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.resname"/></td>
+	<td rowspan="2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.number"/><br><bean:message key="label.mutactword.contract"/></td> 
+	<td rowspan="2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.date"/><br><bean:message key="label.mutactword.contract"/></td>
+	<td align="center" colspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.poacty"/></td>
+	<td rowspan="2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.summa"/><br><bean:message key="label.mutactword.dolga"/></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.currency"/></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.summa"/><BR>â&nbsp;<%=currmain%></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.sumWithoutMain"/></td>
+</tr>
+<tr bgcolor="#EAEAEA">
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.numberAct"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.dataAct"/></td>
+</tr>
+		<%
+			java.util.Iterator table1 = aform.getTable1().iterator();
+			while (table1.hasNext()) {
+				com.hps.july.arenda.valueobject.MutualStartDebtValueObject ob1
+					          = (com.hps.july.arenda.valueobject.MutualStartDebtValueObject )table1.next();
+				request.setAttribute("ob1", ob1);
+				request.setAttribute("summ.abc()", ob1.getSumm().abs());
+				request.setAttribute("summMain.abc()", ob1.getSummain().abs());
+				request.setAttribute("sumWithoutMain.abc()", ob1.getSumWithoutMain().abs());
+				request.setAttribute("nds.abc()", ob1.getNds().abs());
+				request.setAttribute("ndsRub.abc()", ob1.getNdsRub().abs());
+				if(!customer.equals(ob1.getCustomer()) || !executor.equals(ob1.getExecutor())) {
+		%>
+</table>
+</P>
+        <%
+		            currmain = ob1.getCurrMain();
+					executor = ob1.getExecutor();
+	                customer = ob1.getCustomer();
+				    summ = ob1.getSumm();
+		%>
+
+                  <%if(summ.doubleValue() > 0) {%>
+<P>
+<b><bean:message key="label.mutactword.debt"/>&nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.pered"/> &nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.sostavliaet"/> </b>
+                  <%} else {%> 
+<b><bean:message key="label.mutactword.debt"/>&nbsp;<%=executor%>&nbsp;<bean:message key="label.mutactword.pered"/> &nbsp;<%=customer%>&nbsp;<bean:message key="label.mutactword.sostavliaet"/> </b>
+                  <%}%>
+<table border=1 style='border-collapse:collapse;border:none;mso-border-alt:solid silver .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt' width="100%">
+<tr bgcolor="#EAEAEA">
+	<td rowspan="2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.resname"/></td>
+	<td rowspan="2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.number"/><br><bean:message key="label.mutactword.contract"/></td> 
+	<td rowspan="2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.date"/><br><bean:message key="label.mutactword.contract"/></td>
+	<td align="center" colspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.poacty"/></td>
+	<td rowspan="2" align="center" style='border:solid silver .5pt;'><bean:message key="label.mutactword.summa"/><br><bean:message key="label.mutactword.dolga"/></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.currency"/></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.summa"/><BR>â&nbsp;<%=currmain%></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+	<td rowspan="2" style='border:solid silver .5pt;'><bean:message key="label.mutactword.sumWithoutMain"/></td>
+</tr>
+<tr bgcolor="#EAEAEA">
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.numberAct"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.dataAct"/></td>
+</tr>
+		      <%}%>
+<tr>
+	<td style='border:solid silver .5pt;'><bean:write name="ob1" property="resname" filter="true"/></td>
+	<td style='border:solid silver .5pt;'><bean:write name="ob1" property="contractNumber" filter="true"/></td>
+	<td style='border:solid silver .5pt;'><july:datewrite name="ob1" property="contractDate" shortformat="true"/></td>
+	<td style='border:solid silver .5pt;' align="center"><bean:write name="ob1" property="numberAct" filter="true"/></td>
+	<td style='border:solid silver .5pt;'><july:datewrite name="ob1" property="dateAct" shortformat="true"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="summ.abc()" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="nds.abc()" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;'><bean:write name="ob1" property="cur" filter="true"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="summMain.abc()" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="ndsRub.abc()" fractdigits="2"/></td>
+	<td style='border:solid silver .5pt;' align = "right" NOWRAP><july:numberwrite name="sumWithoutMain.abc()" fractdigits="2"/></td>
+</tr>
+		<%
+			}//end while
+		%>
+</table>
+</P>
+<%}%>

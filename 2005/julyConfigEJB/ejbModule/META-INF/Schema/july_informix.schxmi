@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="informix" name="informix">
+  <database href="META-INF/Schema/july.dbxmi#july"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGBASESTATION.tblxmi#CFGBASESTATION"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGSECTOR.tblxmi#cfgsectors"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGBSSTANDS.tblxmi#cfgbsstands"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGANTENNA.tblxmi#cfgantennes"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGANTEN2SECTOR.tblxmi#cfgantenn2sectors"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGEQUIPOBJECTSCFG.tblxmi#cfgequipobjectscfg"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGSAVEDCONFIG.tblxmi#cfgsavedconfigs"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_CFGSTORAGECARD.tblxmi#cfgstoragecards"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgantennacables.tblxmi#cfgantennacables"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgtrx.tblxmi#cfgtrx"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgtrx2sectors.tblxmi#cfgtrx2sectors"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgantennesworkbands.tblxmi#cfgantennesworkbands"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/july_informix_cfgequipobjcfg2sectors.tblxmi#cfgequipobjcfg2sectors"/>
+</RDBSchema:RDBSchema>

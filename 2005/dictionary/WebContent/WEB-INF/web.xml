@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://dtdserver/dtd/web-app_2_2.dtd">
+<web-app>
+<display-name>july-dictionary</display-name>
+  <!-- Standard Action Servlet Configuration (with debugging) -->
+  <servlet id="Servlet_1">
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>application</param-name>
+      <param-value>com.hps.july.dictionary.ApplicationResources</param-value>
+    </init-param>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>0</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>0</param-value>
+    </init-param>
+    <init-param>
+      <param-name>validate</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>nocache</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet id="Servlet_2">
+    <servlet-name>UpdateResourceCateg</servlet-name>
+    <servlet-class>com.hps.july.dictionary.locservlet.UpdateResourceCateg</servlet-class>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet id="Servlet_3">
+    <servlet-name>GetNFSResourceData</servlet-name>
+    <servlet-class>com.hps.july.dictionary.locservlet.GetNFSResourceData</servlet-class>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+  <servlet id="Servlet_4">
+    <servlet-name>GetNRIResourceData</servlet-name>
+    <servlet-class>com.hps.july.dictionary.locservlet.GetNRIResourceData</servlet-class>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+
+  <!-- Standard Action Servlet Mapping -->
+  <servlet-mapping id="ServletMapping_1">
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_2">
+    <servlet-name>UpdateResourceCateg</servlet-name>
+    <url-pattern>/updateResourceCateg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_3">
+    <servlet-name>GetNFSResourceData</servlet-name>
+    <url-pattern>/GetNFSResourceData</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping id="ServletMapping_4">
+    <servlet-name>GetNRIResourceData</servlet-name>
+    <url-pattern>/GetNRIResourceData</url-pattern>
+  </servlet-mapping>
+
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-template.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-template.tld</taglib-location>
+	</taglib>
+      <taglib>
+         <taglib-uri>/WEB-INF/july.tld</taglib-uri>
+         <taglib-location>/WEB-INF/july.tld</taglib-location>
+      </taglib>
+    
+  <security-constraint id="SecurityConstraint_1">
+    <web-resource-collection id="WebResourceCollection_1">
+      <web-resource-name>main</web-resource-name>
+
+      <url-pattern>/Login.do</url-pattern>
+
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+    </web-resource-collection>
+    <auth-constraint id="AuthConstraint_1">
+      <description>public:+:</description>
+      <role-name>Everyone</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_1">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+	  
+  <security-constraint id="SecurityConstraint_2">
+    <web-resource-collection id="WebResourceCollection_2">
+      <web-resource-name>anyopresource</web-resource-name>
+
+      <url-pattern>/main.do</url-pattern>
+      
+      <url-pattern>/ShowUnitList.do</url-pattern>
+      <url-pattern>/EditUnit.do</url-pattern>
+      <url-pattern>/ShowUnitLookupList.do</url-pattern>
+
+      <url-pattern>/ShowSysconstList.do</url-pattern>
+      <url-pattern>/EditSysconst.do</url-pattern>
+
+      <url-pattern>/ShowRestypeList.do</url-pattern>
+      <url-pattern>/EditRestype.do</url-pattern>
+      <url-pattern>/ShowRestypeLookupList.do</url-pattern>
+
+      <url-pattern>/ShowRessbtypeList.do</url-pattern>
+      <url-pattern>/EditRessbtype.do</url-pattern>
+      <url-pattern>/ShowRessbtypeLookupList.do</url-pattern>
+
+      <url-pattern>/ShowTaxList.do</url-pattern>
+      <url-pattern>/EditTax.do</url-pattern>
+
+      <url-pattern>/ShowCurrencyList.do</url-pattern>
+      <url-pattern>/EditCurrency.do</url-pattern>
+      <url-pattern>/ShowCurrencyLookupList.do</url-pattern>
+
+      <url-pattern>/ShowRatetypeList.do</url-pattern>
+      <url-pattern>/EditRatetype.do</url-pattern>
+      <url-pattern>/ShowRatetypeLookupList.do</url-pattern>
+
+      <url-pattern>/ShowCurrateHList.do</url-pattern>
+      <url-pattern>/EditCurrateH.do</url-pattern>
+
+      <url-pattern>/ShowCurrateList.do</url-pattern>
+      <url-pattern>/EditCurrate.do</url-pattern>
+
+      <url-pattern>/ShowInvResourceList.do</url-pattern>
+	  <url-pattern>/ShowInvResourceListWN.do</url-pattern>
+      <url-pattern>/updateResourceCateg</url-pattern>
+      
+      <url-pattern>/EditDouble.do</url-pattern>
+
+      <url-pattern>/ShowTaxhistList.do</url-pattern>
+      <url-pattern>/EditTaxhist.do</url-pattern>
+
+      <url-pattern>/ShowComplectForList.do</url-pattern>
+      <url-pattern>/EditComplectFor.do</url-pattern>
+      <url-pattern>/ShowComplectNodesList.do</url-pattern>
+      <url-pattern>/EditComplectNodes.do</url-pattern>
+
+      <url-pattern>/ShowComplectList.do</url-pattern>
+      <url-pattern>/EditComplect.do</url-pattern>
+
+      <url-pattern>/ShowComplectContentList.do</url-pattern>
+      <url-pattern>/EditComplectContent.do</url-pattern>
+	  
+      <url-pattern>/ShowCompanyList.do</url-pattern>
+      <url-pattern>/ShowCompanyLookupList.do</url-pattern>
+      
+      <url-pattern>/ShowOrganizationListC.do</url-pattern>
+      <url-pattern>/EditOrganizationC.do</url-pattern>
+      
+      <url-pattern>/ShowOrganizationListM.do</url-pattern>
+      <url-pattern>/EditOrganizationM.do</url-pattern>
+
+      <url-pattern>/ShowOrgworkersList.do</url-pattern>
+      <url-pattern>/EditOrgworker.do</url-pattern>
+      <url-pattern>/ProcessOrgworker.do</url-pattern>
+      
+      <url-pattern>/ShowBankLookupList.do</url-pattern>
+      <url-pattern>/ShowBankList.do</url-pattern>
+      <url-pattern>/EditBank.do</url-pattern>
+
+      <url-pattern>/ShowAccountList.do</url-pattern>
+      <url-pattern>/EditAccount.do</url-pattern>
+      <url-pattern>/ShowAccountListC.do</url-pattern>
+      <url-pattern>/EditAccountC.do</url-pattern>
+	  
+      <url-pattern>/ShowGroupList.do</url-pattern>
+      <url-pattern>/ShowGroupLookupList.do</url-pattern>
+      <url-pattern>/EditGroup.do</url-pattern>
+	  
+      <url-pattern>/ShowGrouppingList.do</url-pattern>
+      <url-pattern>/ShowGrouppingLookupList.do</url-pattern>
+      <url-pattern>/EditGroupping.do</url-pattern>
+
+      <url-pattern>/ShowOrggroupList.do</url-pattern>
+      <url-pattern>/EditOrggroup.do</url-pattern>
+
+      <url-pattern>/ShowOrggroupListC.do</url-pattern>
+      <url-pattern>/EditOrggroupC.do</url-pattern>
+
+      <url-pattern>/ShowOrganizationLookupList.do</url-pattern>
+      <url-pattern>/ShowGrouporgList.do</url-pattern>
+      <url-pattern>/EditGrouporg.do</url-pattern>
+      <url-pattern>/ShowOrganizationMultiList.do</url-pattern>
+	  
+      <url-pattern>/ShowStorageList.do</url-pattern>
+      <url-pattern>/EditStorage.do</url-pattern>
+
+      <url-pattern>/ChooseRtype.do</url-pattern>
+      <url-pattern>/ProcessRtype.do</url-pattern>
+
+      <url-pattern>/ShowCarsList.do</url-pattern>
+      <url-pattern>/EditCar.do</url-pattern>
+
+      <url-pattern>/ShowPersonList.do</url-pattern>
+      <url-pattern>/EditPerson.do</url-pattern>
+	  <url-pattern>/PersonLookupList.do</url-pattern>
+	  <url-pattern>/RegionList.do</url-pattern>
+	  <url-pattern>/RegionLookupList.do</url-pattern>
+	  
+	  <url-pattern>/BanksList.do</url-pattern>
+	  <url-pattern>/BanksDialog.do</url-pattern>
+	  <url-pattern>/BanksProcess.do</url-pattern>
+	  <url-pattern>/BanksLookupList.do</url-pattern>
+	  
+	  <url-pattern>/VendorList.do</url-pattern>
+	  <url-pattern>/VendorDialog.do</url-pattern>
+	  <url-pattern>/VendorProcess.do</url-pattern>
+	  <url-pattern>/VendorLookupList.do</url-pattern>	  
+
+	  <url-pattern>/VendorSiteList.do</url-pattern>
+	  <url-pattern>/VendorSiteDialog.do</url-pattern>
+	  <url-pattern>/VendorSiteProcess.do</url-pattern>
+	  <url-pattern>/VendorSiteLookupList.do</url-pattern>
+
+	  <url-pattern>/AccountsList.do</url-pattern>
+	  <url-pattern>/AccountsDialog.do</url-pattern>
+	  <url-pattern>/AccountsProcess.do</url-pattern>
+	  <url-pattern>/AccountsLookupList.do</url-pattern>
+	  
+	  <url-pattern>/VendorAdminList.do</url-pattern>
+	  <url-pattern>/VendorAdminDialog.do</url-pattern>
+	  <url-pattern>/VendorAdminProcess.do</url-pattern>
+
+	  <url-pattern>/VendorSiteAdminList.do</url-pattern>
+	  <url-pattern>/VendorSiteAdminDialog.do</url-pattern>
+	  <url-pattern>/VendorSiteAdminProcess.do</url-pattern>
+	  
+	  <url-pattern>/ShowPeopleLookupList.do</url-pattern>
+	  
+      <url-pattern>/ShowResourceLookupList.do</url-pattern>
+      
+      <url-pattern>/ShowEquipmanufLookupList.do</url-pattern>
+      
+      <url-pattern>/ShowResourceGroupLookupList.do</url-pattern>
+  	  	  
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_2">
+      <description>protected:+:</description>
+      <role-name>AllAuthenticated</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_2">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+  
+  <security-constraint id="SecurityConstraint_3">
+    <web-resource-collection id="WebResourceCollection_3">
+      <web-resource-name>dictpartresource</web-resource-name>
+
+      <url-pattern>/ProcessOrganizationC.do</url-pattern>
+      <url-pattern>/ProcessOrganizationM.do</url-pattern>
+      <url-pattern>/ProcessOrggroup.do</url-pattern>
+      <url-pattern>/ProcessOrggroupC.do</url-pattern>
+      <url-pattern>/ProcessGrouporg.do</url-pattern>
+      <url-pattern>/ProcessOrganizationMulti.do</url-pattern>
+
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_3">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+      <role-name>dictPartAdmin</role-name>
+      <role-name>dictPartOperator</role-name>
+      <role-name>ArendaMainEconomist</role-name>
+      <role-name>ArendaEconomist</role-name>
+      <role-name>ArendaManager</role-name>
+      <role-name>ArendaMainManager</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_3">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_4">
+    <web-resource-collection id="WebResourceCollection_4">
+      <web-resource-name>dictpartadmresource</web-resource-name>
+
+      <url-pattern>/ProcessBank.do</url-pattern>
+      <url-pattern>/ProcessGroup.do</url-pattern>
+      <url-pattern>/ProcessGroupping.do</url-pattern>
+
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_4">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+      <role-name>dictPartAdmin</role-name>
+      <role-name>ArendaMainEconomist</role-name>
+      <role-name>ArendaEconomist</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_4">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_5">
+    <web-resource-collection id="WebResourceCollection_5">
+      <web-resource-name>dictparteconresource</web-resource-name>
+
+      <url-pattern>/ProcessAccount.do</url-pattern>
+      <url-pattern>/ProcessAccountC.do</url-pattern>
+      
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_5">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+      <role-name>dictPartAdmin</role-name>
+      <role-name>ArendaMainEconomist</role-name>
+      <role-name>ArendaEconomist</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_5">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_6">
+    <web-resource-collection id="WebResourceCollection_6">
+      <web-resource-name>dictresresource</web-resource-name>
+
+      <url-pattern>/ProcessTax.do</url-pattern>
+      <url-pattern>/ProcessDouble.do</url-pattern>
+      <url-pattern>/ProcessTaxhist.do</url-pattern>
+      <url-pattern>/ProcessComplectFor.do</url-pattern>
+      <url-pattern>/ProcessComplectNodes.do</url-pattern>
+      <url-pattern>/ProcessComplect.do</url-pattern>
+      <url-pattern>/ProcessComplectContent.do</url-pattern>
+
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_6">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+      <role-name>dictResOperator</role-name>
+      <role-name>dictResAdmin</role-name>
+      <role-name>ArendaMainEconomist</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_6">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_7">
+    <web-resource-collection id="WebResourceCollection_7">
+      <web-resource-name>dictresadmresource</web-resource-name>
+
+      <url-pattern>/ProcessUnit.do</url-pattern>
+      <url-pattern>/ProcessRestype.do</url-pattern>
+      <url-pattern>/ProcessRessbtype.do</url-pattern>
+      <url-pattern>/ProcessCurrency.do</url-pattern>
+      <url-pattern>/ProcessRatetype.do</url-pattern>
+      <url-pattern>/ProcessStorage.do</url-pattern>
+      
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_7">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+      <role-name>dictResAdmin</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_7">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_8">
+    <web-resource-collection id="WebResourceCollection_8">
+      <web-resource-name>dictrateresource</web-resource-name>
+
+      <url-pattern>/ProcessCurrateH.do</url-pattern>
+      <url-pattern>/ProcessCurrate.do</url-pattern>
+
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_8">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+      <role-name>dictResAdmin</role-name>
+      <role-name>dictCurrateOperator</role-name>
+      <role-name>ArendaMainEconomist</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_8">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_9">
+    <web-resource-collection id="WebResourceCollection_9">
+      <web-resource-name>dictrateresource</web-resource-name>
+
+      <url-pattern>/ProcessSysconst.do</url-pattern>
+      <!--<url-pattern>/NFSRes2NRIRes.do</url-pattern>-->
+      <url-pattern>/GetNFSResourceData.do</url-pattern>
+      <url-pattern>/GetNRIResourceData.do</url-pattern>
+      
+      <url-pattern>/ShowUserRequestList.do</url-pattern>
+      <url-pattern>/EditUserRequest.do</url-pattern>
+      <url-pattern>/ProcessUserRequest.do</url-pattern>
+
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_9">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_9">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+  
+  <security-constraint id="SecurityConstraint_10">
+    <web-resource-collection id="WebResourceCollection_10">
+      <web-resource-name>dictcarresource</web-resource-name>
+
+      <url-pattern>/ProcessCar.do</url-pattern>
+
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_10">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+	  <role-name>dictPartAdmin</role-name>
+	  <role-name>dictPartOperator</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_10">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_11">
+    <web-resource-collection id="WebResourceCollection_11">
+      <web-resource-name>confviewresource</web-resource-name>
+
+      <url-pattern>/ShowConfBaseStation.do</url-pattern>
+
+      <url-pattern>/ShowConfPowerSourcesElAp.do</url-pattern>
+      <url-pattern>/ShowConfPowerSourcesUzo.do</url-pattern>
+
+      <url-pattern>/ShowConfConnectorCableCompat.do</url-pattern>
+
+	  <url-pattern>/ShowResourceGroupList.do</url-pattern>
+	  <url-pattern>/ShowResAntennaList.do</url-pattern>
+	  <url-pattern>/ShowInstComplBaseStation.do</url-pattern>	  
+	  
+  	  <url-pattern>/EditResourceGroup.do</url-pattern>
+	  <url-pattern>/ProcessResourceGroup.do</url-pattern>
+	  <url-pattern>/EditResAntenna.do</url-pattern>
+	  <url-pattern>/ProcessResAntenna.do</url-pattern>
+	  
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_11">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+	  <role-name>developer</role-name>
+	  <role-name>confResOperator</role-name>
+	  <role-name>confResAdmin</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_11">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_12"> 
+    <web-resource-collection id="WebResourceCollection_12">
+      <web-resource-name>confeditresource</web-resource-name>
+
+      <url-pattern>/EditBaseStationConf.do</url-pattern>
+      
+      <url-pattern>/NFSResLookup.do</url-pattern>
+      <url-pattern>/EditConfPowerSources.do</url-pattern>
+      <url-pattern>/EditPowerResource.do</url-pattern>
+      <url-pattern>/NRIResLookup.do</url-pattern>
+
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_12">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+	  <role-name>developer</role-name>
+	  <role-name>confResAdmin</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_12">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint id="SecurityConstraint_13"> 
+    <web-resource-collection id="WebResourceCollection_13">
+      <web-resource-name>dictviewresources</web-resource-name>
+
+      <url-pattern>/ShowAntenaList.do</url-pattern>
+      <url-pattern>/EditAntena.do</url-pattern>
+      <url-pattern>/ProcessAntena.do</url-pattern>
+      <url-pattern>/EditAntenaResource.do</url-pattern>
+      <url-pattern>/ProcessAntenaResource.do</url-pattern>
+      
+      <!--url-pattern>/ShowResourceList.do</url-pattern-->
+      <url-pattern>/ShowRRLResourceList.do</url-pattern>
+      <url-pattern>/EditRRLResource.do</url-pattern>
+      <url-pattern>/ProcessRRLResource.do</url-pattern>
+      <url-pattern>/EditRRLDiamParams.do</url-pattern>
+      <url-pattern>/ProcessRRLDiamParams.do</url-pattern>
+      <url-pattern>/EditRRLSpeedParams.do</url-pattern>
+      <url-pattern>/ProcessRRLSpeedParams.do</url-pattern>
+
+      <url-pattern>/ShowRepeaterList.do</url-pattern>
+      <url-pattern>/EditRepeater.do</url-pattern>
+      <url-pattern>/ProcessRepeater.do</url-pattern>
+	  <!---->
+      <url-pattern>/ShowDonorUnitList.do</url-pattern>
+      <url-pattern>/EditDonorUnit.do</url-pattern>
+      <url-pattern>/ProcessDonorUnit.do</url-pattern>
+	  <!---->
+      <url-pattern>/EditRepeaterResource.do</url-pattern>
+      <url-pattern>/ProcessRepeaterResource.do</url-pattern>
+
+      <url-pattern>/ShowBasestationList.do</url-pattern>
+      <url-pattern>/EditBasestation.do</url-pattern>
+      <url-pattern>/ProcessBasestation.do</url-pattern>
+      <url-pattern>/EditBasestationResource.do</url-pattern>
+      <url-pattern>/ProcessBasestationResource.do</url-pattern>
+
+      <url-pattern>/ShowCableList.do</url-pattern>
+      <url-pattern>/EditCable.do</url-pattern>
+      <url-pattern>/ProcessCable.do</url-pattern>
+      <url-pattern>/EditCableResource.do</url-pattern>
+      <url-pattern>/ProcessCableResource.do</url-pattern>
+
+      <url-pattern>/ShowTranceiverList.do</url-pattern>
+      <url-pattern>/EditTranceiver.do</url-pattern>
+      <url-pattern>/ProcessTranceiver.do</url-pattern>
+      
+      <url-pattern>/ShowResourcesCommonList.do</url-pattern>      
+      <url-pattern>/ShowClassList.do</url-pattern>
+      
+      <url-pattern>/EditResourceClass.do</url-pattern>
+      <url-pattern>/ProcessResourceClass.do</url-pattern>
+      <url-pattern>/EditResourcesetClass.do</url-pattern>
+      <url-pattern>/ProcessResourcesetClass.do</url-pattern>
+      
+      <url-pattern>/ShowResourceList.do</url-pattern>
+      <url-pattern>/EditResource.do</url-pattern>
+      <url-pattern>/ProcessResource.do</url-pattern>
+      
+      <url-pattern>/ShowAfsSchemeList.do</url-pattern>
+      <url-pattern>/EditAfsScheme.do</url-pattern>
+      <url-pattern>/ProcessAfsScheme.do</url-pattern>
+      
+      <url-pattern>/ShowEquipmanufList.do</url-pattern>
+      <url-pattern>/EditEquipmanuf.do</url-pattern>
+      <url-pattern>/ProcessEquipmanuf.do</url-pattern>
+      
+      <url-pattern>/ShowResourceReport.do</url-pattern>      
+      	
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_13">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+	  <role-name>developer</role-name>
+	  <role-name>dictResOperator</role-name>
+	  <role-name>dictResAdmin</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_13">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>
+  
+  <security-constraint id="SecurityConstraint_14">
+    <web-resource-collection id="WebResourceCollection_14">
+      <web-resource-name>nri2nfs</web-resource-name>
+
+      <url-pattern>/ShowAllNfsCodes.do</url-pattern>
+	  <url-pattern>/NFSRes2NRIRes.do</url-pattern>
+	  
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+	</web-resource-collection>
+    <auth-constraint id="AuthConstraint_14">
+      <description>protected:+:</description>
+      <role-name>administrator</role-name>
+	  <role-name>developer</role-name>
+	  <role-name>dictResOperator</role-name>
+	  <role-name>dictResAdmin</role-name>
+	  <role-name>confResOperator</role-name>
+	  <role-name>confResAdmin</role-name>
+    </auth-constraint>
+    <user-data-constraint id="UserDataConstraint_14">
+      <transport-guarantee>NONE</transport-guarantee>
+    </user-data-constraint>
+  </security-constraint>  
+	  	  
+  <login-config id="LoginConfig_1">
+    <auth-method>FORM</auth-method>
+    <form-login-config id="FormLoginConfig_1">
+    <form-login-page>/Login.do</form-login-page>
+    <form-error-page>/error.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+  
+  <security-role id="SecurityRole_1">
+    <role-name>Everyone</role-name>
+  </security-role>
+  <security-role id="SecurityRole_2">
+    <role-name>AllAuthenticated</role-name>
+  </security-role>
+  <security-role id="SecurityRole_3">
+    <role-name>administrator</role-name>
+  </security-role>
+  <security-role id="SecurityRole_4">
+    <role-name>dictResAdmin</role-name>
+  </security-role>
+  <security-role id="SecurityRole_5">
+    <role-name>dictResOperator</role-name>
+  </security-role>
+  <security-role id="SecurityRole_6">
+    <role-name>dictPartAdmin</role-name>
+  </security-role>
+  <security-role id="SecurityRole_7">
+    <role-name>dictPartOperator</role-name>
+  </security-role>
+  <security-role id="SecurityRole_8">
+	<role-name>dictCurrateOperator</role-name>
+  </security-role>
+  <security-role id="SecurityRole_9">
+	<role-name>ArendaMainEconomist</role-name>
+  </security-role>
+  <security-role id="SecurityRole_10">
+	<role-name>ArendaEconomist</role-name>
+  </security-role>
+  <security-role id="SecurityRole_11">
+	<role-name>ArendaManager</role-name>
+  </security-role>
+  <security-role id="SecurityRole_12">
+	<role-name>ArendaMainManager</role-name>
+  </security-role>
+  <security-role id="SecurityRole_13">
+	<role-name>EditBank</role-name>
+  </security-role>  
+  <security-role id="SecurityRole_14">
+	<role-name>confResOperator</role-name>
+  </security-role>  
+  <security-role id="SecurityRole_15">
+	<role-name>confResAdmin</role-name>
+  </security-role>  
+  <security-role id="SecurityRole_16">
+	<role-name>developer</role-name>
+  </security-role>  
+  
+  <ejb-ref id="EjbRef_1">
+    <ejb-ref-name>Resource</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.ResourceHome</home>
+    <remote>com.hps.july.persistence.Resource</remote>
+    <ejb-link>Resource</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_2">
+    <ejb-ref-name>ResourceSet</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.ResourceSetHome</home>
+    <remote>com.hps.july.persistence.ResourceSet</remote>
+    <ejb-link>ResourceSet</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_3">
+    <ejb-ref-name>ResourceSetPart</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.ResourceSetPartHome</home>
+    <remote>com.hps.july.persistence.ResourceSetPart</remote>
+    <ejb-link>ResourceSetPart</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_4">
+    <ejb-ref-name>Complect</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.ComplectHome</home>
+    <remote>com.hps.july.persistence.Complect</remote>
+    <ejb-link>Complect</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_5">
+    <ejb-ref-name>Rate</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.RateHome</home>
+    <remote>com.hps.july.persistence.Rate</remote>
+    <ejb-link>Rate</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_6">
+    <ejb-ref-name>Currency</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.CurrencyHome</home>
+    <remote>com.hps.july.persistence.Currency</remote>
+    <ejb-link>Currency</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_7">
+    <ejb-ref-name>RateType</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.RateTypeHome</home>
+    <remote>com.hps.july.persistence.RateType</remote>
+    <ejb-link>RateType</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_8">
+    <ejb-ref-name>ResourceSubType</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.ResourceSubTypeHome</home>
+    <remote>com.hps.july.persistence.ResourceSubType</remote>
+    <ejb-link>ResourceSubType</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_9">
+    <ejb-ref-name>ResourceType</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.ResourceTypeHome</home>
+    <remote>com.hps.july.persistence.ResourceType</remote>
+    <ejb-link>ResourceType</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_10">
+    <ejb-ref-name>NamedValue</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.NamedValueHome</home>
+    <remote>com.hps.july.persistence.NamedValue</remote>
+    <ejb-link>NamedValue</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_11">
+    <ejb-ref-name>ResourceTaxe</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.ResourceTaxeHome</home>
+    <remote>com.hps.july.persistence.ResourceTaxe</remote>
+    <ejb-link>ResourceTaxe</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_12">
+    <ejb-ref-name>Unit</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.UnitHome</home>
+    <remote>com.hps.july.persistence.Unit</remote>
+    <ejb-link>Unit</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_13">
+    <ejb-ref-name>Organization</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.OrganizationHome</home>
+    <remote>com.hps.july.persistence.Organization</remote>
+    <ejb-link>Organization</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_14">
+    <ejb-ref-name>Account</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.AccountHome</home>
+    <remote>com.hps.july.persistence.Account</remote>
+    <ejb-link>Account</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_15">
+    <ejb-ref-name>Company</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.CompanyHome</home>
+    <remote>com.hps.july.persistence.Company</remote>
+    <ejb-link>Company</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_16">
+    <ejb-ref-name>SearchGroup</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.SearchGroupHome</home>
+    <remote>com.hps.july.persistence.SearchGroup</remote>
+    <ejb-link>SearchGroup</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_17">
+    <ejb-ref-name>SearchGroupping</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.SearchGrouppingHome</home>
+    <remote>com.hps.july.persistence.SearchGroupping</remote>
+    <ejb-link>SearchGroupping</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_18">
+    <ejb-ref-name>Searches</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.SearchesHome</home>
+    <remote>com.hps.july.persistence.Searches</remote>
+    <ejb-link>Searches</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_19">
+    <ejb-ref-name>Division</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.DivisionHome</home>
+    <remote>com.hps.july.persistence.Division</remote>
+    <ejb-link>Division</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_20">
+    <ejb-ref-name>Direction</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.DirectionHome</home>
+    <remote>com.hps.july.persistence.Direction</remote>
+    <ejb-link>Direction</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_21">
+    <ejb-ref-name>Department</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.DepartmentHome</home>
+    <remote>com.hps.july.persistence.Department</remote>
+    <ejb-link>Department</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_22">
+    <ejb-ref-name>Service</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.ServiceHome</home>
+    <remote>com.hps.july.persistence.Service</remote>
+    <ejb-link>Service</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_23">
+    <ejb-ref-name>Group</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.GroupHome</home>
+    <remote>com.hps.july.persistence.Group</remote>
+    <ejb-link>Group</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_24">
+    <ejb-ref-name>Storage</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.StorageHome</home>
+    <remote>com.hps.july.persistence.Storage</remote>
+    <ejb-link>Storage</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_25">
+    <ejb-ref-name>AntennaResource</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.AntennaResourceHome</home>
+    <remote>com.hps.july.persistence.AntennaResource</remote>
+    <ejb-link>AntennaResource</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_26">
+    <ejb-ref-name>CableResource</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.CableResourceHome</home>
+    <remote>com.hps.july.persistence.CableResource</remote>
+    <ejb-link>CableResource</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_27">
+    <ejb-ref-name>BasestationResource</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.BaseStationResourceHome</home>
+    <remote>com.hps.july.persistence.BaseStationResource</remote>
+    <ejb-link>BaseStationResource</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_28">
+    <ejb-ref-name>CableResourceBand</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.CableResourceBandHome</home>
+    <remote>com.hps.july.persistence.CableResourceBand</remote>
+    <ejb-link>CableResourceBand</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_29">
+    <ejb-ref-name>AntennaResourceBand</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.AntennaResourceBandHome</home>
+    <remote>com.hps.july.persistence.AntennaResourceBand</remote>
+    <ejb-link>AntennaResourceBand</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_30">
+     <ejb-ref-name>Car</ejb-ref-name>
+     <ejb-ref-type>Entity</ejb-ref-type>
+     <home>com.hps.july.persistence.CarHome</home>
+     <remote>com.hps.july.persistence.Car</remote>
+     <ejb-link>Car</ejb-link>
+  </ejb-ref>
+  <ejb-ref id="EjbRef_31">
+    <ejb-ref-name>RepiterRes</ejb-ref-name>
+    <ejb-ref-type>Entity</ejb-ref-type>
+    <home>com.hps.july.persistence.RepiterResHome</home>
+    <remote>com.hps.july.persistence.RepiterRes</remote>
+    <ejb-link>RepiterRes</ejb-link>
+  </ejb-ref>
+</web-app>

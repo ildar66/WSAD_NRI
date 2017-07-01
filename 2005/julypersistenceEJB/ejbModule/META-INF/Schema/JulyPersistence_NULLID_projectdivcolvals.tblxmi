@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="projectdivcolvals" name="projectdivcolvals" primaryKey="projectdivcolvals_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="divcolid" name="divcolid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986667">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="project" name="project">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986668">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="colvalue" name="colvalue">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634986667" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="projectdivcolvals_1" name="projectdivcolvals" members="divcolid project" constraint="SQLConstraint_1131634986677"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_86959_86959" name="FK_REF_86959_86959" members="divcolid" constraint="SQLConstraint_1131634986678">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_ProjectDivColumns.tblxmi#ProjectDivColumns_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_86962_86962" name="FK_REF_86962_86962" members="project" constraint="SQLConstraint_1131634986679">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_projects.tblxmi#projects_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986677" name="projectdivcolvals" type="PRIMARYKEY" primaryKey="projectdivcolvals_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986678" name="FK_REF_86959_86959" type="FOREIGNKEY" referenceByKey="FK_REF_86959_86959"/>
+  <constraints xmi:id="SQLConstraint_1131634986679" name="FK_REF_86962_86962" type="FOREIGNKEY" referenceByKey="FK_REF_86962_86962"/>
+</RDBSchema:RDBTable>

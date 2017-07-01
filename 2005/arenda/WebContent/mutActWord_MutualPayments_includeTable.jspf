@@ -1,0 +1,110 @@
+<!-- MutualPayments Table -->
+<%
+	java.util.List mutualPaymentsListCur = aform.getTable3_For(orgpayer, agent); 
+	boolean suppressMutualPaymentsCur= (mutualPaymentsListCur.size()>0)?false:true;
+	java.util.Iterator iterMutualPaymentsListCur = null;
+   	if(!suppressMutualPaymentsCur) {
+		MutualPaymentsValueObject itogoMPVO = aform.getTable3_Itogo_For(orgpayer, agent);;
+		request.setAttribute("itogoMPVO", itogoMPVO);   	
+%>
+<!-- header start -->
+<P>
+<b> <%= orgpayer %>&nbsp;<bean:message key="label.mutactword.in_raschetA"/>&nbsp;c&nbsp;<%= agent %>&nbsp;
+	<bean:message key="label.mutactword.in_raschetB"/></b>
+<table border = "1" style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+<tr bgcolor="#EAEAEA">
+	<td style='border:solid silver .5pt;' rowspan="2" align="center"><bean:message key="label.mutactword.data"/><br><bean:message key="label.mutactword.platega"/></td>
+	<td style='border:solid silver .5pt;' rowspan="2" align="center"><bean:message key="label.mutactword.numb"/><br><bean:message key="label.mutactword.platega"/></td>
+	<td style='border:solid silver .5pt;' colspan="2" align="center" ><bean:message key="label.mutactword.Contract"/></td>
+	<td style='border:solid silver .5pt;' colspan="2" align="center"><bean:message key="label.mutactword.in_rub"/></td>
+	<td style='border:solid silver .5pt;' colspan="3" align="center">â&nbsp;<%= maincurr %></td>
+	<td style='border:solid silver .5pt;' rowspan="2"><bean:message key="label.mutactword.sumWithoutMain"/></td>
+</tr>
+<tr bgcolor="#EAEAEA">
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.numb"/></td>	
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.data"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+	<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.rate"/></td>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.suma"/></td>
+    <td style='border:solid silver .5pt;'><bean:message key="label.mutactword.nds_"/></td>
+</tr>
+<!-- header end -->
+
+<!-- print for isNDS = false -->
+		<%	
+			boolean isNDS = false;
+			mutualPaymentsListCur = aform.getTable3_For(orgpayer, agent, isNDS);
+			suppressMutualPaymentsCur= (mutualPaymentsListCur.size()>0)?false:true;
+			if(!suppressMutualPaymentsCur){
+				iterMutualPaymentsListCur = mutualPaymentsListCur.iterator();
+				while (iterMutualPaymentsListCur.hasNext()) {
+					com.hps.july.arenda.valueobject.MutualPaymentsValueObject ob3cur
+						          = (com.hps.july.arenda.valueobject.MutualPaymentsValueObject)iterMutualPaymentsListCur.next();
+					request.setAttribute("ob3cur", ob3cur);
+		%>
+			<!-- DATA start -->
+			<tr>
+				<td style='border:solid silver .5pt;'><july:datewrite name="ob3cur" property="payDate" shortformat="true"/>   </td>
+				<td style='border:solid silver .5pt;'><bean:write name="ob3cur" property="payNumber" filter="true"/></td>
+				<td style='border:solid silver .5pt;'><bean:write name="ob3cur" property="contractNumber" filter="true"/></td>
+				<td style='border:solid silver .5pt;'><july:datewrite name="ob3cur" property="contractDate" shortformat="true"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="sumRub" fractdigits="2"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="ndsRub" fractdigits="2"/> </td>
+				<td style='border:solid silver .5pt;' align="right"><bean:write name="ob3cur" property="rateMainCurr" filter="true"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="sumMainCurr" fractdigits="2"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="ndsMainCurr" fractdigits="2"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="sumWithoutMain" fractdigits="2"/> </td>
+			</tr>
+			<!-- DATA end -->
+		    <% } %>
+	      <%}%>
+
+<!-- print for isNDS = true -->
+		<%	
+			isNDS = true;
+			mutualPaymentsListCur = aform.getTable3_For(orgpayer, agent, isNDS);
+			suppressMutualPaymentsCur= (mutualPaymentsListCur.size()>0)?false:true;
+			if(!suppressMutualPaymentsCur){
+		%>
+			<tr><td style='border:solid silver .5pt;' colspan="10"><b><bean:message key="label.mutactword.paymentNDS"/>:</td></tr>		
+		<%
+			iterMutualPaymentsListCur = mutualPaymentsListCur.iterator();
+			while (iterMutualPaymentsListCur.hasNext()) {
+				com.hps.july.arenda.valueobject.MutualPaymentsValueObject ob3cur
+					          = (com.hps.july.arenda.valueobject.MutualPaymentsValueObject)iterMutualPaymentsListCur.next();
+				request.setAttribute("ob3cur", ob3cur);
+		%>
+			<!-- DATA start -->
+			<tr>
+				<td style='border:solid silver .5pt;'><july:datewrite name="ob3cur" property="payDate" shortformat="true"/>   </td>
+				<td style='border:solid silver .5pt;'><bean:write name="ob3cur" property="payNumber" filter="true"/></td>
+				<td style='border:solid silver .5pt;'><bean:write name="ob3cur" property="contractNumber" filter="true"/></td>
+				<td style='border:solid silver .5pt;'><july:datewrite name="ob3cur" property="contractDate" shortformat="true"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="sumRub" fractdigits="2"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="ndsRub" fractdigits="2"/> </td>
+				<td style='border:solid silver .5pt;' align="right"><bean:write name="ob3cur" property="rateMainCurr" filter="true"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="sumMainCurr" fractdigits="2"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="ndsMainCurr" fractdigits="2"/> </td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="ob3cur" property="sumWithoutMain" fractdigits="2"/> </td>
+			</tr>
+			<!-- DATA end -->
+		    <% } %>
+	      <%}%>
+	      	 	 
+			<!-- label.mutactword.itogo -->
+			<tr>
+				<td style='border:solid silver .5pt;'><bean:message key="label.mutactword.itogo"/>:</td>
+				<td style='border:solid silver .5pt;'>&nbsp;</td>
+				<td style='border:solid silver .5pt;'>&nbsp;</td>
+				<td style='border:solid silver .5pt;'>&nbsp;</td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="itogoMPVO" property="sumRub" fractdigits="2"/></td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="itogoMPVO" property="ndsRub" fractdigits="2"/></td>
+				<td style='border:solid silver .5pt;' align="right">&nbsp;</td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="itogoMPVO" property="sumMainCurr" fractdigits="2"/></td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="itogoMPVO" property="ndsMainCurr" fractdigits="2"/></td>
+				<td style='border:solid silver .5pt;' align="right" NOWRAP><july:numberwrite name="itogoMPVO" property="sumWithoutMain" fractdigits="2"/></td>
+			</tr>	 				
+	</table>				   
+<%}%> 		  
+

@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+   <web-app id="WebApp_1">
+      <display-name>july-inventory</display-name>
+      <servlet id="Servlet_1">
+         <servlet-name>action</servlet-name>
+         <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+         <init-param id="InitParam_1">
+            <param-name>application</param-name>
+            <param-value>com.hps.july.inventory.ApplicationResources</param-value>
+         </init-param>
+         <init-param id="InitParam_2">
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/struts-config.xml</param-value>
+         </init-param>
+         <init-param id="InitParam_3">
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+         </init-param>
+         <init-param id="InitParam_4">
+            <param-name>detail</param-name>
+            <param-value>0</param-value>
+         </init-param>
+         <init-param id="InitParam_5">
+            <param-name>validate</param-name>
+            <param-value>true</param-value>
+         </init-param>
+         <init-param id="InitParam_6">
+            <param-name>nocache</param-name>
+            <param-value>true</param-value>
+         </init-param>
+         <init-param id="InitParam_7">
+            <param-name>null</param-name>
+            <param-value>false</param-value>
+         </init-param>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_2">
+         <servlet-name>MismatchDownload</servlet-name>
+         <servlet-class>com.hps.july.inventory.locservlet.MismatchDownload</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_3">
+         <servlet-name>LoadConfig</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadConfig</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_4">
+         <servlet-name>SaveConfig</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.SaveConfig</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_5">
+         <servlet-name>LoadBSManuf</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadBSManuf</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_6">
+         <servlet-name>LoadBSResources</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadBSResources</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_7">
+         <servlet-name>FindBaseStation</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.FindBaseStation</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_8">
+         <servlet-name>LoadStores</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadStores</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_9">
+         <servlet-name>LoadWorkers</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadWorkers</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_10">
+         <servlet-name>LoadOrganizations</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadOrganizations</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_11">
+         <servlet-name>LoadDocuments</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadDocuments</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_12">
+         <servlet-name>LoadCableManuf</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadCableManuf</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_13">
+         <servlet-name>LoadCableResources</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadCableResources</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_14">
+         <servlet-name>LoadAntennaResources</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadAntennaResources</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_15">
+         <servlet-name>LoadTrxResources</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadTrxResources</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_16">
+         <servlet-name>LoadEquipCategories</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadEquipCategories</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_17">
+         <servlet-name>LoadResources</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadResources</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_18">
+         <servlet-name>LoadControllers</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadControllers</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_19">
+         <servlet-name>LoadAntPlaces</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadAntPlaces</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet id="Servlet_20">
+         <servlet-name>LoadApartments</servlet-name>
+         <servlet-class>com.hps.july.inventory.config.LoadApartments</servlet-class>
+         <load-on-startup>2</load-on-startup>
+      </servlet>
+      <servlet-mapping id="ServletMapping_1">
+         <servlet-name>action</servlet-name>
+         <url-pattern>*.do</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_2">
+         <servlet-name>MismatchDownload</servlet-name>
+         <url-pattern>/MismatchDownload</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_3">
+         <servlet-name>LoadConfig</servlet-name>
+         <url-pattern>/LoadConfig</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_4">
+         <servlet-name>SaveConfig</servlet-name>
+         <url-pattern>/SaveConfig</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_5">
+         <servlet-name>LoadBSManuf</servlet-name>
+         <url-pattern>/LoadBSManuf</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_6">
+         <servlet-name>LoadBSResources</servlet-name>
+         <url-pattern>/LoadBSResources</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_7">
+         <servlet-name>FindBaseStation</servlet-name>
+         <url-pattern>/FindBaseStation</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_8">
+         <servlet-name>LoadStores</servlet-name>
+         <url-pattern>/LoadStores</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_9">
+         <servlet-name>LoadWorkers</servlet-name>
+         <url-pattern>/LoadWorkers</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_10">
+         <servlet-name>LoadOrganizations</servlet-name>
+         <url-pattern>/LoadOrganizations</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_11">
+         <servlet-name>LoadDocuments</servlet-name>
+         <url-pattern>/LoadDocuments</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_12">
+         <servlet-name>LoadCableManuf</servlet-name>
+         <url-pattern>/LoadCableManuf</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_13">
+         <servlet-name>LoadCableResources</servlet-name>
+         <url-pattern>/LoadCableResources</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_14">
+         <servlet-name>LoadAntennaResources</servlet-name>
+         <url-pattern>/LoadAntennaResources</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_15">
+         <servlet-name>LoadTrxResources</servlet-name>
+         <url-pattern>/LoadTrxResources</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_16">
+         <servlet-name>LoadEquipCategories</servlet-name>
+         <url-pattern>/LoadEquipCategories</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_17">
+         <servlet-name>LoadResources</servlet-name>
+         <url-pattern>/LoadResources</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_18">
+         <servlet-name>LoadControllers</servlet-name>
+         <url-pattern>/LoadControllers</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_19">
+         <servlet-name>LoadAntPlaces</servlet-name>
+         <url-pattern>/LoadAntPlaces</url-pattern>
+      </servlet-mapping>
+      <servlet-mapping id="ServletMapping_20">
+         <servlet-name>LoadApartments</servlet-name>
+         <url-pattern>/LoadApartments</url-pattern>
+      </servlet-mapping>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-template.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-template.tld</taglib-location>
+	</taglib>
+      <taglib>
+         <taglib-uri>/WEB-INF/july.tld</taglib-uri>
+         <taglib-location>/WEB-INF/july.tld</taglib-location>
+      </taglib>
+      <security-constraint id="SecurityConstraint_1">
+         <web-resource-collection id="WebResourceCollection_1">
+            <web-resource-name>protresource</web-resource-name>
+            <url-pattern>/main.do</url-pattern>
+            <url-pattern>/Logout.do</url-pattern>
+            <url-pattern>/ShowI13nRessetList.do</url-pattern>
+            <url-pattern>/ShowI13nActRessetList.do</url-pattern>
+            <url-pattern>/EditI13nResset.do</url-pattern>
+            <url-pattern>/EditI13nActResset.do</url-pattern>
+            <url-pattern>/ProcessI13nResset.do</url-pattern>
+            <url-pattern>/ProcessI13nActResset.do</url-pattern>
+            <url-pattern>/ShowCompanyLookupList.do</url-pattern>
+            <url-pattern>/ShowOrganizationLookupList.do</url-pattern>
+            <url-pattern>/ShowWorkerLookupList.do</url-pattern>
+            <url-pattern>/ShowEquipmentLookupList.do</url-pattern>
+            <url-pattern>/ShowRestypeLookupList.do</url-pattern>
+            <url-pattern>/ShowRessbtypeLookupList.do</url-pattern>
+            <url-pattern>/ShowDivisionLookupList.do</url-pattern>
+            <url-pattern>/ShowAgregateLookupList.do</url-pattern>
+            <url-pattern>/ShowResourceLookupList.do</url-pattern>
+            <url-pattern>/ShowContractLookupList.do</url-pattern>
+            <url-pattern>/ShowContragentLookupList.do</url-pattern>
+            <url-pattern>/ShowComplectLookupList.do</url-pattern>
+            <url-pattern>/ShowComplectBSLookupList.do</url-pattern>
+            <url-pattern>/ShowPositionLookupList.do</url-pattern>
+            <url-pattern>/ShowStorageLookupList.do</url-pattern>
+            <url-pattern>/ShowEquipmentPosLookupList.do</url-pattern>
+            <url-pattern>/ShowRenterLookupList.do</url-pattern>
+            <url-pattern>/ShowResourceSetLookupList.do</url-pattern>
+            <url-pattern>/ShowSerianlCardsLookupList.do</url-pattern>
+            <url-pattern>/ShowPartyCardsLookupList.do</url-pattern>
+            <url-pattern>/ShowUnitLookupList.do</url-pattern>
+            <url-pattern>/ShowI13nRessetLookupList.do</url-pattern>
+            <url-pattern>/ShowCardLookupList.do</url-pattern>
+            <url-pattern>/ShowCardRLookupList.do</url-pattern>
+            <url-pattern>/ShowCardSLookupList.do</url-pattern>
+            <url-pattern>/ShowCardPLookupList.do</url-pattern>
+            <url-pattern>/Report1Params.do</url-pattern>
+            <url-pattern>/ProcessReport1.do</url-pattern>
+            <url-pattern>/Report1.do</url-pattern>
+            <url-pattern>/ShowReport1rtLookupList.do</url-pattern>
+            <url-pattern>/ShowReport1rstLookupList.do</url-pattern>
+            <url-pattern>/Report2Params.do</url-pattern>
+            <url-pattern>/ProcessReport2.do</url-pattern>
+            <url-pattern>/Report2.do</url-pattern>
+            <url-pattern>/Report3Params.do</url-pattern>
+            <url-pattern>/ProcessReport3.do</url-pattern>
+            <url-pattern>/Report3.do</url-pattern>
+            <url-pattern>/Report4Params.do</url-pattern>
+            <url-pattern>/ProcessReport4.do</url-pattern>
+            <url-pattern>/Report4.do</url-pattern>
+            <url-pattern>/Report5Params.do</url-pattern>
+            <url-pattern>/ProcessReport5.do</url-pattern>
+            <url-pattern>/Report5.do</url-pattern>
+            <url-pattern>/Report6Params.do</url-pattern>
+            <url-pattern>/ProcessReport6.do</url-pattern>
+            <url-pattern>/Report6.do</url-pattern>
+            <url-pattern>/Report7Params.do</url-pattern>
+            <url-pattern>/ProcessReport7.do</url-pattern>
+            <url-pattern>/Report7.do</url-pattern>
+            <url-pattern>/Report8Params.do</url-pattern>
+            <url-pattern>/ProcessReport8.do</url-pattern>
+            <url-pattern>/Report8.do</url-pattern>
+            <url-pattern>/Report9Params.do</url-pattern>
+            <url-pattern>/ProcessReport9.do</url-pattern>
+            <url-pattern>/Report9.do</url-pattern>
+            <url-pattern>/Report91Params.do</url-pattern>
+            <url-pattern>/ProcessReport91.do</url-pattern>
+            <url-pattern>/Report91.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_1">
+            <description>protected:+:</description>
+            <role-name>AllAuthenticated</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_1">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_2">
+         <web-resource-collection id="WebResourceCollection_2">
+            <web-resource-name>main</web-resource-name>
+            <url-pattern>/Login.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_2">
+            <description>public:+:</description>
+            <role-name>Everyone</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_2">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_3">
+         <web-resource-collection id="WebResourceCollection_3">
+            <web-resource-name>barcodes</web-resource-name>
+            <url-pattern>/ShowExternalRList.do</url-pattern>
+            <url-pattern>/EditExternalR.do</url-pattern>
+            <url-pattern>/ProcessExternalR.do</url-pattern>
+            <url-pattern>/EditExternalRState.do</url-pattern>
+            <url-pattern>/ProcessExternalRState.do</url-pattern>
+            <url-pattern>/ShowExternalRPositionList.do</url-pattern>
+            <url-pattern>/EditExternalRPosition.do</url-pattern>
+            <url-pattern>/ProcessExternalRPosition.do</url-pattern>
+            <url-pattern>/ShowExternalList.do</url-pattern>
+            <url-pattern>/EditExternal.do</url-pattern>
+            <url-pattern>/ProcessExternal.do</url-pattern>
+            <url-pattern>/EditExternalState.do</url-pattern>
+            <url-pattern>/ProcessExternalState.do</url-pattern>
+            <url-pattern>/ShowExternalPositionList.do</url-pattern>
+            <url-pattern>/ExternalLoadExcel.do</url-pattern>
+            <url-pattern>/ProcessExternalLoadExcel.do</url-pattern>
+            <url-pattern>/EditExternalPosition.do</url-pattern>
+            <url-pattern>/ProcessExternalPosition.do</url-pattern>
+            <url-pattern>/ShowExternalSerialList.do</url-pattern>
+            <url-pattern>/EditExternalSerial.do</url-pattern>
+            <url-pattern>/ProcessExternalSerial.do</url-pattern>
+            <url-pattern>/EditExternalMismatch.do</url-pattern>
+            <url-pattern>/ProcessExternalMismatch.do</url-pattern>
+            <url-pattern>/ShowMismatchList.do</url-pattern>
+            <url-pattern>/EditMismatch.do</url-pattern>
+            <url-pattern>/ProcessMismatch.do</url-pattern>
+            <url-pattern>/ShowInternalRList.do</url-pattern>
+            <url-pattern>/EditInternalR.do</url-pattern>
+            <url-pattern>/ProcessInternalR.do</url-pattern>
+            <url-pattern>/EditInternalRState.do</url-pattern>
+            <url-pattern>/ProcessInternalRState.do</url-pattern>
+            <url-pattern>/ShowInternalRPositionList.do</url-pattern>
+            <url-pattern>/InternalRLoadExcel.do</url-pattern>
+            <url-pattern>/ProcessInternalRLoadExcel.do</url-pattern>
+            <url-pattern>/EditInternalRPosition.do</url-pattern>
+            <url-pattern>/ProcessInternalRPosition.do</url-pattern>
+            <url-pattern>/ShowInternalList.do</url-pattern>
+            <url-pattern>/EditInternal.do</url-pattern>
+            <url-pattern>/ProcessInternal.do</url-pattern>
+            <url-pattern>/ShowInternalPositionList.do</url-pattern>
+            <url-pattern>/InternalLoadExcel.do</url-pattern>
+            <url-pattern>/ProcessInternalLoadExcel.do</url-pattern>
+            <url-pattern>/EditInternalState.do</url-pattern>
+            <url-pattern>/ProcessInternalState.do</url-pattern>
+            <url-pattern>/EditInternalPosition.do</url-pattern>
+            <url-pattern>/ProcessInternalPosition.do</url-pattern>
+            <url-pattern>/ShowPayoffList.do</url-pattern>
+            <url-pattern>/EditPayoff.do</url-pattern>
+            <url-pattern>/ProcessPayoff.do</url-pattern>
+            <url-pattern>/EditPayoffState.do</url-pattern>
+            <url-pattern>/ProcessPayoffState.do</url-pattern>
+            <url-pattern>/ShowPayoffPositionList.do</url-pattern>
+            <url-pattern>/EditPayoffPosition.do</url-pattern>
+            <url-pattern>/ProcessPayoffPosition.do</url-pattern>
+            <url-pattern>/ShowChangeEList.do</url-pattern>
+            <url-pattern>/EditChangeE.do</url-pattern>
+            <url-pattern>/ProcessChangeE.do</url-pattern>
+            <url-pattern>/EditChangeEState.do</url-pattern>
+            <url-pattern>/ProcessChangeEState.do</url-pattern>
+            <url-pattern>/ShowChangeEPositionList.do</url-pattern>
+            <url-pattern>/EditChangeEPosition.do</url-pattern>
+            <url-pattern>/ProcessChangeEPosition.do</url-pattern>
+            <url-pattern>/ShowChangeSList.do</url-pattern>
+            <url-pattern>/EditChangeS.do</url-pattern>
+            <url-pattern>/ProcessChangeS.do</url-pattern>
+            <url-pattern>/EditChangeSState.do</url-pattern>
+            <url-pattern>/ProcessChangeSState.do</url-pattern>
+            <url-pattern>/ShowChangeSPositionList.do</url-pattern>
+            <url-pattern>/EditChangeSPosition.do</url-pattern>
+            <url-pattern>/ProcessChangeSPosition.do</url-pattern>
+            <url-pattern>/ShowWorkerInvActList.do</url-pattern>
+            <url-pattern>/EditWorkerInvAct.do</url-pattern>
+            <url-pattern>/ProcessWorkerInvAct.do</url-pattern>
+            <url-pattern>/EditWorkerInvActPos.do</url-pattern>
+            <url-pattern>/ProcessWorkerInvActPos.do</url-pattern>
+            <url-pattern>/WorkerInvActFillFromDB.do</url-pattern>
+            <url-pattern>/ProcessWorkerInvActFillFromDB.do</url-pattern>
+            <url-pattern>/ShowInvActList.do</url-pattern>
+            <url-pattern>/EditInvAct.do</url-pattern>
+            <url-pattern>/ProcessInvAct.do</url-pattern>
+            <url-pattern>/EditInvActState.do</url-pattern>
+            <url-pattern>/ProcessInvActState.do</url-pattern>
+            <url-pattern>/ShowInvActPosList.do</url-pattern>
+            <url-pattern>/InvActLoadExcel.do</url-pattern>
+            <url-pattern>/ProcessInvActLoadExcel.do</url-pattern>
+            <url-pattern>/EditInvActPos.do</url-pattern>
+            <url-pattern>/ProcessInvActPos.do</url-pattern>
+            <url-pattern>/InvActFillFromDB.do</url-pattern>
+            <url-pattern>/ProcessInvActFillFromDB.do</url-pattern>
+            <url-pattern>/ShowAssactList.do</url-pattern>
+            <url-pattern>/EditAssact.do</url-pattern>
+            <url-pattern>/ProcessAssact.do</url-pattern>
+            <url-pattern>/EditAssactst.do</url-pattern>
+            <url-pattern>/ProcessAssactst.do</url-pattern>
+            <url-pattern>/ShowAssactposList.do</url-pattern>
+            <url-pattern>/EditAssactpos.do</url-pattern>
+            <url-pattern>/ProcessAssactpos.do</url-pattern>
+            <url-pattern>/ShowDAssactList.do</url-pattern>
+            <url-pattern>/EditDAssact.do</url-pattern>
+            <url-pattern>/ProcessDAssact.do</url-pattern>
+            <url-pattern>/EditDAssactst.do</url-pattern>
+            <url-pattern>/ProcessDAssactst.do</url-pattern>
+            <url-pattern>/ShowDAssactposList.do</url-pattern>
+            <url-pattern>/EditDAssactpos.do</url-pattern>
+            <url-pattern>/ProcessDAssactpos.do</url-pattern>
+            <url-pattern>/ShowBarList.do</url-pattern>
+            <url-pattern>/EditBar.do</url-pattern>
+            <url-pattern>/ProcessBar.do</url-pattern>
+            <url-pattern>/BarParams.do</url-pattern>
+            <url-pattern>/ProcessBarParams.do</url-pattern>
+            <url-pattern>/BarReport.do</url-pattern>
+            <url-pattern>/BarSParams.do</url-pattern>
+            <url-pattern>/ProcessBarSParams.do</url-pattern>
+            <url-pattern>/BarSReport.do</url-pattern>
+            <url-pattern>/ShowBarSerialLookupList.do</url-pattern>
+            <url-pattern>/MismatchDownload</url-pattern>
+            <url-pattern>/ShowReqList.do</url-pattern>
+            <url-pattern>/EditReq.do</url-pattern>
+            <url-pattern>/ProcessReq.do</url-pattern>
+            <url-pattern>/EditReqState.do</url-pattern>
+            <url-pattern>/ProcessReqState.do</url-pattern>
+            <url-pattern>/ShowReqPositionList.do</url-pattern>
+            <url-pattern>/EditReqPosition.do</url-pattern>
+            <url-pattern>/ProcessReqPosition.do</url-pattern>
+            <url-pattern>/ShowReqLookupList.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_3">
+            <description>protected:+:</description>
+            <role-name>administrator</role-name>
+            <role-name>StorageManager</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_3">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_4">
+         <web-resource-collection id="WebResourceCollection_4">
+            <web-resource-name>main</web-resource-name>
+            <url-pattern>/ShowChangePList.do</url-pattern>
+            <url-pattern>/EditChangeP.do</url-pattern>
+            <url-pattern>/ProcessChangeP.do</url-pattern>
+            <url-pattern>/EditChangePState.do</url-pattern>
+            <url-pattern>/ProcessChangePState.do</url-pattern>
+            <url-pattern>/ShowChangePPositionList.do</url-pattern>
+            <url-pattern>/EditChangePPosition.do</url-pattern>
+            <url-pattern>/ProcessChangePPosition.do</url-pattern>
+<!--
+            <url-pattern>/ShowInvList.do</url-pattern>
+            <url-pattern>/EditInv.do</url-pattern>
+            <url-pattern>/ProcessInv.do</url-pattern>
+            <url-pattern>/EditInvState.do</url-pattern>
+            <url-pattern>/ProcessInvState.do</url-pattern>
+            <url-pattern>/ShowInvPosList.do</url-pattern>
+            <url-pattern>/EditInvPos.do</url-pattern>
+            <url-pattern>/ProcessInvPos.do</url-pattern>
+-->
+			<url-pattern>/ShowPositionInventoryList.do</url-pattern>
+			<url-pattern>/EditPositionInventory.do</url-pattern>
+			<url-pattern>/ProcessPositionInventory.do</url-pattern>
+			<url-pattern>/EditPositionInventoryState.do</url-pattern>
+			<url-pattern>/ProcessPositionInventoryState.do</url-pattern>
+			<url-pattern>/EditPositionInventoryItem.do</url-pattern>
+			<url-pattern>/ProcessPositionInventoryItem.do</url-pattern>
+			
+			<url-pattern>/ShowContractorInventoryList.do</url-pattern>
+			<url-pattern>/EditContractorInventory.do</url-pattern>
+			<url-pattern>/ProcessContractorInventory.do</url-pattern>
+			<url-pattern>/ContractorLoadExcel.do</url-pattern>
+			<url-pattern>/ProcessContractorLoadExcel.do</url-pattern>
+			<url-pattern>/ContrEquipList.do</url-pattern>
+			<url-pattern>/ProcessContractorEquipList.do</url-pattern>
+
+
+            <url-pattern>/InvLoadExcel.do</url-pattern>
+            <url-pattern>/ProcessInvLoadExcel.do</url-pattern>
+            <url-pattern>/InvFillFromDB.do</url-pattern>
+            <url-pattern>/ProcessInvFillFromDB.do</url-pattern>
+            <url-pattern>/InvLoadInv.do</url-pattern>
+            <url-pattern>/ProcessInvLoadInv.do</url-pattern>
+            <url-pattern>/ShowAssactBList.do</url-pattern>
+            <url-pattern>/EditAssactB.do</url-pattern>
+            <url-pattern>/ProcessAssactB.do</url-pattern>
+            <url-pattern>/EditAssactstB.do</url-pattern>
+            <url-pattern>/ProcessAssactstB.do</url-pattern>
+            <url-pattern>/ShowAssactposBList.do</url-pattern>
+            <url-pattern>/EditAssactposB.do</url-pattern>
+            <url-pattern>/ProcessAssactposB.do</url-pattern>
+            <url-pattern>/ShowDAssactBList.do</url-pattern>
+            <url-pattern>/EditDAssactB.do</url-pattern>
+            <url-pattern>/ProcessDAssactB.do</url-pattern>
+            <url-pattern>/EditDAssactstB.do</url-pattern>
+            <url-pattern>/ProcessDAssactstB.do</url-pattern>
+            <url-pattern>/ShowDAssactposBList.do</url-pattern>
+            <url-pattern>/EditDAssactposB.do</url-pattern>
+            <url-pattern>/ProcessDAssactposB.do</url-pattern>
+            <url-pattern>/ShowAssemblingPList.do</url-pattern>
+			<url-pattern>/AssemblingPLoadExcel.do</url-pattern>			
+			<url-pattern>/ProcessAssemblingPLoadExcel.do</url-pattern>
+            <url-pattern>/EditAssemblingP.do</url-pattern>
+            <url-pattern>/ProcessAssemblingP.do</url-pattern>
+            <url-pattern>/EditAssemblingPState.do</url-pattern>
+            <url-pattern>/ProcessAssemblingPState.do</url-pattern>
+            <url-pattern>/ShowAssemblingPPositionList.do</url-pattern>
+            <url-pattern>/EditAssemblingPPosition.do</url-pattern>
+            <url-pattern>/ProcessAssemblingPPosition.do</url-pattern>
+
+            <url-pattern>/EditAssemblingPUPS.do</url-pattern>
+            <url-pattern>/ProcessAssemblingPUPS.do</url-pattern>
+
+            <url-pattern>/ShowDemountList.do</url-pattern>
+            <url-pattern>/EditDemount.do</url-pattern>
+            <url-pattern>/ProcessDemount.do</url-pattern>
+            <url-pattern>/EditDemountState.do</url-pattern>
+            <url-pattern>/DemountFFDB.do</url-pattern>
+            <url-pattern>/ProcessDemountFFDB.do</url-pattern>
+            <url-pattern>/ProcessDemountState.do</url-pattern>
+            <url-pattern>/EditDemountItem.do</url-pattern>
+            <url-pattern>/ProcessDemountItem.do</url-pattern>
+
+            <url-pattern>/ShowFaultList.do</url-pattern>
+            <url-pattern>/EditFault.do</url-pattern>
+            <url-pattern>/ProcessFault.do</url-pattern>
+
+            <url-pattern>/ShowAfsList.do</url-pattern>
+            <url-pattern>/EditAfs.do</url-pattern>
+            <url-pattern>/ProcessAfs.do</url-pattern>
+            <url-pattern>/EditAfsState.do</url-pattern>
+            <url-pattern>/ProcessAfsState.do</url-pattern>
+            <url-pattern>/ShowAfsPositionList.do</url-pattern>
+            <url-pattern>/EditAfsPosition.do</url-pattern>
+            <url-pattern>/ProcessAfsPosition.do</url-pattern>
+            <url-pattern>/EditAfsGPosition.do</url-pattern>
+            <url-pattern>/ProcessAfsGPosition.do</url-pattern>
+            <url-pattern>/EditAfsAPosition.do</url-pattern>
+            <url-pattern>/ProcessAfsAPosition.do</url-pattern>
+            <url-pattern>/EditAfsDPosition.do</url-pattern>
+            <url-pattern>/ProcessAfsDPosition.do</url-pattern>
+            <url-pattern>/EditMountAct2.do</url-pattern>
+            <url-pattern>/ProcessMountAct2.do</url-pattern>
+            <url-pattern>/EditMountAct3.do</url-pattern>
+            <url-pattern>/EditMountAct4.do</url-pattern>
+            <url-pattern>/ProcessMountAct3.do</url-pattern>
+            <url-pattern>/EditAfsMountAct2.do</url-pattern>
+            <url-pattern>/ProcessAfsMountAct2.do</url-pattern>
+            <url-pattern>/EditAfsMountAct3.do</url-pattern>
+            <url-pattern>/ProcessAfsMountAct3.do</url-pattern>
+            <url-pattern>/EditAfsMountAct4.do</url-pattern>
+            <url-pattern>/ProcessAfsMountAct4.do</url-pattern>
+            <url-pattern>/EditAfsIndoorMountAct.do</url-pattern>
+            <url-pattern>/ProcessAfsIndoorMountAct.do</url-pattern>
+            <url-pattern>/ShowDocsByComprojectList.do</url-pattern>
+            <url-pattern>/MountAct2.do</url-pattern>
+            <url-pattern>/MountAct2Process.do</url-pattern>
+			
+            <url-pattern>/MountAct2Edit2.do</url-pattern>
+            <url-pattern>/ShowCfgEditForm.do</url-pattern>
+            
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_4">
+            <description>protected:+:</description>
+            <role-name>administrator</role-name>
+            <role-name>TechStuff</role-name>
+            <role-name>BSProjectUser</role-name>
+            <role-name>BSProjectAdmin</role-name>
+            <role-name>BSProjectManager</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_4">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_5">
+         <web-resource-collection id="WebResourceCollection_5">
+            <web-resource-name>main</web-resource-name>
+            <url-pattern>/MassCalcParams.do</url-pattern>
+            <url-pattern>/ProcessMassCalc.do</url-pattern>
+            <url-pattern>/MassCalc.do</url-pattern>
+            <url-pattern>/MassdocParams.do</url-pattern>
+            <url-pattern>/ProcessMassdoc.do</url-pattern>
+            <url-pattern>/Massdoc.do</url-pattern>
+            
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_5">
+            <description>protected:+:</description>
+            <role-name>administrator</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_5">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <security-constraint id="SecurityConstraint_6">
+         <web-resource-collection id="WebResourceCollection_6">
+            <web-resource-name>fkbs</web-resource-name>
+            <url-pattern>/ShowConfigFormAction.do</url-pattern>
+            <url-pattern>/LoadConfig</url-pattern>
+            <url-pattern>/SaveConfig</url-pattern>
+            <url-pattern>/LoadBSResources</url-pattern>
+            <url-pattern>/LoadBSManuf</url-pattern>
+            <url-pattern>/FindBaseStation</url-pattern>
+            <url-pattern>/LoadStores</url-pattern>
+            <url-pattern>/LoadTrxResources</url-pattern>
+            <url-pattern>/LoadResources</url-pattern>
+            <url-pattern>/LoadEquipCategories</url-pattern>
+            <url-pattern>/LoadAntPlaces</url-pattern>
+            <url-pattern>/LoadApartments</url-pattern>
+            <url-pattern>/ReportChanges</url-pattern>
+            <url-pattern>/ReportConfig1</url-pattern>
+            <url-pattern>/ReportConfig2</url-pattern>
+            <url-pattern>/ReportBTSMountAct</url-pattern>
+            <url-pattern>/ReportAFSMountAct</url-pattern>
+            
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_6">
+            <description>protected:+:</description>
+            <role-name>administrator</role-name>
+            <role-name>developer</role-name>
+            <role-name>viewFKBS</role-name>
+            <role-name>editFKBS</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_6">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+      <login-config id="LoginConfig_1">
+         <auth-method>FORM</auth-method>
+         <form-login-config id="FormLoginConfig_1">
+            <form-login-page>/Login.do</form-login-page>
+            <form-error-page>/error.jsp</form-error-page>
+         </form-login-config>
+      </login-config>
+      <security-role id="SecurityRole_1">
+         <role-name>Everyone</role-name>
+      </security-role>
+      <security-role id="SecurityRole_2">
+         <role-name>administrator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_3">
+         <role-name>TechStuff</role-name>
+      </security-role>
+      <security-role id="SecurityRole_4">
+         <role-name>StorageManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_5">
+         <role-name>AllAuthenticated</role-name>
+      </security-role>
+      <security-role id="SecurityRole_6">
+         <role-name>contractComposer</role-name>
+      </security-role>
+      <security-role id="SecurityRole_7">
+         <role-name>contractControler</role-name>
+      </security-role>
+      <security-role id="SecurityRole_8">
+         <role-name>dictResAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_9">
+         <role-name>dictResOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_10">
+         <role-name>dictPartAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_11">
+         <role-name>dictPartOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_12">
+         <role-name>dictCurrateOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_13">
+         <role-name>ArendaMainEconomist</role-name>
+      </security-role>
+      <security-role id="SecurityRole_14">
+         <role-name>ArendaEconomist</role-name>
+      </security-role>
+      <security-role id="SecurityRole_15">
+         <role-name>ArendaManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_16">
+         <role-name>ArendaMainManager</role-name>
+      </security-role>
+      <security-role id="SecurityRole_17">
+         <role-name>siteExploitor</role-name>
+      </security-role>
+      <security-role id="SecurityRole_18">
+         <role-name>siteTransport</role-name>
+      </security-role>
+      <security-role id="SecurityRole_19">
+         <role-name>siteStation</role-name>
+      </security-role>
+      <security-role id="SecurityRole_20">
+         <role-name>siteProjector</role-name>
+      </security-role>
+      <security-role id="SecurityRole_21">
+         <role-name>siteLook</role-name>
+      </security-role>
+      <security-role id="SecurityRole_22">
+         <role-name>ArendaDirector</role-name>
+      </security-role>
+      <security-role id="SecurityRole_23">
+         <role-name>planAdmin</role-name>
+      </security-role>
+      <security-role id="SecurityRole_24">
+         <role-name>planResponsible</role-name>
+      </security-role>
+      <security-role id="SecurityRole_25">
+         <role-name>FreqManager</role-name>
+      </security-role>
+		<security-role id="SecurityRole_26">
+			<role-name>BSProjectUser</role-name>
+		</security-role>
+		<security-role id="SecurityRole_27">
+			<role-name>BSProjectAdmin</role-name>
+		</security-role>
+		<security-role id="SecurityRole_28">
+			<role-name>BSProjectManager</role-name>
+		</security-role>
+		<security-role id="SecurityRole_29">
+			<role-name>viewFKBS</role-name>
+		</security-role>
+		<security-role id="SecurityRole_30">
+			<role-name>editFKBS</role-name>
+		</security-role>
+		<security-role id="SecurityRole_31">
+			<role-name>developer</role-name>
+		</security-role>
+      <ejb-ref id="EjbRef_1">
+         <ejb-ref-name>DocumentPosition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.DocumentPositionHome</home>
+         <remote>com.hps.july.persistence.DocumentPosition</remote>
+         <ejb-link>DocumentPosition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_2">
+         <ejb-ref-name>Company</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.CompanyHome</home>
+         <remote>com.hps.july.persistence.Company</remote>
+         <ejb-link>Company</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_3">
+         <ejb-ref-name>EquipmentSet</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.EquipmentSetHome</home>
+         <remote>com.hps.july.persistence.EquipmentSet</remote>
+         <ejb-link>EquipmentSet</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_4">
+         <ejb-ref-name>Contract</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ContractHome</home>
+         <remote>com.hps.july.persistence.Contract</remote>
+         <ejb-link>Contract</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_5">
+         <ejb-ref-name>Organization</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OrganizationHome</home>
+         <remote>com.hps.july.persistence.Organization</remote>
+         <ejb-link>Organization</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_6">
+         <ejb-ref-name>Division</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.DivisionHome</home>
+         <remote>com.hps.july.persistence.Division</remote>
+         <ejb-link>Division</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_7">
+         <ejb-ref-name>StorageCard</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.StorageCardHome</home>
+         <remote>com.hps.july.persistence.StorageCard</remote>
+         <ejb-link>StorageCard</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_8">
+         <ejb-ref-name>Expedition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ExpeditionHome</home>
+         <remote>com.hps.july.persistence.Expedition</remote>
+         <ejb-link>Expedition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_9">
+         <ejb-ref-name>InwayBill</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.InwayBillHome</home>
+         <remote>com.hps.july.persistence.InwayBill</remote>
+         <ejb-link>InwayBill</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_10">
+         <ejb-ref-name>InWayBillPosition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.InWayBillPositionHome</home>
+         <remote>com.hps.july.persistence.InWayBillPosition</remote>
+         <ejb-link>InWayBillPosition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_11">
+         <ejb-ref-name>InWayBillBLOB</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.InWayBillBLOBHome</home>
+         <remote>com.hps.july.persistence.InWayBillBLOB</remote>
+         <ejb-link>InWayBillBLOB</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_12">
+         <ejb-ref-name>I13nActPosition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.I13nActPositionHome</home>
+         <remote>com.hps.july.persistence.I13nActPosition</remote>
+         <ejb-link>I13nActPosition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_13">
+         <ejb-ref-name>I13nAct</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.I13nActHome</home>
+         <remote>com.hps.july.persistence.I13nAct</remote>
+         <ejb-link>I13nAct</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_14">
+         <ejb-ref-name>I13nActResourceSet</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.I13nActResourceSetHome</home>
+         <remote>com.hps.july.persistence.I13nActResourceSet</remote>
+         <ejb-link>I13nActResourceSet</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_15">
+         <ejb-ref-name>I13nDateSaving</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.I13nDateSavingHome</home>
+         <remote>com.hps.july.persistence.I13nDateSaving</remote>
+         <ejb-link>I13nDateSaving</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_16">
+         <ejb-ref-name>InternalOutBill</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.InternalOutBillHome</home>
+         <remote>com.hps.july.persistence.InternalOutBill</remote>
+         <ejb-link>InternalOutBill</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_17">
+         <ejb-ref-name>OuterDocPosition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OuterDocPositionHome</home>
+         <remote>com.hps.july.persistence.OuterDocPosition</remote>
+         <ejb-link>OuterDocPosition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_18">
+         <ejb-ref-name>Position</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PositionHome</home>
+         <remote>com.hps.july.persistence.Position</remote>
+         <ejb-link>Position</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_19">
+         <ejb-ref-name>Resource</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ResourceHome</home>
+         <remote>com.hps.july.persistence.Resource</remote>
+         <ejb-link>Resource</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_20">
+         <ejb-ref-name>ResourceSet</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ResourceSetHome</home>
+         <remote>com.hps.july.persistence.ResourceSet</remote>
+         <ejb-link>ResourceSet</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_21">
+         <ejb-ref-name>ResourceSubType</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ResourceSubTypeHome</home>
+         <remote>com.hps.july.persistence.ResourceSubType</remote>
+         <ejb-link>ResourceSubType</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_22">
+         <ejb-ref-name>ResourceType</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ResourceTypeHome</home>
+         <remote>com.hps.july.persistence.ResourceType</remote>
+         <ejb-link>ResourceType</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_23">
+         <ejb-ref-name>Storage</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.StorageHome</home>
+         <remote>com.hps.july.persistence.Storage</remote>
+         <ejb-link>Storage</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_24">
+         <ejb-ref-name>Worker</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.WorkerHome</home>
+         <remote>com.hps.july.persistence.Worker</remote>
+         <ejb-link>Worker</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_25">
+         <ejb-ref-name>Complect</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ComplectHome</home>
+         <remote>com.hps.july.persistence.Complect</remote>
+         <ejb-link>Complect</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_26">
+         <ejb-ref-name>Currency</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.CurrencyHome</home>
+         <remote>com.hps.july.persistence.Currency</remote>
+         <ejb-link>Currency</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_27">
+         <ejb-ref-name>Document</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.DocumentHome</home>
+         <remote>com.hps.july.persistence.Document</remote>
+         <ejb-link>Document</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_28">
+         <ejb-ref-name>Unit</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.UnitHome</home>
+         <remote>com.hps.july.persistence.Unit</remote>
+         <ejb-link>Unit</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_29">
+         <ejb-ref-name>People</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PeopleHome</home>
+         <remote>com.hps.july.persistence.People</remote>
+         <ejb-link>People</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_30">
+         <ejb-ref-name>DocumentProcessor</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.inventory.sessionbean.DocumentProcessorHome</home>
+         <remote>com.hps.july.inventory.sessionbean.DocumentProcessor</remote>
+         <ejb-link>DocumentProcessor</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_31">
+         <ejb-ref-name>I13nActProcessor</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.inventory.sessionbean.I13nActProcessorHome</home>
+         <remote>com.hps.july.inventory.sessionbean.I13nActProcessor</remote>
+         <ejb-link>I13nActProcessor</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_32">
+         <ejb-ref-name>ChangeAct</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ChangeActHome</home>
+         <remote>com.hps.july.persistence.ChangeAct</remote>
+         <ejb-link>ChangeAct</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_33">
+         <ejb-ref-name>ChangeActPosition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ChangeActPositionHome</home>
+         <remote>com.hps.july.persistence.ChangeActPosition</remote>
+         <ejb-link>ChangeActPosition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_34">
+         <ejb-ref-name>InternalWayBill</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.InternalWayBillHome</home>
+         <remote>com.hps.july.persistence.InternalWayBill</remote>
+         <ejb-link>InternalWayBill</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_35">
+         <ejb-ref-name>InternalWayBillPosition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.InternalWayBillPositionHome</home>
+         <remote>com.hps.july.persistence.InternalWayBillPosition</remote>
+         <ejb-link>InternalWayBillPosition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_36">
+         <ejb-ref-name>OutWayBill</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OutWayBillHome</home>
+         <remote>com.hps.july.persistence.OutWayBill</remote>
+         <ejb-link>OutWayBill</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_37">
+         <ejb-ref-name>AssemblingAct</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AssemblingActHome</home>
+         <remote>com.hps.july.persistence.AssemblingAct</remote>
+         <ejb-link>AssemblingAct</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_38">
+         <ejb-ref-name>ChangeActProcessor</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.inventory.sessionbean.ChangeActProcessorHome</home>
+         <remote>com.hps.july.inventory.sessionbean.ChangeActProcessor</remote>
+         <ejb-link>ChangeActProcessor</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_39">
+         <ejb-ref-name>PayOffAct</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PayOffActHome</home>
+         <remote>com.hps.july.persistence.PayOffAct</remote>
+         <ejb-link>PayOffAct</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_40">
+         <ejb-ref-name>Request</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.RequestHome</home>
+         <remote>com.hps.july.persistence.Request</remote>
+         <ejb-link>Request</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_42">
+         <ejb-ref-name>InventoryNumbers</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.InventoryNumbersHome</home>
+         <remote>com.hps.july.persistence.InventoryNumbers</remote>
+         <ejb-link>InventoryNumbers</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_43">
+         <ejb-ref-name>AfsMountAct</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AfsMountActHome</home>
+         <remote>com.hps.july.persistence.AfsMountAct</remote>
+         <ejb-link>AfsMountAct</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_44">
+         <ejb-ref-name>AfsMountPos</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.AfsMountPosHome</home>
+         <remote>com.hps.july.persistence.AfsMountPos</remote>
+         <ejb-link>AfsMountPos</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_1133167761343">
+      	<ejb-ref-name>FaultReport</ejb-ref-name>
+      	<ejb-ref-type>Entity</ejb-ref-type>
+      	<home>com.hps.july.persistence.FaultReportHome</home>
+      	<remote>com.hps.july.persistence.FaultReport</remote>
+      	<ejb-link>FaultReport</ejb-link>
+      </ejb-ref>
+   </web-app>

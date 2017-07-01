@@ -1,0 +1,241 @@
+------Start of DE processing------ = [06.09.21 12:28:55:482 MSD] , key = java.sql.SQLException com.ibm.ejs.persistence.EJSJDBCPersister.create 319
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.persistence.EJSJDBCPersister.create
+probeid = 319
+Stack Dump = java.sql.SQLException: ??????????? ???? ? ????????? ??????? - ??? ??????????? ?? ?????? (informix.fk_ref_posag_15252).
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.ibm.ejs.cm.cache.CachedStatement.executeUpdate(CachedStatement.java:397)
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeUpdateCommon(StatementProxy.java:518)
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:59)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseOnPositionBean_1a97eb14._create(EJSJDBCPersisterCMPLeaseOnPositionBean_1a97eb14.java:51)
+	at com.ibm.ejs.persistence.EJSJDBCPersister.create(EJSJDBCPersister.java:536)
+	at com.ibm.ejs.container.ContainerManagedBeanO.afterPostCreate(ContainerManagedBeanO.java:536)
+	at com.ibm.ejs.container.EJSHome.afterPostCreate(EJSHome.java:2076)
+	at com.hps.july.persistence.EJSCMPLeaseOnPositionHomeBean_1a97eb14.afterPostCreateWrapper(EJSCMPLeaseOnPositionHomeBean_1a97eb14.java:24)
+	at com.hps.july.persistence.EJSCMPLeaseOnPositionHomeBean_1a97eb14.create(EJSCMPLeaseOnPositionHomeBean_1a97eb14.java:44)
+	at com.hps.july.persistence.EJSRemoteCMPLeaseOnPositionHome_1a97eb14.create(EJSRemoteCMPLeaseOnPositionHome_1a97eb14.java:66)
+	at com.hps.july.persistence._LeaseOnPositionHome_Stub.create(_LeaseOnPositionHome_Stub.java:282)
+	at com.hps.july.persistence.LeaseOnPositionAccessBean.<init>(LeaseOnPositionAccessBean.java:55)
+	at com.hps.july.arenda.formbean.ArendaPositionDialogForm.addPositionFromLookup(ArendaPositionDialogForm.java:27)
+	at com.hps.july.arenda.formbean.ArendaPositionDialogForm.processInsert(ArendaPositionDialogForm.java:121)
+	at com.hps.july.web.util.FormProcessAction.processInsert(FormProcessAction.java:42)
+	at com.hps.july.web.util.AbstractProcessAction.perform(AbstractProcessAction.java:122)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSJDBCPersisterCMPLeaseOnPositionBean_1a97eb14
+com.hps.july.persistence.EJSJDBCPersisterCMPLeaseOnPositionBean_1a97eb14@546f65aa
+
+Exception = java.sql.SQLException
+Source = com.ibm.ejs.persistence.EJSJDBCPersister.create
+probeid = 319
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSJDBCPersisterCMPLeaseOnPositionBean_1a97eb14
+  serObj = null
+  _predicateMaps[1] = {true}
+  _predicateColumnNames = {}
+  _loadForUpdateString = SELECT T1.storageplace, T1.leasedocument FROM leaseonpositions  T1 WHERE T1.storageplace = ? AND T1.leasedocument = ? FOR UPDATE
+  _loadString = SELECT T1.storageplace, T1.leasedocument FROM leaseonpositions  T1 WHERE T1.storageplace = ? AND T1.leasedocument = ?
+  _storeString = UPDATE
+  _removeString = DELETE FROM leaseonpositions  WHERE storageplace = ? AND leasedocument = ?
+  _createString = INSERT INTO leaseonpositions (storageplace, leasedocument) VALUES (?, ?)
+  class$com$ibm$ejs$persistence$EJSJDBCPersister = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@4694e5f7
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@21fd2534
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@353ae5b7
+      soleInstance = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3e9a25b7
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 37
+      clock = 37
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4bf065b6
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3e9da5b7
+      referent = [Ljava.lang.reflect.Field;@6cf965a0
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@625fa5b1
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  supportsKeepUpdateLocks = false
+  supportsSelectForUpdate = true
+  intDSHelper = null
+  dshelperMetadata = null
+  dshelper = null
+  newDataSource = false
+  dbPassword = null
+  dbUser = null
+  dataSource = 
+    class$com$ibm$ejs$cm$JDBC1PhaseRF = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@7f2f25a0
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.cm.JDBC1PhaseRF
+    class$com$ibm$ejs$cm$DataSourceImpl = 
+      class$java$lang$Class = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@7f0e65a0
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ejs$persistence$EJSJDBCPersister.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    tc2 = 
+      ivLogger = null
+      ivResourceBundleName = com.ibm.ws.runtime.runtime
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ejs.cm.MBeans
+    attrs = com.ibm.ejs.cm.CMPropertiesImpl@d4265ad
+    source = com.ibm.ejs.cm.pool.ConnectionPool@2d3be5b2
+    collab = 
+      class$com$ibm$ws$management$collaborator$DefaultRuntimeCollaborator = java.lang.Class@35e5e5b7
+      bridge = null
+      runtimeObjName = cells/localhost/nodes/localhost/servers/server1/resources.xml#WAS40DataSource_1144741586767
+      runtimeObj = this.dataSource
+      tc = com.ibm.ejs.ras.TraceComponent@76bba5bb
+      class$com$ibm$websphere$management$RuntimeCollaborator = java.lang.Class@3655e5b7
+      mbeanName = javax.management.ObjectName@5e5565ac
+      modelMBean = javax.management.modelmbean.RequiredModelMBean@5ec725ac
+  jdbcDataSource = null
+  schemaName = null
+  home = com.hps.july.persistence.EJSCMPLeaseOnPositionHomeBean_1a97eb14@14bda595
+  cvThreadLocal = 
+    index = 14
+    count = 15
+    HASH_INCREMENT = 1640531527
+    nextHashCode = 1584028597
+    threadLocalHashCode = 1971305554
+  ivCMPWarningLogged = false
+  ivCMPAutoCommitWarningLogged = false
+  tc2 = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.resources.CONMMessages
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ejs.persistence.EJSJDBCPersister$DataStoreHelper
+  CLASS_NAME = com.ibm.ejs.persistence.EJSJDBCPersister
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.container.container
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ejs.persistence.EJSJDBCPersister
+

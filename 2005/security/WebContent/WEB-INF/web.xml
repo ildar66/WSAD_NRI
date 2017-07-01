@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://dtdserver/dtd/web-app_2_2.dtd">
+<web-app>
+<display-name>july-security</display-name>
+  <!-- Standard Action Servlet Configuration (with debugging) -->
+  <distributable />
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>application</param-name>
+      <param-value>com.hps.july.security.ApplicationResources</param-value>
+    </init-param>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>0</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>0</param-value>
+    </init-param>
+    <init-param>
+      <param-name>validate</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>nocache</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+
+  <!-- Standard Action Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-template.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-template.tld</taglib-location>
+	</taglib>
+      <taglib>
+         <taglib-uri>/WEB-INF/july.tld</taglib-uri>
+         <taglib-location>/WEB-INF/july.tld</taglib-location>
+      </taglib>
+      <resource-ref id="ResourceRef_1154076048412">
+      	<description>mail queue</description>
+      	<res-ref-name>jms/mailQueue</res-ref-name>
+      	<res-type>javax.jms.Queue</res-type>
+      	<res-auth>CONTAINER</res-auth>
+      </resource-ref>
+      <resource-ref id="ResourceRef_1154076048422">
+      	<description>mail queue connection factory</description>
+      	<res-ref-name>jms/mailQCF</res-ref-name>
+      	<res-type>javax.jms.QueueConnectionFactory</res-type>
+      	<res-auth>CONTAINER</res-auth>
+      </resource-ref>
+      <resource-ref id="ResourceRef_1154076048432">
+      	<description>Informix datasource for mail client</description>
+      	<res-ref-name>jdbc/mail</res-ref-name>
+      	<res-type>javax.sql.DataSource</res-type>
+      	<res-auth>CONTAINER</res-auth>
+      </resource-ref>
+    
+      <security-constraint id="SecurityConstraint_1">
+         <web-resource-collection id="WebResourceCollection_1">
+            <web-resource-name>protresource</web-resource-name>
+            <url-pattern>/ShowPeopleList.do</url-pattern>
+            <url-pattern>/EditPeople.do</url-pattern>
+            <url-pattern>/ProcessPeople.do</url-pattern>
+            <url-pattern>/ShowOperatorList.do</url-pattern>
+            <url-pattern>/EditOperator.do</url-pattern>
+            <url-pattern>/ProcessOperator.do</url-pattern>
+            <url-pattern>/ShowWorkerList.do</url-pattern>
+            <url-pattern>/EditWorker.do</url-pattern>
+            <url-pattern>/ProcessWorker.do</url-pattern>
+            <url-pattern>/ShowOperator2roleList.do</url-pattern>
+            <url-pattern>/RoleList.do</url-pattern>
+            <url-pattern>/Operator2roleDialog.do</url-pattern>
+            <url-pattern>/Operator2roleProcess.do</url-pattern>
+            <url-pattern>/EditOperator2role.do</url-pattern>
+            <url-pattern>/ProcessOperator2role.do</url-pattern>
+            <url-pattern>/ShowRoleLookupList.do</url-pattern>
+            <url-pattern>/ShowWorkPositionLookupList.do</url-pattern>
+            <url-pattern>/ShowWorkerLookupList.do</url-pattern>
+
+            <url-pattern>/ProcessCompany.do</url-pattern>
+            <url-pattern>/ShowCompanyLookupList.do</url-pattern>
+            <url-pattern>/ProcessDirection.do</url-pattern>
+            <url-pattern>/ShowWorkPositionList.do</url-pattern>
+            <url-pattern>/EditWorkPosition.do</url-pattern>
+            <url-pattern>/ProcessWorkPosition.do</url-pattern>
+            <url-pattern>/ProcessService.do</url-pattern>
+            <url-pattern>/ProcessDepartment.do</url-pattern>
+            <url-pattern>/ProcessGroup.do</url-pattern>
+            <url-pattern>/ShowDirectionLookupList.do</url-pattern>
+            <url-pattern>/ShowServiceLookupList.do</url-pattern>
+            <url-pattern>/ShowDepartmentLookupList.do</url-pattern>
+            <url-pattern>/ShowGroupLookupList.do</url-pattern>
+            <url-pattern>/ReportOperators.do</url-pattern>
+            <url-pattern>/divisionLookup.do</url-pattern>
+            <url-pattern>/ShowRoleMultiList.do</url-pattern>
+            <url-pattern>/ProcessOperator2roleMulti.do</url-pattern>
+            
+            <url-pattern>/ShowSuperRegionAccessList.do</url-pattern>
+            <url-pattern>/ProcessSuperRegionAccess.do</url-pattern>
+            <url-pattern>/ShowRegionAccessList.do</url-pattern>
+            <url-pattern>/ProcessRegionAccess.do</url-pattern>
+            <url-pattern>/CopyOperatorAccess.do</url-pattern>
+            <url-pattern>/ProcessCopyOperatorAccess.do</url-pattern>
+            
+            <url-pattern>/ShowMSUsersList.do</url-pattern>
+            <url-pattern>/EditMSUsers.do</url-pattern>
+            <url-pattern>/ProcessMSUsers.do</url-pattern>
+            <url-pattern>/AccessList.do</url-pattern>
+            <url-pattern>/PeopleToNfsUserList.do</url-pattern>
+            <url-pattern>/Nfs_UsersLookupList.do</url-pattern>
+            <url-pattern>/SwitchOperator.do</url-pattern>
+            
+            <url-pattern>/MailMessageNri.do</url-pattern>
+            <url-pattern>/MailMessageNriProcess.do</url-pattern>
+            
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+
+         <auth-constraint id="AuthConstraint_1">
+            <description>protected:+:</description>
+            <role-name>administrator</role-name>
+         </auth-constraint>
+
+         <user-data-constraint id="UserDataConstraint_1">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+
+      </security-constraint>
+
+	<security-constraint id="SecurityConstraint_4">
+		<web-resource-collection id="WebResourceCollection_4">
+		<web-resource-name>protresource1</web-resource-name>
+
+			<url-pattern>/ShowDirectionCarsList.do</url-pattern>
+			<url-pattern>/EditDirectionCar.do</url-pattern>
+			<url-pattern>/ProcessDirectionCar.do</url-pattern>
+
+			<url-pattern>/ShowServiceCarsList.do</url-pattern>
+			<url-pattern>/EditServiceCar.do</url-pattern>
+			<url-pattern>/ProcessServiceCar.do</url-pattern>
+
+			<url-pattern>/ShowDepartmentCarsList.do</url-pattern>
+			<url-pattern>/EditDepartmentCar.do</url-pattern>
+			<url-pattern>/ProcessDepartmentCar.do</url-pattern>
+
+			<url-pattern>/ShowGroupCarsList.do</url-pattern>
+			<url-pattern>/EditGroupCar.do</url-pattern>
+			<url-pattern>/ProcessGroupCar.do</url-pattern>
+
+			<url-pattern>/ShowCompanyList.do</url-pattern>
+			<url-pattern>/EditCompany.do</url-pattern>
+
+			<url-pattern>/ShowDirectionList.do</url-pattern>
+			<url-pattern>/EditDirection.do</url-pattern>
+
+			<url-pattern>/ShowServiceList.do</url-pattern>
+			<url-pattern>/EditService.do</url-pattern>
+
+			<url-pattern>/ShowDepartmentList.do</url-pattern>
+			<url-pattern>/EditDepartment.do</url-pattern>
+			<url-pattern>/ShowGroupList.do</url-pattern>
+			<url-pattern>/EditGroup.do</url-pattern>
+
+			<url-pattern>/ShowWorkerListC.do</url-pattern>
+			<url-pattern>/EditWorkerC.do</url-pattern>
+			<url-pattern>/ProcessWorkerC.do</url-pattern>
+			<url-pattern>/ShowWorkerListDr.do</url-pattern>
+			<url-pattern>/EditWorkerDr.do</url-pattern>
+			<url-pattern>/ProcessWorkerDr.do</url-pattern>
+			<url-pattern>/ShowWorkerListS.do</url-pattern>
+			<url-pattern>/EditWorkerS.do</url-pattern>
+			<url-pattern>/ProcessWorkerS.do</url-pattern>
+			<url-pattern>/ShowWorkerListD.do</url-pattern>
+			<url-pattern>/EditWorkerD.do</url-pattern>
+			<url-pattern>/ProcessWorkerD.do</url-pattern>
+			<url-pattern>/ShowWorkerListG.do</url-pattern>
+			<url-pattern>/EditWorkerG.do</url-pattern>
+			<url-pattern>/ProcessWorkerG.do</url-pattern>
+
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+
+		<auth-constraint id="AuthConstraint_4">
+			<description>protected:+:</description>
+			<role-name>administrator</role-name>
+			<role-name>dictStaffOperator</role-name>
+		</auth-constraint>
+
+		<user-data-constraint id="UserDataConstraint_4">
+			<transport-guarantee>NONE</transport-guarantee>
+		</user-data-constraint>
+
+	</security-constraint>
+      
+      <security-constraint id="SecurityConstraint_2">
+         <web-resource-collection id="WebResourceCollection_2">
+            <web-resource-name>main</web-resource-name>
+            <url-pattern>/Login.do</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+         </web-resource-collection>
+         <auth-constraint id="AuthConstraint_2">
+            <description>public:+:</description>
+            <role-name>Everyone</role-name>
+         </auth-constraint>
+         <user-data-constraint id="UserDataConstraint_2">
+            <transport-guarantee>NONE</transport-guarantee>
+         </user-data-constraint>
+      </security-constraint>
+
+      <security-constraint id="SecurityConstraint_3">
+        <web-resource-collection id="WebResourceCollection_3">
+          <web-resource-name>anyopresource</web-resource-name>
+          <url-pattern>/main.do</url-pattern>
+		  <url-pattern>/ShowPeopleLookupList.do</url-pattern>
+          <http-method>GET</http-method>
+          <http-method>POST</http-method>
+    	</web-resource-collection>
+        <auth-constraint id="AuthConstraint_3">
+          <description>protected:+:</description>
+          <role-name>AllAuthenticated</role-name>
+        </auth-constraint>
+        <user-data-constraint id="UserDataConstraint_3">
+          <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+      </security-constraint>
+
+      <login-config id="LoginConfig_1">
+         <auth-method>FORM</auth-method>
+         <form-login-config id="FormLoginConfig_1">
+            <form-login-page>/Login.do</form-login-page>
+            <form-error-page>/error.jsp</form-error-page>
+         </form-login-config>
+      </login-config>
+
+      <security-role id="SecurityRole_1">
+         <role-name>administrator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_2">
+         <role-name>Everyone</role-name>
+      </security-role>
+      <security-role id="SecurityRole_3">
+         <role-name>AllAuthenticated</role-name>
+      </security-role>
+      <security-role id="SecurityRole_4">
+         <role-name>dictStaffOperator</role-name>
+      </security-role>
+      <security-role id="SecurityRole_5">
+         <role-name>adminTerrabyte</role-name>
+      </security-role>
+      <security-role id="SecurityRole_permits_edit">
+         <role-name>smssPermitEdit</role-name>
+      </security-role>
+      <security-role id="SecurityRole_permits_view">
+         <role-name>smssPermitView</role-name>
+      </security-role>
+      
+
+      <ejb-ref id="EjbRef_2">
+         <ejb-ref-name>People</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.PeopleHome</home>
+         <remote>com.hps.july.persistence.People</remote>
+         <ejb-link>People</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_8">
+         <ejb-ref-name>Operators2Roles</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.Operators2RolesHome</home>
+         <remote>com.hps.july.persistence.Operators2Roles</remote>
+         <ejb-link>Operators2Roles</ejb-link>
+      </ejb-ref>
+      
+      <ejb-ref id="EjbRef_25">
+         <ejb-ref-name>SuperRegionAcc</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SuperRegionAccHome</home>
+         <remote>com.hps.july.persistence.SuperRegionAcc</remote>
+         <ejb-link>SuperRegionAcc</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_26">
+         <ejb-ref-name>RegionAcc</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.RegionAccHome</home>
+         <remote>com.hps.july.persistence.RegionAcc</remote>
+         <ejb-link>RegionAcc</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_27">
+         <ejb-ref-name>SuperRegion</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.SuperRegionHome</home>
+         <remote>com.hps.july.persistence.SuperRegion</remote>
+         <ejb-link>SuperRegion</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_28">
+         <ejb-ref-name>Region</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.RegionHome</home>
+         <remote>com.hps.july.persistence.Region</remote>
+         <ejb-link>Region</ejb-link>
+      </ejb-ref>
+
+      
+            
+      <ejb-ref id="EjbRef_16">
+         <ejb-ref-name>KeyGenerator</ejb-ref-name>
+         <ejb-ref-type>Session</ejb-ref-type>
+         <home>com.hps.july.commonbean.KeyGeneratorHome</home>
+         <remote>com.hps.july.commonbean.KeyGenerator</remote>
+         <ejb-link>KeyGenerator</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_1">
+         <ejb-ref-name>Company</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.CompanyHome</home>
+         <remote>com.hps.july.persistence.Company</remote>
+         <ejb-link>Company</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_3">
+         <ejb-ref-name>Division</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.DivisionHome</home>
+         <remote>com.hps.july.persistence.Division</remote>
+         <ejb-link>Division</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_4">
+         <ejb-ref-name>Direction</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.DirectionHome</home>
+         <remote>com.hps.july.persistence.Direction</remote>
+         <ejb-link>Direction</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_5">
+         <ejb-ref-name>Service</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.ServiceHome</home>
+         <remote>com.hps.july.persistence.Service</remote>
+         <ejb-link>Service</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_6">
+         <ejb-ref-name>Group</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.GroupHome</home>
+         <remote>com.hps.july.persistence.Group</remote>
+         <ejb-link>Group</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_9">
+         <ejb-ref-name>Operator</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OperatorHome</home>
+         <remote>com.hps.july.persistence.Operator</remote>
+         <ejb-link>Operator</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_10">
+         <ejb-ref-name>Organization</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.OrganizationHome</home>
+         <remote>com.hps.july.persistence.Organization</remote>
+         <ejb-link>Organization</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_12">
+         <ejb-ref-name>Role</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.RoleHome</home>
+         <remote>com.hps.july.persistence.Role</remote>
+         <ejb-link>Role</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_13">
+         <ejb-ref-name>Task</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.TaskHome</home>
+         <remote>com.hps.july.persistence.Task</remote>
+         <ejb-link>Task</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_14">
+         <ejb-ref-name>Worker</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.WorkerHome</home>
+         <remote>com.hps.july.persistence.Worker</remote>
+         <ejb-link>Worker</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_15">
+         <ejb-ref-name>Workposition</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.WorkPositionHome</home>
+         <remote>com.hps.july.persistence.WorkPosition</remote>
+         <ejb-link>WorkPosition</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_7">
+         <ejb-ref-name>Roles2Tasks</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.Roles2TasksHome</home>
+         <remote>com.hps.july.persistence.Roles2Tasks</remote>
+         <ejb-link>Roles2Tasks</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_29">
+         <ejb-ref-name>Car</ejb-ref-name>
+         <ejb-ref-type>Entity</ejb-ref-type>
+         <home>com.hps.july.persistence.CarHome</home>
+         <remote>com.hps.july.persistence.Car</remote>
+         <ejb-link>Car</ejb-link>
+      </ejb-ref>
+      <ejb-ref id="EjbRef_1132927708859">
+      	<ejb-ref-name>NamedValue</ejb-ref-name>
+      	<ejb-ref-type>Entity</ejb-ref-type>
+      	<home>com.hps.july.persistence.NamedValueHome</home>
+      	<remote>com.hps.july.persistence.NamedValue</remote>
+      	<ejb-link>NamedValue</ejb-link>
+      </ejb-ref>
+
+
+</web-app>

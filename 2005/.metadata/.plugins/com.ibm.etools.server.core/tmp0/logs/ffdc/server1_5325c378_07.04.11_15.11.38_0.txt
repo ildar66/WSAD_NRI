@@ -1,0 +1,105 @@
+------Start of DE processing------ = [07.04.11 15:11:37:623 MSD] , key = com.ibm.websphere.cpi.CPIException com.ibm.ejs.container.ContainerTx.beforeCompletion 562
+Exception = com.ibm.websphere.cpi.CPIException
+Source = com.ibm.ejs.container.ContainerTx.beforeCompletion
+probeid = 562
+Stack Dump = com.ibm.websphere.cpi.CPIException: ; nested exception is: 
+	java.sql.SQLException: ?????????? ???????? NULL-???????? ? ??????? (leasecontracts.orgcustomer).
+	at com.ibm.ejs.container.ContainerManagedBeanO.store(ContainerManagedBeanO.java(Compiled Code))
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java(Compiled Code))
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java(Compiled Code))
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java(Compiled Code))
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java(Compiled Code))
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java(Compiled Code))
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java(Compiled Code))
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java(Compiled Code))
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java(Compiled Code))
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java(Compiled Code))
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java(Compiled Code))
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java(Compiled Code))
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java(Compiled Code))
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java(Compiled Code))
+	at com.hps.july.persistence.EJSRemoteCMPLeaseArendaAgreementNew_f924af63.setOrgCustomer(EJSRemoteCMPLeaseArendaAgreementNew_f924af63.java:4489)
+	at com.hps.july.persistence._LeaseArendaAgreementNew_Stub.setOrgCustomer(_LeaseArendaAgreementNew_Stub.java:5343)
+	at com.hps.july.persistence.LeaseArendaAgreementNewAccessBean.setOrgCustomer(LeaseArendaAgreementNewAccessBean.java:2143)
+	at sun.reflect.GeneratedMethodAccessor464.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.hps.july.util.BeanUtils.copyProperties(BeanUtils.java(Compiled Code))
+	at com.hps.july.web.util.AbstractProcessAction.processUpdate(AbstractProcessAction.java:308)
+	at com.hps.july.web.util.SuccessProcessAction.processUpdate(SuccessProcessAction.java:52)
+	at com.hps.july.web.util.AbstractProcessAction.perform(AbstractProcessAction.java:124)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:510)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.ServicingServletState.service(StrictLifecycleServlet.java:333)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java(Compiled Code))
+Caused by: java.sql.SQLException: ?????????? ???????? NULL-???????? ? ??????? (leasecontracts.orgcustomer).
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java(Compiled Code))
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.ibm.ejs.cm.cache.CachedStatement.executeUpdate(CachedStatement.java:420)
+	at com.ibm.ejs.cm.proxy.StatementProxy.executeUpdateCommon(StatementProxy.java:518)
+	at com.ibm.ejs.cm.proxy.PreparedStatementProxy.executeUpdate(PreparedStatementProxy.java:59)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63.store(EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63.java:1004)
+	... 49 more
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.ContainerTx
+com.ibm.ejs.container.ContainerTx@53b90377
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Wed Apr 11 15:11:38 MSD 2007
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@949837d
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = com.ibm.ws.webcontainer.metadata.WebComponentMetaDataImpl@63f0c359
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@53b90377
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@53af0377#tid=3673
+  State                   = Active
+  Entered beforCompletion = true
+  Marked Rollback Only    = false
+  Method Began            = false
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 3 ---------------------- 
+
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#Operator, com.hps.july.persistence.OperatorKey@2c1), state = COMMITTING)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#LeaseArendaAgreementNew, com.hps.july.persistence.LeaseDocumentKey@7d0b), state = DESTROYED)
+    ContainerManagedBeanO(BeanId(july#julypersistenceEJB.jar#OrganizationNfs, com.hps.july.persistence.OrganizationNfsKey@145f1), state = ACTIVE)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@53b90377
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Wed Apr 11 15:11:38 MSD 2007

@@ -1,0 +1,120 @@
+------Start of DE processing------ = [07.04.10 20:36:25:966 MSD] , key = com.ibm.ejs.persistence.EJSPersistenceException com.ibm.ejs.container.ContainerManagedBeanO.load 700
+Exception = com.ibm.ejs.persistence.EJSPersistenceException
+Source = com.ibm.ejs.container.ContainerManagedBeanO.load
+probeid = 700
+Stack Dump = com.ibm.ejs.persistence.EJSPersistenceException: getPStmt failed; nested exception is: 
+	java.sql.SQLException: ??????????? ???? BYTE ? TEXT ?????? ????? ROW ? COLLECTION.
+	at com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement(EJSJDBCPersister.java:984)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63.load(EJSJDBCPersisterCMPLeaseArendaAgreementNewBean_f924af63.java:591)
+	at com.ibm.ejs.container.ContainerManagedBeanO.load(ContainerManagedBeanO.java:967)
+	at com.ibm.ejs.container.ContainerManagedBeanO.loadForEnlist(ContainerManagedBeanO.java:921)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSContainer.preInvoke_internal(EJSContainer.java:2762)
+	at com.ibm.ejs.container.EJSContainer.preInvoke(EJSContainer.java:2487)
+	at com.ibm.ejs.container.EJSContainer.preInvoke(EJSContainer.java:2472)
+	at com.hps.july.persistence.EJSRemoteCMPLeaseArendaAgreementNew_f924af63.getHavedocsignedcustomer(EJSRemoteCMPLeaseArendaAgreementNew_f924af63.java:737)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.rmi.util.ProxyUtil$4.run(ProxyUtil.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.ibm.rmi.util.ProxyUtil.invokeWithClassLoaders(ProxyUtil.java:701)
+	at com.ibm.CORBA.iiop.ClientDelegate.invoke(ClientDelegate.java:1084)
+	at $Proxy2.getHavedocsignedcustomer(Unknown Source)
+	at com.hps.july.persistence._LeaseArendaAgreementNew_Stub.getHavedocsignedcustomer(_LeaseArendaAgreementNew_Stub.java:5897)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: ??????????? ???? BYTE ? TEXT ?????? ????? ROW ? COLLECTION.
+	at com.informix.util.IfxErrMsg.getSQLException(IfxErrMsg.java:355)
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3086)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executePrepare(IfxSqli.java:1082)
+	at com.informix.jdbc.IfxResultSet.executePrepare(IfxResultSet.java:182)
+	at com.informix.jdbc.IfxPreparedStatement.setupExecutePrepare(IfxPreparedStatement.java:197)
+	at com.informix.jdbc.IfxPreparedStatement.<init>(IfxPreparedStatement.java(Compiled Code))
+	at com.informix.jdbc.IfxSqliConnect.prepareStatement(IfxSqliConnect.java:1907)
+	at com.ibm.ejs.cm.cache.StatementCache.reallyPrepareStatement(StatementCache.java:250)
+	at com.ibm.ejs.cm.cache.StatementCache.prepareStatement(StatementCache.java:119)
+	at com.ibm.ejs.cm.pool.ConnectO.prepareStatement(ConnectO.java:2780)
+	at com.ibm.ejs.cm.pool.ConnectO.prepareStatement(ConnectO.java:2813)
+	at com.ibm.ejs.cm.proxy.ConnectionProxy.prepareStatement(ConnectionProxy.java:600)
+	at com.ibm.ejs.persistence.EJSJDBCPersister.getPreparedStatement(EJSJDBCPersister.java:963)
+	... 49 more
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.ContainerManagedBeanO
+com.ibm.ejs.container.ContainerManagedBeanO@133d80e
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Apr 10 20:36:26 MSD 2007
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@29c99819
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#LeaseArendaAgreementNew
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@6d2580e
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@6d8580e#tid=72
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@6d2580e
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue Apr 10 20:36:26 MSD 2007

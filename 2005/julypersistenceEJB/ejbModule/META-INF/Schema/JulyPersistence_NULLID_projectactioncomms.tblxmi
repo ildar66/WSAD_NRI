@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="projectactioncomms" name="projectactioncomms" primaryKey="projectactioncomms_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="projectaction" name="projectaction">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986116">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="division" name="division">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986117">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="comment" name="comment" allowNull="true">
+    <type xmi:type="RDBSchema:InformixSimpleLargeObject" xmi:id="InformixSimpleLargeObject_1131634986116" length="2">
+      <originatingType xmi:type="RDBSchema:InformixSimpleLargeObject" href="INFORMIX_V92_Primitives.xmi#InformixSimpleLargeObject_5"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="projectactioncomms_1" name="projectactioncomms" members="projectaction division" constraint="SQLConstraint_1131634986116"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_83870_83870" name="FK_REF_83870_83870" members="division" constraint="SQLConstraint_1131634986126">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_divisions.tblxmi#divisions_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_83867_83867" name="FK_REF_83867_83867" members="projectaction" constraint="SQLConstraint_1131634986127">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_projectactions.tblxmi#projectactions_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986116" name="projectactioncomms" type="PRIMARYKEY" primaryKey="projectactioncomms_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986126" name="FK_REF_83870_83870" type="FOREIGNKEY" referenceByKey="FK_REF_83870_83870"/>
+  <constraints xmi:id="SQLConstraint_1131634986127" name="FK_REF_83867_83867" type="FOREIGNKEY" referenceByKey="FK_REF_83867_83867"/>
+</RDBSchema:RDBTable>

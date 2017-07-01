@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="resourcesetparts" name="resourcesetparts" primaryKey="resourcesetparts_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resourceset" name="resourceset">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986546">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986547">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="qty" name="qty" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986546" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="resourcesetparts_1" name="resourcesetparts" members="resource resourceset" constraint="SQLConstraint_1131634986546"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_965_965" name="fk_ref_965_965" members="resource" constraint="SQLConstraint_1131634986547">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resources.tblxmi#resources_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_968_968" name="fk_ref_968_968" members="resourceset" constraint="SQLConstraint_1131634986548">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resourcesets.tblxmi#resourcesets_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986546" name="resourcesetparts" type="PRIMARYKEY" primaryKey="resourcesetparts_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986547" name="fk_ref_965_965" type="FOREIGNKEY" referenceByKey="fk_ref_965_965"/>
+  <constraints xmi:id="SQLConstraint_1131634986548" name="fk_ref_968_968" type="FOREIGNKEY" referenceByKey="fk_ref_968_968"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:accessbean="accessbean.xmi" xmlns:ejb="ejb.xmi">
+  <accessbean:EJBShadow xmi:id="EJBShadow_1" name="AfsActProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_1" name="AfsActProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_1" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AfsActProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AfsActProcessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_2" name="AssemblingActProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_2" name="AssemblingActProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_2" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AssemblingActProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AssemblingActProcessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_3" name="ChangeActProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_3" name="ChangeActProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_3" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ChangeActProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ChangeActProcessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_4" name="ContractFinder">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_4" name="ContractFinderAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_4" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractFinder"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractFinder"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_5" name="ContractSuppliesInfo">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_5" name="ContractSuppliesInfoAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_5" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractSuppliesInfo"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractSuppliesInfo"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_6" name="CurrencySumProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_6" name="CurrencySumProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_6" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CurrencySumProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CurrencySumProcessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_7" name="DocumentPreprocessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_7" name="DocumentPreprocessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_7" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentPreprocessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentPreprocessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_8" name="DocumentProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_8" name="DocumentProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_8" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentProcessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_9" name="FaultReportProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_9" name="FaultReportProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_9" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#FaultReportProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#FaultReportProcessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_10" name="I13nActProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_10" name="I13nActProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_10" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#I13nActProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#I13nActProcessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_11" name="InWayBillProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_11" name="InWayBillProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_11" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#InWayBillProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#InWayBillProcessor"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_12" name="Party">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_12" name="PartyAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_12" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Party"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Party"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_1175505267363" name="ProcessorFacade" factoryPackageName="com.hps.july.inventory.sessionbean">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_1175505267363" name="ProcessorFacadeAccessBean" package="com.hps.july.inventory.sessionbean" version="WSAD-1.0">
+      <nullConstructor xmi:id="MethodElement_1175505267363" name="create" parms="" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ProcessorFacade"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ProcessorFacade"/>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_14" name="RealDocumentProcessor">
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_14" name="RealDocumentProcessorAccessBean" package="com.hps.july.inventory.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_14" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RealDocumentProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RealDocumentProcessor"/>
+  </accessbean:EJBShadow>
+</xmi:XMI>

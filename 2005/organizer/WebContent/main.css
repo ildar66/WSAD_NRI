@@ -1,0 +1,497 @@
+
+@media screen {
+
+BODY {
+	BACKGROUND-COLOR: white; MARGIN-LEFT: 0pt; MARGIN-RIGHT: 0pt; MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt;
+
+}
+PRE {
+	font-family: Verdana,Arial;
+}
+TABLE.includer {
+	BACKGROUND-COLOR: white; FONT-SIZE: 10pt; HEIGHT: 100%; WIDTH: 100%;
+}
+TABLE.main {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100%;
+}
+
+TABLE.main2 {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 90%;
+}
+
+TABLE.find {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; font-weight: bold;           
+}
+
+TABLE.buttons {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 7pt; WIDTH: 100%; border-width: 1; border-collapse:collapse; margin-top: 0; margin-bottom:0; padding-top: 0; padding-bottom: 0;
+}
+
+TABLE.print {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100%; border-style: solid; border-color: black; border-width: 3; border-collapse:collapse;
+}
+
+TR.print {
+}
+
+TD.print {
+	border-style: solid; border-color: black; border-width: 1; padding: 5;
+}
+
+
+TR.printable {
+}
+
+TD.printable {
+}
+
+
+TR.select {
+	 BACKGROUND-COLOR: white; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.selected {
+	 BACKGROUND-COLOR: #FFF799; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.expired {
+	 BACKGROUND-COLOR: #D0FFD0; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.title {
+	BACKGROUND-COLOR: AAD1F6;  FONT-FAMILY: Verdana,Arial; 
+}
+
+TR.normal {
+	BACKGROUND-COLOR: #D3E9FF; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.autodoc {
+	BACKGROUND-COLOR: #DDDDDD; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.gray {
+	BACKGROUND-COLOR: #CCCCCC; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.color2 {
+	 BACKGROUND-COLOR: blue;
+}
+TR.color3 {
+	 BACKGROUND-COLOR: red;
+}
+TR.color4 {
+	 BACKGROUND-COLOR: green;
+}
+
+
+
+
+
+TD.buttons {
+	vertical-align: middle; font-family: Verdana,Arial; padding-top: 0; padding-bottom: 0; FONT-SIZE: 7pt; margin-top: 0; margin-bottom: 0;
+}
+
+TD.navigator{
+	vertical-align: middle; width: 30%; text-align: right; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0;
+}
+TD.probel {
+     background-image: url(/images/points.gif); background-repeat: repeat-x; height: 1px; 
+}
+
+TD.probelv {
+     background-image: url(/images/points_vert.gif); background-repeat: repeat-y; height: 1px; 
+}
+TD.line {
+     background-image: url(/images/line.gif); background-repeat: repeat-x; height: 1px; 
+}
+TD.title {
+	padding-left: 3pt; padding-right: 3pt;  font-weight: bold;
+}
+TD.number {
+	font-family: Verdana,Arial; padding-left: 3pt; padding-right: 3pt;
+}
+TD.text {
+	font-family: Verdana,Arial; padding-left: 3pt; padding-right: 3pt; 
+}
+TD.date {
+	FONT-FAMILY: Verdana,Arial; align: center; padding-left: 3pt; padding-right: 3pt;
+}
+TD.link {
+	FONT-FAMILY: Verdana,Arial; link-color: black; padding-left: 3pt; padding-right: 3pt;
+}
+TD.copyright {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 7pt; color: gray; background-color: D6EBFF; 
+}
+TD.menu {
+	
+}
+TD.spacer {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 7pt; color: white;
+}
+
+
+.editcheckbox {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; background-color: D6EBFF;
+}
+.editcheckboxform {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt;
+}
+.editcheckboxdisabled {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; background-color: DCDCDC;
+}
+.editkod {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 50pt; background-color: D6EBFF;
+}
+.editkodsearch {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 50pt; background-color: white;
+}
+.editkoddisabled {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 50pt; background-color: DCDCDC;
+}
+.edit {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 180pt; background-color: D6EBFF;
+}
+.editsearch {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 180pt; background-color: white;
+}
+.editsearch1 {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; background-color: white;
+}
+.editdisabled {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 180pt; background-color: DCDCDC;
+}
+.editdisabled1 {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; background-color: DCDCDC;
+}
+.editsmall {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100pt; background-color: D6EBFF;
+}
+.diffeditsmall {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100pt; background-color: #FFE0D0;
+}
+.editsmallsearch {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100pt; background-color: white;
+}
+.edittini {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 20pt; background-color: white;
+}
+.editsmalldisabled {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100pt; background-color: DCDCDC;
+}
+.diffeditsmalldisabled {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100pt; background-color: #FFDCDC;
+}
+.editbig {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 255pt; background-color: D6EBFF;
+}
+.editbigsearch {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 255pt; background-color: white;
+}
+.editbigdisabled {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 255pt; background-color: DCDCDC;
+}
+.editbigest {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 340pt; background-color: D6EBFF;
+}
+.editbigestsearch {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 340pt; background-color: white;
+}
+.editbigestdisabled {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 340pt; background-color: DCDCDC;
+}
+INPUT.search {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 180pt; background-color: white;
+}
+INPUT.page {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 7pt; WIDTH: 25pt; background-color: white;
+}
+OBJECT.menu {
+	font-family: Arial Cyr; font-size: 10pt;  
+}
+OBJECT.date {
+	FONT-FAMILY: Arial Cyr; FONT-SIZE: 10pt; WIDTH: 100pt; background-color: D6EBFF;
+}
+
+FONT.red {
+	color: red; font-size: 10pt;
+}
+
+FONT.blue {
+	color: blue; font-size: 9pt;
+}
+
+FONT.attention {
+	color: red;
+}
+
+A {
+	color: black; 
+}
+A.navigator {
+	text-decoration: none;
+}
+A.navigator:Hover {
+	color: red;
+} 
+
+A.button {
+	border-width: 2;
+	border-style: solid;
+	border-color: #003366;
+	background-color:#336699;
+	color: white; 
+	padding-left: 4;
+	padding-right: 4;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 2;
+	margin-bottom: 2;
+	text-decoration: none;
+	text-weight: normal;
+	display: inline-block;
+	font-family: Tahoma, Arial;
+	font-size: 8pt;
+}
+
+A.button:Hover {
+	background-color:#6699CC;
+}
+
+FORM {padding: 0px; margin: 0px}
+
+}
+
+@media print {
+
+BODY {
+	BACKGROUND-COLOR: white; MARGIN-LEFT: 0pt; MARGIN-RIGHT: 0pt; MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt;
+
+}
+TABLE.includer {
+	display: none;
+}
+
+TABLE.main {
+}
+
+TABLE.find {
+	display: none;
+}
+
+TABLE.buttons {
+	display: none;
+}
+
+
+TABLE.print {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100%; border-style: solid; border-color: black; border-width: 3; border-collapse:collapse;
+}
+TR.print {
+}
+
+TD.print {
+	border-style: solid; border-color: black; border-width: 1; padding: 5;
+}
+
+TR.printable {
+}
+
+TD.printable {
+}
+
+
+
+TR.select {
+	display: none;
+}
+TR.title {
+	display: none;
+}
+TR.normal {
+	display: none;
+}
+TR.color2 {
+	display: none;
+}
+TR.color3 {
+	display: none;
+}
+TR.color4 {
+	display: none;
+}
+
+
+TD.buttons {
+	display: none;
+}
+
+TD.navigator{
+	display: none;
+}
+TD.probel {
+	display: none;
+}
+TD.line {
+	display: none;
+}
+TD.title {
+	display: none;
+}
+TD.number {
+	display: none;
+}
+TD.text {
+	display: none;
+}
+TD.date {
+	display: none;
+}
+TD.link {
+	display: none;
+}
+TD.copyright {
+	display: none;
+}
+TD.menu {
+	display: none;
+}
+TD.spacer {
+	display: none;
+}
+
+
+.editcheckbox {
+	display: none;
+}
+.editcheckboxdisabled {
+	display: none;
+}
+.editkod {
+	display: none;
+}
+.editkodsearch {
+	display: none;
+}
+.editkoddisabled {
+	display: none;
+}
+.edit {
+	display: none;
+}
+.editsearch {
+	display: none;
+}
+.editdisabled {
+	display: none;
+}
+.editsmall {
+	display: none;
+}
+.editsmallsearch {
+	display: none;
+}
+.editsmalldisabled {
+	display: none;
+}
+.editbig {
+	display: none;
+}
+.editbigsearch {
+	display: none;
+}
+.editbigdisabled {
+	display: none;
+}
+.editbigest {
+	display: none;
+}
+.editbigestsearch {
+	display: none;
+}
+.editbigestdisabled {
+	display: none;
+}
+INPUT.search {
+	display: none;
+}
+INPUT.page {
+	display: none;
+}
+OBJECT.menu {
+	display: none;
+}
+OBJECT.date {
+	display: none;
+}
+
+FONT.red {
+	display: none;
+}
+FONT.attention {
+	display: none;
+}
+
+A {
+	display: none;
+}
+A.navigator {
+	display: none;
+}
+A.navigator:Hover {
+	display: none;
+} 
+
+}
+
+.ButtonEnabledArmed {
+	background-image : url(/images/menuclose.gif);
+	background-repeat : no-repeat;
+	background-position : center;
+	display:inline;
+	cursor:hand;
+	width : 54px;
+	height : 31px;
+}
+.ButtonEnabledArmedPressed {
+	background-image : url(/images/menuopen.gif);
+	background-repeat : no-repeat;
+	background-position : center;
+	display:inline;
+	cursor:hand;
+	width : 54px;
+	height : 31px;
+}
+
+#zoomScaleContainer {
+    padding-left : 5px ;
+}
+table.zoomScale {
+    padding : 0px ;
+    margin : 0px ;
+}
+table.zoomScale td, table.zoomScale th {
+    padding : 2px ;
+    margin : 0px ;
+    text-align : center ;
+    vertical-align : middle ;
+}
+table.zoomScale th {
+    width : 10px ;
+}
+table.zoomScale td {
+    border : 1px solid #54849E ;
+    background-color : #CDD9E0 ;
+}
+table.zoomScale td.selected {
+    border : 1px solid #CDD9E0 ;
+    background-color : #54849E ;
+}
+table.zoomScale td input {
+    cursor : hand ;
+}
+table.zoomScale td input,
+table.zoomScale td img {
+    width : 6px ;
+    height : 9px ;
+}

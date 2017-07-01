@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="pie_payslink" name="pie_payslink" primaryKey="pie_payslink_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="idpayplatinum" name="idpayplatinum">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986616" characterSet="800" length="30">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="docposition" name="docposition">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986616">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="owner" name="owner">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986617">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pie_payslink_1" name="pie_payslink" members="idpayplatinum owner docposition" constraint="SQLConstraint_1131634986616"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_49199_49199" name="FK_REF_49199_49199" members="idpayplatinum owner" constraint="SQLConstraint_1131634986617">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_pie_paysplatinum.tblxmi#pie_paysplatinum_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986616" name="pie_payslink" type="PRIMARYKEY" primaryKey="pie_payslink_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986617" name="FK_REF_49199_49199" type="FOREIGNKEY" referenceByKey="FK_REF_49199_49199"/>
+</RDBSchema:RDBTable>

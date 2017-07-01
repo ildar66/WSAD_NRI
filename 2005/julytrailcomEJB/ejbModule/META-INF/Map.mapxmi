@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmlns:ejbext="ejbext.xmi" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmlns:Mapping="Mapping.xmi" xmi:id="EjbRdbDocumentRoot_1" commandStack="">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1" primitivesDocument="INFORMIX_V92">
+    <vendorConfiguration href="RdbVendorConfigurations.xmi#INFORMIX_V92_Config"/>
+  </helper>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="AddressInfo_EJBMap">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="AddressInfo_PrimaryStrategy">
+      <table href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#address_info"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_resource_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#resource"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_resource"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_typeport_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#typeport"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_typeport"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_addresshead_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_1">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#addresshead"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_addresshead"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_addressstep_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#addressstep"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_addressstep"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_e1count_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#e1_count"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_e1count"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_lastaddress_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#lastaddress"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_lastaddress"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_maxconnect_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#maxconnect"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_maxconnect"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_startaddress_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#startaddress"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_startaddress"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo_addresstype_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#addresstype"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo_addresstype"/>
+    </nested>
+    <inputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_address_info.tblxmi#address_info"/>
+    <outputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AddressInfo"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RRLHops2_EJBMap">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="RRLHops2_PrimaryStrategy">
+      <table href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#rrl_hops2"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_frequency_a1_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#frequency_a1"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_frequency_a1"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_signal_real_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#signal_real_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_signal_real_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_cable_2mb_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#cable_2mb_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_cable_2mb_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_frequency_b1_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#frequency_b1"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_frequency_b1"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_cable_rrl_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#cable_rrl_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_cable_rrl_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_cable_rrl_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#cable_rrl_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_cable_rrl_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_diam_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#diam_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_diam_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_type_hw_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_2">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#type_hw"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_type_hw"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_frequency_a_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#frequency_a_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_frequency_a_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_cable_power_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#cable_power_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_cable_power_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_azimuthBA_Doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#azimuthBA_Doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_azimuthBA_Doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_height_a_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#height_a_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_height_a_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_signal_real_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#signal_real_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_signal_real_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_diam_a_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#diam_a_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_diam_a_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_power_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#power_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_power_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_power_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#power_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_power_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_speed_doc_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_3">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#speed_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_speed_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_comment_a_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_4">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#comment_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_comment_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_cable_power_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#cable_power_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_cable_power_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_diam2_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#diam2_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_diam2_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_capacity_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#capacity"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_capacity"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_frequency_b_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#frequency_b_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_frequency_b_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_comment_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#comment_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_comment_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_comment_b_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_5">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#comment_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_comment_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_azimuth_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#Azimuth"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_azimuth"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_signal_calc_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#signal_calc_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_signal_calc_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_file_shortnumber_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#file_shortnumber"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_file_shortnumber"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_height_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#height_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_height_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_diam_b_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#diam_b_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_diam_b_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_azimuthAB_Doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#azimuthAB_Doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_azimuthAB_Doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_accumid_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#accumid_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_accumid_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_file_number_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#file_number"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_file_number"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_diam_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#diam_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_diam_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_height_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#height_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_height_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_signal_calc_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#signal_calc_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_signal_calc_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_cable_2mbr_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#cable_2mbr_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_cable_2mbr_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_frequency_a2_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#frequency_a2"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_frequency_a2"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_frequency_b2_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#frequency_b2"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_frequency_b2"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_power_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#power_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_power_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_height_b_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#height_b_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_height_b_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_diam2_a_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#diam2_a"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_diam2_a"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_accumid_b_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#accumid_b"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_accumid_b"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_resource_doc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#resource_doc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_resource_doc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_number_in_file_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#number_in_file"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_number_in_file"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RRLHops2_sfonumber_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_6">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#sfonumber"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#RRLHops2_sfonumber"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Mapping_1">
+      <helper xmi:type="ejbrdbmapping:ForwardFlattenedFKComposer" xmi:id="ForwardFlattenedFKComposer_1"/>
+      <inputs xmi:type="RDBSchema:RDBReferenceByKey" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#FK_REF_129094_1290"/>
+      <outputs xmi:type="ejbext:EjbRelationshipRole" href="META-INF/ibm-ejb-jar-ext.xmi#RRLHops2_hopid"/>
+    </nested>
+    <inputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_rrl_hops2.tblxmi#rrl_hops2"/>
+    <outputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RRLHops2"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="OpticalHop_EJBMap">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="OpticalHop_PrimaryStrategy">
+      <table href="META-INF/Schema/JulyTrailcom_NULLID_opticalhops.tblxmi#opticalhops"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="OpticalHop_hopscomment_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_7">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_opticalhops.tblxmi#hopscomment"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#OpticalHop_hopscomment"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Mapping_2">
+      <helper xmi:type="ejbrdbmapping:ForwardFlattenedFKComposer" xmi:id="ForwardFlattenedFKComposer_2"/>
+      <inputs xmi:type="RDBSchema:RDBReferenceByKey" href="META-INF/Schema/JulyTrailcom_NULLID_opticalhops.tblxmi#FK_REF_49317_49317"/>
+      <outputs xmi:type="ejbext:EjbRelationshipRole" href="META-INF/ibm-ejb-jar-ext.xmi#OpticalHop_hopid"/>
+    </nested>
+    <inputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_opticalhops.tblxmi#opticalhops"/>
+    <outputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OpticalHop"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="Sitedoc2Hops_EJBMap">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="Sitedoc2Hops_PrimaryStrategy">
+      <table href="META-INF/Schema/JulyTrailcom_NULLID_sitedocs2hops.tblxmi#sitedocs2hops"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Sitedoc2Hops_sitedoc_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_sitedocs2hops.tblxmi#sitedoc"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Sitedoc2Hops_sitedoc"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Mapping_3">
+      <helper xmi:type="ejbrdbmapping:ForwardFlattenedFKComposer" xmi:id="ForwardFlattenedFKComposer_3"/>
+      <inputs xmi:type="RDBSchema:RDBReferenceByKey" href="META-INF/Schema/JulyTrailcom_NULLID_sitedocs2hops.tblxmi#FK_REF_140225_1402"/>
+      <outputs xmi:type="ejbext:EjbRelationshipRole" href="META-INF/ibm-ejb-jar-ext.xmi#Sitedoc2Hops_hop"/>
+    </nested>
+    <inputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_sitedocs2hops.tblxmi#sitedocs2hops"/>
+    <outputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sitedoc2Hops"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="HopLabel_EJBMap">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="HopLabel_PrimaryStrategy">
+      <table href="META-INF/Schema/JulyTrailcom_NULLID_hopslabel.tblxmi#hopslabel"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="HopLabel_hopslabelid_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hopslabel.tblxmi#hopslabelid"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#HopLabel_hopslabelid"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="HopLabel_hopsname_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_8">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hopslabel.tblxmi#hopsname"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#HopLabel_hopsname"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="HopLabel_hopsnamecomments_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_9">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hopslabel.tblxmi#hopsnamecomments"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#HopLabel_hopsnamecomments"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Mapping_4">
+      <helper xmi:type="ejbrdbmapping:ForwardFlattenedFKComposer" xmi:id="ForwardFlattenedFKComposer_4"/>
+      <inputs xmi:type="RDBSchema:RDBReferenceByKey" href="META-INF/Schema/JulyTrailcom_NULLID_hopslabel.tblxmi#FK_REF_49320_49320"/>
+      <outputs xmi:type="ejbext:EjbRelationshipRole" href="META-INF/ibm-ejb-jar-ext.xmi#HopLabel_hopid"/>
+    </nested>
+    <inputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_hopslabel.tblxmi#hopslabel"/>
+    <outputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#HopLabel"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="AddressSpace_EJBMap">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="AddressSpace_PrimaryStrategy">
+      <table href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#address_space"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressSpace_portid_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#portid"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressSpace_portid"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressSpace_activestate_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#activestate"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressSpace_activestate"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressSpace_address_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_10">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#address"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressSpace_address"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressSpace_disabletime_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#disabletime"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressSpace_disabletime"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressSpace_existstate_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#existstate"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressSpace_existstate"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressSpace_insegment_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#insegment"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressSpace_insegment"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressSpace_realconnect_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#realconnect"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressSpace_realconnect"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressSpace_storagecard_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#storagecard"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressSpace_storagecard"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Mapping_5">
+      <helper xmi:type="ejbrdbmapping:ForwardFlattenedFKComposer" xmi:id="ForwardFlattenedFKComposer_5"/>
+      <inputs xmi:type="RDBSchema:RDBReferenceByKey" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#FK_REF_49235_49235"/>
+      <outputs xmi:type="ejbext:EjbRelationshipRole" href="META-INF/ibm-ejb-jar-ext.xmi#AddressSpace_addressinfo"/>
+    </nested>
+    <inputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_address_space.tblxmi#address_space"/>
+    <outputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AddressSpace"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="Hop_EJBMap">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="Hop_PrimaryStrategy">
+      <table href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hops"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_siteid_endb_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#siteid_endb"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_siteid_endb"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_speed_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_11">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#speed"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_speed"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_equipmentid_endb_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#equipmentid_endb"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_equipmentid_endb"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_equipmentid_enda_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#equipmentid_enda"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_equipmentid_enda"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_hopsid_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hopsid"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_hopsid"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_abis_number_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_12">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#abis_number"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_abis_number"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_hopstype_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_13">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hopstype"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_hopstype"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_hopstate_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_14">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hopstate"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_hopstate"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_rezerv_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_15">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#rezerv"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_rezerv"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_expindate_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#expindate"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_expindate"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_beenetid_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_16">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#beenetid"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_beenetid"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_expoutdate_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#expoutdate"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_expoutdate"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_lease_info_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_17">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#lease_info"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_lease_info"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_permstatus_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_18">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#permstatus"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_permstatus"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_siteid_enda_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#siteid_enda"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_siteid_enda"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_modified_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#modified"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_modified"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_created_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#created"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_created"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_createdby_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#createdby"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_createdby"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Hop_modifiedby_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#modifiedby"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#Hop_modifiedby"/>
+    </nested>
+    <inputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hops"/>
+    <outputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Hop"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="AddressInfo2_EJBMap">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="AddressInfo2_PrimaryStrategy">
+      <table href="META-INF/Schema/JulyTrailcom_NULLID_address_info2.tblxmi#address_info2"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo2_addressportid_AttributeMap">
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info2.tblxmi#addressportid"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo2_addressportid"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="AddressInfo2_addressname_AttributeMap">
+      <helper xmi:type="ejbrdbmapping:EJBConverter" xmi:id="EJBConverter_19">
+        <targetClass href="java:/java.lang#String"/>
+        <transformerClass href="java:/com.ibm.vap.converters#VapTrimStringConverter"/>
+      </helper>
+      <inputs xmi:type="RDBSchema:RDBColumn" href="META-INF/Schema/JulyTrailcom_NULLID_address_info2.tblxmi#addressname"/>
+      <outputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#AddressInfo2_addressname"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="Mapping_6">
+      <helper xmi:type="ejbrdbmapping:ForwardFlattenedFKComposer" xmi:id="ForwardFlattenedFKComposer_6"/>
+      <inputs xmi:type="RDBSchema:RDBReferenceByKey" href="META-INF/Schema/JulyTrailcom_NULLID_address_info2.tblxmi#FK_REF_49230_49230"/>
+      <outputs xmi:type="ejbext:EjbRelationshipRole" href="META-INF/ibm-ejb-jar-ext.xmi#AddressInfo2_addressinfo"/>
+    </nested>
+    <inputs xmi:type="RDBSchema:RDBTable" href="META-INF/Schema/JulyTrailcom_NULLID_address_info2.tblxmi#address_info2"/>
+    <outputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#AddressInfo2"/>
+  </nested>
+  <inputs xmi:type="RDBSchema:RDBDatabase" href="META-INF/Schema/JulyTrailcom.dbxmi#JulyTrailcom"/>
+  <outputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoINFORMIX_V92TypeMaps.xmi#Java_to_INFORMIX_V92_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

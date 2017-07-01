@@ -1,0 +1,200 @@
+------Start of DE processing------ = [07.04.11 17:15:28:627 MSD] , key = java.lang.NullPointerException com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service 1901
+Exception = java.lang.NullPointerException
+Source = com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service
+probeid = 1901
+Stack Dump = java.lang.NullPointerException
+	at com.hps.july.web.util.ProcessProfile.updateSystemParameters(ProcessProfile.java(Compiled Code))
+	at com.hps.july.web.util.ProcessProfile.updateProfile(ProcessProfile.java:211)
+	at com.hps.july.web.util.JulyProfileTool.updateProfile(JulyProfileTool.java:131)
+	at com.hps.july.web.util.JulyProfileTool.executeProfiling(JulyProfileTool.java:83)
+	at com.hps.july.web.util.JulyNavigateTool.executeNavigate(JulyNavigateTool.java:64)
+	at com.hps.july.web.util.NavigatedAction.perform(NavigatedAction.java:113)
+	at com.hps.july.web.util.AbstractEditAction.perform(AbstractEditAction.java:43)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java(Compiled Code))
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java(Inlined Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java(Compiled Code))
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java(Compiled Code))
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java(Compiled Code))
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java(Compiled Code))
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java(Compiled Code))
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java(Compiled Code))
+
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.servlet.StrictServletInstance
+com.ibm.ws.webcontainer.servlet.StrictServletInstance@40d14361
+
+Exception = java.lang.NullPointerException
+Source = com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service
+probeid = 1901
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.servlet.StrictServletInstance
+  class$com$ibm$ws$webcontainer$servlet$StrictServletInstance = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@70ff4344
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@206043fa
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@37cb8379
+      soleInstance = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3f074379
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 85
+      clock = 85
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4a6d0378
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3f00c379
+      referent = [Ljava.lang.reflect.Field;@7fe90344
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@35a78374
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  _servicingCount = 0
+  _servletClassname = org.apache.struts.action.ActionServlet
+  _servletName = action
+  _servlet = 
+    lStrings = 
+      lookup = java.util.HashMap@e44837a
+      class$java$util$ResourceBundle = java.lang.Class@5c5ec2f3
+      locale = java.util.Locale@e51037a
+      parent = null
+      cacheList = sun.misc.SoftCache@13e9437b
+      DEFAULT_NOT_FOUND = -1
+      underConstruction = java.util.Hashtable@1397c37b
+      MAX_BUNDLES_SEARCHED = 3
+      CACHE_LOAD_FACTOR = 1.0
+      INITIAL_CACHE_SIZE = 25
+      cacheKey = java.util.ResourceBundle$ResourceCacheKey@13b6437b
+    LSTRING_FILE = javax.servlet.http.LocalStrings
+    HEADER_LASTMOD = Last-Modified
+    HEADER_IFMODSINCE = If-Modified-Since
+    METHOD_TRACE = TRACE
+    METHOD_PUT = PUT
+    METHOD_POST = POST
+    METHOD_OPTIONS = OPTIONS
+    METHOD_GET = GET
+    METHOD_HEAD = HEAD
+    METHOD_DELETE = DELETE
+    config = this._config
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.webcontainer.servlet.StrictServletInstance
+  syncObject = java.lang.Object@40d0c361
+  servicingCount = 1
+  _implementsSTM = false
+  _config = 
+    _servletName = action
+    _initParams = 
+      hexDigit[16] = {0123456789ABCDEF}
+      whiteSpaceChars =  	
+
+      specialSaveChars = =: 	
+#!
+      strictKeyValueSeparators = =:
+      keyValueSeparators = =: 	
+
+      defaults = null
+      serialVersionUID = 4112578634029874840
+      class$java$util$Hashtable$Entry = java.lang.Class@26edc3fa
+      emptyIterator = java.util.Hashtable$EmptyIterator@3f350379
+      emptyEnumerator = java.util.Hashtable$EmptyEnumerator@3f358379
+      ENTRIES = 2
+      VALUES = 1
+      KEYS = 0
+      values = null
+      entrySet = null
+      keySet = null
+      modCount = 6
+      loadFactor = 0.75
+      threshold = 8
+      count = 6
+      table = [Ljava.util.Hashtable$Entry;@40f64361
+    _servletContext = com.ibm.ws.webcontainer.webapp.WebApp@4e8dc36f
+  _unavailableUntil = -1
+  _servicingState = 
+    _instance = this._servicingState
+  _state = 
+    _instance = this._state
+  PERMANENTLY_UNAVAILABLE_FOR_SERVICE_STATE = 
+    _instance = this.PERMANENTLY_UNAVAILABLE_FOR_SERVICE_STATE
+  UNAVAILABLE_FOR_SERVICE_STATE = 
+    _instance = this.UNAVAILABLE_FOR_SERVICE_STATE
+  AVAILABLE_FOR_SERVICE_STATE = this._servicingState
+  ERROR_STATE = 
+    _instance = this.ERROR_STATE
+  DESTROYED_STATE = 
+    _instance = this.DESTROYED_STATE
+  DESTROYING_STATE = 
+    _instance = this.DESTROYING_STATE
+  STM_SERVICING_STATE = 
+    _instance = this.STM_SERVICING_STATE
+  SERVICING_STATE = this._state
+  IDLE_STATE = 
+    _instance = this.IDLE_STATE
+  INITIALIZING_STATE = 
+    _instance = this.PRE_INITIALIZED_STATE
+  PRE_INITIALIZED_STATE = 
+    _instance = this.PRE_INITIALIZED_STATE
+

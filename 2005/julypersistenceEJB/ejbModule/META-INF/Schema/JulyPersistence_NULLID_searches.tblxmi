@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="searches" name="searches" primaryKey="searches_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="searchgroupping" name="searchgroupping">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986336">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="organization" name="organization">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986337">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="order" name="order" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986338">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="searchgroup" name="searchgroup">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986339">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="searches_1" name="searches" members="organization searchgroup" constraint="SQLConstraint_1131634986336"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_10645_10645" name="FK_REF_10645_10645" members="searchgroup" constraint="SQLConstraint_1131634986337">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_searchgroups.tblxmi#searchgroups_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_7410_7410" name="FK_REF_7410_7410" members="searchgroupping" constraint="SQLConstraint_1131634986338">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_searchgroupping.tblxmi#searchgroupping_2"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_7414_7414" name="FK_REF_7414_7414" members="organization" constraint="SQLConstraint_1131634986339">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_organizations.tblxmi#organizations_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986336" name="searches" type="PRIMARYKEY" primaryKey="searches_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986337" name="FK_REF_10645_10645" type="FOREIGNKEY" referenceByKey="FK_REF_10645_10645"/>
+  <constraints xmi:id="SQLConstraint_1131634986338" name="FK_REF_7410_7410" type="FOREIGNKEY" referenceByKey="FK_REF_7410_7410"/>
+  <constraints xmi:id="SQLConstraint_1131634986339" name="FK_REF_7414_7414" type="FOREIGNKEY" referenceByKey="FK_REF_7414_7414"/>
+</RDBSchema:RDBTable>

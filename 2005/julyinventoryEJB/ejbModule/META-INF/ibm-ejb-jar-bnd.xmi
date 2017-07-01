@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmi:id="ejb-jar_ID_Binding">
+  <defaultDatasource xmi:id="ResourceRefBinding_1132238237298" jndiName="july"/>
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="AfsActProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/AfsActProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AfsActProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="AssemblingActProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/AssemblingActProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#AssemblingActProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ChangeActProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/ChangeActProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ChangeActProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ContractFinder_Binding" jndiName="com/hps/july/inventory/sessionbean/ContractFinder">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractFinder"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ContractSuppliesInfo_Binding" jndiName="com/hps/july/inventory/sessionbean/ContractSuppliesInfo">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ContractSuppliesInfo"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="CurrencySumProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/CurrencySumProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CurrencySumProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="DocumentPreprocessor_Binding" jndiName="com/hps/july/inventory/sessionbean/DocumentPreprocessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentPreprocessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="DocumentProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/DocumentProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DocumentProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="FaultReportProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/FaultReportProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#FaultReportProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="I13nActProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/I13nActProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#I13nActProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="InWayBillProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/InWayBillProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#InWayBillProcessor"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="Party_Binding" jndiName="com/hps/july/inventory/sessionbean/Party">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Party"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="ProcessorFacade_Binding" jndiName="com/hps/july/inventory/sessionbean/ProcessorFacade">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ProcessorFacade"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="RealDocumentProcessor_Binding" jndiName="com/hps/july/inventory/sessionbean/RealDocumentProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#RealDocumentProcessor"/>
+  </ejbBindings>
+</ejbbnd:EJBJarBinding>

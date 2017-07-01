@@ -1,0 +1,27 @@
+label.menu.root=Основное меню
+label.menu.login=Задачи
+label.menu.logout=Выход
+label.menu.reregister=Перерегистрация
+label.registration=Регистрация в системе
+errors.header=ОШИБКА!
+error.notasks=Нет задач, доступных оператору
+error.someshit=Попробуйте позже и вызовите системного администратора.
+button.submit=Отправить
+button.confirm=Подтвердить
+button.reset=Сбросить
+button.cancel=Отмена
+button.save=Сохранить
+button.login=Регистрация
+button.exit=Отказ и выход из системы
+button.logout=Ок
+label.edit=Изменить запись
+label.login.id=Пользователь
+label.login.psw=Пароль
+label.logout.id=Завершить работу с системой ?
+label.reregister.id=Войти в систему под другим именем ?
+label.tasks=Задачи, доступные оператору
+error.invalid.login=Неверно заданы имя пользователя и/или пароль. Повторите регистрацию. <BR>Внимание! Заглавные и строчные буквы в имени пользователя и в пароле различаются.
+error.referenced=Удаление записи не возможно, т.к. на нее есть ссылки в БД. За разъяснениями обратитесь к системному администратору.
+label.norecords=По указанным условиям поиска записей не найдено
+label.wasposted=Запрос уже отправлен на сервер
+#eof

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulemap:EARProjectMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:application="application.xmi" xmlns:modulemap="modulemap.xmi" xmi:id="EARProjectMap_1131634815450">
+  <mappings xmi:id="ModuleMapping_1131634815450" projectName="julypersistenceEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131634815450"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131635738568" projectName="julypersistence2EJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131635738568"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131635781334" projectName="julyjdbcEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131635781334"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131635823390" projectName="julyarendaEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131635823390"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131635841568" projectName="julyarendabillingEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131635841568"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131635868570" projectName="julycommonEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131635868570"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131645503678" projectName="julyinventoryEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131645503678"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131645526142" projectName="JulyJournalEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131645526142"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131645545553" projectName="julyorganizerEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131645545553"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131645568689" projectName="julyplatinumEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131645568689"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1131645591675" projectName="julytrailcomEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1131645591675"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1132592834050" projectName="organizer">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1132592834050"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1132833315718" projectName="arenda">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1132833315718"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1132833315719" projectName="basestation">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1132833315719"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1132833315735" projectName="security">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1132833315735"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1132833315736" projectName="siteinfo">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1132833315736"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1133160877000" projectName="dictionary">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1133160877000"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1133162258437" projectName="inventory">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1133162258437"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1151932677812" projectName="julyConfigEJB">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1151932677812"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1162992259375" projectName="sitedoc">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1162992259375"/>
+  </mappings>
+  <utilityJARMappings xmi:id="UtilityJARMapping_1132909313562" projectName="common" uri="common.jar"/>
+  <utilityJARMappings xmi:id="UtilityJARMapping_1132911367156" projectName="webcommon" uri="webcommon.jar"/>
+</modulemap:EARProjectMap>

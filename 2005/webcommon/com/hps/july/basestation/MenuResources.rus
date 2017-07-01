@@ -1,0 +1,65 @@
+View=Просмотр
+Edit=Изменить
+Add=Добавить
+Delete=Удалить
+
+bs=Базовая станция
+bs.view=Просмотр БС
+bs.delete=Удалить БС
+bs.edit=Изменить БС
+bs.add=Добавить БС
+
+switch=Коммутатор
+switch.view=Просмотр коммутатора
+switch.delete=Удалить коммутатор
+switch.edit=Изменить коммутатор
+switch.add=Добавить коммутатор
+
+comline=Линии связи
+comline.add=Добавить линию связи
+comline.delete=Удалить линию связи
+comline.edit=Изменить линию связи
+comline.add=Добавить линию связи
+
+controller=Контроллер
+controller.view=Просмотр контроллера
+controller.delete=Удалить контроллер
+controller.edit=Изменить контроллер
+controller.add=Добавить контроллер
+
+repeater=Репитер
+repeater.view=Просмотр репитера
+repeater.delete=Удалить репитер
+repeater.edit=Изменить репитер
+repeater.add=Добавить репитер
+
+sector=Сектор
+sector.view=Просмотр сектора
+sector.edit=Изменить сектор
+sector.add=Добавить сектор
+sector.delete=Удалить сектор
+
+antenna=Антенна
+antenna.view=Просмотр антенны
+antenna.edit=Изменить антенну
+antenna.add=Добавить антенну
+antenna.delete=Удалить антенну
+
+sector.repeater.list=Репитерные позиции сектора
+repeater=Репитер
+
+repeater.list=Список репитеров
+sector_antenna.list=Сектора и АФС
+
+antenna.choice.list=Выбор антенн
+
+
+switch.desc=Эксплуатационные х-ки
+switch.desc.param.edit=Изменить параметр
+
+equipdet.list=Состав
+equipsdet.list=Встроенные блоки
+
+
+
+

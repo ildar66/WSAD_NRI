@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="sitedocs2hops" name="sitedocs2hops" primaryKey="sitedocs2hops_1">
+  <database href="META-INF/Schema/JulyTrailcom.dbxmi#JulyTrailcom"/>
+  <schema href="META-INF/Schema/JulyTrailcom_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sitedoc" name="sitedoc">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594439">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="hopsid" name="hopsid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131645594440">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="sitedocs2hops_1" name="sitedocs2hops" members="sitedoc hopsid" constraint="SQLConstraint_1131645594439"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_140225_1402" name="FK_REF_140225_1402" members="hopsid" constraint="SQLConstraint_1131645594440">
+    <target href="META-INF/Schema/JulyTrailcom_NULLID_hops.tblxmi#hops_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131645594439" name="sitedocs2hops" type="PRIMARYKEY" primaryKey="sitedocs2hops_1"/>
+  <constraints xmi:id="SQLConstraint_1131645594440" name="FK_REF_140225_1402" type="FOREIGNKEY" referenceByKey="FK_REF_140225_1402"/>
+</RDBSchema:RDBTable>

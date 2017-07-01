@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="papdoc2pos" name="papdoc2pos" primaryKey="papdoc2pos_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="papdocument" name="papdocument">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986286">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="storageplace" name="storageplace">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986287">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="papdoc2pos_1" name="papdoc2pos" members="papdocument storageplace" constraint="SQLConstraint_1131634986286"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_58719_58719" name="FK_REF_58719_58719" members="papdocument" constraint="SQLConstraint_1131634986287">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_papdocuments.tblxmi#papdocuments_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_58722_58722" name="FK_REF_58722_58722" members="storageplace" constraint="SQLConstraint_1131634986288">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_positions.tblxmi#positions_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986286" name="papdoc2pos" type="PRIMARYKEY" primaryKey="papdoc2pos_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986287" name="FK_REF_58719_58719" type="FOREIGNKEY" referenceByKey="FK_REF_58719_58719"/>
+  <constraints xmi:id="SQLConstraint_1131634986288" name="FK_REF_58722_58722" type="FOREIGNKEY" referenceByKey="FK_REF_58722_58722"/>
+</RDBSchema:RDBTable>

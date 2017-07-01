@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leasechargerules" name="leasechargerules" primaryKey="leasechargerules_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leaserule" name="leaserule">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986626">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="resource" name="resource">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986627">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="currency" name="currency">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986628">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="summ" name="summ">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1131634986626" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="chargeperiod" name="chargeperiod">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986626" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="chargedaterule" name="chargedaterule">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986627" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leasechargerules_1" name="leasechargerules" members="leaserule" constraint="SQLConstraint_1131634986626">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasecharges.tblxmi#FK_REF_24031_24031"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_CRULR_15358" name="FK_REF_CRULR_15358" members="resource" constraint="SQLConstraint_1131634986627">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_resources.tblxmi#resources_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_CRULC_15377" name="FK_REF_CRULC_15377" members="currency" constraint="SQLConstraint_1131634986628">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_currencies.tblxmi#currencies_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_crulr_15250" name="fk_ref_crulr_15250" members="leaserule" constraint="SQLConstraint_1131634986629">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leaserules.tblxmi#leaserules_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986626" name="leasechargerules" type="PRIMARYKEY" primaryKey="leasechargerules_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986627" name="FK_REF_CRULR_15358" type="FOREIGNKEY" referenceByKey="FK_REF_CRULR_15358"/>
+  <constraints xmi:id="SQLConstraint_1131634986628" name="FK_REF_CRULC_15377" type="FOREIGNKEY" referenceByKey="FK_REF_CRULC_15377"/>
+  <constraints xmi:id="SQLConstraint_1131634986629" name="fk_ref_crulr_15250" type="FOREIGNKEY" referenceByKey="fk_ref_crulr_15250"/>
+</RDBSchema:RDBTable>

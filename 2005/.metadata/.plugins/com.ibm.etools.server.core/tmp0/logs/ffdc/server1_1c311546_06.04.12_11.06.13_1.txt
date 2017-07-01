@@ -1,0 +1,91 @@
+------Start of DE processing------ = [06.04.12 11:06:13:445 MSD] , key = java.rmi.NoSuchObjectException com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate 124
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate
+probeid = 124
+Stack Dump = java.rmi.NoSuchObjectException: 
+	at com.ibm.ejs.container.ContainerManagedBeanO.load(ContainerManagedBeanO.java:978)
+	at com.ibm.ejs.container.ContainerManagedBeanO.loadForEnlist(ContainerManagedBeanO.java:921)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean(EJSHome.java:1164)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPResourceTypeBean_482c8901.findByPrimaryKey(EJSJDBCPersisterCMPResourceTypeBean_482c8901.java:269)
+	at com.hps.july.persistence.EJSCMPResourceTypeHomeBean_482c8901.findByPrimaryKey(EJSCMPResourceTypeHomeBean_482c8901.java:98)
+	at com.hps.july.persistence.EJSRemoteCMPResourceTypeHome_482c8901.findByPrimaryKey(EJSRemoteCMPResourceTypeHome_482c8901.java:97)
+	at com.hps.july.persistence._ResourceTypeHome_Stub.findByPrimaryKey(_ResourceTypeHome_Stub.java:370)
+	at com.hps.july.persistence.ResourceTypeAccessBean.instantiateEJB(ResourceTypeAccessBean.java:134)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean._instantiate(AbstractEntityAccessBean.java:165)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean.refreshCopyHelper(AbstractEntityAccessBean.java:304)
+	at com.hps.july.persistence.ResourceTypeAccessBean.refreshCopyHelper(ResourceTypeAccessBean.java:190)
+	at com.hps.july.dictionary.actionbean.ShowTaxListAction.perform(ShowTaxListAction.java:39)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.activator.OptCEntityActivationStrategy
+com.ibm.ejs.container.activator.OptCEntityActivationStrategy@532b5541
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Wed Apr 12 11:06:13 MSD 2006
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@231bd546
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = july#julypersistenceEJB.jar#ResourceType
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 1.1
+                                 CMP Version    = 1.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=0
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@52225569
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@52385569#tid=66
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = true
+  Isolation Level         = TRANSACTION_READ_COMMITTED
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@52225569
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Wed Apr 12 11:06:13 MSD 2006

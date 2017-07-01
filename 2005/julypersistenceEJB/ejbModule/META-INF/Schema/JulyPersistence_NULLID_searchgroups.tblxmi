@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="searchgroups" name="searchgroups" primaryKey="searchgroups_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="searchgroup" name="searchgroup">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986737">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="name" name="name">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986737" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="searchgroups_1" name="searchgroups" members="searchgroup" constraint="SQLConstraint_1131634986737">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_searchgroupping.tblxmi#FK_REF_7398_7398"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_searches.tblxmi#FK_REF_10645_10645"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986737" name="searchgroups" type="PRIMARYKEY" primaryKey="searchgroups_1"/>
+</RDBSchema:RDBTable>

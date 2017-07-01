@@ -1,0 +1,370 @@
+Manifest-Version: 1.0
+Class-Path: julypersistenceEJB.jar 
+ julycommonEJB.jar 
+ julyjdbcEJB.jar
+
+Name: com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessor.ja
+ va
+Digest-Algorithms: SHA MD5
+SHA-Digest: J617Ct5ZD3lyWl6VWhItECUR5fo=
+MD5-Digest: sL4w4OIAeXwDb6d54PKu2A==
+
+Name: META-INF/ibm-ejb-jar-bnd.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1PMG3BttLtvSDqPbMpgJuG2O8gw=
+MD5-Digest: ac8pzClXsQRx15zYWobPhg==
+
+Name: com/hps/july/arenda/sessionbean/ArendaRuleProcessorBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3hmli2TbWdypI7M38M7ZZOn+jII=
+MD5-Digest: V6O/njKGoXukktixLAZ4tg==
+
+Name: com/hps/july/arenda/sessionbean/ArendaTransactionMethodAccessBea
+ n.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: q6ImmRgWJ3/09plAhCUVd0pSSX0=
+MD5-Digest: JytVU+h4qzZHy4LEAUmjsg==
+Java-Bean: True
+
+Name: com/hps/july/arenda/sessionbean/ArendaRuleProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: w8sLfgSZxpPaH01BqEwsbO5En+A=
+MD5-Digest: qL1jTuhB+NkAXp7CSjE5lQ==
+
+Name: com/hps/july/arenda/sessionbean/LeaseSaldoProcessorAccessBean.cl
+ ass
+Digest-Algorithms: SHA MD5
+SHA-Digest: /IOUPBvjiC+hnKgUuAcz2+Rm6A4=
+MD5-Digest: WY2V5v55/65oN1MX+k3Z2A==
+Java-Bean: True
+
+Name: META-INF/ibm-ejb-access-bean.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: G7vg79S/EaYA4fgXw3vEBLyGC+Y=
+MD5-Digest: AeL+hHN8H1PcKiGYLjzJzA==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: JeOXIFs0JwlMytVAUbYxeAx7hsA=
+MD5-Digest: BmO8lqncmH0TK6KfoWis5g==
+
+Name: com/hps/july/arenda/sessionbean/Journal.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: pF1OWAW4VbHHwJoVo7R0CiZaV6E=
+MD5-Digest: WtwzbR2jhs/SDkxi5U9+0g==
+
+Name: com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessorBea
+ n.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8pi++V4whSEJ9D55FCXzGFq1Prg=
+MD5-Digest: 8+85MvmkZ4J5WpaxZnQONQ==
+
+Name: com/hps/july/arenda/sessionbean/ArendaTransactionMethodHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: QONSOQbyox4KiaELq4nH8KeMvPI=
+MD5-Digest: M7RNNjhWbMxiP7ZdAzI3tA==
+
+Name: com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessorAcc
+ essBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: fk868h/MARqi8UstdXWuxyffrVc=
+MD5-Digest: zWpgllwXK+CszjgoXjlaXg==
+
+Name: com/hps/july/arenda/sessionbean/JournalBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: sV5KK85QPjUrj6rHZHc3GJ6zwl8=
+MD5-Digest: m1FuFKiFW02KFwpU35dkiw==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentProcessorAccessBea
+ n.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: sbiL46Fdz+FyGr9VsElCAfRuSb4=
+MD5-Digest: RoitHqADnyyVAkcLvkPO2Q==
+Java-Bean: True
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethodH
+ ome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ssstt1Su+1BJokDFiuBZTNxpjJk=
+MD5-Digest: WXXdIuNTEziPYpinKqcdVA==
+
+Name: com/hps/july/arenda/sessionbean/ArendaTransactionMethod.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: l3sbMxuo5kv/tmC0FSKVklU2ny8=
+MD5-Digest: V+EnSKmzUpI+z6yPqxtjSQ==
+
+Name: com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessorBea
+ n.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: I4N7nFyBkc5jHzCFCd6PgFVavUM=
+MD5-Digest: sAC9if4qPBGnGjlrCmOMeA==
+
+Name: com/hps/july/arenda/sessionbean/ArendaTransactionMethodAccessBea
+ n.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Z0rb6cAB2+99NpC6B1CQuPrHc7w=
+MD5-Digest: 8uw0xE2YJe6fp5md7ya3lg==
+
+Name: META-INF/ejb-jar.xml
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1tY7Gl7bh5Azzwd1NUycUmDwKgc=
+MD5-Digest: INW+xdXQeAz1Ad2QGms0/g==
+
+Name: com/hps/july/arenda/sessionbean/CalculateArendaActBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: qXKFUHZkOolYr7EBzvfomCifsCg=
+MD5-Digest: /qwjK6u1GmZGZfBv/c2Wzw==
+
+Name: com/hps/july/arenda/sessionbean/CalculateArendaActHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: i0zz4Cf0cuR6sfXLZkz+48Tf3eY=
+MD5-Digest: mqO+Q+KC+6c159+xdJeHBw==
+
+Name: com/hps/july/arenda/sessionbean/ArendaTransactionMethodHome.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: CxOLqz6Gg23cUbg25y6pxa5OwHk=
+MD5-Digest: U3UX/lqIWE2Z8HZghoIPFA==
+
+Name: com/hps/july/arenda/sessionbean/CalculateArendaAct.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: srriq060KxCrOzEfpxJVs0+ekQc=
+MD5-Digest: QP0gsmWNszxXnZosQnDUpA==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentProcessorBean.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: PC2QhszouGqbjBBY4OnXXTbDgH4=
+MD5-Digest: m09Vzyuk3+Yv6QmCRppDbw==
+
+Name: com/hps/july/arenda/sessionbean/LeaseSaldoProcessorBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3bwQVp0LLn+2V0JNjf9qRY3UYyc=
+MD5-Digest: Q1mcTl9qrY+OyVYAjQDvow==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethodA
+ ccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: UFLr91K3SfONm+Mybwdi2AngHgQ=
+MD5-Digest: 9vAPNlT0EMHhI9xsaE4yOg==
+
+Name: com/hps/july/arenda/sessionbean/LeaseSaldoProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: F9UFtc1xgvlKT4PN4ydS2uteSCU=
+MD5-Digest: /uCEctYoa8y57AD0XBKKww==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: J7uKHkQhk0edeq3l/5ppqR7rb5s=
+MD5-Digest: HMPi3+xkjDySUJfp9ZENnQ==
+
+Name: com/hps/july/arenda/sessionbean/JournalBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: /mlQt8AaaMaFC/oGPl5CZvDpe9Y=
+MD5-Digest: a8gYhP6aXc1HUJpAhRtyFA==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethod.
+ java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4V2n5ghWBQhrUzpJP2J37Xvonu0=
+MD5-Digest: 5Y1HAgAoJyn4jyY1wv3oVA==
+
+Name: com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessor.cl
+ ass
+Digest-Algorithms: SHA MD5
+SHA-Digest: oqdR96O8ElDPwKszaUc9J6+WZKw=
+MD5-Digest: feiMVXkfMLk5CHrmKjaaEw==
+
+Name: com/hps/july/arenda/sessionbean/CalculateArendaActAccessBean.jav
+ a
+Digest-Algorithms: SHA MD5
+SHA-Digest: KmP4nTJDrguEtL5fUSMkeuExj7c=
+MD5-Digest: I0J++Cg+4RFO3u/tl/wUuw==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethodA
+ ccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: mdObEiR/Go9N6KN+0c1TXl/4k7g=
+MD5-Digest: SjV3b4HGgCifE+zCsXHBsQ==
+Java-Bean: True
+
+Name: com/hps/july/arenda/sessionbean/ArendaRuleProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: H7KdixUGR4yJ5ZqPw2dAwuleDUE=
+MD5-Digest: CmllPmSyshP/AE85nzh8Mw==
+
+Name: com/hps/july/arenda/sessionbean/CalculateArendaActAccessBean.cla
+ ss
+Digest-Algorithms: SHA MD5
+SHA-Digest: ZpTL9E6LNlrmK98TbK1S/Y5KF6E=
+MD5-Digest: PuwihUwGPnt4zKOhlIcbpg==
+Java-Bean: True
+
+Name: com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessorAcc
+ essBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Fa8v5EuS0MY7TsmTqlDTuznUJbY=
+MD5-Digest: JgI03kARGVAKv8Q7EwFIgA==
+Java-Bean: True
+
+Name: com/hps/july/arenda/sessionbean/ArendaTransactionMethodBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: /L1TAowBs9Nz70EqBAHCBCpCiIA=
+MD5-Digest: cA0u7On1czaNUFOvoud64g==
+
+Name: com/hps/july/arenda/sessionbean/ArendaRuleProcessorHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: gHZLvGC8JNI+lUsZR/Cv+PB9eR8=
+MD5-Digest: LJ28Vb5WeEeyuQlo4E7cbQ==
+
+Name: com/hps/july/arenda/sessionbean/LeaseSaldoProcessorHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: LYNlm9xgBmrHOHKWcTb6h5TyIg0=
+MD5-Digest: /HaBBWsGskki4NUXXVECGw==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6c/j43g6Jr+yFhjimuj/Ju6sjB4=
+MD5-Digest: wz+4kzhC/zqzVU3JxHTV7Q==
+
+Name: com/hps/july/arenda/sessionbean/CalculateArendaAct.class
+MD5-Digest: egIQKlrDDA6CzXhhpAa0Lw==
+SHA-Digest: vPISQTkZvuc4O02HO4r1RFUZXqY=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessorHom
+ e.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: O2F9rTGVwa3hMQc2iaxe3YDQjQA=
+MD5-Digest: tXjBcJ7bm0CpEABo242Z1g==
+
+Name: com/hps/july/arenda/sessionbean/Journal.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: kiJCb8zW+kZ7ExVFyjS8Ij17tUk=
+MD5-Digest: mxQvLmWG5zE2HxNvYHT+EA==
+
+Name: com/hps/july/arenda/sessionbean/JournalAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Lcl5TccXH8WEs4SxExE3Z/Pm3XM=
+MD5-Digest: bOFDbABEBTCjf9gbj92Nvw==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethodH
+ ome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: sbQyxMyIacqpNQy3n6Zan0ydOaM=
+MD5-Digest: 3MQClmqS8uLurH7k2j0aew==
+
+Name: com/hps/july/arenda/sessionbean/ArendaTransactionMethod.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: PX7J01uG0/xvNIfehc5prqFiBnM=
+MD5-Digest: aI37XuCAH+0TnxoqTl1J6A==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1+huhRd/t1XS2wVPj/gDwW/311o=
+MD5-Digest: 5TKalWihEueO3FnYWcGeeQ==
+
+Name: com/hps/july/arenda/sessionbean/JournalAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: MrIWoSRpCSJHVcdKC7mlsnYEM5E=
+MD5-Digest: pyXapf3d8bzF7Ew624LdSg==
+Java-Bean: True
+
+Name: com/hps/july/arenda/sessionbean/ArendaRuleProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ErSC86EJ4YUMip3d96h9jyEVI3Q=
+MD5-Digest: UMjmCVqHov+XbzxqnfYYDw==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentProcessorHome.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: uX4NJr526p97j6+qzUbBWXjkous=
+MD5-Digest: pvCcsHkiHWCol919xXeIgw==
+
+Name: com/hps/july/arenda/sessionbean/LeaseSaldoProcessorHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: nmYHZuzBaBxKxyNvnaj2bO7J5po=
+MD5-Digest: lf2xNz/NdNeM9ej5WdgV7w==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethod.
+ class
+Digest-Algorithms: SHA MD5
+SHA-Digest: tpV0SXS3ObMUhwcNw/iN/SnrYSA=
+MD5-Digest: FJmv2qX6JvkQlW6jGpS+7g==
+
+Name: com/hps/july/arenda/sessionbean/JournalHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: zVGw40K/E3MPkDKcs015zzegcJc=
+MD5-Digest: k4UVE71b8LAE/xl0NtHzhA==
+
+Name: com/hps/july/arenda/sessionbean/LeaseSaldoProcessorBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8bXoNNT2C1SDCQt79lWeJpZwB1I=
+MD5-Digest: KTkAPlppFi0c3RHYb9wzRA==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethodB
+ ean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: r84YP5opDiyGl2rTgmlUZJ04NJQ=
+MD5-Digest: twgyW0hKv07JJSN2h8yOew==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentProcessorAccessBea
+ n.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1LgTYQ2gzlJf6kZsd3D5U8ru2S4=
+MD5-Digest: 8B1ntDzaxV8+D89RSsPbWQ==
+
+Name: com/hps/july/arenda/sessionbean/ArendaRuleProcessor.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: NcTlPO/l1Yvjmh65Du3IzAEpWJA=
+MD5-Digest: 46FDm0SG7rEMU9h6pmpnOA==
+
+Name: META-INF/ibm-ejb-jar-ext.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: pHOHKfMInraqLcpeiQFwWADi/zY=
+MD5-Digest: Jt7csa7sufZ5PiEtR/xj+w==
+
+Name: com/hps/july/arenda/sessionbean/LeaseSaldoProcessorAccessBean.ja
+ va
+Digest-Algorithms: SHA MD5
+SHA-Digest: JqNzvLcr7QWSRCTPWdmSoVDIqu0=
+MD5-Digest: R43VfvgZ/KnbqgxABmH6aA==
+
+Name: com/hps/july/arenda/sessionbean/CalculateArendaActBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: dpCus7lnlCIftHkr3BpxgS6Iv8E=
+MD5-Digest: Miw3X9DYWnzEdpjSBl1D4w==
+
+Name: com/hps/july/arenda/sessionbean/ArendaTransactionMethodBean.clas
+ s
+Digest-Algorithms: SHA MD5
+SHA-Digest: c+fOv9ppUOp7/6VdaKCUmau/Erg=
+MD5-Digest: qhg5TBimSraZizhbUbxftA==
+
+Name: com/hps/july/arenda/sessionbean/LeaseSaldoProcessor.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: CJH+lJHiA7AEIWpygaKevTn+uTw=
+MD5-Digest: iIsZVO1MYDnKM6QFrYF7CA==
+
+Name: com/hps/july/arenda/sessionbean/JournalHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: x+162ZKrpeIYlaQsIY9qDRJF8oI=
+MD5-Digest: TJGTQN+mvEFzu6lID+NAog==
+
+Name: com/hps/july/arenda/sessionbean/ArendaDocumentTransactionMethodB
+ ean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: sdiKuyCgNegZUuOHS7z6gbNJCxc=
+MD5-Digest: 5OBRAYoNCBiLk00/PnCoiw==
+
+Name: com/hps/july/arenda/sessionbean/LeaseArendaAgreementProcessorHom
+ e.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: pB60DW11TpWLM97MwnEhgXxt6v8=
+MD5-Digest: MkJvux/OEW14CmuA0YJ4Ew==
+
+Name: com/hps/july/arenda/sessionbean/CalculateArendaActHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: LCCsWssb0uaK7LCn+Q46NWNFitM=
+MD5-Digest: UU+OzheOnR5S2iKBqAm75A==
+

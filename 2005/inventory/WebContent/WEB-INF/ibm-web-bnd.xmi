@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp"/>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761328" jndiName="com/hps/july/persistence/DocumentPosition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761329" jndiName="com/hps/july/persistence/Company">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_2"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761330" jndiName="com/hps/july/persistence/EquipmentSet">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_3"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761331" jndiName="com/hps/july/persistence/Contract">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_4"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761332" jndiName="com/hps/july/persistence/Organization">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_5"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761333" jndiName="com/hps/july/persistence/Division">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_6"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761334" jndiName="com/hps/july/persistence/StorageCard">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_7"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761335" jndiName="com/hps/july/persistence/Expedition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_8"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761336" jndiName="com/hps/july/persistence/InwayBill">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_9"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761337" jndiName="com/hps/july/persistence/InWayBillPosition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_10"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761338" jndiName="com/hps/july/persistence/InWayBillBLOB">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_11"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761339" jndiName="com/hps/july/persistence/I13nActPosition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_12"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761340" jndiName="com/hps/july/persistence/I13nAct">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_13"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761341" jndiName="com/hps/july/persistence/I13nActResourceSet">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_14"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761342" jndiName="com/hps/july/persistence/I13nDateSaving">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_15"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761343" jndiName="com/hps/july/persistence/InternalOutBill">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_16"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761344" jndiName="com/hps/july/persistence/OuterDocPosition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_17"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761345" jndiName="com/hps/july/persistence/Position">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_18"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761346" jndiName="com/hps/july/persistence/Resource">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_19"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761347" jndiName="com/hps/july/persistence/ResourceSet">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_20"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761348" jndiName="com/hps/july/persistence/ResourceSubType">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_21"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761349" jndiName="com/hps/july/persistence/ResourceType">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_22"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761350" jndiName="com/hps/july/persistence/Storage">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_23"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761351" jndiName="com/hps/july/persistence/Worker">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_24"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761352" jndiName="com/hps/july/persistence/Complect">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_25"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761353" jndiName="com/hps/july/persistence/Currency">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_26"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761354" jndiName="com/hps/july/persistence/Document">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_27"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761355" jndiName="com/hps/july/persistence/Unit">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_28"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761356" jndiName="com/hps/july/persistence/People">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_29"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761357" jndiName="com/hps/july/inventory/sessionbean/DocumentProcessor">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_30"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761358" jndiName="com/hps/july/inventory/sessionbean/I13nActProcessor">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_31"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761359" jndiName="com/hps/july/persistence/ChangeAct">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_32"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761360" jndiName="com/hps/july/persistence/ChangeActPosition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_33"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761361" jndiName="com/hps/july/persistence/InternalWayBill">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_34"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761362" jndiName="com/hps/july/persistence/InternalWayBillPosition">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_35"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761363" jndiName="com/hps/july/persistence/OutWayBill">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_36"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761364" jndiName="com/hps/july/persistence/AssemblingAct">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_37"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761365" jndiName="com/hps/july/inventory/sessionbean/ChangeActProcessor">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_38"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761366" jndiName="com/hps/july/persistence/PayOffAct">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_39"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761367" jndiName="com/hps/july/persistence/Request">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_40"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761368" jndiName="com/hps/july/persistence/InventoryNumbers">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_42"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761369" jndiName="com/hps/july/persistence/AfsMountAct">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_43"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761370" jndiName="com/hps/july/persistence/AfsMountPos">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_44"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1133167761371" jndiName="com/hps/july/persistence/FaultReport">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1133167761343"/>
+  </ejbRefBindings>
+</webappbnd:WebAppBinding>

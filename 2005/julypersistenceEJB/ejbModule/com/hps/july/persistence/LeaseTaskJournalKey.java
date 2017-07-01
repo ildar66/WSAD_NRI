@@ -1,0 +1,44 @@
+package com.hps.july.persistence;
+
+public class LeaseTaskJournalKey implements java.io.Serializable {
+	private final static long serialVersionUID = 3206093459760846163L;
+	public int taskjournal;
+
+/**
+ * Default constructor
+ */
+/* WARNING: THIS METHOD WILL BE REGENERATED. */
+public LeaseTaskJournalKey() {
+	super();
+}
+/**
+ * Initialize a key from the passed values
+ * @param argTaskjournal int
+ */
+/* WARNING: THIS METHOD WILL BE REGENERATED. */
+public LeaseTaskJournalKey(int argTaskjournal) {
+	taskjournal = argTaskjournal;
+}
+/**
+ * equals method
+ * @return boolean
+ * @param o java.lang.Object
+ */
+/* WARNING: THIS METHOD WILL BE REGENERATED. */
+public boolean equals(Object o) {
+	if (o instanceof LeaseTaskJournalKey) {
+		LeaseTaskJournalKey otherKey = (LeaseTaskJournalKey) o;
+		return (((this.taskjournal == otherKey.taskjournal)));
+	}
+	else
+		return false;
+}
+/**
+ * hashCode method
+ * @return int
+ */
+/* WARNING: THIS METHOD WILL BE REGENERATED. */
+public int hashCode() {
+	return ((new java.lang.Integer(taskjournal).hashCode()));
+}
+}

@@ -1,0 +1,2275 @@
+Manifest-Version: 1.0
+Class-Path: julypersistenceEJB.jar 
+ julycommonEJB.jar 
+ julytrailcomEJB.jar
+
+Name: com/hps/july/persistence2/Counter.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: HOs2Lpm8PDoESYw9YBAhPxJn7ZI=
+MD5-Digest: Cr6c1T9qFYaissRPaVkhgg==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: VM0xGuCo5cp5oRAeYfEQo9TbvKg=
+MD5-Digest: Qa+qLLSZqGnC8JLbGRzELg==
+
+Name: com/hps/july/persistence2/LeaseZP.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 83i01xgbeD2xT/RbURWqrHXAIwI=
+MD5-Digest: yya9G/tu4l/EW8MyXrCKZA==
+
+Name: com/hps/july/persistence2/SitedocFacade.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9vClo5yt2LsbL+VPys1l1oNV4C8=
+MD5-Digest: nUWoX0+zinTwi+57+RB45A==
+
+Name: com/hps/july/persistence2/CounterAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: cQLyCWoB/x9TSXNt4EyVMZ/Hujg=
+MD5-Digest: di7VxsGVAHFSchjlrB1Vgg==
+
+Name: com/hps/july/persistence2/CounterInfoAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: oe7CNzW4dnzcR3C9dWTabhVDgfg=
+MD5-Digest: +54NZa6v3dHBxPnBiTd/nQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/RRLResourceFacadeHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: eL6Z4sSdpHVRF+JU6u1wmfXya5I=
+MD5-Digest: bZv77COKpwQGO11ZXvFgRw==
+
+Name: com/hps/july/persistence2/BeenetObjectAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: G6+P/TdKjZXp6YMyYKJGklY68ds=
+MD5-Digest: +nRNVsERWXjjBPtJeWpsEA==
+
+Name: com/hps/july/persistence2/Perm2Hop.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Va9y7dpl+CqGbsnJl0dzeB5jzzo=
+MD5-Digest: 4twqbIGfmfKO1FTAbFy54g==
+
+Name: com/hps/july/persistence2/BeenetObjectKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: YZ8yjl/FIOFtvINvMOSX9QGK07s=
+MD5-Digest: 6XHW4bauVGmgyrTT8IuJkA==
+
+Name: com/hps/july/persistence2/LeaseZPAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: vcqvE3R9w5ymhW7K/lSHYPgvbFA=
+MD5-Digest: dT6gd/5QVh7xmaD2UwpdAw==
+
+Name: com/hps/july/persistence2/CounterInfoBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: S2Du3kAL+NXFuyIh4jvvs+nwebc=
+MD5-Digest: Q5+LNH+3VzYDXWDkEIrZJw==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Df8J6TyugQkLuHIqGLT6G12o0YU=
+MD5-Digest: sx88PVx5i200iRYA7+wNKQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/RRLDocsAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: IhUsa/gVG0M0nYsf8Rnpx8yNeuc=
+MD5-Digest: Z6nmTeeghoOWI5nYjOCgJQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Beenet2EquipmentKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: IwiXVgb6vqOZUU4i4SV1owroY1U=
+MD5-Digest: rTJOjtA61+oV1Mrd+F5JNQ==
+
+Name: com/hps/july/persistence2/RRLResourceFacade.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: FUVAhH0cLK8ethX3D8idfW8nLTg=
+MD5-Digest: /IdVRINXJpZeqkQpAoKGZg==
+
+Name: com/hps/july/persistence2/OfficeMemoTargetHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1fQvz0DLRSOcXnIrnVTDZuFtw6Q=
+MD5-Digest: Pn4BCLGWfQ+BBblVBsHJNA==
+
+Name: com/hps/july/persistence2/OfficeMemoPosHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: sNY0GPTgMMLFCu0cNQg6cCMvsVQ=
+MD5-Digest: C20v5ocFS+DH/e109wMdHg==
+
+Name: com/hps/july/persistence2/RRLDocsAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0qyZ+DYHAGIywbe+tgte/P3c/RE=
+MD5-Digest: 0OYz8KswlxDlZEMOmXfKQQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/MSUserHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: +jJQi770TmIH3TCObGjxlRw5wBc=
+MD5-Digest: FyGl6nU5DCU/1B2+E8jOZg==
+
+Name: com/hps/july/persistence2/Beenet2Equipment.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ylEstY9ewRj2LqiBMAU73FoIZg0=
+MD5-Digest: +u7nhfILObCXGUvUHlkRog==
+
+Name: com/hps/july/persistence2/LeaseZPAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: s+QgvIW6KnKeNNi6PUYZcj5SpU0=
+MD5-Digest: 3ovPSbQqGvee/VyC5RIsTA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: LZGYSEEiQ0G4Hba/6cgXmLTG8v8=
+MD5-Digest: 1YuKq77BjJ7tMEJarnOrpw==
+
+Name: com/hps/july/persistence2/LeaseZPKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4+Pm8FZkz+nTBGQ8o6KPW7T3Bcw=
+MD5-Digest: uZ67hEKqHTRAo9wpP9l+MA==
+
+Name: com/hps/july/persistence2/FreqPermission.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0ZJIllRtJmoUPcIdWMoHP7BJQxc=
+MD5-Digest: ybFbFCvmIvdfiEq+rAf1hg==
+
+Name: com/hps/july/persistence2/LeaseZPAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: JJQvhtvvj2Adqx1yJWb/lKy2ZWc=
+MD5-Digest: U/hJeI1lPvGiM05O+gcHZQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OfficeMemoTargetAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: t5tShfB9BLCoEDwgB+Z3LakfF8w=
+MD5-Digest: UmeMJWQ4lrdv6Eyv1utnzA==
+
+Name: com/hps/july/persistence2/EtapDocAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: UnNNLUQCPz59tkZ1Yscwak7K49E=
+MD5-Digest: TlpTUDMUhbBVHNG1anmitA==
+
+Name: com/hps/july/persistence2/RRLDocs.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: XQflBhTJMRrbqIO/UTz+9vVZwCw=
+MD5-Digest: NCez4dOuudzdtyEmF4bChg==
+
+Name: com/hps/july/persistence2/OfficeMemoTargetAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: zObpRhscU2z2mJLMfXodvOI1L7Q=
+MD5-Digest: 10+pPjhPJiEkUqu14DS+cw==
+
+Name: com/hps/july/persistence2/BeenetCategory.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: /nhyFqCQXyk2q1zN75aH1qiqgIY=
+MD5-Digest: vYSfIVjWqwFrhaIpzW6Rdg==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5RsjzoW1BUGuW2TMEgJmo8wtRR0=
+MD5-Digest: s4ZRt0YeexfKfZWzPD+6pg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterInfoAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4+P5UYgy8zUIzwWafQis6C4tvBc=
+MD5-Digest: XtZXAB6isBJ2zHXMCJLCMg==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: wz3s6HwZWaa9WFuhtI7oYwDZcz8=
+MD5-Digest: wmBzut9YKGSzhHsR504s7Q==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/GKRCHDoc.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: WFz/B7Sd0/P5iyw8perxeOtmmsk=
+MD5-Digest: b6bzMnqP28ltZ80hIzJCbg==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 91Hgdwogr1vr5XINrKgiS3nETJU=
+MD5-Digest: vWL9zsoI8fDXXJiDtmxOKw==
+
+Name: com/hps/july/persistence2/Perm2HopAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: xj1xeqfjq1tYyoGJkqPYmXy+STw=
+MD5-Digest: C00ZEsgWahFPsqSj0DESZw==
+
+Name: com/hps/july/persistence2/FreqPermissionBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: RTcoqB3u/vRE6YIxlKGJXoLXX1E=
+MD5-Digest: /ZtROI5IEOG7zikcdWkOBg==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Lw5qoPyN5mpNkT+CM/qmFLfvlTE=
+MD5-Digest: ZaEuc0T5R2Dye7SOwGsS+w==
+
+Name: com/hps/july/persistence2/OfficeMemoPosAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2kWr4xrMFtFRqv5YuVlZmPFT8gY=
+MD5-Digest: +6zmiKJoht8Hdu6zKzU3lQ==
+
+Name: com/hps/july/persistence2/EtapDocHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: +IMRdMqgMLco0ACHkO47o09NDbY=
+MD5-Digest: fF4Tcz4Fij3bTW30H04uxQ==
+
+Name: com/hps/july/persistence2/CounterInfoAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: FZuuY1AdPff9+nv5VdynbKaFO7c=
+MD5-Digest: UqbtPTObQwi7CtV2jGCTjg==
+
+Name: com/hps/july/persistence2/OporaPlacesAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8lNg3znWrXB3roAWfDGvf/H0PCA=
+MD5-Digest: X/MOTpzBXWfOY/OnNMswgw==
+
+Name: com/hps/july/persistence2/AntennaCableAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: +zGt66Sj+8g7g+rBJWHeIG954Aw=
+MD5-Digest: h4QQMtBS4rA/ySmvGnB44A==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/FreqPermissionAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2fj7RQgpWOIXwm/LuE5hJiW5gm0=
+MD5-Digest: wUkLJUVUMw/wfGT+2OVMPw==
+
+Name: com/hps/july/persistence2/CounterAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: SAUSv6Ak0/1TTAJQeAmRpo71od4=
+MD5-Digest: Kurn6B8cDVbERC6kfqWryA==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 89zVhAD5u6l3vGz4+4uAtlitP5Y=
+MD5-Digest: irIFEbMqO+ZNkZS/XYvCww==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapTypeBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7BJDuxLzOAgwjKWBpT5qjxaqP+Q=
+MD5-Digest: iJQK9iH9UDZwLreJXHMzDw==
+
+Name: com/hps/july/persistence2/OfficeMemoTargetAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: /tAZQkVUic79S3aRr4NEKmV7kSY=
+MD5-Digest: iGGxijNAe2IpWi7WwA0NpQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatTypeKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: PmWy0fvZvziaMxTtKavA3xlwz8o=
+MD5-Digest: 1OVtHf7dde9c4NwRrDtk+A==
+
+Name: com/hps/july/persistence2/OfficeMemoPosKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9TzwbNmYjUtR9GKkGJM24WCDTuw=
+MD5-Digest: XB9ObKAtOhvhs+2ngQrs9Q==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: NShuuFJ8O3x8mFrqKxHGVfHqK4Y=
+MD5-Digest: AeU+TVHmD1H0Ak54kNXKlg==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: VcE/JvshLSWaomMpC0Qpx13F0Pc=
+MD5-Digest: RCjn0/nm+YdFLbJw579VuQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetObject.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8dB/XU4OFJ72uV6FkMjDMIp5Rl0=
+MD5-Digest: fQDJzSbdKTx4an4YICGz/w==
+
+Name: META-INF/ibm-ejb-access-bean.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: v8o/Fig2Zp070CnfnQw7VHNsQ8s=
+MD5-Digest: s6IFRlUXKl5IlCr/lUPG9A==
+
+Name: com/hps/july/persistence2/Etap2HopAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: +XwYmskqTqLAdsVv172fxj5rGak=
+MD5-Digest: /mPyVyWGkADBoXOsTPeu7Q==
+
+Name: com/hps/july/persistence2/RRLDocsBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: sGyFO3e4CH6B73wfLu3srby/oOE=
+MD5-Digest: fiEF9QA1x4OPOuaNGTEDmQ==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: snPID3Dum46m9cSIc8l0p0t1nLE=
+MD5-Digest: etgHM1vCI8/Dj9ExKfBzOw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 11s6hKseX1g6ckZ3c76tP1+aJl8=
+MD5-Digest: XMuhS/x4FJPLhfl57GsEgg==
+
+Name: com/hps/july/persistence2/CableWorkParamsBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: SC1BwTt6VhoMaQOFec6OOXNmmmY=
+MD5-Digest: A9RolGutbfEd0yOODeSYsw==
+
+Name: com/hps/july/persistence2/BeenetFacadeHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: CVIRnENY1CYSf+CGdUXSykPsXeE=
+MD5-Digest: towOHZBADTXBD9B0AoVlSw==
+
+Name: com/hps/july/persistence2/OfficeMemoPos.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1gI+bONUD8n6Evf5sLkqpJet60Y=
+MD5-Digest: r5W9Rnuc1kDA5quG/EkrTA==
+
+Name: com/hps/july/persistence2/AntennPlacesAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: XsQ4hXVVnLnUd69vUdPChq9TdNo=
+MD5-Digest: CpXLA/0kirxdUT+12+ThYQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/AntennaCableHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: FXR2OsKKpW33tdRJppzT1cVBMTs=
+MD5-Digest: Aetyic7mrfGjqUBcMJyuXg==
+
+Name: com/hps/july/persistence2/ApparatPlacesAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: kdjFnm9tz0haD2RLvtVhh/1oOmg=
+MD5-Digest: JSAmSi1u7romwRQyiB5D5A==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OfficeMemoPosAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: kK1bLFNJul3pxpHapaI7LXnYYXU=
+MD5-Digest: nuwno2UVj6e9OqjbpYuUgQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetObjectHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 79h9zkQVisd96zWHuWjKQMozO0c=
+MD5-Digest: E40F5kSEshyCZgeaMOSMTg==
+
+Name: com/hps/july/persistence2/GKRCHDocKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: SDLXDO0+/9lGDP2TQ9Rp6V3he7g=
+MD5-Digest: fbx68/z2avMlZAWdtHicGQ==
+
+Name: com/hps/july/persistence2/ContainerAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: WMgAXCXMJ3bR05B9DvaB0L9K0KA=
+MD5-Digest: IMxtYzJkBwdybPQ4MPjYyw==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Dsglq2dxBHar8Uinoc4xK7BMTVk=
+MD5-Digest: ZKDOunLtq3BYciQ0euXNjw==
+
+Name: com/hps/july/persistence2/OporaPlacesAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: hqt4GpY2PWwaAjjU/GKf5op4WOo=
+MD5-Digest: fPdyPFI6/YYy3n3k81sQ2Q==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetFacade.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: U11OwBPWq20B2rdAgu9/680T9Uc=
+MD5-Digest: XrWxtLo2HKfoFDCVqYIzIA==
+
+Name: com/hps/july/persistence2/ContainerAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: U+umeLtkP8hXtd4MSmPNautNEBQ=
+MD5-Digest: 7nAhXWxkaRtzfHN8DI/6Jw==
+
+Name: com/hps/july/persistence2/EtapDocAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: mBfOVimfiQVzxyd2S08dmUxA3Ds=
+MD5-Digest: /O29AtDGyyeH0Q50jysVCg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/RRLResourceFacadeAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1X9rRnmaqrqPMi5dToAd+gxKoVM=
+MD5-Digest: +OUifklXLq13ZNuF7u877A==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: cScH6Y6a05Tbwgi11/Q+aCpMAbk=
+MD5-Digest: kEaB8TVbLWoryOELsbwS9g==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetCategoryBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: m9vdtV/dseyzT2DJXCGjO7tiKqo=
+MD5-Digest: jMCoGVAif0zjUfFNS+pckg==
+
+Name: com/hps/july/persistence2/FreqPermissionHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: X/MS5jALJSQx4YuJlYY+tjekBBM=
+MD5-Digest: EtmftPE6AlGcf8WzcP9JPQ==
+
+Name: com/hps/july/persistence2/ApparatTypeBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: mg5dAF/OAXC8whkOQB75gLSr9SQ=
+MD5-Digest: kc2h0Ma4HoO2ryshVWnsoA==
+
+Name: com/hps/july/persistence2/OfficeMemoTargetKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: aE0QUtMAphKDRfYUNEzzhhwOkT4=
+MD5-Digest: hiK7gWKvizIqcN/6sx6/uw==
+
+Name: com/hps/july/persistence2/BeenetCategoryAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8xJikh0eKhWldZ6ZyABsh/iQIVw=
+MD5-Digest: LzHZXkxmTB4zF/ImWWfaWA==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 31QEGokrTZ0fiX4ZDFQb6PKCO/E=
+MD5-Digest: HFRkLMO+t3LuGWbUh9pp7A==
+
+Name: com/hps/july/persistence2/BeenetCategoryAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: RF85y0tXjLiEijVqwnN0qghztuI=
+MD5-Digest: nBitNWn4sedbJu6G/h9elA==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: nXk1uveQygjC8NqEiCElUV6Oi7o=
+MD5-Digest: ecL3NnHtBR2qDmO12NnwPw==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: O8idUJfFFZ45tllfnLFQFtdZNOQ=
+MD5-Digest: dX1+13u5XW8mkACdx3Sdvg==
+
+Name: com/hps/july/persistence2/AntennPlacesKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: zSarLxv338wbNLj0L8ExAwVlWdc=
+MD5-Digest: ffu4b7x2OORIIAPj4OfsBg==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3GcPRYQGf3F531I9gRaTAuRvvwM=
+MD5-Digest: V1Y/C6L/jRcXdB7JQeQO/A==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: +rV7EsUShLeiBGejI3r0NDk7W7U=
+MD5-Digest: voQ3pdAWwHeKLvY/6mQQdQ==
+
+Name: com/hps/july/persistence2/OfficeMemoPos.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: CwCRrN4Gl7gutnsaWV8IhkqkDKY=
+MD5-Digest: pwptd3Hf9sWj90QvS1gjNg==
+
+Name: com/hps/july/persistence2/EtapTypeHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: bhwEsQOxTLGzU+XViESom4/ykaI=
+MD5-Digest: FsvZJiv6Qoupmm0NcCcg9w==
+
+Name: com/hps/july/persistence2/GKRCHDocAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: uo71Uo/VOQogoAQuD15nyRBQolU=
+MD5-Digest: 599bdo/WCN+MRxl1Y/mcDw==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRI.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: owZ+a1zT+hLQvJzDY6Sjz6CIlaE=
+MD5-Digest: I9/bo8AbGpUa4Gboj1v1Yg==
+
+Name: com/hps/july/persistence2/Etap2HopBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: xw6+Gjb2tCi9m8qOXjykpEukqJA=
+MD5-Digest: L2V2mIQB6vl25YYhxk6axA==
+
+Name: com/hps/july/persistence2/BeenetCategoryAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: /yvzrxm5AOhW1eypDQV8QsVi1V4=
+MD5-Digest: jW+kGwSphnH2xzPYx0mVXg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/LeaseZPHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: UV0YbvMNz/1o5LRfDhwuLzF629w=
+MD5-Digest: lkdcwxQrumz/6BpuKdjOwA==
+
+Name: com/hps/july/persistence2/BeenetCategoryAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9Tlu9YEXSxpKHdjGHT8ztpw27Ts=
+MD5-Digest: 45hDkF0CQZZ3gjTP1GILWA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Etap2Hop.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: BH2W/5drIBYeGwjcf1IxsqtGcb8=
+MD5-Digest: Z13qaT+X9HZUVYl2ci9hpw==
+
+Name: com/hps/july/persistence2/CounterAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ep3XhdbxFOwKaILOZDYqAttbKSc=
+MD5-Digest: 4SxqKYWvddP71RhFo4tDSA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapTypeAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8QwHCHX7MhoCtDcnMozFXMGrQJ4=
+MD5-Digest: pd6AhnLaJS1VjdqmiSbwxQ==
+
+Name: com/hps/july/persistence2/CounterBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: BviuV8OsG4g5u8Baxnf7M7Nl/Q0=
+MD5-Digest: pn+NOqH/pbZzWen0OoKm3A==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: IRN6ppudII7cZD8+hB1rX51Si3A=
+MD5-Digest: wG2i6S1P7zjs3kLVsgw4yQ==
+
+Name: com/hps/july/persistence2/AntennaCableAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: xwo1N1zeY0ePBHi9Il2DTWYl464=
+MD5-Digest: pFqgUq5IJgVE8dYEZozg7A==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapTypeAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: RbOXiZVwHjQ/oqZog3tjzit9g9s=
+MD5-Digest: Y3UP2ave2cKVZXKGX793qw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: NY1jsCp9A9glil4PlyNlIvcZ1uY=
+MD5-Digest: Po8k8QuNAgDu1N5R3T0J2Q==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetObjectBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Rm+iW5xoRCHKHat/fAXEED/DSvE=
+MD5-Digest: WZjAamjmfteTsvmFSkzxWg==
+
+Name: com/hps/july/persistence2/OfficeMemoHeader.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1R1OjIFWKvf3sFoZQ5wO0QlOMsI=
+MD5-Digest: BcO62Txcn23iDHdrl0S/Gg==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6mE+WKKHLoJLbcCpCuD7uqU1pH8=
+MD5-Digest: vw49M6vAI3psa7aNkn+jAQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetCategoryHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: qOO0XXPZHtE7l64cmby+hJUqwgc=
+MD5-Digest: hOvy3xNSzJ69MzPvPEzjPQ==
+
+Name: com/hps/july/persistence2/ContainerHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3Ii2B61vaqB1MDoenjlnfDOk5+M=
+MD5-Digest: 9vn13XBrTBka62UukmW0PA==
+
+Name: com/hps/july/persistence2/CableWorkParamsKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: L0zQhcEVCD8BJSEjSFmiLrggbEk=
+MD5-Digest: 5JYAv4BMFAFqpxK1L2SQaA==
+
+Name: com/hps/july/persistence2/GKRCHDocAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5GfcVlG347C7NI/75HI1B+7zSY4=
+MD5-Digest: 3MhH7TRCe0NvZjAeM5B0HQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/GKRCHDocBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Qjt3JjPvd9sOnL7Yxvc4k8Wn1Uw=
+MD5-Digest: +UiUAlD4jtxXttHHoSXQhA==
+
+Name: com/hps/july/persistence2/SitedocFacadeAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Bcq/hjFB/1cJDQCg5kbdxuIhD1E=
+MD5-Digest: lBv1TVzhDB7eIKk3tAnNzg==
+
+Name: com/hps/july/persistence2/FreqPermissionAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 53qe53bD9qYTvakn5NeXMBMwOfM=
+MD5-Digest: sY9SXUXS2+RqKmwhPpxZdw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/AntennaCableKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: jZ91RWNMxVimgC8aR9wcqelpFaY=
+MD5-Digest: eMkqnhAK5FcHBQ4hX+3wiA==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: gYa6KxJXDjpeN8QATWQr2cJJ8vM=
+MD5-Digest: 0niBTE9YV8kkRxZwbbjmjw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlacesKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: VnJymOsNApra9pUm7T6NWor5x3o=
+MD5-Digest: mUZ6mHyc7Vpqrk/J9e+8og==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRI.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: DXyQmcvqnXE3HyedLg7vA6e+dbU=
+MD5-Digest: vYyFbT9dmt6oXYVnBi13ZA==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: +dJ7OR0uICmstuo/+Domy1RpAGI=
+MD5-Digest: j8ZUw/c530O1xxVxpPb/og==
+
+Name: com/hps/july/persistence2/EtapDocBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: pL+vl0I03vGi07uydvpea5MZf7s=
+MD5-Digest: GhtXgaBD61m0nj41gMbBHA==
+
+Name: com/hps/july/persistence2/CounterAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: gYss43pO9/EtWR9P90piP3CR0mY=
+MD5-Digest: DBK6ELN4anm+et3R5fcXmw==
+
+Name: com/hps/july/persistence2/EtapTypeAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: aRTxn7p+XqJM1BLaP7jW6JI1wOU=
+MD5-Digest: F1Dgxnr0IoXv51XfkLUOrg==
+
+Name: com/hps/july/persistence2/SitedocFacadeHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: CIL0vVWF245ItQ6vpW7K0dfQd8s=
+MD5-Digest: PXFEkuUP8L0DipW5wzAXdg==
+
+Name: com/hps/july/persistence2/FreqPermissionAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: xyM+lRWk/1LdKrx+Odar7VKmGN0=
+MD5-Digest: pQXJoo4YVdBQFEGtkfuGhA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapTypeKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5t+kkZhyNaTvGk9FH+ziHOp9wQU=
+MD5-Digest: jk8UmuxTEQXQEX8rjZg43Q==
+
+Name: com/hps/july/persistence2/OfficeMemoPosAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: UwujQ0ujD4Q2LQiy4+RJ6aFDqsY=
+MD5-Digest: 3APgbksFHzrAUYDFR5Warw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapTypeAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: +ZEhvq6GKW+aWNro2vl+Ivi4sUg=
+MD5-Digest: JNmywSZKzjQW3zG2BO6p1Q==
+
+Name: com/hps/july/persistence2/Etap2HopHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ILut9TUzel1oG8v3schOLjn8Dgg=
+MD5-Digest: ltDZ2rJTM7xuAjr1yDm2Uw==
+
+Name: com/hps/july/persistence2/ApparatTypeBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Aj/kz8xZQo5vx075MgH8wpQZRaE=
+MD5-Digest: A27buuEexeGQHpAuY1X3Vg==
+
+Name: com/hps/july/persistence2/AntennaCable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Uy8l3v3jmMn2MXCiRqu94xXyaBQ=
+MD5-Digest: PUfpFDxwZfeYIWgyEpXR7g==
+
+Name: com/hps/july/persistence2/Etap2HopAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: as0F2zlHp4j5P39SXlI58CxMHRs=
+MD5-Digest: f3wLV0jsw/Wt9Hp9qA9+fA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Sitedoc2RegionHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: nP2F6Fu5XAKm1VOPwwxMHzBITGo=
+MD5-Digest: 5fuUSJ9z+fM+hQtuUjoNJg==
+
+Name: com/hps/july/persistence2/OporaPlaces.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: rPx3uVwxbzzuwoT/8+Z0Ox6RC5A=
+MD5-Digest: qZXO4MnK+Vnj7yAu1dqN0A==
+
+Name: com/hps/july/persistence2/RRLResourceFacadeAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: hkxcV5frXeG2zY5f6vY1qYSqsZo=
+MD5-Digest: g1lVQzMx7hO37Sil1iKFFw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: VN1DyVFs9UJsolzsyNYK68aVjxQ=
+MD5-Digest: aeBOwfmVZSGrlH+2APUl1Q==
+
+Name: com/hps/july/persistence2/RRLDocsKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: CiEqbuQYpAtbYmCpTdt/PnXEFmY=
+MD5-Digest: SHW3KE+nLvIuyrUEgm67Tw==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3/wgPariQUJ60RtUkvKXYlpFaGc=
+MD5-Digest: hx7et6MMXrHpk2xZtdbpHw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlacesAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4EYb9z9OCdP6ONFdHdQm3ZCQ+zs=
+MD5-Digest: XEzIjGzVfZcSbmC8n3VXwA==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: W0Ezbcacll7ROX6H8Ia79UQs8gI=
+MD5-Digest: 0P5E0n4FQtzXW1u+epiPBQ==
+
+Name: com/hps/july/persistence2/AntennPlacesAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: tqRhXn57B4yopFdCYeUyXlJEmnc=
+MD5-Digest: /+4krLZXBpS7RWb7+1C/vg==
+
+Name: com/hps/july/persistence2/BeenetFacadeBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8lMuRcVwATmTPAfk/MJBJ8Rzaq0=
+MD5-Digest: moy5pFPk0L1pF1pbRYxflQ==
+
+Name: com/hps/july/persistence2/ApparatTypeAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: D7nCtz+G9MIlkN4hv9p5Z7WNpy8=
+MD5-Digest: JXCmyU7rrIitosrUkA5mnw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Etap2HopHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: gEAQFvkUyFsH032Ho1PT8MyUPfk=
+MD5-Digest: 3TeJKXWnRhGU5ow6OnOUyA==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ppUlZoN8YgLqIiSybqOV3Ze+3Ms=
+MD5-Digest: Wb4exrlRzRHVSVv5dK/abA==
+
+Name: com/hps/july/persistence2/BeenetObjectHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9zJ+N5M22uzDQWBNKuigSxRvR+c=
+MD5-Digest: i2v3prnTOzdjj1A2N+r2gA==
+
+Name: META-INF/ibm-ejb-jar-bnd.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: Ge2es+7fe0Z9mQjZ0UGUXAspfcw=
+MD5-Digest: 3C1Md1EF+58uZWPW+bjHRg==
+
+Name: com/hps/july/persistence2/AntennaCableBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: bdsEnanJxvRfJci+0t03BBMYMAk=
+MD5-Digest: 015HrFLZds7jc0IOE4B5Xw==
+
+Name: com/hps/july/persistence2/Container.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8b+G68zLmA/bgKOjQfBbn8AbxoE=
+MD5-Digest: DMyGHQBW9tCLi+vSSslfBg==
+
+Name: com/hps/july/persistence2/BeenetObjectBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: mW8nlQFqlCY2T75B7GLMY/c+4vY=
+MD5-Digest: ZgEcZxxny/U0wTNAYLR5DA==
+
+Name: com/hps/july/persistence2/CableWorkParamsKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: UW/wJsS5GIMnm9ZvfIFUsHB0PvM=
+MD5-Digest: GGyFfKZ7soU5wVQnoan42A==
+
+Name: com/hps/july/persistence2/BeenetObjectAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: cE6z3skK1/mQjdK/wHE5Et6QMT4=
+MD5-Digest: bgooPM9Mll8xkdV7BM1zdg==
+
+Name: com/hps/july/persistence2/Perm2HopBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: c7OLDQVldY8/1OS0qXmHD/LN6vM=
+MD5-Digest: gPsealTussqOQ834a8xq5g==
+
+Name: com/hps/july/persistence2/RRLDocsBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: X6YRo2MOECVxnyuQy95014qcFe8=
+MD5-Digest: CMPyC13fTE8Qk4mMBDgw+w==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 23Ee81zSa2BtnBw/AmkSHO1X0Qg=
+MD5-Digest: xJrOBYN2m0YvpQZYfU2tIA==
+
+Name: com/hps/july/persistence2/MSUserHome.java
+MD5-Digest: n3or87ET6ZJgqY2eykuAjw==
+SHA-Digest: qbmOpcR8eL+OaAyddl0J9kX+/H8=
+Digest-Algorithms: SHA MD5
+
+Name: com/hps/july/persistence2/MSUserAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ELNF5cB7F2juagIq7GkOfD1NOO4=
+MD5-Digest: M3k5rXoF7NcVAV2hEuGVQw==
+
+Name: com/hps/july/persistence2/LeaseZPKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: wJuWD2bz/n7SEd+casLc5jABbNQ=
+MD5-Digest: ukctfP6si/rnlcBvV/TfGQ==
+
+Name: com/hps/july/persistence2/GKRCHDocHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: vqpRCsEPR+cjoX7T2GZCPGKTpxQ=
+MD5-Digest: ekJjng3lqPfa6pE2XF0xzw==
+
+Name: com/hps/july/persistence2/OporaPlacesAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Iq4pSIAyhmmlkkzu+0x7XTD9Tfg=
+MD5-Digest: RYlWOEhTqP97wqaLJB2F/g==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: +GKXCbhG8B4+iPP4k5Yt6ET+fEg=
+MD5-Digest: Y1iPFhNzvanKqmkfxuGO5A==
+
+Name: com/hps/july/persistence2/OfficeMemoPosAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: VzV4N6f9+etY1ysqrNK7Qp298i0=
+MD5-Digest: 8KCBanlxQOO+li6U5t+fig==
+
+Name: com/hps/july/persistence2/BeenetFacadeAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: kkAuRWX1UTynmnjODJVe4IOC3j4=
+MD5-Digest: 8MSacpSh7K/Ez3F2Byj2Yg==
+
+Name: com/hps/july/persistence2/Sitedoc2Region.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ADiXT2SxmIRIS9Lz+HQDeXeLWDY=
+MD5-Digest: BWso+Ab0HVUvYI27fhQZFA==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: t209shDOn8jhmZ3A3T9w37ipp2s=
+MD5-Digest: joY6zao/wD1Y8VRaOCHugA==
+
+Name: com/hps/july/persistence2/EtapDocAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: eBNXb1jEL8VpaFPL+qT8eVnht4o=
+MD5-Digest: r90HV1l6VN8vDAxTPtK4iw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlacesAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: g4U3aP2ihlxhW/f3K99FwBA4sj4=
+MD5-Digest: hP7g7rRg60lxwOc92AZ0cA==
+
+Name: com/hps/july/persistence2/EtapDocAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: SlEutBWXKbUk7JIiCcS9hjgFijU=
+MD5-Digest: q+nbUwKE2I9gNpqCNBHx+A==
+
+Name: com/hps/july/persistence2/Perm2HopHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: hJA32mrzZYnzmvc4FCEJmoDr4SE=
+MD5-Digest: vh6xL4lfK3ohJEbaQGYa6g==
+
+Name: com/hps/july/persistence2/ApparatTypeHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9QPnK/FaAmFLiVEKrwpilYFpInY=
+MD5-Digest: clCPfBdeXRpvYAbIua5LrA==
+
+Name: com/hps/july/persistence2/Sitedoc2Resource.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: PokAilIZkLzonhFI8I4OGgJe9do=
+MD5-Digest: s7g36KvcmsQJouBkdOfrHQ==
+
+Name: com/hps/july/persistence2/ApparatTypeAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0GS28Vemaza4Y/MgwA4rbPIz+j4=
+MD5-Digest: 2OIkXkxTrHFjS2ewA1ZvXA==
+
+Name: com/hps/july/persistence2/AntennPlacesAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: jVWzzWkYmLor7H1rtXvbsZtmZvk=
+MD5-Digest: 5JCpj/vs0FB4U5awxXEJ3w==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ContainerKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: WKdq+/wp4oUDmzHTm6kb9SE7n6E=
+MD5-Digest: hnTpsDnDA1SYbftV06H0Yw==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: LhzaP4YbV70cEVIODNwW5SJErKM=
+MD5-Digest: u5oe/e7frII9AzuODhBwdw==
+
+Name: com/hps/july/persistence2/AntennPlacesAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: hX3CMyu5e+T9+jhh9LpXaR9oQ5o=
+MD5-Digest: L7tNGZ8KloY9asqoZbgKGg==
+
+Name: com/hps/july/persistence2/BeenetFacade.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: //r4VU5idgNogHBGMvxOYB4ZGWw=
+MD5-Digest: 801dxtuuwo2zyUoVWNuygQ==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ufZM+11ZKR8C2i78LD/zziDJxtY=
+MD5-Digest: jf2TN/YQ0dnYnf3HFvqjOA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OporaPlacesAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: h0cBCGquzKkfTTUgTXgPQjnVg2c=
+MD5-Digest: T9+mWhrGADkyYUgh1jcitw==
+Java-Bean: True
+
+Name: META-INF/Map.mapxmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: HKHgkB6bkhdYxYC6F5idQ/ONTw4=
+MD5-Digest: pOdviH2G+7ddifBuo1qGag==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: s94fUuW6j0PEqoPvF9ewrOYnahU=
+MD5-Digest: e03cnZzq7yEdimDKsbiSJA==
+
+Name: com/hps/july/persistence2/ContainerAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: z6t7Nz0Zq4K3SxtbXsJBiPDOUyU=
+MD5-Digest: Ivw4IwupNC4dFemvHfQSNA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/LeaseZPBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: sqMxtWGxVOvwIyFQA3fLOne0V5E=
+MD5-Digest: rAwjJRKC3r1KxDDyVdxguA==
+
+Name: com/hps/july/persistence2/CounterAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: nOcs/mf3QvUYsm2Kmw+lahYltWY=
+MD5-Digest: qdg9vFAdEpVspYDINWQHWw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Beenet2EquipmentHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: vBMWYO2I/lz/++7XVADdOF/WrV4=
+MD5-Digest: n3CycgUNoVawu0MTkRw3qA==
+
+Name: com/hps/july/persistence2/MSUserAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: MP09HUZam4KtcH2zp0UtiTycf5U=
+MD5-Digest: zqo8bJg4i5BA7cCNM6HQow==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterInfoHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: CLzpngNmGlvQc0o5KxlwziR/19Q=
+MD5-Digest: lN85jv377B2r4KPxXq9Gzw==
+
+Name: com/hps/july/persistence2/RRLDocs.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: DHniC9QtvRHqN7Zvd3qQPhV0qeo=
+MD5-Digest: uadYlp5/LDksOuWTrZZGqQ==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: qTtBWZ4sV6Lvxd12B18b/Cjyk74=
+MD5-Digest: 4nJBer+IxD0+nVL5WCrjzA==
+
+Name: com/hps/july/persistence2/FreqPermissionAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: No+5d8yaXt/4TiKWvJvk4CD8/h0=
+MD5-Digest: UEEwfWI+fnZ91KphJyJWHQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Perm2HopHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Nc9NZZm0t6BHHNLaxejY+1cJZxM=
+MD5-Digest: 7ktIrm4HloKiApUNGhBoZg==
+
+Name: com/hps/july/persistence2/RRLDocsHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: FgrBce14LS16jrj4sKjIPCHgn9E=
+MD5-Digest: AgDf3v5eM2j1E9/1KZaaqA==
+
+Name: com/hps/july/persistence2/AntennaCableBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: et6mOxDDcWNc7a+AiLk1r/C8DaE=
+MD5-Digest: nkEcRHKO1ka57NnvZjaxKA==
+
+Name: com/hps/july/persistence2/OfficeMemoPosAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: TA4JDnmBpEyS0Kc2XLCml4lzxcA=
+MD5-Digest: zd7mApHSkVz+ZCZufzvTmg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapTypeHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: I8+0ZDhG+R/egIMf5c1bw2dYh8I=
+MD5-Digest: laaPiRIjyDcdH80T9QT6AQ==
+
+Name: com/hps/july/persistence2/CounterKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: TC1Sf6uNX3eRIIwhUQrq9mdaZI4=
+MD5-Digest: /QXy6QXbSlspTDhAWVq/9Q==
+
+Name: com/hps/july/persistence2/BeenetObjectAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: yOJHoOo/1J4fLmj99mMSVUCzBaM=
+MD5-Digest: /9U+9cxcpF63RZb5GYgKOA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatTypeAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: KWM9xNyjvAOVE2LgxBhrtTbXN0o=
+MD5-Digest: zUv36m8em9W0t3H30ZyYzg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: uMd5bjRPq1mC1WW2m5hyk6JKnDk=
+MD5-Digest: xFb7TJ6zXKwZMf+FskG4MQ==
+
+Name: com/hps/july/persistence2/ApparatTypeAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 36NDtXI29HwSaMkAWlkNx2hCHQs=
+MD5-Digest: +BDqlrPfSgBuYbosJiyI1w==
+
+Name: com/hps/july/persistence2/CounterInfoKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: TGEFKO9K5xbRad6vGUujCQC0EcU=
+MD5-Digest: BEkalRaucFoW4sHBUEnMeg==
+
+Name: com/hps/july/persistence2/ContainerBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: m0nyUiL+RQ9vO1WYsfQBWpq8cUw=
+MD5-Digest: gN+u26Imisal1AQvFZTOzA==
+
+Name: com/hps/july/persistence2/OfficeMemoPosAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: fVT0GKOpA9rVRIrGFwYUrhrCU6A=
+MD5-Digest: +I940s6tfZ6A1OVaJzoHSg==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: EV8g/0QnFEd3+FZ2jP5xic6V/UI=
+MD5-Digest: bo/9p3m9w5ixotCxlfe+6Q==
+
+Name: com/hps/july/persistence2/BeenetCategoryHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: FRZZlHIoaoMjtGkvWSqYP94Aa4Y=
+MD5-Digest: zh8AztadunHR1ymhY6x9Ew==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: IIVJ6dzVz7HdSR2XUm1WPUhNylE=
+MD5-Digest: tQ5XXG2i2VjnGHlWiK8B6Q==
+
+Name: com/hps/july/persistence2/ContainerBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: +mGZYIVyQ5c799G6OYC2sv2OwP0=
+MD5-Digest: kJkN8uR83TImtlON5JWhxA==
+
+Name: com/hps/july/persistence2/RRLResourceFacadeBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: s+kiUSJhjiefeO1ZFVXHt6rWB30=
+MD5-Digest: bALUhfrUH5lDwejjkkpvPg==
+
+Name: com/hps/july/persistence2/AntennaCableAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: kBO+G1YFs0S1TCpwCFXbxV288bE=
+MD5-Digest: NlGapXk54DFf9pTVvIbV0Q==
+
+Name: com/hps/july/persistence2/AntennPlacesAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: LgZsD630CxcpHxShN01rOa/QAqE=
+MD5-Digest: YPRAc6wg8Z+3OxxOWw4ZBg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Z6iWqzMEb9/4+dP0kw1m3gl9Dr8=
+MD5-Digest: t+exnZ+btAl7BwNZ5RSzog==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OporaPlacesAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: RSu7XDwctvVKPW2ikQ0IzX4UADU=
+MD5-Digest: mchr+Eh+qeoX1pYufakZng==
+
+Name: com/hps/july/persistence2/ApparatPlacesBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: O/xf3gXYKSCv1q3cTa23jRNa9HM=
+MD5-Digest: ZY896NAJDTF3MLs6syjOLw==
+
+Name: com/hps/july/persistence2/ContainerAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: x4mC7Z0VMw/fy+SGXjG4nqgnN4Y=
+MD5-Digest: nr+NTZte1bxf1Jg1y3TlpA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OfficeMemoTargetKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: T4smj7FIZcTv8j/+4D2GqUBDU5c=
+MD5-Digest: ZnjapYyr6HJeGg6eH5+nqw==
+
+Name: com/hps/july/persistence2/LeaseZPBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1Cr2FHKSUxvGyCXNNP5JitMBeBw=
+MD5-Digest: 2IIMjJKUK+zAEVCOiPAN8A==
+
+Name: com/hps/july/persistence2/Perm2HopAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: DtWfSm4MDLuBq6xo/CcPgV1SKEs=
+MD5-Digest: av29dgJBsJC7VgYH3+YDkQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetObjectAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: XG0m7ilXw3l/QFt3mpp4kZASMK8=
+MD5-Digest: WVIsNMR+oiodo6Hv9G4PvA==
+
+Name: com/hps/july/persistence2/FreqPermissionHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Osm56JL/V7HVV+ujMe0rGggq/tw=
+MD5-Digest: 25z1AhexYrLOJRQs8UrXng==
+
+Name: META-INF/Schema/Schema.dbxmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: s8Kl2wl8kwKR04MyiVmjYN64pao=
+MD5-Digest: HMYZ8ELXvXAbPVK4PHc9nA==
+
+Name: com/hps/july/persistence2/SitedocFacade.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: OPd8H65xHlmuDu8hZtbV+U9fszw=
+MD5-Digest: zpWwG9POyTb+tSyDwHLcrw==
+
+Name: com/hps/july/persistence2/BeenetFacadeBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: q55iQZ0aGUG/z4i0WSmaFS0XTX8=
+MD5-Digest: OhkKY7zixSNiHTD7BZPU3A==
+
+Name: com/hps/july/persistence2/Etap2HopAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: gNhfd/dpFOcWmU0Xw3QTps7ZFrw=
+MD5-Digest: 8llc1i840rGGu48qNbFtyw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ASguhXMvPGm/jO/fNFoC7p9bvfQ=
+MD5-Digest: wVjcjUCNlwdZ3YETyIaXww==
+
+Name: com/hps/july/persistence2/SitedocFacadeBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 2Ybj8cz5G+jWvO2LoOm7dUIXq8w=
+MD5-Digest: KnDfcHMelQy1cIC3Vj7MNg==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: mq322mgVLpF4A5f2mbwsW8iRqz8=
+MD5-Digest: 0zntGVAl5aokPXy/LCauhQ==
+
+Name: com/hps/july/persistence2/EtapDocKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: gChO0Gw3D2R3bJAhBTcLHb6eCIQ=
+MD5-Digest: Fx/QRIvQWilh/iIs+HODEQ==
+
+Name: com/hps/july/persistence2/OporaPlacesHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: +wafYrcgnxmYzus4IF4qQ6yGDBo=
+MD5-Digest: vf1DCis72aENMT6ZTPHBtw==
+
+Name: com/hps/july/persistence2/LeaseZPAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ONfo3/rp1FbbOZ5b0B6hBJob5tY=
+MD5-Digest: voWCCHyP83/D7gv+8PWK9w==
+
+Name: com/hps/july/persistence2/AntennPlacesBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 87KBXwD7s9bFq3RTaujaB+riAfo=
+MD5-Digest: YKhGULVuoaqyMqnuT1v8rg==
+
+Name: com/hps/july/persistence2/ApparatTypeAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 61suqDiRJyHz0pV4kO2EAsrQVSY=
+MD5-Digest: 2KbCpTq3ZPWHqe+cJvnphg==
+
+Name: com/hps/july/persistence2/BeenetCategoryAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: mGKFimnLV8pVMto/83g3+ZmuVTM=
+MD5-Digest: hhjoiBBr5Lvl4RobuaeOow==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OfficeMemoTarget.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: CyIUM78vMoUaaRJRpjSPL2rQmH0=
+MD5-Digest: 6NEReiOXXJDgq/yItJOZaA==
+
+Name: com/hps/july/persistence2/EtapType.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: OR5umcjmiR+DlfGXceJmq/y9O9Q=
+MD5-Digest: wVNApsc+8KDnKs9rez183A==
+
+Name: com/hps/july/persistence2/EtapType.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: lfIP84gBMzW8andkehEaU1z01b8=
+MD5-Digest: cSXEHvOE9wmc/0z+EptsQw==
+
+Name: com/hps/july/persistence2/Sitedoc2Region.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: JMYDOPs8FVdG/XUlgSW8VORsQdI=
+MD5-Digest: n5vZZ7k64j+3tMhKv2DDFg==
+
+Name: com/hps/july/persistence2/AntennaCableHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6l941/j8BLwxBNwWbZX6SVAPhkw=
+MD5-Digest: syactvORSsaaxqBDdxsL/w==
+
+Name: com/hps/july/persistence2/ApparatPlaceType.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: VKdZa2BXDSRrn3Spt9VzE10bSkQ=
+MD5-Digest: vzlTAZ7iXKALSYFih8Zy/w==
+
+Name: com/hps/july/persistence2/GKRCHDocAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: /ELzlXIlFsm/khdTnTHaReXIS1Q=
+MD5-Digest: Qn8EwgoZ/BEx++qCyHw17A==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapTypeAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: T13ChstuH2MhJATvhtPFKkGKnlE=
+MD5-Digest: XG2eJYXY0rHyWny94THUwQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Perm2HopAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: nJEcBtWSsLR/DGWjIFCVn3nU70E=
+MD5-Digest: VQxGSHRwAIivY7LG/QoSfQ==
+
+Name: com/hps/july/persistence2/ApparatPlacesHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: NEN/CGEaPkQQ5d1y+npPGrf/nMs=
+MD5-Digest: OrDpdgIg7hMUxEixBbsXNg==
+
+Name: com/hps/july/persistence2/Etap2HopBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: PRHueD11XfPcDAtFxByRlN2dDow=
+MD5-Digest: FoVstoTJm1D9mmOoy6NMYw==
+
+Name: com/hps/july/persistence2/CounterInfoBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: orlVu4OCHAKGWcTLlbY0kzqQpEc=
+MD5-Digest: aCFJMFIMZvc+9XxEiW/XYw==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: eYbt7Oph14sS4EYlwm2ppSWtS88=
+MD5-Digest: dh4B0cmJkDRiQ88PtneowQ==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: uAZQxfntA8lTnun2HAn8cQchN1M=
+MD5-Digest: CqErEz2oimwthd3RlUeK8g==
+
+Name: com/hps/july/persistence2/MSUserAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Vpg/WJrVURpvRCsHlBttbYIP2jg=
+MD5-Digest: BxE+J/2Wbqmc7V3iQMjZUg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ContainerAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: l7valNwKPXl4j5e8zbgDlbJ9jK8=
+MD5-Digest: Ba9Bu3lVBYsKzZqPNVYF5Q==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetObjectKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 87JbkHzQky8ArCE4Z/RjR32CFUY=
+MD5-Digest: wILMFc+uDMKfcCzw81Sg2Q==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: gO8Tn74RAb0J2biVz0DDovIVOrk=
+MD5-Digest: Lwkn/5Hsp+YVgf/NXlyzvw==
+
+Name: com/hps/july/persistence2/ContainerHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 39hJ8iAOpja+TDaS7pJFsI2OjjM=
+MD5-Digest: 9HEXyf/WFKxWMrDd/YsG0A==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: l/gUtE9hoxnwhCDYxJIin4zYMmg=
+MD5-Digest: 4DRFSkeSz0X9VCH2KYBmrA==
+
+Name: com/hps/july/persistence2/MSUserBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: SJ3AqU1B46bDMrc99JBsN2DV9R4=
+MD5-Digest: TIIEU+zXTGNF8wSrn5+H/g==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: rJoDHh55lbnQJ0mJZImL24UMHOo=
+MD5-Digest: MziM/IQ4BiOdLfkqTEMnug==
+
+Name: com/hps/july/persistence2/AntennPlaces.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: RYNSw0p3DBYbGD/CaKJxjV+fWwc=
+MD5-Digest: aGkFbL/NUYcrCIjDsQqbNA==
+
+Name: com/hps/july/persistence2/OporaPlacesAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: AGmmo4D684b+BjEFK6MSL30Ppfg=
+MD5-Digest: 0PhYfe0XJ++A8UDRcIpjog==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlacesAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: g4+2RceFD2rt4zTYoSIQJdmCu6M=
+MD5-Digest: tjVIe24/5XyfS22WQaVOEQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterInfoAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: qhFFjPtju7H5ch7bXVqoHOC+3f8=
+MD5-Digest: pG2qvzBE4SiafRitcytNdw==
+
+Name: com/hps/july/persistence2/ApparatPlacesHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: stqT1UzbnlUNckkP6sbiAQlrL0s=
+MD5-Digest: nuTFzWqZ7H5h56EQ5wvvuA==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: W5H8VCRhlsH55nkGUI6k4qbsk/s=
+MD5-Digest: /v48Hwe1MiD8I7PiYaJZMw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/LeaseZPHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: tBKh6UTy05fZXniHnkcrHoIE6BA=
+MD5-Digest: MeYNkOPytaH/nOkhKrOilg==
+
+Name: com/hps/july/persistence2/ApparatPlaceType.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: mqkbGsNdLZnwkXzPuzJyyTqlRQY=
+MD5-Digest: KTG+VqXALEh+bDomz4mwIg==
+
+Name: com/hps/july/persistence2/RRLResourceFacadeBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: imq7djV1xo2yZbVAfr7lDQFQQl8=
+MD5-Digest: yJSWLNnh/Sndh9m3xq/HPw==
+
+Name: com/hps/july/persistence2/EtapDocAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3B3SvK4D2003J2Q5W5O9fsyVvmE=
+MD5-Digest: ABGF2S8ItVzoZSPHHCdqZQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CableWorkParamsBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: R9O7k2SZ0uYxgZaBU0vcZBqlals=
+MD5-Digest: rWOuk2K5mQOb9BOGJwB55g==
+
+Name: com/hps/july/persistence2/BeenetFacadeHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: zOB9laixJYZcRJYDgAnC9IfyC24=
+MD5-Digest: RCYaEYcHPVCHvGgPU4x83g==
+
+Name: com/hps/july/persistence2/Container.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: UlzkJKJh4J8omr8+70UNSfj3NL8=
+MD5-Digest: oaolinQXsTB9BUptJr/lHQ==
+
+Name: com/hps/july/persistence2/CableWorkParamsAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: DwMS0Ri2ES72re50dINq1YNS5us=
+MD5-Digest: bxSGTsNgIzSylvBtOqiTpQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapTypeKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: qCUeW74AdxIqE6x3r9E25JlXOwM=
+MD5-Digest: xC0IM4TqNU4iqLJh7WD5gg==
+
+Name: com/hps/july/persistence2/SitedocFacadeBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: PQSXXXiuPgg3OBA7QleOkuDrPws=
+MD5-Digest: lbx7YH0TUKp4VWKB2VPOfg==
+
+Name: com/hps/july/persistence2/OfficeMemoHeader.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: IYhMPFk6xrVC/nk7f2/aa3lWrjc=
+MD5-Digest: MyFlEBcaKJvU4bZCi4B8ug==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: SrZX/TIdslxHQdSIoqb9W1RCBcs=
+MD5-Digest: fM+czPd99NOx/NX2TtyDZg==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: fMLKHfdpcsD4a6o/zrpMFYepTuM=
+MD5-Digest: zCq2mYXjAkMPpIog2p/mHw==
+
+Name: com/hps/july/persistence2/RRLDocsAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7334RrKQPhd032bEhSJt7dp6Fj8=
+MD5-Digest: 8G+fEnAFDvfY1d9qPFY/Lw==
+
+Name: com/hps/july/persistence2/ApparatTypeHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0IJs0M71zcX/hiSHSdelzIocaVI=
+MD5-Digest: PierrcrcXUwq+71vygBxuQ==
+
+Name: com/hps/july/persistence2/CableWorkParams.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: rbj5dFRAa2CD/U0ijo47CO25c/o=
+MD5-Digest: biEdeXb7hraVk/QZxdMW1Q==
+
+Name: com/hps/july/persistence2/AntennPlaces.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: acRB7/UKFFeWj3I/AfOrNKCjmDs=
+MD5-Digest: Ms3hA60OD3h+Pj/n5M7QoQ==
+
+Name: com/hps/july/persistence2/OfficeMemoPosHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: oFHONkxP9Ax2ZBRq6Ooa8RLOpao=
+MD5-Digest: b3MFO3n+qHFEKRtSGKitNQ==
+
+Name: com/hps/july/persistence2/LeaseZPAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: olANy2rGbKWcMsdylICRDIh/KGY=
+MD5-Digest: slMQkiRdJXGdoz18sv4Pcw==
+
+Name: com/hps/july/persistence2/CableWorkParamsAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: iBHXluYl0gDlBXKj3wn9oYoqtjI=
+MD5-Digest: 1yYc4qBDyBa7CotkcGyvgg==
+
+Name: com/hps/july/persistence2/MSUser.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: UqvDLfev6CiSAGKjlKRhxM7ndmc=
+MD5-Digest: LzumbSPDKY5GA7CKeQSlZA==
+
+Name: com/hps/july/persistence2/MSUser.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: JEfpTBM+qBzSgNj2d52LRO77/II=
+MD5-Digest: aBzsCcX8S2ZO8vqLZTYJRg==
+
+Name: com/hps/july/persistence2/BeenetCategoryKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8+nXzSoexa+8MDSXfI+eLHv78gM=
+MD5-Digest: ZIgyjJgaWD+YVrKQpydbcQ==
+
+Name: META-INF/ejb-jar.xml
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4/x1lhxLZJEOont9iCsuQqlK/Y4=
+MD5-Digest: /LspkC1yd7w1uXuIQi0KLg==
+
+Name: com/hps/july/persistence2/AntennaCableAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: vQHgcrO/Er2A2Z3Kz8vdMHDhBt8=
+MD5-Digest: oVdc29+9P9WqwHhXTagurQ==
+
+Name: com/hps/july/persistence2/Counter.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: nUrVMwxtTJcGflv6gL0U3u3rDQs=
+MD5-Digest: Qw58k1urcICWr80wAHz3GA==
+
+Name: com/hps/july/persistence2/GKRCHDocAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: xirXEWLw/p3g+EznlkioZhx7rxI=
+MD5-Digest: RIZVkr98J24xZGSJldJwEw==
+
+Name: com/hps/july/persistence2/Etap2HopAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: vOMtIOTOtEMgomoRGgObi0ZZSUQ=
+MD5-Digest: wwtJ3yiRBAWKJ+pooYnhcQ==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRI.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: IyyatCSveb1vwoSb7ZivDhojCXs=
+MD5-Digest: ui0DjGh5RWcnbhEsJMi8CA==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: LxgpqcHJ5jvAfxjlZYLNucuGro0=
+MD5-Digest: 5DlBNdkcaWP3MVucHQwraQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Beenet2EquipmentBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: mlDGmq75J9C3q7Y6mEYMmS/a8dY=
+MD5-Digest: tyfDFndvBaHuEoT2XtmMfg==
+
+Name: com/hps/july/persistence2/OfficeMemoTargetAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6K+Z1yJ95cAdRbs/Ui3I/2RDxko=
+MD5-Digest: VXViquqTANSRuItcRt3RNA==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: cCuKJALyimD0EGHBa4/cSbtQ1UA=
+MD5-Digest: Sfamh4nzbp1teQvEF9jDXw==
+
+Name: com/hps/july/persistence2/EtapDocKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: UpZc6ooB/VH/jSRat+4lqFI6O8Y=
+MD5-Digest: hhP0/up37npno4hxZL19qQ==
+
+Name: com/hps/july/persistence2/AntennPlacesHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9QUi6AvB0Y62OF9ofuYWMqcxOhM=
+MD5-Digest: gHaccfRQ9YLgU5RGkbAlFg==
+
+Name: com/hps/july/persistence2/GKRCHDocHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: nfDsYxkLqYENhNqWBVTbsyYAacY=
+MD5-Digest: nQ1SanrPoSHemwBtz7n1kw==
+
+Name: com/hps/july/persistence2/EtapTypeAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: kiIWyFGjdNtDSAItYfPA9WJKUH0=
+MD5-Digest: nJ17c6c0j3sSqThJQf/eXw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterInfoHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Z50ePXTCTw62MkZ5HDPKLJ882gU=
+MD5-Digest: 6ud+HrvvVN6VgXperRQNCw==
+
+Name: com/hps/july/persistence2/FreqPermissionKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: mMMOewF5WR8FI81+BGTWlpy9fFM=
+MD5-Digest: mvmTeM2CKCdFhFlK0htX0Q==
+
+Name: com/hps/july/persistence2/BeenetObjectAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: FddMETod0oeNwCuM1HdFpCLYCPw=
+MD5-Digest: LD3ds6TnUky8iJiK4HmUaA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Perm2HopKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: m1YrAbTOcB7B+ORBrhVrI9qq45o=
+MD5-Digest: rSkP9wylf1u/9xSG/ydeTQ==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 67I/cjHlQVMGWMSLmcp+GGLgNHQ=
+MD5-Digest: HGIBCxeXnNlNyC2hSblf+Q==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 5fk1aYg4xVfKzwc4Voiq/4k9hg8=
+MD5-Digest: w+iCNuRo22N2TmyQjum1ag==
+
+Name: com/hps/july/persistence2/FreqPermission.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: cIyt1IEdGRnZei8p9F0uQhQs+Mg=
+MD5-Digest: BF3hKkwCpIJN5gDXEyF/IA==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: JVUnfKuUdbfuq79Ybf7xHM7+83s=
+MD5-Digest: VsTGLpyrjmhpXy1J+bZg4g==
+
+Name: com/hps/july/persistence2/BeenetCategoryKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: GAOOP3LaFGjsZDOx0VUvKojB70M=
+MD5-Digest: j583siNM4PYLd6ANHDF7Qg==
+
+Name: com/hps/july/persistence2/OporaPlacesKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: y00cl6f3nHpFHOM2l87BFd4uBAw=
+MD5-Digest: s46+B3K3BygSk1Ae/IlOig==
+
+Name: com/hps/july/persistence2/EtapTypeBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: qjNNgfNvpPJz4cvgUVcvLgchOwI=
+MD5-Digest: J9rtbjooD8yrfboH7tJUbw==
+
+Name: com/hps/july/persistence2/CableWorkParamsAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: L93vR85hWBYBy63tjYNfQo3RWXA=
+MD5-Digest: kgkRcy9eo9poLsOCXZA1WQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: tthwQgBvdvN1dA4MnwgXl5hKqHE=
+MD5-Digest: gTdIPWrBYTAt1XprUFjPfQ==
+
+Name: com/hps/july/persistence2/RRLDocsAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: dIqYYwhuIOrqQyfbV66qdX0ix7M=
+MD5-Digest: h1jjZAEzjgfYt6CUVLrtcQ==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: X/iL0M0nfXks8UBhTWSVvNiOUkk=
+MD5-Digest: NiPvQlpTnVS7xKbEPuvqaQ==
+
+Name: com/hps/july/persistence2/OporaPlacesKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: eEW29DLxkkYovBJnCuzx+7WtvpI=
+MD5-Digest: ruBO0JnIxpAHQmuTjNwgIw==
+
+Name: com/hps/july/persistence2/OfficeMemoTargetHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: qKUHymUrmIavTaxUFnWHVeszM6o=
+MD5-Digest: OZKSh44CTBo2pRn9D8YlSA==
+
+Name: com/hps/july/persistence2/EtapDocBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0/yQVxp7bH73spXYctRqJN0YboQ=
+MD5-Digest: 8c8xIt2DTgGOZNVdfQkBuA==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: LOohy/8MAB7NszoXMhjiGj1oYKw=
+MD5-Digest: ycvtG1vfdfQRPH9g1j35KA==
+
+Name: com/hps/july/persistence2/BeenetCategoryBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: s09nTEUknU0Y0NzJ1IBBVGdYH+o=
+MD5-Digest: k4hdtl4eru2usit2pmsioA==
+
+Name: com/hps/july/persistence2/RRLResourceFacadeHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: u0EkEOVxMw+Sidamx3l9wcnSWrM=
+MD5-Digest: 7lNDfBYCRplJZisTYpyhSQ==
+
+Name: com/hps/july/persistence2/Etap2HopAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: KHPqBo50KleHsE2RTNjWuF/i81Y=
+MD5-Digest: BDd8lmpeY5UGZnkJkUECxA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Sitedoc2RegionKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: /opIExwyLa9i9rogYOnbqTy1weE=
+MD5-Digest: RwY250bQOhBwjpOjiIOG2w==
+
+Name: com/hps/july/persistence2/BeenetCategoryAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: y4lLK3HmDhWYFOjXUMd//30WpK0=
+MD5-Digest: 7eghxs1cpYGiWHt1ZX4MuQ==
+
+Name: com/hps/july/persistence2/CableWorkParamsHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Qcc8jTSy/etbdpucJbtwz+IuqQU=
+MD5-Digest: bLYDu8W9trEu+WOareTqbQ==
+
+Name: com/hps/july/persistence2/Perm2HopAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: l+SfzItdeSniBeO61zvk4Tz9OHA=
+MD5-Digest: EdXStOMhffKaGR2BxQxz2w==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: rFxnD4DxMD+/ulDrL1LRmXnp9pM=
+MD5-Digest: QotMoq+SEcM+UzLB2fQ1Ug==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRI.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0aj59HR9dLM10w8ycTzqcvXOBvo=
+MD5-Digest: XtRMR9Sf337clycUB58kFw==
+
+Name: com/hps/july/persistence2/SitedocFacadeHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: oytYZhe2d8awFwJ36jhHtGlhhJQ=
+MD5-Digest: uXUfsUDMZzKJrBEnZNIn0g==
+
+Name: com/hps/july/persistence2/ApparatPlacesKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ws+SVzwQ7kdNrgrJP7yPA2kZpqA=
+MD5-Digest: DAM189cU3YR9XLjNBKiFbg==
+
+Name: com/hps/july/persistence2/Perm2Hop.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: IuuyMltPJvIvIV0CS1OZa8Jw3yc=
+MD5-Digest: NmiRNUmpBbxyScP63Vm7yg==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3vFO3V/oY9SfJ4IQeWoza4djrqI=
+MD5-Digest: UoEBvaQPRWAFTMD/oRPPqA==
+
+Name: com/hps/july/persistence2/FreqPermissionBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: m1tdhOC9CXsK2bZJ+awL8LjY1WI=
+MD5-Digest: 37g4G0jx8zkNTaazbgqsKA==
+
+Name: com/hps/july/persistence2/Etap2HopKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: bpIDmjwOFHH51osOY5ACjVJ1rFY=
+MD5-Digest: yO76djWFZOtTfxYnWbdLUQ==
+
+Name: com/hps/july/persistence2/CableWorkParams.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: +PQswfM0UiyMFvk2u0jSnLiSezg=
+MD5-Digest: Ch8edytlfr2NlCecclfoIA==
+
+Name: com/hps/july/persistence2/ApparatPlaces.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: nmLTPSytgf14Ka+wm+SrFrXgFAM=
+MD5-Digest: TiANxnaBKoDBCEZjcGbkcQ==
+
+Name: com/hps/july/persistence2/CableWorkParamsAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: WyOHGwUUc+xChVG2MKbrhNqz4aE=
+MD5-Digest: ik6p82xzIgnu/3nPfctSJg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/BeenetObject.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ZU8jsHzyaKQbCYH7mo8jq0F1s4A=
+MD5-Digest: byzDkjoFtZ4ouY1yADq42w==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ciQ80w3i/ISPTfjpdpIwLv+McGk=
+MD5-Digest: HRdhFbKDRzsQfgrIrFuyxg==
+
+Name: com/hps/july/persistence2/OporaPlacesBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: mne0HJuR+LF7/OthG06h9VFlpFE=
+MD5-Digest: 00o0oY+D4zap+qSScaMWnQ==
+
+Name: com/hps/july/persistence2/BeenetCategory.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: qhkbXGoem4mUBMwmwV2XBYbfpL4=
+MD5-Digest: CYXAYGVb6rVPRkw1xo1Gkg==
+
+Name: com/hps/july/persistence2/SitedocFacadeAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: gghJbNBtGuMmbOKXkflY/1yH2rY=
+MD5-Digest: hCIJN+XJBaGzWE/gVgr1Yw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0JtLopcpTgimFE5gUqwLbNo68GI=
+MD5-Digest: I+5nkdyl9XVBCbkH2SuhWA==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: qBAp4OECYdrxj/+l7B9puCXhuZE=
+MD5-Digest: fvJepX2bR3sgGyzS/J1VwA==
+
+Name: com/hps/july/persistence2/AntennPlacesAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Yl581MgPpX4YwWMqDK1viAgHsGg=
+MD5-Digest: 14PWE0r/Lx0nHC7vz9iCJA==
+
+Name: com/hps/july/persistence2/ApparatPlacesAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: yGwDn48APiyC3l9nqFh3mnFrY/Q=
+MD5-Digest: 6VTaAWRepYzIx6uH1oR5+Q==
+
+Name: com/hps/july/persistence2/Perm2HopAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: aoaQvr4F6OuuA7bIgVs89nG4v/8=
+MD5-Digest: jTOL/AcFLbzcF/ZwkoG2PA==
+
+Name: com/hps/july/persistence2/GKRCHDocAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: AOZeTDUASR4Wh5/+tj2D8RXsjxQ=
+MD5-Digest: 6n9S5IN+pK72ypufx/xIoQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/EtapDocAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: AuUNpDO9xMCUXQIo9JgWtRqm3L4=
+MD5-Digest: KC+HUfSsBAJ2mGD4cFsrOA==
+
+Name: com/hps/july/persistence2/ApparatTypeAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: t9aR4QahImdz7LUJYzMSADphV5U=
+MD5-Digest: vjSV5ONvkW3w6v9gqu61NQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: H6lRjZ24cfreI6yguhvfI4GyhUI=
+MD5-Digest: jCiOApzIASQoYLfBV7vKBA==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: TaQNtSYlIddy0qNpoP8NMsfkzss=
+MD5-Digest: cUMK+nzlX02yDScR67zkIg==
+
+Name: com/hps/july/persistence2/MSUserAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: aG0ltQ9L6wKgtBluG+nrAvjNtEo=
+MD5-Digest: C3B5Bus5Dz6549H6R9SqDQ==
+
+Name: com/hps/july/persistence2/Beenet2Equipment.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: ji3ubxICpKsSfGAc/bP7lMkKyKw=
+MD5-Digest: PHNu2UV3kvR8ocoNaj9suA==
+
+Name: com/hps/july/persistence2/RRLDocsAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: bCsIK0KBEbijogh+PXuYJ8/RmD8=
+MD5-Digest: XPdKb7zo57pZIz01iGnN+Q==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: K4Zmq6YrrrT/DH8KmFciLBPMQ6I=
+MD5-Digest: J9nCsD8/6IqMpgWwoSTsoA==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: IAg9lBLNxxsZNcr3fLrGZ9x2Tb4=
+MD5-Digest: GpY9W33v9VNyPo/ylXay7w==
+
+Name: com/hps/july/persistence2/CounterInfoAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: rMLGQT1mfdUwioArczHDrn2647I=
+MD5-Digest: ag/1ytyOfJUgMNU0ut7wCA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlacesAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3sgUfqKLNUYFkIYzeFDh8s71R/I=
+MD5-Digest: xRtAnW97CM3q528kLny7Qg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlacesBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: HeOwAPPD8rYX7hUxTWMlu5icnlw=
+MD5-Digest: GuBLSSFPI6tf6auVsgOSGg==
+
+Name: com/hps/july/persistence2/FreqPermissionAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9YBJg9clIizIo9ihIcm3WakR6YI=
+MD5-Digest: uzAU80kefLFnnVDFhlR1UQ==
+
+Name: com/hps/july/persistence2/AntennaCable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: tdKRYEHLgeFMtQuwuBd0ogqX7Bg=
+MD5-Digest: ZgamyyBTavRn55ZyiLDOQQ==
+
+Name: com/hps/july/persistence2/CounterHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: urufXGvsL1Y/DcmBJDAE6TXEWSY=
+MD5-Digest: TOuQTdZtTbAcK4cGV/gT2A==
+
+Name: com/hps/july/persistence2/Etap2HopAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: CrEUyPbsNBleMFQvno5t5ZlQJZk=
+MD5-Digest: tVHIX74VViXIyTdcKa9NNg==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: besRzqxU9bynzqhLVjdBdWgKvps=
+MD5-Digest: UgXT/04Fl+mTOY6sKk317Q==
+
+Name: com/hps/july/persistence2/MSUserAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: vQmNaibNl/NzhIt7RizIm4NVpQ8=
+MD5-Digest: Yz0vBD8bHzGHAxRYRDhNIQ==
+
+Name: com/hps/july/persistence2/Etap2HopKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: UkuH/Eua4z+xMI1eHEiZ2SzSOF4=
+MD5-Digest: iGbHKPXfT6aA+cs9VSd7jA==
+
+Name: com/hps/july/persistence2/EtapDocHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: aEFvlqp6HMVthqPIpWu1uFFXhVA=
+MD5-Digest: i2l7/OQZ2dGk3L1qv0vu2Q==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: CHTExdo0SxFGGhNEsa8Oen4WXMQ=
+MD5-Digest: DZM7OMwLtZkd5B0IsEnGsQ==
+
+Name: com/hps/july/persistence2/BeenetFacadeAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: QI3o0xowj1c+fr8/Y21O8Dqy6m4=
+MD5-Digest: UmBiyNO4yT3k39ncz/TCSg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Etap2Hop.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: xj4fD3fIPzmIDZMURE507a+AmJM=
+MD5-Digest: KF8qj+OJLC0pv8fkasklXA==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: WPVPnbmcblL4a4rF1aB9gPueOc0=
+MD5-Digest: pT7ZaDA2+97/UwHfBwFZHg==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: CKod3A5Gy+DUpkkmsdlARvV1sLw=
+MD5-Digest: W4DlnCudAYEYu6uTz6Gv+A==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OporaPlaces.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: gkymi8HPZHdCfCHnBl4EwMBStDE=
+MD5-Digest: LDmPT4OSLuiCh5Uvh+a7yg==
+
+Name: com/hps/july/persistence2/AntennPlacesKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: yrGx4YDWBouobYQ6NfsQOk37ZLg=
+MD5-Digest: +UrIV6dBbyxixnh2Zpj4ug==
+
+Name: com/hps/july/persistence2/GKRCHDocAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: dJ7aT6C2u2Q7SDPbxoNhSkWaWLM=
+MD5-Digest: 7wDVPL/DUlHAt+K24YkmdQ==
+
+Name: com/hps/july/persistence2/MSUserKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: exb2kH0RMwIYn2Z41HWkBBZoaIE=
+MD5-Digest: Gh0hmrpFNJ46TPWzEKYM8Q==
+
+Name: com/hps/july/persistence2/ApparatPlaceTypeKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: O6ObiUgZrNDd4LoAqYbvwmG9s3M=
+MD5-Digest: +t/+FymWm/KW5gkBh/ftJw==
+
+Name: com/hps/july/persistence2/OfficeMemoTargetAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: jWZFkON7ygmkMjSqB3xklmTlsBs=
+MD5-Digest: 1diH9X/JhTK0OGUuBz8qZQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/Sitedoc2RegionAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4NKwFBxhVMFs/uF25CbRhwAo9/0=
+MD5-Digest: gLpuqeFluYiA+yJuqkP5UQ==
+
+Name: com/hps/july/persistence2/Sitedoc2RegionBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: f1G4D3Yiy8W8BUdrw9fLc4O/AOQ=
+MD5-Digest: QXPjIGWMHkSocMXwVxt5xw==
+
+Name: com/hps/july/persistence2/CableWorkParamsAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: mM3Qc39KtbyWzfkXDBkkM2pP5lk=
+MD5-Digest: inxWGiNnhxViLNdWunMXQg==
+
+Name: com/hps/july/persistence2/OporaPlacesBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: hi3wWcwB6KsWVThdohEf1nYcghc=
+MD5-Digest: cydn6i3l8Qmx8NkbioD95Q==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: wML2NdP1+2m3cOGnrvyJBoIHrjA=
+MD5-Digest: YgUYLIjNsfXcl7QDG1d1oQ==
+
+Name: com/hps/july/persistence2/EtapDoc.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 1qPhgdL3fELcM3I/l0ojXpvoDMY=
+MD5-Digest: eEpnWMDtQHK3V/ae65durQ==
+
+Name: com/hps/july/persistence2/Sitedoc2ResourceHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: qPU/gaM6HWeqw3LJ0hOSAK5IOlA=
+MD5-Digest: hFd9ITkfq8jAZTxCu46SlA==
+
+Name: com/hps/july/persistence2/OfficeMemoPosBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: muXi2s7MCOTHhD2S/rz0SU1p2jc=
+MD5-Digest: TuQCXpvoasUzPBT3rhQIlw==
+
+Name: com/hps/july/persistence2/MSUserAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8td3jWW/0NfHkICv1Jmqk8iaTLA=
+MD5-Digest: AbHAm4+DqjXbXgDVxMGgCA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterInfo.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: kyR5EAbW2J7rVyWDTiHQqwsDhjc=
+MD5-Digest: egunaaWtRN/z+AfHCmhCzA==
+
+Name: com/hps/july/persistence2/Perm2HopKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4vZVukk/kxg8jzgkRQDkj1dEZJc=
+MD5-Digest: mFIxJY8MWqNq42hZLx3sOA==
+
+Name: com/hps/july/persistence2/AntennaCableAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: f0t0BFhoKwapTZM3tYLpfTG3CbU=
+MD5-Digest: nBM9oTAOze3dEVIPKsb4/g==
+
+Name: com/hps/july/persistence2/AntennaCableAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: zkdsLgmpjVaqootGgnNTcLEk38A=
+MD5-Digest: t3+lPzPJ9fB0CErs0pnJqw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: gIidkeujZV6aCLi60siJ4TUn+xs=
+MD5-Digest: x6aJgEkQCSWp2TsGuMVACg==
+
+Name: com/hps/july/persistence2/BeenetObjectAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: bAhqexOfBDEe25qq1mhJegxJxII=
+MD5-Digest: PirGRoyS0w/h+NoqJyvqDw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/CounterInfo.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 75w211hMln3LieIubVK23VM/PDE=
+MD5-Digest: d2k4iV8zKu0ScWY2xqHqTQ==
+
+Name: com/hps/july/persistence2/CableWorkParamsAccessBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: CkpI9H6DiNhukRe+81UhOJ2MQoc=
+MD5-Digest: C0324ER8a5An7WlpxZB2qA==
+
+Name: com/hps/july/persistence2/RRLDocsHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: pcVRr0hxERH+ceNj0U7EsTdUnhw=
+MD5-Digest: bS+Kr41waVbdPAlhtqEDmg==
+
+Name: com/hps/july/persistence2/ApparatType.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: b7IoD71jGjrohYHIyJeF26F+WLg=
+MD5-Digest: hQAJ370jceC19gM/Y33eRQ==
+
+Name: com/hps/july/persistence2/OfficeMemoTargetBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: S4tyuElnnJHIrjtWkkJbUzdaLYs=
+MD5-Digest: 5xOoExoI4ImuY/0X8Q8HKA==
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: LVwWFSmawhYCkilhBpLTGuO9eJA=
+MD5-Digest: JIVKW2tfiOpHDXWaERax3A==
+
+Name: com/hps/july/persistence2/AntennPlacesBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 8DKBx3DA1PZLjmtIOR+jAXiYyOw=
+MD5-Digest: hkvjeguEJHQJcQnku+QAwQ==
+
+Name: com/hps/july/persistence2/ContainerKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: bvZNMiTAq7Js4ZfdM8CoB2ceBLc=
+MD5-Digest: Ul6qtXMVTIRVTmmBcfteWA==
+
+Name: com/hps/july/persistence2/OfficeMemoPosBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: uuABEhAq6/dunxn05F0zcU9i3PQ=
+MD5-Digest: M6HMANIDMcDacPJsJvHxPw==
+
+Name: com/hps/july/persistence2/CableWorkParamsHome.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: fwHb8P8kKmU3ZbaTNR1XegEm0BA=
+MD5-Digest: 1FGDRQ9ZRHZsYZTmiiZBNw==
+
+Name: com/hps/july/persistence2/Beenet2EquipmentAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: Adv+1Z4RL10tGaoTNcJ78dOJcaY=
+MD5-Digest: l3WEhaDDBv7go//M1rNeuA==
+
+Name: com/hps/july/persistence2/MSUserBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: p4/xSi5T68RDPBts9Gohvs87PRA=
+MD5-Digest: /QnPjvNnJUsVaoLH7Bvs2w==
+
+Name: com/hps/july/persistence2/GKRCHDocBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6PoEkW/g4+o1M2uTZ+PqUnDW/Ys=
+MD5-Digest: i+KkZpHGR7+SAwIYYwMNkA==
+
+Name: com/hps/july/persistence2/ApparatType.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Bj9BD1HyK3dsPmfABQ4PsReHdgA=
+MD5-Digest: C4PAHL2BWZ+XgOo7qOWZQQ==
+
+Name: com/hps/july/persistence2/LeaseZP.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: AKBLjOI5IxJc+pQeb3R75B/XpjM=
+MD5-Digest: MtQmjpUnwaKhcZCyGVv9KQ==
+
+Name: com/hps/july/persistence2/KzlNetzones2NRIHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: scfAYwtv9sYWFx5ugwDLpdinZK4=
+MD5-Digest: hsbM1DAVk7BWek63TPebDg==
+
+Name: com/hps/july/persistence2/EtapDoc.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: jNRz+Zh4KBqwx4oz1MP/FL6Rdr4=
+MD5-Digest: CnHegJW3XvQW/mUmxv5XfQ==
+
+Name: com/hps/july/persistence2/CounterInfoKey.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: xXfQ3h3BI6U2fQs4HyXi03bkFqk=
+MD5-Digest: jn0hT5u6MjFSOU11iEWmZQ==
+
+Name: com/hps/july/persistence2/AntennaCableKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: oqkH7X7oZ/dsrWE/gDbKy//tyfo=
+MD5-Digest: UZLtKq0TxlJC0dTht87gFQ==
+
+Name: META-INF/ibm-ejb-jar-ext.xmi
+Digest-Algorithms: SHA MD5
+SHA-Digest: lWpWT2OnzNcjmRTF9zMluP08OfA=
+MD5-Digest: swAYPxpKOtfvNSjspF69nA==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Cok8UHRT/vltSYTH1kezi6NX0RQ=
+MD5-Digest: zVk/ElsdFR8A1kWrQjdTVw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/KzlAntennes2NRIAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 0zmy5S1E805gsDaLwMQJq0MSgbM=
+MD5-Digest: 00+4cVUQj6sWEmS957OYlw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OfficeMemoTargetAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: vg8EHQqz7MToDx13yXwT6XTx7y8=
+MD5-Digest: 7kUKeHmcHrC2XHUVnN7NdQ==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OfficeMemoTarget.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ed2Qx30H5qY5BC+7FeEiJYcZ26A=
+MD5-Digest: aI3V2iPt5Fjb+kf9vZqArQ==
+
+Name: com/hps/july/persistence2/OfficeMemoHeaderAccessBeanTable.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 4YD/L6ua1srZG4xZqvrnYd8jSB8=
+MD5-Digest: RlnggLhb8qb8qCwG3MIqYg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/RRLDocsAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: XHCQY8q/MfnrFJrkwRS3wJQJ4gE=
+MD5-Digest: JzJAaXBxVqHN3uMVZXZDkQ==
+
+Name: com/hps/july/persistence2/CounterInfoAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: DM9xku7zRHl0Qxt6OQoetAgM59w=
+MD5-Digest: ztdJZTXBm2dQ7ofTEVMTNA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/OfficeMemoTargetBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 3EIBSv8JdCYT9bvJxjq943knUiI=
+MD5-Digest: HJgdaYL4bYZdDXFoy9x90w==
+
+Name: com/hps/july/persistence2/Perm2HopAccessBeanData.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: VzsKepmmu0dRERqkJtTJDayqyKs=
+MD5-Digest: LXeqeWDP1QdGDRB+ZKcEcw==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/GKRCHDoc.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: axdanhTGqmJw2ePQHv0JWpyjcdw=
+MD5-Digest: BKZjW2+1DL9yWUQkgOYPqw==
+
+Name: com/hps/july/persistence2/ApparatTypeKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: hvTGcWZVqclyHmHXiStHpkqgUJ4=
+MD5-Digest: kIll01XiEHtoEYi1OBvsow==
+
+Name: com/hps/july/persistence2/LeaseZPAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 9D5iCSg9WmG44veWO+22dLXSeAU=
+MD5-Digest: MmoUm+Tcn9EHJY8PIt76Sg==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/RRLResourceFacade.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 6DUeUgeCwtGj/4f5x7ruxHg3PDg=
+MD5-Digest: MXRn5YHoNwGhAJ+G6tSYwA==
+
+Name: com/hps/july/persistence2/GKRCHDocKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: kCDQ5+Dfr8Z/vc0Lxbwj6jh8wfM=
+MD5-Digest: FSHDwW9VsE8WLwH84BU5LA==
+
+Name: com/hps/july/persistence2/Perm2HopBean.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: 10uW6i53GgtjQAwCzouK0Qpx0/I=
+MD5-Digest: O9Z4ZfwO9bE5gVG4ze3/CA==
+
+Name: com/hps/july/persistence2/MSUserKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: an9VLPP9aUxX3yVFdgRJBVrA6s4=
+MD5-Digest: OGE/MoBUxJsyK6KsVDvykQ==
+
+Name: com/hps/july/persistence2/OfficeMemoPosKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: uqWg70a4j82DWvfqKPFko/ND5DE=
+MD5-Digest: 82Sf9Wi/ASs9MtwXlFnW1Q==
+
+Name: com/hps/july/persistence2/FreqPermissionAccessBeanTable.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: cE4jGerrXRoYmz0MZ0X7UUnv1Zg=
+MD5-Digest: pXZvRmmP159WEOvKGXTPgw==
+
+Name: com/hps/july/persistence2/FreqPermissionKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: ZO8xSkNOs6D5FFgqDLN+hRKAmgY=
+MD5-Digest: bhx03Y77rPhc3rU54gBGRw==
+
+Name: com/hps/july/persistence2/AntennPlacesHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: sMeJj5fXp66E81CcjmuU2Nj56Xc=
+MD5-Digest: plXJCAq83yku2jS0+C1jTA==
+
+Name: com/hps/july/persistence2/CounterAccessBean.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: Sy1L+XtN8UgWvBwRvOXlWWFQALA=
+MD5-Digest: Y2wBZn9FJugxIwtKtLo4WA==
+Java-Bean: True
+
+Name: com/hps/july/persistence2/ApparatPlaces.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: xnA7HKf9dkhm0/UBvljuF03S+Ks=
+MD5-Digest: sdJ5DSD+aVOIPhVNfsT9Jg==
+
+Name: com/hps/july/persistence2/ContainerAccessBeanData.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: BWuC5KZJQgcOQkKVoDcluSLJTbA=
+MD5-Digest: ccXgWrfK+beWxBKH40JGVQ==
+
+Name: com/hps/july/persistence2/OporaPlacesHome.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: 7M3zDcA/H5O5CM2xUvC1hgfxYWw=
+MD5-Digest: WcFB68PlxFijETIbdrMJPw==
+
+Name: com/hps/july/persistence2/Sitedoc2Resource.class
+Digest-Algorithms: SHA MD5
+SHA-Digest: EJeZCwcKcL8zes1JcHUb7AU63T0=
+MD5-Digest: 9Z3CA9EjLcsds5mZx19JQQ==
+
+Name: com/hps/july/persistence2/RRLDocsKey.java
+Digest-Algorithms: SHA MD5
+SHA-Digest: AuXkF/Dko4FNFpZ5LKL2KWVOPgo=
+MD5-Digest: X6sKvNrdBYSWbefnvCdDag==
+

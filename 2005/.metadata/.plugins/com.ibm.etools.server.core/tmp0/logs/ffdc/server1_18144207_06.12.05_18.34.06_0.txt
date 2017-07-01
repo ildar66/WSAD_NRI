@@ -1,0 +1,61 @@
+------Start of DE processing------ = [06.12.05 18:34:05:785 MSK] , key = java.rmi.NoSuchObjectException com.ibm.ejs.container.EJSHome.activateBean_Common 1119
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EJSHome.activateBean_Common
+probeid = 1119
+Stack Dump = java.rmi.NoSuchObjectException: 
+	at com.ibm.ejs.container.ContainerManagedBeanO.load(ContainerManagedBeanO.java:978)
+	at com.ibm.ejs.container.ContainerManagedBeanO.loadForEnlist(ContainerManagedBeanO.java:921)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean(EJSHome.java:1164)
+	at com.hps.july.persistence.EJSJDBCPersisterCMPOrganizationBean_afa7f9a6.findByPrimaryKey(EJSJDBCPersisterCMPOrganizationBean_afa7f9a6.java:678)
+	at com.hps.july.persistence.EJSCMPOrganizationHomeBean_afa7f9a6.findByPrimaryKey(EJSCMPOrganizationHomeBean_afa7f9a6.java:138)
+	at com.hps.july.persistence.EJSRemoteCMPOrganizationHome_afa7f9a6.findByPrimaryKey(EJSRemoteCMPOrganizationHome_afa7f9a6.java:159)
+	at com.hps.july.persistence._OrganizationHome_Stub.findByPrimaryKey(_OrganizationHome_Stub.java:531)
+	at com.hps.july.persistence.OrganizationAccessBean.instantiateEJB(OrganizationAccessBean.java:430)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean._instantiate(AbstractEntityAccessBean.java:165)
+	at com.ibm.ivj.ejb.runtime.AbstractEntityAccessBean.refreshCopyHelper(AbstractEntityAccessBean.java:304)
+	at com.hps.july.persistence.OrganizationAccessBean.refreshCopyHelper(OrganizationAccessBean.java:466)
+	at com.hps.july.siteinfo.formbean.PositionListForm.constructRenters(PositionListForm.java:105)
+	at com.hps.july.siteinfo.formbean.PositionListForm.validateValues(PositionListForm.java:699)
+	at com.hps.july.web.util.BrowseAction.perform(BrowseAction.java(Compiled Code))
+	at com.hps.july.jdbcpersistence.lib.BrowsePageAction.perform(BrowsePageAction.java:48)
+	at com.hps.july.basestation.actionbean.ShowPositionLookupListAction.perform(ShowPositionLookupListAction.java:40)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1788)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1587)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:492)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSCMPOrganizationHomeBean_afa7f9a6
+com.hps.july.persistence.EJSCMPOrganizationHomeBean_afa7f9a6@de0023e
+
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EJSHome.activateBean_Common
+probeid = 1119
+Dump of callerThis = 
+Object type = com.hps.july.persistence.EJSCMPOrganizationHomeBean_afa7f9a6
+com.hps.july.persistence.EJSCMPOrganizationHomeBean_afa7f9a6@de0023e
+

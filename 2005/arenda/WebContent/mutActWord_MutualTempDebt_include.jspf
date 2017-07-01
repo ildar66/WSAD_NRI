@@ -1,0 +1,18 @@
+<!-- makeMutTempDebt include JSP file -->
+<%
+java.util.Iterator table6 = aform.getTable6().iterator();
+while (table6.hasNext()) {
+	com.hps.july.arenda.valueobject.MutTempDebtValueObject vo
+		          = (com.hps.july.arenda.valueobject.MutTempDebtValueObject)table6.next();
+	request.setAttribute("vo", vo);
+%>
+<br>
+   <B>
+    <bean:message key="label.mutactword.itogo"/>&nbsp;задолженность&nbsp;
+	<bean:write name="vo" property="debitor" filter="true"/>&nbsp;<bean:message key="label.mutactword.pered"/>&nbsp;
+	<bean:write name="vo" property="creditor" filter="true"/>&nbsp;<bean:message key="label.mutactword.sostavliaet"/>&nbsp;
+    <july:numberwrite name="vo" property="sumMain" fractdigits="2"/>&nbsp;<bean:write name="vo" property="currMain" filter="true"/>, 
+	<bean:message key="label.mutactword.nds"/>&nbsp;
+    <july:numberwrite name="vo" property="ndsMain" fractdigits="2"/>.
+   </B>
+<%}%>

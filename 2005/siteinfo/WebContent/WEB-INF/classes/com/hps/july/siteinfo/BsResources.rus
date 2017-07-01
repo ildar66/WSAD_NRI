@@ -1,0 +1,2152 @@
+label.all=Все
+label.yes=Да
+label.no=Нет
+label.from=от
+label.num=№
+
+label.menu.organizer=Основное меню
+label.menu.tasklist=Задачи
+label.menu.reregister=Перерегистрация
+label.menu.logout=Выход
+
+label.siteinfo=Описание позиций
+label.menu.root=Описание позиций
+label.menu.typeresponsibility=Типы ответственности
+label.menu.netzone=Зоны сети
+label.menu.positions=Позиции
+label.menu.trailcom.hops=Линии связи (табличное представление)
+label.norecords=По указанным условиям поиска записей не найдено
+label.menu.map=Работа с картой
+label.menu.map.zoomIn= Увеличить масштаб карты
+label.menu.map.zoomOut= Уменьшить масштаб карты
+label.menu.map.recenter= Установить центр карты
+label.menu.map.info= Показать информацию по позиции
+label.menu.map.scale=Шаг изменения масштаба
+label.mode=Выбранное действие:&nbsp;
+label.map.nothing=Действие не выбрано
+label.map.posnumber=Показывать номер позиции
+label.map.posname=Показывать название позиции
+label.map.posnothing=Не маркировать
+
+search.all=Все
+search.byNumber=по номеру
+search.byGsmNumber=по номеру GSM
+search.byDampsNumber=по номеру DAMPS
+search.byName=по названию
+search.byHopsName=по коду пролёта
+search.byAddress=по адресу
+search.bynumberbs=по номеру БС
+search.bynamepos=по названию позиции
+search.byaddresspos=по адресу позиции
+search.bynumbersector=по номеру сектора
+
+confirm.delete=Подтвердите удаление!
+AntennaForm.warning.hasSectorLinks=Антенна связана с секторами.
+SectorForm.warning.hasAntennaLinks=Сектор связан с антеннами.
+BaseStationForm.warning.hasSectors=БС связана с секторами. Эти сектора будут удалены.
+BaseStationForm.warning.hasAntennes=БС связана с антеннами. Эти антенны будут удалены.
+BaseStationForm.warning.hasDocuments=БС связана с документами, которые не связаны с другими объектами. Эти документы будут удалены.
+
+
+menu.switchList=Список коммутаторов
+menu.switch=Коммутатор
+menu.controllerlist=Список контроллеров
+menu.controller=Контроллер
+menu.repeaterlist=Список репитеров
+menu.repeater=Репитер
+menu.comlineList=Список линий связи
+
+#da 11feb 2003
+
+error.search.number=Неверное значение номера для поиска. Номер должен быть целым числом
+
+error.empty.netzone.name=Необходимо указать наименование
+error.empty.netzone.zonecode=Необходимо указать код зоны
+error.invalid.netzone.zonecode=Неверный код зоны
+
+error.init=Ошибка установления начальных значений
+error.absent=Объект удален другим пользователем
+error.someshit=Попробуйте позже и вызовите системного администратора
+error.photographer=Неправильно установлен номер фотографа
+error.duplicate=Дублирование уникального кода
+error.invalid.sysconst.decimalvalue=Неверный формат десятичного значения
+errors.header=Пожалуйста исправьте следующие ошибки:
+error.maperror={0}
+#error.referenced=Удаление записи невозможно, т.к. на нее есть ссылки в БД. За разъяснениями обратитесь к системному администратору.
+error.referenced=Удаление записи невозможно, т.к. на нее есть ссылки в системе NRI.
+error.positionNotFound=Неточно указана позиция, попробуйте еще раз
+
+label.login.id=Пользователь
+label.login.psw=Пароль
+
+Add=Добавить запись
+Delete=Удалить запись
+Edit=Изменить запись
+View=Просмотр записи
+
+
+label.add=Добавить запись
+
+
+label.delete=Удалить запись
+label.search.all=Все
+label.edit=Изменить запись
+label.view=Просмотр записи
+
+label.name=Наименование
+label.code=Код
+label.logout.id=Выход из системы
+
+button.confirm=Подтвердить
+button.logout=Выход
+button.reset=Сбросить
+button.refresh=Обновить
+button.submit=Отправить
+button.login=Войти
+button.save=Сохранить
+button.cancel=Отмена
+button.search=Искать
+
+button.add=Добавить запись
+button.back=Назад
+button.close=Закрыть
+button.edit=Изменить запись
+button.view=Просмотр записи
+button.exclude=Исключить
+button.include=Включить
+button.save=Сохранить
+button.delete=Удалить
+
+label.comment=Комментарий
+
+label.typeresponsibility=Типы ответственности
+label.typeresponsibility.isprint=Включать в распечатку позиции
+error.empty.typeresponsibility.name=Необходимо указать наименование
+
+label.netzone=Зоны сети
+label.netzone.zonecode=Код зоны
+
+label.choose.position=Выберите позицию
+label.choose.comline=Выбор линий связи
+
+label.position=Позиции
+label.position.netzonename=Зона сети
+label.position.netzone=Зо на
+
+label.position.searchby=Что искать
+label.position.search.all=Все
+label.position.search.bsgsm=Все GSM/DCS
+label.position.search.bsdamps=Все DAMPS
+label.position.search.nobs=Все без БС
+label.position.search.gsmid=По № GSM/DCS
+label.position.search.dampsid=По № DAMPS
+label.position.search.name=По названию
+label.position.search.addr=По адресу
+label.position.search.text=Значение
+label.position.search.trid=Идентификатор тр.оборуд
+label.position.search.trall=Все трансп. позиции
+label.position.search.trrrl=Все позиции с РРЛ
+label.position.search.trvot=Все позиции с Оптикой
+label.position.search.beenetid=По № BeeNet
+label.position.search.contrnum=По № контроллера
+label.position.search.wlannum=По № WLAN
+
+label.position.worker=Ответственный
+label.position.inactionlist=Состояние
+label.position.inaction=Позиция эксплуатируется
+label.position.inaction.all=Все
+label.position.inaction.yes=Эксплуатируемые
+label.position.inaction.no=Не эксплуатируемые
+label.position.inactionh=Э
+label.position.showOnmap=кар та
+label.position.toexcel=Отчет по базовым станциям
+label.position.positionAndComlines=Выбранные позиции
+label.position.beenetid=№ BeeNet
+
+label.legend.damps=БС DAMPS
+label.legend.gsm=БС GSM
+label.legend.controller=Контроллер
+label.legend.dampscontroller=БС DAMP & Controller
+label.legend.gsmcontroller=БС GSM & Controller
+label.legend.gsmdamps=БС GSM/DAMPS
+label.legend.position=Позиция без БС
+label.legend.all=БС GSM/DAMPS & Controller
+label.legend.rrl=РРЛ
+label.legend.vols=ВОЛС
+
+label.position.gsmid=№ GSM/DCS
+label.position.dampsid=№ DAMPS
+label.position.bsid=№ БС
+label.position.name=Название
+label.position.dampsname=Название DAMPS
+label.position.addr=Адрес места расположения позиции
+label.position.latitude=Географические координаты. Широта
+label.position.longitude=Географические координаты. Долгота
+label.position.renter=Арендодатель
+label.position.details=Краткая характеристика
+label.position.rentervolume=Том дела об аренде
+label.position.actions=Дополнительно
+label.position.edit=Изменить
+label.position.map=Маршрутная карта
+label.position.descr=Подробное описание
+label.position.responsible=Ответственные
+label.position.photos=Фотографии
+label.position.mapinfo=Карта местности
+label.position.equipment=Оборудование
+label.position.comlines=Линии связи
+label.position.mapprint=Печать маршрутной карты
+
+label.position.suiteEquipment=Комплекты оборудования
+label.position.suiteEquipment.gsm=БС GSM 900
+label.position.suiteEquipment.dcs=БС DCS 1800
+label.position.suiteEquipment.damps=БС DAMPS
+label.position.controllers=Контроллеры
+label.position.use=Использовать
+label.position.comline=Линии связи
+label.position.comline.rrl=РРЛ
+label.position.comline.vols=ВОЛС
+label.position.mapping=Способ отображения
+label.position.mapping.onmap=Наложить на карту
+label.position.mapping.schema=Схема
+label.position.button=Отобразить карту
+
+label.position.ex.code=Код
+label.position.ex.gsmid=№ GSM
+label.position.ex.dcsid=№ DCS
+label.position.ex.dampsid=№ DAMPS
+label.position.ex.name=Наименование GSM
+label.position.ex.dampsname=Наименование DAMPS
+label.position.ex.addr=Адрес места расположения позиции
+label.position.ex.netcode=Код зоны сети
+label.position.ex.netname=Наименование зоны сети
+label.position.ex.lat=Широта
+label.position.ex.long=Долгота
+label.position.ex.details=Краткая характеристика
+label.position.ex.contphone=Контактные телефоны
+label.position.ex.path=Вид прохода и местонахождение ключей
+label.position.ex.equip=Расположение помещения БС
+label.position.ex.engener=Инженерное обеспечение
+label.position.ex.accdate=Дата действия списка прохода
+label.position.ex.arcode=Код арендодателя
+label.position.ex.arname=Наименование арендодателя
+label.position.ex.volume=Том дела об аренде
+label.position.ex.inaction=Позиция эксплуатируется
+label.position.ex.isrll=Наличие РРЛ
+label.position.ex.isvot=Наличие ВОТ
+label.position.ex.yes=Да
+label.position.ex.no=Нет
+label.position.ex.searchcond=Условия поиска
+label.position.ex.title=Список базовых станций
+
+
+error.empty.position.name=Необходимо указать наименование позиции
+error.empty.position.dampsname=Необходимо указать наименование DAMPS
+error.empty.position.addr=Необходимо указать адрес позиции
+error.empty.position.latitude=Необходимо указать широту
+error.empty.position.longitude=Необходимо указать долготу
+error.empty.position.netzone=Необходимо указать зону сети
+error.invalid.position.latitude=Недопустимое значение широты
+error.invalid.position.longitude=Недопустимое значение долготы
+error.invalid.position.netzone=Недопустимое значение зоны сети
+error.invalid.position.renter=Арендодатель с указанным кодом не найден
+
+label.choose.renter=Выберите арендодателя
+label.renter.inn=Инн
+label.renter.name=Наименование
+
+error.invalid.workresponsibility.position=Неверно указана позиция
+error.empty.workresponsibility.type=Необходимо указать тип ответственности
+error.invalid.workresponsibility.type=Тип ответственности с указанным кодом не найден
+error.empty.workresponsibility.worker=Необходимо указать работника
+error.invalid.workresponsibility.worker=Работник с указанным кодом не найден
+error.invalid.workresponsibility.worker1=Указанный работник не приписан не к одному из подразделений компании
+
+label.workresponsibility=Ответственные
+label.workresponsibility.position=Просмотр позиции
+label.workresponsibility.posname=Позиция
+label.workresponsibility.typeresponsibility=Тип ответственности
+label.workresponsibility.division=Отдел
+label.workresponsibility.worker=Ответственный
+label.workresponsibility.phone=Контактные телефоны
+label.workresponsibility.locphone=местн.
+
+
+label.choose.worker=Выберите работника
+label.people.lastname=Фамилия
+label.people.fullname=ФИО
+label.worker.workposition=Должность
+
+label.eposition.posname=Позиция
+label.eposition.contactphones=Контактные телефоны
+label.eposition.servicephones=Телефоны служб предприятия
+label.eposition.pathtype=Вид прохода и местонахождение ключей
+label.eposition.equipmentplaces=Расположение помещения БС
+label.eposition.engeneering=Инженерное обеспечение
+label.eposition.accesslist=Список прохода на объект
+label.eposition.accessdate=Дата действия списка прохода
+
+print.eposition.posname=Наименование и номер объекта
+print.eposition.address=Адрес места расположения позиции
+print.eposition.contactphones=Контактные телефоны
+print.eposition.servicephones=Телефоны служб предприятия
+print.eposition.pathtype=Вид прохода и местонахождение ключей
+print.eposition.equipmentplaces=Расположение помещения БС
+print.eposition.engeneering=Инженерное обеспечение
+print.eposition.details=Краткая характеристика
+print.eposition.phone1=Телефон 1
+print.eposition.phone2=Телефон 2
+print.eposition.localphone=Локальный номер
+print.eposition.fax=Факс
+print.eposition.mobilephone=Мобильный
+
+label.photos=Фотографии позиции
+label.photo.posname=Позиция
+label.photo.description=Описание
+label.photo.date=Дата
+label.photo.filename=Фотография
+
+label.photo.c=С
+label.photo.po=По
+label.photo.photographer=Фотограф
+
+error.empty.photo.date=Необходимо указать дату съемки
+error.invalid.photo.date=Неверная дата съемки
+error.empty.photo.description=Необходимо ввести описание фотографии
+error.invalid.photo.position=Позиция с указанным кодом не найдена
+error.empty.photo.filename=Необходимо указать файл с фотографией
+
+label.equipment=Оборудование
+label.equipment.posname=Позиция
+label.equipment.complect=Тип комплекта оборудования
+label.equipment.type=Тип
+label.equipment.state=Состояние
+label.equipment.contents=Состав
+label.equipment.name=Наименование
+
+label.equipment.switchtype=Тип
+label.equipment.switchgsm=GSM/DCS
+label.equipment.switchdamps=DAMPS
+
+label.equipment.number=Номер
+
+label.equipment.stationtype=Тип станции
+label.equipment.stationdamps=DAMPS
+label.equipment.stationgsm=GSM 900
+label.equipment.stationdcs=DCS 1800
+label.equipment.stationboth=GSM 900 / DCS 1800
+
+label.equipment.controller=Контроллер
+label.equipment.switch=Коммутатор
+label.equipment.comline=Линия связи
+
+label.equipment.isrepeater=Репитер
+label.equipment.stationname=Название станции
+
+label.equipment.type.basestation=Базовая станция
+label.equipment.type.comequipment=Коммуникационное оборудование
+label.equipment.type.controller=Контроллер
+label.equipment.type.switch=Коммутатор
+label.equipment.type.other=Вспомогательное оборудование
+label.equipment.type.repeater=Репитер
+label.equipment.type.wlan=WLAN
+
+label.equipment.type.unknown=Неизвестно что
+
+label.equipment.comequipmenttype=Тип оборудования связи
+label.equipment.comequipmenttype.radio=Радиорелейное
+label.equipment.comequipmenttype.optic=Волоконно-оптическое
+label.equipment.comequipmenttype.other=Вспомогательное
+
+label.controller.number=Номер
+label.controller.name=Наименование контроллера
+
+label.equipment.othertype=Тип вспомогательного оборудования
+label.equipment.othertypea=Сооружения (контейнеры, мачты, опоры)
+label.equipment.othertypeb=Оборудование техническое (электропитания, охлаждение, сигнализация, пожаротушение, огни ВОЗ)
+label.equipment.othertypec=Хозяйственное оборудование
+label.equipment.othertyped=Прочее оборудование
+label.equipment.othertypee=Кондиционеры и вентиляция
+
+label.equipment.state=Состояние
+label.equipment.statep=Планируется
+label.equipment.statem=Монтируется
+label.equipment.stater=Смонтировано
+label.equipment.statet=Оттестировано
+label.equipment.statew=Запущено в работу
+label.equipment.stated=Демонтировано
+label.equipment.stateunknown=?
+
+error.invalid.equipment.complecttype=Выбран неверный тип оборудования
+error.empty.equipment.name=Необходимо указать наименование оборудования
+error.empty.basestation.name=Необходимо указать наименование базовой станции
+error.empty.basestation.number=Необходимо указать номер базовой станции
+error.invalid.basestation.number=Не введен или введен неверно номер базовой станции
+error.invalid.basestation.type=Выбран неверный тип базовой станции
+error.empty.controller.number=Необходимо указать номер контроллера
+error.invalid.controller.number=Неверный типи номера контроллера
+error.empty.controller.name=Необходимо указать наименование контроллера
+error.controllerform.update=Ошибка записи данных
+
+error.empty.switch.number=Необходимо указать номер коммутатора
+error.invalid.switch.number=Номер коммутатора неверен
+error.invalid.switch.type=Тип коммутатора указан неверно
+error.empty.switch.name=Необходимо указать наименование коммутатора
+
+error.invalid.comequipment.type=Тип коммуникационного оборудования указан неверно
+error.invalid.equipment.position=Позиция указана неверно
+error.empty.comequipment.name=Необходимо указать наименование коммуникационного оборудования
+error.invalid.basestation.controller=Контроллер с указанным кодом не найден
+error.invalid.basestation.switch=Коммутатор с указанным кодом не найден
+error.invalid.controller.switch=Коммутатор с указанным кодом не найден
+error.invalid.controller.invalidswitch=Для данного контроллера коммутатор должен соответствовать состоянию планирования и быть GSM типа
+error.invalid.comequipment.comline=Линия связи с указанным кодом не найдена
+
+error.invalid.basestation.position=Указанная позиция не найдена или неправильно введен ее код
+label.choose.controller=Выберите контроллер
+label.controller.number=Номер
+label.choose.switch=Выберите коммутатор
+label.switch.number=Номер
+label.switch.type=Тип 
+label.switch.constructionstate=Состояние
+label.switch.constructionstate.1=План
+label.switch.constructionstate.2=Факт
+label.switch.name=Наименование
+label.switch.resource=Тип оборудования
+
+label.choose.comline=Выберите линию связи
+label.comlines=Линии связи
+label.comline.posname=Позиция
+label.comline.type=Тип
+label.comline.direction=Напр.
+label.comline.destination=Между позициями
+label.comline.typer=РРЛ
+label.comline.typeo=ВОЛС
+label.comline.dirto=&lt;--
+label.comline.dirfrom=--&gt;
+label.comline.position=От позиции
+label.comline.destposition=К позиции
+
+error.empty.comline.position=Необходимо указать позицию (от)
+error.invalid.comline.position=Позиция с указанным кодом не найдена (от)
+error.empty.comline.dposition=Необходимо указать позицию (до)
+error.invalid.comline.dposition=Позиция с указанным кодом не найдена (до)
+error.invalid.comline.type=Выберите тип линии
+
+msg.viewposition=Просмотр данных по позиции
+msg.eposition=Работа с маршрутной картой
+msg.workresponsibility=Перечень ответственных по позиции
+msg.photos=Перечень фотоматериалов по позиции
+msg.equipment=Перечень функциональных комплектов оборудования установленных на позиции
+msg.comlines=Перечень линий связи с позицией
+msg.eposition.print=Печать маршрутной карты
+
+label.equipdet=Состав
+label.equipdet.complect=Комплект оборудования
+label.equipdet.cardname=Оборудование
+label.equipdet.name=Название
+label.equipdet.model=Обозначение
+label.equipdet.serial=Серийный №/№ партии
+label.equipdet.qty=Кол-во
+label.equipdet.contents=Встроенные блоки
+label.equipdet.place=Посадочное место
+label.eqipdet.cont=Состав
+
+label.equipsdet=Встроенные блоки
+label.equipsdet.complect=Комплект оборудования
+label.equipsdet.cardname=Оборудование
+label.equipsdet.name=Название
+label.equipsdet.model=Обозначение
+label.equipsdet.serial=Серийный №/№ партии
+label.equipsdet.qty=Кол-во
+label.equipsdet.place=Посадочное место
+
+label.menu.superRegion=Суперрегионы
+label.menu.region=Регионы
+label.position.region=Регион
+label.position.renterInput=
+label.position.planstate=Тип записи
+
+label.position.search.supregs.all=Все суперрегионы
+label.position.search.regions.all=Все регионы
+label.position.search.regions=Регион
+label.position.search.supregs=Суперрегион
+label.position.search.renter.any=Любые позиции
+label.position.search.renter.notNull=Все с арендодателем
+label.position.search.renter.specify=Выбранный
+
+label.position.search.planstate.fact=Факт
+label.position.search.planstate.plan=План
+
+label.superRegionList.header=Справочник укрупненных лицензионных регионов
+label.superRegionList.code=Код
+label.superRegionList.name=Наименование
+
+label.superRegion.header=Редактирование укрупненных лицензионных регионов
+label.superRegion.code=Код
+label.superRegion.name=Наименование
+
+label.regionList.header=Справочник регионов
+label.regionList.code=Код
+label.regionList.name=Наименование
+label.regionList.superRegion=Суперрегион
+
+label.regionList.search.superRegion=Укрупненный лицензионный регион:
+label.regionList.search.name=По названию
+label.regionList.search.all=Все
+label.regionList.search=Искать:
+
+error.empty.regionList.name=Необходимо указать название региона
+
+label.region.header=Редактирование характеристик региона
+label.region.code=Код
+label.region.name=Наименование
+label.region.superRegion=Укрупненный лицензионный регион:
+label.region.prefix=Префикс кода сектора
+error.invalid.region.prefix=Неверно введен префикс кода сектора. Необходимо ввести целое число не более 4-х знаков
+
+label.position.regionname=Регион
+
+#for baseStations
+
+button.view.basestation=Просмотр характеристик оборудования
+
+menu.root.baseStation=Базовые станции
+menu.root.baseStation_=Характеристики оборудования
+menu.baseStationList=Список базовых станций
+menu.equipment.list=Список секторов и антенн
+
+
+label.basestation.copy=Скопировать в новую запись
+label.search.all=Все
+
+label.baseStationList.header=Список базовых станций
+
+label.baseStationList.type=Тип станции
+label.baseStationList.search.number=По номеру б/с
+label.baseStationList.search.name=По названию
+label.baseStationList.search.address=По адресу
+label.baseStationList.search.gsm=GSM
+label.baseStationList.search.prefixcellid=По PrefCellID
+
+label.baseStationList.state=Состояние эксплуатации
+label.baseStationList.state.P=Планируется
+label.baseStationList.state.M=Монтируется
+label.baseStationList.state.R=Смонтировано
+label.baseStationList.state.T=Оттестировано
+label.baseStationList.state.W=Запущено в работу
+label.baseStationList.state.D=Демонтировано
+
+label.baseStationList.planstate=Тип
+label.baseStationList.planstate.1=План
+label.baseStationList.planstate.2=Факт
+
+label.baseStationList.onair=Состояние планирования
+label.baseStationList.onair.Y=В эфире
+label.baseStationList.onair.N=Не в эфире
+
+label.baseStationList.search.damps=DAMPS
+label.baseStationList.add.plan=Добавить планируемую станцию
+label.baseStationList.add.fact=Добавить станцию
+
+label.baseStationList.number=Номер
+label.baseStationList.type=Тип станции
+label.baseStationList.name=Название
+label.baseStationList.address=Адрес
+label.baseStationList.netzone=Зона сети
+#label.baseStationList.planstate=План / Факт
+label.baseStationList.onair=В эфире
+label.baseStationList.showonmap=Показать на карте
+
+link.documents=Документы
+link.equipment=Оборудование
+
+#PlanBaseStationForm
+PlanBaseStationForm.navigator.basestationview=Просмотр планируемой базовой станции
+PlanBaseStationForm.radioPosition.lookupPosition=существующая
+PlanBaseStationForm.radioPosition.addPosition=новая
+
+#FactBaseStationForm
+
+FactBaseStationForm.navigator.basestations=Базовые станции
+FactBaseStationForm.navigator.basestationview=Просмотр базовой станции
+
+
+FactBaseStationForm.gsm=GSM
+FactBaseStationForm.dcs=DCS
+
+
+Position.supreg=Суперрегион
+Position.region=Регион
+Position.netzonecode=Зона сети
+Position.address=Адрес
+Position.latitude=Координаты широта
+Position.coords=Координаты
+Position.clatitude=широта
+Position.longitude=долгота
+Position.datebeginbuild=Дата начала строительства позиции
+
+
+BaseStation.stationType.D=DAMPS
+BaseStation.stationType.S=GSM 900
+BaseStation.stationType.C=DCS 1800
+BaseStation.stationType.G=GSM 900/1800
+
+BaseStation.stationName=Название
+BaseStation.number=Номер
+
+BaseStation.repeater=Репитер
+
+BaseStation.contype=Тип подключения к сети
+BaseStation.contype.R=Radio
+BaseStation.contype.O=Optic
+
+BaseStation.e1qty=Количество потоков E1
+BaseStationForm.nstoek=Количество стоек
+BaseStation.timebackup=Время резервного копирования
+BaseStation.pwrval=Потребляемая электроэнергия (Вт)
+BaseStation.pwrcat=Категория основной питающей сети
+BaseStation.datebldbeg2=Дата начала строительства БС
+BaseStation.dateassembafs=Дата монтажа и тестирования АФС
+BaseStation.dateassemb2=Дата монтажа оборудования БС
+BaseStation.datepr2=Дата приемки в эксплуатацию
+BaseStation.netstage=Этап расширения сети
+BaseStation.equipmentState=Состояние эксплуатации
+
+
+
+BaseStation.dateconnect=Дата подключения к MSC
+BaseStation.dateonair=Дата включения в эфир
+BaseStation.datetest=Дата тестирования
+
+
+BaseStation.equipmentState.P=Планируется
+BaseStation.equipmentState.M=Монтируется
+BaseStation.equipmentState.R=Смонтировано
+BaseStation.equipmentState.T=Оттестировано
+BaseStation.equipmentState.W=Запущено в работу
+BaseStation.equipmentState.D=Демонтировано
+
+BaseStation.onair=Активность
+BaseStation.onair.Y=В эфире
+BaseStation.onair.N=Не в эфире
+BaseStation.onair.show=Э
+
+BaseStation.stationNumber=Номер станции
+BaseStation.stationType=Тип станции
+BaseStation.stName=Название станции
+BaseStation.contrName=Номер контроллера
+BaseStation.switchName=Номер коммутатора
+
+error.empty.basestation.type=Не введен тип БС
+error.empty.basestation.name=Не введено название БС
+error.invalid.basestation.nstoek=Неправильно введено количество стоек. Введите целое число
+error.invalid.basestation.e1qty=Неправильно введено количество потоков Е1. Введите целое число
+error.invalid.basestation.pwrval=Неправильно введено поле "потребляемая электроэнергия". Формат {0}
+error.invalid.basestation.netstage=Неправильно введено поле "этап расширения сети".
+
+
+#Sectors
+label.sectors=Сектора
+label.antennes=Антенно-фидерное оборудование
+
+Sector.numsect=Номер
+Sector.namesect=Наименование
+Sector.band=Диапазон
+Sector.trxnum=Кол. трансиверов
+Sector.planstate=Состояние
+Sector.plaсe=Размещение
+Sector.btsnumber=Номер BTS
+Sector.hasflt=Наличие фильтра
+Sector.haslna=Наличие МШУ
+Sector.hasbuster=Наличие бустера
+Sector.portabis=Номер A-Bis порта
+Sector.numpo=Номер версии ПО
+Sector.ddk=Наличие двухдиапазонного комбайнера
+
+Sector.label.trx=Число TRX
+Sector.label.pwr=Мощность на выходе трансивера
+Sector.ishr=Наличие HR
+Sector.capgprs=Наличие GPRS
+
+Sector.TRX=Число TRX
+Sector.ANALOG=ANALOG
+Sector.DIG=DIG
+Sector.OVR=OVR
+Sector.antennes=антенны
+Sector.choice.antennes=Выбор антенн для обслуживания сектора
+
+
+Sector.conf=Тип сектора
+CONF_CHECK_1=Макросота (normal)
+CONF_CHECK_2=Макросота (umbrella)
+CONF_CHECK_3=Микросота (in door)
+CONF_CHECK_4=Микросота (out door)
+
+Sector.conabis=Подключение к A-bis
+CONABIS_CHECK_STAR_1=Звезда
+CONABIS_CHECK_RING_2=Кольцо
+CONABIS_CHECK_RING_3=Цепь
+
+error.SectorForm.namesect=Не введено название сектора
+error.SectorForm.numsect=Не введен номер сектора
+error.SectorForm.cellid=Не введён CellID
+error.SectorForm.cellid.length=Длинна CellID не должна быть больше 5-ти символов
+error.SectorForm.lett=Не указана буква сектора
+error.SectorForm.lett.length=Указана неверная буква сектора
+
+error.SectorForm.txovrsetpwr=Неверно введена мощность на выходе трансивера (OVR). Формат ввода {0}
+error.SectorForm.txpwr=Неверно введена мощьность на выходе трансивера (DIG). Формат ввода {0}
+error.SectorForm.txpwr.less=Мощьность на выходе трансивера (DIG) должна быть больше 0.
+error.SectorForm.txsetpwr=Неверно введена мощность на выходе трансивера (ANALOG). Формат ввода {0}
+error.SectorForm.txsetpwr.less=Мощьность на выходе трансивера (ANALOG) должна быть больше 0.
+error.SectorForm.azimut=Не введен или введен неверно азимут. Формат ввода {0}
+error.SectorForm.azimut.range=Азимут не может быть меньше 0 и превышать 360 градусов.
+
+error.SectorForm.trxnum=Неверно введено число trx (ANALOG). Введите целое число.
+error.SectorForm.trxnum2=Неверно введено число trx (DIG). Введите целое число.
+error.SectorForm.trxovrnum=Неверно введено число trx (OVR). Введите целое число.
+error.SectorForm.portabis=Неверно введен номер A-bis порта. Введите целое число.
+
+#Antennes
+Antenna.number=Номер
+Antenna.type=Тип
+Antenna.asim=Азимут
+Antenna.boand=Диапазон
+Antenna.planstate=Состояние
+Antenna.direct=Прием / перед
+Antenna.dn=Ширина ДН гор / верт
+Antenna.ky=КУ антенны, Дб
+Antenna.higth=Высота подвеса
+Antenna.nakl=Мех накл
+Antenna.plaсe=Размещение
+Antenna.place.indoor=Indoor
+Antenna.place.outdoor=Outdoor
+Antenna.letters=Сектора
+
+Antenna.choice=Антенны, обслуживающие сектор
+
+#AntennaForm
+
+AntennaForm.azvariation=Диап рег по азимуту
+AntennaForm.azant=Азимут
+AntennaForm.hset1=Высота подвеса
+AntennaForm.naklvariation=Диап рег накл
+AntennaForm.kswn=КСВН
+AntennaForm.nakl=Механический наклон
+AntennaForm.kindant=Вид антенны
+AntennaForm.inputpower=Мощность на входе антены
+AntennaForm.numant=Номер антены
+AntennaForm.lencable=Длина кабеля
+AntennaForm.cabletype=Тип кабеля
+AntennaForm.losscable=Потери в кабеле (Дб)
+AntennaForm.sumnakl=Суммарный наклон
+AntennaForm.restype=Тип оборудования
+
+AntennaForm.groundres=Тип заземления
+AntennaForm.groundctn=Кол-во заземлений
+AntennaForm.locationtype=Тип размещения
+AntennaForm.locationtype.outdoor=outdoor
+AntennaForm.locationtype.indoor=indoor
+
+error.AntennaForm.azant=Азимут не введен или введен неверно. Формат поля {0}
+error.AntennaForm.azant.range=Азимут не может быть меньше 0 или превышать 360 градусов.
+error.AntennaForm.hset1=Высота подвеса не введена или введена неверно. Формат поля {0}
+error.AntennaForm.hset1.less=Высота подвеса должна быть положительным числом
+error.AntennaForm.kswn=Поле КСВН введено неверно. Формат поля {0}
+error.AntennaForm.nakl=Механический наклон не введен или введен неверно. Формат поля {0}
+error.AntennaForm.inputpower=Мощность на входе антены введена неверно. Формат поля {0}
+error.AntennaForm.inputpower.less=Мощность на входе антены должна быть в пределах от 0 и до 1000
+error.AntennaForm.numant=Поле номер антены должно быть заполнено
+error.AntennaForm.lencable=Длина кабеля не введена или введена неверно. Формат поля {0}
+error.AntennaForm.lencable.less=Длина кабеля должна быть положительным числом
+error.AntennaForm.resource=Поле тип оборудования не введено или введено неверно
+
+error.AntennaForm.groundres=Тип заземления введен неверно
+error.AntennaForm.groundctn=Кол-во заземлений введено неверно
+error.edit.antenna2sector=При переходе к форме выбора антенн произошла ошибка. Попробуйте еще раз или вызовите администратора
+
+label.empty=
+
+xls.import.bs=Импорт данных по БС
+xls.report.bs.title=Отчет о результатах загрузки<br>Загрузка БС
+
+
+xls.title=Загрузка данных
+xls.import=Импорт данных
+xls.title.view=Просмотр
+xls.title.vertical=Загрузка данных (вертикальная поляризация)
+xls.title.cross=Загрузка данных (кросс-поляризация)
+xls.filename=Файл для загрузки
+xls.report.msg=Подробный отчет о загрузке
+xls.report.title=Отчет о результатах загрузки<br>Загрузка данных с ограничениями мощности сектора в зависимости от канала
+xls.report.datefile=Дата изменения файла:
+xls.report.sizefile=Размер файла (kB):
+xls.report.operator=Пользователь оператор загрузки:
+xls.report.loaddate=Дата загрузки:
+xls.report.sessionnum=Номер сессии загрузки:
+xls.report.entrycount=Количество обработанных записей:
+xls.report.errorcount=Количество ошибок загрузки:
+xls.report.loadtime=Время загрузки (сек):
+xls.report.entrydate=Дата записи
+xls.report.entryPK=Ключевое поле
+xls.report.entryevent=Тип события
+xls.report.entryresult=Результат операции
+xls.report.entryerror=Сообщение об ошибке
+xls.journal=Журнал загрузок
+xls.journal.title=Просмотр журнала загрузок<br>Загрузка данных с ограничениями мощности сектора
+xls.journal.title2=Просмотр журнала загрузок
+xls.journal.title3=Загрузка данных с ограничениями мощности сектора
+xls.journal.period=Период
+xls.journal.period.c=C
+xls.journal.period.po=По
+xls.journal.operator=Оператор загрузки
+xls.journal.operator.all=Все
+xls.journal.find=Поиск
+xls.journal.find.pk=По ключевому полю
+xls.journal.find.session=По номеру сессии
+xls.journal.msg=Подробный отчет о загрузке
+xls.journal.loaddate=Дата загрузки
+xls.journal.sessionnum=Номер сессии
+xls.journal.operator=Оператор
+xls.journal.filename=Название файла
+xls.journal.filesize=Размер файла
+xls.journal.entrycount=Количество записей
+xls.error=Непредвиденная ошибка
+xls.error.sessionid=Неправильно введен номер сессии {0}
+xls.error.operatorid=Неправильно введен номер оператора {0}
+xls.error.view=Системная ошибка загрузки. Попробуйте создать новый xls файл, скопировать туда нужные строки и загрузить получившийся файл. Если не поможет - обратитесь к администратору.
+I=Вставка
+U=Обновление
+D=Удаление
+S=Успешно
+E=Ошибка
+
+error.sector= Код БС {0} введен неверно в ячейке {1}
+empty.sector=Не введен код БС в ячейке {0}
+error.chanal=Номер канала {0} введен неверно в ячейке {1}
+empty.chanal=Не введен номер канала в ячейке {0}
+error.power= Ограничение по мощности {0} введено неверно в ячейке {1}
+empty.power=Не введено ограничение по мощности в ячейке {0}
+
+error.parameters=Неверно введены параметры в ячейке {0}
+error.record=Не удалось обработать ячейку {0}
+error.session=Не удалось обработать файл
+error.bs.absent=Не найдена базовая станция с номером {0}
+error.file=Не выбран файл для загрузки
+error.file.extension=Указан неверный файл [{0}]. Ожидается файл формата Excel (*.xls).
+error.file.load=Файл небыл загружен<br>Проверьте предоставленный файл {0}
+error.file.length=Размер файла не может превышать 1Mб.
+
+message.empty=
+
+chanalpower.edit.title=Ограничение максимальной мощности по каналам
+chanalpower.edit.title.nav=Просмотр
+chanalpower.edit.position=Позиция
+chanalpower.edit.address=Адрес
+chanalpower.edit.basestation=Базовая станция
+chanalpower.edit.canal=Канал
+chanalpower.edit.polar=Поляризация
+chanalpower.edit.vertical=Вертикальная
+chanalpower.edit.cross=Кросс
+chanalpower.edit.symbol=Условное обозначение
+chanalpower.edit.nouse= - канал нельзя использовать
+chanalpower.edit.limit4= - канал можно использовать с ограничением по мощности до 4 Вт
+chanalpower.edit.limit8= - канал можно использовать с ограничением по мощности до 8 Вт
+chanalpower.edit.limit12= - канал можно использовать с ограничением по мощности до 12 Вт
+chanalpower.edit.limit20= - канал можно использовать с ограничением по мощности до 20 Вт
+chanalpower.edit.noise= - возможны помехи со стороны РЭС военного нахначения
+
+chanalpower.error.edit=Ошибка при отображении ограничений максимальной мощности по каналам
+chanalpower.error.chanal=Неверный номер канала {0}. Номер канала должен быть числом от 1 до 124 включительно
+
+xls.bs=Импорт данных по БС
+error.empty.xlsbs.region=Не указан регион, по которому производится загрузка
+
+error.invalid.xlsbs.region=Отсутствуют права на загрузку заданного типа по заданному региону
+
+label.menu.journal=Журнал изменений
+
+#импорт БС
+
+object.handler.error=Ошибка при обработке объекта {0} на строке {1}. Обратитесь к администратору.
+
+position.update.error=Ошибка при изменении позиции. Строка {0}. Обратитесь к администратору.
+position.create.error=Ошибка при создании позиции. Строка {0}. Обратитесь к администратору.
+position.finder.error=Ошибка при поиске позиции. Строка {0}. Обратитесь к администратору.
+position.finder.morethanone=Найдено более одной позиции с таким GSMID. Строка {0}. Корректная загрузка невозможна. В базе данных должно присутствовать не более одной планируемой или эксплуатируемой позиции с таким GSMID.
+position.gsmid.invalid=Неверный формат или пустое значение номера позиции в ячейке {0}. Позиция не обработана
+position.name.empty=Отсутствует имя БС в ячейке {0}. Позиция не обработана
+position.latitude.error=Неверное или пустое значение поля широта в ячейке {0}. Позиция не обработана
+position.longitude.error=Неверное или пустое значение поля долгота в ячейке {0}. Позиция не обработана
+position.netzone.invalid=Ошибка при получении зоны сети {0}. Позиция не обработана
+position.netzone.empty=Пустое значение зоны сети {0}. Позиция не обработана
+
+position.address.empty=Отсутствует адрес позиции в ячейке {0}. Позиция не обработана
+
+#bs.handler.error=Ошибка при обработке БС на строке {0}. Обратитесь к администратору.
+bs.update.error=Ошибка при изменении БС. Строка {0}. Обратитесь к администратору.
+bs.create.error=Ошибка при создании БС. Строка {0}. Обратитесь к администратору.
+bs.finder.error=Ошибка при поиске БС. Строка {0}. Обратитесь к администратору.
+
+
+
+#antenna.handler.error=Ошибка при обработке антены на строке {0}. Обратитесь к администратору.
+antenna.update.error=Ошибка при изменении антенны. Строка {0}. Обратитесь к администратору.
+antenna.create.error=Ошибка при создании антенны. Строка {0}. Обратитесь к администратору.
+antenna.finder.error=Ошибка при поиске антенны. Строка {0}. Обратитесь к администратору.
+antenna.sector_fields.format.error=Неверно описаны сектора для антенны в строке {0}. Сектора не обработаны.
+antenna.azimut.error=Неверное или пустое значение азимута в ячейке {0}. Антенна не обработана.
+antenna.hset1.error=Неверное или пустое значение высоты подвеса антенны в ячейке {0}. Антенна не обработана.
+antenna.nakl.error=Неверное или пустое значение наклона антенны в ячейке {0}. Антенна не обработана.
+antenna.indant.error=Неверное или пустое значения вида антенны {0}. Антенна не обработана.
+antenna.resource.error=Неверное значения типа антенны {0}. Антенна не обработана.
+antenna.resource.warning.few=Предупреждение. Найдено несколько типов антенн по ячейке {0}
+antenna.cableres.error=Неверное значения типа кабеля {0}. Антенна не обработана.
+antenna.cableres.warning.few=Предупреждение. Найдено несколько типов кабелей по ячейке {0}
+antenna.cableres.empty=Отсутствует тип кабеля антенны , ячейка {0}
+antenna.number.error=Неверное или пустое значение номера антенны в ячейке {0}. Антенна не обработана.
+
+antenna.lencable.error=Неверное значение длины кабеля антенны в ячейке {0}. Антенна не обработана.
+antenna.lencable.empty=Отсутствует длина кабеля антенны БС в ячейке {0}
+
+antenna.sector.remove.error=Ошибка при удалении связей антенны с секторами в строке {0}
+antenna.sectors.q=Неверные данные конфиг. БС в ячейке {0}. Сектора данной антенны не обработаны.
+antenna.sectors.r=Неверные данные МШУ по секторам в ячейке {0}. Сектора данной антенны не обработаны.
+antenna.band.error=Ошибка при добавлении диапазона {1} для антенны в строке {0}. Диапазон не добавлен.
+antenna.band.support.error=Диапазон {1} не разрешен для вида антенны в строке {0}. Диапазон не добавлен.
+
+#sector.handler.error=Ошибка при обработке сектора {1} на строке {0}. Обратитесь к администратору.
+sector.update.error=Ошибка при изменении сектора. Строка {0}, сектор {1}. Обратитесь к администратору.
+sector.create.error=Ошибка при создании сектора. Строка {0}, сектор {1}. Обратитесь к администратору.
+sector.finder.error=Ошибка при поиске сектора. Строка {0}, сектор {1} . Обратитесь к администратору.
+sector.finder.warning.few=Предупреждение. Найдено несколько секторов с номером {0} в строке {1}
+sector.addlink.invalid=Ошибка при добавлении антенны к сектору. Строка {0}. Сектор {1}.Связь не добавлена.
+sector.haslna.error=Неверные данные по МШУ в строке {0} для сектора {1}. Сектор не обработан.
+sector.trxnum.error=Неверные данные по числу трансиверов в строке {0} для сектора {1}. Сектор не обработан.
+sector.code.invalid=Неверный код сектора - {0} в ячейке {1}. Сектор не обработан.
+
+#
+generated by CreateFormBean program start 2003-07-04 22:22:23.031
+menu.docType=Типы документов
+SiteDocTypeForm.sitedoctypetxt=Описание
+SiteDocTypeForm.sitedoctypename=Название
+
+error.SiteDocTypeForm.sitedoctypetxt=
+error.SiteDocTypeForm.sitedoctypename=не введено название
+
+#generated by CreateFormBean program finish
+#
+SiteDocTypeList.header=Типы документов
+
+SiteDocTypeList.table.name=Название
+SiteDocTypeList.table.txt=Описание
+
+#
+SwitchList.navigator.header=Список коммутаторов
+
+SwitchList.buttons.addPlan=Добавить план. коммутатор
+SwitchList.buttons.addFact=Добавить коммутатор
+SwitchList.buttons.map=Показать на карте
+
+SwitchList.fields.state=Состояние планирования
+
+SwitchList.table.number=Номер
+SwitchList.table.standart=Тип коммутатора
+SwitchList.table.type=Тип оборудования
+SwitchList.table.name=Наименование
+SwitchList.table.address=Адрес
+SwitchList.table.netzone=Зона сети
+SwitchList.table.planstate=План / Факт
+SwitchList.table.map=Показать на карте
+SwitchList.table.alttext.edit=Редактировать х-ки коммутатора
+SwitchList.table.alttext.edit=Просмотреть х-ки коммутатора
+
+#generated by CreateFormBean program start 2003-07-16 19:07:23.484
+
+SwitchForm.position=Позиция
+SwitchForm.new=Новая
+SwitchForm.exist=Существующая
+SwitchForm.region_netzone=Регион / Зона сети
+SwitchForm.address=Адрес
+SwitchForm.equipmentState=Статус
+SwitchForm.number=Номер
+SwitchForm.name=Название
+SwitchForm.switchType=Стандарт
+
+SwitchForm.resource=Наименование оборудования
+
+SwitchForm.qtyshell=Кол-во шкафов коммутационного оборудования
+SwitchForm.maxvlr=Емкость VLR
+SwitchForm.qtyconhlr=Кол-во подключенных HRL
+
+SwitchForm.contrl=Кол-во подключенных контроллеров
+SwitchForm.qty_tkgroute_nss=Кол-во TKG - ROUTE в NSS
+SwitchForm.e1_qty_total=Общее кол-во оборудованных портов E1
+SwitchForm.e1_use_percent=Процент использования портов Е1
+SwitchForm.e1_bss=Кол-во портов Е1 в сторону BSS
+SwitchForm.ss7bss=Кол-во звеньев SS7 в сторону BSS
+
+SwitchForm.e1_nss=Кол-во портов Е1 в сторону NSS
+SwitchForm.ss7nss=Кол-во звеньев SS7 в сторону NSS
+
+SwitchForm.e1_hlr=Кол-во портов Е1 в сторону HLR-IN
+SwitchForm.ss7_hlrin=Кол-во звеньев SS7 в сторону HLR-IN
+SwitchForm.dateassemb=Дата монтажа
+SwitchForm.datetest=Дата тестирования
+SwitchForm.datepr=Дата приемки
+SwitchForm.pwrval=Потребляемая электроэнергия
+SwitchForm.pwrcat=Категория основной питающей сети
+SwitchForm.pwrreserve=Наличие резервного питания
+SwitchForm.pwrrescat=Категория резервной питающей сети
+SwitchForm.equipcomment=Комментарии
+
+####
+SwitchForm.error.position=Неверно выбрано поле 'Позиция'
+SwitchForm.error.number=Не введено или введено неверно поле 'Номер'
+SwitchForm.error.name=Не введено поле 'Название'
+SwitchForm.error.resource=Неверно выбрано поле 'Наименование оборудования'
+SwitchForm.error.qtyshell=Неверно введено поле 'Кол-во шкафов коммутационного оборудования'
+SwitchForm.error.maxvlr=Неверно введено поле 'Емкость VLR'
+SwitchForm.error.qtyconhlr=Неверно введено поле 'Кол-во подключенных HRL'
+SwitchForm.error.switchType=Необходимо выбрать 'Стандарт'
+SwitchForm.error.qty_tkgroute_nss=Неверно введено поле 'Кол-во TKG - ROUTE в NSS'
+SwitchForm.error.e1_qty_total=Неверно введено поле 'Общее колличество оборудованных портов E1'
+SwitchForm.error.e1_use_percent=Неверно введено поле 'Процент использования портов Е1'. Формат {0}
+SwitchForm.error.e1_bss=Неверно введено поле 'Кол-во портов Е1 в сторону BSS'
+SwitchForm.error.ss7bss=Неверно введено поле 'Кол-во звеньев SS7 в сторону BSS'
+SwitchForm.error.e1_nss=Неверно введено поле 'Кол-во портов Е1 в сторону NSS'
+SwitchForm.error.ss7nss=Неверно введено поле 'Кол-во звеньев SS7 в сторону NSS'
+SwitchForm.error.e1_hlr=Неверно введено поле 'Кол-во портов Е1 в сторону HLR-IN'
+SwitchForm.error.pwrval=Неверно введено поле 'Потребляемая электроэнергия'. Формат {0}
+SwitchForm.error.ss7_hlrin=Неверно введено поле 'Кол-во звеньев SS7 в сторону HLR-IN'
+SwitchForm.error.mscid=MSCID должен быть шестнадцатиричным числом из не более чем 4-х цифр
+
+switch_type_1=DAMPS
+switch_type_2=GSM/DCS
+
+
+#generated by CreateFormBean program finish
+
+
+menu.switchdesc=Эксплуатационные характеристики
+
+label.swd.positionname=Позиция
+label.swd.regionname=Регион
+label.swd.zonename=Зона сети
+label.swd.address=Адрес
+label.swd.switchname=Коммутатор
+
+label.swd.date=Характеристики на дату
+error.swd.date.empty=Необходимо указать дату на которую заводятся характеристики
+error.swd.date.invalid=Неверный формат даты на которую завозятся характеристики
+
+label.swd.load_max_day=День наибольшей нагрузки (д.н.н.)
+error.swd.load_max_day.empty=Поле "День наибольшей нагрузки (д.н.н.)" является обязательным
+error.swd.load_max_day.length=Длина поля "День наибольшей нагрузки (д.н.н.)" не должна превышать 20 символов
+
+label.swd.load_max_hour_all=Час наибольшей нагрузки (общий ч.н.н.)
+error.swd.load_max_hour_all.empty=Поле "Час наибольшей нагрузки (общий ч.н.н.)" является обязательным
+error.swd.load_max_hour_all.length=Длина поля "Час наибольшей нагрузки (общий ч.н.н.)" не должна превышать 20 символов
+
+label.swd.traf_all=Значение общего трафика Эрл. (общий ч.н.н.)
+error.swd.traf_all.empty=Поле "Значение общего трафика Эрл. (общий ч.н.н.)" является обязательным
+error.swd.traf_all.invalid=Неверный формат числа в поле "Значение общего трафика Эрл. (общий ч.н.н.)"
+
+label.swd.traf_bss_all=Значение BSS трафика Эрл. (общий ч.н.н.)
+error.swd.traf_bss_all.empty=Поле "Значение BSS трафика Эрл. (общий ч.н.н.)" является обязательным
+error.swd.traf_bss_all.invalid=Неверный формат числа в поле "Значение BSS трафика Эрл. (общий ч.н.н.)"
+
+label.swd.traf_nss_all=Значение NSS трафика Эрл. (общий ч.н.н.)
+error.swd.traf_nss_all.empty=Поле "Значение NSS трафика Эрл. (общий ч.н.н.)" является обязательным
+error.swd.traf_nss_all.invalid=Неверный формат числа в поле "Значение NSS трафика Эрл. (общий ч.н.н.)"
+
+label.swd.load_max_hour_bss=Час наибольшей загрузки для трафика BSS (ч.н.н. BSS)
+error.swd.load_max_hour_bss.empty=Поле "Час наибольшей загрузки для трафика BSS (ч.н.н. BSS)" является обязательным
+error.swd.load_max_hour_bss.length=Длина поля "Час наибольшей загрузки для трафика BSS (ч.н.н. BSS)" не должна превышать 20 символов
+
+label.swd.traf_bss_bss=Значение BSS трафика Эрл. (ч.н.н. BSS)
+error.swd.traf_bss_bss.empty=Поле "Значение BSS трафика Эрл. (ч.н.н. BSS)" является обязательным
+error.swd.traf_bss_bss.invalid=Неверный формат числа в поле "Значение BSS трафика Эрл. (ч.н.н. BSS)"
+
+label.swd.abon_qty_bss=Количество абонентов в VLR
+error.swd.abon_qty_bss.empty=Поле "Количество абонентов в VLR" является обязательным
+error.swd.abon_qty_bss.invalid=Неверный формат числа в поле "Количество абонентов в VLR"
+
+label.swd.abon_act_bss=Активность абонентов (VLR) Ерл/Аб в ч.н.н. BSS
+error.swd.abon_act_bss.empty=Поле "Активность абонентов (VLR) Ерл/Аб в ч.н.н. BSS" является обязательным
+error.swd.abon_act_bss.invalid=Неверный формат числа в поле "Активность абонентов (VLR) Ерл/Аб в ч.н.н. BSS"
+
+label.swd.load_max_hour_nss=Час наибольшей загрузки для трафика NSS (ч.н.н.)
+error.swd.load_max_hour_nss.empty=Поле "Час наибольшей загрузки для трафика NSS (ч.н.н.)" является обязательным
+error.swd.load_max_hour_nss.length=Длина поля "Час наибольшей загрузки для трафика NSS (ч.н.н.)" не должна превышать 20 символов
+
+label.swd.traf_nss_nss=Значение NSS трафика (ч.н.н. NSS)
+error.swd.traf_nss_nss.empty=Поле "Значение NSS трафика (ч.н.н. NSS)" является обязательным
+error.swd.traf_nss_nss.invalid=Неверный формат числа в поле "Значение NSS трафика (ч.н.н. NSS)"
+
+label.swd.bsscerl=Техническая ёмкость Эрл. в сторону BSS по уровню перегрузки
+label.swd.nsscerl=Техническая ёмкость Эрл. в сторону NSS по уровню перегрузки
+
+label.swd.tryqty_mobile_all=Общее количество попыток для мобильного трафика (общий ч.н.н.)
+error.swd.tryqty_mobile_all.empty=Поле "Общее количество попыток для мобильного трафика (общий ч.н.н.)" является обязательным
+error.swd.tryqty_mobile_all.invalid=Неверный формат числа в поле "Общее количество попыток для мобильного трафика (общий ч.н.н.)"
+
+label.swd.load_mobile=Мобильная нагрузка в процентах от максимальной
+error.swd.load_mobile.empty=Поле "Мобильная нагрузка в процентах от максимальной" является обязательным
+error.swd.load_mobile.invalid=Неверный формат числа в поле "Мобильная нагрузка в процентах от максимальной"
+
+label.swd.tryqty_transit_all=Общее количество попыток для транзитного трафика (общий ч.н.н.)
+error.swd.tryqty_transit_all.empty=Поле "Общее количество попыток для транзитного трафика (общий ч.н.н.)" является обязательным
+error.swd.tryqty_transit_all.invalid=Неверный формат числа в поле "Общее количество попыток для транзитного трафика (общий ч.н.н.)"
+
+label.swd.load_transit=Транзитная нагрузка в процентах от максимальной
+error.swd.load_transit.empty=Поле "Транзитная нагрузка в процентах от максимальной" является обязательным
+error.swd.load_transit.invalid=Неверный формат числа в поле "Транзитная нагрузка в процентах от максимальной"
+
+label.swd.tryqty_sms_all=Общее количество SMS
+error.swd.tryqty_sms_all.empty=Поле "Общее количество SMS" является обязательным
+error.swd.tryqty_sms_all.invalid=Неверный формат числа в поле "Общее количество SMS"
+
+label.swd.load_sms_percent=SMS нагрузка в процентах от максимальной
+error.swd.load_sms_percent.empty=Поле "SMS нагрузка в процентах от максимальной" является обязательным
+error.swd.load_sms_percent.invalid=Неверный формат числа в поле "SMS нагрузка в процентах от максимальной"
+
+label.swd.load_event_percent=Общая событийная нагрузка в процентах от максимальной
+error.swd.load_event_percent.empty=Поле "Общая событийная нагрузка в процентах от максимальной" является обязательным
+error.swd.load_event_percent.invalid=Неверный формат числа в поле "Общая событийная нагрузка в процентах от максимальной"
+
+label.swd.load_all_percent=Загрузка процессора в процентах от максимальной
+error.swd.load_all_percent.empty=Поле "Загрузка процессора в процентах от максимальной" является обязательным
+error.swd.load_all_percent.invalid=Неверный формат числа в поле "Загрузка процессора в процентах от максимальной"
+
+label.swd.koeff_kn=Коэффициент концентрации нагрузки в процентах (отношение общего суммарного трафика к трафику в общий ч.н.н.)
+error.swd.koeff_kn.empty=Поле "Коэффициент концентрации нагрузки в процентах" является обязательным
+error.swd.koeff_kn.invalid=Неверный формат числа в поле "Коэффициент концентрации нагрузки в процентах"
+
+label.swd.aint_overload=Количество А-инт с перегрузкой выше
+label.swd.aint_contr=в собственный ч.н.н. Контроллера
+label.swd.tkg_overload=Количество TKG-ROUTE с перегрузкой выше
+label.swd.tkg_contr=в собственный ч.н.н. TKG-ROUTE
+label.swd.tkgcsr_overload=Количество TKG-ROUTE где CSR выше
+label.swd.tkgcsr_contr=в собственный ч.н.н.
+label.swd.ss7_load=Количество звеньев SS-7 с нагрузкой выше
+label.swd.ss7_contr=Эрл. в собственный ч.н.н.
+
+error.swd.notunique=Эксплуатационные характеристики на указанную дату уже заведены
+error.params.initdata=Ошибка инициализации формы редактирования параметра.
+error.params.formcast=Ошибочный класс формы. Смотрите логи!
+
+menu.switchdescparams=Редактирование параметра
+menu.switchcontrollers=Подключенные контроллеры
+
+label.swc.positionname=Позиция
+label.swc.regionname=Регион
+label.swc.zonename=Зона сети
+label.swc.address=Адрес
+label.swc.switchname=Коммутатор GSM/DCS
+label.swc.planstate=Состояние планирования
+
+label.swc.list.num=Номер
+label.swc.list.name=Наименование
+label.swc.list.type=Тип контроллера
+label.swc.list.address=Адрес
+label.swc.list.zone=Зона сети
+label.swc.list.exp=Эксп.
+label.swc.list.show=Показ. на карте
+
+label.swdparams.date=Дата
+label.swdparams.field=Параметр
+label.swdparams.level=Уровень
+label.swdparams.value=Значение
+
+error.swdparams.level.empty=№ {0}. Необходимо указать уровень.
+error.swdparams.level.invalid=№ {0}. Неверный формат числа в поле уровня.
+error.swdparams.value.empty=№ {0}. Необходимо указать значение.
+error.swdparams.value.invalid=№ {0}. Неверный формат числа в поле значения.
+error.swdparams.duplicate=№ {0}. Не допускается ввод двух одинаковых уровней.
+error.swdparams.saveerror=Ошибка при сохранении параметров. Смотрите в лог. Класс: {0}
+
+controllerlist.navigator.header=Список контроллеров
+controllerlist.switch=Коммутатор
+
+controllerlist.table.number=Номер
+controllerlist.table.type=Тип контроллера
+controllerlist.table.name=Наименование
+controllerlist.table.address=Адрес
+controllerlist.table.netzone=Зона сети
+controllerlist.table.planstate=План / Факт
+controllerlist.table.map=Показать на карте
+
+controllerlist.buttons.addplan=Добавить план. контроллер
+controllerlist.buttons.addfact=Добавить контроллер
+
+controller.number=Номер
+controller.name=Название
+controller.switch=Подключен к коммутатору
+controller.resource=Тип оборудования
+controller.qty_shell=Количество шкафов
+controller.mfs_num=Номер MFS
+controller.omcr_num=Номер OMC-R
+controller.con_type=Тип подключения к сети
+controller.con_type.radio=Radio
+controller.con_type.optics=Optics
+controller.lac_numbers=Номера LAC
+controller.trxfr_qty_max=Максимальное количество подключенных TRX_FR
+controller.trx_use_percent=Процент использования TRX
+controller.atr_qty_max=Максимальное количество подключаемых ATR
+controller.trxfr_qty=Фактическое количество подключенных TRX_FR
+controller.trxhr_qty=Фактическое количество подключенных TRX_HR
+controller.atr_qty=Фактическое количество подключенных ATR
+controller.aint_qty=Фактическое количество каналов 64 кбит/с. на А-инт
+controller.hway_qty_voice=Кол-во H-way, голос
+controller.hway_qty_grps=Кол-во H-way, GPRS
+controller.ver_po=Версия ПО
+controller.expproperties=Эксплуатационные характеристики
+controller.bsconnected=Подключенные БС
+
+error.empty.controller.number=Необходимо указать номер контроллера
+error.invalid.controller.switch=Неверный номер коммутатора
+error.invalid.controller.resource=Неверный номер оборудования
+error.invalid.controller.qtyshell=Неверное количество шкафов
+error.invalid.controller.mfsnum=Неверный указан номер MFS
+error.invalid.controller.omcrnum=Неверный указан номер OMC-R
+
+error.invalid.controller.trxfr_qty_max=Неверно указано максимальное количество подключенных TRX_FR
+error.invalid.controller.trx_use_percent=Неверно указан процент использования TRX
+error.invalid.controller.atr_qty_max=Неверно указано максимальное количество подключаемых ATR
+error.invalid.controller.trxfr_qty=Неверно указано фактическое количество подключенных TRX_FR
+error.invalid.controller.trxhr_qty=Неверно указано фактическое количество подключенных TRX_HR
+error.invalid.controller.atr_qty=Неверно указано фактическое количество подключенных ATR
+error.invalid.controller.aint_qty=Неверно указано фактическое количество каналов 64 кбит/с. на А-инт
+error.invalid.controller.hway_qty_voice=Неверно указано кол-во H-way, голос
+error.invalid.controller.hway_qty_grps=Неверно указано кол-во H-way, GPRS
+
+controller.addinfo.showdate=Показать характеристики на дату
+controller.addinfo.date=Дата снятия характеристик
+controller.addinfo.load_max_day=День наибольшей нагрузки (д.н.н.)
+controller.addinfo.load_max_hour=Час наибольшей нагрузки (ч.н.н.)
+controller.addinfo.koef_kk=Коэффициент концентрации - отношение нагрузки в д.н.н.-ч.н.н. к общей нагрузке в д.н.н.
+controller.addinfo.traf_aint=Трафик Эрл. на А-инт в д.н.н.-ч.н.н.
+controller.addinfo.load_aint_percent=Загрузка каналов на А-инт в процентах
+controller.addinfo.ss7_load_avg=Усредненная нагрузка  Эрл. по звеньям SS-7
+controller.addinfo.ter=Техническая емкость радиосети Эрл. по уровню перегрузки
+controller.addinfo.acc_load=Аккумулитивная нагрузка Эрл. от всех сот в собственный ч.н.н. Соты
+controller.addinfo.cap_use_percent=Использование емкости радиосети в процентах
+controller.addinfo.ksot=Количество сот с отказами на ТСН более
+controller.addinfo.vs=в собственный ч.н.н.
+controller.addinfo.ksos=Количество сот с отказами на SDCCH более
+controller.addinfo.bad_cunsr_percent=Процент неуспешных соединений CunSR
+controller.addinfo.bad_cunssr_percent=Процент неуспешно установленных соединений CunSSR
+controller.addinfo.conn_lost_avg=Средний интервал мин. между обрывами связи MPD
+
+controller.addinfo.controller=Контроллер
+controller.descparams=Редактирование параметра
+controller.addinfo.planstate=Состояние планирования
+controller.addinfo.planstate.plan=План
+controller.addinfo.planstate.fact=Факт
+
+error.cwd.date.empty=Необходимо указать дату
+error.cwd.date.invalid=Неверный формат даты
+error.cwd.notunique=Экплуатационные характеристики контроллера на указанную дату уже введены. Укажите другую дату.
+error.cwd.load_max_day.empty=Поле "День наибольшей нагрузки" является обязательным
+error.cwd.load_max_day.length=Длина строки в поле "День наибольшей нагрузки" не должна превышать 20-ти символов.
+error.cwd.load_max_hour.empty=Поле "Час наибольшей нагрузки" является обязательным
+error.cwd.load_max_hour.length=Длина строки в поле "Час наибольшей нагрузки" не должна превышать 20-ти символов.
+error.cwd.koef_kk.empty=Поле "Коэффициент концентрации" является обязательным
+error.cwd.koef_kk.invalid=Неверный формат числа в поле "Коэффициент концентрации"
+error.cwd.traf_aint.empty=Поле "Трафик Эрл. на А-инт" является обязательным
+error.cwd.traf_aint.invalid=Неверный формат числа в поле "Трафик Эрл. на А-инт"
+error.cwd.load_aint_percent.empty=Поле "Загрузка каналов на А-инт" является обязательным
+error.cwd.load_aint_percent.invalid=Неверный формат числа в поле "Загрузка каналов на А-инт"
+error.cwd.ss7_load_avg.empty=Поле "Усредненная нагрузка Эрл." является обязательным
+error.cwd.ss7_load_avg.invalid=Неверный формат числа в поле "Усредненная нагрузка Эрл."
+error.cwd.acc_load.empty=Поле "Аккумулитивная нагрузка Эрл." является обязательным
+error.cwd.acc_load.invalid=Неверный формат числа в поле "Аккумулитивная нагрузка Эрл."
+error.cwd.cap_use_percent.empty=Поле "Использование емкости радиосети" является обязательным
+error.cwd.cap_use_percent.invalid=Неверный формат числа в поле "Использование емкости радиосети"
+error.cwd.bad_cunsr_percent.empty=Поле "Процент неуспешных соединений CunSR" является обязательным
+error.cwd.bad_cunsr_percent.invalid=Неверный формат числа в поле "Процент неуспешных соединений CunSR"
+error.cwd.bad_cunssr_percent.empty=Поле "Процент неуспешно установленных соединений CunSSR" является обязательным
+error.cwd.bad_cunssr_percent.invalid=Неверный формат числа в поле "Процент неуспешно установленных соединений CunSSR"
+error.cwd.conn_lost_avg.empty=Поле "Средний интервал мин. между обрывами связи MPD" является обязательным
+error.cwd.conn_lost_avg.invalid=Неверный формат числа в поле "Средний интервал мин. между обрывами связи MPD"
+
+error.cntrdparams.level.empty=Не указан уровень для значения '{0}'
+error.cntrdparams.level.invalid=Неверный формат числа в {0} строке.
+error.cntrdparams.value.empty=Для уровня '{0}' необходимо указать значение
+error.cntrdparams.value.invalid=Неверный формат числа для уровня '{0}'
+error.cntrdparams.duplicate=Уровни не должны содержать два одинаковых значения
+error.cntrdparams.saveerror=Ошибка сохранения
+
+label.contdparams.date=Дата
+label.contdparams.field=Параметр
+label.contdparams.level=Уровень
+label.contdparams.value=Значение
+
+
+repeaterlist.navigator.header=Список репитеров
+label.repeaterlist.type=Тип станции
+label.repeaterlist.search.gsm=GSM
+label.repeaterlist.search.damps=DAMPS
+
+repeaterlist.pos.name=Наименование позиции
+repeaterlist.resource=Тип репитера
+repeaterlist.repiterclass=Класс оборудования
+repeaterlist.repiterclass.a=Мощные, полосовой
+repeaterlist.repiterclass.b=Мощные, канальный
+repeaterlist.repiterclass.c=Мощные, канальный с переносом частоты
+repeaterlist.repiterclass.d=Средней мощности, полосовой
+repeaterlist.repiterclass.e=Малой мощности, полосовой
+repeaterlist.reppower=Мощность репитера
+repeaterlist.bandwidth.numchanals=Ширина полосы/Число каналов
+repeaterlist.donortype=Тип подключения к донорному сектору
+repeaterlist.donortype.a=Радиоэфир
+repeaterlist.donortype.b=Радиотракт
+repeaterlist.donortype.c=Оптический фидер
+repeaterlist.equipmentstate=Состояние эксплуатации
+label.repeaters=Репитеры
+
+label.repeaterlist.add.plan=Добавить планируемый репитер
+label.repeaterlist.add.fact=Добавить существующий репитер
+
+label.viewbs=Просмотр БС
+label.sectorsafs=Сектора и АФС
+label.sector.repiterlist=Список репитеров сектора
+
+label.replist.position=Позиция
+label.replist.zone=Зона сети
+label.replist.address=Адрес
+label.replist.number=Номер станции
+label.replist.name=Название станции
+label.replist.type=Тип станции
+label.replist.donor.number=Номер донорного сектора
+label.replist.donor.name=Название донорного сектора
+
+label.repeaterform.donor.az=Азимут донорной антенны
+label.repeaterform.donor.resource=Донорная антенна
+label.repeaterform.numchanals=Число каналов
+label.repeaterform.bandwidth=Ширина полосы
+label.repeaterform.latitude=Широта
+label.repeaterform.longitude=Долгота
+
+
+error.invalid.repeater.antennadonorcode=Неверно указан тип донорной антенны
+error.empty.repeater.resourcecode=Необходимо указать тип репитера
+error.invalid.repeater.resourcecode=Неверно указан тип репитера
+error.empty.repeater.reppower=
+error.invalid.repeater.reppower=
+error.invalid.repeater.numchanals=
+error.invalid.repeater.bandwidth=
+
+error.repeater.position.empty=Необходимо указать позицию.
+error.repeater.position.keyformat=Неверно введён код позиции.
+error.repeater.position.notfound=Позиция с указанным кодом не найдена.
+error.repeater.sector.empty=Необходимо указать донорный сектор.
+error.repeater.sector.keyformat=Неверно введён код донорного сектора.
+error.repeater.sector.notfound=Донорный сектор с указанным кодом не найден.
+error.repeater.sector.bs=Не найдена базовая станция сектора.
+error.repeater.donor_type.empty=Необходимо указать тип подключения.
+error.repeater.donor_type.invalid=Неверное значение для типа подключения. Выберите из списка.
+error.repeater.donorantenna.keyformat=Неверно введён код донорной антенны.
+error.repeater.donorantenna.notfound=Донорная антенна с указанным кодом не найдена.
+error.repeater.repeaterclass.empty=Необходимо указать класс оборудования.
+error.repeater.repeaterclass.invalid=Неверно указан класс оборудования.
+error.repeater.repeater.empty=Необходимо указать тип репитера.
+error.repeater.repeater.keyformat=Неверно указан код типа репитера.
+error.repeater.repeater.notfound=Тип репитера с указанным кодом не найден.
+error.repeater.trxnum.invalid=Несоответствие числа каналов репитера ({0}) и числа TRX сектора ({1}).
+error.repeater.trxnum.invalidtn=Несоответствие числа каналов репитера. Число каналов ({0}). Число TRX отсутствует.
+error.repeater.trxnum.invalidcn=Несоответствие числа каналов репитера. Число каналов отсутствует. Число TRX сектора ({0}).
+error.repeater.reppower.empty=Необходимо указать мощность репитера.
+error.repeater.reppower.invalid=Неверно указана мощность репитера.
+error.repeater.numchanals.invalid=Неверно указано число каналов.
+error.repeater.bandwidth.invalid=Неверно указана ширина полосы.
+error.repeater.pwrval=Неверно введено поле 'Потребляемая электроэнергия'. Формат {0}.
+error.repeater.equipmentstate.empty=Необходимо указать статус.
+error.repeater.equipmentstate.invalid=Неверно указан статус. Выберите из списка.
+
+#comequipment start
+
+comequipment.type.R=Радиорелейное
+comequipment.type.O=Волоконно-оптическое
+comequipment.type.A=Вспомогательное
+comequipment.type.V=Комплект оператора связи
+comequipment.type.B=Базовая станция ТС
+comequipment.type.T=Терминальная станция ТС
+#comequipment finish
+
+#otherequipment start
+otherequipment.type.A=Сооружения
+otherequipment.type.B=Техническое оборудование
+otherequipment.type.C=Хозяйственное оборудование
+otherequipment.type.D=Прочее оборудование
+otherequipment.type.E=Кондиционеры и вентиляция
+#otherequipment finish
+
+label.choose.antenna=Выбор антенны
+
+label.choose.resource=Выбор ресурса
+label.resource.name=Наименование
+label.resource.code=Код
+label.resource.complectfor=Узел для
+label.resource.complectfornode=Узел для / Состав
+label.resource=Ресурс
+label.resource.boxable=Может быть упакован
+label.resource.complectpart.short=Узел
+label.resource.complectpart=Узел
+label.resource.model=Обозначение
+label.resource.taxhist=Налоги
+label.resource.countpolicy=Учётная политика
+label.resource.countpolicy.serial=Сер. учёт
+label.resource.countpolicy.partial=Парт. учёт
+label.resource.unit=Единица измерения
+label.resource.unit.short=Ед. изм.
+label.resource.active=Активный
+label.resource.active.short=Акт.
+label.resource.complect=Набор
+label.resource.complect.short=Ком-т
+label.resource.double=Консолидация ресурсов
+label.resource.showall=Все
+label.resource.shownew=Не устаревшие
+label.resource.showold=Устаревшие
+label.resource.priceable=Расценка обязательна
+label.resource.priceable.short=Расц. обяз.
+label.resource.notes=Примечание
+label.resource.manufacturer=Производитель
+label.resource.manucode=Код производителя
+label.resource.oldcodes=Старые коды
+label.resource.viewoldcodes=Просмотр
+label.resource.byclass=По классификации
+label.resource.bysign=По обозначению
+label.resource.byname=По наименованию
+label.resource.bymanufacturer=По производителю
+label.resource.bymanucode=По коду производителя
+label.resource.type=Вид
+label.resource.subtype=Тип
+label.resource.countpolicys=Серийный
+label.resource.countpolicyp=Партионный
+label.resource.countpolicyb=Обычный
+
+label.choose.organizations=Выбор организаций
+label.organization.code=Код
+label.organization.name=Наименование
+label.organization.company=Компания
+label.organization.phone=Телефон
+label.organization.inn=ИНН
+label.organization.issupplier=Поставщик
+label.organization.isrenter=Арендодатель
+label.organization.isprovider=Подрядчик
+label.organization.type=Тип
+
+ComlineList.table.code=Код пролета
+ComlineList.table.number1=Номер 1
+ComlineList.table.position1=Позиция 1
+ComlineList.table.number2=Номер 2
+ComlineList.table.position2=Позиция 2
+ComlineList.table.type=Тип линии связи
+ComlineList.table.resource=Тип оборудования связи
+ComlineList.table.map=Показать на карте
+ComlineList.table.alttext.edit=Редактировать линию связи
+ComlineList.table.alttext.view=Просмотреть линию связи
+ComlineList.navigator.header=Линии связи
+ComlineList.buttons.add=Добавить РРЛС
+ComlineList.buttons.map=Показать на карте
+ComlineList.table.type.rrl=РРЛ
+ComlineList.table.type.optic=ВОЛС
+ComlineList.table.beenetid=№ BeeNet
+ComlineList.beenetsearch=По № BeeNet
+ComlineList.table.file=Файл
+ComlineList.table.hopsate=Сост.
+
+
+label.choose.comequ=Выберите коммуникационное оборудование
+label.comequ.position=Позиция
+label.comequ.name=Наименование
+label.comequ.model=Модель
+label.comequ.type=Тип
+
+ComlineForm.nestedA=Другие линии связи из точки А
+ComlineForm.nestedB=Другие линии связи из точки Б
+
+ComlineForm.documents=Разрешения на линию связи
+ComlineForm.regdate=Рег. дата
+ComlineForm.number=Номер
+ComlineForm.type=Тип документа
+ComlineForm.expdate=Срок действия
+ComlineForm.comments=Комментарий
+ComlineForm.beenet=№ BeeNet
+
+ComlineForm.region=Регион
+ComlineForm.prolet=Код пролёта
+
+ComlineForm.equcomplecta=Комплект оборудования А
+ComlineForm.positiona=Позиция А
+ComlineForm.complecta=Название комплекта А
+ComlineForm.heighta=Высота подвеса в точке А
+ComlineForm.diama=Диаметр антенны в точке А
+ComlineForm.freqa1=Частота передачи
+ComlineForm.freqa2=Частота передачи 2
+ComlineForm.freqadoc=Частота передачи в заявке ЭМС
+ComlineForm.powera=Мощность
+ComlineForm.resourcea=Тип оборудования
+ComlineForm.commenta=Комментарий
+
+ComlineForm.equcomplectb=Комплект оборудования Б
+ComlineForm.positionb=Позиция Б
+ComlineForm.complectb=Название комплекта Б
+ComlineForm.heightb=Высота подвеса в точке Б
+ComlineForm.diamb=Диаметр антенны в точке Б
+ComlineForm.freqb1=Частота передачи
+ComlineForm.freqb2=Частота передачи 2
+ComlineForm.freqbdoc=Частота передачи в заявке ЭМС
+ComlineForm.powerb=Мощность
+ComlineForm.resourceb=Тип оборудования
+ComlineForm.commentb=Комментарий
+
+ComlineForm.height_units=м
+ComlineForm.diam_units=м
+ComlineForm.freq_units=МГц
+ComlineForm.power_units=dBm
+ComlineForm.len_units=км
+ComlineForm.speed_units=Мбит/с
+
+menu.comline=Линии связи
+
+ComlineForm.hopparams=Параметры пролета
+ComlineForm.azimut=Азимут излучения
+ComlineForm.hopslength=Длина пролета
+ComlineForm.reserv=Резервирование
+ComlineForm.speed=Скорость потока
+ComlineForm.abisnum=Номер A-bis порта
+ComlineForm.leaseinfo=Аренда
+ComlineForm.hopscomm=Комментарий
+ComlineForm.file=Файл (Разрешение)
+ComlineForm.numberinfile=Номер в файле
+ComlineForm.newcomplect=Создать новый
+ComlineForm.oldcomplect=Выбрать существующий
+
+ComlineForm.hopstate=Состояние пролёта
+ComlineForm.hopstate.short=Состояние
+ComlineForm.state.A=Проектируется
+ComlineForm.state.B=Настраивается
+ComlineForm.state.C=Эксплуатируется
+ComlineForm.state.D=Выведен из эксплуатации
+
+ComlineList.state=Состояние
+ComlineList.state.all=Все
+ComlineList.state.A=П
+ComlineList.state.B=Н
+ComlineList.state.C=Э
+ComlineList.state.D=Д
+
+ComlineRForm.error.empty.hopsname=Необходимо указать код пролета
+ComlineRForm.error.invalid.hopsname=Длинна кода пролёта не должна превышать 50-ти символов
+
+ComlineRForm.error.empty.posida=Не выбрана позиция для комплекта А
+ComlineRForm.error.invalid.posida=Позиция с указанным кодом не найдена для комплекта А
+ComlineRForm.error.empty.equipnamea=Не указано наименование комплекта оборудования А
+ComlineRForm.error.empty.equipa=Не выбран комплект оборудования А
+ComlineRForm.error.empty.powera=Не указана мощность для комплекта оборудования А
+ComlineRForm.error.invalid.powera=Недопустимое значение мощности для комплекта оборудования А
+ComlineRForm.error.invalid.heighta=Недопустимое значение высоты подвеса в точке А
+ComlineRForm.error.invalid.diama=Недопустимое значение диаметры антенны в точке А
+ComlineRForm.error.invalid.freqa1=Недопустимое значение частоты передачи для комплекта оборудования А
+ComlineRForm.error.invalid.freqa2=Недопустимое значение частоты передачи 2 для комплекта оборудования А
+ComlineRForm.error.invalid.freqadoc=Недопустимое значение частоты передачи в заявке ЭМС для комплекта оборудования А
+ComlineRForm.error.empty.rescodea=Необходимо выбрать тип оборудования для комплекта А
+ComlineRForm.error.empty.commenta=Необходимо указать комментарий для комплекта оборудования А
+
+ComlineRForm.error.empty.posidb=Не выбрана позиция для комплекта Б
+ComlineRForm.error.invalid.posidb=Позиция с указанным кодом не найдена для комплекта Б
+ComlineRForm.error.empty.equipnameb=Не указано наименование комплекта оборудования Б
+ComlineRForm.error.empty.equipb=Не выбран комплект оборудования Б
+ComlineRForm.error.empty.powerb=Не указана мощность для комплекта оборудования Б
+ComlineRForm.error.invalid.powerb=Недопустимое значение мощности для комплекта оборудования Б
+ComlineRForm.error.invalid.heightb=Недопустимое значение высоты подвеса в точке Б
+ComlineRForm.error.invalid.diamb=Недопустимое значение диаметры антенны в точке Б
+ComlineRForm.error.invalid.freqb1=Недопустимое значение частоты передачи для комплекта оборудования Б
+ComlineRForm.error.invalid.freqb2=Недопустимое значение частоты передачи 2 для комплекта оборудования Б
+ComlineRForm.error.invalid.freqbdoc=Недопустимое значение частоты передачи в заявке ЭМС для комплекта оборудования Б
+ComlineRForm.error.empty.rescodeb=Необходимо выбрать тип оборудования для комплекта Б
+ComlineRForm.error.empty.commentb=Необходимо указать комментарий для комплекта оборудования Б
+ComlineRForm.error.invalid.beenetid=№ BeeNet не должен превышать 8-ми символов
+
+# Лукап по донорным базовым станциям
+
+label.choose.basestation=Выбор донорной БС
+label.bslookup.stationtype=Тип станции
+label.bslookup.stationtype.d=GSM/DCS
+label.bslookup.stationtype.a=DAMPS
+label.bslookup.searchby=Искать
+label.bslookup.searchby.all=Всё
+label.bslookup.searchby.bsnum=По номеру БС
+label.bslookup.searchby.name=По наименованию
+label.bslookup.searchby.address=По адресу
+label.bslookup.searchstring=Строка поиска
+label.bslookup.controller=Контроллер
+label.bslookup.switch=Коммутатор
+label.bslookup.bsnum=Номер
+label.bslookup.type=Тип
+label.bslookup.name=Название
+label.bslookup.address=Адрес
+label.bslookup.netzone=Зона сети
+label.bslookup.onair=В эфире
+
+# Выбор доноргного сектора
+label.choose.bssector=Выбор донорного сектора
+label.bssectorlookup.bs=Донорная БС
+label.bssector.num=Номер
+label.bssector.name=Название
+label.bssector.range=Диапазон
+label.bssector.azimut=Азимут
+
+# Выборка регионов
+label.mselect.superregion=Суперрегион
+label.mselect.region=Регионы
+label.mselect.netzone=Зона сети
+
+# Выбор донорной антенны
+label.choose.bsantenna=Выбор донорной антенны
+label.bsantennalookup.bs=Донорная БС
+label.bsantennalookup.sector=Донорный сектор
+
+label.bsantenna.num=Номер
+label.bsantenna.name=Тип
+label.bsantenna.nakl=Мех. наклон
+label.bsantenna.hset=Высота подвеса
+label.bsantenna.diagnapr=Диаграмма направленности
+label.bsantenna.ku=КУ
+label.bsantenna.trr=Приём / Передача
+
+# Форма добавления репитеров
+label.repeater.donorbs=Донорная БС
+label.repeater.donorsector=Донорный сектор
+label.repeater.donortype=Тип подключения
+
+label.position.coords=Координаты
+label.position.latitude=широта
+label.position.longitude=долгота
+
+
+# Navigator resources
+navtitle.ShowChanalPower=Мощности по каналам
+navtitle.EditChanalPower=Мощность канала
+navtitle.xlsMinReport=Краткий журнал
+navtitle.xlsMaxReport=Подробный журнал
+navtitle.ShowXlsLoadResults=Результаты загрузки
+navtitle.xlsJournal=Журнал
+navtitle.ShowBaseStationList=Список БС
+navtitle.main=Характеристики оборудования
+navtitle.EditChoiceAntennes=Антенна
+navtitle.EditChoiceAntennes_FBS=Антенна
+navtitle.EditChoiceAntennes_PBS=Антенна (План)
+navtitle.EditCopySector=Копир. сектор
+navtitle.EditSector=Сектор
+navtitle.Edit_CopySector_FBS=Копир. сектор
+navtitle.Edit_CopySector_PBS=Копир. сектор (План)
+navtitle.Edit_CopySector_E=Копир. сектор
+navtitle.EditSector_FBS=Сектор
+navtitle.EditSector_PBS=Сектор (План)
+navtitle.EditSector_E=Сектор
+navtitle.EditAntenna=Антенна
+navtitle.EditCopyAntenna=Копир. антенна
+navtitle.Edit_CopyAntenna_FBS=Копир. антенна
+navtitle.Edit_CopyAntenna_PBS=Копир. антенна (План)
+navtitle.Edit_CopyAntenna_E=Копир. антенны
+navtitle.EditAntenna_FBS=Антенна
+navtitle.EditAntenna_PBS=Антенна (План)
+navtitle.EditAntenna_E=АФС
+navtitle.ShowAntennaSectorList=Сектора и АФС
+navtitle.Edit_ViewFactBaseStation=Данные БС
+navtitle.Edit_CopyFactBaseStation=Копир. БС
+navtitle.Edit_EditFactBaseStation=Редактир. БС
+navtitle.Edit_AddDeleteFactBaseStation=Редактир. БС
+navtitle.Edit_ViewPlanBaseStation=Данные БС (План)
+navtitle.Edit_CopyPlanBaseStation=Копир. БС (План)
+navtitle.Edit_EditPlanBaseStation=Редактир. БС (План)
+navtitle.Edit_AddDeletePlanBaseStation=Редактир. БС (План)
+navtitle.ShowEquipdetList=Список оборудования
+navtitle.ShowEquipsdetList=Состав устройства
+navtitle.ShowSwitchList=Список коммутаторов
+navtitle.EditSwitch=Коммутатор
+navtitle.EditPlanSwitch=Коммутатор (План)
+navtitle.EditFactSwitch=Коммутатор
+navtitle.EditFactSwitchDesc=Ред. хар. коммутатора
+navtitle.EditViewFactSwitchDesc=Характеристики коммутатора
+navtitle.EditSwitchDescParam=Экспл. параметры коммутатора
+navtitle.ShowSwitchControllersList=Список контроллеров коммутатора
+navtitle.ShowControllerList=Список контроллеров
+navtitle.EditController=Контроллер
+navtitle.EditPlanController=Контроллер (План)
+navtitle.EditFactController=Контроллер
+navtitle.EditViewFactControllerDesc=Характеристики контроллера
+navtitle.EditFactControllerDesc=Ред. хар. контроллера
+navtitle.EditControllerDescParam=Параметры
+navtitle.ShowControllerBaseStationsList=Список БС контроллера
+navtitle.ShowRepeaterList=Список репитеров
+navtitle.EditRepeater=Репитер
+navtitle.EditPlanRepeater=Репитер (План)
+navtitle.EditFactRepeater=Репитер
+navtitle.EditPlanFromSectorRepeater=Репитер (План)
+navtitle.EditFactFromSectorRepeater=Репитер
+navtitle.EditRepeaterAntenna=Антенны репитера
+navtitle.ShowFromSectorRepeaterList=Репитеры, подключенные к сектору
+navtitle.EditFromSectorRepeater=Репитер
+navtitle.EditFromSectorRepeaterAntenna=Антенна
+navtitle.ShowComlineList=Список линий связи
+navtitle.EditComlineR=Линия связи
+navtitle.LoadXls=Импорт данных
+navtitle.LoadXlsBs=Импорт данных по БС
+navtitle.ShowComlinePositionList=Список линий связи
+navtitle.ShowGKRCHDocList=Список решений ГКРЧ
+navtitle.EditGKRCHDoc=Документ ГКРЧ
+navtitle.EditGKRCHDocFile=Файл
+navtitle.ShowRRLDocList=Список сертификаторв на РРЛ
+navtitle.EditRRLDoc=Сертификат на РРЛ
+navtitle.EditSiteDocFile=Файл
+navtitle.ShowEtapTypeList=Типы этапов получения частотного разрешения
+navtitle.EditEtapType=Парамеры этапа
+navtitle.ShowFrequencyLicenceList=Получение разрешений
+navtitle.ShowFreqLicenceHistoryList=История файла
+navtitle.EditFrequencyLicence=Файл
+navtitle.EditEtapDoc=Этап
+navtitle.ShowDocFilesList=Список файлов
+navtitle.ReportBaseStation=Получение отчетов по частотным разрешениям
+
+# end of navigator resources
+
+error.comlineform.update.beanisnull=Не удалось загрузить редактируемые данные. Возможно закончилось время бездействия сессии.
+error.comlineform.update.hopslabelnotfound=Не удалось загрузить данные по названию линии связи.
+
+error.controller.delete_nested_records=Не удалось удалить записи связанные с данным контроллером
+error.switch.delete_nested_records=Не удалось удалить записи связанные с данным коммутатором
+
+# Positions state labels
+posstate.pe=Планируется и эксплуатируется
+posstate.p=Планируется
+posstate.e=Эксплуатируется
+posstate.d=Закрыта
+posstate.r=Отказ от строительства
+posstate.all=Все
+
+label.position.posstate=Состояние
+label.positionList.posstate=Состояние
+
+# Документы разрешений ГКРЧ
+menu.gkrch=Учёт решений ГКРЧ
+
+label.gkrchdocs.filter.all=Все
+label.gkrchdocs.filter.active=Только действующие
+label.gkrchdocs.filter.number=По номеру
+label.gkrchdocs.filter.resource=По оборудованию
+label.gkrchdocs.filter.date=По дате
+
+label.gkrchdocs.table.number=Номер
+label.gkrchdocs.table.date=Дата
+label.gkrchdocs.table.freqrange=Полоса частот
+label.gkrchdocs.table.expiredate=Срок действия
+label.gkrchdocs.table.regions=Регионы
+label.gkrchdocs.table.resources=Оборудование
+label.gkrchdocs.edit=Редактирование решения ГКРЧ
+label.gkrchdocs.add=Добавление решения ГКРЧ
+
+label.gkrch.form.number=Номер
+label.gkrch.form.date=Дата
+label.gkrch.form.freqrange=Полоса частот
+label.gkrch.form.expiredate=Срок действия
+label.gkrch.form.restrictions=Ограничения
+label.gkrch.form.comments=Комментарии
+label.gkrch.form.regionslist=Регионы
+label.gkrch.form.resourceslist=Оборудование
+label.gkrch.form.selectall=Отметить всё
+label.gkrch.form.resourcename=Наименование
+label.gkrch.form.resourcemodel=Модель
+label.gkrch.form.resourceconf=Конфигурация
+label.gkrch.form.filelist=Приложения (файлы)
+label.gkrch.form.filename=Имя файла
+label.gkrch.form.note=Краткое описание
+label.gkrch.form.regionname=Регион
+label.gkrch.form.supregname=Суперрегион
+
+label.gkrch.title=Документ
+label.gkrch.title.document=Разрешение ГКРЧ №
+label.gkrch.title.from=от
+label.gkrch.file=Файл
+label.gkrch.comment=Краткое описание
+
+error.gkrch.file=Необходимо указать файл
+error.gkrchform.blanknumber.empty=Необходимо указать номер документа
+error.gkrchform.blanknumber.length=Номер документа не может превышать 20-ти символов
+error.gkrchform.blankdate.empty=Необходимо указать дату документа
+error.gkrchform.blankdate.format=Неверный формат даты документа. Ожидается ДД.ММ.ГГГГ
+error.gkrchform.freqrange.empty=Необходимо указать полосу частот
+error.gkrchform.freqrange.length=Длина строки в поле 'Полоса частот' не должна превышать 40 символов
+error.gkrchform.expiredate.empty=Необходимо указать срок действия.
+error.gkrchform.expiredate.format=Неверный формат даты строка действия. Ожидается ДД.ММ.ГГГГ
+error.gkrchform.restrictions.length=Длина строки в поле 'Ограничения' не должна превышать 255 символов.
+error.gkrchform.сomment.length=Длина строки в поле 'Комментарии' не должна превышать 255 символов.
+error.gkrchform.resources.empty=Необходимо указать хотя бы одно оборудование
+error.gkrchform.regions.empty=Необходимо указать хотя бы один регион
+error.gkrch.form.filespresent=К документу привязаны файлы. Удаление невозможно.
+
+menu.rrl=Сертификаты на РРЛ
+
+label.rrldocs.filter.all=Все
+label.rrldocs.filter.active=Только действующие
+label.rrldocs.filter.number=По номеру
+label.rrldocs.filter.resource=По оборудованию
+label.rrldocs.filter.date=По дате
+label.rrldocs.filter.orgname=По фирме производителю
+
+label.rrldocs.table.number=Номер
+label.rrldocs.table.date=Дата
+label.rrldocs.table.orgname=Фирма-производитель
+label.rrldocs.table.expiredate=Срок действия
+label.rrldocs.table.resources=Оборудование
+label.rrldocs.edit=Редактирование сертификата на оборудование РРЛ
+label.rrldocs.add=Добавление сертификата на оборудование РРЛ
+
+label.rrl.form.number=Номер
+label.rrl.form.date=Дата
+label.rrl.form.orgname=Фирма-производитель
+label.rrl.form.expiredate=Срок действия
+label.rrl.form.resourceslist=Оборудование
+label.rrl.form.selectall=Отметить всё
+label.rrl.form.resourcename=Наименование
+label.rrl.form.resourcemodel=Модель
+label.rrl.form.resourceconf=Конфигурация
+label.rrl.form.filelist=Приложения (файлы)
+label.rrl.form.filename=Имя файла
+label.rrl.form.note=Краткое описание
+
+label.rrl.title=Документ
+label.rrl.title.document=Сертификат на оборудование РРЛ №
+label.rrl.title.from=от
+label.rrl.file=Файл
+label.rrl.comment=Краткое описание
+
+label.sitedoc.title=Документ
+label.sitedoc.number=№
+label.sitedoc.from=от
+label.sitedoc.file=Файл
+label.sitedoc.comment=Краткое описание
+
+error.rrlform.blanknumber.empty=Необходимо указать номер документа
+error.rrlform.blanknumber.length=Номер документа не может превышать 20-ти символов
+error.rrlform.blankdate.empty=Необходимо указать дату документа
+error.rrlform.blankdate.format=Неверный формат даты документа. Ожидается ДД.ММ.ГГГГ
+error.rrlform.resources.empty=Необходимо указать хотя бы одно оборудование
+error.rrlform.expiredate.empty=Необходимо указать срок действия.
+error.rrlform.expiredate.format=Неверный формат даты строка действия. Ожидается ДД.ММ.ГГГГ
+error.rrlform.organization.empty=Необходимо указать фирму-производителя
+error.rrlform.organization.invalid=Неверный формат кода организации
+error.rrlform.organization.absent=Фирма-производитель с указанным кодом не найдена в БД
+error.rrlform.filespresent=К документу привязаны файлы. Удаление невозможно.
+
+label.menu.etaptypes=Типы этапов частотного разрешения
+
+label.etaptype.filter.name=По наименованию
+label.etaptype.add=Добавить тип этапа
+label.etaptype.table.ettypename=Наименование этапа
+label.etaptype.table.endtime=Наличие срока действия
+label.etaptype.table.hopslink=Возможность привязки к пролётам
+label.etaptype.button.edit=Редактировать тип этапа
+label.etaptype.button.delete=Удалить тип этапа
+
+label.etaptype.ettypename=Наименование этапа
+label.etaptype.haveendtime=Наличие срока действия
+label.etaptype.havehopslink=Возможность привязки к пролётам
+
+error.etaptype.ettypename.empty=Необходимо указать наименование этапа.
+error.etaptype.ettypename.length=Наименование этапа не может превышать 80-ти символов.
+error.etaptype.delete.cantdelsdtype=Не удалось удалить связанные типы документов
+error.etaptype.update.cantupdatesdtype=Не удалось обновить связанные типы документов
+
+label.menu.frequecylicence=Получение разрешений
+
+label.freqlicence.filter.request=Заявка
+label.freqlicence.filter.request.send=Поданные
+label.freqlicence.filter.request.unsend=Не поданные
+label.freqlicence.filter.licence=Частотное разрешение
+label.freqlicence.filter.licence.present=Есть
+label.freqlicence.filter.licence.notpresent=Нет
+label.freqlicence.filter.exp=Разрешение на эксплуатацию
+label.freqlicence.filter.exp.present=Есть
+label.freqlicence.filter.exp.notpresent=Нет
+label.freqlicence.filter.byfilenumber=По номеру файла
+label.freqlicence.add=Добавить частотное разрешение
+label.freqlicence.edit=Редактирование частотного разрешения
+label.freqlicence.view=Просмотр частотного разрешения
+label.freqlicence.delete=Удалить частотное разрешение
+
+label.freqlicence.table.nfile=№ файла
+label.freqlicence.table.reslist=Оборудование
+label.freqlicence.table.beereqnum=Заявка, №
+label.freqlicence.table.beereqdate=Заявка, Дата
+label.freqlicence.table.beereq=Заявка
+label.freqlicence.table.licnum=Разрешение, №
+label.freqlicence.table.licdate=Разрешение, Дата
+label.freqlicence.table.lic=Частотное разрешение
+label.freqlicence.table.num=№
+label.freqlicence.table.date=Дата
+
+label.freqlicence.showhistory=История файла
+
+label.freqhistory.filter.filenumber=№ файла
+label.freqhist.table.docname=Наименование документа
+label.freqhist.table.ndoc=№ документа
+label.freqhist.table.datedoc=Дата документа
+label.freqhist.table.expdate=Срок действия документа
+label.freqhist.table.comment=Комментарий к документу
+
+label.freqhist.editdoc=Редактирование параметров документа
+label.freqhist.docfiles=Файлы документа
+label.freqhist.add=Добавить этап
+
+label.freqform.filenumber=№ файла
+label.freqform.etap=Этап
+label.freqform.comment=Комментарий
+label.freqform.comlines=Линии связи
+
+label.freqform.comlinecode=Код
+label.freqform.position_a=Позиция А
+label.freqform.resource_a=Оборудование А
+label.freqform.position_b=Позиция Б
+label.freqform.resource_b=Оборудование Б
+label.freqform.comlinetype=Тип линии
+label.freqform.resources=Оборудование
+
+error.freqform.filenumber.empty=Необходимо указать номер файла
+error.freqform.filenumber.invalid=Неверный формат номера файла
+error.freqform.filenumber.duplicate=Введённый номер файла уже используется, укажите другой номер.
+error.freqfrom.etap.length=Длинна поля "Этап" не должна превышать 20 символов
+error.freqfrom.comment.length=Длинна поля "Комментарий" не должна превышать 255 сиволов
+error.freqform.comlines.empty=Необходимо указать хотябы один пролёт
+error.freqform.updatecomlinefiled=Не удалось обновить линиями связи
+
+label.comline.comlinecode=Код пролёта
+label.comline.positiona=Позиция А
+label.comline.resourcea=Оборудование А
+label.comline.positionb=Позиция Б
+label.comline.resourceb=Оборудование Б
+label.comline.comlinetype=Тип линии связи
+
+label.etap.form.number=Номер
+label.etap.form.date=Дата
+label.etap.form.etaptype=Тип этапа
+label.etap.form.expiredate=Срок действия
+label.etap.form.comments=Комментарий
+label.etap.form.havepaycheck=Признак оплаты
+label.etap.form.equiplink=Документ связан
+label.etap.equiplink.=с пролётом
+label.etap.equiplink.A=с комплектом оборудования A
+label.etap.equiplink.B=с комплектом оборудования B
+
+error.etapform.blanknumber.empty=Необходимо указать номер этапа
+error.etapform.blanknumber.length=Длинна номера этапа не должна превышать 40-ка символов
+error.etapform.blankdate.empty=Необходимо указать дату этапа
+error.etapform.blankdate.format=Неверный формат даты этапа
+error.etapform.etaptype.notfound=Указан несуществующий тип этапа
+error.etapform.alreadyexists=Этап с указанным типом уже введён
+error.etapform.expiredate.empty=Необходимо указать срок действия этапа
+error.etapform.expiredate.format=Неверный формат даты окончания срока действия
+error.etapform.сomment.length=Длинна коментария не может превышать 255 символов
+error.etapform.needcomlines=Необходимо отметить хотя бы одну линию связи
+
+error.etapform.create=Произошла ошибка при создании этапа.
+error.etapform.update=Произошла ошибка при обновлении данных этапа.
+error.etapform.delete=Произошла ошибка при удалении этапа. Возможно этап связан другими записями в БД.
+
+label.docfiles.document=Документ
+label.docfiles.doctype=Тип
+label.docfiles.add=Присоединить файл
+label.docfiles.filename=Наименование файла
+label.docfiles.note=Комментарий
+
+label.choose.regions=Выбор региона
+label.regionslookup.superregion=Суперрегион
+label.regionslookup.regionname=Регион
+label.regionslookup.supregionname=Суперрегион
+
+label.waymap.ya=есть
+label.waymap.no=нет
+
+error.empty.reports.haveplan.filenumber=Необходимо ввести номер файла.
+error.empty.reports.filenotfound=Файл с таким номером не найден.
+error.invalid.reports.haveplan.filenumber=Неверный формат ввода значения номера файла: ожидается целое число.
+error.report.haveplan.notfound=Отчет о наличии "Выкопировок" с таким номером файла не найден.
+error.report.frequencyrequest.notfound=Документ "Заявка на частоты" с таким номером файла не найден.
+
+label.reports.haveplan.link=Получить отчет о наличии "Выкопировок"
+label.reports.haveplan.link2=Получить отчет о наличии "Выкопировок" на позициях
+label.reports.freqrequest.link=Получить документ "Заявка на частоты"
+label.reports.freqrequest.link2=Получить документ "Заявка на частоты"(2 вид)
+label.reports.radio.link=Получить документ "Заявка на назначение радиочастот для радиорелейных линий связи"
+label.reports.letter.link=Получить документ "Письмо-заявка"
+label.reports.appropriation.link=Получить документ "Заявление на присвоение радиочастот"
+
+label.menu.reports=Отчеты по ЧР
+
+label.reports.haveplan.filenumber=Номер файла (краткий)
+label.reports.haveplan.title=Отчет о наличии "Выкопировок"
+label.reports.haveplan.file=Файл:
+label.reports.haveplan.hopsname=Код пролета:
+label.reports.haveplan.numberinfile=Номер в файле
+label.reports.haveplan.position1=Позиция 1
+label.reports.haveplan.position2=Позиция 2
+label.reports.haveplan.address1=Адрес 1
+label.reports.haveplan.address2=Адрес 2
+label.reports.haveplan.linktogosnet1=Координаты ГСПИ позиции 1
+label.reports.haveplan.linktogosnet2=Координаты ГСПИ позиции 2
+label.reports.haveplan.linktogosnet_lat=широта
+label.reports.haveplan.linktogosnet_lon=долгота
+label.reports.haveplan.haveplan1=Наличие "Выкопировки" 1
+label.reports.haveplan.haveplan2=Наличие "Выкопировки" 2
+label.reports.haveplan.waymap1=Маршрутная карта 1
+label.reports.haveplan.waymap2=Маршрутная карта 2
+label.reports.haveplanA=есть выкопировка
+label.reports.haveplanB=ждем выкопировку
+label.reports.haveplanC=требуется переделать
+label.reports.haveplanD=должна быть(ЧР)
+label.reports.haveplan=нет выкопировки
+
+
+label.reports.haveplan2.filenumber=Номер файла (краткий)
+label.reports.haveplan2.title=Отчет о наличии "Выкопировок"
+label.reports.haveplan2.file=Файл:
+label.reports.haveplan2.hopsname=Код пролета:
+label.reports.haveplan2.numberinfile=Номер в файле
+label.reports.haveplan2.position=Позиция
+label.reports.haveplan2.address=Адрес
+label.reports.haveplan2.linktogosnet=Координаты ГСПИ позиции
+label.reports.haveplan2.linktogosnet_lat=широта
+label.reports.haveplan2.linktogosnet_lon=долгота
+label.reports.haveplan2.haveplan=Наличие "Выкопировки"
+label.reports.haveplan2.waymap=Маршрутная карта
+
+label.reports.freqrequest.title1=Частотно-территориальный план объекта связи
+label.reports.freqrequest.title2=Тип РЭС: сертифицированное оборудование типа:
+label.reports.freqrequest.title3=Основные технические характеристики
+label.reports.freqrequest.coordinates=Название, адрес, координаты
+label.reports.freqrequest.height=Высота подвеса антенны
+label.reports.freqrequest.azimuth=Азимут излучения
+label.reports.freqrequest.distance=Расст-е км
+label.reports.freqrequest.frequency=Частота, МГц
+label.reports.freqrequest.power=Мощность излучения dBm
+label.reports.freqrequest.resource=Тип апп-ры Скорость Мбит/с
+label.reports.freqrequest.antdiam=Диаметр антенны
+label.reports.freqrequest.amplifkoeff=Коэфф-т усил-я dBi
+label.reports.freqrequest.dnangle=ДНА
+label.reports.freqrequest.frequencyb=прием
+label.reports.freqrequest.frequencya=пере-дача
+label.reports.freqrequest.docaddress=Адрес, указанный в разрешении
+
+label.reports.freqrequest2.title=Проектируемые РРЛ:
+label.reports.freqrequest2.number=№ п/п
+label.reports.freqrequest2.linktogosnet_lat=с.ш. (град мин, с)
+label.reports.freqrequest2.linktogosnet_lon=в.д. (град мин, с)
+label.reports.freqrequest2.gsmid=№ БС
+label.reports.freqrequest2.name=Название
+label.reports.freqrequest2.address=Пункт
+label.reports.freqrequest2.heigh=Н_ант, м
+label.reports.freqrequest2.power=Мощн, дБм
+label.reports.freqrequest2.azimuth=Азим, град
+label.reports.freqrequest2.dnangle_h=ДНА гор.
+label.reports.freqrequest2.angle=Угол места, град
+label.reports.freqrequest2.dnangle_w=ДНА верт.
+label.reports.freqrequest2.amplifkoeff=Коэф. усилен., дБ
+label.reports.freqrequest2.losts=Потери в АФТ, дБ
+label.reports.freqrequest2.kfreq=К. част
+label.reports.freqrequest2.frequency_ab=РПД
+label.reports.freqrequest2.frequency_ba=РПМ
+label.reports.freqrequest2.polarization=Пол.
+label.reports.freqrequest2.radiationclass=Класс
+label.reports.freqrequest2.model=Тип РЭС
+label.reports.freqrequest2.heightabovesea=Н. ант от ур. моря, м
+label.reports.freqrequest2.antdiam=Диам ант, м
+label.reports.freqrequest2.docaddress=Адрес, указанный в разрешении
+
+label.reports.radio.title=Заявка на назначение радиочастот для радиорелейных линий связи
+label.reports.radio.declarantname=Полное наименование заявителя
+label.reports.radio.address=Почтовый адрес
+label.reports.radio.phone=Номер телефона, факс
+label.reports.radio.register=Регистрационный номер и дата регистрации заявки
+label.reports.radio.function=Назначение и характер РРЛ
+label.reports.radio.gkrch=На основании какого решения ГКРЧ запрашиваются радиочастоты
+label.reports.radio.region=Район построения
+label.reports.radio.rrlname=Название РРЛ
+label.reports.radio.quantity=Количество направлений
+label.reports.radio.planneddate=Планируемый срок ввода в эксплуатацию
+label.reports.radio.technical=Технические данные РРС
+label.reports.radio.rrlnametype=Наименование, тип РРС
+label.reports.radio.manufacturer=Фирма - производитель
+label.reports.radio.freqrange=Полоса радиочастот
+label.reports.radio.radiationclass=Класс излучения
+label.reports.radio.mkkrrecomm=Частотный план или формула формирования стволов
+label.reports.radio.power=Мощность несущей передатчика, dBm
+label.reports.radio.freqdev=Относительная нестабильность частоты
+label.reports.radio.recvsensitivity=Чувствительность приемника (пороговая), dBm
+label.reports.radio.antdiam=Тип антенны, диаметр
+label.reports.radio.amplifkoeff=Коэффициент усиления антенны, dBi
+label.reports.radio.dnangle=Ширина диаграммы направленности
+label.reports.radio.numberofchannels=Количество информационных каналов в одном стволе
+label.reports.radio.streamspeed=Скорость передачи данных, Мбит/с]
+label.reports.radio.rrlnumber=Номер сертификата соответствия
+
+label.reports.rrllist.link=Получить отчёт "Список РРЛ"
+label.reports.rrllist.filenumber=Файл:
+label.reports.rrllist.title=Список РРЛ
+
+label.reports.letter.0=ноль
+label.reports.letter.1=один
+label.reports.letter.2=два
+label.reports.letter.3=три
+label.reports.letter.4=четыре
+label.reports.letter.5=пять
+label.reports.letter.6=шесть
+label.reports.letter.7=семь
+label.reports.letter.8=восемь
+label.reports.letter.9=девять
+label.reports.letter.10=десять
+label.reports.letter.11=одиннадцать
+label.reports.letter.12=двенадцать
+label.reports.letter.13=тринадцать
+label.reports.letter.14=четырнадцать
+label.reports.letter.15=пятнадцать
+label.reports.letter.16=шестнадцать
+label.reports.letter.17=семнадцать
+label.reports.letter.18=восемнадцать
+label.reports.letter.19=девятнадцать
+label.reports.letter.20=двадцать
+label.reports.letter.30=тридцать
+label.reports.letter.40=сорок
+label.reports.letter.50=пятьдесят
+label.reports.letter.60=шестьдесят
+label.reports.letter.70=семьдесят
+label.reports.letter.80=восемьдесят
+label.reports.letter.90=девяносто
+label.reports.letter.rrl1=радиорелейный
+label.reports.letter.rrl2=радиорелейных
+label.reports.letter.interval1=интервал
+label.reports.letter.interval2=интервала
+label.reports.letter.interval3=интервалов
+
+label.menu.microstrategy.report=Отчёты MS
+
+label.comline.permstatus=Статус по разрешениям
+label.comline.permstatus.0=Новый пролёт
+label.comline.permstatus.1=Заявка в работе
+label.comline.permstatus.2=Ожидание 1-го этапа
+label.comline.permstatus.3=1-й этап
+label.comline.permstatus.4=Заключение
+label.comline.permstatus.5=Разрешение
+label.comline.permstatus.6=Разрешение на РЭС
+label.comline.permstatus.7=Сдан
+label.comline.permstatus.8=Продление
+label.comline.permstatus.9=Приостановлен
+
+error.comliner.cantcreatenewpermission=Не удалось создать новый файл (разрешение)
+error.comliner.cantcreatehopslink=Не удалось связать линию связи с файлом (разрешением)
+error.comliner.hopslinkerror=Ошибка при связывании слини связи с файлом (разрешением)
+
+#eof

@@ -1,0 +1,20 @@
+      <%
+          boolean suppressEndDebt= (aform.getTable4().size()>0)?false:true;
+          if(!suppressEndDebt){
+             com.hps.july.arenda.valueobject.MutualEndDebtValueObject medvo = (com.hps.july.arenda.valueobject.MutualEndDebtValueObject)aform.getTable4().get(0);
+	         executor =medvo.getExecutor();
+             customer =medvo.getCustomer();
+		     java.util.Iterator table4 = aform.getTable4().iterator();
+		     while (table4.hasNext()) {
+			   com.hps.july.arenda.valueobject.MutualEndDebtValueObject ob4
+				          = (com.hps.july.arenda.valueobject.MutualEndDebtValueObject )table4.next();
+			   request.setAttribute("ob4", ob4);
+			   if(!customer.equals(ob4.getCustomer()) || !executor.equals(ob4.getExecutor())) { %>
+			    <%@include file="mutActWord_EndDebt_includeTable.jspf"%>
+    			<% 
+		            customer = ob4.getCustomer();
+	                executor = ob4.getExecutor();
+	           }
+		     } %>
+			<%@include file="mutActWord_EndDebt_includeTable.jspf"%>
+      <% } %>

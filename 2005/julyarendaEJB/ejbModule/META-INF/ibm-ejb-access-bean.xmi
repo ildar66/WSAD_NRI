@@ -1,0 +1,58 @@
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:accessbean="accessbean.xmi" xmlns:ejb="ejb.xmi">
+  <accessbean:EJBShadow xmi:id="EJBShadow_1" name="ArendaDocumentProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaDocumentProcessor"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_1" name="ArendaDocumentProcessorAccessBean" package="com.hps.july.arenda.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_1" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaDocumentProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_2" name="ArendaDocumentTransactionMethod">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaDocumentTransactionMethod"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_2" name="ArendaDocumentTransactionMethodAccessBean" package="com.hps.july.arenda.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_2" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaDocumentTransactionMethod"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_3" name="ArendaTransactionMethod">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaTransactionMethod"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_3" name="ArendaTransactionMethodAccessBean" package="com.hps.july.arenda.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_3" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#ArendaTransactionMethod"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_4" name="CalculateArendaAct">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CalculateArendaAct"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_4" name="CalculateArendaActAccessBean" package="com.hps.july.arenda.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_4" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#CalculateArendaAct"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_5" name="Journal">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Journal"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_5" name="JournalAccessBean" package="com.hps.july.arenda.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_5" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Journal"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_6" name="LeaseArendaAgreementProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#LeaseArendaAgreementProcessor"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_6" name="LeaseArendaAgreementProcessorAccessBean" package="com.hps.july.arenda.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_6" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#LeaseArendaAgreementProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+  <accessbean:EJBShadow xmi:id="EJBShadow_7" name="LeaseSaldoProcessor">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#LeaseSaldoProcessor"/>
+    <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_7" name="LeaseSaldoProcessorAccessBean" package="com.hps.july.arenda.sessionbean" version="VAJava-4.0">
+      <nullConstructor xmi:id="MethodElement_7" name="create" type="Home">
+        <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#LeaseSaldoProcessor"/>
+      </nullConstructor>
+    </accessBeans>
+  </accessbean:EJBShadow>
+</xmi:XMI>

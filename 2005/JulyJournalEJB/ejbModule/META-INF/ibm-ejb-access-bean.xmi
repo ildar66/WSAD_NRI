@@ -1,0 +1,8 @@
+<accessbean:EJBShadow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:accessbean="accessbean.xmi" xmlns:ejb="ejb.xmi" xmi:id="EJBShadow_1" name="Journal">
+  <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Journal"/>
+  <accessBeans xmi:type="accessbean:Type1AccessBean" xmi:id="Type1AccessBean_1" name="JournalAccessBean" package="com.hps.july.journal.beans" version="VAJava-4.0">
+    <nullConstructor xmi:id="MethodElement_1" name="create" type="Home">
+      <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#Journal"/>
+    </nullConstructor>
+  </accessBeans>
+</accessbean:EJBShadow>

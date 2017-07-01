@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="expedition" name="expedition" primaryKey="expedition_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="expedition_2" name="expedition">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987007">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="expeditor" name="expeditor" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987008">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="organization" name="organization" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634987009">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="expedition_1" name="expedition" members="expedition_2" constraint="SQLConstraint_1131634987007"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_7442_7442" name="FK_REF_7442_7442" members="expedition_2" constraint="SQLConstraint_1131634987008">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_storageplaces.tblxmi#storageplaces_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_7452_7452" name="FK_REF_7452_7452" members="organization" constraint="SQLConstraint_1131634987009">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_organizations.tblxmi#organizations_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_7448_7448" name="FK_REF_7448_7448" members="expeditor" constraint="SQLConstraint_1131634987010">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_workers.tblxmi#workers_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634987007" name="expedition" type="PRIMARYKEY" primaryKey="expedition_1"/>
+  <constraints xmi:id="SQLConstraint_1131634987008" name="FK_REF_7442_7442" type="FOREIGNKEY" referenceByKey="FK_REF_7442_7442"/>
+  <constraints xmi:id="SQLConstraint_1131634987009" name="FK_REF_7452_7452" type="FOREIGNKEY" referenceByKey="FK_REF_7452_7452"/>
+  <constraints xmi:id="SQLConstraint_1131634987010" name="FK_REF_7448_7448" type="FOREIGNKEY" referenceByKey="FK_REF_7448_7448"/>
+</RDBSchema:RDBTable>

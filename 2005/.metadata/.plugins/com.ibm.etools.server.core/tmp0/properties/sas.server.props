@@ -1,0 +1,4 @@
+#
+#Tue Apr 11 12:16:26 MSD 2006
+com.ibm.CORBA.securityTraceOutput=C\:/workspases/WSAD_NRI/.metadata/.plugins/com.ibm.etools.server.core/tmp0\\logs\\sas_server.log
+com.ibm.CORBA.bootstrapRepositoryLocation=C\:/workspases/WSAD_NRI/.metadata/.plugins/com.ibm.etools.server.core/tmp0\\etc\\secbootrep

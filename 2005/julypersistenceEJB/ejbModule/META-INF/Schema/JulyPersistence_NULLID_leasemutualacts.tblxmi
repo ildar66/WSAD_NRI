@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leasemutualacts" name="leasemutualacts" primaryKey="leasemutualacts_1">
+  <database href="META-INF/Schema/JulyPersistence.dbxmi#JulyPersistence"/>
+  <schema href="META-INF/Schema/JulyPersistence_NULLID.schxmi#NULLID"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="leasedocument" name="leasedocument">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986957">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="mutualreglament" name="mutualreglament">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986958">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="currency" name="currency">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1131634986959">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="actstate" name="actstate">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986957" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="actstartdate" name="actstartdate">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986957">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="actenddate" name="actenddate">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1131634986958">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="header" name="header" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634986957" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="footer" name="footer" allowNull="true">
+    <type xmi:type="RDBSchema:InformixCharacterVaryingStringType" xmi:id="InformixCharacterVaryingStringType_1131634986958" characterSet="800" length="255" minSpace="0">
+      <originatingType xmi:type="RDBSchema:InformixCharacterVaryingStringType" href="INFORMIX_V92_Primitives.xmi#InformixCharacterVaryingStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="istemp" name="istemp">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986958" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="isSchetFakt" name="isSchetFakt">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986959" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="actfilename" name="actfilename" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1131634986960" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="mutualnds" name="mutualnds">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1180363063490" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="leasemutualacts_1" name="leasemutualacts" members="leasedocument" constraint="SQLConstraint_1131634986957">
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasecalcrates.tblxmi#FK_REF_36391_36391"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasevpayment.tblxmi#FK_REF_36370_36370"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasesaldo.tblxmi#FK_REF_36345_36345"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leaseschetfakt.tblxmi#FK_REF_93709_93709"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasedocpositions.tblxmi#FK_REF_36408_36408"/>
+    <referenceByKey href="META-INF/Schema/JulyPersistence_NULLID_leasednop.tblxmi#FK_REF_36421_36421"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="FK_REF_MUTAC_15391" name="FK_REF_MUTAC_15391" members="currency" constraint="SQLConstraint_1131634986958">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_currencies.tblxmi#currencies_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_mutar_15242" name="fk_ref_mutar_15242" members="mutualreglament" constraint="SQLConstraint_1131634986959">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasemutualrglmnt.tblxmi#leasemutualrglmnt_1"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_mutad_15243" name="fk_ref_mutad_15243" members="leasedocument" constraint="SQLConstraint_1131634986960">
+    <target href="META-INF/Schema/JulyPersistence_NULLID_leasedocuments.tblxmi#leasedocuments_1"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1131634986957" name="leasemutualacts" type="PRIMARYKEY" primaryKey="leasemutualacts_1"/>
+  <constraints xmi:id="SQLConstraint_1131634986958" name="FK_REF_MUTAC_15391" type="FOREIGNKEY" referenceByKey="FK_REF_MUTAC_15391"/>
+  <constraints xmi:id="SQLConstraint_1131634986959" name="fk_ref_mutar_15242" type="FOREIGNKEY" referenceByKey="fk_ref_mutar_15242"/>
+  <constraints xmi:id="SQLConstraint_1131634986960" name="fk_ref_mutad_15243" type="FOREIGNKEY" referenceByKey="fk_ref_mutad_15243"/>
+</RDBSchema:RDBTable>
